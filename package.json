@@ -7,12 +7,16 @@
     "start": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.22",
     "express": "^4.14.0",
+    "formik": "^2.0.3",
     "next": "latest",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-ionicons": "^3.0.1"
   },
   "devDependencies": {
-    "cross-env": "^5.2.0"
+    "cross-env": "^5.2.0",
+    "now": "^16.4.4"
   }
 }

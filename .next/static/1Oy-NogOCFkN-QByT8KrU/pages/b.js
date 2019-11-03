@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{CKv9:function(n,t,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/b",function(){return u("FD3n")}])},FD3n:function(n,t,u){"use strict";u.r(t);var e=u("q1tI"),i=u.n(e).a.createElement;t.default=function(){return i("div",null,"b")}}},[["CKv9",1,0]]]);
