@@ -9,18 +9,10 @@ class ContactForm extends React.Component {
     return (
       <section
         css={css`
-          text-align: center;
           h2 {
             text-transform: uppercase;
             font-weight: 600;
-          }
-
-          h2:first-of-type {
-            margin-bottom: 50px;
-          }
-
-          h2:last-of-type {
-            margin-bottom: 50px;
+            margin-bottom: 25px;
           }
 
           form {
@@ -33,9 +25,41 @@ class ContactForm extends React.Component {
           <div className="row">
             <div className="col-md-8 offset-md-2 col-sm-12">
               <div className="block">
-                <h2>Send us a message</h2>
+                <h2>FEEL FREE TO EMAIL OR CALL AT ANY TIME</h2>
+                <p
+                  css={css`
+                    font-size: 16px;
+                  `}
+                >
+                  If you'd like to speak to us in person or send an email at your
+                  own leisure, feel free to email or call us at any time, we'd
+                  be more than happy to answer your questions or give an
+                  estimated price.
+                </p>
+                <p
+                  css={css`
+                    font-size: 16px;
+                  `}
+                >
+                  <strong>Email:</strong> information@rosiesmaidservice.ca
+                </p>
+                <p
+                  css={css`
+                    font-size: 16px;
+                    margin-bottom: 75px;
+                  `}
+                >
+                  <strong>Phone number:</strong> 1 (234) 567-8910
+                </p>
+
+                <h2>OR SUMBIT A QUICK MESSAGE</h2>
                 <Formik
-                  initialValues={{ email: "", name: "", subject: "", message: "" }}
+                  initialValues={{
+                    email: "",
+                    name: "",
+                    subject: "",
+                    message: ""
+                  }}
                   validate={values => {
                     const errors = {};
                     if (!values.email) {
@@ -122,22 +146,6 @@ class ContactForm extends React.Component {
                     </form>
                   )}
                 </Formik>
-                <h2>Our Location</h2>
-                <div
-                  css={css`
-                    margin-bottom: 100px;
-                  `}
-                  className="google-map"
-                >
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.472979439986!2d-73.97769068489596!3d40.7516207793276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590247c56379%3A0x15e13bea38b43e18!2sChrysler+Building!5e0!3m2!1sen!2sus!4v1477406538220"
-                    width="730"
-                    height="300"
-                    frameBorder="0"
-                    allowFullScreen
-                    css={css`"border:0;`}
-                  ></iframe>
-                </div>
               </div>
             </div>
           </div>

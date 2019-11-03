@@ -21,8 +21,8 @@ class FAQ extends React.Component {
               <div
                 css={css`
                   width: 100%;
-                  text-align: center;
-                  margin-bottom: 75px;
+                  text-align: left;
+                  margin-bottom: 50px;
                 `}
                 className="section-title col-lg-8 offset-lg-2"
               >

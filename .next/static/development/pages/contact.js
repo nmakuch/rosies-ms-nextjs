@@ -119,8 +119,18 @@ __webpack_require__.r(__webpack_exports__);
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
+function _templateObject4() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n                    font-size: 16px;\n                    margin-bottom: 75px;\n                  "]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\"border:0;"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n                    font-size: 16px;\n                  "]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -130,7 +140,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n                    margin-bottom: 100px;\n                  "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n                    font-size: 16px;\n                  "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -140,7 +150,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n          text-align: center;\n          h2 {\n            text-transform: uppercase;\n            font-weight: 600;\n          }\n\n          h2:first-of-type {\n            margin-bottom: 50px;\n          }\n\n          h2:last-of-type {\n            margin-bottom: 50px;\n          }\n\n          form {\n            margin-bottom: 100px;\n          }\n        "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n          h2 {\n            text-transform: uppercase;\n            font-weight: 600;\n            margin-bottom: 25px;\n          }\n\n          form {\n            margin-bottom: 100px;\n          }\n        "]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -181,7 +191,13 @@ function (_React$Component) {
         className: "col-md-8 offset-md-2 col-sm-12"
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
         className: "block"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", null, "Send us a message"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(formik__WEBPACK_IMPORTED_MODULE_9__["Formik"], {
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", null, "FEEL FREE TO EMAIL OR CALL AT ANY TIME"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject2())
+      }, "If you'd like to speak to us in person or send an email at your own leisure, feel free to email or call us at any time, we'd be more than happy to answer your questions or give an estimated price."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject3())
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("strong", null, "Email:"), " information@rosiesmaidservice.ca"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject4())
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("strong", null, "Phone number:"), " 1 (234) 567-8910"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", null, "OR SUMBIT A QUICK MESSAGE"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(formik__WEBPACK_IMPORTED_MODULE_9__["Formik"], {
         initialValues: {
           email: "",
           name: "",
@@ -261,17 +277,7 @@ function (_React$Component) {
           type: "submit",
           disabled: isSubmitting
         }, "Submit"));
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", null, "Our Location"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject2()),
-        className: "google-map"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("iframe", {
-        src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.472979439986!2d-73.97769068489596!3d40.7516207793276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590247c56379%3A0x15e13bea38b43e18!2sChrysler+Building!5e0!3m2!1sen!2sus!4v1477406538220",
-        width: "730",
-        height: "300",
-        frameBorder: "0",
-        allowFullScreen: true,
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject3())
-      })))))));
+      }))))));
     }
   }]);
 
@@ -21189,7 +21195,7 @@ var appStyles = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templ
 
 /***/ }),
 
-/***/ 1:
+/***/ 3:
 /*!********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Fnickmakuch%2FDocuments%2FCode%2Frosies-ms-nextjs%2Fpages%2Fcontact.js ***!
   \********************************************************************************************************************************************************/
@@ -21212,5 +21218,5 @@ module.exports = dll_ea92a4d9664833a26066;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=contact.js.map

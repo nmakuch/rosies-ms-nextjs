@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -176,18 +176,10 @@ class ContactForm extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component
   render() {
     return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("section", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
-          text-align: center;
           h2 {
             text-transform: uppercase;
             font-weight: 600;
-          }
-
-          h2:first-of-type {
-            margin-bottom: 50px;
-          }
-
-          h2:last-of-type {
-            margin-bottom: 50px;
+            margin-bottom: 25px;
           }
 
           form {
@@ -203,7 +195,20 @@ class ContactForm extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component
       className: "col-md-8 offset-md-2 col-sm-12"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "block"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "Send us a message"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(formik__WEBPACK_IMPORTED_MODULE_3__["Formik"], {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "FEEL FREE TO EMAIL OR CALL AT ANY TIME"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                    font-size: 16px;
+                  `
+    }, "If you'd like to speak to us in person or send an email at your own leisure, feel free to email or call us at any time, we'd be more than happy to answer your questions or give an estimated price."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                    font-size: 16px;
+                  `
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("strong", null, "Email:"), " information@rosiesmaidservice.ca"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                    font-size: 16px;
+                    margin-bottom: 75px;
+                  `
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("strong", null, "Phone number:"), " 1 (234) 567-8910"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "OR SUMBIT A QUICK MESSAGE"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(formik__WEBPACK_IMPORTED_MODULE_3__["Formik"], {
       initialValues: {
         email: "",
         name: "",
@@ -285,19 +290,7 @@ class ContactForm extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component
     })), errors.message && touched.message && errors.message, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("button", {
       type: "submit",
       disabled: isSubmitting
-    }, "Submit"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "Our Location"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
-                    margin-bottom: 100px;
-                  `,
-      className: "google-map"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("iframe", {
-      src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.472979439986!2d-73.97769068489596!3d40.7516207793276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590247c56379%3A0x15e13bea38b43e18!2sChrysler+Building!5e0!3m2!1sen!2sus!4v1477406538220",
-      width: "730",
-      height: "300",
-      frameBorder: "0",
-      allowFullScreen: true,
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`"border:0;`
-    })))))));
+    }, "Submit"))))))));
   }
 
 }
@@ -3818,7 +3811,7 @@ footer .footer-manu ul li a:hover {
 
 /***/ }),
 
-/***/ 4:
+/***/ 6:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/
