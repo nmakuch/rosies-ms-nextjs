@@ -1,5 +1,5 @@
 const next = require("next");
-const sgMail = require("@sendgrid/mail");
+const nodemailer = require('nodemailer');
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -10,10 +10,6 @@ const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
   const server = express();
-
-  sgMail.setApiKey(
-    "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"
-  );
 
   server.use(bodyParser.urlencoded({ extended: false }));
   server.use(bodyParser.json());
@@ -35,14 +31,38 @@ app.prepare().then(() => {
   });
 
   server.post("/contact", (req, res) => {
-    const msg = {
-      to: "makuch.nick@gmail.com",
-      from: "test@example.com",
-      subject: "Sending with Twilio SendGrid is Fun",
-      text: "and easy to do anywhere, even with Node.js",
-      html: "<strong>and easy to do anywhere, even with Node.js</strong>"
-    };
-    sgMail.send(msg);
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'makuch.nick@gmail.com',
+        pass: process.env.GMAIL_USER_PASSWORD
+      }
+    })
+
+    const mailOptions = {
+      from: `${req.body.email}`,
+      to: 'makuch.nick@gmail.com',
+      subject: `Rosies Maid Service: new contact form submission`,
+      text: `${req.body.message}`,
+      replyTo: `${req.body.email}`,
+      html: `<a href="#">${req.body.subject}</a>`,
+    }
+
+    console.log(req.body.email)
+    console.log(req.body.name)
+    console.log(req.body.message)
+    console.log(req.body.subject)
+
+    console.log(mailOptions)
+
+
+    transporter.sendMail(mailOptions, function(err, res) {
+      if (err) {
+        console.error('there was an error: ', err);
+      } else {
+        console.log('here is the res: ', res)
+      }
+    })
   });
 
   server.all("*", (req, res) => {

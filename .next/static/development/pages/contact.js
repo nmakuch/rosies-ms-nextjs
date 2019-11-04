@@ -117,7 +117,7 @@ __webpack_require__.r(__webpack_exports__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
 function _templateObject6() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                          padding: 0 5px !important;\n                        "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                            padding: 0 5px !important;\n                          "]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -127,7 +127,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                    padding-top: 0 !important;\n                  "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding-top: 0 !important;\n                    "]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -137,7 +137,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                    font-size: 16px;\n                    margin-bottom: 75px;\n                  "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      font-size: 16px;\n                      margin-bottom: 75px;\n                    "]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -147,7 +147,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                    font-size: 16px;\n                  "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      font-size: 16px;\n                    "]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -157,7 +157,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                    font-size: 16px;\n                  "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      font-size: 16px;\n                    "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -167,7 +167,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n          padding-top: 100px !important;\n          padding-bottom: 100px !important;\n          h2 {\n            text-transform: uppercase;\n            font-weight: 600;\n          }\n\n          h2:first-of-type {\n            margin-bottom: 25px;\n          }\n\n          h2:last-of-type {\n            margin-bottom: 25px;\n          }\n        "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n            padding-top: 100px !important;\n            padding-bottom: 100px !important;\n            h2 {\n              text-transform: uppercase;\n              font-weight: 600;\n            }\n\n            h2:first-of-type {\n              margin-bottom: 25px;\n            }\n\n            h2:last-of-type {\n              margin-bottom: 25px;\n            }\n          "]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -247,12 +247,16 @@ function (_React$Component) {
       })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
         className: "form-group"
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("input", {
+        name: "subject",
+        id: "subject",
         type: "text",
         className: "form-control",
         placeholder: "Message subject"
       })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
         className: "form-group-2"
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("textarea", {
+        name: "message",
+        id: "message",
         className: "form-control",
         rows: "3",
         placeholder: "Your message"
@@ -21177,7 +21181,7 @@ var appStyles = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templ
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Fnickmakuch%2FDocuments%2FCode%2Frosies-ms-nextjs%2Fpages%2Fcontact.js ***!
   \********************************************************************************************************************************************************/
@@ -21200,5 +21204,5 @@ module.exports = dll_ea92a4d9664833a26066;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=contact.js.map

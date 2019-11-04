@@ -1,3 +1,11 @@
 dist/
 dist/
 sendgrid.env
+sendgrid.env
+sendgrid.env
+sendgrid.env
+nodemailer.env
+export GMAIL_USER_PASSWORD=‘Mak4Rds1’” > nodemailer.env
+echo “nodemailer.env
+nodemailer.env
+nodemailer.env
