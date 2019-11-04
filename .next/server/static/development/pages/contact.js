@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -152,19 +152,16 @@ class CallToAction extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Componen
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! formik */ "formik");
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(formik__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! formik */ "formik");
+/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(formik__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 
 /** @jsx jsx */
@@ -172,125 +169,97 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-class ContactForm extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+class ContactForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   render() {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("section", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+          padding-top: 100px !important;
+          padding-bottom: 100px !important;
           h2 {
             text-transform: uppercase;
             font-weight: 600;
+          }
+
+          h2:first-of-type {
             margin-bottom: 25px;
           }
 
-          form {
-            margin-bottom: 100px;
+          h2:last-of-type {
+            margin-bottom: 25px;
           }
         `,
       id: "contact-form"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "container"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "col-md-8 offset-md-2 col-sm-12"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "block"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "FEEL FREE TO EMAIL OR CALL AT ANY TIME"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", null, "FEEL FREE TO EMAIL OR CALL AT ANY TIME"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
                     font-size: 16px;
                   `
-    }, "If you'd like to speak to us in person or send an email at your own leisure, feel free to email or call us at any time, we'd be more than happy to answer your questions or give an estimated price."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+    }, "If you'd rather speak to us in person or send an email at your own leisure, feel free to email or call us at any time, we'd be more than happy to answer your questions or give an estimated price."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
                     font-size: 16px;
                   `
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("strong", null, "Email:"), " information@rosiesmaidservice.ca"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("strong", null, "Email:"), " information@rosiesmaidservice.ca"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
                     font-size: 16px;
                     margin-bottom: 75px;
                   `
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("strong", null, "Phone number:"), " 1 (234) 567-8910"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "OR SUMBIT A QUICK MESSAGE"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(formik__WEBPACK_IMPORTED_MODULE_3__["Formik"], {
-      initialValues: {
-        email: "",
-        name: "",
-        subject: "",
-        message: ""
-      },
-      validate: values => {
-        const errors = {};
-
-        if (!values.email) {
-          errors.email = "Required";
-        } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-          errors.email = "Invalid email address";
-        }
-
-        return errors;
-      },
-      onSubmit: (values, {
-        setSubmitting
-      }) => {
-        setTimeout(() => {
-          alert(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(values, null, 2));
-          setSubmitting(false);
-        }, 400);
-      }
-    }, ({
-      values,
-      errors,
-      touched,
-      handleChange,
-      handleBlur,
-      handleSubmit,
-      isSubmitting
-      /* and other goodies */
-
-    }) => Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("form", {
-      onSubmit: handleSubmit
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("strong", null, "Phone number:"), " 1 (234) 567-8910"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", null, "OR SUMBIT A QUICK MESSAGE"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    padding-top: 0 !important;
+                  `,
+      id: "contact-form"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "container"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                          padding: 0 5px !important;
+                        `,
+      className: "col-md-12 col-sm-12"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "block"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("form", {
+      method: "post"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "form-group"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
-      type: "name",
-      name: "name",
-      className: "form-control",
-      placeholder: "Your name",
-      onChange: handleChange,
-      onBlur: handleBlur,
-      value: values.name
-    })), errors.name && touched.name && errors.name, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-      className: "form-group"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
-      type: "email",
-      name: "email",
-      placeholder: "Your email",
-      className: "form-control",
-      onChange: handleChange,
-      onBlur: handleBlur,
-      value: values.email
-    })), errors.email && touched.email && errors.email, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-      className: "form-group"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
-      type: "subject",
-      name: "subject",
-      placeholder: "Your subject",
-      className: "form-control",
-      onChange: handleChange,
-      onBlur: handleBlur,
-      value: values.subject
-    })), errors.name && touched.name && errors.name, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-      className: "form-group-2"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("textarea", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("input", {
       type: "text",
-      name: "message",
-      rows: "3",
+      name: "name",
+      id: "name",
       className: "form-control",
-      placeholder: "Your message",
-      onChange: handleChange,
-      onBlur: handleBlur,
-      value: values.message
-    })), errors.message && touched.message && errors.message, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("button", {
-      type: "submit",
-      disabled: isSubmitting
-    }, "Submit"))))))));
+      placeholder: "Your name"
+    })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "form-group"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("input", {
+      id: "email",
+      type: "text",
+      name: "email",
+      className: "form-control",
+      placeholder: "Your email"
+    })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "form-group"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("input", {
+      type: "text",
+      className: "form-control",
+      placeholder: "Message subject"
+    })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "form-group-2"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("textarea", {
+      className: "form-control",
+      rows: "3",
+      placeholder: "Your message"
+    })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("button", {
+      className: "btn btn-default",
+      type: "submit"
+    }, "submit")))))))))))));
   }
 
 }
@@ -3811,7 +3780,7 @@ footer .footer-manu ul li a:hover {
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/

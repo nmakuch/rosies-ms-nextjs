@@ -7,16 +7,22 @@ import Link from "next/link";
 class ContactForm extends React.Component {
   render() {
     return (
+        <React.Fragment>
       <section
         css={css`
+          padding-top: 100px !important;
+          padding-bottom: 100px !important;
           h2 {
             text-transform: uppercase;
             font-weight: 600;
+          }
+
+          h2:first-of-type {
             margin-bottom: 25px;
           }
 
-          form {
-            margin-bottom: 100px;
+          h2:last-of-type {
+            margin-bottom: 25px;
           }
         `}
         id="contact-form"
@@ -31,7 +37,7 @@ class ContactForm extends React.Component {
                     font-size: 16px;
                   `}
                 >
-                  If you'd like to speak to us in person or send an email at your
+                  If you'd rather speak to us in person or send an email at your
                   own leisure, feel free to email or call us at any time, we'd
                   be more than happy to answer your questions or give an
                   estimated price.
@@ -53,104 +59,69 @@ class ContactForm extends React.Component {
                 </p>
 
                 <h2>OR SUMBIT A QUICK MESSAGE</h2>
-                <Formik
-                  initialValues={{
-                    email: "",
-                    name: "",
-                    subject: "",
-                    message: ""
-                  }}
-                  validate={values => {
-                    const errors = {};
-                    if (!values.email) {
-                      errors.email = "Required";
-                    } else if (
-                      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(
-                        values.email
-                      )
-                    ) {
-                      errors.email = "Invalid email address";
-                    }
-                    return errors;
-                  }}
-                  onSubmit={(values, { setSubmitting }) => {
-                    setTimeout(() => {
-                      alert(JSON.stringify(values, null, 2));
-                      setSubmitting(false);
-                    }, 400);
-                  }}
+                <section
+                  css={css`
+                    padding-top: 0 !important;
+                  `}
+                  id="contact-form"
                 >
-                  {({
-                    values,
-                    errors,
-                    touched,
-                    handleChange,
-                    handleBlur,
-                    handleSubmit,
-                    isSubmitting
-                    /* and other goodies */
-                  }) => (
-                    <form onSubmit={handleSubmit}>
-                      <div className="form-group">
-                        <input
-                          type="name"
-                          name="name"
-                          className="form-control"
-                          placeholder="Your name"
-                          onChange={handleChange}
-                          onBlur={handleBlur}
-                          value={values.name}
-                        />
+                  <div className="container">
+                    <div className="row">
+                      <div
+                        css={css`
+                          padding: 0 5px !important;
+                        `}
+                        className="col-md-12 col-sm-12"
+                      >
+                        <div className="block">
+                          <form method="post">
+                            <div className="form-group">
+                              <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                className="form-control"
+                                placeholder="Your name"
+                              />
+                            </div>
+                            <div className="form-group">
+                              <input
+                                id="email"
+                                type="text"
+                                name="email"
+                                className="form-control"
+                                placeholder="Your email"
+                              />
+                            </div>
+                            <div className="form-group">
+                              <input
+                                type="text"
+                                className="form-control"
+                                placeholder="Message subject"
+                              />
+                            </div>
+                            <div className="form-group-2">
+                              <textarea
+                                className="form-control"
+                                rows="3"
+                                placeholder="Your message"
+                              ></textarea>
+                            </div>
+                            <button className="btn btn-default" type="submit">
+                              submit
+                            </button>
+                          </form>
+                        </div>
                       </div>
-                      {errors.name && touched.name && errors.name}
-                      <div className="form-group">
-                        <input
-                          type="email"
-                          name="email"
-                          placeholder="Your email"
-                          className="form-control"
-                          onChange={handleChange}
-                          onBlur={handleBlur}
-                          value={values.email}
-                        />
-                      </div>
-                      {errors.email && touched.email && errors.email}
-                      <div className="form-group">
-                        <input
-                          type="subject"
-                          name="subject"
-                          placeholder="Your subject"
-                          className="form-control"
-                          onChange={handleChange}
-                          onBlur={handleBlur}
-                          value={values.subject}
-                        />
-                      </div>
-                      {errors.name && touched.name && errors.name}
-                      <div className="form-group-2">
-                        <textarea
-                          type="text"
-                          name="message"
-                          rows="3"
-                          className="form-control"
-                          placeholder="Your message"
-                          onChange={handleChange}
-                          onBlur={handleBlur}
-                          value={values.message}
-                        />
-                      </div>
-                      {errors.message && touched.message && errors.message}
-                      <button type="submit" disabled={isSubmitting}>
-                        Submit
-                      </button>
-                    </form>
-                  )}
-                </Formik>
+                    </div>
+                  </div>
+                </section>
               </div>
             </div>
           </div>
         </div>
       </section>
+      </React.Fragment>
     );
   }
 }
