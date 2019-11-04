@@ -1,6 +1,5 @@
 const next = require("next");
-const sgMail = require('@sendgrid/mail');
-
+const sgMail = require("@sendgrid/mail");
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -12,7 +11,9 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
-  sgMail.setApiKey("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");
+  sgMail.setApiKey(
+    "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"
+  );
 
   server.use(bodyParser.urlencoded({ extended: false }));
   server.use(bodyParser.json());
@@ -33,16 +34,16 @@ app.prepare().then(() => {
     return app.render(req, res, "/contact", req.query);
   });
 
-  server.post('/contact', (req, res) => {
+  server.post("/contact", (req, res) => {
     const msg = {
-      to: 'makuch.nick@gmail.com',
-      from: 'test@example.com',
-      subject: 'Sending with Twilio SendGrid is Fun',
-      text: 'and easy to do anywhere, even with Node.js',
-      html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+      to: "makuch.nick@gmail.com",
+      from: "test@example.com",
+      subject: "Sending with Twilio SendGrid is Fun",
+      text: "and easy to do anywhere, even with Node.js",
+      html: "<strong>and easy to do anywhere, even with Node.js</strong>"
     };
     sgMail.send(msg);
-  })
+  });
 
   server.all("*", (req, res) => {
     return handle(req, res);
