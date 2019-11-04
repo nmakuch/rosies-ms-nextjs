@@ -11,9 +11,7 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
-  sgMail.setApiKey(
-    "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"
-  );
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
   server.use(bodyParser.urlencoded({ extended: false }));
   server.use(bodyParser.json());
@@ -42,6 +40,7 @@ app.prepare().then(() => {
       text: "and easy to do anywhere, even with Node.js",
       html: "<strong>and easy to do anywhere, even with Node.js</strong>"
     };
+
     sgMail.send(msg);
   });
 
