@@ -11,12 +11,15 @@ import Checkbox from "../components/CheckBox";
 class CheckBox extends React.Component {
   render() {
     return (
-      <input
-        type="checkbox"
-        id={this.props.id}
-        value={this.props.value}
-        onChange={this.props.onChange}
-      />
+      <React.Fragment>
+        <label>{this.props.label}</label>
+        <input
+          type="checkbox"
+          id={this.props.id}
+          value={this.props.value}
+          onChange={this.props.onChange}
+        />
+      </React.Fragment>
     );
   }
 }
@@ -24,36 +27,53 @@ class CheckBox extends React.Component {
 class Services extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { optionsChecked: [ 0 ] };
+    this.state = { optionsAddOns1: [0] };
   }
 
   changeEvent(event) {
-    let checkedArray = this.state.optionsChecked;
+    let checkedArrayAddOns1 = this.state.optionsAddOns1;
     let selectedValue = event.target.value;
 
     if (event.target.checked === true) {
-      checkedArray.push(parseInt(selectedValue));
+      checkedArrayAddOns1.push(parseInt(selectedValue));
       this.setState({
-        optionsChecked: checkedArray
+        optionsAddOns1: checkedArrayAddOns1
       });
     } else {
-      let valueIndex = checkedArray.indexOf(selectedValue);
-      checkedArray.splice(valueIndex, 1);
+      let valueIndex = checkedArrayAddOns1.indexOf(selectedValue);
+      checkedArrayAddOns1.splice(valueIndex, 1);
 
       this.setState({
-        optionsChecked: checkedArray,
+        optionsAddOns1: checkedArrayAddOns1
       });
     }
   }
   render() {
-    let checkBoxArray = [1,2,3];
-       
-    let outputCheckboxes = checkBoxArray.map(function(number, i){
-      return (<div><CheckBox value={1} id={'string_' + i} onChange={this.changeEvent.bind(this)} /><label htmlFor={'string_' + i}>{number}</label></div>)
+    let checkBoxArrayAddOns1 = [54.00, 23, 108];
+    let checkBoxArrayLabels = [
+      "Basic: kitchen, bathroom, all floors  - 54$ (1.5 hourse)",
+      "Basic Plus: kitchen, bathroom, living areas (including bedroom) - 90$ (2.5 hours)",
+      "Complete: kitchen, bathroom, living areas, plus one big job (oven, fridge, windows*) - 108$ ( 3 hrs)"
+    ];
+
+    let outputCheckboxesAddOns1 = checkBoxArrayAddOns1.map((number, i) => {
+      return (
+        <div>
+          <label htmlFor={"string_" + i}>
+            {checkBoxArrayLabels[i]}
+            {number}
+          </label>
+          <CheckBox
+            value={number}
+            id={"string_" + i}
+            onChange={this.changeEvent.bind(this)}
+          />
+        </div>
+      );
     }, this);
 
-    let sum = this.state.optionsChecked.reduce((a, b) => a + b, 0)
-    
+    let sum = this.state.optionsAddOns1.reduce((a, b) => a + b, 0);
+
     return (
       <Layout>
         <GlobalHeader
@@ -83,9 +103,9 @@ class Services extends React.Component {
           <div className="container">
             <div className="row">
               <div>
-                <div>{outputCheckboxes}</div>
-                <div>{JSON.stringify(this.state.optionsChecked)}</div>
-                <div>{sum}</div>
+                <div>{outputCheckboxesAddOns1}</div>
+                <div>{JSON.stringify(this.state.optionsAddOns1)}</div>
+                <div>${sum}.00</div>
               </div>
             </div>
           </div>

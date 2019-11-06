@@ -2306,12 +2306,12 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 class CheckBox extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   render() {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("input", {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("label", null, this.props.label), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("input", {
       type: "checkbox",
       id: this.props.id,
       value: this.props.value,
       onChange: this.props.onChange
-    });
+    }));
   }
 
 }
@@ -2320,40 +2320,41 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   constructor(props) {
     super(props);
     this.state = {
-      optionsChecked: [0]
+      optionsAddOns1: [0]
     };
   }
 
   changeEvent(event) {
-    let checkedArray = this.state.optionsChecked;
+    let checkedArrayAddOns1 = this.state.optionsAddOns1;
     let selectedValue = event.target.value;
 
     if (event.target.checked === true) {
-      checkedArray.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue));
+      checkedArrayAddOns1.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue));
       this.setState({
-        optionsChecked: checkedArray
+        optionsAddOns1: checkedArrayAddOns1
       });
     } else {
-      let valueIndex = checkedArray.indexOf(selectedValue);
-      checkedArray.splice(valueIndex, 1);
+      let valueIndex = checkedArrayAddOns1.indexOf(selectedValue);
+      checkedArrayAddOns1.splice(valueIndex, 1);
       this.setState({
-        optionsChecked: checkedArray
+        optionsAddOns1: checkedArrayAddOns1
       });
     }
   }
 
   render() {
-    let checkBoxArray = [1, 2, 3];
-    let outputCheckboxes = checkBoxArray.map(function (number, i) {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(CheckBox, {
-        value: 1,
-        id: 'string_' + i,
+    let checkBoxArrayAddOns1 = [54.00, 23, 108];
+    let checkBoxArrayLabels = ["Basic: kitchen, bathroom, all floors  - 54$ (1.5 hourse)", "Basic Plus: kitchen, bathroom, living areas (including bedroom) - 90$ (2.5 hours)", "Complete: kitchen, bathroom, living areas, plus one big job (oven, fridge, windows*) - 108$ ( 3 hrs)"];
+    let outputCheckboxesAddOns1 = checkBoxArrayAddOns1.map((number, i) => {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("label", {
+        htmlFor: "string_" + i
+      }, checkBoxArrayLabels[i], number), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(CheckBox, {
+        value: number,
+        id: "string_" + i,
         onChange: this.changeEvent.bind(this)
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("label", {
-        htmlFor: 'string_' + i
-      }, number));
+      }));
     }, this);
-    let sum = this.state.optionsChecked.reduce((a, b) => a + b, 0);
+    let sum = this.state.optionsAddOns1.reduce((a, b) => a + b, 0);
     return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_6__["default"], {
       globalHeaderTitle: "Services / Booking",
       globalHeaderSubTitle: "View a list of our services or book an appointment",
@@ -2380,7 +2381,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
       className: "container"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
       className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, outputCheckboxes), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(this.state.optionsChecked)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, sum))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, outputCheckboxesAddOns1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(this.state.optionsAddOns1)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, "$", sum, ".00"))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_7__["default"], {
       callTitle: "You're one step away from a clean and happy home!",
       callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
       callLinkUrl: "/services",
