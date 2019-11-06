@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -3412,17 +3412,17 @@ font header .navbar-default .navbar-nav li a:hover {
  padding: 40px 0px;
 }
 
-#contact-form {
+#contact-form, #service-form {
  padding-top: 70px;
  padding-bottom: 35px;
 }
 
-#contact-form .block form .form-group {
+#contact-form .block form .form-group, #service-form .block form .form-group {
  padding-bottom: 15px;
  margin: 0px;
 }
 
-#contact-form .block form .form-group .form-control {
+#contact-form .block form .form-group .form-control, #service-form .block form .form-group .form-control {
  background: #F6F8FA;
  height: 60px;
  border: 1px solid #EEF2F6;
@@ -3430,12 +3430,12 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
 }
 
-#contact-form .block form .form-group-2 {
+#contact-form .block form .form-group-2, #service-form .block form .form-group-2 {
  padding-bottom: 15px;
  margin: 0px;
 }
 
-#contact-form .block form .form-group-2 textarea {
+#contact-form .block form .form-group-2 textarea, #service-form .block form .form-group-2 textarea {
  background: #F6F8FA;
  height: 135px;
  border: 1px solid #EEF2F6;
@@ -3443,7 +3443,7 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
 }
 
-#contact-form .block button {
+#contact-form .block button, #service-form .block button {
  width: 100%;
  height: 60px;
  background: #47424C;
@@ -3892,7 +3892,7 @@ footer .footer-manu ul li a:hover {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

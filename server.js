@@ -1,5 +1,5 @@
 const next = require("next");
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -22,6 +22,43 @@ app.prepare().then(() => {
     return app.render(req, res, "/services", req.query);
   });
 
+  server.post("/services", (req, res) => {
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'makuch.nick@gmail.com',
+        pass: process.env.GMAIL_USER_PASSWORD
+      }
+    })
+
+    const mailOptions = {
+      from: 'service@page.com',
+      to: 'makuch.nick@gmail.com',
+      subject: `Rosies Maid Service: New Booking`,
+      replyTo: `no one`,
+      html: `
+      <h1>New contact form submission on Rosie's Maid Service</h1>
+      <table class="tg">
+      <tr>
+        <th><h3>Grand Total:</h3></th>
+        <th>${req.body.grandTotal}</th>
+      </tr>
+    </table>`,
+    }
+
+    transporter.sendMail(mailOptions, function(err, res) {
+      if (err) {
+        console.error('there was an error: ', err);
+      } else {
+        console.log('here is the res: ', res)
+      }
+    })
+
+    console.log(req.body.grandTotal);
+
+    res.redirect("/");
+  });
+
   server.get("/faq", (req, res) => {
     return app.render(req, res, "/faq", req.query);
   });
@@ -32,16 +69,16 @@ app.prepare().then(() => {
 
   server.post("/contact", (req, res) => {
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      service: "gmail",
       auth: {
-        user: 'makuch.nick@gmail.com',
+        user: "makuch.nick@gmail.com",
         pass: process.env.GMAIL_USER_PASSWORD
       }
-    })
+    });
 
     const mailOptions = {
       from: `${req.body.email}`,
-      to: 'makuch.nick@gmail.com',
+      to: "makuch.nick@gmail.com",
       subject: `Rosies Maid Service: new contact form submission`,
       replyTo: `${req.body.email}`,
       html: `
@@ -63,18 +100,18 @@ app.prepare().then(() => {
         <td> <h3>Message</h3></td>
         <td>${req.body.message}</td>
       </tr>
-    </table>`,
-    }
+    </table>`
+    };
 
     transporter.sendMail(mailOptions, function(err, res) {
       if (err) {
-        console.error('there was an error: ', err);
+        console.error("there was an error: ", err);
       } else {
-        console.log('here is the res: ', res)
+        console.log("here is the res: ", res);
       }
-    })
+    });
 
-    res.redirect('/')
+    res.redirect("/");
   });
 
   server.all("*", (req, res) => {

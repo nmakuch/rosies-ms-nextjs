@@ -27,52 +27,104 @@ class CheckBox extends React.Component {
 class Services extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { optionsAddOns1: [0] };
+    this.state = { optionsAddOns1: [], optionsAddOns2: [] };
   }
 
-  changeEvent(event) {
+  changeEvent1(event) {
     let checkedArrayAddOns1 = this.state.optionsAddOns1;
-    let selectedValue = event.target.value;
+    let selectedValue1 = event.target.value;
 
     if (event.target.checked === true) {
-      checkedArrayAddOns1.push(parseInt(selectedValue));
+      checkedArrayAddOns1.push(parseInt(selectedValue1));
       this.setState({
         optionsAddOns1: checkedArrayAddOns1
       });
     } else {
-      let valueIndex = checkedArrayAddOns1.indexOf(selectedValue);
-      checkedArrayAddOns1.splice(valueIndex, 1);
+      let valueIndex1 = checkedArrayAddOns1.indexOf(selectedValue1);
+      checkedArrayAddOns1.splice(valueIndex1, 1);
 
       this.setState({
         optionsAddOns1: checkedArrayAddOns1
       });
     }
   }
+
+  changeEvent2(event) {
+    let checkedArrayAddOns2 = this.state.optionsAddOns2;
+    let selectedValue2 = event.target.value;
+
+    if (event.target.checked === true) {
+      checkedArrayAddOns2.push(parseInt(selectedValue2));
+      this.setState({
+        optionsAddOns2: checkedArrayAddOns2
+      });
+    } else {
+      let valueIndex2 = checkedArrayAddOns2.indexOf(selectedValue2);
+      checkedArrayAddOns2.splice(valueIndex2, 1);
+
+      this.setState({
+        optionsAddOns2: checkedArrayAddOns2
+      });
+    }
+  }
+
   render() {
-    let checkBoxArrayAddOns1 = [54.00, 23, 108];
-    let checkBoxArrayLabels = [
+    let checkBoxArrayAddOns1 = [54, 23, 108];
+    let checkBoxArrayLabels1 = [
       "Basic: kitchen, bathroom, all floors  - 54$ (1.5 hourse)",
       "Basic Plus: kitchen, bathroom, living areas (including bedroom) - 90$ (2.5 hours)",
       "Complete: kitchen, bathroom, living areas, plus one big job (oven, fridge, windows*) - 108$ ( 3 hrs)"
     ];
 
+    let checkBoxArrayAddOns2 = [54, 23, 108];
+    let checkBoxArrayLabels2 = [
+      "Basic: kitchen, bathroom, all floors  - 54$ (1.5 hourse)",
+      "Basic Plus: kitchen, bathroom, living areas (including bedroom) - 90$ (2.5 hours)",
+      "Complete: kitchen, bathroom, living areas, plus one big job (oven, fridge, windows*) - 108$ ( 3 hrs)"
+    ];
+
+    let grandTotalArr = [];
+
     let outputCheckboxesAddOns1 = checkBoxArrayAddOns1.map((number, i) => {
       return (
         <div>
-          <label htmlFor={"string_" + i}>
-            {checkBoxArrayLabels[i]}
-            {number}
-          </label>
+          <label htmlFor={"string_" + i}>{checkBoxArrayLabels1[i]}</label>
           <CheckBox
             value={number}
             id={"string_" + i}
-            onChange={this.changeEvent.bind(this)}
+            onChange={this.changeEvent1.bind(this)}
           />
         </div>
       );
     }, this);
 
-    let sum = this.state.optionsAddOns1.reduce((a, b) => a + b, 0);
+    let outputCheckboxesAddOns2 = checkBoxArrayAddOns2.map((number, i) => {
+      return (
+        <div>
+          <label htmlFor={"string_" + i}>{checkBoxArrayLabels2[i]}</label>
+          <CheckBox
+            value={number}
+            id={"string_" + i}
+            onChange={this.changeEvent2.bind(this)}
+          />
+        </div>
+      );
+    }, this);
+
+    let sumOptionsAddOns1 = this.state.optionsAddOns1.reduce(
+      (a, b) => a + b,
+      0
+    );
+
+    let sumOptionsAddOns2 = this.state.optionsAddOns2.reduce(
+      (a, b) => a + b,
+      0
+    );
+
+    grandTotalArr.push(sumOptionsAddOns1);
+    grandTotalArr.push(sumOptionsAddOns2);
+
+    let grandTotalSum = grandTotalArr.reduce((a, b) => a + b, 0);
 
     return (
       <Layout>
@@ -97,17 +149,57 @@ class Services extends React.Component {
             h2:last-of-type {
               margin-bottom: 25px;
             }
+
+            .form-group {
+              padding: 15px !important;
+            }
           `}
-          id="contact-form"
+          id="service-form"
         >
-          <div className="container">
-            <div className="row">
-              <div>
-                <div>{outputCheckboxesAddOns1}</div>
-                <div>{JSON.stringify(this.state.optionsAddOns1)}</div>
-                <div>${sum}.00</div>
+          <div className="block">
+            <form method="post">
+              <div className="container">
+                <div className="col-md-8 offset-md-2 col-sm-12">
+                  <div className="row">
+                    <div className="form-group">
+                      <div>{outputCheckboxesAddOns1}</div>
+                      <div>sum of this section: ${sumOptionsAddOns1}.00</div>
+                      <br />
+                      <div>
+                        optionsAddOns1 Array:{" "}
+                        {JSON.stringify(this.state.optionsAddOns1)}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="row">
+                    <div className="form-group">
+                      <div>{outputCheckboxesAddOns2}</div>
+                      <div>sum of this section: ${sumOptionsAddOns2}.00</div>
+                      <br />
+                      <div>
+                        optionsAddOns1 Array:{" "}
+                        {JSON.stringify(this.state.optionsAddOns2)}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="form-group">
+                      <input
+                        name="grandTotal"
+                        id="grandTotal"
+                        type="text"
+                        className="form-control"
+                        value={`Grand Total: $${grandTotalSum}.00`}
+                      />
+                    </div>
+                  </div>
+                  <button className="btn btn-default" type="submit">
+                    submit
+                  </button>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
         </section>
         <CallToAction

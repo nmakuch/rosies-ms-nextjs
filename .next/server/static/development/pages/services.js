@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2320,41 +2320,76 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   constructor(props) {
     super(props);
     this.state = {
-      optionsAddOns1: [0]
+      optionsAddOns1: [],
+      optionsAddOns2: []
     };
   }
 
-  changeEvent(event) {
+  changeEvent1(event) {
     let checkedArrayAddOns1 = this.state.optionsAddOns1;
-    let selectedValue = event.target.value;
+    let selectedValue1 = event.target.value;
 
     if (event.target.checked === true) {
-      checkedArrayAddOns1.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue));
+      checkedArrayAddOns1.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue1));
       this.setState({
         optionsAddOns1: checkedArrayAddOns1
       });
     } else {
-      let valueIndex = checkedArrayAddOns1.indexOf(selectedValue);
-      checkedArrayAddOns1.splice(valueIndex, 1);
+      let valueIndex1 = checkedArrayAddOns1.indexOf(selectedValue1);
+      checkedArrayAddOns1.splice(valueIndex1, 1);
       this.setState({
         optionsAddOns1: checkedArrayAddOns1
       });
     }
   }
 
+  changeEvent2(event) {
+    let checkedArrayAddOns2 = this.state.optionsAddOns2;
+    let selectedValue2 = event.target.value;
+
+    if (event.target.checked === true) {
+      checkedArrayAddOns2.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue2));
+      this.setState({
+        optionsAddOns2: checkedArrayAddOns2
+      });
+    } else {
+      let valueIndex2 = checkedArrayAddOns2.indexOf(selectedValue2);
+      checkedArrayAddOns2.splice(valueIndex2, 1);
+      this.setState({
+        optionsAddOns2: checkedArrayAddOns2
+      });
+    }
+  }
+
   render() {
-    let checkBoxArrayAddOns1 = [54.00, 23, 108];
-    let checkBoxArrayLabels = ["Basic: kitchen, bathroom, all floors  - 54$ (1.5 hourse)", "Basic Plus: kitchen, bathroom, living areas (including bedroom) - 90$ (2.5 hours)", "Complete: kitchen, bathroom, living areas, plus one big job (oven, fridge, windows*) - 108$ ( 3 hrs)"];
+    let checkBoxArrayAddOns1 = [54, 23, 108];
+    let checkBoxArrayLabels1 = ["Basic: kitchen, bathroom, all floors  - 54$ (1.5 hourse)", "Basic Plus: kitchen, bathroom, living areas (including bedroom) - 90$ (2.5 hours)", "Complete: kitchen, bathroom, living areas, plus one big job (oven, fridge, windows*) - 108$ ( 3 hrs)"];
+    let checkBoxArrayAddOns2 = [54, 23, 108];
+    let checkBoxArrayLabels2 = ["Basic: kitchen, bathroom, all floors  - 54$ (1.5 hourse)", "Basic Plus: kitchen, bathroom, living areas (including bedroom) - 90$ (2.5 hours)", "Complete: kitchen, bathroom, living areas, plus one big job (oven, fridge, windows*) - 108$ ( 3 hrs)"];
+    let grandTotalArr = [];
     let outputCheckboxesAddOns1 = checkBoxArrayAddOns1.map((number, i) => {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("label", {
         htmlFor: "string_" + i
-      }, checkBoxArrayLabels[i], number), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(CheckBox, {
+      }, checkBoxArrayLabels1[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(CheckBox, {
         value: number,
         id: "string_" + i,
-        onChange: this.changeEvent.bind(this)
+        onChange: this.changeEvent1.bind(this)
       }));
     }, this);
-    let sum = this.state.optionsAddOns1.reduce((a, b) => a + b, 0);
+    let outputCheckboxesAddOns2 = checkBoxArrayAddOns2.map((number, i) => {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("label", {
+        htmlFor: "string_" + i
+      }, checkBoxArrayLabels2[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(CheckBox, {
+        value: number,
+        id: "string_" + i,
+        onChange: this.changeEvent2.bind(this)
+      }));
+    }, this);
+    let sumOptionsAddOns1 = this.state.optionsAddOns1.reduce((a, b) => a + b, 0);
+    let sumOptionsAddOns2 = this.state.optionsAddOns2.reduce((a, b) => a + b, 0);
+    grandTotalArr.push(sumOptionsAddOns1);
+    grandTotalArr.push(sumOptionsAddOns2);
+    let grandTotalSum = grandTotalArr.reduce((a, b) => a + b, 0);
     return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_6__["default"], {
       globalHeaderTitle: "Services / Booking",
       globalHeaderSubTitle: "View a list of our services or book an appointment",
@@ -2375,13 +2410,42 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
             h2:last-of-type {
               margin-bottom: 25px;
             }
+
+            .form-group {
+              padding: 15px !important;
+            }
           `,
-      id: "contact-form"
+      id: "service-form"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+      className: "block"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("form", {
+      method: "post"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
       className: "container"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+      className: "col-md-8 offset-md-2 col-sm-12"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
       className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, outputCheckboxesAddOns1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(this.state.optionsAddOns1)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, "$", sum, ".00"))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+      className: "form-group"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, outputCheckboxesAddOns1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, "sum of this section: $", sumOptionsAddOns1, ".00"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("br", null), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, "optionsAddOns1 Array:", " ", _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(this.state.optionsAddOns1)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+      className: "form-group"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, outputCheckboxesAddOns2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, "sum of this section: $", sumOptionsAddOns2, ".00"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("br", null), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, "optionsAddOns1 Array:", " ", _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(this.state.optionsAddOns2)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+      className: "form-group"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("input", {
+      name: "grandTotal",
+      id: "grandTotal",
+      type: "text",
+      className: "form-control",
+      value: `Grand Total: $${grandTotalSum}.00`
+    }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("button", {
+      className: "btn btn-default",
+      type: "submit"
+    }, "submit")))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_7__["default"], {
       callTitle: "You're one step away from a clean and happy home!",
       callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
       callLinkUrl: "/services",
@@ -3196,17 +3260,17 @@ font header .navbar-default .navbar-nav li a:hover {
  padding: 40px 0px;
 }
 
-#contact-form {
+#contact-form, #service-form {
  padding-top: 70px;
  padding-bottom: 35px;
 }
 
-#contact-form .block form .form-group {
+#contact-form .block form .form-group, #service-form .block form .form-group {
  padding-bottom: 15px;
  margin: 0px;
 }
 
-#contact-form .block form .form-group .form-control {
+#contact-form .block form .form-group .form-control, #service-form .block form .form-group .form-control {
  background: #F6F8FA;
  height: 60px;
  border: 1px solid #EEF2F6;
@@ -3214,12 +3278,12 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
 }
 
-#contact-form .block form .form-group-2 {
+#contact-form .block form .form-group-2, #service-form .block form .form-group-2 {
  padding-bottom: 15px;
  margin: 0px;
 }
 
-#contact-form .block form .form-group-2 textarea {
+#contact-form .block form .form-group-2 textarea, #service-form .block form .form-group-2 textarea {
  background: #F6F8FA;
  height: 135px;
  border: 1px solid #EEF2F6;
@@ -3227,7 +3291,7 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
 }
 
-#contact-form .block button {
+#contact-form .block button, #service-form .block button {
  width: 100%;
  height: 60px;
  background: #47424C;
@@ -3676,7 +3740,7 @@ footer .footer-manu ul li a:hover {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!*********************************!*\
   !*** multi ./pages/services.js ***!
   \*********************************/
