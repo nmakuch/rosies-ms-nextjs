@@ -24,7 +24,7 @@ class CheckBox extends React.Component {
 class Services extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { optionsChecked: [] };
+    this.state = { optionsChecked: [ 0 ] };
   }
 
   changeEvent(event) {
@@ -32,7 +32,7 @@ class Services extends React.Component {
     let selectedValue = event.target.value;
 
     if (event.target.checked === true) {
-      checkedArray.push(selectedValue);
+      checkedArray.push(parseInt(selectedValue));
       this.setState({
         optionsChecked: checkedArray
       });
@@ -41,18 +41,19 @@ class Services extends React.Component {
       checkedArray.splice(valueIndex, 1);
 
       this.setState({
-        optionsChecked: checkedArray
+        optionsChecked: checkedArray,
       });
     }
   }
   render() {
-    
-    let checkBoxArray = ['lorem','ipsum','dolor'];
+    let checkBoxArray = [1,2,3];
        
-    let outputCheckboxes = checkBoxArray.map(function(string, i){
-      return (<div><CheckBox value={string} id={'string_' + i} onChange={this.changeEvent.bind(this)} /><label htmlFor={'string_' + i}>{string}</label></div>)
+    let outputCheckboxes = checkBoxArray.map(function(number, i){
+      return (<div><CheckBox value={1} id={'string_' + i} onChange={this.changeEvent.bind(this)} /><label htmlFor={'string_' + i}>{number}</label></div>)
     }, this);
 
+    let sum = this.state.optionsChecked.reduce((a, b) => a + b, 0)
+    
     return (
       <Layout>
         <GlobalHeader
@@ -84,6 +85,7 @@ class Services extends React.Component {
               <div>
                 <div>{outputCheckboxes}</div>
                 <div>{JSON.stringify(this.state.optionsChecked)}</div>
+                <div>{sum}</div>
               </div>
             </div>
           </div>

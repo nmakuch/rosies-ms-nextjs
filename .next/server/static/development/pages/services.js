@@ -589,6 +589,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "core
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/parse-int.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/parse-int */ "core-js/library/fn/parse-int");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/promise.js":
 /*!****************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/promise.js ***!
@@ -2266,20 +2277,23 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
-/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
-/* harmony import */ var _components_CheckBox__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/CheckBox */ "./components/CheckBox.js");
-/* harmony import */ var _components_CheckBox__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_CheckBox__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
+/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
+/* harmony import */ var _components_CheckBox__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/CheckBox */ "./components/CheckBox.js");
+/* harmony import */ var _components_CheckBox__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_CheckBox__WEBPACK_IMPORTED_MODULE_8__);
 
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 
 /** @jsx jsx */
@@ -2290,9 +2304,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-class CheckBox extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+class CheckBox extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   render() {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("input", {
       type: "checkbox",
       id: this.props.id,
       value: this.props.value,
@@ -2302,11 +2316,11 @@ class CheckBox extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
 
 }
 
-class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   constructor(props) {
     super(props);
     this.state = {
-      optionsChecked: []
+      optionsChecked: [0]
     };
   }
 
@@ -2315,7 +2329,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     let selectedValue = event.target.value;
 
     if (event.target.checked === true) {
-      checkedArray.push(selectedValue);
+      checkedArray.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue));
       this.setState({
         optionsChecked: checkedArray
       });
@@ -2329,22 +2343,23 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   }
 
   render() {
-    let checkBoxArray = ['lorem', 'ipsum', 'dolor'];
-    let outputCheckboxes = checkBoxArray.map(function (string, i) {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(CheckBox, {
-        value: string,
+    let checkBoxArray = [1, 2, 3];
+    let outputCheckboxes = checkBoxArray.map(function (number, i) {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(CheckBox, {
+        value: 1,
         id: 'string_' + i,
         onChange: this.changeEvent.bind(this)
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", {
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("label", {
         htmlFor: 'string_' + i
-      }, string));
+      }, number));
     }, this);
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    let sum = this.state.optionsChecked.reduce((a, b) => a + b, 0);
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_6__["default"], {
       globalHeaderTitle: "Services / Booking",
       globalHeaderSubTitle: "View a list of our services or book an appointment",
       globalHeaderImage: "../img/services-bg.jpg"
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("section", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("section", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_3__["css"]`
             padding-top: 100px !important;
             padding-bottom: 100px !important;
             h2 {
@@ -2361,11 +2376,11 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
             }
           `,
       id: "contact-form"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
       className: "container"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
       className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, outputCheckboxes), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(this.state.optionsChecked)))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, outputCheckboxes), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(this.state.optionsChecked)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, sum))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_7__["default"], {
       callTitle: "You're one step away from a clean and happy home!",
       callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
       callLinkUrl: "/services",
@@ -3757,6 +3772,17 @@ module.exports = require("core-js/library/fn/object/get-own-property-descriptor"
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/keys");
+
+/***/ }),
+
+/***/ "core-js/library/fn/parse-int":
+/*!***********************************************!*\
+  !*** external "core-js/library/fn/parse-int" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/parse-int");
 
 /***/ }),
 
