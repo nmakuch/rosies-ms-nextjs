@@ -669,7 +669,7 @@ function (_Component) {
         className: "nav-item"
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
         href: "/services",
-        as: "/service"
+        as: "/services"
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("a", null, "Services/Booking"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", {
         className: "nav-item"
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
@@ -23239,7 +23239,7 @@ var appStyles = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templ
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!***********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fnickmakuch%2FDocuments%2FCode%2Frosies-ms-nextjs%2Fpages%2Findex.js ***!
   \***********************************************************************************************************************************************/
@@ -23262,5 +23262,5 @@ module.exports = dll_ea92a4d9664833a26066;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

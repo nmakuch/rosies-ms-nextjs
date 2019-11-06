@@ -43,18 +43,28 @@ app.prepare().then(() => {
       from: `${req.body.email}`,
       to: 'makuch.nick@gmail.com',
       subject: `Rosies Maid Service: new contact form submission`,
-      text: `${req.body.message}`,
       replyTo: `${req.body.email}`,
-      html: `<a href="#">${req.body.subject}</a>`,
+      html: `
+      <h1>New contact form submission on Rosie's Maid Service</h1>
+      <table class="tg">
+      <tr>
+        <th><h3>Name</h3></th>
+        <th>${req.body.name}</th>
+      </tr>
+      <tr>
+        <td> <h3>Email</h3></td>
+        <td>${req.body.email}</td>
+      </tr>
+      <tr>
+        <td> <h3>Subject</h3></td>
+        <td>${req.body.subject}</td>
+      </tr>
+      <tr>
+        <td> <h3>Message</h3></td>
+        <td>${req.body.message}</td>
+      </tr>
+    </table>`,
     }
-
-    console.log(req.body.email)
-    console.log(req.body.name)
-    console.log(req.body.message)
-    console.log(req.body.subject)
-
-    console.log(mailOptions)
-
 
     transporter.sendMail(mailOptions, function(err, res) {
       if (err) {
@@ -63,6 +73,8 @@ app.prepare().then(() => {
         console.log('here is the res: ', res)
       }
     })
+
+    res.redirect('/')
   });
 
   server.all("*", (req, res) => {

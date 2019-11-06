@@ -84,7 +84,7 @@ class Nav extends Component {
               </li>
 
               <li className="nav-item">
-                <Link href="/services" as="/service">
+                <Link href="/services" as="/services">
                   <a>Services/Booking</a>
                 </Link>
               </li>
