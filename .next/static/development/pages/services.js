@@ -13628,7 +13628,7 @@ var appStyles = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templ
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fservices&absolutePagePath=%2FUsers%2Fnickmakuch%2FDocuments%2FCode%2Frosies-ms-nextjs%2Fpages%2Fservices.js ***!
   \**********************************************************************************************************************************************************/
@@ -13651,5 +13651,5 @@ module.exports = dll_ea92a4d9664833a26066;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=services.js.map
