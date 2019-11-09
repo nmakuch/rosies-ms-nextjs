@@ -2,6 +2,7 @@
 /** @jsx jsx */
 
 import { jsx, css } from "@emotion/core";
+import { theme } from "../styles/styles";
 import Link from "next/link";
 import Layout from "../components/Layout";
 import GlobalHeader from "../components/GlobalHeader";
@@ -135,10 +136,39 @@ class Services extends React.Component {
         />
         <section
           css={css`
-            padding-top: 100px !important;
+            margin-top: 75px;
+            p {
+              margin-bottom: 0;
+            }
+
+            h2 {
+              font-weight: 600;
+              margin-bottom: 25px;
+            }
+          `}
+        >
+          <div className="container">
+            <div className="col-md-8 offset-md-2 col-sm-12">
+              <div className="row">
+                <h2>We offer a variety of cleaning options</h2>
+                <p>
+                  We offer the most customizable plans
+                  that let you choose exactly what you want. Whether you want
+                  your entire home deep cleaned by one of our professional
+                  staff, or simply want some help with the dreaded kitchen &
+                  bathroom, we have you covered. Choose from our pre-structured
+                  plans that cover all the standard items, or select our hourly
+                  plan to have complete control of how the time is spent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          css={css`
+            padding-top: 75px !important;
             padding-bottom: 100px !important;
             h2 {
-              text-transform: uppercase;
               font-weight: 600;
             }
 
@@ -151,7 +181,7 @@ class Services extends React.Component {
             }
 
             .form-group {
-              padding: 15px !important;
+              padding: 0px !important;
             }
           `}
           id="service-form"
@@ -161,6 +191,7 @@ class Services extends React.Component {
               <div className="container">
                 <div className="col-md-8 offset-md-2 col-sm-12">
                   <div className="row">
+                    <h2>Add Ons:</h2>
                     <div className="form-group">
                       <div>{outputCheckboxesAddOns1}</div>
                       <div>sum of this section: ${sumOptionsAddOns1}.00</div>

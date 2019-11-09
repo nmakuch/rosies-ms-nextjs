@@ -28,7 +28,6 @@ class Wrapper extends React.Component {
                       font-weight: 600;
                       margin-top: 25px;
                       border: 3px solid #333;
-                      text-transform: uppercase;
                       border-radius: 0;
                       -webkit-transition: all 0.4s ease;
                       transition: all 0.4s ease;

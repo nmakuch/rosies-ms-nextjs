@@ -1,12 +1,20 @@
 const next = require("next");
-const nodemailer = require("nodemailer");
 const express = require("express");
 const bodyParser = require("body-parser");
+
+const nodemailer = require("nodemailer");
+const nodemailerSendgrid = require("nodemailer-sendgrid");
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
+
+const transport = nodemailer.createTransport(
+  nodemailerSendgrid({
+    apiKey: process.env.SENDGRID_API_KEY
+  })
+);
 
 app.prepare().then(() => {
   const server = express();
@@ -23,38 +31,38 @@ app.prepare().then(() => {
   });
 
   server.post("/services", (req, res) => {
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: 'makuch.nick@gmail.com',
-        pass: process.env.GMAIL_USER_PASSWORD
-      }
-    })
+    transport
+      .sendMail({
+        from: "service@page.com",
+        to: "Nick Makuch <makuch.nick@gmail.com>",
+        subject: `Rosies Maid Service: New Booking`,
+        html: `
+        <h1>New contact form submission on Rosie's Maid Service</h1>
+        <table class="tg">
+        <tr>
+          <th><h3>Grand Total:</h3></th>
+          <th>${req.body.grandTotal}</th>
+        </tr>
+      </table>`
+      })
+      .then(([res]) => {
+        console.log(
+          "Message delivered with code %s %s",
+          res.statusCode,
+          res.statusMessage
+        );
+      })
+      .catch(err => {
+        console.log("Errors occurred, failed to deliver message");
 
-    const mailOptions = {
-      from: 'service@page.com',
-      to: 'makuch.nick@gmail.com',
-      subject: `Rosies Maid Service: New Booking`,
-      replyTo: `no one`,
-      html: `
-      <h1>New contact form submission on Rosie's Maid Service</h1>
-      <table class="tg">
-      <tr>
-        <th><h3>Grand Total:</h3></th>
-        <th>${req.body.grandTotal}</th>
-      </tr>
-    </table>`,
-    }
-
-    transporter.sendMail(mailOptions, function(err, res) {
-      if (err) {
-        console.error('there was an error: ', err);
-      } else {
-        console.log('here is the res: ', res)
-      }
-    })
-
-    console.log(req.body.grandTotal);
+        if (err.response && err.response.body && err.response.body.errors) {
+          err.response.body.errors.forEach(error =>
+            console.log("%s: %s", error.field, error.message)
+          );
+        } else {
+          console.log(err);
+        }
+      });
 
     res.redirect("/");
   });
@@ -68,48 +76,51 @@ app.prepare().then(() => {
   });
 
   server.post("/contact", (req, res) => {
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: "makuch.nick@gmail.com",
-        pass: process.env.GMAIL_USER_PASSWORD
-      }
-    });
+    transport
+      .sendMail({
+        from: `${req.body.email}`,
+        to: "Nick Makuch <makuch.nick@gmail.com>",
+        subject: `Rosies Maid Service: new contact form submission`,
+        replyTo: `${req.body.email}`,
+        html: `
+        <h1>New contact form submission on Rosie's Maid Service</h1>
+        <table class="tg">
+        <tr>
+          <th><h3>Name</h3></th>
+          <th>${req.body.name}</th>
+        </tr>
+        <tr>
+          <td> <h3>Email</h3></td>
+          <td>${req.body.email}</td>
+        </tr>
+        <tr>
+          <td> <h3>Subject</h3></td>
+          <td>${req.body.subject}</td>
+        </tr>
+        <tr>
+          <td> <h3>Message</h3></td>
+          <td>${req.body.message}</td>
+        </tr>
+      </table>`
+      })
+      .then(([res]) => {
+        console.log(
+          "Message delivered with code %s %s",
+          res.statusCode,
+          res.statusMessage
+        );
+      })
+      .catch(err => {
+        console.log("Errors occurred, failed to deliver message");
 
-    const mailOptions = {
-      from: `${req.body.email}`,
-      to: "makuch.nick@gmail.com",
-      subject: `Rosies Maid Service: new contact form submission`,
-      replyTo: `${req.body.email}`,
-      html: `
-      <h1>New contact form submission on Rosie's Maid Service</h1>
-      <table class="tg">
-      <tr>
-        <th><h3>Name</h3></th>
-        <th>${req.body.name}</th>
-      </tr>
-      <tr>
-        <td> <h3>Email</h3></td>
-        <td>${req.body.email}</td>
-      </tr>
-      <tr>
-        <td> <h3>Subject</h3></td>
-        <td>${req.body.subject}</td>
-      </tr>
-      <tr>
-        <td> <h3>Message</h3></td>
-        <td>${req.body.message}</td>
-      </tr>
-    </table>`
-    };
-
-    transporter.sendMail(mailOptions, function(err, res) {
-      if (err) {
-        console.error("there was an error: ", err);
-      } else {
-        console.log("here is the res: ", res);
-      }
-    });
+        if (err.response && err.response.body && err.response.body.errors) {
+          err.response.body.errors.forEach(error =>
+            console.log("%s: %s", error.field, error.message)
+          );
+        } else {
+          console.log(err);
+        }
+      });
 
     res.redirect("/");
   });

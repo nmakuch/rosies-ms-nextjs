@@ -96,7 +96,6 @@ a:active {
 }
 
 .section-title h2 {
- text-transform: uppercase;
  font-size: 36px;
  font-weight: 600;
  margin-bottom: 15px;
@@ -116,7 +115,6 @@ a:active {
  font-size: 14px;
  letter-spacing: 1px;
  padding: 14px 35px;
- text-transform: uppercase;
  border-radius: 0;
  -webkit-transition: all 0.2s ease;
  transition: all 0.2s ease;
@@ -299,7 +297,6 @@ font header .navbar-default .navbar-nav li a:hover {
   border: 3px solid #333;
   background: transparent;
   font-size: 16px;
-  text-transform: uppercase;
   font-weight: 600;
 
   -webkit-transition: all 0.4s ease-in-out;
@@ -671,7 +668,6 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #portfolio-work .block .portfolio-contant ul li a h2 {
  font-size: 22px;
- text-transform: uppercase;
  letter-spacing: 1px;
 }
 

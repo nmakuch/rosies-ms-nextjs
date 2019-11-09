@@ -12,7 +12,6 @@ class ContactForm extends React.Component {
             padding-top: 100px !important;
             padding-bottom: 100px !important;
             h2 {
-              text-transform: uppercase;
               font-weight: 600;
             }
 
@@ -30,7 +29,7 @@ class ContactForm extends React.Component {
             <div className="row">
               <div className="col-md-8 offset-md-2 col-sm-12">
                 <div className="block">
-                  <h2>FEEL FREE TO EMAIL OR CALL AT ANY TIME</h2>
+                  <h2>Feel free to email or call at any time</h2>
                   <p
                     css={css`
                       font-size: 16px;
@@ -57,7 +56,7 @@ class ContactForm extends React.Component {
                     <strong>Phone number:</strong> 1 (234) 567-8910
                   </p>
 
-                  <h2>OR SUMBIT A QUICK MESSAGE</h2>
+                  <h2>Or submit a quick message</h2>
                   <section
                     css={css`
                       padding-top: 0 !important;

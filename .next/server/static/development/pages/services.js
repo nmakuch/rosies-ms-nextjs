@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2283,13 +2283,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
-/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
-/* harmony import */ var _components_CheckBox__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/CheckBox */ "./components/CheckBox.js");
-/* harmony import */ var _components_CheckBox__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_CheckBox__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/styles */ "./styles/styles.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
+/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
+/* harmony import */ var _components_CheckBox__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/CheckBox */ "./components/CheckBox.js");
+/* harmony import */ var _components_CheckBox__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_CheckBox__WEBPACK_IMPORTED_MODULE_9__);
 
 
 
@@ -2297,6 +2298,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 
 /** @jsx jsx */
+
 
 
 
@@ -2390,16 +2392,33 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     grandTotalArr.push(sumOptionsAddOns1);
     grandTotalArr.push(sumOptionsAddOns2);
     let grandTotalSum = grandTotalArr.reduce((a, b) => a + b, 0);
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_6__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_7__["default"], {
       globalHeaderTitle: "Services / Booking",
       globalHeaderSubTitle: "View a list of our services or book an appointment",
       globalHeaderImage: "../img/services-bg.jpg"
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("section", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_3__["css"]`
-            padding-top: 100px !important;
+            margin-top: 75px;
+            p {
+              margin-bottom: 0;
+            }
+
+            h2 {
+              font-weight: 600;
+              margin-bottom: 25px;
+            }
+          `
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+      className: "container"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+      className: "col-md-8 offset-md-2 col-sm-12"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("h2", null, "We offer a variety of cleaning options"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("p", null, "We offer the most customizable plans that let you choose exactly what you want. Whether you want your entire home deep cleaned by one of our professional staff, or simply want some help with the dreaded kitchen & bathroom, we have you covered. Choose from our pre-structured plans that cover all the standard items, or select our hourly plan to have complete control of how the time is spent."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("section", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_3__["css"]`
+            padding-top: 75px !important;
             padding-bottom: 100px !important;
             h2 {
-              text-transform: uppercase;
               font-weight: 600;
             }
 
@@ -2412,7 +2431,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
             }
 
             .form-group {
-              padding: 15px !important;
+              padding: 0px !important;
             }
           `,
       id: "service-form"
@@ -2426,7 +2445,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
       className: "col-md-8 offset-md-2 col-sm-12"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
       className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("h2", null, "Add Ons:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
       className: "form-group"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, outputCheckboxesAddOns1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, "sum of this section: $", sumOptionsAddOns1, ".00"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("br", null), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, "optionsAddOns1 Array:", " ", _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(this.state.optionsAddOns1)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
       className: "row"
@@ -2445,7 +2464,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("button", {
       className: "btn btn-default",
       type: "submit"
-    }, "submit")))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    }, "submit")))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_8__["default"], {
       callTitle: "You're one step away from a clean and happy home!",
       callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
       callLinkUrl: "/services",
@@ -2569,7 +2588,6 @@ a:active {
 }
 
 .section-title h2 {
- text-transform: uppercase;
  font-size: 36px;
  font-weight: 600;
  margin-bottom: 15px;
@@ -2589,7 +2607,6 @@ a:active {
  font-size: 14px;
  letter-spacing: 1px;
  padding: 14px 35px;
- text-transform: uppercase;
  border-radius: 0;
  -webkit-transition: all 0.2s ease;
  transition: all 0.2s ease;
@@ -2772,7 +2789,6 @@ font header .navbar-default .navbar-nav li a:hover {
   border: 3px solid #333;
   background: transparent;
   font-size: 16px;
-  text-transform: uppercase;
   font-weight: 600;
 
   -webkit-transition: all 0.4s ease-in-out;
@@ -3144,7 +3160,6 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #portfolio-work .block .portfolio-contant ul li a h2 {
  font-size: 22px;
- text-transform: uppercase;
  letter-spacing: 1px;
 }
 
@@ -3740,7 +3755,7 @@ footer .footer-manu ul li a:hover {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!*********************************!*\
   !*** multi ./pages/services.js ***!
   \*********************************/
