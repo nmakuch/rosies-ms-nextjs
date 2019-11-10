@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -140,17 +140,6 @@ class CallToAction extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Componen
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (CallToAction);
-
-/***/ }),
-
-/***/ "./components/CheckBox.js":
-/*!********************************!*\
-  !*** ./components/CheckBox.js ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
 
 /***/ }),
 
@@ -509,17 +498,6 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "core-js/library/fn/json/stringify");
 
 /***/ }),
 
@@ -2275,26 +2253,21 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/styles */ "./styles/styles.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
-/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
-/* harmony import */ var _components_CheckBox__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/CheckBox */ "./components/CheckBox.js");
-/* harmony import */ var _components_CheckBox__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_CheckBox__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/styles */ "./styles/styles.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
+/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
 
 
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 
 /** @jsx jsx */
@@ -2305,10 +2278,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
-
-class CheckBox extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
+class CheckBox extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   render() {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("label", null, this.props.label), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("input", {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", null, this.props.label), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
       type: "checkbox",
       id: this.props.id,
       value: this.props.value,
@@ -2318,13 +2290,21 @@ class CheckBox extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
 
 }
 
-class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
+class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   constructor(props) {
     super(props);
     this.state = {
       optionsAddOns1: [],
-      optionsAddOns2: []
+      optionsAddOns2: [],
+      selectBoxValue1: [],
+      radio1: "0"
     };
+  }
+
+  handleChange(event) {
+    this.setState({
+      radio1: event.target.value
+    });
   }
 
   changeEvent1(event) {
@@ -2332,7 +2312,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     let selectedValue1 = event.target.value;
 
     if (event.target.checked === true) {
-      checkedArrayAddOns1.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue1));
+      checkedArrayAddOns1.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(selectedValue1));
       this.setState({
         optionsAddOns1: checkedArrayAddOns1
       });
@@ -2350,7 +2330,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     let selectedValue2 = event.target.value;
 
     if (event.target.checked === true) {
-      checkedArrayAddOns2.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue2));
+      checkedArrayAddOns2.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(selectedValue2));
       this.setState({
         optionsAddOns2: checkedArrayAddOns2
       });
@@ -2370,18 +2350,18 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     let checkBoxArrayLabels2 = ["Basic: kitchen, bathroom, all floors  - 54$ (1.5 hourse)", "Basic Plus: kitchen, bathroom, living areas (including bedroom) - 90$ (2.5 hours)", "Complete: kitchen, bathroom, living areas, plus one big job (oven, fridge, windows*) - 108$ ( 3 hrs)"];
     let grandTotalArr = [];
     let outputCheckboxesAddOns1 = checkBoxArrayAddOns1.map((number, i) => {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("label", {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", {
         htmlFor: "string_" + i
-      }, checkBoxArrayLabels1[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(CheckBox, {
+      }, checkBoxArrayLabels1[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(CheckBox, {
         value: number,
         id: "string_" + i,
         onChange: this.changeEvent1.bind(this)
       }));
     }, this);
     let outputCheckboxesAddOns2 = checkBoxArrayAddOns2.map((number, i) => {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("label", {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", {
         htmlFor: "string_" + i
-      }, checkBoxArrayLabels2[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(CheckBox, {
+      }, checkBoxArrayLabels2[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(CheckBox, {
         value: number,
         id: "string_" + i,
         onChange: this.changeEvent2.bind(this)
@@ -2391,13 +2371,16 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     let sumOptionsAddOns2 = this.state.optionsAddOns2.reduce((a, b) => a + b, 0);
     grandTotalArr.push(sumOptionsAddOns1);
     grandTotalArr.push(sumOptionsAddOns2);
-    let grandTotalSum = grandTotalArr.reduce((a, b) => a + b, 0);
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_6__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_7__["default"], {
+
+    let grandTotalSum = grandTotalArr.reduce((a, b) => a + b, 0) + _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(this.state.radio1);
+
+    console.log(grandTotalSum);
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_6__["default"], {
       globalHeaderTitle: "Services / Booking",
       globalHeaderSubTitle: "View a list of our services or book an appointment",
       globalHeaderImage: "../img/services-bg.jpg"
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("section", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_3__["css"]`
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("section", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
             margin-top: 75px;
             p {
               margin-bottom: 0;
@@ -2408,14 +2391,14 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
               margin-bottom: 25px;
             }
           `
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "container"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "col-md-8 offset-md-2 col-sm-12"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("h2", null, "We offer a variety of cleaning options"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("p", null, "We offer the most customizable plans that let you choose exactly what you want. Whether you want your entire home deep cleaned by one of our professional staff, or simply want some help with the dreaded kitchen & bathroom, we have you covered. Choose from our pre-structured plans that cover all the standard items, or select our hourly plan to have complete control of how the time is spent."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("section", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_3__["css"]`
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "We offer a variety of cleaning options"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", null, "We offer the most customizable plans that let you choose exactly what you want. Whether you want your entire home deep cleaned by one of our professional staff, or simply want some help with the dreaded kitchen & bathroom, we have you covered. Choose from our pre-structured plans that cover all the standard items, or select our hourly plan to have complete control of how the time is spent."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("section", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
             padding-top: 75px !important;
             padding-bottom: 100px !important;
             h2 {
@@ -2435,36 +2418,77 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
             }
           `,
       id: "service-form"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "block"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("form", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("form", {
       method: "post"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "container"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "col-md-8 offset-md-2 col-sm-12"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("h2", null, "Add Ons:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
-      className: "form-group"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, outputCheckboxesAddOns1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, "sum of this section: $", sumOptionsAddOns1, ".00"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("br", null), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, "optionsAddOns1 Array:", " ", _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(this.state.optionsAddOns1)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "Choose your plan:")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                        padding: 0 5px !important;
+                      `,
+      className: "col-md-12 col-sm-12"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "form-group"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, outputCheckboxesAddOns2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, "sum of this section: $", sumOptionsAddOns2, ".00"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("br", null), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", null, "optionsAddOns1 Array:", " ", _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(this.state.optionsAddOns2)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", null, "1) By the hour - Rate: $35/hr"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("ul", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+      type: "radio",
+      value: 52.5,
+      checked: this.state.radio1 === "52.5",
+      onChange: this.handleChange.bind(this)
+    }), "1.5 hours ($52.00)")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+      type: "radio",
+      value: 70,
+      checked: this.state.radio1 === "70",
+      onChange: this.handleChange.bind(this)
+    }), "2 hours ($70.00)")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+      type: "radio",
+      value: 87,
+      checked: this.state.radio1 === "87",
+      onChange: this.handleChange.bind(this)
+    }), "2.5 hours ($87.00)")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+      type: "radio",
+      value: 105,
+      checked: this.state.radio1 === "105",
+      onChange: this.handleChange.bind(this)
+    }), "3 hours ($105.00)")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+      type: "radio",
+      value: 122,
+      checked: this.state.radio1 === "122",
+      onChange: this.handleChange.bind(this)
+    }), "3.5 hours ($122.00)")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+      type: "radio",
+      value: 140,
+      checked: this.state.radio1 === "140",
+      onChange: this.handleChange.bind(this)
+    }), "4 hours ($140.00)")))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "Add Ons:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "form-group"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("input", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, outputCheckboxesAddOns1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      className: "form-group"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, outputCheckboxesAddOns2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      className: "form-group"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
       name: "grandTotal",
       id: "grandTotal",
       type: "text",
       className: "form-control",
-      value: `Grand Total: $${grandTotalSum}.00`
-    }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])("button", {
+      value: `Grand Total: ${grandTotalSum}`
+    }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("button", {
       className: "btn btn-default",
       type: "submit"
-    }, "submit")))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    }, "submit")))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_7__["default"], {
       callTitle: "You're one step away from a clean and happy home!",
       callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
       callLinkUrl: "/services",
@@ -3755,7 +3779,7 @@ footer .footer-manu ul li a:hover {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*********************************!*\
   !*** multi ./pages/services.js ***!
   \*********************************/
@@ -3775,17 +3799,6 @@ module.exports = __webpack_require__(/*! /Users/nickmakuch/Documents/Code/rosies
 /***/ (function(module, exports) {
 
 module.exports = require("@emotion/core");
-
-/***/ }),
-
-/***/ "core-js/library/fn/json/stringify":
-/*!****************************************************!*\
-  !*** external "core-js/library/fn/json/stringify" ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/json/stringify");
 
 /***/ }),
 

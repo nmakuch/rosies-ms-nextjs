@@ -31,6 +31,7 @@ app.prepare().then(() => {
   });
 
   server.post("/services", (req, res) => {
+    console.log("SERVER", req.body.serviceSelect1);
     transport
       .sendMail({
         from: "service@page.com",

@@ -7,7 +7,6 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 import GlobalHeader from "../components/GlobalHeader";
 import CallToAction from "../components/CallToAction";
-import Checkbox from "../components/CheckBox";
 
 class CheckBox extends React.Component {
   render() {
@@ -28,7 +27,18 @@ class CheckBox extends React.Component {
 class Services extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { optionsAddOns1: [], optionsAddOns2: [] };
+    this.state = {
+      optionsAddOns1: [],
+      optionsAddOns2: [],
+      selectBoxValue1: [],
+      radio1: "0",
+    };
+  }
+
+  handleChange(event) {
+    this.setState({
+      radio1: event.target.value
+    });
   }
 
   changeEvent1(event) {
@@ -121,11 +131,14 @@ class Services extends React.Component {
       (a, b) => a + b,
       0
     );
-
+    
     grandTotalArr.push(sumOptionsAddOns1);
     grandTotalArr.push(sumOptionsAddOns2);
 
-    let grandTotalSum = grandTotalArr.reduce((a, b) => a + b, 0);
+    let grandTotalSum = grandTotalArr.reduce((a, b) => a + b, 0) + parseInt(this.state.radio1);
+
+    console.log(grandTotalSum);
+
 
     return (
       <Layout>
@@ -152,13 +165,13 @@ class Services extends React.Component {
               <div className="row">
                 <h2>We offer a variety of cleaning options</h2>
                 <p>
-                  We offer the most customizable plans
-                  that let you choose exactly what you want. Whether you want
-                  your entire home deep cleaned by one of our professional
-                  staff, or simply want some help with the dreaded kitchen &
-                  bathroom, we have you covered. Choose from our pre-structured
-                  plans that cover all the standard items, or select our hourly
-                  plan to have complete control of how the time is spent.
+                  We offer the most customizable plans that let you choose
+                  exactly what you want. Whether you want your entire home deep
+                  cleaned by one of our professional staff, or simply want some
+                  help with the dreaded kitchen & bathroom, we have you covered.
+                  Choose from our pre-structured plans that cover all the
+                  standard items, or select our hourly plan to have complete
+                  control of how the time is spent.
                 </p>
               </div>
             </div>
@@ -191,27 +204,105 @@ class Services extends React.Component {
               <div className="container">
                 <div className="col-md-8 offset-md-2 col-sm-12">
                   <div className="row">
+                    <h2>Choose your plan:</h2>
+                  </div>
+                  <div className="row">
+                    <div
+                      css={css`
+                        padding: 0 5px !important;
+                      `}
+                      className="col-md-12 col-sm-12"
+                    >
+                      <div className="form-group">
+                        <label>1) By the hour - Rate: $35/hr</label>
+                        <ul>
+                          <li>
+                            <label>
+                              <input
+                                type="radio"
+                                value={52.5}
+                                checked={this.state.radio1 === "52.5"}
+                                onChange={this.handleChange.bind(this)}
+                              />
+                              1.5 hours ($52.00)
+                            </label>
+                          </li>
+
+                          <li>
+                            <label>
+                              <input
+                                type="radio"
+                                value={70}
+                                checked={this.state.radio1 === "70"}
+                                onChange={this.handleChange.bind(this)}
+                              />
+                              2 hours ($70.00)
+                            </label>
+                          </li>
+
+                          <li>
+                            <label>
+                              <input
+                                type="radio"
+                                value={87}
+                                checked={this.state.radio1 === "87"}
+                                onChange={this.handleChange.bind(this)}
+                              />
+                              2.5 hours ($87.00)
+                            </label>
+                          </li>
+
+                          <li>
+                            <label>
+                              <input
+                                type="radio"
+                                value={105}
+                                checked={this.state.radio1 === "105"}
+                                onChange={this.handleChange.bind(this)}
+                              />
+                              3 hours ($105.00)
+                            </label>
+                          </li>
+
+                          <li>
+                            <label>
+                              <input
+                                type="radio"
+                                value={122}
+                                checked={this.state.radio1 === "122"}
+                                onChange={this.handleChange.bind(this)}
+                              />
+                              3.5 hours ($122.00)
+                            </label>
+                          </li>
+
+                          <li>
+                            <label>
+                              <input
+                                type="radio"
+                                value={140}
+                                checked={this.state.radio1 === "140"}
+                                onChange={this.handleChange.bind(this)}
+                              />
+                              4 hours ($140.00)
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row">
                     <h2>Add Ons:</h2>
                     <div className="form-group">
                       <div>{outputCheckboxesAddOns1}</div>
-                      <div>sum of this section: ${sumOptionsAddOns1}.00</div>
                       <br />
-                      <div>
-                        optionsAddOns1 Array:{" "}
-                        {JSON.stringify(this.state.optionsAddOns1)}
-                      </div>
                     </div>
                   </div>
 
                   <div className="row">
                     <div className="form-group">
                       <div>{outputCheckboxesAddOns2}</div>
-                      <div>sum of this section: ${sumOptionsAddOns2}.00</div>
                       <br />
-                      <div>
-                        optionsAddOns1 Array:{" "}
-                        {JSON.stringify(this.state.optionsAddOns2)}
-                      </div>
                     </div>
                   </div>
                   <div className="row">
@@ -221,7 +312,7 @@ class Services extends React.Component {
                         id="grandTotal"
                         type="text"
                         className="form-control"
-                        value={`Grand Total: $${grandTotalSum}.00`}
+                        value={`Grand Total: ${grandTotalSum}`}
                       />
                     </div>
                   </div>
