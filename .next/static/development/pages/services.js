@@ -743,14 +743,14 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/set-prototype
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/parse-int.js ***!
-  \******************************************************************/
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/parse-float.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/parse-float.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! core-js/library/fn/parse-int */ "./node_modules/core-js/library/fn/parse-int.js");
+module.exports = __webpack_require__(/*! core-js/library/fn/parse-float */ "./node_modules/core-js/library/fn/parse-float.js");
 
 /***/ }),
 
@@ -1053,6 +1053,36 @@ function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
   return Constructor;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
 }
 
 /***/ }),
@@ -3762,15 +3792,15 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/fn/parse-int.js":
-/*!******************************************************!*\
-  !*** ./node_modules/core-js/library/fn/parse-int.js ***!
-  \******************************************************/
+/***/ "./node_modules/core-js/library/fn/parse-float.js":
+/*!********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/parse-float.js ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ../modules/es6.parse-int */ "./node_modules/core-js/library/modules/es6.parse-int.js");
-module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/core-js/library/modules/_core.js").parseInt;
+__webpack_require__(/*! ../modules/es6.parse-float */ "./node_modules/core-js/library/modules/es6.parse-float.js");
+module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/core-js/library/modules/_core.js").parseFloat;
 
 
 /***/ }),
@@ -5643,22 +5673,21 @@ module.exports = function (KEY, exec) {
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/_parse-int.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_parse-int.js ***!
-  \************************************************************/
+/***/ "./node_modules/core-js/library/modules/_parse-float.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_parse-float.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var $parseInt = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js").parseInt;
+var $parseFloat = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js").parseFloat;
 var $trim = __webpack_require__(/*! ./_string-trim */ "./node_modules/core-js/library/modules/_string-trim.js").trim;
-var ws = __webpack_require__(/*! ./_string-ws */ "./node_modules/core-js/library/modules/_string-ws.js");
-var hex = /^[-+]?0[xX]/;
 
-module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? function parseInt(str, radix) {
+module.exports = 1 / $parseFloat(__webpack_require__(/*! ./_string-ws */ "./node_modules/core-js/library/modules/_string-ws.js") + '-0') !== -Infinity ? function parseFloat(str) {
   var string = $trim(String(str), 3);
-  return $parseInt(string, (radix >>> 0) || (hex.test(string) ? 16 : 10));
-} : $parseInt;
+  var result = $parseFloat(string);
+  return result === 0 && string.charAt(0) == '-' ? -0 : result;
+} : $parseFloat;
 
 
 /***/ }),
@@ -6654,17 +6683,17 @@ $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(/*! ./_set-pr
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/es6.parse-int.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.parse-int.js ***!
-  \***************************************************************/
+/***/ "./node_modules/core-js/library/modules/es6.parse-float.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.parse-float.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-var $parseInt = __webpack_require__(/*! ./_parse-int */ "./node_modules/core-js/library/modules/_parse-int.js");
-// 18.2.5 parseInt(string, radix)
-$export($export.G + $export.F * (parseInt != $parseInt), { parseInt: $parseInt });
+var $parseFloat = __webpack_require__(/*! ./_parse-float */ "./node_modules/core-js/library/modules/_parse-float.js");
+// 18.2.4 parseFloat(string)
+$export($export.G + $export.F * (parseFloat != $parseFloat), { parseFloat: $parseFloat });
 
 
 /***/ }),
@@ -13337,22 +13366,23 @@ module.exports = function(module) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
-/* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/styles */ "./styles/styles.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
-/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-float */ "./node_modules/@babel/runtime-corejs2/core-js/parse-float.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
+/* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../styles/styles */ "./styles/styles.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
+/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
 
 
 
@@ -13361,10 +13391,111 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
+
+function _templateObject13() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                          margin-bottom: 30px !important;\n                          span {\n                            font-weight: 400;\n                          }\n                        "]);
+
+  _templateObject13 = function _templateObject13() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject12() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding: 0 15px;\n                    "]);
+
+  _templateObject12 = function _templateObject12() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding: 0 15px;\n                      label {\n                        margin-bottom: 40px;\n                        p {\n                          position: relative;\n                          top: 4px;\n                          left: 50px;\n                        }\n                      }\n                    "]);
+
+  _templateObject11 = function _templateObject11() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding: 0 15px;\n                      label {\n                        margin-bottom: 40px;\n                        p {\n                          position: relative;\n                          top: 4px;\n                          left: 50px;\n                        }\n                      }\n                    "]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                        margin-top: 50px;\n                      "]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding: 0 15px;\n                      label {\n                        margin-bottom: 50px;\n                        p {\n                          position: relative;\n                          top: 4px;\n                          left: 50px;\n                        }\n                      }\n                    "]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                                  height: 135px !important;\n                                "]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                        padding: 0 5px !important;\n                      "]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding: 0 15px;\n                    "]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding: 0 15px;\n                    "]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                        padding: 0 5px !important;\n                      "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n            padding-top: 75px !important;\n            padding-bottom: 100px !important;\n            h2 {\n              font-weight: 600;\n              margin-bottom: 50px;\n            }\n\n            h3 {\n              font-size: 20px;\n              font-weight: 600;\n              margin-bottom: 35px;\n            }\n\n            h4 {\n              font-size: 18px;\n              font-weight: 600;\n              margin-bottom: 25px;\n            }\n\n            li {\n              label {\n                margin-bottom: 45px;\n\n                p {\n                  position: relative;\n                  top: 5px;\n                  left: 50px;\n                }\n              }\n            }\n\n            li:first-of-type {\n              margin-top: 25px;\n            }\n\n            li:nth-of-type(6) {\n              margin-bottom: 50px;\n            }\n\n            textarea {\n              margin-bottom: 50px;\n            }\n\n            li:last-of-type {\n              margin-bottom: 50px;\n            }\n\n            .form-group {\n              padding: 0px !important;\n            }\n          "]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -13374,7 +13505,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n            padding-top: 75px !important;\n            padding-bottom: 100px !important;\n            h2 {\n              font-weight: 600;\n            }\n\n            h2:first-of-type {\n              margin-bottom: 25px;\n            }\n\n            h2:last-of-type {\n              margin-bottom: 25px;\n            }\n\n            .form-group {\n              padding: 0px !important;\n            }\n          "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                  padding: 0 15px;\n                "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -13384,7 +13515,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n            margin-top: 75px;\n            p {\n              margin-bottom: 0;\n            }\n\n            h2 {\n              font-weight: 600;\n              margin-bottom: 25px;\n            }\n          "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n            margin-top: 75px;\n\n            p {\n              margin-bottom: 0;\n            }\n\n            h2 {\n              font-weight: 600;\n              margin-bottom: 25px;\n            }\n          "]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -13402,56 +13533,68 @@ function _templateObject() {
 
 
 
+var formatter = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  minimumFractionDigits: 2
+});
 
 var CheckBox =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(CheckBox, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(CheckBox, _React$Component);
 
   function CheckBox() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, CheckBox);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__["default"])(this, CheckBox);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(CheckBox).apply(this, arguments));
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__["default"])(CheckBox).apply(this, arguments));
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(CheckBox, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(CheckBox, [{
     key: "render",
     value: function render() {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", null, this.props.label), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
-        type: "checkbox",
-        id: this.props.id,
-        value: this.props.value,
-        onChange: this.props.onChange
-      }));
+      var _jsx;
+
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(react__WEBPACK_IMPORTED_MODULE_8___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
+        className: "checkbox-label"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", (_jsx = {
+        type: "checkbox"
+      }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(_jsx, "type", "checkbox"), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(_jsx, "id", this.props.id), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(_jsx, "value", this.props.value), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(_jsx, "onChange", this.props.onChange), _jsx)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
+        className: "radio-label"
+      }, this.props.label), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
+        className: "checkbox-custom rectangular"
+      })));
     }
   }]);
 
   return CheckBox;
-}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
 
 var Services =
 /*#__PURE__*/
 function (_React$Component2) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Services, _React$Component2);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(Services, _React$Component2);
 
   function Services(props) {
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Services);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Services);
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Services).call(this, props));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__["default"])(Services).call(this, props));
     _this.state = {
       optionsAddOns1: [],
       optionsAddOns2: [],
+      optionsAddOns3: [],
+      labelsAddOns1: [],
       selectBoxValue1: [],
       radio1: "0"
     };
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Services, [{
-    key: "handleChange",
-    value: function handleChange(event) {
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(Services, [{
+    key: "radioChange",
+    value: function radioChange(event) {
       this.setState({
         radio1: event.target.value
       });
@@ -13460,12 +13603,16 @@ function (_React$Component2) {
     key: "changeEvent1",
     value: function changeEvent1(event) {
       var checkedArrayAddOns1 = this.state.optionsAddOns1;
+      var checkedArrayIds1 = this.state.labelsAddOns1;
+      var selectedId1 = event.target.id;
       var selectedValue1 = event.target.value;
 
       if (event.target.checked === true) {
-        checkedArrayAddOns1.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue1));
+        checkedArrayIds1.push(selectedId1);
+        checkedArrayAddOns1.push(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue1));
         this.setState({
-          optionsAddOns1: checkedArrayAddOns1
+          optionsAddOns1: checkedArrayAddOns1,
+          labelsAddOns1: checkedArrayIds1
         });
       } else {
         var valueIndex1 = checkedArrayAddOns1.indexOf(selectedValue1);
@@ -13482,7 +13629,7 @@ function (_React$Component2) {
       var selectedValue2 = event.target.value;
 
       if (event.target.checked === true) {
-        checkedArrayAddOns2.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue2));
+        checkedArrayAddOns2.push(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue2));
         this.setState({
           optionsAddOns2: checkedArrayAddOns2
         });
@@ -13495,32 +13642,66 @@ function (_React$Component2) {
       }
     }
   }, {
+    key: "changeEvent3",
+    value: function changeEvent3(event) {
+      var checkedArrayAddOns3 = this.state.optionsAddOns3;
+      var selectedValue3 = event.target.value;
+
+      if (event.target.checked === true) {
+        checkedArrayAddOns3.push(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue3));
+        this.setState({
+          optionsAddOns3: checkedArrayAddOns3
+        });
+      } else {
+        var valueIndex3 = checkedArrayAddOns3.indexOf(selectedValue3);
+        checkedArrayAddOns3.splice(valueIndex3, 1);
+        this.setState({
+          optionsAddOns3: checkedArrayAddOns3
+        });
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this2 = this;
 
-      var checkBoxArrayAddOns1 = [54, 23, 108];
-      var checkBoxArrayLabels1 = ["Basic: kitchen, bathroom, all floors  - 54$ (1.5 hourse)", "Basic Plus: kitchen, bathroom, living areas (including bedroom) - 90$ (2.5 hours)", "Complete: kitchen, bathroom, living areas, plus one big job (oven, fridge, windows*) - 108$ ( 3 hrs)"];
-      var checkBoxArrayAddOns2 = [54, 23, 108];
-      var checkBoxArrayLabels2 = ["Basic: kitchen, bathroom, all floors  - 54$ (1.5 hourse)", "Basic Plus: kitchen, bathroom, living areas (including bedroom) - 90$ (2.5 hours)", "Complete: kitchen, bathroom, living areas, plus one big job (oven, fridge, windows*) - 108$ ( 3 hrs)"];
+      var addOnsLabels1 = this.state.labelsAddOns1;
+      var addOnsCost1 = this.state.optionsAddOns1;
+      var checkBoxArrayAddOns1 = [54.0, 90.0, 108.0];
+      var checkBoxArrayLabels1 = ["Basic (1.5 hours): kitchen, bathroom, all floors ($54.00)", "Basic plus (2.5 hours): kitchen, bathroom, living areas including bedroom($90.00)", "Complete (3.0 hours): kitchen, bathroom, living areas, plus one big job ($108.00)"];
+      var checkBoxArrayIds1 = ["Basic (1.5 hours)", "Basic plus (2.5 hours)", "Complete (3.0 hours)"];
+      var checkBoxArrayAddOns2 = [60.0, 100.0, 140.0];
+      var checkBoxArrayLabels2 = ["Basic (1.5 hours): kitchen, bathroom, all floors ($60.00)", "Basic plus (2.5 hours): kitchen, bathroom, living areas including bedroom($100.00)", "Complete (3.0 hours): kitchen, bathroom, living areas, plus one big job ($140.00)"];
+      var checkBoxArrayAddOns3 = [35.0, 20.0, 20.0, 20.0, 15.0, 20.0];
+      var checkBoxArrayLabels3 = ["Deep clean - wall spot cleaning, baseboards, inside of kitchen & bathroom cabinets ($35.00)", "Big task - oven ($20.00)", "Big task - inside fridge ($20.00)", "Big task - windows ($20.00)", "Additional powder room ($15.00)", "Additional bathroom ($20.00)"];
+      var radioValues1 = [52.5, 70.0, 87.5, 105.0, 122.5, 140.0];
+      var radioLabels1 = ["1.5 hour session at $35/hour ($52.50)", "2.0 hour session at $35/hour ($70.00)", "2.5 hour session at $35/hour ($87.50)", "3.0 hour session at $35/hour ($105.00)", "3.5 hour session at $35/hour ($122.50)", "4.0 hour session at $35/hour ($140.00)"];
+      var radioValues2 = [54, 90, 108];
+      var radioLabels2 = ["Basic (1.5 hours at $35/hour): kitchen, bathroom, all floors  ($54.00)", "Basic Plus (2.5 hours at $35/hour): kitchen, bathroom, living areas including bedroom ($90.00)", "Complete (3.0 hours at $35/hour): kitchen, bathroom, living areas plus one big job ($108.00)"];
       var grandTotalArr = [];
       var outputCheckboxesAddOns1 = checkBoxArrayAddOns1.map(function (number, i) {
-        return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", {
-          htmlFor: "string_" + i
-        }, checkBoxArrayLabels1[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(CheckBox, {
+        return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(CheckBox, {
           value: number,
-          id: "string_" + i,
-          onChange: _this2.changeEvent1.bind(_this2)
-        }));
+          id: checkBoxArrayIds1[i],
+          onChange: _this2.changeEvent1.bind(_this2),
+          label: checkBoxArrayLabels1[i]
+        });
       }, this);
       var outputCheckboxesAddOns2 = checkBoxArrayAddOns2.map(function (number, i) {
-        return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", {
-          htmlFor: "string_" + i
-        }, checkBoxArrayLabels2[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(CheckBox, {
+        return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(CheckBox, {
           value: number,
           id: "string_" + i,
-          onChange: _this2.changeEvent2.bind(_this2)
-        }));
+          onChange: _this2.changeEvent2.bind(_this2),
+          label: checkBoxArrayLabels2[i]
+        });
+      }, this);
+      var outputCheckboxesAddOns3 = checkBoxArrayAddOns3.map(function (number, i) {
+        return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(CheckBox, {
+          value: number,
+          id: "string_" + i,
+          onChange: _this2.changeEvent3.bind(_this2),
+          label: checkBoxArrayLabels3[i]
+        });
       }, this);
       var sumOptionsAddOns1 = this.state.optionsAddOns1.reduce(function (a, b) {
         return a + b;
@@ -13528,98 +13709,116 @@ function (_React$Component2) {
       var sumOptionsAddOns2 = this.state.optionsAddOns2.reduce(function (a, b) {
         return a + b;
       }, 0);
+      var sumOptionsAddOns3 = this.state.optionsAddOns3.reduce(function (a, b) {
+        return a + b;
+      }, 0);
       grandTotalArr.push(sumOptionsAddOns1);
       grandTotalArr.push(sumOptionsAddOns2);
-
-      var grandTotalSum = grandTotalArr.reduce(function (a, b) {
+      grandTotalArr.push(sumOptionsAddOns3);
+      var grandTotalSum = formatter.format(grandTotalArr.reduce(function (a, b) {
         return a + b;
-      }, 0) + _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(this.state.radio1);
-
-      console.log(grandTotalSum);
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_11__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      }, 0) + _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1___default()(this.state.radio1));
+      var grandTotalSumHST = formatter.format(grandTotalArr.reduce(function (a, b) {
+        return a + b * 1.13;
+      }, 0) + _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1___default()(this.state.radio1));
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_12__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_13__["default"], {
         globalHeaderTitle: "Services / Booking",
         globalHeaderSubTitle: "View a list of our services or book an appointment",
         globalHeaderImage: "../img/services-bg.jpg"
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("section", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject())
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("section", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"])(_templateObject())
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
         className: "container"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        className: "col-md-8 offset-md-2 col-sm-12"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+        className: "col-md-10 offset-md-1 col-sm-12"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"])(_templateObject2()),
         className: "row"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", null, "We offer a variety of cleaning options"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", null, "We offer the most customizable plans that let you choose exactly what you want. Whether you want your entire home deep cleaned by one of our professional staff, or simply want some help with the dreaded kitchen & bathroom, we have you covered. Choose from our pre-structured plans that cover all the standard items, or select our hourly plan to have complete control of how the time is spent."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("section", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject2()),
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", null, "We offer a variety of cleaning options"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", null, "We offer the most customizable plans that let you choose exactly what you want. Whether you want your entire home deep cleaned by one of our professional staff, or simply want some help with the dreaded kitchen & bathroom, we have you covered. Choose from our pre-structured plans that cover all the standard items, or select our hourly plan to have complete control of how the time is spent."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("section", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"])(_templateObject3()),
         id: "service-form"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
         className: "block"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("form", {
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("form", {
         method: "post"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
         className: "container"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        className: "col-md-8 offset-md-2 col-sm-12"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+        className: "col-md-10 offset-md-1 col-sm-12"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"])(_templateObject4()),
         className: "row"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", null, "Choose your plan:")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", null, "Select one of the following plans:")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"])(_templateObject5()),
         className: "row"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject3()),
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"])(_templateObject6()),
         className: "col-md-12 col-sm-12"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
         className: "form-group"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", null, "1) By the hour - Rate: $35/hr"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("ul", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
-        type: "radio",
-        value: 52.5,
-        checked: this.state.radio1 === "52.5",
-        onChange: this.handleChange.bind(this)
-      }), "1.5 hours ($52.00)")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
-        type: "radio",
-        value: 70,
-        checked: this.state.radio1 === "70",
-        onChange: this.handleChange.bind(this)
-      }), "2 hours ($70.00)")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
-        type: "radio",
-        value: 87,
-        checked: this.state.radio1 === "87",
-        onChange: this.handleChange.bind(this)
-      }), "2.5 hours ($87.00)")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
-        type: "radio",
-        value: 105,
-        checked: this.state.radio1 === "105",
-        onChange: this.handleChange.bind(this)
-      }), "3 hours ($105.00)")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
-        type: "radio",
-        value: 122,
-        checked: this.state.radio1 === "122",
-        onChange: this.handleChange.bind(this)
-      }), "3.5 hours ($122.00)")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
-        type: "radio",
-        value: 140,
-        checked: this.state.radio1 === "140",
-        onChange: this.handleChange.bind(this)
-      }), "4 hours ($140.00)")))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        className: "row"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", null, "Add Ons:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        className: "form-group"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", null, outputCheckboxesAddOns1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        className: "row"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        className: "form-group"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", null, outputCheckboxesAddOns2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        className: "row"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        className: "form-group"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
-        name: "grandTotal",
-        id: "grandTotal",
-        type: "text",
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", null, "1) Cleaning by the hour (Rate: $35/hr)"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", null, radioValues1.map(function (radioValue, i) {
+        return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
+          className: "checkbox-label"
+        }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
+          type: "radio",
+          value: radioValue,
+          checked: _this2.state.radio1 === "".concat(radioValue),
+          onChange: _this2.radioChange.bind(_this2)
+        }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
+          className: "radio-label"
+        }, radioLabels1[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
+          className: "checkbox-custom circular"
+        })));
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+        className: "form-group-2"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", null, "Please leave instructions for your cleaner:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("textarea", {
+        name: "hourlyMessage",
+        id: "hourlyMessage",
         className: "form-control",
-        value: "Grand Total: ".concat(grandTotalSum)
-      }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("button", {
+        rows: "3",
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"])(_templateObject7()),
+        placeholder: "Your message"
+      }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", null, "2) Pre-structured cleaning package (Rate: $35/hour)")), radioValues2.map(function (radioValue, i) {
+        return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
+          className: "checkbox-label"
+        }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
+          type: "radio",
+          value: radioValue,
+          checked: _this2.state.radio1 === "".concat(radioValue),
+          onChange: _this2.radioChange.bind(_this2)
+        }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
+          className: "radio-label"
+        }, radioLabels2[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
+          className: "checkbox-custom circular"
+        })));
+      }))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"])(_templateObject8()),
+        className: "row"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"])(_templateObject9())
+      }, "These add-ons can be added to your package:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", null, "1) Bachelor or 1 Bedroom up to 600 sq/ft (1 bathroom):"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+        className: "form-group"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", null, outputCheckboxesAddOns1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"])(_templateObject10()),
+        className: "row"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", null, "2) Bedroom up to 1000 sq/ft (1 bathroom):"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+        className: "form-group"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", null, outputCheckboxesAddOns2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"])(_templateObject11()),
+        className: "row"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", null, "3) Other package add ons:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+        className: "form-group"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", null, outputCheckboxesAddOns3), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"])(_templateObject12()),
+        className: "row"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"])(_templateObject13())
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", null, "Grand total: "), " ", grandTotalSum), addOnsLabels1.map(function (addOnLabel1, i) {
+        return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", null, addOnLabel1, " ", formatter.format(addOnsCost1[i]));
+      }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("button", {
         className: "btn btn-default",
         type: "submit"
-      }, "submit")))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "submit")))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_14__["default"], {
         callTitle: "You're one step away from a clean and happy home!",
         callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
         callLinkUrl: "/services",
@@ -13630,7 +13829,7 @@ function (_React$Component2) {
   }]);
 
   return Services;
-}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Services);
 
@@ -13651,7 +13850,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.italic {\n font-style: italic;\n}\n\n.bold {\n font-weight: bold;\n}\n\n.center-text {\n text-align: center;\n}\n\n.post-area {\n padding: 40px;\n width: 100%;\n min-height: 150px;\n background-color: white;\n border-bottom: 1px dotted #ddd;\n}\n\n.post-area a:link,\n.post-area a:visited {\n font-size: 30px;\n color: #333;\n}\n\n.post-area a:hover {\n color: #0D0017;\n}\n\n.lang-list {\n display: inline-block;\n margin-top: 15px;\n}\n\n.lang-list a {\n color: #0D0017;\n font-weight: bold;\n}\n\nbody {\n font-family: 'Open Sans', sans-serif;\n -webkit-font-smoothing: antialiased;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n font-family: 'Roboto', sans-serif;\n}\n\nh2 {\n font-size: 30px;\n font-weight: 400;\n}\n\nh3 {\n font-size: 28px;\n font-weight: 300;\n}\n\np {\n font-size: 16px;\n line-height: 28px;\n}\n\nul {\n padding: 0;\n margin: 0;\n list-style: none;\n}\n\n.fz-20{\n font-size: 20px;\n}\n\na,\na:active,\na:focus,\na:active {\n text-decoration: none !important;\n}\n\n.section {\n padding: 100px 0;\n}\n\n.section-title {\n margin-bottom: 70px;\n}\n\n.section-title h2 {\n font-size: 36px;\n font-weight: 600;\n margin-bottom: 15px;\n}\n\n.section-title p {\n color: #666;\n font-size: 16px;\n}\n\n.btn-main,\n.btn-transparent,\n.btn-small {\n background: #655E7A;\n color: #fff;\n display: inline-block;\n font-size: 14px;\n letter-spacing: 1px;\n padding: 14px 35px;\n border-radius: 0;\n -webkit-transition: all 0.2s ease;\n transition: all 0.2s ease;\n}\n\n.btn-main:hover,\n.btn-transparent:hover,\n.btn-small:hover {\n background: white;\n color: #353240;\n}\n\n.btn-solid-border {\n border: 3px solid #fff;\n background: transparent;\n color: #fff;\n font-size: 16px;\n font-weight: 600;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n.btn-solid-border:hover {\n border: 3px solid #fff;\n background: #fff;\n text-shadow: none;\n\n}\n\nheader {\n background: #fff;\n padding: 20px 0;\n}\n\nheader .navbar {\n margin-bottom: 0px;\n border: 0px;\n}\n\n.navbar-right {\n  color: red;\n }\n\nheader .navbar-brand {\n padding-top: 5px;\n}\n\nheader .navbar-default {\n background: none;\n border: 0px;\n}\n\nheader .navbar-default .navbar-nav {\n padding-top: 10px;\n}\n\ncustom-nav ul {\n  display: flex;\n  color: red;\n}\n\nheader .navbar-default .navbar-nav li a {\n color: #333333;\n padding: 10px 26px;\n font-size: 15px;\n}\n\nfont header .navbar-default .navbar-nav li a:hover {\n color: #000;\n}\n\n#slider {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n background-position: 10% 0%;\n padding: 150px 0 150px 0;\n position: relative;\n}\n\n#slider:before {\n content: \"\";\n position: absolute;\n left: 0;\n top: 0;\n bottom: 0;\n right: 0;\n width: 100%;\n height: 100%;\n background: #1d192c;\n opacity: 0.7;\n}\n\n#slider .block {\n color: #E3E3E4;\n}\n\n#slider .block h1 {\n font-family: 'Roboto', sans-serif;\n font-weight: 700;\n font-size: 45px;\n line-height: 60px;\n letter-spacing: 5px;\n padding-bottom: 45px;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#slider .block p {\n font-size: 23px;\n line-height: 40px;\n font-family: 'Roboto', sans-serif;\n font-weight: 400;\n letter-spacing: 3px;\n margin-bottom: 100px;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#intro {\n padding: 100px 0;\n}\n\n#intro .block h2 {\n line-height: 27px;\n margin: 0;\n}\n\n#intro .block p {\n color: #333;\n}\n\n#intro .block img {\n padding-left: 40px;\n width: 100%;\n}\n\n#intro .section-title {\n margin-bottom: 0px;\n}\n\n#intro .section-title p {\n padding-top: 20px;\n}\n\n#service {\n text-align: center;\n padding: 90px 0;\n}\n\n.service-home {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  padding: 70px 0px;\n  position: relative;\n  text-align: center;\n}\n\n.service-home:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  width: 100%;\n  height: 100%;\n  background: #1d192c;\n  z-index: 0;\n  opacity: 0.7;\n}\n\n#service .service-item {\n padding-right: 15px;\n margin-bottom: 100px;\n}\n\n#service .service-item a {\n  color: #333;\n  font-size: 16px;\n  padding: 17px 35px;\n  border: 3px solid #333;\n  background: transparent;\n  font-size: 16px;\n  font-weight: 600;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n #service .service-item a:hover {\n  color: #fff;\n  border: 3px solid #333;\n  background: #333;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n#service .service-item img {\n width: 300px;\n}\n\n#service .service-item h4 {\n padding-top: 25px;\n font-weight: 800;\n margin: 0;\n color: #333;\n font-size: 26px;\n}\n\n#service .service-item p {\n color: #333;\n padding-top: 10px;\n margin: 0;\n font-size: 16px;\n line-height: 1.8;\n}\n\n#call-to-action {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n padding: 70px 0px;\n position: relative;\n text-align: center;\n color: #fff;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#call-to-action:before {\n content: \"\";\n position: absolute;\n left: 0;\n right: 0;\n top: 0;\n bottom: 0;\n width: 100%;\n height: 100%;\n background: #1d192c;\n opacity: 0.7;\n}\n\n#call-to-action h2 {\n padding-bottom: 20px;\n line-height: 33px;\n margin: 0;\n font-size: 30px;\n}\n\n#call-to-action p {\n font-size: 16px;\n line-height: 1.6;\n margin-bottom: 50px;\n}\n\n#call-to-action .btn-call-to-action {\n padding: 15px 35px;\n border: none;\n background-color: #fff;\n font-size: 15px;\n color: #333333;\n margin-top: 30px;\n}\n\n#feature {\n background-position: 50% 94px;\n width: 100%;\n display: block;\n position: relative;\n overflow: visible;\n background-attachment: fixed;\n background-repeat: no-repeat;\n background-position: center center;\n background-color: #fff;\n -webkit-background-size: cover;\n -moz-background-size: cover;\n -o-background-size: cover;\n background-size: cover;\n -webkit-box-sizing: border-box;\n -moz-box-sizing: border-box;\n box-sizing: border-box;\n -webkit-backface-visibility: hidden;\n backface-visibility: hidden;\n padding: 100px 0;\n}\n\n#feature h2 {\n font-size: 28px;\n font-weight: 600;\n margin-bottom: 30px;\n}\n\n#feature p {\n color: #8d8f92;\n margin-bottom: 20px;\n}\n\n#feature .btn-view-works {\n background: #655E7A;\n color: #fff;\n padding: 10px 20px;\n}\n\n#testimonial {\n padding: 100px 0;\n}\n\n#testimonial .block h2 {\n line-height: 27px;\n color: #5C5C5C;\n padding-top: 110px;\n}\n\n#testimonial .block p {\n padding-top: 50px;\n color: #7B7B7B;\n}\n\n#testimonial .counter-box li {\n width: 50%;\n float: left;\n text-align: center;\n margin: 30px 0 30px;\n}\n\n#testimonial .counter-box li i {\n font-size: 35px;\n}\n\n#testimonial .counter-box li h4 {\n font-size: 30px;\n font-weight: bold;\n}\n\n#testimonial .counter-box li span {\n color: #555;\n}\n\n#testimonial .testimonial-carousel {\n text-align: center;\n width: 75%;\n border: 1px solid #DEDEDE;\n padding: 24px;\n margin: 0 auto;\n}\n\n#testimonial .testimonial-carousel img {\n padding-bottom: 38px;\n}\n\n#testimonial .testimonial-carousel p {\n line-height: 28px;\n font-weight: 300;\n padding-bottom: 20px;\n}\n\n#testimonial .testimonial-carousel .user img {\n padding-bottom: 0px;\n border-radius: 500px;\n}\n\n#testimonial .testimonial-carousel .user p {\n padding-bottom: 0;\n font-size: 12px;\n line-height: 20px;\n color: #353241;\n}\n\n#testimonial .testimonial-carousel .user p span {\n display: block;\n color: #353241;\n font-weight: 600;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div {\n border: 1px solid #1D1D1D;\n border-radius: 500px;\n display: inline-block;\n height: 10px;\n margin-right: 15px;\n width: 10px;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div.active {\n background: #5C5C5C;\n font-size: 30px;\n display: inline-block;\n border: 0px;\n}\n\n#clients-logo-section {\n padding-top: 30px;\n padding-bottom: 75px;\n}\n\n#clients-logo-section .clients-logo-img {\n padding: 0px 50px;\n}\n\n#global-header {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  background-position: 10% 0%;\n  padding: 150px 0 150px 0;\n  position: relative;\n}\n\n#global-header:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n  background: #1d192c;\n  opacity: 0.7;\n}\n\n#global-header .block {\n color: #E3E3E4;\n margin: 0 auto;\n padding-left: 90px;\n text-align: center;\n}\n\n#global-header .block h1 {\n font-weight: 700;\n text-transform: uppercase;\n font-size: 45px;\n letter-spacing: 6px;\n padding-bottom: 15px;\n margin-top: 0;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#global-header .block p {\n font-size: 23px;\n line-height: 40px;\n font-weight: 400;\n letter-spacing: 1px;\n word-spacing: 3px;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#portfolio-work {\n overflow: hidden;\n padding: 80px 0;\n}\n\n#portfolio-work .block .portfolio-menu {\n padding-bottom: 30px;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-menu ul {\n border: 1px solid #999999;\n display: inline-block;\n margin-bottom: 40px;\n}\n\n#portfolio-work .block .portfolio-menu ul li {\n display: inline-block;\n padding: 0px 25px;\n cursor: pointer;\n font-size: 15px;\n line-height: 40px;\n font-weight: 600;\n color: #333333;\n text-transform: capitalize;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active {\n color: #655E7A;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active:before {\n content: \"\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 23px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-menu ul li:hover:before {\n content: \"\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 24px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-contant ul li {\n float: left;\n width: 32.22%;\n overflow: hidden;\n margin: 6px;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .overly {\n opacity: 1;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .position-center {\n position: absolute;\n top: 50%;\n -webkit-transform: translate(0%, -50%);\n -moz-transform: translate(0%, -50%);\n -ms-transform: translate(0%, -50%);\n transform: translate(0%, -50%);\n}\n\n#portfolio-work .block .portfolio-contant ul li a {\n display: block;\n color: #fff;\n}\n\n#portfolio-work .block .portfolio-contant ul li a h2 {\n font-size: 22px;\n letter-spacing: 1px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a p {\n font-size: 15px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a span {\n font-style: italic;\n font-size: 13px;\n color: #655E7A;\n}\n\n#portfolio-work .block .portfolio-contant ul img {\n width: 100%;\n height: auto;\n}\n\n#portfolio-work .block .portfolio-contant .overly {\n position: absolute;\n top: 0;\n bottom: 0;\n right: 0;\n left: 0;\n background: rgba(0, 0, 0, 0.9);\n opacity: 0;\n -webkit-transition: .3s all;\n -o-transition: .3s all;\n transition: .3s all;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-contant .position-center {\n position: absolute;\n top: 50%;\n left: 10%;\n -webkit-transform: translate(0%, 50%);\n -moz-transform: translate(0%, 50%);\n -ms-transform: translate(0%, 50%);\n transform: translate(0%, 50%);\n -webkit-transition: .5s all;\n -o-transition: .5s all;\n transition: .5s all;\n}\n\n#portfolio-work .block .mix {\n display: none;\n}\n\n#wrapper-work {\n overflow: hidden;\n padding-top: 100px;\n}\n\n#wrapper-work ul li {\n width: 50%;\n float: left;\n position: relative;\n}\n\n#wrapper-work ul li img {\n width: 100%;\n height: 100%;\n}\n\n#wrapper-work ul li .items-text {\n position: absolute;\n top: 0;\n bottom: 0;\n left: 0;\n right: 0;\n width: 100%;\n height: 100%;\n color: #fff;\n background: rgba(0, 0, 0, 0.6);\n padding-left: 44px;\n padding-top: 140px;\n}\n\n#wrapper-work ul li .items-text h2 {\n padding-bottom: 28px;\n padding-top: 75px;\n position: relative;\n}\n\n#wrapper-work ul li .items-text h2:before {\n content: \"\";\n position: absolute;\n left: 0;\n bottom: 0;\n width: 75px;\n height: 3px;\n background: #fff;\n}\n\n#wrapper-work ul li .items-text p {\n padding-top: 30px;\n font-size: 16px;\n line-height: 27px;\n font-weight: 300;\n padding-right: 80px;\n}\n\n#features-work {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-work .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n#contact-form, #service-form {\n padding-top: 70px;\n padding-bottom: 35px;\n}\n\n#contact-form .block form .form-group, #service-form .block form .form-group {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group .form-control, #service-form .block form .form-group .form-control {\n background: #F6F8FA;\n height: 60px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block form .form-group-2, #service-form .block form .form-group-2 {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group-2 textarea, #service-form .block form .form-group-2 textarea {\n background: #F6F8FA;\n height: 135px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block button, #service-form .block button {\n width: 100%;\n height: 60px;\n background: #47424C;\n border: none;\n color: #fff;\n font-family: 'Open Sans', sans-serif;\n font-size: 18px;\n}\n\n.address-block li {\n margin-bottom: 20px;\n}\n\n.address-block li i {\n margin-right: 15px;\n font-size: 20px;\n width: 20px;\n}\n\n.social-icons {\n margin-top: 40px;\n}\n\n.social-icons li {\n display: inline-block;\n margin: 0 6px;\n}\n\n.social-icons a {\n display: inline-block;\n}\n\n.social-icons i {\n color: #2C2C2C;\n margin-right: 25px;\n font-size: 25px;\n}\n\n.google-map {\n position: relative;\n}\n\n.google-map #map {\n width: 100%;\n height: 300px;\n background-color: #ff432e;\n}\n\n#contact-box {\n padding-top: 35px;\n padding-bottom: 58px;\n}\n\n#contact-box .block img {\n width: 100%;\n}\n\n#contact-box .block h2 {\n font-family: 'Open Sans', sans-serif;\n font-weight: 300;\n color: #000;\n font-size: 28px;\n padding-bottom: 30px;\n}\n\n#contact-box .block p {\n color: #5C5C5C;\n display: block;\n}\n\n#features-contact {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-contact .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n.blog-post {\n margin-bottom: 50px;\n}\n\n.blog-post img {\n margin-bottom: 15px;\n}\n\n.blog-post p {\n margin: 15px 0 20px;\n}\n\n.post-title {\n color: #655E7A;\n font-size: 25px;\n font-weight: 600;\n display: block;\n margin-bottom: 10px;\n}\n\n.heading {\n padding-bottom: 60px;\n text-align: center;\n}\n\n.heading h2 {\n color: #000;\n font-size: 30px;\n line-height: 40px;\n font-weight: 400;\n}\n\n.heading p {\n font-size: 16px;\n line-height: 40px;\n color: #292929;\n font-weight: 300;\n}\n\nfooter {\n background: #F5F5F5;\n text-align: center;\n padding-top: 48px;\n padding-bottom: 55px;\n}\n\nfooter p {\n font-size: 13px;\n line-height: 25px;\n color: #919191;\n}\n\nfooter a {\n color: #595959;\n}\n\nfooter .footer-manu {\n padding-bottom: 25px;\n}\n\nfooter .footer-manu ul {\n margin: 0px;\n padding: 0px;\n}\n\nfooter .footer-manu ul li {\n display: inline-block;\n padding: 0px 20px;\n}\n\nfooter .footer-manu ul li a {\n display: inline-block;\n color: #494949;\n}\n\nfooter .footer-manu ul li a:hover {\n color: #000;\n}\n\n@media only screen and (min-width: 768px) and (max-width: 991px) {\n\n #wrapper {\n   text-align: center;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   width: 50%;\n }\n\n #content {\n   text-align: center;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n\n #features {\n   text-align: center;\n }\n\n footer .navbar {\n   margin-bottom: 0px;\n   border: 0px;\n   min-height: 40px;\n }\n footer .navbar-default {\n   border: 0px;\n   width: 68%;\n }\n footer .navbar-default .navbar-nav li a {\n   color: #494949;\n   padding: 10px 10px;\n   font-size: 15px;\n }\n footer .navbar-default .navbar-nav li a:hover {\n   color: #000;\n }\n\n #slider-work .block h1 {\n   font-size: 28px;\n }\n #slider-work .block p {\n   font-size: 15px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 30px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #wrapper-work ul li .items-text {\n   padding-top: 0;\n   padding-left: 25px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-bottom: 10px;\n   padding-top: 40px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 14px;\n   line-height: 20px;\n   padding-right: 30px;\n }\n\n #features-work .block ul li {\n   width: 49%;\n }\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #features-contact .block ul li {\n   width: 49%;\n }\n}\n\n@media only screen and (max-width: 767px) {\n .heading {\n   padding-left: 0px;\n }\n h2 {\n   font-size: 18px;\n }\n p {\n   font-size: 13px;\n }\n header .navbar-default .navbar-toggle {\n   margin-top: 20px;\n   margin-bottom: 20px;\n }\n #slider {\n   padding-top: 90px;\n   padding-bottom: 100px;\n }\n #slider .block {\n   padding-left: 0px;\n }\n #slider .block h1 {\n   font-size: 20px;\n }\n #slider .block p {\n   font-size: 13px;\n }\n\n #wrapper {\n   text-align: center;\n   padding-top: 70px;\n   padding-bottom: 100px;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   padding-left: 0px;\n   width: 100%;\n }\n\n #service {\n   padding-top: 100px;\n }\n #service .thumbnail {\n   padding-bottom: 70px;\n }\n\n #call-to-action p {\n   padding: 0px 0px 40px;\n }\n #call-to-action .btn {\n   padding: 10px 20px;\n   font-size: 15px;\n }\n\n #content {\n   text-align: center;\n   padding-top: 70px;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n #content .block h2 {\n   padding-top: 0px;\n }\n #content .block-bottom {\n   padding: 0px;\n }\n #content .block-bottom .item-img {\n   padding-left: 0px;\n }\n\n #features .features-img {\n   text-align: center;\n }\n\n #slider-work {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-work .block {\n   padding-left: 0px;\n }\n #slider-work .block h1 {\n   font-size: 20px;\n }\n #slider-work .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n   text-align: center;\n }\n #portfolio-work .block .portfolio-manu ul li {\n   padding: 0 8px;\n }\n #portfolio-work .block .portfolio-contant ul li {\n   width: 100%;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 65px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n   padding-right: 5px;\n }\n\n #wrapper-work ul li {\n   float: none;\n   width: 100%;\n }\n #wrapper-work ul li .items-text {\n   padding-left: 15px;\n   padding-top: 30px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-top: 10px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #features-work .block ul li {\n   display: block;\n   width: 100%;\n }\n\n #slider-contact {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-contact .block {\n   padding-left: 0px;\n }\n #slider-contact .block h1 {\n   font-size: 20px;\n }\n #slider-contact .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #wrapper-contact .block .location p {\n   width: 100%;\n }\n #wrapper-contact .block .social-media-icon a i {\n   padding-top: 30px;\n }\n\n #features-contact .block ul li {\n   display: block;\n   width: 100%;\n }\n"], ["\n.italic {\n font-style: italic;\n}\n\n.bold {\n font-weight: bold;\n}\n\n.center-text {\n text-align: center;\n}\n\n.post-area {\n padding: 40px;\n width: 100%;\n min-height: 150px;\n background-color: white;\n border-bottom: 1px dotted #ddd;\n}\n\n.post-area a:link,\n.post-area a:visited {\n font-size: 30px;\n color: #333;\n}\n\n.post-area a:hover {\n color: #0D0017;\n}\n\n.lang-list {\n display: inline-block;\n margin-top: 15px;\n}\n\n.lang-list a {\n color: #0D0017;\n font-weight: bold;\n}\n\nbody {\n font-family: 'Open Sans', sans-serif;\n -webkit-font-smoothing: antialiased;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n font-family: 'Roboto', sans-serif;\n}\n\nh2 {\n font-size: 30px;\n font-weight: 400;\n}\n\nh3 {\n font-size: 28px;\n font-weight: 300;\n}\n\np {\n font-size: 16px;\n line-height: 28px;\n}\n\nul {\n padding: 0;\n margin: 0;\n list-style: none;\n}\n\n.fz-20{\n font-size: 20px;\n}\n\na,\na:active,\na:focus,\na:active {\n text-decoration: none !important;\n}\n\n.section {\n padding: 100px 0;\n}\n\n.section-title {\n margin-bottom: 70px;\n}\n\n.section-title h2 {\n font-size: 36px;\n font-weight: 600;\n margin-bottom: 15px;\n}\n\n.section-title p {\n color: #666;\n font-size: 16px;\n}\n\n.btn-main,\n.btn-transparent,\n.btn-small {\n background: #655E7A;\n color: #fff;\n display: inline-block;\n font-size: 14px;\n letter-spacing: 1px;\n padding: 14px 35px;\n border-radius: 0;\n -webkit-transition: all 0.2s ease;\n transition: all 0.2s ease;\n}\n\n.btn-main:hover,\n.btn-transparent:hover,\n.btn-small:hover {\n background: white;\n color: #353240;\n}\n\n.btn-solid-border {\n border: 3px solid #fff;\n background: transparent;\n color: #fff;\n font-size: 16px;\n font-weight: 600;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n.btn-solid-border:hover {\n border: 3px solid #fff;\n background: #fff;\n text-shadow: none;\n\n}\n\nheader {\n background: #fff;\n padding: 20px 0;\n}\n\nheader .navbar {\n margin-bottom: 0px;\n border: 0px;\n}\n\n.navbar-right {\n  color: red;\n }\n\nheader .navbar-brand {\n padding-top: 5px;\n}\n\nheader .navbar-default {\n background: none;\n border: 0px;\n}\n\nheader .navbar-default .navbar-nav {\n padding-top: 10px;\n}\n\ncustom-nav ul {\n  display: flex;\n  color: red;\n}\n\nheader .navbar-default .navbar-nav li a {\n color: #333333;\n padding: 10px 26px;\n font-size: 15px;\n}\n\nfont header .navbar-default .navbar-nav li a:hover {\n color: #000;\n}\n\n#slider {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n background-position: 10% 0%;\n padding: 150px 0 150px 0;\n position: relative;\n}\n\n#slider:before {\n content: \"\";\n position: absolute;\n left: 0;\n top: 0;\n bottom: 0;\n right: 0;\n width: 100%;\n height: 100%;\n background: #1d192c;\n opacity: 0.7;\n}\n\n#slider .block {\n color: #E3E3E4;\n}\n\n#slider .block h1 {\n font-family: 'Roboto', sans-serif;\n font-weight: 700;\n font-size: 45px;\n line-height: 60px;\n letter-spacing: 5px;\n padding-bottom: 45px;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#slider .block p {\n font-size: 23px;\n line-height: 40px;\n font-family: 'Roboto', sans-serif;\n font-weight: 400;\n letter-spacing: 3px;\n margin-bottom: 100px;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#intro {\n padding: 100px 0;\n}\n\n#intro .block h2 {\n line-height: 27px;\n margin: 0;\n}\n\n#intro .block p {\n color: #333;\n}\n\n#intro .block img {\n padding-left: 40px;\n width: 100%;\n}\n\n#intro .section-title {\n margin-bottom: 0px;\n}\n\n#intro .section-title p {\n padding-top: 20px;\n}\n\n#service {\n text-align: center;\n padding: 90px 0;\n}\n\n.service-home {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  padding: 70px 0px;\n  position: relative;\n  text-align: center;\n}\n\n.service-home:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  width: 100%;\n  height: 100%;\n  background: #1d192c;\n  z-index: 0;\n  opacity: 0.7;\n}\n\n#service .service-item {\n padding-right: 15px;\n margin-bottom: 100px;\n}\n\n#service .service-item a {\n  color: #333;\n  font-size: 16px;\n  padding: 17px 35px;\n  border: 3px solid #333;\n  background: transparent;\n  font-size: 16px;\n  font-weight: 600;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n #service .service-item a:hover {\n  color: #fff;\n  border: 3px solid #333;\n  background: #333;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n#service .service-item img {\n width: 300px;\n}\n\n#service .service-item h4 {\n padding-top: 25px;\n font-weight: 800;\n margin: 0;\n color: #333;\n font-size: 26px;\n}\n\n#service .service-item p {\n color: #333;\n padding-top: 10px;\n margin: 0;\n font-size: 16px;\n line-height: 1.8;\n}\n\n#call-to-action {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n padding: 70px 0px;\n position: relative;\n text-align: center;\n color: #fff;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#call-to-action:before {\n content: \"\";\n position: absolute;\n left: 0;\n right: 0;\n top: 0;\n bottom: 0;\n width: 100%;\n height: 100%;\n background: #1d192c;\n opacity: 0.7;\n}\n\n#call-to-action h2 {\n padding-bottom: 20px;\n line-height: 33px;\n margin: 0;\n font-size: 30px;\n}\n\n#call-to-action p {\n font-size: 16px;\n line-height: 1.6;\n margin-bottom: 50px;\n}\n\n#call-to-action .btn-call-to-action {\n padding: 15px 35px;\n border: none;\n background-color: #fff;\n font-size: 15px;\n color: #333333;\n margin-top: 30px;\n}\n\n#feature {\n background-position: 50% 94px;\n width: 100%;\n display: block;\n position: relative;\n overflow: visible;\n background-attachment: fixed;\n background-repeat: no-repeat;\n background-position: center center;\n background-color: #fff;\n -webkit-background-size: cover;\n -moz-background-size: cover;\n -o-background-size: cover;\n background-size: cover;\n -webkit-box-sizing: border-box;\n -moz-box-sizing: border-box;\n box-sizing: border-box;\n -webkit-backface-visibility: hidden;\n backface-visibility: hidden;\n padding: 100px 0;\n}\n\n#feature h2 {\n font-size: 28px;\n font-weight: 600;\n margin-bottom: 30px;\n}\n\n#feature p {\n color: #8d8f92;\n margin-bottom: 20px;\n}\n\n#feature .btn-view-works {\n background: #655E7A;\n color: #fff;\n padding: 10px 20px;\n}\n\n#testimonial {\n padding: 100px 0;\n}\n\n#testimonial .block h2 {\n line-height: 27px;\n color: #5C5C5C;\n padding-top: 110px;\n}\n\n#testimonial .block p {\n padding-top: 50px;\n color: #7B7B7B;\n}\n\n#testimonial .counter-box li {\n width: 50%;\n float: left;\n text-align: center;\n margin: 30px 0 30px;\n}\n\n#testimonial .counter-box li i {\n font-size: 35px;\n}\n\n#testimonial .counter-box li h4 {\n font-size: 30px;\n font-weight: bold;\n}\n\n#testimonial .counter-box li span {\n color: #555;\n}\n\n#testimonial .testimonial-carousel {\n text-align: center;\n width: 75%;\n border: 1px solid #DEDEDE;\n padding: 24px;\n margin: 0 auto;\n}\n\n#testimonial .testimonial-carousel img {\n padding-bottom: 38px;\n}\n\n#testimonial .testimonial-carousel p {\n line-height: 28px;\n font-weight: 300;\n padding-bottom: 20px;\n}\n\n#testimonial .testimonial-carousel .user img {\n padding-bottom: 0px;\n border-radius: 500px;\n}\n\n#testimonial .testimonial-carousel .user p {\n padding-bottom: 0;\n font-size: 12px;\n line-height: 20px;\n color: #353241;\n}\n\n#testimonial .testimonial-carousel .user p span {\n display: block;\n color: #353241;\n font-weight: 600;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div {\n border: 1px solid #1D1D1D;\n border-radius: 500px;\n display: inline-block;\n height: 10px;\n margin-right: 15px;\n width: 10px;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div.active {\n background: #5C5C5C;\n font-size: 30px;\n display: inline-block;\n border: 0px;\n}\n\n#clients-logo-section {\n padding-top: 30px;\n padding-bottom: 75px;\n}\n\n#clients-logo-section .clients-logo-img {\n padding: 0px 50px;\n}\n\n#global-header {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  background-position: 10% 0%;\n  padding: 150px 0 150px 0;\n  position: relative;\n}\n\n#global-header:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n  background: #1d192c;\n  opacity: 0.7;\n}\n\n#global-header .block {\n color: #E3E3E4;\n margin: 0 auto;\n padding-left: 90px;\n text-align: center;\n}\n\n#global-header .block h1 {\n font-weight: 700;\n text-transform: uppercase;\n font-size: 45px;\n letter-spacing: 6px;\n padding-bottom: 15px;\n margin-top: 0;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#global-header .block p {\n font-size: 23px;\n line-height: 40px;\n font-weight: 400;\n letter-spacing: 1px;\n word-spacing: 3px;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#portfolio-work {\n overflow: hidden;\n padding: 80px 0;\n}\n\n#portfolio-work .block .portfolio-menu {\n padding-bottom: 30px;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-menu ul {\n border: 1px solid #999999;\n display: inline-block;\n margin-bottom: 40px;\n}\n\n#portfolio-work .block .portfolio-menu ul li {\n display: inline-block;\n padding: 0px 25px;\n cursor: pointer;\n font-size: 15px;\n line-height: 40px;\n font-weight: 600;\n color: #333333;\n text-transform: capitalize;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active {\n color: #655E7A;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active:before {\n content: \"\\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 23px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-menu ul li:hover:before {\n content: \"\\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 24px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-contant ul li {\n float: left;\n width: 32.22%;\n overflow: hidden;\n margin: 6px;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .overly {\n opacity: 1;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .position-center {\n position: absolute;\n top: 50%;\n -webkit-transform: translate(0%, -50%);\n -moz-transform: translate(0%, -50%);\n -ms-transform: translate(0%, -50%);\n transform: translate(0%, -50%);\n}\n\n#portfolio-work .block .portfolio-contant ul li a {\n display: block;\n color: #fff;\n}\n\n#portfolio-work .block .portfolio-contant ul li a h2 {\n font-size: 22px;\n letter-spacing: 1px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a p {\n font-size: 15px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a span {\n font-style: italic;\n font-size: 13px;\n color: #655E7A;\n}\n\n#portfolio-work .block .portfolio-contant ul img {\n width: 100%;\n height: auto;\n}\n\n#portfolio-work .block .portfolio-contant .overly {\n position: absolute;\n top: 0;\n bottom: 0;\n right: 0;\n left: 0;\n background: rgba(0, 0, 0, 0.9);\n opacity: 0;\n -webkit-transition: .3s all;\n -o-transition: .3s all;\n transition: .3s all;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-contant .position-center {\n position: absolute;\n top: 50%;\n left: 10%;\n -webkit-transform: translate(0%, 50%);\n -moz-transform: translate(0%, 50%);\n -ms-transform: translate(0%, 50%);\n transform: translate(0%, 50%);\n -webkit-transition: .5s all;\n -o-transition: .5s all;\n transition: .5s all;\n}\n\n#portfolio-work .block .mix {\n display: none;\n}\n\n#wrapper-work {\n overflow: hidden;\n padding-top: 100px;\n}\n\n#wrapper-work ul li {\n width: 50%;\n float: left;\n position: relative;\n}\n\n#wrapper-work ul li img {\n width: 100%;\n height: 100%;\n}\n\n#wrapper-work ul li .items-text {\n position: absolute;\n top: 0;\n bottom: 0;\n left: 0;\n right: 0;\n width: 100%;\n height: 100%;\n color: #fff;\n background: rgba(0, 0, 0, 0.6);\n padding-left: 44px;\n padding-top: 140px;\n}\n\n#wrapper-work ul li .items-text h2 {\n padding-bottom: 28px;\n padding-top: 75px;\n position: relative;\n}\n\n#wrapper-work ul li .items-text h2:before {\n content: \"\";\n position: absolute;\n left: 0;\n bottom: 0;\n width: 75px;\n height: 3px;\n background: #fff;\n}\n\n#wrapper-work ul li .items-text p {\n padding-top: 30px;\n font-size: 16px;\n line-height: 27px;\n font-weight: 300;\n padding-right: 80px;\n}\n\n#features-work {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-work .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n#contact-form, #service-form {\n padding-top: 70px;\n padding-bottom: 35px;\n}\n\n#contact-form .block form .form-group, #service-form .block form .form-group {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group .form-control, #service-form .block form .form-group .form-control {\n background: #F6F8FA;\n height: 60px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block form .form-group-2, #service-form .block form .form-group-2 {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group-2 textarea, #service-form .block form .form-group-2 textarea {\n background: #F6F8FA;\n height: 135px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block button, #service-form .block button {\n width: 100%;\n height: 60px;\n background: #47424C;\n border: none;\n color: #fff;\n font-family: 'Open Sans', sans-serif;\n font-size: 18px;\n}\n\n.address-block li {\n margin-bottom: 20px;\n}\n\n.address-block li i {\n margin-right: 15px;\n font-size: 20px;\n width: 20px;\n}\n\n.social-icons {\n margin-top: 40px;\n}\n\n.social-icons li {\n display: inline-block;\n margin: 0 6px;\n}\n\n.social-icons a {\n display: inline-block;\n}\n\n.social-icons i {\n color: #2C2C2C;\n margin-right: 25px;\n font-size: 25px;\n}\n\n.google-map {\n position: relative;\n}\n\n.google-map #map {\n width: 100%;\n height: 300px;\n background-color: #ff432e;\n}\n\n#contact-box {\n padding-top: 35px;\n padding-bottom: 58px;\n}\n\n#contact-box .block img {\n width: 100%;\n}\n\n#contact-box .block h2 {\n font-family: 'Open Sans', sans-serif;\n font-weight: 300;\n color: #000;\n font-size: 28px;\n padding-bottom: 30px;\n}\n\n#contact-box .block p {\n color: #5C5C5C;\n display: block;\n}\n\n#features-contact {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-contact .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n.blog-post {\n margin-bottom: 50px;\n}\n\n.blog-post img {\n margin-bottom: 15px;\n}\n\n.blog-post p {\n margin: 15px 0 20px;\n}\n\n.post-title {\n color: #655E7A;\n font-size: 25px;\n font-weight: 600;\n display: block;\n margin-bottom: 10px;\n}\n\n.heading {\n padding-bottom: 60px;\n text-align: center;\n}\n\n.heading h2 {\n color: #000;\n font-size: 30px;\n line-height: 40px;\n font-weight: 400;\n}\n\n.heading p {\n font-size: 16px;\n line-height: 40px;\n color: #292929;\n font-weight: 300;\n}\n\nfooter {\n background: #F5F5F5;\n text-align: center;\n padding-top: 48px;\n padding-bottom: 55px;\n}\n\nfooter p {\n font-size: 13px;\n line-height: 25px;\n color: #919191;\n}\n\nfooter a {\n color: #595959;\n}\n\nfooter .footer-manu {\n padding-bottom: 25px;\n}\n\nfooter .footer-manu ul {\n margin: 0px;\n padding: 0px;\n}\n\nfooter .footer-manu ul li {\n display: inline-block;\n padding: 0px 20px;\n}\n\nfooter .footer-manu ul li a {\n display: inline-block;\n color: #494949;\n}\n\nfooter .footer-manu ul li a:hover {\n color: #000;\n}\n\n@media only screen and (min-width: 768px) and (max-width: 991px) {\n\n #wrapper {\n   text-align: center;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   width: 50%;\n }\n\n #content {\n   text-align: center;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n\n #features {\n   text-align: center;\n }\n\n footer .navbar {\n   margin-bottom: 0px;\n   border: 0px;\n   min-height: 40px;\n }\n footer .navbar-default {\n   border: 0px;\n   width: 68%;\n }\n footer .navbar-default .navbar-nav li a {\n   color: #494949;\n   padding: 10px 10px;\n   font-size: 15px;\n }\n footer .navbar-default .navbar-nav li a:hover {\n   color: #000;\n }\n\n #slider-work .block h1 {\n   font-size: 28px;\n }\n #slider-work .block p {\n   font-size: 15px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 30px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #wrapper-work ul li .items-text {\n   padding-top: 0;\n   padding-left: 25px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-bottom: 10px;\n   padding-top: 40px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 14px;\n   line-height: 20px;\n   padding-right: 30px;\n }\n\n #features-work .block ul li {\n   width: 49%;\n }\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #features-contact .block ul li {\n   width: 49%;\n }\n}\n\n@media only screen and (max-width: 767px) {\n .heading {\n   padding-left: 0px;\n }\n h2 {\n   font-size: 18px;\n }\n p {\n   font-size: 13px;\n }\n header .navbar-default .navbar-toggle {\n   margin-top: 20px;\n   margin-bottom: 20px;\n }\n #slider {\n   padding-top: 90px;\n   padding-bottom: 100px;\n }\n #slider .block {\n   padding-left: 0px;\n }\n #slider .block h1 {\n   font-size: 20px;\n }\n #slider .block p {\n   font-size: 13px;\n }\n\n #wrapper {\n   text-align: center;\n   padding-top: 70px;\n   padding-bottom: 100px;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   padding-left: 0px;\n   width: 100%;\n }\n\n #service {\n   padding-top: 100px;\n }\n #service .thumbnail {\n   padding-bottom: 70px;\n }\n\n #call-to-action p {\n   padding: 0px 0px 40px;\n }\n #call-to-action .btn {\n   padding: 10px 20px;\n   font-size: 15px;\n }\n\n #content {\n   text-align: center;\n   padding-top: 70px;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n #content .block h2 {\n   padding-top: 0px;\n }\n #content .block-bottom {\n   padding: 0px;\n }\n #content .block-bottom .item-img {\n   padding-left: 0px;\n }\n\n #features .features-img {\n   text-align: center;\n }\n\n #slider-work {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-work .block {\n   padding-left: 0px;\n }\n #slider-work .block h1 {\n   font-size: 20px;\n }\n #slider-work .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n   text-align: center;\n }\n #portfolio-work .block .portfolio-manu ul li {\n   padding: 0 8px;\n }\n #portfolio-work .block .portfolio-contant ul li {\n   width: 100%;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 65px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n   padding-right: 5px;\n }\n\n #wrapper-work ul li {\n   float: none;\n   width: 100%;\n }\n #wrapper-work ul li .items-text {\n   padding-left: 15px;\n   padding-top: 30px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-top: 10px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #features-work .block ul li {\n   display: block;\n   width: 100%;\n }\n\n #slider-contact {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-contact .block {\n   padding-left: 0px;\n }\n #slider-contact .block h1 {\n   font-size: 20px;\n }\n #slider-contact .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #wrapper-contact .block .location p {\n   width: 100%;\n }\n #wrapper-contact .block .social-media-icon a i {\n   padding-top: 30px;\n }\n\n #features-contact .block ul li {\n   display: block;\n   width: 100%;\n }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.checkbox-container {\n  box-sizing: border-box;\n  text-align:center;\n}\n\n.checkbox-label {\n  display: block;\n  position: relative;\n  margin-right: 40px;\n  cursor: pointer;\n  font-size: 22px;\n  line-height: 24px;\n  height: 24px;\n  width: auto;\n  clear: both;\n}\n\n.checkbox-label input {\n  position: absolute;\n  cursor: pointer;\n  display: none;\n}\n\n.checkbox-label .checkbox-custom {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  height: 35px;\n  width: 35px;\n  background-color: transparent;\n  border-radius: 5px;\n  transition: all 0.3s ease-out;\n  -webkit-transition: all 0.3s ease-out;\n  -moz-transition: all 0.3s ease-out;\n  -ms-transition: all 0.3s ease-out;\n  -o-transition: all 0.3s ease-out;\n  border: 2px solid #000;\n}\n\n.checkbox-label .checkbox-custom.circular {\n  border-radius: 50%;\n}\n\n.checkbox-label input:checked ~ .checkbox-custom.circular {\n  border-radius: 50%;\n}\n\n.checkbox-label input:checked ~ .checkbox-custom.circular::after {\n  opacity:1;\n  left: 7px;\n  top: 7px;\n  width: 17px;\n  height: 17px;\n  background-color: black;\n  border-radius: 50%;\n  }\n\n\n.checkbox-label input:checked ~ .checkbox-custom {\n  background-color: #FFFFFF;\n  border-radius: 5px;\n  -webkit-transform: rotate(0deg) scale(1);\n  -ms-transform: rotate(0deg) scale(1);\n  transform: rotate(0deg) scale(1);\n  opacity:1;\n  border: 2px solid #000;\n}\n\n\n.checkbox-label .checkbox-custom::after {\n  position: absolute;\n  content: \"\";\n  left: 12px;\n  top: 6px;\n  width: 8px;\n  height: 16px;\n  border-radius: 5px;\n  border: solid black;\n  border-width: 0 3px 3px 0;\n  -webkit-transform: rotate(45deg);\n  -ms-transform: rotate(45deg);\n  transform: rotate(45deg);\n  opacity:0;\n  transition: all 0.3s ease-out;\n  -webkit-transition: all 0.1s ease-out;\n  -moz-transition: all 0.1s ease-out;\n  -ms-transition: all 0.1s ease-out;\n  -o-transition: all 0.1s ease-out;\n}\n\n\n.checkbox-label input:checked ~ .checkbox-custom::after {\n-webkit-transform: rotate(45deg);\n-ms-transform: rotate(45deg);\ntransform: rotate(45deg);\nopacity:1;\nleft: 12px;\ntop: 6px;\nwidth: 8px;\nheight: 16px;\nborder: solid #000;\nborder-width: 0 3px 3px 0;\nbackground-color: transparent;\nborder-radius: 0;\n}\n\n\n.italic {\n font-style: italic;\n}\n\n.bold {\n font-weight: bold;\n}\n\n.center-text {\n text-align: center;\n}\n\n.post-area {\n padding: 40px;\n width: 100%;\n min-height: 150px;\n background-color: white;\n border-bottom: 1px dotted #ddd;\n}\n\n.post-area a:link,\n.post-area a:visited {\n font-size: 30px;\n color: #333;\n}\n\n.post-area a:hover {\n color: #0D0017;\n}\n\n.lang-list {\n display: inline-block;\n margin-top: 15px;\n}\n\n.lang-list a {\n color: #0D0017;\n font-weight: bold;\n}\n\nbody {\n font-family: 'Open Sans', sans-serif;\n -webkit-font-smoothing: antialiased;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n font-family: 'Roboto', sans-serif;\n}\n\nh2 {\n font-size: 30px;\n font-weight: 400;\n}\n\nh3 {\n font-size: 28px;\n font-weight: 300;\n}\n\np {\n font-size: 16px;\n line-height: 28px;\n}\n\nul {\n padding: 0;\n margin: 0;\n list-style: none;\n}\n\n.fz-20{\n font-size: 20px;\n}\n\na,\na:active,\na:focus,\na:active {\n text-decoration: none !important;\n}\n\n.section {\n padding: 100px 0;\n}\n\n.section-title {\n margin-bottom: 70px;\n}\n\n.section-title h2 {\n font-size: 36px;\n font-weight: 600;\n margin-bottom: 15px;\n}\n\n.section-title p {\n color: #666;\n font-size: 16px;\n}\n\n.btn-main,\n.btn-transparent,\n.btn-small {\n background: #655E7A;\n color: #fff;\n display: inline-block;\n font-size: 14px;\n letter-spacing: 1px;\n padding: 14px 35px;\n border-radius: 0;\n -webkit-transition: all 0.2s ease;\n transition: all 0.2s ease;\n}\n\n.btn-main:hover,\n.btn-transparent:hover,\n.btn-small:hover {\n background: white;\n color: #353240;\n}\n\n.btn-solid-border {\n border: 3px solid #fff;\n background: transparent;\n color: #fff;\n font-size: 16px;\n font-weight: 600;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n.btn-solid-border:hover {\n border: 3px solid #fff;\n background: #fff;\n text-shadow: none;\n\n}\n\nheader {\n background: #fff;\n padding: 20px 0;\n}\n\nheader .navbar {\n margin-bottom: 0px;\n border: 0px;\n}\n\n.navbar-right {\n  color: red;\n }\n\nheader .navbar-brand {\n padding-top: 5px;\n}\n\nheader .navbar-default {\n background: none;\n border: 0px;\n}\n\nheader .navbar-default .navbar-nav {\n padding-top: 10px;\n}\n\ncustom-nav ul {\n  display: flex;\n  color: red;\n}\n\nheader .navbar-default .navbar-nav li a {\n color: #333333;\n padding: 10px 26px;\n font-size: 15px;\n}\n\nfont header .navbar-default .navbar-nav li a:hover {\n color: #000;\n}\n\n#slider {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n background-position: 10% 0%;\n padding: 150px 0 150px 0;\n position: relative;\n}\n\n#slider:before {\n content: \"\";\n position: absolute;\n left: 0;\n top: 0;\n bottom: 0;\n right: 0;\n width: 100%;\n height: 100%;\n background: black;\n opacity: 0.55;\n}\n\n#slider .block {\n color: #E3E3E4;\n}\n\n#slider .block h1 {\n font-family: 'Roboto', sans-serif;\n font-weight: 700;\n font-size: 45px;\n line-height: 60px;\n letter-spacing: 5px;\n padding-bottom: 45px;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#slider .block p {\n font-size: 23px;\n line-height: 40px;\n font-family: 'Roboto', sans-serif;\n font-weight: 400;\n letter-spacing: 3px;\n margin-bottom: 100px;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#intro {\n padding: 100px 0;\n}\n\n#intro .block h2 {\n line-height: 27px;\n margin: 0;\n}\n\n#intro .block p {\n color: #333;\n}\n\n#intro .block img {\n padding-left: 40px;\n width: 100%;\n}\n\n#intro .section-title {\n margin-bottom: 0px;\n}\n\n#intro .section-title p {\n padding-top: 20px;\n}\n\n#service {\n text-align: center;\n padding: 90px 0;\n}\n\n.service-home {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  padding: 70px 0px;\n  position: relative;\n  text-align: center;\n}\n\n.service-home:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  width: 100%;\n  height: 100%;\n  background: black;\n  z-index: 0;\n  opacity: 0.55;\n}\n\n#service .service-item {\n padding-right: 15px;\n margin-bottom: 100px;\n}\n\n#service .service-item a {\n  color: #333;\n  font-size: 16px;\n  padding: 17px 35px;\n  border: 3px solid #333;\n  background: transparent;\n  font-size: 16px;\n  font-weight: 600;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n #service .service-item a:hover {\n  color: #fff;\n  border: 3px solid #333;\n  background: #333;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n#service .service-item img {\n width: 300px;\n}\n\n#service .service-item h4 {\n padding-top: 25px;\n font-weight: 800;\n margin: 0;\n color: #333;\n font-size: 26px;\n}\n\n#service .service-item p {\n color: #333;\n padding-top: 10px;\n margin: 0;\n font-size: 16px;\n line-height: 1.8;\n}\n\n#call-to-action {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n padding: 70px 0px;\n position: relative;\n text-align: center;\n color: #fff;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#call-to-action:before {\n content: \"\";\n position: absolute;\n left: 0;\n right: 0;\n top: 0;\n bottom: 0;\n width: 100%;\n height: 100%;\n background: black;\n opacity: 0.55;\n}\n\n#call-to-action h2 {\n padding-bottom: 20px;\n line-height: 33px;\n margin: 0;\n font-size: 30px;\n}\n\n#call-to-action p {\n font-size: 16px;\n line-height: 1.6;\n margin-bottom: 50px;\n}\n\n#call-to-action .btn-call-to-action {\n padding: 15px 35px;\n border: none;\n background-color: #fff;\n font-size: 15px;\n color: #333333;\n margin-top: 30px;\n}\n\n#feature {\n background-position: 50% 94px;\n width: 100%;\n display: block;\n position: relative;\n overflow: visible;\n background-attachment: fixed;\n background-repeat: no-repeat;\n background-position: center center;\n background-color: #fff;\n -webkit-background-size: cover;\n -moz-background-size: cover;\n -o-background-size: cover;\n background-size: cover;\n -webkit-box-sizing: border-box;\n -moz-box-sizing: border-box;\n box-sizing: border-box;\n -webkit-backface-visibility: hidden;\n backface-visibility: hidden;\n padding: 100px 0;\n}\n\n#feature h2 {\n font-size: 28px;\n font-weight: 600;\n margin-bottom: 30px;\n}\n\n#feature p {\n color: #8d8f92;\n margin-bottom: 20px;\n}\n\n#feature .btn-view-works {\n background: #655E7A;\n color: #fff;\n padding: 10px 20px;\n}\n\n#testimonial {\n padding: 100px 0;\n}\n\n#testimonial .block h2 {\n line-height: 27px;\n color: #5C5C5C;\n padding-top: 110px;\n}\n\n#testimonial .block p {\n padding-top: 50px;\n color: #7B7B7B;\n}\n\n#testimonial .counter-box li {\n width: 50%;\n float: left;\n text-align: center;\n margin: 30px 0 30px;\n}\n\n#testimonial .counter-box li i {\n font-size: 35px;\n}\n\n#testimonial .counter-box li h4 {\n font-size: 30px;\n font-weight: bold;\n}\n\n#testimonial .counter-box li span {\n color: #555;\n}\n\n#testimonial .testimonial-carousel {\n text-align: center;\n width: 75%;\n border: 1px solid #DEDEDE;\n padding: 24px;\n margin: 0 auto;\n}\n\n#testimonial .testimonial-carousel img {\n padding-bottom: 38px;\n}\n\n#testimonial .testimonial-carousel p {\n line-height: 28px;\n font-weight: 300;\n padding-bottom: 20px;\n}\n\n#testimonial .testimonial-carousel .user img {\n padding-bottom: 0px;\n border-radius: 500px;\n}\n\n#testimonial .testimonial-carousel .user p {\n padding-bottom: 0;\n font-size: 12px;\n line-height: 20px;\n color: #353241;\n}\n\n#testimonial .testimonial-carousel .user p span {\n display: block;\n color: #353241;\n font-weight: 600;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div {\n border: 1px solid #1D1D1D;\n border-radius: 500px;\n display: inline-block;\n height: 10px;\n margin-right: 15px;\n width: 10px;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div.active {\n background: #5C5C5C;\n font-size: 30px;\n display: inline-block;\n border: 0px;\n}\n\n#clients-logo-section {\n padding-top: 30px;\n padding-bottom: 75px;\n}\n\n#clients-logo-section .clients-logo-img {\n padding: 0px 50px;\n}\n\n#global-header {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  background-position: 10% 0%;\n  padding: 150px 0 150px 0;\n  position: relative;\n}\n\n#global-header:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n  background: black;\n  opacity: 0.55;\n}\n\n#global-header .block {\n color: #E3E3E4;\n margin: 0 auto;\n padding-left: 90px;\n text-align: center;\n}\n\n#global-header .block h1 {\n font-weight: 700;\n text-transform: uppercase;\n font-size: 45px;\n letter-spacing: 6px;\n padding-bottom: 15px;\n margin-top: 0;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#global-header .block p {\n font-size: 23px;\n line-height: 40px;\n font-weight: 400;\n letter-spacing: 1px;\n word-spacing: 3px;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#portfolio-work {\n overflow: hidden;\n padding: 80px 0;\n}\n\n#portfolio-work .block .portfolio-menu {\n padding-bottom: 30px;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-menu ul {\n border: 1px solid #999999;\n display: inline-block;\n margin-bottom: 40px;\n}\n\n#portfolio-work .block .portfolio-menu ul li {\n display: inline-block;\n padding: 0px 25px;\n cursor: pointer;\n font-size: 15px;\n line-height: 40px;\n font-weight: 600;\n color: #333333;\n text-transform: capitalize;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active {\n color: #655E7A;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active:before {\n content: \"\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 23px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-menu ul li:hover:before {\n content: \"\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 24px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-contant ul li {\n float: left;\n width: 32.22%;\n overflow: hidden;\n margin: 6px;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .overly {\n opacity: 1;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .position-center {\n position: absolute;\n top: 50%;\n -webkit-transform: translate(0%, -50%);\n -moz-transform: translate(0%, -50%);\n -ms-transform: translate(0%, -50%);\n transform: translate(0%, -50%);\n}\n\n#portfolio-work .block .portfolio-contant ul li a {\n display: block;\n color: #fff;\n}\n\n#portfolio-work .block .portfolio-contant ul li a h2 {\n font-size: 22px;\n letter-spacing: 1px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a p {\n font-size: 15px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a span {\n font-style: italic;\n font-size: 13px;\n color: #655E7A;\n}\n\n#portfolio-work .block .portfolio-contant ul img {\n width: 100%;\n height: auto;\n}\n\n#portfolio-work .block .portfolio-contant .overly {\n position: absolute;\n top: 0;\n bottom: 0;\n right: 0;\n left: 0;\n background: rgba(0, 0, 0, 0.9);\n opacity: 0;\n -webkit-transition: .3s all;\n -o-transition: .3s all;\n transition: .3s all;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-contant .position-center {\n position: absolute;\n top: 50%;\n left: 10%;\n -webkit-transform: translate(0%, 50%);\n -moz-transform: translate(0%, 50%);\n -ms-transform: translate(0%, 50%);\n transform: translate(0%, 50%);\n -webkit-transition: .5s all;\n -o-transition: .5s all;\n transition: .5s all;\n}\n\n#portfolio-work .block .mix {\n display: none;\n}\n\n#wrapper-work {\n overflow: hidden;\n padding-top: 100px;\n}\n\n#wrapper-work ul li {\n width: 50%;\n float: left;\n position: relative;\n}\n\n#wrapper-work ul li img {\n width: 100%;\n height: 100%;\n}\n\n#wrapper-work ul li .items-text {\n position: absolute;\n top: 0;\n bottom: 0;\n left: 0;\n right: 0;\n width: 100%;\n height: 100%;\n color: #fff;\n background: rgba(0, 0, 0, 0.6);\n padding-left: 44px;\n padding-top: 140px;\n}\n\n#wrapper-work ul li .items-text h2 {\n padding-bottom: 28px;\n padding-top: 75px;\n position: relative;\n}\n\n#wrapper-work ul li .items-text h2:before {\n content: \"\";\n position: absolute;\n left: 0;\n bottom: 0;\n width: 75px;\n height: 3px;\n background: #fff;\n}\n\n#wrapper-work ul li .items-text p {\n padding-top: 30px;\n font-size: 16px;\n line-height: 27px;\n font-weight: 300;\n padding-right: 80px;\n}\n\n#features-work {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-work .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n#contact-form, #service-form {\n padding-top: 70px;\n padding-bottom: 35px;\n}\n\n#contact-form .block form .form-group, #service-form .block form .form-group {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group .form-control, #service-form .block form .form-group .form-control {\n background: #F6F8FA;\n height: 60px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block form .form-group-2, #service-form .block form .form-group-2 {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group-2 textarea, #service-form .block form .form-group-2 textarea {\n background: #F6F8FA;\n height: 135px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block button, #service-form .block button {\n width: 100%;\n height: 60px;\n background: #47424C;\n border: none;\n color: #fff;\n font-family: 'Open Sans', sans-serif;\n font-size: 18px;\n}\n\n.address-block li {\n margin-bottom: 20px;\n}\n\n.address-block li i {\n margin-right: 15px;\n font-size: 20px;\n width: 20px;\n}\n\n.social-icons {\n margin-top: 40px;\n}\n\n.social-icons li {\n display: inline-block;\n margin: 0 6px;\n}\n\n.social-icons a {\n display: inline-block;\n}\n\n.social-icons i {\n color: #2C2C2C;\n margin-right: 25px;\n font-size: 25px;\n}\n\n.google-map {\n position: relative;\n}\n\n.google-map #map {\n width: 100%;\n height: 300px;\n background-color: #ff432e;\n}\n\n#contact-box {\n padding-top: 35px;\n padding-bottom: 58px;\n}\n\n#contact-box .block img {\n width: 100%;\n}\n\n#contact-box .block h2 {\n font-family: 'Open Sans', sans-serif;\n font-weight: 300;\n color: #000;\n font-size: 28px;\n padding-bottom: 30px;\n}\n\n#contact-box .block p {\n color: #5C5C5C;\n display: block;\n}\n\n#features-contact {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-contact .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n.blog-post {\n margin-bottom: 50px;\n}\n\n.blog-post img {\n margin-bottom: 15px;\n}\n\n.blog-post p {\n margin: 15px 0 20px;\n}\n\n.post-title {\n color: #655E7A;\n font-size: 25px;\n font-weight: 600;\n display: block;\n margin-bottom: 10px;\n}\n\n.heading {\n padding-bottom: 60px;\n text-align: center;\n}\n\n.heading h2 {\n color: #000;\n font-size: 30px;\n line-height: 40px;\n font-weight: 400;\n}\n\n.heading p {\n font-size: 16px;\n line-height: 40px;\n color: #292929;\n font-weight: 300;\n}\n\nfooter {\n background: #F5F5F5;\n text-align: center;\n padding-top: 48px;\n padding-bottom: 55px;\n}\n\nfooter p {\n font-size: 13px;\n line-height: 25px;\n color: #919191;\n}\n\nfooter a {\n color: #595959;\n}\n\nfooter .footer-manu {\n padding-bottom: 25px;\n}\n\nfooter .footer-manu ul {\n margin: 0px;\n padding: 0px;\n}\n\nfooter .footer-manu ul li {\n display: inline-block;\n padding: 0px 20px;\n}\n\nfooter .footer-manu ul li a {\n display: inline-block;\n color: #494949;\n}\n\nfooter .footer-manu ul li a:hover {\n color: #000;\n}\n\n@media only screen and (min-width: 768px) and (max-width: 991px) {\n\n #wrapper {\n   text-align: center;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   width: 50%;\n }\n\n #content {\n   text-align: center;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n\n #features {\n   text-align: center;\n }\n\n footer .navbar {\n   margin-bottom: 0px;\n   border: 0px;\n   min-height: 40px;\n }\n footer .navbar-default {\n   border: 0px;\n   width: 68%;\n }\n footer .navbar-default .navbar-nav li a {\n   color: #494949;\n   padding: 10px 10px;\n   font-size: 15px;\n }\n footer .navbar-default .navbar-nav li a:hover {\n   color: #000;\n }\n\n #slider-work .block h1 {\n   font-size: 28px;\n }\n #slider-work .block p {\n   font-size: 15px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 30px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #wrapper-work ul li .items-text {\n   padding-top: 0;\n   padding-left: 25px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-bottom: 10px;\n   padding-top: 40px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 14px;\n   line-height: 20px;\n   padding-right: 30px;\n }\n\n #features-work .block ul li {\n   width: 49%;\n }\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #features-contact .block ul li {\n   width: 49%;\n }\n}\n\n@media only screen and (max-width: 767px) {\n .heading {\n   padding-left: 0px;\n }\n h2 {\n   font-size: 18px;\n }\n p {\n   font-size: 13px;\n }\n header .navbar-default .navbar-toggle {\n   margin-top: 20px;\n   margin-bottom: 20px;\n }\n #slider {\n   padding-top: 90px;\n   padding-bottom: 100px;\n }\n #slider .block {\n   padding-left: 0px;\n }\n #slider .block h1 {\n   font-size: 20px;\n }\n #slider .block p {\n   font-size: 13px;\n }\n\n #wrapper {\n   text-align: center;\n   padding-top: 70px;\n   padding-bottom: 100px;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   padding-left: 0px;\n   width: 100%;\n }\n\n #service {\n   padding-top: 100px;\n }\n #service .thumbnail {\n   padding-bottom: 70px;\n }\n\n #call-to-action p {\n   padding: 0px 0px 40px;\n }\n #call-to-action .btn {\n   padding: 10px 20px;\n   font-size: 15px;\n }\n\n #content {\n   text-align: center;\n   padding-top: 70px;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n #content .block h2 {\n   padding-top: 0px;\n }\n #content .block-bottom {\n   padding: 0px;\n }\n #content .block-bottom .item-img {\n   padding-left: 0px;\n }\n\n #features .features-img {\n   text-align: center;\n }\n\n #slider-work {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-work .block {\n   padding-left: 0px;\n }\n #slider-work .block h1 {\n   font-size: 20px;\n }\n #slider-work .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n   text-align: center;\n }\n #portfolio-work .block .portfolio-manu ul li {\n   padding: 0 8px;\n }\n #portfolio-work .block .portfolio-contant ul li {\n   width: 100%;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 65px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n   padding-right: 5px;\n }\n\n #wrapper-work ul li {\n   float: none;\n   width: 100%;\n }\n #wrapper-work ul li .items-text {\n   padding-left: 15px;\n   padding-top: 30px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-top: 10px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #features-work .block ul li {\n   display: block;\n   width: 100%;\n }\n\n #slider-contact {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-contact .block {\n   padding-left: 0px;\n }\n #slider-contact .block h1 {\n   font-size: 20px;\n }\n #slider-contact .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #wrapper-contact .block .location p {\n   width: 100%;\n }\n #wrapper-contact .block .social-media-icon a i {\n   padding-top: 30px;\n }\n\n #features-contact .block ul li {\n   display: block;\n   width: 100%;\n }\n"], ["\n.checkbox-container {\n  box-sizing: border-box;\n  text-align:center;\n}\n\n.checkbox-label {\n  display: block;\n  position: relative;\n  margin-right: 40px;\n  cursor: pointer;\n  font-size: 22px;\n  line-height: 24px;\n  height: 24px;\n  width: auto;\n  clear: both;\n}\n\n.checkbox-label input {\n  position: absolute;\n  cursor: pointer;\n  display: none;\n}\n\n.checkbox-label .checkbox-custom {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  height: 35px;\n  width: 35px;\n  background-color: transparent;\n  border-radius: 5px;\n  transition: all 0.3s ease-out;\n  -webkit-transition: all 0.3s ease-out;\n  -moz-transition: all 0.3s ease-out;\n  -ms-transition: all 0.3s ease-out;\n  -o-transition: all 0.3s ease-out;\n  border: 2px solid #000;\n}\n\n.checkbox-label .checkbox-custom.circular {\n  border-radius: 50%;\n}\n\n.checkbox-label input:checked ~ .checkbox-custom.circular {\n  border-radius: 50%;\n}\n\n.checkbox-label input:checked ~ .checkbox-custom.circular::after {\n  opacity:1;\n  left: 7px;\n  top: 7px;\n  width: 17px;\n  height: 17px;\n  background-color: black;\n  border-radius: 50%;\n  }\n\n\n.checkbox-label input:checked ~ .checkbox-custom {\n  background-color: #FFFFFF;\n  border-radius: 5px;\n  -webkit-transform: rotate(0deg) scale(1);\n  -ms-transform: rotate(0deg) scale(1);\n  transform: rotate(0deg) scale(1);\n  opacity:1;\n  border: 2px solid #000;\n}\n\n\n.checkbox-label .checkbox-custom::after {\n  position: absolute;\n  content: \"\";\n  left: 12px;\n  top: 6px;\n  width: 8px;\n  height: 16px;\n  border-radius: 5px;\n  border: solid black;\n  border-width: 0 3px 3px 0;\n  -webkit-transform: rotate(45deg);\n  -ms-transform: rotate(45deg);\n  transform: rotate(45deg);\n  opacity:0;\n  transition: all 0.3s ease-out;\n  -webkit-transition: all 0.1s ease-out;\n  -moz-transition: all 0.1s ease-out;\n  -ms-transition: all 0.1s ease-out;\n  -o-transition: all 0.1s ease-out;\n}\n\n\n.checkbox-label input:checked ~ .checkbox-custom::after {\n-webkit-transform: rotate(45deg);\n-ms-transform: rotate(45deg);\ntransform: rotate(45deg);\nopacity:1;\nleft: 12px;\ntop: 6px;\nwidth: 8px;\nheight: 16px;\nborder: solid #000;\nborder-width: 0 3px 3px 0;\nbackground-color: transparent;\nborder-radius: 0;\n}\n\n\n.italic {\n font-style: italic;\n}\n\n.bold {\n font-weight: bold;\n}\n\n.center-text {\n text-align: center;\n}\n\n.post-area {\n padding: 40px;\n width: 100%;\n min-height: 150px;\n background-color: white;\n border-bottom: 1px dotted #ddd;\n}\n\n.post-area a:link,\n.post-area a:visited {\n font-size: 30px;\n color: #333;\n}\n\n.post-area a:hover {\n color: #0D0017;\n}\n\n.lang-list {\n display: inline-block;\n margin-top: 15px;\n}\n\n.lang-list a {\n color: #0D0017;\n font-weight: bold;\n}\n\nbody {\n font-family: 'Open Sans', sans-serif;\n -webkit-font-smoothing: antialiased;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n font-family: 'Roboto', sans-serif;\n}\n\nh2 {\n font-size: 30px;\n font-weight: 400;\n}\n\nh3 {\n font-size: 28px;\n font-weight: 300;\n}\n\np {\n font-size: 16px;\n line-height: 28px;\n}\n\nul {\n padding: 0;\n margin: 0;\n list-style: none;\n}\n\n.fz-20{\n font-size: 20px;\n}\n\na,\na:active,\na:focus,\na:active {\n text-decoration: none !important;\n}\n\n.section {\n padding: 100px 0;\n}\n\n.section-title {\n margin-bottom: 70px;\n}\n\n.section-title h2 {\n font-size: 36px;\n font-weight: 600;\n margin-bottom: 15px;\n}\n\n.section-title p {\n color: #666;\n font-size: 16px;\n}\n\n.btn-main,\n.btn-transparent,\n.btn-small {\n background: #655E7A;\n color: #fff;\n display: inline-block;\n font-size: 14px;\n letter-spacing: 1px;\n padding: 14px 35px;\n border-radius: 0;\n -webkit-transition: all 0.2s ease;\n transition: all 0.2s ease;\n}\n\n.btn-main:hover,\n.btn-transparent:hover,\n.btn-small:hover {\n background: white;\n color: #353240;\n}\n\n.btn-solid-border {\n border: 3px solid #fff;\n background: transparent;\n color: #fff;\n font-size: 16px;\n font-weight: 600;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n.btn-solid-border:hover {\n border: 3px solid #fff;\n background: #fff;\n text-shadow: none;\n\n}\n\nheader {\n background: #fff;\n padding: 20px 0;\n}\n\nheader .navbar {\n margin-bottom: 0px;\n border: 0px;\n}\n\n.navbar-right {\n  color: red;\n }\n\nheader .navbar-brand {\n padding-top: 5px;\n}\n\nheader .navbar-default {\n background: none;\n border: 0px;\n}\n\nheader .navbar-default .navbar-nav {\n padding-top: 10px;\n}\n\ncustom-nav ul {\n  display: flex;\n  color: red;\n}\n\nheader .navbar-default .navbar-nav li a {\n color: #333333;\n padding: 10px 26px;\n font-size: 15px;\n}\n\nfont header .navbar-default .navbar-nav li a:hover {\n color: #000;\n}\n\n#slider {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n background-position: 10% 0%;\n padding: 150px 0 150px 0;\n position: relative;\n}\n\n#slider:before {\n content: \"\";\n position: absolute;\n left: 0;\n top: 0;\n bottom: 0;\n right: 0;\n width: 100%;\n height: 100%;\n background: black;\n opacity: 0.55;\n}\n\n#slider .block {\n color: #E3E3E4;\n}\n\n#slider .block h1 {\n font-family: 'Roboto', sans-serif;\n font-weight: 700;\n font-size: 45px;\n line-height: 60px;\n letter-spacing: 5px;\n padding-bottom: 45px;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#slider .block p {\n font-size: 23px;\n line-height: 40px;\n font-family: 'Roboto', sans-serif;\n font-weight: 400;\n letter-spacing: 3px;\n margin-bottom: 100px;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#intro {\n padding: 100px 0;\n}\n\n#intro .block h2 {\n line-height: 27px;\n margin: 0;\n}\n\n#intro .block p {\n color: #333;\n}\n\n#intro .block img {\n padding-left: 40px;\n width: 100%;\n}\n\n#intro .section-title {\n margin-bottom: 0px;\n}\n\n#intro .section-title p {\n padding-top: 20px;\n}\n\n#service {\n text-align: center;\n padding: 90px 0;\n}\n\n.service-home {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  padding: 70px 0px;\n  position: relative;\n  text-align: center;\n}\n\n.service-home:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  width: 100%;\n  height: 100%;\n  background: black;\n  z-index: 0;\n  opacity: 0.55;\n}\n\n#service .service-item {\n padding-right: 15px;\n margin-bottom: 100px;\n}\n\n#service .service-item a {\n  color: #333;\n  font-size: 16px;\n  padding: 17px 35px;\n  border: 3px solid #333;\n  background: transparent;\n  font-size: 16px;\n  font-weight: 600;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n #service .service-item a:hover {\n  color: #fff;\n  border: 3px solid #333;\n  background: #333;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n#service .service-item img {\n width: 300px;\n}\n\n#service .service-item h4 {\n padding-top: 25px;\n font-weight: 800;\n margin: 0;\n color: #333;\n font-size: 26px;\n}\n\n#service .service-item p {\n color: #333;\n padding-top: 10px;\n margin: 0;\n font-size: 16px;\n line-height: 1.8;\n}\n\n#call-to-action {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n padding: 70px 0px;\n position: relative;\n text-align: center;\n color: #fff;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#call-to-action:before {\n content: \"\";\n position: absolute;\n left: 0;\n right: 0;\n top: 0;\n bottom: 0;\n width: 100%;\n height: 100%;\n background: black;\n opacity: 0.55;\n}\n\n#call-to-action h2 {\n padding-bottom: 20px;\n line-height: 33px;\n margin: 0;\n font-size: 30px;\n}\n\n#call-to-action p {\n font-size: 16px;\n line-height: 1.6;\n margin-bottom: 50px;\n}\n\n#call-to-action .btn-call-to-action {\n padding: 15px 35px;\n border: none;\n background-color: #fff;\n font-size: 15px;\n color: #333333;\n margin-top: 30px;\n}\n\n#feature {\n background-position: 50% 94px;\n width: 100%;\n display: block;\n position: relative;\n overflow: visible;\n background-attachment: fixed;\n background-repeat: no-repeat;\n background-position: center center;\n background-color: #fff;\n -webkit-background-size: cover;\n -moz-background-size: cover;\n -o-background-size: cover;\n background-size: cover;\n -webkit-box-sizing: border-box;\n -moz-box-sizing: border-box;\n box-sizing: border-box;\n -webkit-backface-visibility: hidden;\n backface-visibility: hidden;\n padding: 100px 0;\n}\n\n#feature h2 {\n font-size: 28px;\n font-weight: 600;\n margin-bottom: 30px;\n}\n\n#feature p {\n color: #8d8f92;\n margin-bottom: 20px;\n}\n\n#feature .btn-view-works {\n background: #655E7A;\n color: #fff;\n padding: 10px 20px;\n}\n\n#testimonial {\n padding: 100px 0;\n}\n\n#testimonial .block h2 {\n line-height: 27px;\n color: #5C5C5C;\n padding-top: 110px;\n}\n\n#testimonial .block p {\n padding-top: 50px;\n color: #7B7B7B;\n}\n\n#testimonial .counter-box li {\n width: 50%;\n float: left;\n text-align: center;\n margin: 30px 0 30px;\n}\n\n#testimonial .counter-box li i {\n font-size: 35px;\n}\n\n#testimonial .counter-box li h4 {\n font-size: 30px;\n font-weight: bold;\n}\n\n#testimonial .counter-box li span {\n color: #555;\n}\n\n#testimonial .testimonial-carousel {\n text-align: center;\n width: 75%;\n border: 1px solid #DEDEDE;\n padding: 24px;\n margin: 0 auto;\n}\n\n#testimonial .testimonial-carousel img {\n padding-bottom: 38px;\n}\n\n#testimonial .testimonial-carousel p {\n line-height: 28px;\n font-weight: 300;\n padding-bottom: 20px;\n}\n\n#testimonial .testimonial-carousel .user img {\n padding-bottom: 0px;\n border-radius: 500px;\n}\n\n#testimonial .testimonial-carousel .user p {\n padding-bottom: 0;\n font-size: 12px;\n line-height: 20px;\n color: #353241;\n}\n\n#testimonial .testimonial-carousel .user p span {\n display: block;\n color: #353241;\n font-weight: 600;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div {\n border: 1px solid #1D1D1D;\n border-radius: 500px;\n display: inline-block;\n height: 10px;\n margin-right: 15px;\n width: 10px;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div.active {\n background: #5C5C5C;\n font-size: 30px;\n display: inline-block;\n border: 0px;\n}\n\n#clients-logo-section {\n padding-top: 30px;\n padding-bottom: 75px;\n}\n\n#clients-logo-section .clients-logo-img {\n padding: 0px 50px;\n}\n\n#global-header {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  background-position: 10% 0%;\n  padding: 150px 0 150px 0;\n  position: relative;\n}\n\n#global-header:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n  background: black;\n  opacity: 0.55;\n}\n\n#global-header .block {\n color: #E3E3E4;\n margin: 0 auto;\n padding-left: 90px;\n text-align: center;\n}\n\n#global-header .block h1 {\n font-weight: 700;\n text-transform: uppercase;\n font-size: 45px;\n letter-spacing: 6px;\n padding-bottom: 15px;\n margin-top: 0;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#global-header .block p {\n font-size: 23px;\n line-height: 40px;\n font-weight: 400;\n letter-spacing: 1px;\n word-spacing: 3px;\n text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);\n}\n\n#portfolio-work {\n overflow: hidden;\n padding: 80px 0;\n}\n\n#portfolio-work .block .portfolio-menu {\n padding-bottom: 30px;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-menu ul {\n border: 1px solid #999999;\n display: inline-block;\n margin-bottom: 40px;\n}\n\n#portfolio-work .block .portfolio-menu ul li {\n display: inline-block;\n padding: 0px 25px;\n cursor: pointer;\n font-size: 15px;\n line-height: 40px;\n font-weight: 600;\n color: #333333;\n text-transform: capitalize;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active {\n color: #655E7A;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active:before {\n content: \"\\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 23px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-menu ul li:hover:before {\n content: \"\\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 24px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-contant ul li {\n float: left;\n width: 32.22%;\n overflow: hidden;\n margin: 6px;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .overly {\n opacity: 1;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .position-center {\n position: absolute;\n top: 50%;\n -webkit-transform: translate(0%, -50%);\n -moz-transform: translate(0%, -50%);\n -ms-transform: translate(0%, -50%);\n transform: translate(0%, -50%);\n}\n\n#portfolio-work .block .portfolio-contant ul li a {\n display: block;\n color: #fff;\n}\n\n#portfolio-work .block .portfolio-contant ul li a h2 {\n font-size: 22px;\n letter-spacing: 1px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a p {\n font-size: 15px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a span {\n font-style: italic;\n font-size: 13px;\n color: #655E7A;\n}\n\n#portfolio-work .block .portfolio-contant ul img {\n width: 100%;\n height: auto;\n}\n\n#portfolio-work .block .portfolio-contant .overly {\n position: absolute;\n top: 0;\n bottom: 0;\n right: 0;\n left: 0;\n background: rgba(0, 0, 0, 0.9);\n opacity: 0;\n -webkit-transition: .3s all;\n -o-transition: .3s all;\n transition: .3s all;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-contant .position-center {\n position: absolute;\n top: 50%;\n left: 10%;\n -webkit-transform: translate(0%, 50%);\n -moz-transform: translate(0%, 50%);\n -ms-transform: translate(0%, 50%);\n transform: translate(0%, 50%);\n -webkit-transition: .5s all;\n -o-transition: .5s all;\n transition: .5s all;\n}\n\n#portfolio-work .block .mix {\n display: none;\n}\n\n#wrapper-work {\n overflow: hidden;\n padding-top: 100px;\n}\n\n#wrapper-work ul li {\n width: 50%;\n float: left;\n position: relative;\n}\n\n#wrapper-work ul li img {\n width: 100%;\n height: 100%;\n}\n\n#wrapper-work ul li .items-text {\n position: absolute;\n top: 0;\n bottom: 0;\n left: 0;\n right: 0;\n width: 100%;\n height: 100%;\n color: #fff;\n background: rgba(0, 0, 0, 0.6);\n padding-left: 44px;\n padding-top: 140px;\n}\n\n#wrapper-work ul li .items-text h2 {\n padding-bottom: 28px;\n padding-top: 75px;\n position: relative;\n}\n\n#wrapper-work ul li .items-text h2:before {\n content: \"\";\n position: absolute;\n left: 0;\n bottom: 0;\n width: 75px;\n height: 3px;\n background: #fff;\n}\n\n#wrapper-work ul li .items-text p {\n padding-top: 30px;\n font-size: 16px;\n line-height: 27px;\n font-weight: 300;\n padding-right: 80px;\n}\n\n#features-work {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-work .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n#contact-form, #service-form {\n padding-top: 70px;\n padding-bottom: 35px;\n}\n\n#contact-form .block form .form-group, #service-form .block form .form-group {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group .form-control, #service-form .block form .form-group .form-control {\n background: #F6F8FA;\n height: 60px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block form .form-group-2, #service-form .block form .form-group-2 {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group-2 textarea, #service-form .block form .form-group-2 textarea {\n background: #F6F8FA;\n height: 135px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block button, #service-form .block button {\n width: 100%;\n height: 60px;\n background: #47424C;\n border: none;\n color: #fff;\n font-family: 'Open Sans', sans-serif;\n font-size: 18px;\n}\n\n.address-block li {\n margin-bottom: 20px;\n}\n\n.address-block li i {\n margin-right: 15px;\n font-size: 20px;\n width: 20px;\n}\n\n.social-icons {\n margin-top: 40px;\n}\n\n.social-icons li {\n display: inline-block;\n margin: 0 6px;\n}\n\n.social-icons a {\n display: inline-block;\n}\n\n.social-icons i {\n color: #2C2C2C;\n margin-right: 25px;\n font-size: 25px;\n}\n\n.google-map {\n position: relative;\n}\n\n.google-map #map {\n width: 100%;\n height: 300px;\n background-color: #ff432e;\n}\n\n#contact-box {\n padding-top: 35px;\n padding-bottom: 58px;\n}\n\n#contact-box .block img {\n width: 100%;\n}\n\n#contact-box .block h2 {\n font-family: 'Open Sans', sans-serif;\n font-weight: 300;\n color: #000;\n font-size: 28px;\n padding-bottom: 30px;\n}\n\n#contact-box .block p {\n color: #5C5C5C;\n display: block;\n}\n\n#features-contact {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-contact .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n.blog-post {\n margin-bottom: 50px;\n}\n\n.blog-post img {\n margin-bottom: 15px;\n}\n\n.blog-post p {\n margin: 15px 0 20px;\n}\n\n.post-title {\n color: #655E7A;\n font-size: 25px;\n font-weight: 600;\n display: block;\n margin-bottom: 10px;\n}\n\n.heading {\n padding-bottom: 60px;\n text-align: center;\n}\n\n.heading h2 {\n color: #000;\n font-size: 30px;\n line-height: 40px;\n font-weight: 400;\n}\n\n.heading p {\n font-size: 16px;\n line-height: 40px;\n color: #292929;\n font-weight: 300;\n}\n\nfooter {\n background: #F5F5F5;\n text-align: center;\n padding-top: 48px;\n padding-bottom: 55px;\n}\n\nfooter p {\n font-size: 13px;\n line-height: 25px;\n color: #919191;\n}\n\nfooter a {\n color: #595959;\n}\n\nfooter .footer-manu {\n padding-bottom: 25px;\n}\n\nfooter .footer-manu ul {\n margin: 0px;\n padding: 0px;\n}\n\nfooter .footer-manu ul li {\n display: inline-block;\n padding: 0px 20px;\n}\n\nfooter .footer-manu ul li a {\n display: inline-block;\n color: #494949;\n}\n\nfooter .footer-manu ul li a:hover {\n color: #000;\n}\n\n@media only screen and (min-width: 768px) and (max-width: 991px) {\n\n #wrapper {\n   text-align: center;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   width: 50%;\n }\n\n #content {\n   text-align: center;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n\n #features {\n   text-align: center;\n }\n\n footer .navbar {\n   margin-bottom: 0px;\n   border: 0px;\n   min-height: 40px;\n }\n footer .navbar-default {\n   border: 0px;\n   width: 68%;\n }\n footer .navbar-default .navbar-nav li a {\n   color: #494949;\n   padding: 10px 10px;\n   font-size: 15px;\n }\n footer .navbar-default .navbar-nav li a:hover {\n   color: #000;\n }\n\n #slider-work .block h1 {\n   font-size: 28px;\n }\n #slider-work .block p {\n   font-size: 15px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 30px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #wrapper-work ul li .items-text {\n   padding-top: 0;\n   padding-left: 25px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-bottom: 10px;\n   padding-top: 40px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 14px;\n   line-height: 20px;\n   padding-right: 30px;\n }\n\n #features-work .block ul li {\n   width: 49%;\n }\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #features-contact .block ul li {\n   width: 49%;\n }\n}\n\n@media only screen and (max-width: 767px) {\n .heading {\n   padding-left: 0px;\n }\n h2 {\n   font-size: 18px;\n }\n p {\n   font-size: 13px;\n }\n header .navbar-default .navbar-toggle {\n   margin-top: 20px;\n   margin-bottom: 20px;\n }\n #slider {\n   padding-top: 90px;\n   padding-bottom: 100px;\n }\n #slider .block {\n   padding-left: 0px;\n }\n #slider .block h1 {\n   font-size: 20px;\n }\n #slider .block p {\n   font-size: 13px;\n }\n\n #wrapper {\n   text-align: center;\n   padding-top: 70px;\n   padding-bottom: 100px;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   padding-left: 0px;\n   width: 100%;\n }\n\n #service {\n   padding-top: 100px;\n }\n #service .thumbnail {\n   padding-bottom: 70px;\n }\n\n #call-to-action p {\n   padding: 0px 0px 40px;\n }\n #call-to-action .btn {\n   padding: 10px 20px;\n   font-size: 15px;\n }\n\n #content {\n   text-align: center;\n   padding-top: 70px;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n #content .block h2 {\n   padding-top: 0px;\n }\n #content .block-bottom {\n   padding: 0px;\n }\n #content .block-bottom .item-img {\n   padding-left: 0px;\n }\n\n #features .features-img {\n   text-align: center;\n }\n\n #slider-work {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-work .block {\n   padding-left: 0px;\n }\n #slider-work .block h1 {\n   font-size: 20px;\n }\n #slider-work .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n   text-align: center;\n }\n #portfolio-work .block .portfolio-manu ul li {\n   padding: 0 8px;\n }\n #portfolio-work .block .portfolio-contant ul li {\n   width: 100%;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 65px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n   padding-right: 5px;\n }\n\n #wrapper-work ul li {\n   float: none;\n   width: 100%;\n }\n #wrapper-work ul li .items-text {\n   padding-left: 15px;\n   padding-top: 30px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-top: 10px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #features-work .block ul li {\n   display: block;\n   width: 100%;\n }\n\n #slider-contact {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-contact .block {\n   padding-left: 0px;\n }\n #slider-contact .block h1 {\n   font-size: 20px;\n }\n #slider-contact .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #wrapper-contact .block .location p {\n   width: 100%;\n }\n #wrapper-contact .block .social-media-icon a i {\n   padding-top: 30px;\n }\n\n #features-contact .block ul li {\n   display: block;\n   width: 100%;\n }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -13665,7 +13864,7 @@ var appStyles = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templ
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fservices&absolutePagePath=%2FUsers%2Fnickmakuch%2FDocuments%2FCode%2Frosies-ms-nextjs%2Fpages%2Fservices.js ***!
   \**********************************************************************************************************************************************************/
@@ -13688,5 +13887,5 @@ module.exports = dll_ea92a4d9664833a26066;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=services.js.map

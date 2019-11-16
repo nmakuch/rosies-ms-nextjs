@@ -8,17 +8,27 @@ import Layout from "../components/Layout";
 import GlobalHeader from "../components/GlobalHeader";
 import CallToAction from "../components/CallToAction";
 
+const formatter = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  minimumFractionDigits: 2
+});
+
 class CheckBox extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <label>{this.props.label}</label>
-        <input
-          type="checkbox"
-          id={this.props.id}
-          value={this.props.value}
-          onChange={this.props.onChange}
-        />
+        <label className="checkbox-label">
+          <input
+            type="checkbox"
+            type="checkbox"
+            id={this.props.id}
+            value={this.props.value}
+            onChange={this.props.onChange}
+          />
+          <p className="radio-label">{this.props.label}</p>
+          <span className="checkbox-custom rectangular"></span>
+        </label>
       </React.Fragment>
     );
   }
@@ -30,12 +40,14 @@ class Services extends React.Component {
     this.state = {
       optionsAddOns1: [],
       optionsAddOns2: [],
+      optionsAddOns3: [],
+      labelsAddOns1: [],
       selectBoxValue1: [],
-      radio1: "0",
+      radio1: "0"
     };
   }
 
-  handleChange(event) {
+  radioChange(event) {
     this.setState({
       radio1: event.target.value
     });
@@ -43,12 +55,16 @@ class Services extends React.Component {
 
   changeEvent1(event) {
     let checkedArrayAddOns1 = this.state.optionsAddOns1;
+    let checkedArrayIds1 = this.state.labelsAddOns1;
+    let selectedId1 = event.target.id;
     let selectedValue1 = event.target.value;
 
     if (event.target.checked === true) {
-      checkedArrayAddOns1.push(parseInt(selectedValue1));
+      checkedArrayIds1.push(selectedId1);
+      checkedArrayAddOns1.push(parseFloat(selectedValue1));
       this.setState({
-        optionsAddOns1: checkedArrayAddOns1
+        optionsAddOns1: checkedArrayAddOns1,
+        labelsAddOns1: checkedArrayIds1
       });
     } else {
       let valueIndex1 = checkedArrayAddOns1.indexOf(selectedValue1);
@@ -65,7 +81,7 @@ class Services extends React.Component {
     let selectedValue2 = event.target.value;
 
     if (event.target.checked === true) {
-      checkedArrayAddOns2.push(parseInt(selectedValue2));
+      checkedArrayAddOns2.push(parseFloat(selectedValue2));
       this.setState({
         optionsAddOns2: checkedArrayAddOns2
       });
@@ -79,46 +95,107 @@ class Services extends React.Component {
     }
   }
 
+  changeEvent3(event) {
+    let checkedArrayAddOns3 = this.state.optionsAddOns3;
+    let selectedValue3 = event.target.value;
+
+    if (event.target.checked === true) {
+      checkedArrayAddOns3.push(parseFloat(selectedValue3));
+      this.setState({
+        optionsAddOns3: checkedArrayAddOns3
+      });
+    } else {
+      let valueIndex3 = checkedArrayAddOns3.indexOf(selectedValue3);
+      checkedArrayAddOns3.splice(valueIndex3, 1);
+
+      this.setState({
+        optionsAddOns3: checkedArrayAddOns3
+      });
+    }
+  }
+
   render() {
-    let checkBoxArrayAddOns1 = [54, 23, 108];
+    let addOnsLabels1 = this.state.labelsAddOns1;
+    let addOnsCost1 = this.state.optionsAddOns1;
+
+    let checkBoxArrayAddOns1 = [54.0, 90.0, 108.0];
     let checkBoxArrayLabels1 = [
-      "Basic: kitchen, bathroom, all floors  - 54$ (1.5 hourse)",
-      "Basic Plus: kitchen, bathroom, living areas (including bedroom) - 90$ (2.5 hours)",
-      "Complete: kitchen, bathroom, living areas, plus one big job (oven, fridge, windows*) - 108$ ( 3 hrs)"
+      "Basic (1.5 hours): kitchen, bathroom, all floors ($54.00)",
+      "Basic plus (2.5 hours): kitchen, bathroom, living areas including bedroom($90.00)",
+      "Complete (3.0 hours): kitchen, bathroom, living areas, plus one big job ($108.00)"
+    ];
+    let checkBoxArrayIds1 = [
+      "Basic (1.5 hours)",
+      "Basic plus (2.5 hours)",
+      "Complete (3.0 hours)"
     ];
 
-    let checkBoxArrayAddOns2 = [54, 23, 108];
+    let checkBoxArrayAddOns2 = [60.0, 100.0, 140.0];
     let checkBoxArrayLabels2 = [
-      "Basic: kitchen, bathroom, all floors  - 54$ (1.5 hourse)",
-      "Basic Plus: kitchen, bathroom, living areas (including bedroom) - 90$ (2.5 hours)",
-      "Complete: kitchen, bathroom, living areas, plus one big job (oven, fridge, windows*) - 108$ ( 3 hrs)"
+      "Basic (1.5 hours): kitchen, bathroom, all floors ($60.00)",
+      "Basic plus (2.5 hours): kitchen, bathroom, living areas including bedroom($100.00)",
+      "Complete (3.0 hours): kitchen, bathroom, living areas, plus one big job ($140.00)"
+    ];
+
+    let checkBoxArrayAddOns3 = [35.0, 20.0, 20.0, 20.0, 15.0, 20.0];
+    let checkBoxArrayLabels3 = [
+      "Deep clean - wall spot cleaning, baseboards, inside of kitchen & bathroom cabinets ($35.00)",
+      "Big task - oven ($20.00)",
+      "Big task - inside fridge ($20.00)",
+      "Big task - windows ($20.00)",
+      "Additional powder room ($15.00)",
+      "Additional bathroom ($20.00)"
+    ];
+
+    let radioValues1 = [52.5, 70.0, 87.5, 105.0, 122.5, 140.0];
+    let radioLabels1 = [
+      "1.5 hour session at $35/hour ($52.50)",
+      "2.0 hour session at $35/hour ($70.00)",
+      "2.5 hour session at $35/hour ($87.50)",
+      "3.0 hour session at $35/hour ($105.00)",
+      "3.5 hour session at $35/hour ($122.50)",
+      "4.0 hour session at $35/hour ($140.00)"
+    ];
+
+    let radioValues2 = [54, 90, 108];
+    let radioLabels2 = [
+      "Basic (1.5 hours at $35/hour): kitchen, bathroom, all floors  ($54.00)",
+      "Basic Plus (2.5 hours at $35/hour): kitchen, bathroom, living areas including bedroom ($90.00)",
+      "Complete (3.0 hours at $35/hour): kitchen, bathroom, living areas plus one big job ($108.00)"
     ];
 
     let grandTotalArr = [];
 
     let outputCheckboxesAddOns1 = checkBoxArrayAddOns1.map((number, i) => {
       return (
-        <div>
-          <label htmlFor={"string_" + i}>{checkBoxArrayLabels1[i]}</label>
-          <CheckBox
-            value={number}
-            id={"string_" + i}
-            onChange={this.changeEvent1.bind(this)}
-          />
-        </div>
+        <CheckBox
+          value={number}
+          id={checkBoxArrayIds1[i]}
+          onChange={this.changeEvent1.bind(this)}
+          label={checkBoxArrayLabels1[i]}
+        />
       );
     }, this);
 
     let outputCheckboxesAddOns2 = checkBoxArrayAddOns2.map((number, i) => {
       return (
-        <div>
-          <label htmlFor={"string_" + i}>{checkBoxArrayLabels2[i]}</label>
-          <CheckBox
-            value={number}
-            id={"string_" + i}
-            onChange={this.changeEvent2.bind(this)}
-          />
-        </div>
+        <CheckBox
+          value={number}
+          id={"string_" + i}
+          onChange={this.changeEvent2.bind(this)}
+          label={checkBoxArrayLabels2[i]}
+        />
+      );
+    }, this);
+
+    let outputCheckboxesAddOns3 = checkBoxArrayAddOns3.map((number, i) => {
+      return (
+        <CheckBox
+          value={number}
+          id={"string_" + i}
+          onChange={this.changeEvent3.bind(this)}
+          label={checkBoxArrayLabels3[i]}
+        />
       );
     }, this);
 
@@ -131,14 +208,24 @@ class Services extends React.Component {
       (a, b) => a + b,
       0
     );
-    
+
+    let sumOptionsAddOns3 = this.state.optionsAddOns3.reduce(
+      (a, b) => a + b,
+      0
+    );
+
     grandTotalArr.push(sumOptionsAddOns1);
     grandTotalArr.push(sumOptionsAddOns2);
+    grandTotalArr.push(sumOptionsAddOns3);
 
-    let grandTotalSum = grandTotalArr.reduce((a, b) => a + b, 0) + parseInt(this.state.radio1);
+    let grandTotalSum = formatter.format(
+      grandTotalArr.reduce((a, b) => a + b, 0) + parseFloat(this.state.radio1)
+    );
 
-    console.log(grandTotalSum);
-
+    let grandTotalSumHST = formatter.format(
+      grandTotalArr.reduce((a, b) => a + b * 1.13, 0) +
+        parseFloat(this.state.radio1)
+    );
 
     return (
       <Layout>
@@ -150,6 +237,7 @@ class Services extends React.Component {
         <section
           css={css`
             margin-top: 75px;
+
             p {
               margin-bottom: 0;
             }
@@ -161,8 +249,13 @@ class Services extends React.Component {
           `}
         >
           <div className="container">
-            <div className="col-md-8 offset-md-2 col-sm-12">
-              <div className="row">
+            <div className="col-md-10 offset-md-1 col-sm-12">
+              <div
+                css={css`
+                  padding: 0 15px;
+                `}
+                className="row"
+              >
                 <h2>We offer a variety of cleaning options</h2>
                 <p>
                   We offer the most customizable plans that let you choose
@@ -183,14 +276,47 @@ class Services extends React.Component {
             padding-bottom: 100px !important;
             h2 {
               font-weight: 600;
+              margin-bottom: 50px;
             }
 
-            h2:first-of-type {
+            h3 {
+              font-size: 20px;
+              font-weight: 600;
+              margin-bottom: 35px;
+            }
+
+            h4 {
+              font-size: 18px;
+              font-weight: 600;
               margin-bottom: 25px;
             }
 
-            h2:last-of-type {
-              margin-bottom: 25px;
+            li {
+              label {
+                margin-bottom: 45px;
+
+                p {
+                  position: relative;
+                  top: 5px;
+                  left: 50px;
+                }
+              }
+            }
+
+            li:first-of-type {
+              margin-top: 25px;
+            }
+
+            li:nth-of-type(6) {
+              margin-bottom: 50px;
+            }
+
+            textarea {
+              margin-bottom: 50px;
+            }
+
+            li:last-of-type {
+              margin-bottom: 50px;
             }
 
             .form-group {
@@ -202,11 +328,21 @@ class Services extends React.Component {
           <div className="block">
             <form method="post">
               <div className="container">
-                <div className="col-md-8 offset-md-2 col-sm-12">
-                  <div className="row">
-                    <h2>Choose your plan:</h2>
+                <div className="col-md-10 offset-md-1 col-sm-12">
+                  <div
+                    css={css`
+                      padding: 0 15px;
+                    `}
+                    className="row"
+                  >
+                    <h2>Select one of the following plans:</h2>
                   </div>
-                  <div className="row">
+                  <div
+                    css={css`
+                      padding: 0 15px;
+                    `}
+                    className="row"
+                  >
                     <div
                       css={css`
                         padding: 0 5px !important;
@@ -214,106 +350,164 @@ class Services extends React.Component {
                       className="col-md-12 col-sm-12"
                     >
                       <div className="form-group">
-                        <label>1) By the hour - Rate: $35/hr</label>
+                        <h3>1) Cleaning by the hour (Rate: $35/hr)</h3>
                         <ul>
+                          {radioValues1.map((radioValue, i) => {
+                            return (
+                              <li>
+                                <label className="checkbox-label">
+                                  <input
+                                    type="radio"
+                                    value={radioValue}
+                                    checked={
+                                      this.state.radio1 === `${radioValue}`
+                                    }
+                                    onChange={this.radioChange.bind(this)}
+                                  />
+                                  <p className="radio-label">
+                                    {radioLabels1[i]}
+                                  </p>
+                                  <span className="checkbox-custom circular"></span>
+                                </label>
+                              </li>
+                            );
+                          })}
                           <li>
-                            <label>
-                              <input
-                                type="radio"
-                                value={52.5}
-                                checked={this.state.radio1 === "52.5"}
-                                onChange={this.handleChange.bind(this)}
-                              />
-                              1.5 hours ($52.00)
-                            </label>
+                            <div className="form-group-2">
+                              <h4>
+                                Please leave instructions for your cleaner:
+                              </h4>
+                              <textarea
+                                name="hourlyMessage"
+                                id="hourlyMessage"
+                                className="form-control"
+                                rows="3"
+                                css={css`
+                                  height: 135px !important;
+                                `}
+                                placeholder="Your message"
+                              ></textarea>
+                            </div>
                           </li>
-
                           <li>
-                            <label>
-                              <input
-                                type="radio"
-                                value={70}
-                                checked={this.state.radio1 === "70"}
-                                onChange={this.handleChange.bind(this)}
-                              />
-                              2 hours ($70.00)
-                            </label>
+                            <h3>
+                              2) Pre-structured cleaning package (Rate:
+                              $35/hour)
+                            </h3>
                           </li>
-
-                          <li>
-                            <label>
-                              <input
-                                type="radio"
-                                value={87}
-                                checked={this.state.radio1 === "87"}
-                                onChange={this.handleChange.bind(this)}
-                              />
-                              2.5 hours ($87.00)
-                            </label>
-                          </li>
-
-                          <li>
-                            <label>
-                              <input
-                                type="radio"
-                                value={105}
-                                checked={this.state.radio1 === "105"}
-                                onChange={this.handleChange.bind(this)}
-                              />
-                              3 hours ($105.00)
-                            </label>
-                          </li>
-
-                          <li>
-                            <label>
-                              <input
-                                type="radio"
-                                value={122}
-                                checked={this.state.radio1 === "122"}
-                                onChange={this.handleChange.bind(this)}
-                              />
-                              3.5 hours ($122.00)
-                            </label>
-                          </li>
-
-                          <li>
-                            <label>
-                              <input
-                                type="radio"
-                                value={140}
-                                checked={this.state.radio1 === "140"}
-                                onChange={this.handleChange.bind(this)}
-                              />
-                              4 hours ($140.00)
-                            </label>
-                          </li>
+                          {radioValues2.map((radioValue, i) => {
+                            return (
+                              <li>
+                                <label className="checkbox-label">
+                                  <input
+                                    type="radio"
+                                    value={radioValue}
+                                    checked={
+                                      this.state.radio1 === `${radioValue}`
+                                    }
+                                    onChange={this.radioChange.bind(this)}
+                                  />
+                                  <p className="radio-label">
+                                    {radioLabels2[i]}
+                                  </p>
+                                  <span className="checkbox-custom circular"></span>
+                                </label>
+                              </li>
+                            );
+                          })}
                         </ul>
                       </div>
                     </div>
                   </div>
-                  <div className="row">
-                    <h2>Add Ons:</h2>
+                  <div
+                    css={css`
+                      padding: 0 15px;
+                      label {
+                        margin-bottom: 50px;
+                        p {
+                          position: relative;
+                          top: 4px;
+                          left: 50px;
+                        }
+                      }
+                    `}
+                    className="row"
+                  >
+                    <h2
+                      css={css`
+                        margin-top: 50px;
+                      `}
+                    >
+                      These add-ons can be added to your package:
+                    </h2>
+                    <h3>
+                      1) Bachelor or 1 Bedroom up to 600 sq/ft (1 bathroom):
+                    </h3>
                     <div className="form-group">
                       <div>{outputCheckboxesAddOns1}</div>
                       <br />
                     </div>
                   </div>
-
-                  <div className="row">
+                  <div
+                    css={css`
+                      padding: 0 15px;
+                      label {
+                        margin-bottom: 40px;
+                        p {
+                          position: relative;
+                          top: 4px;
+                          left: 50px;
+                        }
+                      }
+                    `}
+                    className="row"
+                  >
+                    <h3>2) Bedroom up to 1000 sq/ft (1 bathroom):</h3>
                     <div className="form-group">
                       <div>{outputCheckboxesAddOns2}</div>
                       <br />
                     </div>
                   </div>
-                  <div className="row">
+                  <div
+                    css={css`
+                      padding: 0 15px;
+                      label {
+                        margin-bottom: 40px;
+                        p {
+                          position: relative;
+                          top: 4px;
+                          left: 50px;
+                        }
+                      }
+                    `}
+                    className="row"
+                  >
+                    <h3>3) Other package add ons:</h3>
                     <div className="form-group">
-                      <input
-                        name="grandTotal"
-                        id="grandTotal"
-                        type="text"
-                        className="form-control"
-                        value={`Grand Total: ${grandTotalSum}`}
-                      />
+                      <div>{outputCheckboxesAddOns3}</div>
+                      <br />
+                    </div>
+                  </div>
+                  <div
+                    css={css`
+                      padding: 0 15px;
+                    `}
+                    className="row"
+                  >
+                    <div>
+                      <h3
+                        css={css`
+                          margin-bottom: 30px !important;
+                          span {
+                            font-weight: 400;
+                          }
+                        `}
+                      >
+                        <span>Grand total: </span> {grandTotalSum}
+                      </h3>
+                      {addOnsLabels1.map((addOnLabel1, i) => {
+                        return <p>{addOnLabel1} {formatter.format(addOnsCost1[i])}</p>;
+                      })}
                     </div>
                   </div>
                   <button className="btn btn-default" type="submit">

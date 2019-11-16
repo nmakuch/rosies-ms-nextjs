@@ -1,6 +1,113 @@
 import { css } from "@emotion/core";
 
 export const appStyles = css`
+.checkbox-container {
+  box-sizing: border-box;
+  text-align:center;
+}
+
+.checkbox-label {
+  display: block;
+  position: relative;
+  margin-right: 40px;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 24px;
+  height: 24px;
+  width: auto;
+  clear: both;
+}
+
+.checkbox-label input {
+  position: absolute;
+  cursor: pointer;
+  display: none;
+}
+
+.checkbox-label .checkbox-custom {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  border: 2px solid #000;
+}
+
+.checkbox-label .checkbox-custom.circular {
+  border-radius: 50%;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom.circular {
+  border-radius: 50%;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom.circular::after {
+  opacity:1;
+  left: 7px;
+  top: 7px;
+  width: 17px;
+  height: 17px;
+  background-color: black;
+  border-radius: 50%;
+  }
+
+
+.checkbox-label input:checked ~ .checkbox-custom {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity:1;
+  border: 2px solid #000;
+}
+
+
+.checkbox-label .checkbox-custom::after {
+  position: absolute;
+  content: "";
+  left: 12px;
+  top: 6px;
+  width: 8px;
+  height: 16px;
+  border-radius: 5px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  opacity:0;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+opacity:1;
+left: 12px;
+top: 6px;
+width: 8px;
+height: 16px;
+border: solid #000;
+border-width: 0 3px 3px 0;
+background-color: transparent;
+border-radius: 0;
+}
+
+
 .italic {
  font-style: italic;
 }
@@ -203,8 +310,8 @@ font header .navbar-default .navbar-nav li a:hover {
  right: 0;
  width: 100%;
  height: 100%;
- background: #1d192c;
- opacity: 0.7;
+ background: black;
+ opacity: 0.55;
 }
 
 #slider .block {
@@ -280,9 +387,9 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #1d192c;
+  background: black;
   z-index: 0;
-  opacity: 0.7;
+  opacity: 0.55;
 }
 
 #service .service-item {
@@ -358,8 +465,8 @@ font header .navbar-default .navbar-nav li a:hover {
  bottom: 0;
  width: 100%;
  height: 100%;
- background: #1d192c;
- opacity: 0.7;
+ background: black;
+ opacity: 0.55;
 }
 
 #call-to-action h2 {
@@ -537,8 +644,8 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #1d192c;
-  opacity: 0.7;
+  background: black;
+  opacity: 0.55;
 }
 
 #global-header .block {
