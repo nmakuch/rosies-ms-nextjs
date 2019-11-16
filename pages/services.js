@@ -69,9 +69,11 @@ class Services extends React.Component {
     } else {
       let valueIndex1 = checkedArrayAddOns1.indexOf(selectedValue1);
       checkedArrayAddOns1.splice(valueIndex1, 1);
+      checkedArrayIds1.splice(valueIndex1, 1);
 
       this.setState({
-        optionsAddOns1: checkedArrayAddOns1
+        optionsAddOns1: checkedArrayAddOns1,
+        labelsAddOns1: checkedArrayIds1
       });
     }
   }
@@ -220,6 +222,11 @@ class Services extends React.Component {
 
     let grandTotalSum = formatter.format(
       grandTotalArr.reduce((a, b) => a + b, 0) + parseFloat(this.state.radio1)
+    );
+
+    let grandTotalHST = formatter.format(
+      grandTotalArr.reduce((a, b) => a + b * 0.13, 0) +
+        parseFloat(this.state.radio1)
     );
 
     let grandTotalSumHST = formatter.format(
@@ -495,19 +502,92 @@ class Services extends React.Component {
                     className="row"
                   >
                     <div>
-                      <h3
+                      <h2
                         css={css`
                           margin-bottom: 30px !important;
-                          span {
-                            font-weight: 400;
-                          }
                         `}
                       >
-                        <span>Grand total: </span> {grandTotalSum}
-                      </h3>
+                        Your plan:
+                      </h2>
                       {addOnsLabels1.map((addOnLabel1, i) => {
-                        return <p>{addOnLabel1} {formatter.format(addOnsCost1[i])}</p>;
-                      })}
+                        return (
+                          <div
+                            css={css`
+                              display: flex;
+                              justify-content: space-between;
+                              width: 400px;
+
+                              h3 {
+                                font-size: 16px;
+                                margin-bottom: 15px;
+                              }
+
+                              span {
+                                font-size: 16px;
+                              }
+                            `}
+                          >
+                            <h3>+ {addOnLabel1}</h3>
+                            <span> {formatter.format(addOnsCost1[i])}</span>
+                          </div>
+                        );
+                      })
+                      }
+                    </div>
+                  </div>
+                  <div
+                    css={css`
+                      padding: 0 15px;
+                    `}
+                    className="row"
+                  >
+                    <div
+                      css={css`
+                        display: flex;
+                        justify-content: space-between;
+                        width: 400px;
+                        margin-top: 25px;
+                        padding-top: 25px;
+                        border-top: 1px solid black;
+
+                        h3 {
+                          font-size: 16px;
+                          margin-bottom: 15px;
+                        }
+
+                        span {
+                          font-size: 16px;
+                        }
+                      `}
+                    >
+                      <h3>+ HST (x0.13)</h3>
+                      <span>{grandTotalHST}</span>
+                    </div>
+                  </div>
+
+                  <div
+                    css={css`
+                      padding: 0 15px;
+                    `}
+                    className="row"
+                  >
+                    <div
+                      css={css`
+                        display: flex;
+                        justify-content: space-between;
+                        width: 400px;
+
+                        h3 {
+                          font-size: 16px;
+                        }
+
+                        span {
+                          font-size: 16px;
+                        }
+                      `}
+                    >
+                      <h3>Grand total:</h3>
+                      <span>{grandTotalSumHST}</span>
                     </div>
                   </div>
                   <button className="btn btn-default" type="submit">

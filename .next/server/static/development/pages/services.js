@@ -2337,8 +2337,10 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     } else {
       let valueIndex1 = checkedArrayAddOns1.indexOf(selectedValue1);
       checkedArrayAddOns1.splice(valueIndex1, 1);
+      checkedArrayIds1.splice(valueIndex1, 1);
       this.setState({
-        optionsAddOns1: checkedArrayAddOns1
+        optionsAddOns1: checkedArrayAddOns1,
+        labelsAddOns1: checkedArrayIds1
       });
     }
   }
@@ -2425,6 +2427,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     grandTotalArr.push(sumOptionsAddOns2);
     grandTotalArr.push(sumOptionsAddOns3);
     let grandTotalSum = formatter.format(grandTotalArr.reduce((a, b) => a + b, 0) + _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0___default()(this.state.radio1));
+    let grandTotalHST = formatter.format(grandTotalArr.reduce((a, b) => a + b * 0.13, 0) + _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0___default()(this.state.radio1));
     let grandTotalSumHST = formatter.format(grandTotalArr.reduce((a, b) => a + b * 1.13, 0) + _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0___default()(this.state.radio1));
     return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_6__["default"], {
       globalHeaderTitle: "Services / Booking",
@@ -2622,16 +2625,70 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
                       padding: 0 15px;
                     `,
       className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
                           margin-bottom: 30px !important;
-                          span {
-                            font-weight: 400;
-                          }
                         `
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, "Grand total: "), " ", grandTotalSum), addOnsLabels1.map((addOnLabel1, i) => {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", null, addOnLabel1, " ", formatter.format(addOnsCost1[i]));
-    }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("button", {
+    }, "Your plan:"), addOnsLabels1.map((addOnLabel1, i) => {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+        css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                              display: flex;
+                              justify-content: space-between;
+                              width: 400px;
+
+                              h3 {
+                                font-size: 16px;
+                                margin-bottom: 15px;
+                              }
+
+                              span {
+                                font-size: 16px;
+                              }
+                            `
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "+ ", addOnLabel1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, " ", formatter.format(addOnsCost1[i])));
+    }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                      padding: 0 15px;
+                    `,
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                        display: flex;
+                        justify-content: space-between;
+                        width: 400px;
+                        margin-top: 25px;
+                        padding-top: 25px;
+                        border-top: 1px solid black;
+
+                        h3 {
+                          font-size: 16px;
+                          margin-bottom: 15px;
+                        }
+
+                        span {
+                          font-size: 16px;
+                        }
+                      `
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "+ HST (x0.13)"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, grandTotalHST))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                      padding: 0 15px;
+                    `,
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                        display: flex;
+                        justify-content: space-between;
+                        width: 400px;
+
+                        h3 {
+                          font-size: 16px;
+                        }
+
+                        span {
+                          font-size: 16px;
+                        }
+                      `
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "Grand total:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, grandTotalSumHST))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("button", {
       className: "btn btn-default",
       type: "submit"
     }, "submit")))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_7__["default"], {
