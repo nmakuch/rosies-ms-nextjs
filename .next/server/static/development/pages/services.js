@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -143,135 +143,6 @@ class CallToAction extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Componen
 
 /***/ }),
 
-/***/ "./components/ContactForm.js":
-/*!***********************************!*\
-  !*** ./components/ContactForm.js ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! formik */ "formik");
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(formik__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
-
-/** @jsx jsx */
-
-
-
-
-class ContactForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
-  render() {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-            padding-top: 100px !important;
-            padding-bottom: 100px !important;
-            h2 {
-              text-transform: uppercase;
-              font-weight: 600;
-            }
-
-            h2:first-of-type {
-              margin-bottom: 25px;
-            }
-
-            h2:last-of-type {
-              margin-bottom: 25px;
-            }
-          `,
-      id: "contact-form"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "container"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "col-md-8 offset-md-2 col-sm-12"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "block"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", null, "FEEL FREE TO EMAIL OR CALL AT ANY TIME"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                      font-size: 16px;
-                    `
-    }, "If you'd rather speak to us in person or send an email at your own leisure, feel free to email or call us at any time, we'd be more than happy to answer your questions or give an estimated price."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                      font-size: 16px;
-                    `
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("strong", null, "Email:"), " information@rosiesmaidservice.ca"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                      font-size: 16px;
-                      margin-bottom: 75px;
-                    `
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("strong", null, "Phone number:"), " 1 (234) 567-8910"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", null, "OR SUMBIT A QUICK MESSAGE"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                      padding-top: 0 !important;
-                    `,
-      id: "contact-form"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "container"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                            padding: 0 5px !important;
-                          `,
-      className: "col-md-12 col-sm-12"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "block"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("form", {
-      method: "post"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "form-group"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("input", {
-      type: "text",
-      name: "name",
-      id: "name",
-      className: "form-control",
-      placeholder: "Your name"
-    })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "form-group"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("input", {
-      id: "email",
-      type: "text",
-      name: "email",
-      className: "form-control",
-      placeholder: "Your email"
-    })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "form-group"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("input", {
-      name: "subject",
-      id: "subject",
-      type: "text",
-      className: "form-control",
-      placeholder: "Message subject"
-    })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "form-group-2"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("textarea", {
-      name: "message",
-      id: "message",
-      className: "form-control",
-      rows: "3",
-      placeholder: "Your message"
-    })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("button", {
-      className: "btn btn-default",
-      type: "submit"
-    }, "submit")))))))))))));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (ContactForm);
-
-/***/ }),
-
 /***/ "./components/Footer.js":
 /*!******************************!*\
   !*** ./components/Footer.js ***!
@@ -323,89 +194,6 @@ class Footer extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
-
-/***/ }),
-
-/***/ "./components/Form.js":
-/*!****************************!*\
-  !*** ./components/Form.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! formik */ "formik");
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(formik__WEBPACK_IMPORTED_MODULE_2__);
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-
-const Form = () => __jsx("section", {
-  id: "contact-form"
-}, __jsx("div", {
-  className: "container"
-}, __jsx("div", {
-  className: "row"
-}, __jsx("h1", null, "Anywhere in your app!"), __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Formik"], {
-  initialValues: {
-    email: "",
-    password: ""
-  },
-  validate: values => {
-    const errors = {};
-
-    if (!values.email) {
-      errors.email = "Required";
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-      errors.email = "Invalid email address";
-    }
-
-    return errors;
-  },
-  onSubmit: (values, {
-    setSubmitting
-  }) => {
-    setTimeout(() => {
-      alert(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(values, null, 2));
-      setSubmitting(false);
-    }, 400);
-  }
-}, ({
-  values,
-  errors,
-  touched,
-  handleChange,
-  handleBlur,
-  handleSubmit,
-  isSubmitting
-  /* and other goodies */
-
-}) => __jsx("form", {
-  onSubmit: handleSubmit
-}, __jsx("label", null, "email"), __jsx("input", {
-  type: "email",
-  name: "email",
-  onChange: handleChange,
-  onBlur: handleBlur,
-  value: values.email
-}), errors.email && touched.email && errors.email, __jsx("label", null, "password"), __jsx("input", {
-  type: "password",
-  name: "password",
-  onChange: handleChange,
-  onBlur: handleBlur,
-  value: values.password
-}), errors.password && touched.password && errors.password, __jsx("button", {
-  type: "submit",
-  disabled: isSubmitting
-}, "Submit"))))));
-
-/* harmony default export */ __webpack_exports__["default"] = (Form);
 
 /***/ }),
 
@@ -710,17 +498,6 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "core-js/library/fn/json/stringify");
 
 /***/ }),
 
@@ -2456,10 +2233,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/contact.js":
-/*!**************************!*\
-  !*** ./pages/contact.js ***!
-  \**************************/
+/***/ "./pages/services.js":
+/*!***************************!*\
+  !*** ./pages/services.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2472,8 +2249,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
 /* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
-/* harmony import */ var _components_Form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Form */ "./components/Form.js");
-/* harmony import */ var _components_ContactForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/ContactForm */ "./components/ContactForm.js");
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2481,26 +2256,24 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-
-class Contact extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+class Services extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   render() {
     return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], null, __jsx(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      globalHeaderTitle: "Contact Us",
-      globalHeaderSubTitle: "You can find our contact form and information below",
-      globalHeaderImage: "../img/faq-bg.jpg"
-    }), __jsx(_components_ContactForm__WEBPACK_IMPORTED_MODULE_6__["default"], null), __jsx(_components_CallToAction__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      globalHeaderTitle: "Services / Booking",
+      globalHeaderSubTitle: "View a list of our services or book an appointment",
+      globalHeaderImage: "../img/services-bg.jpg"
+    }), __jsx(_components_CallToAction__WEBPACK_IMPORTED_MODULE_4__["default"], {
       callTitle: "You're one step away from a clean and happy home!",
       callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
       callLinkUrl: "/services",
       callLink: "View our services",
-      callImage: "img/faq-bg.jpg"
+      callImage: "img/services-bg.jpg"
     }));
   }
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Contact);
+/* harmony default export */ __webpack_exports__["default"] = (Services);
 
 /***/ }),
 
@@ -3784,14 +3557,14 @@ footer .footer-manu ul li a:hover {
 
 /***/ }),
 
-/***/ 3:
-/*!********************************!*\
-  !*** multi ./pages/contact.js ***!
-  \********************************/
+/***/ 4:
+/*!*********************************!*\
+  !*** multi ./pages/services.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/contact.js */"./pages/contact.js");
+module.exports = __webpack_require__(/*! /Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/services.js */"./pages/services.js");
 
 
 /***/ }),
@@ -3804,17 +3577,6 @@ module.exports = __webpack_require__(/*! /Users/nickmakuch/Documents/Code/rosies
 /***/ (function(module, exports) {
 
 module.exports = require("@emotion/core");
-
-/***/ }),
-
-/***/ "core-js/library/fn/json/stringify":
-/*!****************************************************!*\
-  !*** external "core-js/library/fn/json/stringify" ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/json/stringify");
 
 /***/ }),
 
@@ -3906,17 +3668,6 @@ module.exports = require("core-js/library/fn/weak-map");
 
 /***/ }),
 
-/***/ "formik":
-/*!*************************!*\
-  !*** external "formik" ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("formik");
-
-/***/ }),
-
 /***/ "prop-types":
 /*!*****************************!*\
   !*** external "prop-types" ***!
@@ -3973,4 +3724,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=contact.js.map
+//# sourceMappingURL=services.js.map
