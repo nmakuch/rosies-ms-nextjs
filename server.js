@@ -31,7 +31,7 @@ app.prepare().then(() => {
   });
 
   server.post("/services", (req, res) => {
-    console.log(req.body.hourlyMessage)
+    console.log(req.body.planType)
     transport
       .sendMail({
         from: "service@page.com",
@@ -40,6 +40,10 @@ app.prepare().then(() => {
         html: `
         <h1>New contact form submission on Rosie's Maid Service</h1>
         <table class="tg">
+        <tr>
+        <th><h3>Plan type:</h3></th>
+        <th>${req.body.planType}</th>
+        </tr>
         <tr>
         <th><h3>Message:</h3></th>
         <th>${req.body.hourlyMessage}</th>

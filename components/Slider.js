@@ -8,7 +8,17 @@ class Header extends React.Component {
     return (
       <section
         id="slider"
-        css={css`background-image: url('${this.props.sliderBgImage}');`}
+        css={css`background-image: url('${this.props.sliderBgImage}'); 
+        
+        @media only screen and (max-width: 767px) {
+          h1 {
+            font-size: 32px !important;
+          }
+
+          p {
+            font-size: 18px !important;
+          }
+        }`}
       >
         <div className="container">
           <div className="row">

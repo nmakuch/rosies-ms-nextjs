@@ -9,8 +9,7 @@ class ContactForm extends React.Component {
       <React.Fragment>
         <section
           css={css`
-            padding-top: 100px !important;
-            padding-bottom: 100px !important;
+            padding: 100px 15px !important;
             h2 {
               font-weight: 600;
             }
@@ -67,7 +66,7 @@ class ContactForm extends React.Component {
                       <div className="row">
                         <div
                           css={css`
-                            padding: 0 5px !important;
+                            padding: 0 0 !important;
                           `}
                           className="col-md-12 col-sm-12"
                         >

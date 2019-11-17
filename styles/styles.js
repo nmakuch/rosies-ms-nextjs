@@ -1189,7 +1189,7 @@ footer .footer-manu ul li a:hover {
    padding-left: 0px;
  }
  h2 {
-   font-size: 18px;
+   font-size: 24px;
  }
  p {
    font-size: 13px;

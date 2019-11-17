@@ -21,7 +21,6 @@ class CheckBox extends React.Component {
         <label className="checkbox-label">
           <input
             type="checkbox"
-            type="checkbox"
             id={this.props.id}
             value={this.props.value}
             onChange={this.props.onChange}
@@ -42,14 +41,18 @@ class Services extends React.Component {
       optionsAddOns2: [],
       optionsAddOns3: [],
       labelsAddOns1: [],
+      labelsAddOns2: [],
+      labelsAddOns3: [],
       selectBoxValue1: [],
-      radio1: "0"
+      radio1: "",
+      radioLabel: 0.0
     };
   }
 
   radioChange(event) {
     this.setState({
-      radio1: event.target.value
+      radio1: event.target.value,
+      radioLabel: event.target.id
     });
   }
 
@@ -80,38 +83,50 @@ class Services extends React.Component {
 
   changeEvent2(event) {
     let checkedArrayAddOns2 = this.state.optionsAddOns2;
+    let checkedArrayIds2 = this.state.labelsAddOns2;
+    let selectedId2 = event.target.id;
     let selectedValue2 = event.target.value;
 
     if (event.target.checked === true) {
+      checkedArrayIds2.push(selectedId2);
       checkedArrayAddOns2.push(parseFloat(selectedValue2));
       this.setState({
-        optionsAddOns2: checkedArrayAddOns2
+        optionsAddOns2: checkedArrayAddOns2,
+        labelsAddOns2: checkedArrayIds2
       });
     } else {
       let valueIndex2 = checkedArrayAddOns2.indexOf(selectedValue2);
       checkedArrayAddOns2.splice(valueIndex2, 1);
+      checkedArrayIds2.splice(valueIndex2, 1);
 
       this.setState({
-        optionsAddOns2: checkedArrayAddOns2
+        optionsAddOns2: checkedArrayAddOns2,
+        labelsAddOns2: checkedArrayIds2
       });
     }
   }
 
   changeEvent3(event) {
     let checkedArrayAddOns3 = this.state.optionsAddOns3;
+    let checkedArrayIds3 = this.state.labelsAddOns3;
+    let selectedId3 = event.target.id;
     let selectedValue3 = event.target.value;
 
     if (event.target.checked === true) {
+      checkedArrayIds3.push(selectedId3);
       checkedArrayAddOns3.push(parseFloat(selectedValue3));
       this.setState({
-        optionsAddOns3: checkedArrayAddOns3
+        optionsAddOns3: checkedArrayAddOns3,
+        labelsAddOns3: checkedArrayIds3
       });
     } else {
       let valueIndex3 = checkedArrayAddOns3.indexOf(selectedValue3);
       checkedArrayAddOns3.splice(valueIndex3, 1);
+      checkedArrayIds3.splice(valueIndex3, 1);
 
       this.setState({
-        optionsAddOns3: checkedArrayAddOns3
+        optionsAddOns3: checkedArrayAddOns3,
+        labelsAddOns3: checkedArrayIds3
       });
     }
   }
@@ -132,12 +147,24 @@ class Services extends React.Component {
       "Complete (3.0 hours)"
     ];
 
+    let addOnsLabels2 = this.state.labelsAddOns2;
+    let addOnsCost2 = this.state.optionsAddOns2;
+
     let checkBoxArrayAddOns2 = [60.0, 100.0, 140.0];
     let checkBoxArrayLabels2 = [
       "Basic (1.5 hours): kitchen, bathroom, all floors ($60.00)",
       "Basic plus (2.5 hours): kitchen, bathroom, living areas including bedroom($100.00)",
       "Complete (3.0 hours): kitchen, bathroom, living areas, plus one big job ($140.00)"
     ];
+
+    let checkBoxArrayIds2 = [
+      "Basic (1.5 hours) x2",
+      "Basic plus (2.5 hours) x2",
+      "Complete (3.0 hours) x2"
+    ];
+
+    let addOnsLabels3 = this.state.labelsAddOns3;
+    let addOnsCost3 = this.state.optionsAddOns3;
 
     let checkBoxArrayAddOns3 = [35.0, 20.0, 20.0, 20.0, 15.0, 20.0];
     let checkBoxArrayLabels3 = [
@@ -147,6 +174,15 @@ class Services extends React.Component {
       "Big task - windows ($20.00)",
       "Additional powder room ($15.00)",
       "Additional bathroom ($20.00)"
+    ];
+
+    let checkBoxArrayIds3 = [
+      "Deep Clean - Wall, baseboards, kitchen...",
+      "Big task - Oven",
+      "Big task - Inside fridge",
+      "Big task - Windows",
+      "Additional powder room",
+      "Additional bathroom"
     ];
 
     let radioValues1 = [52.5, 70.0, 87.5, 105.0, 122.5, 140.0];
@@ -159,11 +195,26 @@ class Services extends React.Component {
       "4.0 hour session at $35/hour ($140.00)"
     ];
 
-    let radioValues2 = [54, 90, 108];
+    let radioArrayId1 = [
+      "1.5 hour session at $35/hour",
+      "2.0 hour session at $35/hour",
+      "2.5 hour session at $35/hour",
+      "3.0 hour session at $35/hour",
+      "3.5 hour session at $35/hour",
+      "4.0 hour session at $35/hour"
+    ];
+
+    let radioValues2 = [54.0, 90.0, 108.0];
     let radioLabels2 = [
       "Basic (1.5 hours at $35/hour): kitchen, bathroom, all floors  ($54.00)",
       "Basic Plus (2.5 hours at $35/hour): kitchen, bathroom, living areas including bedroom ($90.00)",
       "Complete (3.0 hours at $35/hour): kitchen, bathroom, living areas plus one big job ($108.00)"
+    ];
+
+    let radioArrayId2 = [
+      "Basic (1.5 hours)",
+      "Basic plus (2.5 hours)",
+      "Complete (3.0 hours)"
     ];
 
     let grandTotalArr = [];
@@ -183,7 +234,7 @@ class Services extends React.Component {
       return (
         <CheckBox
           value={number}
-          id={"string_" + i}
+          id={checkBoxArrayIds2[i]}
           onChange={this.changeEvent2.bind(this)}
           label={checkBoxArrayLabels2[i]}
         />
@@ -194,7 +245,7 @@ class Services extends React.Component {
       return (
         <CheckBox
           value={number}
-          id={"string_" + i}
+          id={checkBoxArrayIds3[i]}
           onChange={this.changeEvent3.bind(this)}
           label={checkBoxArrayLabels3[i]}
         />
@@ -220,24 +271,20 @@ class Services extends React.Component {
     grandTotalArr.push(sumOptionsAddOns2);
     grandTotalArr.push(sumOptionsAddOns3);
 
-    let grandTotalSum = formatter.format(
-      grandTotalArr.reduce((a, b) => a + b, 0) + parseFloat(this.state.radio1)
-    );
+    let reducedArr = grandTotalArr.reduce((a, b) => a + b, 0);
 
     let grandTotalHST = formatter.format(
-      grandTotalArr.reduce((a, b) => a + b * 0.13, 0) +
-        parseFloat(this.state.radio1)
+      reducedArr * 0.13 + this.state.radio1 * 0.13
     );
 
     let grandTotalSumHST = formatter.format(
-      grandTotalArr.reduce((a, b) => a + b * 1.13, 0) +
-        parseFloat(this.state.radio1)
+      reducedArr * 1.13 + this.state.radio1 * 1.13
     );
 
     return (
       <Layout>
         <GlobalHeader
-          globalHeaderTitle="Services / Booking"
+          globalHeaderTitle="Services and Booking"
           globalHeaderSubTitle="View a list of our services or book an appointment"
           globalHeaderImage="../img/services-bg.jpg"
         />
@@ -256,7 +303,7 @@ class Services extends React.Component {
           `}
         >
           <div className="container">
-            <div className="col-md-10 offset-md-1 col-sm-12">
+            <div className="col-md-8 offset-md-2 col-sm-12">
               <div
                 css={css`
                   padding: 0 15px;
@@ -307,6 +354,12 @@ class Services extends React.Component {
                   top: 5px;
                   left: 50px;
                 }
+
+                @media only screen and (max-width: 767px) {
+                  p {
+                    line-height: 1.2rem;
+                  }
+                }
               }
             }
 
@@ -335,7 +388,7 @@ class Services extends React.Component {
           <div className="block">
             <form method="post">
               <div className="container">
-                <div className="col-md-10 offset-md-1 col-sm-12">
+                <div className="col-md-8 offset-md-2 col-sm-12">
                   <div
                     css={css`
                       padding: 0 15px;
@@ -366,6 +419,7 @@ class Services extends React.Component {
                                   <input
                                     type="radio"
                                     value={radioValue}
+                                    id={radioArrayId1[i]}
                                     checked={
                                       this.state.radio1 === `${radioValue}`
                                     }
@@ -409,6 +463,7 @@ class Services extends React.Component {
                                   <input
                                     type="radio"
                                     value={radioValue}
+                                    id={radioArrayId2[i]}
                                     checked={
                                       this.state.radio1 === `${radioValue}`
                                     }
@@ -435,6 +490,13 @@ class Services extends React.Component {
                           position: relative;
                           top: 4px;
                           left: 50px;
+                        }
+
+                        @media only screen and (max-width: 767px) {
+                          p {
+                            line-height: 1.2rem;
+                            top: 8px;
+                          }
                         }
                       }
                     `}
@@ -465,11 +527,18 @@ class Services extends React.Component {
                           top: 4px;
                           left: 50px;
                         }
+
+                        @media only screen and (max-width: 767px) {
+                          p {
+                            top: 8px;
+                            line-height: 1.2rem;
+                          }
+                        }
                       }
                     `}
                     className="row"
                   >
-                    <h3>2) Bedroom up to 1000 sq/ft (1 bathroom):</h3>
+                    <h3>2) 2 Bedroom up to 1000 sq/ft (1 bathroom):</h3>
                     <div className="form-group">
                       <div>{outputCheckboxesAddOns2}</div>
                       <br />
@@ -484,6 +553,13 @@ class Services extends React.Component {
                           position: relative;
                           top: 4px;
                           left: 50px;
+                        }
+
+                        @media only screen and (max-width: 767px) {
+                          p {
+                            line-height: 1.2rem;
+                            top: 8px;
+                          }
                         }
                       }
                     `}
@@ -501,95 +577,244 @@ class Services extends React.Component {
                     `}
                     className="row"
                   >
-                    <div>
-                      <h2
-                        css={css`
-                          margin-bottom: 30px !important;
-                        `}
-                      >
-                        Your plan:
-                      </h2>
-                      {addOnsLabels1.map((addOnLabel1, i) => {
-                        return (
+                    {grandTotalHST !== "$0.00" ? (
+                      <div>
+                        <h2
+                          css={css`
+                            margin-bottom: 30px !important;
+                          `}
+                        >
+                          Your plan:
+                        </h2>
+
+                        {this.state.radio1 > 0 ? (
                           <div
                             css={css`
                               display: flex;
                               justify-content: space-between;
                               width: 400px;
+                              padding: 0 5px 0 0;
 
-                              h3 {
+                              input {
+                                font-family: "Roboto", sans-serif;
                                 font-size: 16px;
+                                font-weight: 600;
                                 margin-bottom: 15px;
+                                border: none;
+                                overflow: visible;
+                                width: auto;
                               }
 
-                              span {
-                                font-size: 16px;
+                              @media only screen and (max-width: 500px) {
+                                width: 330px;
+
+                                input {
+                                  width: auto;
+                                }
+                              }
+
+                              @media only screen and (max-width: 390px) {
+                                width: 275px;
                               }
                             `}
                           >
-                            <h3>+ {addOnLabel1}</h3>
-                            <span> {formatter.format(addOnsCost1[i])}</span>
+                            <input
+                              type="text"
+                              name="planType"
+                              id="planType"
+                              value={`+ ${this.state.radioLabel}`}
+                            />
+                            <span>{formatter.format(this.state.radio1)}</span>
                           </div>
-                        );
-                      })
-                      }
-                    </div>
+                        ) : null}
+
+                        {addOnsLabels1.map((addOnLabel1, i) => {
+                          return (
+                            <div
+                              css={css`
+                                display: flex;
+                                justify-content: space-between;
+                                width: 400px;
+
+                                h3 {
+                                  font-size: 16px;
+                                  margin-bottom: 15px;
+                                }
+
+                                span {
+                                  font-size: 16px;
+                                }
+
+                                @media only screen and (max-width: 500px) {
+                                  width: 325px;
+                                }
+
+                                @media only screen and (max-width: 390px) {
+                                  width: 270px;
+                                }
+                              `}
+                            >
+                              <h3>+ {addOnLabel1}</h3>
+                              <span> {formatter.format(addOnsCost1[i])}</span>
+                            </div>
+                          );
+                        })}
+
+                        {addOnsLabels2.map((addOnLabel2, i) => {
+                          return (
+                            <div
+                              css={css`
+                                display: flex;
+                                justify-content: space-between;
+                                width: 400px;
+
+                                h3 {
+                                  font-size: 16px;
+                                  margin-bottom: 15px;
+                                }
+
+                                span {
+                                  font-size: 16px;
+                                }
+
+                                @media only screen and (max-width: 500px) {
+                                  width: 325px;
+                                }
+
+                                @media only screen and (max-width: 390px) {
+                                  width: 270px;
+                                }
+                              `}
+                            >
+                              <h3>+ {addOnLabel2}</h3>
+                              <span> {formatter.format(addOnsCost2[i])}</span>
+                            </div>
+                          );
+                        })}
+
+                        {addOnsLabels3.map((addOnLabel3, i) => {
+                          return (
+                              <div
+                                css={css`
+                                  display: flex;
+                                  justify-content: space-between;
+                                  width: 400px;
+
+                                  h3 {
+                                    font-size: 16px;
+                                    margin-bottom: 15px;
+                                  }
+
+                                  span {
+                                    font-size: 16px;
+                                  }
+
+                                  @media only screen and (max-width: 500px) {
+                                    width: 325px;
+                                  }
+
+                                  @media only screen and (max-width: 390px) {
+                                    width: 270px;
+                                  }
+                                `}
+                              >
+                                <h3>+ {addOnLabel3}</h3>
+                                <span> {formatter.format(addOnsCost3[i])}</span>
+                              </div>
+                          );
+                        })}
+                      </div>
+                    ) : null}
                   </div>
-                  <div
-                    css={css`
-                      padding: 0 15px;
-                    `}
-                    className="row"
-                  >
-                    <div
-                      css={css`
-                        display: flex;
-                        justify-content: space-between;
-                        width: 400px;
-                        margin-top: 25px;
-                        padding-top: 25px;
-                        border-top: 1px solid black;
 
-                        h3 {
-                          font-size: 16px;
-                          margin-bottom: 15px;
-                        }
+                  {grandTotalHST !== "$0.00" ? (
+                    <React.Fragment>
+                      <div
+                        css={css`
+                          padding: 0 15px;
+                        `}
+                        className="row"
+                      >
+                        <div
+                          css={css`
+                            display: flex;
+                            justify-content: space-between;
+                            width: 400px;
+                            margin-top: 25px;
+                            padding-top: 25px;
+                            border-top: 1px solid black;
 
-                        span {
-                          font-size: 16px;
-                        }
-                      `}
-                    >
-                      <h3>+ HST (x0.13)</h3>
-                      <span>{grandTotalHST}</span>
-                    </div>
-                  </div>
+                            h3 {
+                              font-size: 16px;
+                              margin-bottom: 15px;
+                            }
 
-                  <div
-                    css={css`
-                      padding: 0 15px;
-                    `}
-                    className="row"
-                  >
-                    <div
-                      css={css`
-                        display: flex;
-                        justify-content: space-between;
-                        width: 400px;
+                            span {
+                              font-size: 16px;
+                            }
 
-                        h3 {
-                          font-size: 16px;
-                        }
+                            @media only screen and (max-width: 500px) {
+                              width: 325px;
+                            }
 
-                        span {
-                          font-size: 16px;
-                        }
-                      `}
-                    >
-                      <h3>Grand total:</h3>
-                      <span>{grandTotalSumHST}</span>
-                    </div>
-                  </div>
+                            @media only screen and (max-width: 390px) {
+                              width: 270px;
+                            }
+                          `}
+                        >
+                          <h3>+ HST (x0.13)</h3>
+                          <span>{grandTotalHST}</span>
+                        </div>
+                      </div>
+
+                      <div
+                        css={css`
+                          padding: 0 15px;
+                        `}
+                        className="row"
+                      >
+                        <div
+                          css={css`
+                            display: flex;
+                            justify-content: space-between;
+                            width: 400px;
+
+                            h3 {
+                              font-size: 16px;
+                              margin-top: 7px;
+                              margin-bottom: 75px;
+                            }
+
+                            input {
+                              font-size: 16px;
+                              width: auto;
+                              overflow: visible;
+                              height: 35px;
+                              text-align: right;
+                              border: none;
+                              margin-bottom: 75px;
+                            }
+
+                            @media only screen and (max-width: 500px) {
+                              width: 330px;
+                            }
+
+                            @media only screen and (max-width: 390px) {
+                              width: 270px;
+                            }
+                          `}
+                        >
+                          <h3>Grand total:</h3>
+                          <input
+                            type="text"
+                            name="grandTotal"
+                            id="grandTotal"
+                            value={grandTotalSumHST}
+                          />
+                        </div>
+                      </div>
+                    </React.Fragment>
+                  ) : null}
                   <button className="btn btn-default" type="submit">
                     submit
                   </button>

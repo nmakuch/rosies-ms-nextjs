@@ -2289,7 +2289,6 @@ class CheckBox extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       className: "checkbox-label"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
       type: "checkbox",
-      type: "checkbox",
       id: this.props.id,
       value: this.props.value,
       onChange: this.props.onChange
@@ -2310,14 +2309,18 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       optionsAddOns2: [],
       optionsAddOns3: [],
       labelsAddOns1: [],
+      labelsAddOns2: [],
+      labelsAddOns3: [],
       selectBoxValue1: [],
-      radio1: "0"
+      radio1: "",
+      radioLabel: 0.0
     };
   }
 
   radioChange(event) {
     this.setState({
-      radio1: event.target.value
+      radio1: event.target.value,
+      radioLabel: event.target.id
     });
   }
 
@@ -2347,36 +2350,48 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
 
   changeEvent2(event) {
     let checkedArrayAddOns2 = this.state.optionsAddOns2;
+    let checkedArrayIds2 = this.state.labelsAddOns2;
+    let selectedId2 = event.target.id;
     let selectedValue2 = event.target.value;
 
     if (event.target.checked === true) {
+      checkedArrayIds2.push(selectedId2);
       checkedArrayAddOns2.push(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0___default()(selectedValue2));
       this.setState({
-        optionsAddOns2: checkedArrayAddOns2
+        optionsAddOns2: checkedArrayAddOns2,
+        labelsAddOns2: checkedArrayIds2
       });
     } else {
       let valueIndex2 = checkedArrayAddOns2.indexOf(selectedValue2);
       checkedArrayAddOns2.splice(valueIndex2, 1);
+      checkedArrayIds2.splice(valueIndex2, 1);
       this.setState({
-        optionsAddOns2: checkedArrayAddOns2
+        optionsAddOns2: checkedArrayAddOns2,
+        labelsAddOns2: checkedArrayIds2
       });
     }
   }
 
   changeEvent3(event) {
     let checkedArrayAddOns3 = this.state.optionsAddOns3;
+    let checkedArrayIds3 = this.state.labelsAddOns3;
+    let selectedId3 = event.target.id;
     let selectedValue3 = event.target.value;
 
     if (event.target.checked === true) {
+      checkedArrayIds3.push(selectedId3);
       checkedArrayAddOns3.push(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0___default()(selectedValue3));
       this.setState({
-        optionsAddOns3: checkedArrayAddOns3
+        optionsAddOns3: checkedArrayAddOns3,
+        labelsAddOns3: checkedArrayIds3
       });
     } else {
       let valueIndex3 = checkedArrayAddOns3.indexOf(selectedValue3);
       checkedArrayAddOns3.splice(valueIndex3, 1);
+      checkedArrayIds3.splice(valueIndex3, 1);
       this.setState({
-        optionsAddOns3: checkedArrayAddOns3
+        optionsAddOns3: checkedArrayAddOns3,
+        labelsAddOns3: checkedArrayIds3
       });
     }
   }
@@ -2387,14 +2402,22 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     let checkBoxArrayAddOns1 = [54.0, 90.0, 108.0];
     let checkBoxArrayLabels1 = ["Basic (1.5 hours): kitchen, bathroom, all floors ($54.00)", "Basic plus (2.5 hours): kitchen, bathroom, living areas including bedroom($90.00)", "Complete (3.0 hours): kitchen, bathroom, living areas, plus one big job ($108.00)"];
     let checkBoxArrayIds1 = ["Basic (1.5 hours)", "Basic plus (2.5 hours)", "Complete (3.0 hours)"];
+    let addOnsLabels2 = this.state.labelsAddOns2;
+    let addOnsCost2 = this.state.optionsAddOns2;
     let checkBoxArrayAddOns2 = [60.0, 100.0, 140.0];
     let checkBoxArrayLabels2 = ["Basic (1.5 hours): kitchen, bathroom, all floors ($60.00)", "Basic plus (2.5 hours): kitchen, bathroom, living areas including bedroom($100.00)", "Complete (3.0 hours): kitchen, bathroom, living areas, plus one big job ($140.00)"];
+    let checkBoxArrayIds2 = ["Basic (1.5 hours) x2", "Basic plus (2.5 hours) x2", "Complete (3.0 hours) x2"];
+    let addOnsLabels3 = this.state.labelsAddOns3;
+    let addOnsCost3 = this.state.optionsAddOns3;
     let checkBoxArrayAddOns3 = [35.0, 20.0, 20.0, 20.0, 15.0, 20.0];
     let checkBoxArrayLabels3 = ["Deep clean - wall spot cleaning, baseboards, inside of kitchen & bathroom cabinets ($35.00)", "Big task - oven ($20.00)", "Big task - inside fridge ($20.00)", "Big task - windows ($20.00)", "Additional powder room ($15.00)", "Additional bathroom ($20.00)"];
+    let checkBoxArrayIds3 = ["Deep Clean - Wall, baseboards, kitchen...", "Big task - Oven", "Big task - Inside fridge", "Big task - Windows", "Additional powder room", "Additional bathroom"];
     let radioValues1 = [52.5, 70.0, 87.5, 105.0, 122.5, 140.0];
     let radioLabels1 = ["1.5 hour session at $35/hour ($52.50)", "2.0 hour session at $35/hour ($70.00)", "2.5 hour session at $35/hour ($87.50)", "3.0 hour session at $35/hour ($105.00)", "3.5 hour session at $35/hour ($122.50)", "4.0 hour session at $35/hour ($140.00)"];
-    let radioValues2 = [54, 90, 108];
+    let radioArrayId1 = ["1.5 hour session at $35/hour", "2.0 hour session at $35/hour", "2.5 hour session at $35/hour", "3.0 hour session at $35/hour", "3.5 hour session at $35/hour", "4.0 hour session at $35/hour"];
+    let radioValues2 = [54.0, 90.0, 108.0];
     let radioLabels2 = ["Basic (1.5 hours at $35/hour): kitchen, bathroom, all floors  ($54.00)", "Basic Plus (2.5 hours at $35/hour): kitchen, bathroom, living areas including bedroom ($90.00)", "Complete (3.0 hours at $35/hour): kitchen, bathroom, living areas plus one big job ($108.00)"];
+    let radioArrayId2 = ["Basic (1.5 hours)", "Basic plus (2.5 hours)", "Complete (3.0 hours)"];
     let grandTotalArr = [];
     let outputCheckboxesAddOns1 = checkBoxArrayAddOns1.map((number, i) => {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(CheckBox, {
@@ -2407,7 +2430,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     let outputCheckboxesAddOns2 = checkBoxArrayAddOns2.map((number, i) => {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(CheckBox, {
         value: number,
-        id: "string_" + i,
+        id: checkBoxArrayIds2[i],
         onChange: this.changeEvent2.bind(this),
         label: checkBoxArrayLabels2[i]
       });
@@ -2415,7 +2438,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     let outputCheckboxesAddOns3 = checkBoxArrayAddOns3.map((number, i) => {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(CheckBox, {
         value: number,
-        id: "string_" + i,
+        id: checkBoxArrayIds3[i],
         onChange: this.changeEvent3.bind(this),
         label: checkBoxArrayLabels3[i]
       });
@@ -2426,11 +2449,11 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     grandTotalArr.push(sumOptionsAddOns1);
     grandTotalArr.push(sumOptionsAddOns2);
     grandTotalArr.push(sumOptionsAddOns3);
-    let grandTotalSum = formatter.format(grandTotalArr.reduce((a, b) => a + b, 0) + _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0___default()(this.state.radio1));
-    let grandTotalHST = formatter.format(grandTotalArr.reduce((a, b) => a + b * 0.13, 0) + _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0___default()(this.state.radio1));
-    let grandTotalSumHST = formatter.format(grandTotalArr.reduce((a, b) => a + b * 1.13, 0) + _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0___default()(this.state.radio1));
+    let reducedArr = grandTotalArr.reduce((a, b) => a + b, 0);
+    let grandTotalHST = formatter.format(reducedArr * 0.13 + this.state.radio1 * 0.13);
+    let grandTotalSumHST = formatter.format(reducedArr * 1.13 + this.state.radio1 * 1.13);
     return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      globalHeaderTitle: "Services / Booking",
+      globalHeaderTitle: "Services and Booking",
       globalHeaderSubTitle: "View a list of our services or book an appointment",
       globalHeaderImage: "../img/services-bg.jpg"
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("section", {
@@ -2449,7 +2472,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "container"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-      className: "col-md-10 offset-md-1 col-sm-12"
+      className: "col-md-8 offset-md-2 col-sm-12"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
                   padding: 0 15px;
@@ -2485,6 +2508,12 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
                   top: 5px;
                   left: 50px;
                 }
+
+                @media only screen and (max-width: 767px) {
+                  p {
+                    line-height: 1.2rem;
+                  }
+                }
               }
             }
 
@@ -2516,7 +2545,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "container"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-      className: "col-md-10 offset-md-1 col-sm-12"
+      className: "col-md-8 offset-md-2 col-sm-12"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
                       padding: 0 15px;
@@ -2540,6 +2569,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
         type: "radio",
         value: radioValue,
+        id: radioArrayId1[i],
         checked: this.state.radio1 === `${radioValue}`,
         onChange: this.radioChange.bind(this)
       }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
@@ -2564,6 +2594,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
         type: "radio",
         value: radioValue,
+        id: radioArrayId2[i],
         checked: this.state.radio1 === `${radioValue}`,
         onChange: this.radioChange.bind(this)
       }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
@@ -2580,6 +2611,13 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
                           position: relative;
                           top: 4px;
                           left: 50px;
+                        }
+
+                        @media only screen and (max-width: 767px) {
+                          p {
+                            line-height: 1.2rem;
+                            top: 8px;
+                          }
                         }
                       }
                     `,
@@ -2600,10 +2638,17 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
                           top: 4px;
                           left: 50px;
                         }
+
+                        @media only screen and (max-width: 767px) {
+                          p {
+                            top: 8px;
+                            line-height: 1.2rem;
+                          }
+                        }
                       }
                     `,
       className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "2) Bedroom up to 1000 sq/ft (1 bathroom):"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "2) 2 Bedroom up to 1000 sq/ft (1 bathroom):"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "form-group"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, outputCheckboxesAddOns2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
@@ -2615,6 +2660,13 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
                           top: 4px;
                           left: 50px;
                         }
+
+                        @media only screen and (max-width: 767px) {
+                          p {
+                            line-height: 1.2rem;
+                            top: 8px;
+                          }
+                        }
                       }
                     `,
       className: "row"
@@ -2625,70 +2677,191 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
                       padding: 0 15px;
                     `,
       className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", {
+    }, grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
-                          margin-bottom: 30px !important;
-                        `
-    }, "Your plan:"), addOnsLabels1.map((addOnLabel1, i) => {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-        css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                            margin-bottom: 30px !important;
+                          `
+    }, "Your plan:"), this.state.radio1 > 0 ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
                               display: flex;
                               justify-content: space-between;
                               width: 400px;
+                              padding: 0 5px 0 0;
 
-                              h3 {
+                              input {
+                                font-family: "Roboto", sans-serif;
                                 font-size: 16px;
+                                font-weight: 600;
                                 margin-bottom: 15px;
+                                border: none;
+                                overflow: visible;
+                                width: auto;
                               }
 
-                              span {
-                                font-size: 16px;
+                              @media only screen and (max-width: 500px) {
+                                width: 330px;
+
+                                input {
+                                  width: auto;
+                                }
+                              }
+
+                              @media only screen and (max-width: 390px) {
+                                width: 275px;
                               }
                             `
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+      type: "text",
+      name: "planType",
+      id: "planType",
+      value: `+ ${this.state.radioLabel}`
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, formatter.format(this.state.radio1))) : null, addOnsLabels1.map((addOnLabel1, i) => {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+        css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                                display: flex;
+                                justify-content: space-between;
+                                width: 400px;
+
+                                h3 {
+                                  font-size: 16px;
+                                  margin-bottom: 15px;
+                                }
+
+                                span {
+                                  font-size: 16px;
+                                }
+
+                                @media only screen and (max-width: 500px) {
+                                  width: 325px;
+                                }
+
+                                @media only screen and (max-width: 390px) {
+                                  width: 270px;
+                                }
+                              `
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "+ ", addOnLabel1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, " ", formatter.format(addOnsCost1[i])));
-    }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+    }), addOnsLabels2.map((addOnLabel2, i) => {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+        css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                                display: flex;
+                                justify-content: space-between;
+                                width: 400px;
+
+                                h3 {
+                                  font-size: 16px;
+                                  margin-bottom: 15px;
+                                }
+
+                                span {
+                                  font-size: 16px;
+                                }
+
+                                @media only screen and (max-width: 500px) {
+                                  width: 325px;
+                                }
+
+                                @media only screen and (max-width: 390px) {
+                                  width: 270px;
+                                }
+                              `
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "+ ", addOnLabel2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, " ", formatter.format(addOnsCost2[i])));
+    }), addOnsLabels3.map((addOnLabel3, i) => {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+        css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                                  display: flex;
+                                  justify-content: space-between;
+                                  width: 400px;
+
+                                  h3 {
+                                    font-size: 16px;
+                                    margin-bottom: 15px;
+                                  }
+
+                                  span {
+                                    font-size: 16px;
+                                  }
+
+                                  @media only screen and (max-width: 500px) {
+                                    width: 325px;
+                                  }
+
+                                  @media only screen and (max-width: 390px) {
+                                    width: 270px;
+                                  }
+                                `
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "+ ", addOnLabel3), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, " ", formatter.format(addOnsCost3[i])));
+    })) : null), grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
-                      padding: 0 15px;
-                    `,
+                          padding: 0 15px;
+                        `,
       className: "row"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
-                        display: flex;
-                        justify-content: space-between;
-                        width: 400px;
-                        margin-top: 25px;
-                        padding-top: 25px;
-                        border-top: 1px solid black;
+                            display: flex;
+                            justify-content: space-between;
+                            width: 400px;
+                            margin-top: 25px;
+                            padding-top: 25px;
+                            border-top: 1px solid black;
 
-                        h3 {
-                          font-size: 16px;
-                          margin-bottom: 15px;
-                        }
+                            h3 {
+                              font-size: 16px;
+                              margin-bottom: 15px;
+                            }
 
-                        span {
-                          font-size: 16px;
-                        }
-                      `
+                            span {
+                              font-size: 16px;
+                            }
+
+                            @media only screen and (max-width: 500px) {
+                              width: 325px;
+                            }
+
+                            @media only screen and (max-width: 390px) {
+                              width: 270px;
+                            }
+                          `
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "+ HST (x0.13)"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, grandTotalHST))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
-                      padding: 0 15px;
-                    `,
+                          padding: 0 15px;
+                        `,
       className: "row"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
-                        display: flex;
-                        justify-content: space-between;
-                        width: 400px;
+                            display: flex;
+                            justify-content: space-between;
+                            width: 400px;
 
-                        h3 {
-                          font-size: 16px;
-                        }
+                            h3 {
+                              font-size: 16px;
+                              margin-top: 7px;
+                              margin-bottom: 75px;
+                            }
 
-                        span {
-                          font-size: 16px;
-                        }
-                      `
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "Grand total:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, grandTotalSumHST))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("button", {
+                            input {
+                              font-size: 16px;
+                              width: auto;
+                              overflow: visible;
+                              height: 35px;
+                              text-align: right;
+                              border: none;
+                              margin-bottom: 75px;
+                            }
+
+                            @media only screen and (max-width: 500px) {
+                              width: 330px;
+                            }
+
+                            @media only screen and (max-width: 390px) {
+                              width: 270px;
+                            }
+                          `
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "Grand total:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+      type: "text",
+      name: "grandTotal",
+      id: "grandTotal",
+      value: grandTotalSumHST
+    })))) : null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("button", {
       className: "btn btn-default",
       type: "submit"
     }, "submit")))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -3908,7 +4081,7 @@ footer .footer-manu ul li a:hover {
    padding-left: 0px;
  }
  h2 {
-   font-size: 18px;
+   font-size: 24px;
  }
  p {
    font-size: 13px;
