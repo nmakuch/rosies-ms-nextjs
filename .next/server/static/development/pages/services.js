@@ -2305,11 +2305,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   constructor(props) {
     super(props);
     this.state = {
-      optionsAddOns1: [],
-      optionsAddOns2: [],
       optionsAddOns3: [],
-      labelsAddOns1: [],
-      labelsAddOns2: [],
       labelsAddOns3: [],
       selectBoxValue1: [],
       radio1: "",
@@ -2322,54 +2318,6 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       radio1: event.target.value,
       radioLabel: event.target.id
     });
-  }
-
-  changeEvent1(event) {
-    let checkedArrayAddOns1 = this.state.optionsAddOns1;
-    let checkedArrayIds1 = this.state.labelsAddOns1;
-    let selectedId1 = event.target.id;
-    let selectedValue1 = event.target.value;
-
-    if (event.target.checked === true) {
-      checkedArrayIds1.push(selectedId1);
-      checkedArrayAddOns1.push(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0___default()(selectedValue1));
-      this.setState({
-        optionsAddOns1: checkedArrayAddOns1,
-        labelsAddOns1: checkedArrayIds1
-      });
-    } else {
-      let valueIndex1 = checkedArrayAddOns1.indexOf(selectedValue1);
-      checkedArrayAddOns1.splice(valueIndex1, 1);
-      checkedArrayIds1.splice(valueIndex1, 1);
-      this.setState({
-        optionsAddOns1: checkedArrayAddOns1,
-        labelsAddOns1: checkedArrayIds1
-      });
-    }
-  }
-
-  changeEvent2(event) {
-    let checkedArrayAddOns2 = this.state.optionsAddOns2;
-    let checkedArrayIds2 = this.state.labelsAddOns2;
-    let selectedId2 = event.target.id;
-    let selectedValue2 = event.target.value;
-
-    if (event.target.checked === true) {
-      checkedArrayIds2.push(selectedId2);
-      checkedArrayAddOns2.push(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0___default()(selectedValue2));
-      this.setState({
-        optionsAddOns2: checkedArrayAddOns2,
-        labelsAddOns2: checkedArrayIds2
-      });
-    } else {
-      let valueIndex2 = checkedArrayAddOns2.indexOf(selectedValue2);
-      checkedArrayAddOns2.splice(valueIndex2, 1);
-      checkedArrayIds2.splice(valueIndex2, 1);
-      this.setState({
-        optionsAddOns2: checkedArrayAddOns2,
-        labelsAddOns2: checkedArrayIds2
-      });
-    }
   }
 
   changeEvent3(event) {
@@ -2397,16 +2345,6 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   }
 
   render() {
-    let addOnsLabels1 = this.state.labelsAddOns1;
-    let addOnsCost1 = this.state.optionsAddOns1;
-    let checkBoxArrayAddOns1 = [54.0, 90.0, 108.0];
-    let checkBoxArrayLabels1 = ["Basic (1.5 hours): kitchen, bathroom, all floors ($54.00)", "Basic plus (2.5 hours): kitchen, bathroom, living areas including bedroom($90.00)", "Complete (3.0 hours): kitchen, bathroom, living areas, plus one big job ($108.00)"];
-    let checkBoxArrayIds1 = ["Basic (1.5 hours)", "Basic plus (2.5 hours)", "Complete (3.0 hours)"];
-    let addOnsLabels2 = this.state.labelsAddOns2;
-    let addOnsCost2 = this.state.optionsAddOns2;
-    let checkBoxArrayAddOns2 = [60.0, 100.0, 140.0];
-    let checkBoxArrayLabels2 = ["Basic (1.5 hours): kitchen, bathroom, all floors ($60.00)", "Basic plus (2.5 hours): kitchen, bathroom, living areas including bedroom($100.00)", "Complete (3.0 hours): kitchen, bathroom, living areas, plus one big job ($140.00)"];
-    let checkBoxArrayIds2 = ["Basic (1.5 hours) x2", "Basic plus (2.5 hours) x2", "Complete (3.0 hours) x2"];
     let addOnsLabels3 = this.state.labelsAddOns3;
     let addOnsCost3 = this.state.optionsAddOns3;
     let checkBoxArrayAddOns3 = [35.0, 20.0, 20.0, 20.0, 15.0, 20.0];
@@ -2416,25 +2354,12 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     let radioLabels1 = ["1.5 hour session at $35/hour ($52.50)", "2.0 hour session at $35/hour ($70.00)", "2.5 hour session at $35/hour ($87.50)", "3.0 hour session at $35/hour ($105.00)", "3.5 hour session at $35/hour ($122.50)", "4.0 hour session at $35/hour ($140.00)"];
     let radioArrayId1 = ["1.5 hour session at $35/hour", "2.0 hour session at $35/hour", "2.5 hour session at $35/hour", "3.0 hour session at $35/hour", "3.5 hour session at $35/hour", "4.0 hour session at $35/hour"];
     let radioValues2 = [54.0, 90.0, 108.0];
-    let radioLabels2 = ["Basic (1.5 hours at $35/hour): kitchen, bathroom, all floors  ($54.00)", "Basic Plus (2.5 hours at $35/hour): kitchen, bathroom, living areas including bedroom ($90.00)", "Complete (3.0 hours at $35/hour): kitchen, bathroom, living areas plus one big job ($108.00)"];
+    let radioLabels2 = ["Basic (1.5 hours): kitchen, bathroom, all floors  ($54.00)", "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($90.00)", "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($108.00)"];
     let radioArrayId2 = ["Basic (1.5 hours)", "Basic plus (2.5 hours)", "Complete (3.0 hours)"];
+    let radioValues3 = [60.0, 100.0, 140.0];
+    let radioLabels3 = ["Basic (1.5 hours): kitchen, bathroom, all floors  ($60.00)", "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($100.00)", "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($140.00)"];
+    let radioArrayId3 = ["x2 Basic (1.5 hours)", "x2 Basic plus (2.5 hours)", "x2 Complete (3.0 hours)"];
     let grandTotalArr = [];
-    let outputCheckboxesAddOns1 = checkBoxArrayAddOns1.map((number, i) => {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(CheckBox, {
-        value: number,
-        id: checkBoxArrayIds1[i],
-        onChange: this.changeEvent1.bind(this),
-        label: checkBoxArrayLabels1[i]
-      });
-    }, this);
-    let outputCheckboxesAddOns2 = checkBoxArrayAddOns2.map((number, i) => {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(CheckBox, {
-        value: number,
-        id: checkBoxArrayIds2[i],
-        onChange: this.changeEvent2.bind(this),
-        label: checkBoxArrayLabels2[i]
-      });
-    }, this);
     let outputCheckboxesAddOns3 = checkBoxArrayAddOns3.map((number, i) => {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(CheckBox, {
         value: number,
@@ -2443,11 +2368,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
         label: checkBoxArrayLabels3[i]
       });
     }, this);
-    let sumOptionsAddOns1 = this.state.optionsAddOns1.reduce((a, b) => a + b, 0);
-    let sumOptionsAddOns2 = this.state.optionsAddOns2.reduce((a, b) => a + b, 0);
     let sumOptionsAddOns3 = this.state.optionsAddOns3.reduce((a, b) => a + b, 0);
-    grandTotalArr.push(sumOptionsAddOns1);
-    grandTotalArr.push(sumOptionsAddOns2);
     grandTotalArr.push(sumOptionsAddOns3);
     let reducedArr = grandTotalArr.reduce((a, b) => a + b, 0);
     let grandTotalHST = formatter.format(reducedArr * 0.13 + this.state.radio1 * 0.13);
@@ -2551,11 +2472,6 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
                       padding: 0 15px;
                     `,
       className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "Select one of the following plans:")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
-                      padding: 0 15px;
-                    `,
-      className: "row"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
                         padding: 0 5px !important;
@@ -2563,7 +2479,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       className: "col-md-12 col-sm-12"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "form-group"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "1) Cleaning by the hour (Rate: $35/hr)"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("ul", null, radioValues1.map((radioValue, i) => {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "1) Hourly cleaning packages"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "Our regular cleaning rate is $35/hour"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("ul", null, radioValues1.map((radioValue, i) => {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", {
         className: "checkbox-label"
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
@@ -2588,7 +2504,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
                                   height: 135px !important;
                                 `,
       placeholder: "Your message"
-    }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "2) Pre-structured cleaning package (Rate: $35/hour)")), radioValues2.map((radioValue, i) => {
+    }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "2) Pre-structured cleaning package")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "1 Bedroom or Bachelor up to 600 sq/ft (1 bathroom)")), radioValues2.map((radioValue, i) => {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", {
         className: "checkbox-label"
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
@@ -2600,6 +2516,20 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
         className: "radio-label"
       }, radioLabels2[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", {
+        className: "checkbox-custom circular"
+      })));
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "2 Bedroom up to 1000 sq/ft (1 bathroom)")), radioValues3.map((radioValue, i) => {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", {
+        className: "checkbox-label"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+        type: "radio",
+        value: radioValue,
+        id: radioArrayId3[i],
+        checked: this.state.radio1 === `${radioValue}`,
+        onChange: this.radioChange.bind(this)
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
+        className: "radio-label"
+      }, radioLabels3[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", {
         className: "checkbox-custom circular"
       })));
     }))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
@@ -2624,33 +2554,10 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       className: "row"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                        margin-bottom: 0 !important;
                         margin-top: 50px;
                       `
-    }, "These add-ons can be added to your package:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "1) Bachelor or 1 Bedroom up to 600 sq/ft (1 bathroom):"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-      className: "form-group"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, outputCheckboxesAddOns1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
-                      padding: 0 15px;
-                      label {
-                        margin-bottom: 40px;
-                        p {
-                          position: relative;
-                          top: 4px;
-                          left: 50px;
-                        }
-
-                        @media only screen and (max-width: 767px) {
-                          p {
-                            top: 8px;
-                            line-height: 1.2rem;
-                          }
-                        }
-                      }
-                    `,
-      className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "2) 2 Bedroom up to 1000 sq/ft (1 bathroom):"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-      className: "form-group"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, outputCheckboxesAddOns2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+    }, "Add ons:")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
                       padding: 0 15px;
                       label {
@@ -2670,7 +2577,11 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
                       }
                     `,
       className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "3) Other package add ons:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                        margin-top: 50px;
+                      `
+    }, "These add-ons can be added to your package:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       className: "form-group"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, outputCheckboxesAddOns3), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
@@ -2715,7 +2626,7 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       name: "planType",
       id: "planType",
       value: `+ ${this.state.radioLabel}`
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, formatter.format(this.state.radio1))) : null, addOnsLabels1.map((addOnLabel1, i) => {
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, formatter.format(this.state.radio1))) : null, addOnsLabels3.map((addOnLabel3, i) => {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
         css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
                                 display: flex;
@@ -2739,56 +2650,6 @@ class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
                                   width: 270px;
                                 }
                               `
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "+ ", addOnLabel1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, " ", formatter.format(addOnsCost1[i])));
-    }), addOnsLabels2.map((addOnLabel2, i) => {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-        css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
-                                display: flex;
-                                justify-content: space-between;
-                                width: 400px;
-
-                                h3 {
-                                  font-size: 16px;
-                                  margin-bottom: 15px;
-                                }
-
-                                span {
-                                  font-size: 16px;
-                                }
-
-                                @media only screen and (max-width: 500px) {
-                                  width: 325px;
-                                }
-
-                                @media only screen and (max-width: 390px) {
-                                  width: 270px;
-                                }
-                              `
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "+ ", addOnLabel2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, " ", formatter.format(addOnsCost2[i])));
-    }), addOnsLabels3.map((addOnLabel3, i) => {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-        css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
-                                  display: flex;
-                                  justify-content: space-between;
-                                  width: 400px;
-
-                                  h3 {
-                                    font-size: 16px;
-                                    margin-bottom: 15px;
-                                  }
-
-                                  span {
-                                    font-size: 16px;
-                                  }
-
-                                  @media only screen and (max-width: 500px) {
-                                    width: 325px;
-                                  }
-
-                                  @media only screen and (max-width: 390px) {
-                                    width: 270px;
-                                  }
-                                `
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "+ ", addOnLabel3), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, " ", formatter.format(addOnsCost3[i])));
     })) : null), grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`

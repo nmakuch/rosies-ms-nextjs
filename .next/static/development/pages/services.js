@@ -13362,38 +13362,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
-function _templateObject21() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                            display: flex;\n                            justify-content: space-between;\n                            width: 400px;\n\n                            h3 {\n                              font-size: 16px;\n                              margin-top: 7px;\n                              margin-bottom: 75px;\n                            }\n\n                            input {\n                              font-size: 16px;\n                              width: auto;\n                              overflow: visible;\n                              height: 35px;\n                              text-align: right;\n                              border: none;\n                              margin-bottom: 75px;\n                            }\n\n                            @media only screen and (max-width: 500px) {\n                              width: 330px;\n                            }\n\n                            @media only screen and (max-width: 390px) {\n                              width: 270px;\n                            }\n                          "]);
-
-  _templateObject21 = function _templateObject21() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject20() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                          padding: 0 15px;\n                        "]);
-
-  _templateObject20 = function _templateObject20() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject19() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                            display: flex;\n                            justify-content: space-between;\n                            width: 400px;\n                            margin-top: 25px;\n                            padding-top: 25px;\n                            border-top: 1px solid black;\n\n                            h3 {\n                              font-size: 16px;\n                              margin-bottom: 15px;\n                            }\n\n                            span {\n                              font-size: 16px;\n                            }\n\n                            @media only screen and (max-width: 500px) {\n                              width: 325px;\n                            }\n\n                            @media only screen and (max-width: 390px) {\n                              width: 270px;\n                            }\n                          "]);
-
-  _templateObject19 = function _templateObject19() {
-    return data;
-  };
-
-  return data;
-}
-
 function _templateObject18() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                          padding: 0 15px;\n                        "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                            display: flex;\n                            justify-content: space-between;\n                            width: 400px;\n\n                            h3 {\n                              font-size: 16px;\n                              margin-top: 7px;\n                              margin-bottom: 75px;\n                            }\n\n                            input {\n                              font-size: 16px;\n                              width: auto;\n                              overflow: visible;\n                              height: 35px;\n                              text-align: right;\n                              border: none;\n                              margin-bottom: 75px;\n                            }\n\n                            @media only screen and (max-width: 500px) {\n                              width: 330px;\n                            }\n\n                            @media only screen and (max-width: 390px) {\n                              width: 270px;\n                            }\n                          "]);
 
   _templateObject18 = function _templateObject18() {
     return data;
@@ -13403,7 +13373,7 @@ function _templateObject18() {
 }
 
 function _templateObject17() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                                  display: flex;\n                                  justify-content: space-between;\n                                  width: 400px;\n\n                                  h3 {\n                                    font-size: 16px;\n                                    margin-bottom: 15px;\n                                  }\n\n                                  span {\n                                    font-size: 16px;\n                                  }\n\n                                  @media only screen and (max-width: 500px) {\n                                    width: 325px;\n                                  }\n\n                                  @media only screen and (max-width: 390px) {\n                                    width: 270px;\n                                  }\n                                "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                          padding: 0 15px;\n                        "]);
 
   _templateObject17 = function _templateObject17() {
     return data;
@@ -13413,7 +13383,7 @@ function _templateObject17() {
 }
 
 function _templateObject16() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                                display: flex;\n                                justify-content: space-between;\n                                width: 400px;\n\n                                h3 {\n                                  font-size: 16px;\n                                  margin-bottom: 15px;\n                                }\n\n                                span {\n                                  font-size: 16px;\n                                }\n\n                                @media only screen and (max-width: 500px) {\n                                  width: 325px;\n                                }\n\n                                @media only screen and (max-width: 390px) {\n                                  width: 270px;\n                                }\n                              "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                            display: flex;\n                            justify-content: space-between;\n                            width: 400px;\n                            margin-top: 25px;\n                            padding-top: 25px;\n                            border-top: 1px solid black;\n\n                            h3 {\n                              font-size: 16px;\n                              margin-bottom: 15px;\n                            }\n\n                            span {\n                              font-size: 16px;\n                            }\n\n                            @media only screen and (max-width: 500px) {\n                              width: 325px;\n                            }\n\n                            @media only screen and (max-width: 390px) {\n                              width: 270px;\n                            }\n                          "]);
 
   _templateObject16 = function _templateObject16() {
     return data;
@@ -13423,7 +13393,7 @@ function _templateObject16() {
 }
 
 function _templateObject15() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                                display: flex;\n                                justify-content: space-between;\n                                width: 400px;\n\n                                h3 {\n                                  font-size: 16px;\n                                  margin-bottom: 15px;\n                                }\n\n                                span {\n                                  font-size: 16px;\n                                }\n\n                                @media only screen and (max-width: 500px) {\n                                  width: 325px;\n                                }\n\n                                @media only screen and (max-width: 390px) {\n                                  width: 270px;\n                                }\n                              "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                          padding: 0 15px;\n                        "]);
 
   _templateObject15 = function _templateObject15() {
     return data;
@@ -13433,7 +13403,7 @@ function _templateObject15() {
 }
 
 function _templateObject14() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                              display: flex;\n                              justify-content: space-between;\n                              width: 400px;\n                              padding: 0 5px 0 0;\n\n                              input {\n                                font-family: \"Roboto\", sans-serif;\n                                font-size: 16px;\n                                font-weight: 600;\n                                margin-bottom: 15px;\n                                border: none;\n                                overflow: visible;\n                                width: auto;\n                              }\n\n                              @media only screen and (max-width: 500px) {\n                                width: 330px;\n\n                                input {\n                                  width: auto;\n                                }\n                              }\n\n                              @media only screen and (max-width: 390px) {\n                                width: 275px;\n                              }\n                            "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                                display: flex;\n                                justify-content: space-between;\n                                width: 400px;\n\n                                h3 {\n                                  font-size: 16px;\n                                  margin-bottom: 15px;\n                                }\n\n                                span {\n                                  font-size: 16px;\n                                }\n\n                                @media only screen and (max-width: 500px) {\n                                  width: 325px;\n                                }\n\n                                @media only screen and (max-width: 390px) {\n                                  width: 270px;\n                                }\n                              "]);
 
   _templateObject14 = function _templateObject14() {
     return data;
@@ -13443,7 +13413,7 @@ function _templateObject14() {
 }
 
 function _templateObject13() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                            margin-bottom: 30px !important;\n                          "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                              display: flex;\n                              justify-content: space-between;\n                              width: 400px;\n                              padding: 0 5px 0 0;\n\n                              input {\n                                font-family: \"Roboto\", sans-serif;\n                                font-size: 16px;\n                                font-weight: 600;\n                                margin-bottom: 15px;\n                                border: none;\n                                overflow: visible;\n                                width: auto;\n                              }\n\n                              @media only screen and (max-width: 500px) {\n                                width: 330px;\n\n                                input {\n                                  width: auto;\n                                }\n                              }\n\n                              @media only screen and (max-width: 390px) {\n                                width: 275px;\n                              }\n                            "]);
 
   _templateObject13 = function _templateObject13() {
     return data;
@@ -13453,7 +13423,7 @@ function _templateObject13() {
 }
 
 function _templateObject12() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding: 0 15px;\n                    "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                            margin-bottom: 30px !important;\n                          "]);
 
   _templateObject12 = function _templateObject12() {
     return data;
@@ -13463,7 +13433,7 @@ function _templateObject12() {
 }
 
 function _templateObject11() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding: 0 15px;\n                      label {\n                        margin-bottom: 40px;\n                        p {\n                          position: relative;\n                          top: 4px;\n                          left: 50px;\n                        }\n\n                        @media only screen and (max-width: 767px) {\n                          p {\n                            line-height: 1.2rem;\n                            top: 8px;\n                          }\n                        }\n                      }\n                    "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding: 0 15px;\n                    "]);
 
   _templateObject11 = function _templateObject11() {
     return data;
@@ -13473,7 +13443,7 @@ function _templateObject11() {
 }
 
 function _templateObject10() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding: 0 15px;\n                      label {\n                        margin-bottom: 40px;\n                        p {\n                          position: relative;\n                          top: 4px;\n                          left: 50px;\n                        }\n\n                        @media only screen and (max-width: 767px) {\n                          p {\n                            top: 8px;\n                            line-height: 1.2rem;\n                          }\n                        }\n                      }\n                    "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                        margin-top: 50px;\n                      "]);
 
   _templateObject10 = function _templateObject10() {
     return data;
@@ -13483,7 +13453,7 @@ function _templateObject10() {
 }
 
 function _templateObject9() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                        margin-top: 50px;\n                      "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding: 0 15px;\n                      label {\n                        margin-bottom: 40px;\n                        p {\n                          position: relative;\n                          top: 4px;\n                          left: 50px;\n                        }\n\n                        @media only screen and (max-width: 767px) {\n                          p {\n                            line-height: 1.2rem;\n                            top: 8px;\n                          }\n                        }\n                      }\n                    "]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -13493,7 +13463,7 @@ function _templateObject9() {
 }
 
 function _templateObject8() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding: 0 15px;\n                      label {\n                        margin-bottom: 50px;\n                        p {\n                          position: relative;\n                          top: 4px;\n                          left: 50px;\n                        }\n\n                        @media only screen and (max-width: 767px) {\n                          p {\n                            line-height: 1.2rem;\n                            top: 8px;\n                          }\n                        }\n                      }\n                    "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                        margin-bottom: 0 !important;\n                        margin-top: 50px;\n                      "]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -13503,7 +13473,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                                  height: 135px !important;\n                                "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding: 0 15px;\n                      label {\n                        margin-bottom: 50px;\n                        p {\n                          position: relative;\n                          top: 4px;\n                          left: 50px;\n                        }\n\n                        @media only screen and (max-width: 767px) {\n                          p {\n                            line-height: 1.2rem;\n                            top: 8px;\n                          }\n                        }\n                      }\n                    "]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -13513,7 +13483,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                        padding: 0 5px !important;\n                      "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                                  height: 135px !important;\n                                "]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -13523,7 +13493,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                      padding: 0 15px;\n                    "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                        padding: 0 5px !important;\n                      "]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -13631,11 +13601,7 @@ function (_React$Component2) {
 
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Services).call(this, props));
     _this.state = {
-      optionsAddOns1: [],
-      optionsAddOns2: [],
       optionsAddOns3: [],
-      labelsAddOns1: [],
-      labelsAddOns2: [],
       labelsAddOns3: [],
       selectBoxValue1: [],
       radio1: "",
@@ -13651,56 +13617,6 @@ function (_React$Component2) {
         radio1: event.target.value,
         radioLabel: event.target.id
       });
-    }
-  }, {
-    key: "changeEvent1",
-    value: function changeEvent1(event) {
-      var checkedArrayAddOns1 = this.state.optionsAddOns1;
-      var checkedArrayIds1 = this.state.labelsAddOns1;
-      var selectedId1 = event.target.id;
-      var selectedValue1 = event.target.value;
-
-      if (event.target.checked === true) {
-        checkedArrayIds1.push(selectedId1);
-        checkedArrayAddOns1.push(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue1));
-        this.setState({
-          optionsAddOns1: checkedArrayAddOns1,
-          labelsAddOns1: checkedArrayIds1
-        });
-      } else {
-        var valueIndex1 = checkedArrayAddOns1.indexOf(selectedValue1);
-        checkedArrayAddOns1.splice(valueIndex1, 1);
-        checkedArrayIds1.splice(valueIndex1, 1);
-        this.setState({
-          optionsAddOns1: checkedArrayAddOns1,
-          labelsAddOns1: checkedArrayIds1
-        });
-      }
-    }
-  }, {
-    key: "changeEvent2",
-    value: function changeEvent2(event) {
-      var checkedArrayAddOns2 = this.state.optionsAddOns2;
-      var checkedArrayIds2 = this.state.labelsAddOns2;
-      var selectedId2 = event.target.id;
-      var selectedValue2 = event.target.value;
-
-      if (event.target.checked === true) {
-        checkedArrayIds2.push(selectedId2);
-        checkedArrayAddOns2.push(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1___default()(selectedValue2));
-        this.setState({
-          optionsAddOns2: checkedArrayAddOns2,
-          labelsAddOns2: checkedArrayIds2
-        });
-      } else {
-        var valueIndex2 = checkedArrayAddOns2.indexOf(selectedValue2);
-        checkedArrayAddOns2.splice(valueIndex2, 1);
-        checkedArrayIds2.splice(valueIndex2, 1);
-        this.setState({
-          optionsAddOns2: checkedArrayAddOns2,
-          labelsAddOns2: checkedArrayIds2
-        });
-      }
     }
   }, {
     key: "changeEvent3",
@@ -13732,16 +13648,6 @@ function (_React$Component2) {
     value: function render() {
       var _this2 = this;
 
-      var addOnsLabels1 = this.state.labelsAddOns1;
-      var addOnsCost1 = this.state.optionsAddOns1;
-      var checkBoxArrayAddOns1 = [54.0, 90.0, 108.0];
-      var checkBoxArrayLabels1 = ["Basic (1.5 hours): kitchen, bathroom, all floors ($54.00)", "Basic plus (2.5 hours): kitchen, bathroom, living areas including bedroom($90.00)", "Complete (3.0 hours): kitchen, bathroom, living areas, plus one big job ($108.00)"];
-      var checkBoxArrayIds1 = ["Basic (1.5 hours)", "Basic plus (2.5 hours)", "Complete (3.0 hours)"];
-      var addOnsLabels2 = this.state.labelsAddOns2;
-      var addOnsCost2 = this.state.optionsAddOns2;
-      var checkBoxArrayAddOns2 = [60.0, 100.0, 140.0];
-      var checkBoxArrayLabels2 = ["Basic (1.5 hours): kitchen, bathroom, all floors ($60.00)", "Basic plus (2.5 hours): kitchen, bathroom, living areas including bedroom($100.00)", "Complete (3.0 hours): kitchen, bathroom, living areas, plus one big job ($140.00)"];
-      var checkBoxArrayIds2 = ["Basic (1.5 hours) x2", "Basic plus (2.5 hours) x2", "Complete (3.0 hours) x2"];
       var addOnsLabels3 = this.state.labelsAddOns3;
       var addOnsCost3 = this.state.optionsAddOns3;
       var checkBoxArrayAddOns3 = [35.0, 20.0, 20.0, 20.0, 15.0, 20.0];
@@ -13751,25 +13657,12 @@ function (_React$Component2) {
       var radioLabels1 = ["1.5 hour session at $35/hour ($52.50)", "2.0 hour session at $35/hour ($70.00)", "2.5 hour session at $35/hour ($87.50)", "3.0 hour session at $35/hour ($105.00)", "3.5 hour session at $35/hour ($122.50)", "4.0 hour session at $35/hour ($140.00)"];
       var radioArrayId1 = ["1.5 hour session at $35/hour", "2.0 hour session at $35/hour", "2.5 hour session at $35/hour", "3.0 hour session at $35/hour", "3.5 hour session at $35/hour", "4.0 hour session at $35/hour"];
       var radioValues2 = [54.0, 90.0, 108.0];
-      var radioLabels2 = ["Basic (1.5 hours at $35/hour): kitchen, bathroom, all floors  ($54.00)", "Basic Plus (2.5 hours at $35/hour): kitchen, bathroom, living areas including bedroom ($90.00)", "Complete (3.0 hours at $35/hour): kitchen, bathroom, living areas plus one big job ($108.00)"];
+      var radioLabels2 = ["Basic (1.5 hours): kitchen, bathroom, all floors  ($54.00)", "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($90.00)", "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($108.00)"];
       var radioArrayId2 = ["Basic (1.5 hours)", "Basic plus (2.5 hours)", "Complete (3.0 hours)"];
+      var radioValues3 = [60.0, 100.0, 140.0];
+      var radioLabels3 = ["Basic (1.5 hours): kitchen, bathroom, all floors  ($60.00)", "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($100.00)", "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($140.00)"];
+      var radioArrayId3 = ["x2 Basic (1.5 hours)", "x2 Basic plus (2.5 hours)", "x2 Complete (3.0 hours)"];
       var grandTotalArr = [];
-      var outputCheckboxesAddOns1 = checkBoxArrayAddOns1.map(function (number, i) {
-        return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(CheckBox, {
-          value: number,
-          id: checkBoxArrayIds1[i],
-          onChange: _this2.changeEvent1.bind(_this2),
-          label: checkBoxArrayLabels1[i]
-        });
-      }, this);
-      var outputCheckboxesAddOns2 = checkBoxArrayAddOns2.map(function (number, i) {
-        return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(CheckBox, {
-          value: number,
-          id: checkBoxArrayIds2[i],
-          onChange: _this2.changeEvent2.bind(_this2),
-          label: checkBoxArrayLabels2[i]
-        });
-      }, this);
       var outputCheckboxesAddOns3 = checkBoxArrayAddOns3.map(function (number, i) {
         return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(CheckBox, {
           value: number,
@@ -13778,17 +13671,9 @@ function (_React$Component2) {
           label: checkBoxArrayLabels3[i]
         });
       }, this);
-      var sumOptionsAddOns1 = this.state.optionsAddOns1.reduce(function (a, b) {
-        return a + b;
-      }, 0);
-      var sumOptionsAddOns2 = this.state.optionsAddOns2.reduce(function (a, b) {
-        return a + b;
-      }, 0);
       var sumOptionsAddOns3 = this.state.optionsAddOns3.reduce(function (a, b) {
         return a + b;
       }, 0);
-      grandTotalArr.push(sumOptionsAddOns1);
-      grandTotalArr.push(sumOptionsAddOns2);
       grandTotalArr.push(sumOptionsAddOns3);
       var reducedArr = grandTotalArr.reduce(function (a, b) {
         return a + b;
@@ -13822,15 +13707,12 @@ function (_React$Component2) {
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
         css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject4()),
         className: "row"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", null, "Select one of the following plans:")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject5()),
-        className: "row"
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject6()),
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject5()),
         className: "col-md-12 col-sm-12"
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
         className: "form-group"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", null, "1) Cleaning by the hour (Rate: $35/hr)"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("ul", null, radioValues1.map(function (radioValue, i) {
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", null, "1) Hourly cleaning packages"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", null, "Our regular cleaning rate is $35/hour"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("ul", null, radioValues1.map(function (radioValue, i) {
         return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", {
           className: "checkbox-label"
         }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
@@ -13851,9 +13733,9 @@ function (_React$Component2) {
         id: "hourlyMessage",
         className: "form-control",
         rows: "3",
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject7()),
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject6()),
         placeholder: "Your message"
-      }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", null, "2) Pre-structured cleaning package (Rate: $35/hour)")), radioValues2.map(function (radioValue, i) {
+      }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", null, "2) Pre-structured cleaning package")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", null, "1 Bedroom or Bachelor up to 600 sq/ft (1 bathroom)")), radioValues2.map(function (radioValue, i) {
         return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", {
           className: "checkbox-label"
         }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
@@ -13867,57 +13749,58 @@ function (_React$Component2) {
         }, radioLabels2[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("span", {
           className: "checkbox-custom circular"
         })));
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", null, "2 Bedroom up to 1000 sq/ft (1 bathroom)")), radioValues3.map(function (radioValue, i) {
+        return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", {
+          className: "checkbox-label"
+        }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
+          type: "radio",
+          value: radioValue,
+          id: radioArrayId3[i],
+          checked: _this2.state.radio1 === "".concat(radioValue),
+          onChange: _this2.radioChange.bind(_this2)
+        }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
+          className: "radio-label"
+        }, radioLabels3[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("span", {
+          className: "checkbox-custom circular"
+        })));
       }))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject8()),
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject7()),
         className: "row"
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject9())
-      }, "These add-ons can be added to your package:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", null, "1) Bachelor or 1 Bedroom up to 600 sq/ft (1 bathroom):"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        className: "form-group"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", null, outputCheckboxesAddOns1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject10()),
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject8())
+      }, "Add ons:")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject9()),
         className: "row"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", null, "2) 2 Bedroom up to 1000 sq/ft (1 bathroom):"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        className: "form-group"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", null, outputCheckboxesAddOns2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject11()),
-        className: "row"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", null, "3) Other package add ons:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject10())
+      }, "These add-ons can be added to your package:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
         className: "form-group"
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", null, outputCheckboxesAddOns3), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject12()),
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject11()),
         className: "row"
       }, grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject13())
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject12())
       }, "Your plan:"), this.state.radio1 > 0 ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject14())
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject13())
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
         type: "text",
         name: "planType",
         id: "planType",
         value: "+ ".concat(this.state.radioLabel)
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("span", null, formatter.format(this.state.radio1))) : null, addOnsLabels1.map(function (addOnLabel1, i) {
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("span", null, formatter.format(this.state.radio1))) : null, addOnsLabels3.map(function (addOnLabel3, i) {
         return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-          css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject15())
-        }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", null, "+ ", addOnLabel1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("span", null, " ", formatter.format(addOnsCost1[i])));
-      }), addOnsLabels2.map(function (addOnLabel2, i) {
-        return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-          css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject16())
-        }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", null, "+ ", addOnLabel2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("span", null, " ", formatter.format(addOnsCost2[i])));
-      }), addOnsLabels3.map(function (addOnLabel3, i) {
-        return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-          css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject17())
+          css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject14())
         }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", null, "+ ", addOnLabel3), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("span", null, " ", formatter.format(addOnsCost3[i])));
       })) : null), grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject18()),
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject15()),
         className: "row"
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject19())
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject16())
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", null, "+ HST (x0.13)"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("span", null, grandTotalHST))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject20()),
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject17()),
         className: "row"
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject21())
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject18())
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", null, "Grand total:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
         type: "text",
         name: "grandTotal",

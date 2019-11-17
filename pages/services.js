@@ -37,11 +37,7 @@ class Services extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      optionsAddOns1: [],
-      optionsAddOns2: [],
       optionsAddOns3: [],
-      labelsAddOns1: [],
-      labelsAddOns2: [],
       labelsAddOns3: [],
       selectBoxValue1: [],
       radio1: "",
@@ -54,56 +50,6 @@ class Services extends React.Component {
       radio1: event.target.value,
       radioLabel: event.target.id
     });
-  }
-
-  changeEvent1(event) {
-    let checkedArrayAddOns1 = this.state.optionsAddOns1;
-    let checkedArrayIds1 = this.state.labelsAddOns1;
-    let selectedId1 = event.target.id;
-    let selectedValue1 = event.target.value;
-
-    if (event.target.checked === true) {
-      checkedArrayIds1.push(selectedId1);
-      checkedArrayAddOns1.push(parseFloat(selectedValue1));
-      this.setState({
-        optionsAddOns1: checkedArrayAddOns1,
-        labelsAddOns1: checkedArrayIds1
-      });
-    } else {
-      let valueIndex1 = checkedArrayAddOns1.indexOf(selectedValue1);
-      checkedArrayAddOns1.splice(valueIndex1, 1);
-      checkedArrayIds1.splice(valueIndex1, 1);
-
-      this.setState({
-        optionsAddOns1: checkedArrayAddOns1,
-        labelsAddOns1: checkedArrayIds1
-      });
-    }
-  }
-
-  changeEvent2(event) {
-    let checkedArrayAddOns2 = this.state.optionsAddOns2;
-    let checkedArrayIds2 = this.state.labelsAddOns2;
-    let selectedId2 = event.target.id;
-    let selectedValue2 = event.target.value;
-
-    if (event.target.checked === true) {
-      checkedArrayIds2.push(selectedId2);
-      checkedArrayAddOns2.push(parseFloat(selectedValue2));
-      this.setState({
-        optionsAddOns2: checkedArrayAddOns2,
-        labelsAddOns2: checkedArrayIds2
-      });
-    } else {
-      let valueIndex2 = checkedArrayAddOns2.indexOf(selectedValue2);
-      checkedArrayAddOns2.splice(valueIndex2, 1);
-      checkedArrayIds2.splice(valueIndex2, 1);
-
-      this.setState({
-        optionsAddOns2: checkedArrayAddOns2,
-        labelsAddOns2: checkedArrayIds2
-      });
-    }
   }
 
   changeEvent3(event) {
@@ -132,37 +78,6 @@ class Services extends React.Component {
   }
 
   render() {
-    let addOnsLabels1 = this.state.labelsAddOns1;
-    let addOnsCost1 = this.state.optionsAddOns1;
-
-    let checkBoxArrayAddOns1 = [54.0, 90.0, 108.0];
-    let checkBoxArrayLabels1 = [
-      "Basic (1.5 hours): kitchen, bathroom, all floors ($54.00)",
-      "Basic plus (2.5 hours): kitchen, bathroom, living areas including bedroom($90.00)",
-      "Complete (3.0 hours): kitchen, bathroom, living areas, plus one big job ($108.00)"
-    ];
-    let checkBoxArrayIds1 = [
-      "Basic (1.5 hours)",
-      "Basic plus (2.5 hours)",
-      "Complete (3.0 hours)"
-    ];
-
-    let addOnsLabels2 = this.state.labelsAddOns2;
-    let addOnsCost2 = this.state.optionsAddOns2;
-
-    let checkBoxArrayAddOns2 = [60.0, 100.0, 140.0];
-    let checkBoxArrayLabels2 = [
-      "Basic (1.5 hours): kitchen, bathroom, all floors ($60.00)",
-      "Basic plus (2.5 hours): kitchen, bathroom, living areas including bedroom($100.00)",
-      "Complete (3.0 hours): kitchen, bathroom, living areas, plus one big job ($140.00)"
-    ];
-
-    let checkBoxArrayIds2 = [
-      "Basic (1.5 hours) x2",
-      "Basic plus (2.5 hours) x2",
-      "Complete (3.0 hours) x2"
-    ];
-
     let addOnsLabels3 = this.state.labelsAddOns3;
     let addOnsCost3 = this.state.optionsAddOns3;
 
@@ -206,9 +121,9 @@ class Services extends React.Component {
 
     let radioValues2 = [54.0, 90.0, 108.0];
     let radioLabels2 = [
-      "Basic (1.5 hours at $35/hour): kitchen, bathroom, all floors  ($54.00)",
-      "Basic Plus (2.5 hours at $35/hour): kitchen, bathroom, living areas including bedroom ($90.00)",
-      "Complete (3.0 hours at $35/hour): kitchen, bathroom, living areas plus one big job ($108.00)"
+      "Basic (1.5 hours): kitchen, bathroom, all floors  ($54.00)",
+      "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($90.00)",
+      "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($108.00)"
     ];
 
     let radioArrayId2 = [
@@ -217,29 +132,20 @@ class Services extends React.Component {
       "Complete (3.0 hours)"
     ];
 
+    let radioValues3 = [60.0, 100.0, 140.0];
+    let radioLabels3 = [
+      "Basic (1.5 hours): kitchen, bathroom, all floors  ($60.00)",
+      "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($100.00)",
+      "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($140.00)"
+    ];
+
+    let radioArrayId3 = [
+      "x2 Basic (1.5 hours)",
+      "x2 Basic plus (2.5 hours)",
+      "x2 Complete (3.0 hours)"
+    ];
+
     let grandTotalArr = [];
-
-    let outputCheckboxesAddOns1 = checkBoxArrayAddOns1.map((number, i) => {
-      return (
-        <CheckBox
-          value={number}
-          id={checkBoxArrayIds1[i]}
-          onChange={this.changeEvent1.bind(this)}
-          label={checkBoxArrayLabels1[i]}
-        />
-      );
-    }, this);
-
-    let outputCheckboxesAddOns2 = checkBoxArrayAddOns2.map((number, i) => {
-      return (
-        <CheckBox
-          value={number}
-          id={checkBoxArrayIds2[i]}
-          onChange={this.changeEvent2.bind(this)}
-          label={checkBoxArrayLabels2[i]}
-        />
-      );
-    }, this);
 
     let outputCheckboxesAddOns3 = checkBoxArrayAddOns3.map((number, i) => {
       return (
@@ -252,23 +158,11 @@ class Services extends React.Component {
       );
     }, this);
 
-    let sumOptionsAddOns1 = this.state.optionsAddOns1.reduce(
-      (a, b) => a + b,
-      0
-    );
-
-    let sumOptionsAddOns2 = this.state.optionsAddOns2.reduce(
-      (a, b) => a + b,
-      0
-    );
-
     let sumOptionsAddOns3 = this.state.optionsAddOns3.reduce(
       (a, b) => a + b,
       0
     );
 
-    grandTotalArr.push(sumOptionsAddOns1);
-    grandTotalArr.push(sumOptionsAddOns2);
     grandTotalArr.push(sumOptionsAddOns3);
 
     let reducedArr = grandTotalArr.reduce((a, b) => a + b, 0);
@@ -395,14 +289,6 @@ class Services extends React.Component {
                     `}
                     className="row"
                   >
-                    <h2>Select one of the following plans:</h2>
-                  </div>
-                  <div
-                    css={css`
-                      padding: 0 15px;
-                    `}
-                    className="row"
-                  >
                     <div
                       css={css`
                         padding: 0 5px !important;
@@ -410,7 +296,8 @@ class Services extends React.Component {
                       className="col-md-12 col-sm-12"
                     >
                       <div className="form-group">
-                        <h3>1) Cleaning by the hour (Rate: $35/hr)</h3>
+                        <h2>1) Hourly cleaning packages</h2>
+                        <h3>Our regular cleaning rate is $35/hour</h3>
                         <ul>
                           {radioValues1.map((radioValue, i) => {
                             return (
@@ -451,9 +338,11 @@ class Services extends React.Component {
                             </div>
                           </li>
                           <li>
+                            <h2>2) Pre-structured cleaning package</h2>
+                          </li>
+                          <li>
                             <h3>
-                              2) Pre-structured cleaning package (Rate:
-                              $35/hour)
+                              1 Bedroom or Bachelor up to 600 sq/ft (1 bathroom)
                             </h3>
                           </li>
                           {radioValues2.map((radioValue, i) => {
@@ -471,6 +360,30 @@ class Services extends React.Component {
                                   />
                                   <p className="radio-label">
                                     {radioLabels2[i]}
+                                  </p>
+                                  <span className="checkbox-custom circular"></span>
+                                </label>
+                              </li>
+                            );
+                          })}
+                          <li>
+                            <h3>2 Bedroom up to 1000 sq/ft (1 bathroom)</h3>
+                          </li>
+                          {radioValues3.map((radioValue, i) => {
+                            return (
+                              <li>
+                                <label className="checkbox-label">
+                                  <input
+                                    type="radio"
+                                    value={radioValue}
+                                    id={radioArrayId3[i]}
+                                    checked={
+                                      this.state.radio1 === `${radioValue}`
+                                    }
+                                    onChange={this.radioChange.bind(this)}
+                                  />
+                                  <p className="radio-label">
+                                    {radioLabels3[i]}
                                   </p>
                                   <span className="checkbox-custom circular"></span>
                                 </label>
@@ -504,68 +417,41 @@ class Services extends React.Component {
                   >
                     <h2
                       css={css`
+                        margin-bottom: 0 !important;
+                        margin-top: 50px;
+                      `}
+                    >
+                      Add ons:
+                    </h2>
+                  </div>
+                  <div
+                    css={css`
+                      padding: 0 15px;
+                      label {
+                        margin-bottom: 40px;
+                        p {
+                          position: relative;
+                          top: 4px;
+                          left: 50px;
+                        }
+
+                        @media only screen and (max-width: 767px) {
+                          p {
+                            line-height: 1.2rem;
+                            top: 8px;
+                          }
+                        }
+                      }
+                    `}
+                    className="row"
+                  >
+                    <h3
+                      css={css`
                         margin-top: 50px;
                       `}
                     >
                       These add-ons can be added to your package:
-                    </h2>
-                    <h3>
-                      1) Bachelor or 1 Bedroom up to 600 sq/ft (1 bathroom):
                     </h3>
-                    <div className="form-group">
-                      <div>{outputCheckboxesAddOns1}</div>
-                      <br />
-                    </div>
-                  </div>
-                  <div
-                    css={css`
-                      padding: 0 15px;
-                      label {
-                        margin-bottom: 40px;
-                        p {
-                          position: relative;
-                          top: 4px;
-                          left: 50px;
-                        }
-
-                        @media only screen and (max-width: 767px) {
-                          p {
-                            top: 8px;
-                            line-height: 1.2rem;
-                          }
-                        }
-                      }
-                    `}
-                    className="row"
-                  >
-                    <h3>2) 2 Bedroom up to 1000 sq/ft (1 bathroom):</h3>
-                    <div className="form-group">
-                      <div>{outputCheckboxesAddOns2}</div>
-                      <br />
-                    </div>
-                  </div>
-                  <div
-                    css={css`
-                      padding: 0 15px;
-                      label {
-                        margin-bottom: 40px;
-                        p {
-                          position: relative;
-                          top: 4px;
-                          left: 50px;
-                        }
-
-                        @media only screen and (max-width: 767px) {
-                          p {
-                            line-height: 1.2rem;
-                            top: 8px;
-                          }
-                        }
-                      }
-                    `}
-                    className="row"
-                  >
-                    <h3>3) Other package add ons:</h3>
                     <div className="form-group">
                       <div>{outputCheckboxesAddOns3}</div>
                       <br />
@@ -628,99 +514,35 @@ class Services extends React.Component {
                           </div>
                         ) : null}
 
-                        {addOnsLabels1.map((addOnLabel1, i) => {
-                          return (
-                            <div
-                              css={css`
-                                display: flex;
-                                justify-content: space-between;
-                                width: 400px;
-
-                                h3 {
-                                  font-size: 16px;
-                                  margin-bottom: 15px;
-                                }
-
-                                span {
-                                  font-size: 16px;
-                                }
-
-                                @media only screen and (max-width: 500px) {
-                                  width: 325px;
-                                }
-
-                                @media only screen and (max-width: 390px) {
-                                  width: 270px;
-                                }
-                              `}
-                            >
-                              <h3>+ {addOnLabel1}</h3>
-                              <span> {formatter.format(addOnsCost1[i])}</span>
-                            </div>
-                          );
-                        })}
-
-                        {addOnsLabels2.map((addOnLabel2, i) => {
-                          return (
-                            <div
-                              css={css`
-                                display: flex;
-                                justify-content: space-between;
-                                width: 400px;
-
-                                h3 {
-                                  font-size: 16px;
-                                  margin-bottom: 15px;
-                                }
-
-                                span {
-                                  font-size: 16px;
-                                }
-
-                                @media only screen and (max-width: 500px) {
-                                  width: 325px;
-                                }
-
-                                @media only screen and (max-width: 390px) {
-                                  width: 270px;
-                                }
-                              `}
-                            >
-                              <h3>+ {addOnLabel2}</h3>
-                              <span> {formatter.format(addOnsCost2[i])}</span>
-                            </div>
-                          );
-                        })}
-
                         {addOnsLabels3.map((addOnLabel3, i) => {
                           return (
-                              <div
-                                css={css`
-                                  display: flex;
-                                  justify-content: space-between;
-                                  width: 400px;
+                            <div
+                              css={css`
+                                display: flex;
+                                justify-content: space-between;
+                                width: 400px;
 
-                                  h3 {
-                                    font-size: 16px;
-                                    margin-bottom: 15px;
-                                  }
+                                h3 {
+                                  font-size: 16px;
+                                  margin-bottom: 15px;
+                                }
 
-                                  span {
-                                    font-size: 16px;
-                                  }
+                                span {
+                                  font-size: 16px;
+                                }
 
-                                  @media only screen and (max-width: 500px) {
-                                    width: 325px;
-                                  }
+                                @media only screen and (max-width: 500px) {
+                                  width: 325px;
+                                }
 
-                                  @media only screen and (max-width: 390px) {
-                                    width: 270px;
-                                  }
-                                `}
-                              >
-                                <h3>+ {addOnLabel3}</h3>
-                                <span> {formatter.format(addOnsCost3[i])}</span>
-                              </div>
+                                @media only screen and (max-width: 390px) {
+                                  width: 270px;
+                                }
+                              `}
+                            >
+                              <h3>+ {addOnLabel3}</h3>
+                              <span> {formatter.format(addOnsCost3[i])}</span>
+                            </div>
                           );
                         })}
                       </div>
