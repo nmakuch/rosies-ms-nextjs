@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -156,10 +156,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! formik */ "formik");
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(formik__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
@@ -168,15 +166,12 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
 class ContactForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   render() {
     return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-            padding-top: 100px !important;
-            padding-bottom: 100px !important;
+            padding: 100px 15px !important;
             h2 {
-              text-transform: uppercase;
               font-weight: 600;
             }
 
@@ -197,7 +192,7 @@ class ContactForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component
       className: "col-md-8 offset-md-2 col-sm-12"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "block"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", null, "FEEL FREE TO EMAIL OR CALL AT ANY TIME"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", null, "Feel free to email or call at any time"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
                       font-size: 16px;
                     `
@@ -210,7 +205,7 @@ class ContactForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component
                       font-size: 16px;
                       margin-bottom: 75px;
                     `
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("strong", null, "Phone number:"), " 1 (234) 567-8910"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", null, "OR SUMBIT A QUICK MESSAGE"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("strong", null, "Phone number:"), " 1 (234) 567-8910"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", null, "Or submit a quick message"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
                       padding-top: 0 !important;
                     `,
@@ -221,7 +216,7 @@ class ContactForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component
       className: "row"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                            padding: 0 5px !important;
+                            padding: 0 0 !important;
                           `,
       className: "col-md-12 col-sm-12"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
@@ -693,7 +688,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       className: "nav-item"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
       href: "/services",
-      as: "/service"
+      as: "/services"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", null, "Services/Booking"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
       className: "nav-item"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2488,13 +2483,13 @@ class Contact extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], null, __jsx(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_3__["default"], {
       globalHeaderTitle: "Contact Us",
       globalHeaderSubTitle: "You can find our contact form and information below",
-      globalHeaderImage: "../img/faq-bg.jpg"
+      globalHeaderImage: "../img/contact-bg.jpg"
     }), __jsx(_components_ContactForm__WEBPACK_IMPORTED_MODULE_6__["default"], null), __jsx(_components_CallToAction__WEBPACK_IMPORTED_MODULE_4__["default"], {
       callTitle: "You're one step away from a clean and happy home!",
       callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
       callLinkUrl: "/services",
       callLink: "View our services",
-      callImage: "img/faq-bg.jpg"
+      callImage: "img/contact-bg.jpg"
     }));
   }
 
@@ -2518,6 +2513,113 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_0__);
 
 const appStyles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
+.checkbox-container {
+  box-sizing: border-box;
+  text-align:center;
+}
+
+.checkbox-label {
+  display: block;
+  position: relative;
+  margin-right: 40px;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 24px;
+  height: 24px;
+  width: auto;
+  clear: both;
+}
+
+.checkbox-label input {
+  position: absolute;
+  cursor: pointer;
+  display: none;
+}
+
+.checkbox-label .checkbox-custom {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  border: 2px solid #000;
+}
+
+.checkbox-label .checkbox-custom.circular {
+  border-radius: 50%;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom.circular {
+  border-radius: 50%;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom.circular::after {
+  opacity:1;
+  left: 7px;
+  top: 7px;
+  width: 17px;
+  height: 17px;
+  background-color: black;
+  border-radius: 50%;
+  }
+
+
+.checkbox-label input:checked ~ .checkbox-custom {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity:1;
+  border: 2px solid #000;
+}
+
+
+.checkbox-label .checkbox-custom::after {
+  position: absolute;
+  content: "";
+  left: 12px;
+  top: 6px;
+  width: 8px;
+  height: 16px;
+  border-radius: 5px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  opacity:0;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+opacity:1;
+left: 12px;
+top: 6px;
+width: 8px;
+height: 16px;
+border: solid #000;
+border-width: 0 3px 3px 0;
+background-color: transparent;
+border-radius: 0;
+}
+
+
 .italic {
  font-style: italic;
 }
@@ -2613,7 +2715,6 @@ a:active {
 }
 
 .section-title h2 {
- text-transform: uppercase;
  font-size: 36px;
  font-weight: 600;
  margin-bottom: 15px;
@@ -2633,7 +2734,6 @@ a:active {
  font-size: 14px;
  letter-spacing: 1px;
  padding: 14px 35px;
- text-transform: uppercase;
  border-radius: 0;
  -webkit-transition: all 0.2s ease;
  transition: all 0.2s ease;
@@ -2722,8 +2822,8 @@ font header .navbar-default .navbar-nav li a:hover {
  right: 0;
  width: 100%;
  height: 100%;
- background: #1d192c;
- opacity: 0.7;
+ background: black;
+ opacity: 0.55;
 }
 
 #slider .block {
@@ -2799,9 +2899,9 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #1d192c;
+  background: black;
   z-index: 0;
-  opacity: 0.7;
+  opacity: 0.55;
 }
 
 #service .service-item {
@@ -2816,7 +2916,6 @@ font header .navbar-default .navbar-nav li a:hover {
   border: 3px solid #333;
   background: transparent;
   font-size: 16px;
-  text-transform: uppercase;
   font-weight: 600;
 
   -webkit-transition: all 0.4s ease-in-out;
@@ -2878,8 +2977,8 @@ font header .navbar-default .navbar-nav li a:hover {
  bottom: 0;
  width: 100%;
  height: 100%;
- background: #1d192c;
- opacity: 0.7;
+ background: black;
+ opacity: 0.55;
 }
 
 #call-to-action h2 {
@@ -3057,8 +3156,8 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #1d192c;
-  opacity: 0.7;
+  background: black;
+  opacity: 0.55;
 }
 
 #global-header .block {
@@ -3188,7 +3287,6 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #portfolio-work .block .portfolio-contant ul li a h2 {
  font-size: 22px;
- text-transform: uppercase;
  letter-spacing: 1px;
 }
 
@@ -3304,17 +3402,17 @@ font header .navbar-default .navbar-nav li a:hover {
  padding: 40px 0px;
 }
 
-#contact-form {
+#contact-form, #service-form {
  padding-top: 70px;
  padding-bottom: 35px;
 }
 
-#contact-form .block form .form-group {
+#contact-form .block form .form-group, #service-form .block form .form-group {
  padding-bottom: 15px;
  margin: 0px;
 }
 
-#contact-form .block form .form-group .form-control {
+#contact-form .block form .form-group .form-control, #service-form .block form .form-group .form-control {
  background: #F6F8FA;
  height: 60px;
  border: 1px solid #EEF2F6;
@@ -3322,12 +3420,12 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
 }
 
-#contact-form .block form .form-group-2 {
+#contact-form .block form .form-group-2, #service-form .block form .form-group-2 {
  padding-bottom: 15px;
  margin: 0px;
 }
 
-#contact-form .block form .form-group-2 textarea {
+#contact-form .block form .form-group-2 textarea, #service-form .block form .form-group-2 textarea {
  background: #F6F8FA;
  height: 135px;
  border: 1px solid #EEF2F6;
@@ -3335,7 +3433,7 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
 }
 
-#contact-form .block button {
+#contact-form .block button, #service-form .block button {
  width: 100%;
  height: 60px;
  background: #47424C;
@@ -3603,7 +3701,7 @@ footer .footer-manu ul li a:hover {
    padding-left: 0px;
  }
  h2 {
-   font-size: 18px;
+   font-size: 24px;
  }
  p {
    font-size: 13px;
@@ -3784,7 +3882,7 @@ footer .footer-manu ul li a:hover {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/

@@ -18,7 +18,7 @@ class Index extends React.Component {
         <Slider
           sliderBgImage="../img/hero-bg.jpg"
           sliderTitle="Toronto’s #1 Rated Maid Service"
-          sliderSubTitle="Toronto’s #1 Rated Maid Service"
+          sliderSubTitle="Serving Humber Bay and Liberty Village."
           sliderButtonUrl="/services"
           sliderButtonTxt="Book Now"
         />
