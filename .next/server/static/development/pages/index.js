@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -143,6 +143,54 @@ class CallToAction extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Componen
 
 /***/ }),
 
+/***/ "./components/Feature.js":
+/*!*******************************!*\
+  !*** ./components/Feature.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+
+/** @jsx jsx */
+
+
+
+class Feature extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
+      id: "feature",
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`background-image: url('${this.props.featureImage}');`
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "container"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-md-6 col-md-offset-6"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
+      className: "text-uppercase"
+    }, this.props.featureTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, this.props.featureContent), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
+      href: "{{ .url }}",
+      className: "btn-solid-border btn-main"
+    }, this.props.featureBtnCaption)))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Feature);
+
+/***/ }),
+
 /***/ "./components/Footer.js":
 /*!******************************!*\
   !*** ./components/Footer.js ***!
@@ -194,54 +242,6 @@ class Footer extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
-
-/***/ }),
-
-/***/ "./components/GlobalHeader.js":
-/*!************************************!*\
-  !*** ./components/GlobalHeader.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
-
-/** @jsx jsx */
-
-
-
-class GlobalHeader extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
-  render() {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
-      id: "global-header",
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`background-image: url('${this.props.globalHeaderImage}');`
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "container"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "col-md-12"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                  padding-left: 0 !important;
-                `,
-      className: "block"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h1", null, this.props.globalHeaderTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, this.props.globalHeaderSubTitle))))));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (GlobalHeader);
 
 /***/ }),
 
@@ -323,6 +323,71 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./components/HowItWorks.js":
+/*!**********************************!*\
+  !*** ./components/HowItWorks.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+
+/** @jsx jsx */
+
+
+
+class HowItWorks extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
+      id: "service"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "container"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                width: 100%;
+              `,
+      className: "section-title"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", null, this.props.howTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, this.props.howSubTitle))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "service-item col-sm-12 col-md-6 col-lg-4"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
+      src: this.props.item1img,
+      alt: "Img"
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h4", null, this.props.item1name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, this.props.item1text)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "service-item col-sm-12 col-md-6 col-lg-4"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
+      src: this.props.item2img,
+      alt: "Img"
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h4", null, this.props.item2name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, this.props.item2text)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "service-item col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-0"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
+      src: this.props.item3img,
+      alt: "Img"
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h4", null, this.props.item3name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, this.props.item3text))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "service-item col-sm-12 col-md-12"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
+      href: "#"
+    }, "View Services")))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (HowItWorks);
 
 /***/ }),
 
@@ -498,6 +563,248 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
+
+/***/ }),
+
+/***/ "./components/ServiceHome.js":
+/*!***********************************!*\
+  !*** ./components/ServiceHome.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_ionicons_lib_IosContacts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-ionicons/lib/IosContacts */ "react-ionicons/lib/IosContacts");
+/* harmony import */ var react_ionicons_lib_IosContacts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_ionicons_lib_IosContacts__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_ionicons_lib_IosChatbubbles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-ionicons/lib/IosChatbubbles */ "react-ionicons/lib/IosChatbubbles");
+/* harmony import */ var react_ionicons_lib_IosChatbubbles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_ionicons_lib_IosChatbubbles__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_ionicons_lib_IosFingerPrint__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-ionicons/lib/IosFingerPrint */ "react-ionicons/lib/IosFingerPrint");
+/* harmony import */ var react_ionicons_lib_IosFingerPrint__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_ionicons_lib_IosFingerPrint__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_ionicons_lib_IosSchool__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-ionicons/lib/IosSchool */ "react-ionicons/lib/IosSchool");
+/* harmony import */ var react_ionicons_lib_IosSchool__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_ionicons_lib_IosSchool__WEBPACK_IMPORTED_MODULE_5__);
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+
+/** @jsx jsx */
+
+
+
+
+
+
+class ServiceHome extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
+      id: "call-to-action",
+      className: "service-home",
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`background-image: url('${this.props.serviceHomeBgImage}');`
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "container"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-md-12"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "block"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", null, this.props.serviceHomeTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, this.props.serviceHomeText1)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row",
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+              svg {
+                margin: 25px 0 25px 0;
+              }
+            `
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-sm-6 col-md-3"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "service-item"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react_ionicons_lib_IosSchool__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      fontSize: "80px",
+      color: "#000"
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("strong", null, this.props.item1name)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-sm-6 col-md-3"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "service-item"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react_ionicons_lib_IosFingerPrint__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      fontSize: "80px",
+      color: "#000"
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("strong", null, this.props.item2name)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-sm-6 col-md-3"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "service-item"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react_ionicons_lib_IosChatbubbles__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      fontSize: "80px",
+      color: "#000"
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("strong", null, this.props.item3name)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-sm-6 col-md-3"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "service-item"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react_ionicons_lib_IosContacts__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      fontSize: "80px",
+      color: "#000"
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("strong", null, this.props.item4name)))))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ServiceHome);
+
+/***/ }),
+
+/***/ "./components/Slider.js":
+/*!******************************!*\
+  !*** ./components/Slider.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+
+/** @jsx jsx */
+
+
+
+class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
+      id: "slider",
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+        background-image: url('${this.props.sliderBgImage}'); 
+        h1 {
+          font-size: 45px !important;
+          font-weight: 600 !important;
+          text-transform: uppercase;
+        }
+        
+        @media only screen and (max-width: 767px) {
+          p {
+            font-size: 18px !important;
+          }
+        }`
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "container"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-md-10 offset-md-1"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "block text-center"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h1", {
+      className: "animated fadeInUp hero-h1"
+    }, this.props.sliderTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      className: "animated fadeInUp hero-p"
+    }, this.props.sliderSubTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: this.props.sliderButtonUrl,
+      as: this.props.sliderButtonUrl
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
+      className: "btn-main btn-solid-border"
+    }, this.props.sliderButtonTxt)))))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./components/Wrapper.js":
+/*!*******************************!*\
+  !*** ./components/Wrapper.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+
+/** @jsx jsx */
+
+
+
+class Wrapper extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+          padding: 100px 25px !important;
+        `,
+      id: "intro"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "container"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-md-7 col-sm-10"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "block"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "section-title"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", null, this.props.wrapperTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, this.props.wrapperSubTitle)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, this.props.wrapperPara1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, this.props.wrapperPara2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    a {
+                      color: #333;
+                      display: inline-block;
+                      font-size: 16px;
+                      letter-spacing: 1px;
+                      padding: 14px 35px;
+                      font-weight: 600;
+                      margin-top: 25px;
+                      border: 3px solid #333;
+                      border-radius: 0;
+                      -webkit-transition: all 0.4s ease;
+                      transition: all 0.4s ease;
+                    }
+
+                    a:hover {
+                      background: #333;
+                      color: #fff;
+                      -webkit-transition: all 0.4s ease;
+                      transition: all 0.4s ease;
+                    }
+                  `
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: "#"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", null, "Book Now"))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-md-5 col-sm-12"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "block"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    @media only screen and (max-width: 768px) {
+                      padding: 0 !important;
+                    }
+                  `,
+      src: this.props.wrapperImage,
+      alt: "Img"
+    }))))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Wrapper);
 
 /***/ }),
 
@@ -2233,10 +2540,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/faq.js":
-/*!**********************!*\
-  !*** ./pages/faq.js ***!
-  \**********************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2249,8 +2556,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
-/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
+/* harmony import */ var _components_Slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Slider */ "./components/Slider.js");
+/* harmony import */ var _components_HowItWorks__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/HowItWorks */ "./components/HowItWorks.js");
+/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
+/* harmony import */ var _components_ServiceHome__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/ServiceHome */ "./components/ServiceHome.js");
+/* harmony import */ var _components_Feature__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Feature */ "./components/Feature.js");
+/* harmony import */ var _components_Wrapper__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Wrapper */ "./components/Wrapper.js");
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
@@ -2262,80 +2573,56 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-class FAQ extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+
+
+
+
+class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   render() {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      globalHeaderTitle: "Frequently Asked Questions",
-      globalHeaderImage: "../img/faq-bg.jpg"
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
-      id: "service"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "container"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "row"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                  width: 100%;
-                  text-align: left;
-                  margin-bottom: 50px;
-                `,
-      className: "section-title col-lg-8 offset-lg-2"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", null, "Rosie's Maid Service's FAQs"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "row",
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                text-align: left;
-                font-size: 16px;
-                details {
-                  margin-bottom: 25px;
-                  summary {
-                    margin-bottom: 10px;
-                    font-size: 20px;
-                    font-weight: 600;
-                  }
-
-                  summary:focus {
-                    outline: none;
-                  }
-
-                  summary:hover {
-                    color: 	#666;
-                  }
-
-                  summary::-webkit-details-marker {
-                      font-size: 20px;
-                      padding-right: 20px;
-                  }
-                }
-
-                p {
-                  margin-bottom: 50px;
-                  padding-left: 45px;
-                }
-              `
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "col-lg-8 offset-lg-2"
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("details", {
-      open: true
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("summary", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("span", null, "1) Who will clean my home?")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, "For your first visit, we will send one of our professional maids to your home. We strongly recommend that you are present during this visit, as it will give you the opportunity to provide your own detailed instructions and expectations. If you are satisfied with the service, we will assign this maid to your home for all future visits.")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("details", {
-      open: true
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("summary", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("span", null, "2) What are the qualifications of the cleaning staff?")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, "We only hire experienced personnel who have years of experience in the industry. In addition to their experience level, they must all pass a criminal record check, a rigorous interview process, and a training program that involves passing a final examination.")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("details", {
-      open: true
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("summary", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("span", null, "3) What will Rosie\u2019s Maid Service clean within my home?")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, "While we do offer pre-structured plans that cover the usual items, our prices are on an hourly rate basis. This means that you can ask our staff to spend the time exactly how you want, on anything you want, within reason. Our staff retains the right to refuse work they deem unsafe. You must also provide all the necessary tools and equipment required to perform these tasks.")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("details", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("summary", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("span", null, "4) Do I need to provide the cleaning supplies?")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, "Yes. There are a couple of major reasons for this. Firstly, this allows your home to be cleaned with the products of your choice that are best suited for your home. Secondly, part of what allows us to offer the best rates in the area is the fact that our staff operates independently and does not always have access to crew vehicles where supplies and equipment can be carried. Many of them use public transit to get around. Some of our staff may bring their own products, but they will only use them with your authorization. For a list of the required items to have on hand, click here.")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("details", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("summary", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("span", null, "5) When will I be charged for a service and how can I make payments?")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, "You will be sent an invoice via e-mail following the service. You never pay in advance. Payment options are via credit card or interac e-transfer.")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("details", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("summary", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("span", null, "6) What if I need to cancel an appointment?")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", null, "No problem. As long as you give us a minimum of 24 hours notice, you will be able to cancel the visit free of charge.")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("details", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("summary", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("span", null, "7) How will my maid access my home?")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                      margin-bottom: 0 !important;
-                    `
-    }, "If you will not be home during our visit, you must contact us ahead of time in order to make arrangements.")))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Slider__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      sliderBgImage: "../img/hero-bg.jpg",
+      sliderTitle: "Toronto\u2019s #1 Rated Maid Service",
+      sliderSubTitle: "Serving Humber Bay and Liberty Village.",
+      sliderButtonUrl: "/services",
+      sliderButtonTxt: "Book Now"
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_HowItWorks__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      howTitle: "How it works",
+      howSubTitle: "This subtitle can be changed to whatever you want it to be",
+      item1img: "img/booking.png",
+      item1name: "1) You Book",
+      item1text: "Schedule a condo cleaning that works best for you and a trusted cleaner will show up.",
+      item2img: "img/cleaning.png",
+      item2name: "2) We Clean",
+      item2text: "Guaranteed quality or we will come back and clean any missed area for free.",
+      item3img: "img/relaxing.png",
+      item3name: "3) You Relax",
+      item3text: "Enjoy your sparkling clean home, and look forward to the next cleaning."
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_ServiceHome__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      serviceHomeBgImage: "img/hero-bg.jpg",
+      serviceHomeTitle: "Trusted Toronto Cleaners",
+      serviceHomeText1: "We know inviting someone into your home is a big deal. All of our cleaners are carefully selected and will all be:",
+      item1name: "Experienced and professional cleaners",
+      item2name: "Given a background and reference check",
+      item3name: "English speaking and screened by us to ensure",
+      item4name: "Selected through an in-person interview"
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Wrapper__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      wrapperTitle: "Book on the go",
+      wrapperSubTitle: "Our website is responsive and mobile friendly so you can book your appointment anywhere. We want to offer the same user experience to both desktop and mobile users.",
+      wrapperPara1: "We offer a wide range of customizable cleaning services. In order to customize your own personal cleaning plan, you can view a full list our services on our Services/Booking page.",
+      wrapperPara2: "We understand that things happen and you may need to cancel your appointment. We will cancel all charges for your scheduled appointment if you can provide us with notice of cancellation witin (1) day of the decided date and time.",
+      wrapperImage: "img/mobile.png"
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_6__["default"], {
       callTitle: "You're one step away from a clean and happy home!",
       callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
       callLinkUrl: "/services",
       callLink: "View our services",
-      callImage: "img/faq-bg.jpg"
+      callImage: "img/hero-bg.jpg"
     }));
   }
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (FAQ);
+/* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
@@ -3750,14 +4037,14 @@ footer .footer-manu ul li a:hover {
 
 /***/ }),
 
-/***/ 5:
-/*!****************************!*\
-  !*** multi ./pages/faq.js ***!
-  \****************************/
+/***/ 4:
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/faq.js */"./pages/faq.js");
+module.exports = __webpack_require__(/*! /Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -3894,6 +4181,50 @@ module.exports = require("react");
 
 /***/ }),
 
+/***/ "react-ionicons/lib/IosChatbubbles":
+/*!****************************************************!*\
+  !*** external "react-ionicons/lib/IosChatbubbles" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-ionicons/lib/IosChatbubbles");
+
+/***/ }),
+
+/***/ "react-ionicons/lib/IosContacts":
+/*!*************************************************!*\
+  !*** external "react-ionicons/lib/IosContacts" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-ionicons/lib/IosContacts");
+
+/***/ }),
+
+/***/ "react-ionicons/lib/IosFingerPrint":
+/*!****************************************************!*\
+  !*** external "react-ionicons/lib/IosFingerPrint" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-ionicons/lib/IosFingerPrint");
+
+/***/ }),
+
+/***/ "react-ionicons/lib/IosSchool":
+/*!***********************************************!*\
+  !*** external "react-ionicons/lib/IosSchool" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-ionicons/lib/IosSchool");
+
+/***/ }),
+
 /***/ "react-is":
 /*!***************************!*\
   !*** external "react-is" ***!
@@ -3917,4 +4248,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=faq.js.map
+//# sourceMappingURL=index.js.map
