@@ -481,7 +481,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       className: "nav-item"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
       href: "/services",
-      as: "/service"
+      as: "/services"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", null, "Services/Booking"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
       className: "nav-item"
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -564,6 +564,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-prope
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "core-js/library/fn/object/keys");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/parse-float.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/parse-float.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/parse-float */ "core-js/library/fn/parse-float");
 
 /***/ }),
 
@@ -2242,27 +2253,478 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
-/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-float */ "./node_modules/@babel/runtime-corejs2/core-js/parse-float.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/styles */ "./styles/styles.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
+/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+
+/** @jsx jsx */
 
 
 
 
 
-class Services extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+
+const formatter = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  minimumFractionDigits: 2
+});
+
+class CheckBox extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   render() {
-    return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], null, __jsx(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      globalHeaderTitle: "Services / Booking",
-      globalHeaderSubTitle: "View a list of our services or book an appointment",
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", {
+      className: "checkbox-label"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+      type: "checkbox",
+      id: this.props.id,
+      value: this.props.value,
+      onChange: this.props.onChange
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
+      className: "radio-label"
+    }, this.props.label), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", {
+      className: "checkbox-custom rectangular"
+    })));
+  }
+
+}
+
+class Services extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      optionsAddOns3: [],
+      labelsAddOns3: [],
+      selectBoxValue1: [],
+      radio1: "",
+      radioLabel: 0.0
+    };
+  }
+
+  radioChange(event) {
+    this.setState({
+      radio1: event.target.value,
+      radioLabel: event.target.id
+    });
+  }
+
+  changeEvent3(event) {
+    let checkedArrayAddOns3 = this.state.optionsAddOns3;
+    let checkedArrayIds3 = this.state.labelsAddOns3;
+    let selectedId3 = event.target.id;
+    let selectedValue3 = event.target.value;
+
+    if (event.target.checked === true) {
+      checkedArrayIds3.push(selectedId3);
+      checkedArrayAddOns3.push(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0___default()(selectedValue3));
+      this.setState({
+        optionsAddOns3: checkedArrayAddOns3,
+        labelsAddOns3: checkedArrayIds3
+      });
+    } else {
+      let valueIndex3 = checkedArrayAddOns3.indexOf(selectedValue3);
+      checkedArrayAddOns3.splice(valueIndex3, 1);
+      checkedArrayIds3.splice(valueIndex3, 1);
+      this.setState({
+        optionsAddOns3: checkedArrayAddOns3,
+        labelsAddOns3: checkedArrayIds3
+      });
+    }
+  }
+
+  render() {
+    let addOnsLabels3 = this.state.labelsAddOns3;
+    let addOnsCost3 = this.state.optionsAddOns3;
+    let checkBoxArrayAddOns3 = [35.0, 20.0, 20.0, 20.0, 15.0, 20.0];
+    let checkBoxArrayLabels3 = ["Deep clean - wall spot cleaning, baseboards, inside of kitchen & bathroom cabinets ($35.00)", "Big task - oven ($20.00)", "Big task - inside fridge ($20.00)", "Big task - windows ($20.00)", "Additional powder room ($15.00)", "Additional bathroom ($20.00)"];
+    let checkBoxArrayIds3 = ["Deep Clean - Wall, baseboards, kitchen...", "Big task - Oven", "Big task - Inside fridge", "Big task - Windows", "Additional powder room", "Additional bathroom"];
+    let radioValues1 = [52.5, 70.0, 87.5, 105.0, 122.5, 140.0];
+    let radioLabels1 = ["1.5 hour session at $35/hour ($52.50)", "2.0 hour session at $35/hour ($70.00)", "2.5 hour session at $35/hour ($87.50)", "3.0 hour session at $35/hour ($105.00)", "3.5 hour session at $35/hour ($122.50)", "4.0 hour session at $35/hour ($140.00)"];
+    let radioArrayId1 = ["1.5 hour session at $35/hour", "2.0 hour session at $35/hour", "2.5 hour session at $35/hour", "3.0 hour session at $35/hour", "3.5 hour session at $35/hour", "4.0 hour session at $35/hour"];
+    let radioValues2 = [54.0, 90.0, 108.0];
+    let radioLabels2 = ["Basic (1.5 hours): kitchen, bathroom, all floors  ($54.00)", "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($90.00)", "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($108.00)"];
+    let radioArrayId2 = ["Basic (1.5 hours)", "Basic plus (2.5 hours)", "Complete (3.0 hours)"];
+    let radioValues3 = [60.0, 100.0, 140.0];
+    let radioLabels3 = ["Basic (1.5 hours): kitchen, bathroom, all floors  ($60.00)", "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($100.00)", "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($140.00)"];
+    let radioArrayId3 = ["x2 Basic (1.5 hours)", "x2 Basic plus (2.5 hours)", "x2 Complete (3.0 hours)"];
+    let grandTotalArr = [];
+    let outputCheckboxesAddOns3 = checkBoxArrayAddOns3.map((number, i) => {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(CheckBox, {
+        value: number,
+        id: checkBoxArrayIds3[i],
+        onChange: this.changeEvent3.bind(this),
+        label: checkBoxArrayLabels3[i]
+      });
+    }, this);
+    let sumOptionsAddOns3 = this.state.optionsAddOns3.reduce((a, b) => a + b, 0);
+    grandTotalArr.push(sumOptionsAddOns3);
+    let reducedArr = grandTotalArr.reduce((a, b) => a + b, 0);
+    let grandTotalHST = formatter.format(reducedArr * 0.13 + this.state.radio1 * 0.13);
+    let grandTotalSumHST = formatter.format(reducedArr * 1.13 + this.state.radio1 * 1.13);
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      globalHeaderTitle: "Services and Booking",
       globalHeaderImage: "../img/services-bg.jpg"
-    }), __jsx(_components_CallToAction__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("section", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+            margin-top: 75px;
+
+            p {
+              margin-bottom: 0;
+            }
+
+            h2 {
+              font-weight: 600;
+              margin-bottom: 25px;
+            }
+          `
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      className: "container"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      className: "col-md-8 offset-md-2 col-sm-12"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                  padding: 0 15px;
+                `,
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "We offer a variety of cleaning options"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", null, "We offer the most customizable plans that let you choose exactly what you want. Whether you want your entire home deep cleaned by one of our professional staff, or simply want some help with the dreaded kitchen & bathroom, we have you covered. Choose from our pre-structured plans that cover all the standard items, or select our hourly plan to have complete control of how the time is spent."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("section", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+            padding-top: 75px !important;
+            padding-bottom: 100px !important;
+            h2 {
+              font-weight: 600;
+              margin-bottom: 50px;
+            }
+
+            h3 {
+              font-size: 20px;
+              font-weight: 600;
+              margin-bottom: 35px;
+            }
+
+            h4 {
+              font-size: 18px;
+              font-weight: 600;
+              margin-bottom: 25px;
+            }
+
+            li {
+              label {
+                margin-bottom: 45px;
+
+                p {
+                  position: relative;
+                  top: 5px;
+                  left: 50px;
+                }
+
+                @media only screen and (max-width: 767px) {
+                  p {
+                    line-height: 1.2rem;
+                  }
+                }
+              }
+            }
+
+            li:first-of-type {
+              margin-top: 25px;
+            }
+
+            li:nth-of-type(6) {
+              margin-bottom: 50px;
+            }
+
+            textarea {
+              margin-bottom: 50px;
+            }
+
+            li:last-of-type {
+              margin-bottom: 50px;
+            }
+
+            .form-group {
+              padding: 0px !important;
+            }
+          `,
+      id: "service-form"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      className: "block"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("form", {
+      method: "post"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      className: "container"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      className: "col-md-8 offset-md-2 col-sm-12"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                      padding: 0 15px;
+                    `,
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                        padding: 0 5px !important;
+                      `,
+      className: "col-md-12 col-sm-12"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      className: "form-group"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "1) Hourly cleaning packages"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "Our regular cleaning rate is $35/hour"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("ul", null, radioValues1.map((radioValue, i) => {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", {
+        className: "checkbox-label"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+        type: "radio",
+        value: radioValue,
+        id: radioArrayId1[i],
+        checked: this.state.radio1 === `${radioValue}`,
+        onChange: this.radioChange.bind(this)
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
+        className: "radio-label"
+      }, radioLabels1[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", {
+        className: "checkbox-custom circular"
+      })));
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      className: "form-group-2"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h4", null, "Please leave instructions for your cleaner:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("textarea", {
+      name: "hourlyMessage",
+      id: "hourlyMessage",
+      className: "form-control",
+      rows: "3",
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                                  height: 135px !important;
+                                `,
+      placeholder: "Your message"
+    }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", null, "2) Pre-structured cleaning package")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "1 Bedroom or Bachelor up to 600 sq/ft (1 bathroom)")), radioValues2.map((radioValue, i) => {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", {
+        className: "checkbox-label"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+        type: "radio",
+        value: radioValue,
+        id: radioArrayId2[i],
+        checked: this.state.radio1 === `${radioValue}`,
+        onChange: this.radioChange.bind(this)
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
+        className: "radio-label"
+      }, radioLabels2[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", {
+        className: "checkbox-custom circular"
+      })));
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "2 Bedroom up to 1000 sq/ft (1 bathroom)")), radioValues3.map((radioValue, i) => {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("label", {
+        className: "checkbox-label"
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+        type: "radio",
+        value: radioValue,
+        id: radioArrayId3[i],
+        checked: this.state.radio1 === `${radioValue}`,
+        onChange: this.radioChange.bind(this)
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
+        className: "radio-label"
+      }, radioLabels3[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", {
+        className: "checkbox-custom circular"
+      })));
+    }))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                      padding: 0 15px;
+                      label {
+                        margin-bottom: 50px;
+                        p {
+                          position: relative;
+                          top: 4px;
+                          left: 50px;
+                        }
+
+                        @media only screen and (max-width: 767px) {
+                          p {
+                            line-height: 1.2rem;
+                            top: 8px;
+                          }
+                        }
+                      }
+                    `,
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                        margin-bottom: 0 !important;
+                        margin-top: 50px;
+                      `
+    }, "Add ons:")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                      padding: 0 15px;
+                      label {
+                        margin-bottom: 40px;
+                        p {
+                          position: relative;
+                          top: 4px;
+                          left: 50px;
+                        }
+
+                        @media only screen and (max-width: 767px) {
+                          p {
+                            line-height: 1.2rem;
+                            top: 8px;
+                          }
+                        }
+                      }
+                    `,
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                        margin-top: 50px;
+                      `
+    }, "The following can be added to your package:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      className: "form-group"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, outputCheckboxesAddOns3), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("br", null))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                      padding: 0 15px;
+                    `,
+      className: "row"
+    }, grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                            margin-bottom: 30px !important;
+                          `
+    }, "Your plan:"), this.state.radio1 > 0 ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                              display: flex;
+                              justify-content: space-between;
+                              width: 400px;
+                              padding: 0 5px 0 0;
+
+                              input {
+                                font-family: "Roboto", sans-serif;
+                                font-size: 16px;
+                                font-weight: 600;
+                                margin-bottom: 15px;
+                                border: none;
+                                overflow: visible;
+                                width: auto;
+                              }
+
+                              @media only screen and (max-width: 500px) {
+                                width: 330px;
+
+                                input {
+                                  width: auto;
+                                }
+                              }
+
+                              @media only screen and (max-width: 390px) {
+                                width: 275px;
+                              }
+                            `
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+      type: "text",
+      name: "planType",
+      id: "planType",
+      value: `+ ${this.state.radioLabel}`
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, formatter.format(this.state.radio1))) : null, addOnsLabels3.map((addOnLabel3, i) => {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+        css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                                display: flex;
+                                justify-content: space-between;
+                                width: 400px;
+
+                                h3 {
+                                  font-size: 16px;
+                                  margin-bottom: 15px;
+                                }
+
+                                span {
+                                  font-size: 16px;
+                                }
+
+                                @media only screen and (max-width: 500px) {
+                                  width: 325px;
+                                }
+
+                                @media only screen and (max-width: 390px) {
+                                  width: 270px;
+                                }
+                              `
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "+ ", addOnLabel3), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, " ", formatter.format(addOnsCost3[i])));
+    })) : null), grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                          padding: 0 15px;
+                        `,
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                            display: flex;
+                            justify-content: space-between;
+                            width: 400px;
+                            margin-top: 25px;
+                            padding-top: 25px;
+                            border-top: 1px solid black;
+
+                            h3 {
+                              font-size: 16px;
+                              margin-bottom: 15px;
+                            }
+
+                            span {
+                              font-size: 16px;
+                            }
+
+                            @media only screen and (max-width: 500px) {
+                              width: 325px;
+                            }
+
+                            @media only screen and (max-width: 390px) {
+                              width: 270px;
+                            }
+                          `
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "+ HST (x0.13)"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("span", null, grandTotalHST))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                          padding: 0 15px;
+                        `,
+      className: "row"
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"]`
+                            display: flex;
+                            justify-content: space-between;
+                            width: 400px;
+
+                            h3 {
+                              font-size: 16px;
+                              margin-top: 7px;
+                              margin-bottom: 75px;
+                            }
+
+                            input {
+                              font-size: 16px;
+                              width: auto;
+                              overflow: visible;
+                              height: 35px;
+                              text-align: right;
+                              border: none;
+                              margin-bottom: 75px;
+                            }
+
+                            @media only screen and (max-width: 500px) {
+                              width: 330px;
+                            }
+
+                            @media only screen and (max-width: 390px) {
+                              width: 270px;
+                            }
+                          `
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "Grand total:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("input", {
+      type: "text",
+      name: "grandTotal",
+      id: "grandTotal",
+      value: grandTotalSumHST
+    })))) : null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("button", {
+      className: "btn btn-default",
+      type: "submit"
+    }, "submit")))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_7__["default"], {
       callTitle: "You're one step away from a clean and happy home!",
       callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
       callLinkUrl: "/services",
@@ -2291,6 +2753,113 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_0__);
 
 const appStyles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
+.checkbox-container {
+  box-sizing: border-box;
+  text-align:center;
+}
+
+.checkbox-label {
+  display: block;
+  position: relative;
+  margin-right: 40px;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 24px;
+  height: 24px;
+  width: auto;
+  clear: both;
+}
+
+.checkbox-label input {
+  position: absolute;
+  cursor: pointer;
+  display: none;
+}
+
+.checkbox-label .checkbox-custom {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  border: 2px solid #000;
+}
+
+.checkbox-label .checkbox-custom.circular {
+  border-radius: 50%;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom.circular {
+  border-radius: 50%;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom.circular::after {
+  opacity:1;
+  left: 7px;
+  top: 7px;
+  width: 17px;
+  height: 17px;
+  background-color: black;
+  border-radius: 50%;
+  }
+
+
+.checkbox-label input:checked ~ .checkbox-custom {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity:1;
+  border: 2px solid #000;
+}
+
+
+.checkbox-label .checkbox-custom::after {
+  position: absolute;
+  content: "";
+  left: 12px;
+  top: 6px;
+  width: 8px;
+  height: 16px;
+  border-radius: 5px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  opacity:0;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+opacity:1;
+left: 12px;
+top: 6px;
+width: 8px;
+height: 16px;
+border: solid #000;
+border-width: 0 3px 3px 0;
+background-color: transparent;
+border-radius: 0;
+}
+
+
 .italic {
  font-style: italic;
 }
@@ -2386,7 +2955,6 @@ a:active {
 }
 
 .section-title h2 {
- text-transform: uppercase;
  font-size: 36px;
  font-weight: 600;
  margin-bottom: 15px;
@@ -2395,6 +2963,11 @@ a:active {
 .section-title p {
  color: #666;
  font-size: 16px;
+
+ @media only screen and (max-width: 767px) {
+  font-size: 13px;
+ }
+ 
 }
 
 .btn-main,
@@ -2406,7 +2979,6 @@ a:active {
  font-size: 14px;
  letter-spacing: 1px;
  padding: 14px 35px;
- text-transform: uppercase;
  border-radius: 0;
  -webkit-transition: all 0.2s ease;
  transition: all 0.2s ease;
@@ -2420,19 +2992,18 @@ a:active {
 }
 
 .btn-solid-border {
- border: 3px solid #fff;
- background: transparent;
- color: #fff;
+ border: 3px solid #000;
+ color: white;
+ background: #000;
  font-size: 16px;
  font-weight: 600;
- text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);
+ text-shadow: none;
 }
 
 .btn-solid-border:hover {
- border: 3px solid #fff;
- background: #fff;
- text-shadow: none;
-
+ border: 3px solid #444;
+ color: #fff;
+ background: #444;
 }
 
 header {
@@ -2481,8 +3052,8 @@ font header .navbar-default .navbar-nav li a:hover {
  background-repeat: no-repeat;
  background-size: cover;
  background-attachment: fixed;
- background-position: 10% 0%;
- padding: 150px 0 150px 0;
+ background-position: 0% 0%;
+ padding: 125px 0 100px 0;
  position: relative;
 }
 
@@ -2495,8 +3066,8 @@ font header .navbar-default .navbar-nav li a:hover {
  right: 0;
  width: 100%;
  height: 100%;
- background: #1d192c;
- opacity: 0.7;
+ background: white;
+ opacity: 0.3;
 }
 
 #slider .block {
@@ -2505,22 +3076,24 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #slider .block h1 {
  font-family: 'Roboto', sans-serif;
- font-weight: 700;
  font-size: 45px;
  line-height: 60px;
- letter-spacing: 5px;
- padding-bottom: 45px;
- text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);
+ letter-spacing: 3px;
+ padding-bottom: 25px;
+ margin: 0; 
+ color: black;
+ text-shadow: 0px 0px 10px rgba(255,255,255,1);
 }
 
 #slider .block p {
- font-size: 23px;
+ font-size: 20px;
  line-height: 40px;
  font-family: 'Roboto', sans-serif;
  font-weight: 400;
  letter-spacing: 3px;
- margin-bottom: 100px;
- text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);
+ margin-bottom: 60px;
+ color: black;
+ text-shadow: 0px 0px 10px rgba(255,255,255,1), 0px 0px 10px rgba(255,255,255,1);
 }
 
 #intro {
@@ -2572,9 +3145,9 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #1d192c;
+  background: black;
   z-index: 0;
-  opacity: 0.7;
+  opacity: 0.55;
 }
 
 #service .service-item {
@@ -2583,13 +3156,12 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 #service .service-item a {
-  color: #333;
+  color: #fff;
   font-size: 16px;
   padding: 17px 35px;
-  border: 3px solid #333;
-  background: transparent;
+  border: 3px solid #000;
+  background: #000;
   font-size: 16px;
-  text-transform: uppercase;
   font-weight: 600;
 
   -webkit-transition: all 0.4s ease-in-out;
@@ -2602,7 +3174,7 @@ font header .navbar-default .navbar-nav li a:hover {
  #service .service-item a:hover {
   color: #fff;
   border: 3px solid #333;
-  background: #333;
+  background: #444;
 
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -2639,7 +3211,7 @@ font header .navbar-default .navbar-nav li a:hover {
  position: relative;
  text-align: center;
  color: #fff;
- text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);
+ text-shadow: 0px 0px 35px rgba(255,255,255,1), 0px 0px 35px rgba(255,255,255,1);
 }
 
 #call-to-action:before {
@@ -2651,18 +3223,21 @@ font header .navbar-default .navbar-nav li a:hover {
  bottom: 0;
  width: 100%;
  height: 100%;
- background: #1d192c;
- opacity: 0.7;
+ background: #fff;
+ opacity: 0.55;
 }
 
 #call-to-action h2 {
  padding-bottom: 20px;
- line-height: 33px;
+ line-height: 45px;
+ font-weight: 700;
  margin: 0;
  font-size: 30px;
+ color: #000;
 }
 
 #call-to-action p {
+ color: #000;
  font-size: 16px;
  line-height: 1.6;
  margin-bottom: 50px;
@@ -2830,25 +3405,25 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #1d192c;
-  opacity: 0.7;
+  background: white;
+  opacity: 0.4;
 }
 
 #global-header .block {
- color: #E3E3E4;
+ color: black;
  margin: 0 auto;
  padding-left: 90px;
  text-align: center;
 }
 
 #global-header .block h1 {
- font-weight: 700;
- text-transform: uppercase;
- font-size: 45px;
- letter-spacing: 6px;
+ font-weight: 600;
+ font-size: 50px;
+ letter-spacing: 3px;
  padding-bottom: 15px;
  margin-top: 0;
- text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);
+ text-shadow: 0px 0px 60px rgba(255,255,255,1), 0px 0px 60px rgba(255,255,255,1);
+ text-transform: uppercase;
 }
 
 #global-header .block p {
@@ -2857,7 +3432,6 @@ font header .navbar-default .navbar-nav li a:hover {
  font-weight: 400;
  letter-spacing: 1px;
  word-spacing: 3px;
- text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);
 }
 
 #portfolio-work {
@@ -2961,7 +3535,6 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #portfolio-work .block .portfolio-contant ul li a h2 {
  font-size: 22px;
- text-transform: uppercase;
  letter-spacing: 1px;
 }
 
@@ -3077,17 +3650,17 @@ font header .navbar-default .navbar-nav li a:hover {
  padding: 40px 0px;
 }
 
-#contact-form {
+#contact-form, #service-form {
  padding-top: 70px;
  padding-bottom: 35px;
 }
 
-#contact-form .block form .form-group {
+#contact-form .block form .form-group, #service-form .block form .form-group {
  padding-bottom: 15px;
  margin: 0px;
 }
 
-#contact-form .block form .form-group .form-control {
+#contact-form .block form .form-group .form-control, #service-form .block form .form-group .form-control {
  background: #F6F8FA;
  height: 60px;
  border: 1px solid #EEF2F6;
@@ -3095,12 +3668,12 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
 }
 
-#contact-form .block form .form-group-2 {
+#contact-form .block form .form-group-2, #service-form .block form .form-group-2 {
  padding-bottom: 15px;
  margin: 0px;
 }
 
-#contact-form .block form .form-group-2 textarea {
+#contact-form .block form .form-group-2 textarea, #service-form .block form .form-group-2 textarea {
  background: #F6F8FA;
  height: 135px;
  border: 1px solid #EEF2F6;
@@ -3108,7 +3681,7 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
 }
 
-#contact-form .block button {
+#contact-form .block button, #service-form .block button {
  width: 100%;
  height: 60px;
  background: #47424C;
@@ -3372,11 +3945,20 @@ footer .footer-manu ul li a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+  #global-header .block h1 {
+    font-size: 45px;
+    line-height: 60px;
+    margin-bottom: 0;
+  }
+
+  #global-header .block p {
+    font-size: 16px;
+  }
  .heading {
    padding-left: 0px;
  }
  h2 {
-   font-size: 18px;
+   font-size: 24px;
  }
  p {
    font-size: 13px;
@@ -3394,6 +3976,7 @@ footer .footer-manu ul li a:hover {
  }
  #slider .block h1 {
    font-size: 20px;
+   line-height: 60px;
  }
  #slider .block p {
    font-size: 13px;
@@ -3553,6 +4136,16 @@ footer .footer-manu ul li a:hover {
    display: block;
    width: 100%;
  }
+
+ @media only screen and (max-width: 510px) {
+   #slider, 
+   .service-home, 
+   #call-to-action, 
+   #feature, 
+   #global-header {
+      background-attachment: scroll;
+   }
+ }
 `;
 
 /***/ }),
@@ -3643,6 +4236,17 @@ module.exports = require("core-js/library/fn/object/get-own-property-descriptor"
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/keys");
+
+/***/ }),
+
+/***/ "core-js/library/fn/parse-float":
+/*!*************************************************!*\
+  !*** external "core-js/library/fn/parse-float" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/parse-float");
 
 /***/ }),
 

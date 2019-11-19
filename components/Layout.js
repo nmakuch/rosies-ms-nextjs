@@ -4,9 +4,9 @@
 import React from "react";
 import { jsx, css, Global } from "@emotion/core";
 import { appStyles } from "../styles/styles";
-import Header from '../components/Header'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
+import Header from "../components/Header";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 class Layout extends React.Component {
   render() {
@@ -23,7 +23,7 @@ class Layout extends React.Component {
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossOrigin="anonymous"
         />
-        
+
         <NavBar />
 
         <div>

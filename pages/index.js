@@ -18,7 +18,7 @@ class Index extends React.Component {
         <Slider
           sliderBgImage="../img/hero-bg.jpg"
           sliderTitle="Toronto’s #1 Rated Maid Service"
-          sliderSubTitle="Toronto’s #1 Rated Maid Service"
+          sliderSubTitle="Serving Humber Bay and Liberty Village."
           sliderButtonUrl="/services"
           sliderButtonTxt="Book Now"
         />
@@ -39,7 +39,7 @@ class Index extends React.Component {
 
         <ServiceHome
           serviceHomeBgImage="img/hero-bg.jpg"
-          serviceHomeTitle="TRUSTED TORONTO CLEANERS"
+          serviceHomeTitle="Trusted Toronto Cleaners"
           serviceHomeText1="We know inviting someone into your home is a big deal. All of our cleaners are carefully selected and will all be:"
           item1name="Experienced and professional cleaners"
           item2name="Given a background and reference check"

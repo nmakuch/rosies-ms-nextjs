@@ -11,8 +11,7 @@ class FAQ extends React.Component {
     return (
       <Layout>
         <GlobalHeader
-          globalHeaderTitle="Frequently Asked Questions (FAQ)"
-          globalHeaderSubTitle="View a list of our services or book an appointment"
+          globalHeaderTitle="Frequently Asked Questions"
           globalHeaderImage="../img/faq-bg.jpg"
         />
         <section id="service">

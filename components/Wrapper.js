@@ -6,10 +6,15 @@ import Link from "next/link";
 class Wrapper extends React.Component {
   render() {
     return (
-      <section id="intro">
+      <section
+        css={css`
+          padding: 100px 25px !important;
+        `}
+        id="intro"
+      >
         <div className="container">
           <div className="row">
-            <div className="col-md-7 col-sm-12">
+            <div className="col-md-7 col-sm-10">
               <div className="block">
                 <div className="section-title">
                   <h2>{this.props.wrapperTitle}</h2>
@@ -28,7 +33,6 @@ class Wrapper extends React.Component {
                       font-weight: 600;
                       margin-top: 25px;
                       border: 3px solid #333;
-                      text-transform: uppercase;
                       border-radius: 0;
                       -webkit-transition: all 0.4s ease;
                       transition: all 0.4s ease;

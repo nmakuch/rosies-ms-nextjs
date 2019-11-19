@@ -1,6 +1,113 @@
 import { css } from "@emotion/core";
 
 export const appStyles = css`
+.checkbox-container {
+  box-sizing: border-box;
+  text-align:center;
+}
+
+.checkbox-label {
+  display: block;
+  position: relative;
+  margin-right: 40px;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 24px;
+  height: 24px;
+  width: auto;
+  clear: both;
+}
+
+.checkbox-label input {
+  position: absolute;
+  cursor: pointer;
+  display: none;
+}
+
+.checkbox-label .checkbox-custom {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  border: 2px solid #000;
+}
+
+.checkbox-label .checkbox-custom.circular {
+  border-radius: 50%;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom.circular {
+  border-radius: 50%;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom.circular::after {
+  opacity:1;
+  left: 7px;
+  top: 7px;
+  width: 17px;
+  height: 17px;
+  background-color: black;
+  border-radius: 50%;
+  }
+
+
+.checkbox-label input:checked ~ .checkbox-custom {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity:1;
+  border: 2px solid #000;
+}
+
+
+.checkbox-label .checkbox-custom::after {
+  position: absolute;
+  content: "";
+  left: 12px;
+  top: 6px;
+  width: 8px;
+  height: 16px;
+  border-radius: 5px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  opacity:0;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+opacity:1;
+left: 12px;
+top: 6px;
+width: 8px;
+height: 16px;
+border: solid #000;
+border-width: 0 3px 3px 0;
+background-color: transparent;
+border-radius: 0;
+}
+
+
 .italic {
  font-style: italic;
 }
@@ -96,7 +203,6 @@ a:active {
 }
 
 .section-title h2 {
- text-transform: uppercase;
  font-size: 36px;
  font-weight: 600;
  margin-bottom: 15px;
@@ -105,6 +211,11 @@ a:active {
 .section-title p {
  color: #666;
  font-size: 16px;
+
+ @media only screen and (max-width: 767px) {
+  font-size: 13px;
+ }
+ 
 }
 
 .btn-main,
@@ -116,7 +227,6 @@ a:active {
  font-size: 14px;
  letter-spacing: 1px;
  padding: 14px 35px;
- text-transform: uppercase;
  border-radius: 0;
  -webkit-transition: all 0.2s ease;
  transition: all 0.2s ease;
@@ -130,19 +240,18 @@ a:active {
 }
 
 .btn-solid-border {
- border: 3px solid #fff;
- background: transparent;
- color: #fff;
+ border: 3px solid #000;
+ color: white;
+ background: #000;
  font-size: 16px;
  font-weight: 600;
- text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);
+ text-shadow: none;
 }
 
 .btn-solid-border:hover {
- border: 3px solid #fff;
- background: #fff;
- text-shadow: none;
-
+ border: 3px solid #444;
+ color: #fff;
+ background: #444;
 }
 
 header {
@@ -191,8 +300,8 @@ font header .navbar-default .navbar-nav li a:hover {
  background-repeat: no-repeat;
  background-size: cover;
  background-attachment: fixed;
- background-position: 10% 0%;
- padding: 150px 0 150px 0;
+ background-position: 0% 0%;
+ padding: 125px 0 100px 0;
  position: relative;
 }
 
@@ -205,8 +314,8 @@ font header .navbar-default .navbar-nav li a:hover {
  right: 0;
  width: 100%;
  height: 100%;
- background: #1d192c;
- opacity: 0.7;
+ background: white;
+ opacity: 0.3;
 }
 
 #slider .block {
@@ -215,22 +324,24 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #slider .block h1 {
  font-family: 'Roboto', sans-serif;
- font-weight: 700;
  font-size: 45px;
  line-height: 60px;
- letter-spacing: 5px;
- padding-bottom: 45px;
- text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);
+ letter-spacing: 3px;
+ padding-bottom: 25px;
+ margin: 0; 
+ color: black;
+ text-shadow: 0px 0px 10px rgba(255,255,255,1);
 }
 
 #slider .block p {
- font-size: 23px;
+ font-size: 20px;
  line-height: 40px;
  font-family: 'Roboto', sans-serif;
  font-weight: 400;
  letter-spacing: 3px;
- margin-bottom: 100px;
- text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);
+ margin-bottom: 60px;
+ color: black;
+ text-shadow: 0px 0px 10px rgba(255,255,255,1), 0px 0px 10px rgba(255,255,255,1);
 }
 
 #intro {
@@ -282,9 +393,9 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #1d192c;
+  background: black;
   z-index: 0;
-  opacity: 0.7;
+  opacity: 0.55;
 }
 
 #service .service-item {
@@ -293,13 +404,12 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 #service .service-item a {
-  color: #333;
+  color: #fff;
   font-size: 16px;
   padding: 17px 35px;
-  border: 3px solid #333;
-  background: transparent;
+  border: 3px solid #000;
+  background: #000;
   font-size: 16px;
-  text-transform: uppercase;
   font-weight: 600;
 
   -webkit-transition: all 0.4s ease-in-out;
@@ -312,7 +422,7 @@ font header .navbar-default .navbar-nav li a:hover {
  #service .service-item a:hover {
   color: #fff;
   border: 3px solid #333;
-  background: #333;
+  background: #444;
 
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -349,7 +459,7 @@ font header .navbar-default .navbar-nav li a:hover {
  position: relative;
  text-align: center;
  color: #fff;
- text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);
+ text-shadow: 0px 0px 35px rgba(255,255,255,1), 0px 0px 35px rgba(255,255,255,1);
 }
 
 #call-to-action:before {
@@ -361,18 +471,21 @@ font header .navbar-default .navbar-nav li a:hover {
  bottom: 0;
  width: 100%;
  height: 100%;
- background: #1d192c;
- opacity: 0.7;
+ background: #fff;
+ opacity: 0.55;
 }
 
 #call-to-action h2 {
  padding-bottom: 20px;
- line-height: 33px;
+ line-height: 45px;
+ font-weight: 700;
  margin: 0;
  font-size: 30px;
+ color: #000;
 }
 
 #call-to-action p {
+ color: #000;
  font-size: 16px;
  line-height: 1.6;
  margin-bottom: 50px;
@@ -540,25 +653,25 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #1d192c;
-  opacity: 0.7;
+  background: white;
+  opacity: 0.4;
 }
 
 #global-header .block {
- color: #E3E3E4;
+ color: black;
  margin: 0 auto;
  padding-left: 90px;
  text-align: center;
 }
 
 #global-header .block h1 {
- font-weight: 700;
- text-transform: uppercase;
- font-size: 45px;
- letter-spacing: 6px;
+ font-weight: 600;
+ font-size: 50px;
+ letter-spacing: 3px;
  padding-bottom: 15px;
  margin-top: 0;
- text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);
+ text-shadow: 0px 0px 60px rgba(255,255,255,1), 0px 0px 60px rgba(255,255,255,1);
+ text-transform: uppercase;
 }
 
 #global-header .block p {
@@ -567,7 +680,6 @@ font header .navbar-default .navbar-nav li a:hover {
  font-weight: 400;
  letter-spacing: 1px;
  word-spacing: 3px;
- text-shadow: 1px 1px 1px black, 1px 1px 1px rgba(0,0,0,0.2);
 }
 
 #portfolio-work {
@@ -671,7 +783,6 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #portfolio-work .block .portfolio-contant ul li a h2 {
  font-size: 22px;
- text-transform: uppercase;
  letter-spacing: 1px;
 }
 
@@ -787,17 +898,17 @@ font header .navbar-default .navbar-nav li a:hover {
  padding: 40px 0px;
 }
 
-#contact-form {
+#contact-form, #service-form {
  padding-top: 70px;
  padding-bottom: 35px;
 }
 
-#contact-form .block form .form-group {
+#contact-form .block form .form-group, #service-form .block form .form-group {
  padding-bottom: 15px;
  margin: 0px;
 }
 
-#contact-form .block form .form-group .form-control {
+#contact-form .block form .form-group .form-control, #service-form .block form .form-group .form-control {
  background: #F6F8FA;
  height: 60px;
  border: 1px solid #EEF2F6;
@@ -805,12 +916,12 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
 }
 
-#contact-form .block form .form-group-2 {
+#contact-form .block form .form-group-2, #service-form .block form .form-group-2 {
  padding-bottom: 15px;
  margin: 0px;
 }
 
-#contact-form .block form .form-group-2 textarea {
+#contact-form .block form .form-group-2 textarea, #service-form .block form .form-group-2 textarea {
  background: #F6F8FA;
  height: 135px;
  border: 1px solid #EEF2F6;
@@ -818,7 +929,7 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
 }
 
-#contact-form .block button {
+#contact-form .block button, #service-form .block button {
  width: 100%;
  height: 60px;
  background: #47424C;
@@ -1082,11 +1193,20 @@ footer .footer-manu ul li a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+  #global-header .block h1 {
+    font-size: 45px;
+    line-height: 60px;
+    margin-bottom: 0;
+  }
+
+  #global-header .block p {
+    font-size: 16px;
+  }
  .heading {
    padding-left: 0px;
  }
  h2 {
-   font-size: 18px;
+   font-size: 24px;
  }
  p {
    font-size: 13px;
@@ -1104,6 +1224,7 @@ footer .footer-manu ul li a:hover {
  }
  #slider .block h1 {
    font-size: 20px;
+   line-height: 60px;
  }
  #slider .block p {
    font-size: 13px;
@@ -1262,5 +1383,15 @@ footer .footer-manu ul li a:hover {
  #features-contact .block ul li {
    display: block;
    width: 100%;
+ }
+
+ @media only screen and (max-width: 510px) {
+   #slider, 
+   .service-home, 
+   #call-to-action, 
+   #feature, 
+   #global-header {
+      background-attachment: scroll;
+   }
  }
 `;

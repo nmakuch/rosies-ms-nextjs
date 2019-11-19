@@ -11,8 +11,7 @@ class Contact extends React.Component {
       <Layout>
         <GlobalHeader
           globalHeaderTitle="Contact Us"
-          globalHeaderSubTitle="You can find our contact form and information below"
-          globalHeaderImage="../img/faq-bg.jpg"
+          globalHeaderImage="../img/contact-bg.jpg"
         />
         <ContactForm />
         <CallToAction
@@ -20,7 +19,7 @@ class Contact extends React.Component {
           callText="If you'd like to know more about the services we offer, please view our Services page by clicking the button below."
           callLinkUrl="/services"
           callLink="View our services"
-          callImage="img/faq-bg.jpg"
+          callImage="img/contact-bg.jpg"
         />
       </Layout>
     );

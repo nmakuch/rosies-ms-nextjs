@@ -34,7 +34,7 @@ class ServiceHome extends React.Component {
           >
             <div className="col-sm-6 col-md-3">
               <div className="service-item">
-                <IosSchool fontSize="80px" color="#fff" />
+                <IosSchool fontSize="80px" color="#000" />
                 <p>
                   <strong>{this.props.item1name}</strong>
                 </p>
@@ -43,7 +43,7 @@ class ServiceHome extends React.Component {
 
             <div className="col-sm-6 col-md-3">
               <div className="service-item">
-                <IosFingerPrint fontSize="80px" color="#fff" />
+                <IosFingerPrint fontSize="80px" color="#000" />
                 <p>
                   <strong>{this.props.item2name}</strong>
                 </p>
@@ -52,7 +52,7 @@ class ServiceHome extends React.Component {
 
             <div className="col-sm-6 col-md-3">
               <div className="service-item">
-                <IosChatBubbles fontSize="80px" color="#fff" />
+                <IosChatBubbles fontSize="80px" color="#000" />
                 <p>
                   <strong>{this.props.item3name}</strong>
                 </p>
@@ -61,7 +61,7 @@ class ServiceHome extends React.Component {
 
             <div className="col-sm-6 col-md-3">
               <div className="service-item">
-                <IosContacts fontSize="80px" color="#fff" />
+                <IosContacts fontSize="80px" color="#000" />
                 <p>
                   <strong>{this.props.item4name}</strong>
                 </p>

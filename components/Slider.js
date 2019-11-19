@@ -8,13 +8,25 @@ class Header extends React.Component {
     return (
       <section
         id="slider"
-        css={css`background-image: url('${this.props.sliderBgImage}');`}
+        css={css`
+        background-image: url('${this.props.sliderBgImage}'); 
+        h1 {
+          font-size: 45px !important;
+          font-weight: 600 !important;
+          text-transform: uppercase;
+        }
+        
+        @media only screen and (max-width: 767px) {
+          p {
+            font-size: 18px !important;
+          }
+        }`}
       >
         <div className="container">
           <div className="row">
-            <div className="col-md-12 col-md-offset-1">
+            <div className="col-md-10 offset-md-1">
               <div className="block text-center">
-                <h1 className="animated fadeInUp text-uppercase hero-h1">
+                <h1 className="animated fadeInUp hero-h1">
                   {this.props.sliderTitle}
                 </h1>
                 <p className="animated fadeInUp hero-p">
