@@ -26,6 +26,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/CallToAction.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
@@ -61,20 +62,67 @@ function (_React$Component) {
     value: function render() {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("section", {
         id: "call-to-action",
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject(), this.props.callImage)
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject(), this.props.callImage),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "container"
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "row"
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "col-md-12"
+        className: "col-md-12",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "block"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h2", null, this.props.callTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", null, this.props.callText), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
+        className: "block",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, this.props.callTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, this.props.callText), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: this.props.callLinkUrl,
-        as: this.props.callLinkUrl
+        as: this.props.callLinkUrl,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
-        className: "btn-main btn-solid-border"
+        className: "btn-main btn-solid-border",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
       }, this.props.callLink)))))));
     }
   }]);
@@ -112,6 +160,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/Feature.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
@@ -147,18 +196,54 @@ function (_React$Component) {
     value: function render() {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("section", {
         id: "feature",
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject(), this.props.featureImage)
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject(), this.props.featureImage),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "container"
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "row"
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "col-md-6 col-md-offset-6"
+        className: "col-md-6 col-md-offset-6",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h2", {
-        className: "text-uppercase"
-      }, this.props.featureTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", null, this.props.featureContent), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
+        className: "text-uppercase",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, this.props.featureTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, this.props.featureContent), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
         href: "{{ .url }}",
-        className: "btn-solid-border btn-main"
+        className: "btn-solid-border btn-main",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
       }, this.props.featureBtnCaption)))));
     }
   }]);
@@ -194,6 +279,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/Footer.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
@@ -216,27 +302,133 @@ function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Footer, [{
     key: "render",
     value: function render() {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("footer", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("div", {
-        className: "container"
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("footer", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("div", {
-        className: "row"
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("div", {
-        className: "col-md-12"
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("div", {
-        className: "footer-manu"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("ul", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        className: "col-md-12",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("div", {
+        className: "footer-manu",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
         href: "/",
-        as: "/"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("a", null, "Home"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        as: "/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, "Home"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
         href: "/services",
-        as: "/services"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("a", null, "Services/Booking"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        as: "/services",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }, "Services/Booking"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
         href: "/faq",
-        as: "/faq"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("a", null, "FAQ"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        as: "/faq",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, "FAQ"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
         href: "/contact",
-        as: "/contact"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("a", null, "Contact Us"))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("p", null, "Copyright \xA9 Rosie's Maid Service 2019. All rights reserved.")))));
+        as: "/contact",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }, "Contact Us"))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, "Copyright \xA9 Rosie's Maid Service 2019. All rights reserved.")))));
     }
   }]);
 
@@ -273,6 +465,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
@@ -316,40 +509,153 @@ function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Header, [{
     key: "render",
     value: function render() {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("header", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "container"
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("header", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "row"
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "col-md-12"
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        className: "col-md-12",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("nav", {
-        className: "navbar navbar-default"
+        className: "navbar navbar-default",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "container-fluid"
+        className: "container-fluid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "navbar-header"
+        className: "navbar-header",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
         className: "navbar-brand",
-        href: "/nextjs-rosies-ms/"
+        href: "/nextjs-rosies-ms/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("img", {
         width: "300px",
         css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject()),
         src: "data:image/png;base64,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",
-        alt: "Rosie's Maid Service logo"
+        alt: "Rosie's Maid Service logo",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
       }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        id: "navigation"
+        id: "navigation",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("ul", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject2())
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject2()),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: "/",
-        as: "/"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", null, "Home"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
+        as: "/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }, "Home"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: "/services",
-        as: "/services"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", null, "Services"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("li", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
+        as: "/services",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      }, "Services"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: "/contact",
-        as: "/contact"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", null, "Contact Us")), " "))))))))));
+        as: "/contact",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }, "Contact Us")), " "))))))))));
     }
   }]);
 
@@ -384,6 +690,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/HowItWorks.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
 function _templateObject() {
@@ -417,37 +724,155 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("section", {
-        id: "service"
+        id: "service",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "container"
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "row"
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
         css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject()),
-        className: "section-title"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h2", null, this.props.howTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", null, this.props.howSubTitle))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "row"
+        className: "section-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }, this.props.howTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }, this.props.howSubTitle))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "service-item col-sm-12 col-md-6 col-lg-4"
+        className: "service-item col-sm-12 col-md-6 col-lg-4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("img", {
         src: this.props.item1img,
-        alt: "Img"
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h4", null, this.props.item1name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", null, this.props.item1text)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "service-item col-sm-12 col-md-6 col-lg-4"
+        alt: "Img",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h4", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, this.props.item1name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, this.props.item1text)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        className: "service-item col-sm-12 col-md-6 col-lg-4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("img", {
         src: this.props.item2img,
-        alt: "Img"
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h4", null, this.props.item2name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", null, this.props.item2text)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "service-item col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-0"
+        alt: "Img",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h4", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, this.props.item2name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }, this.props.item2text)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        className: "service-item col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-0",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("img", {
         src: this.props.item3img,
-        alt: "Img"
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h4", null, this.props.item3name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", null, this.props.item3text))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "row"
+        alt: "Img",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h4", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, this.props.item3name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, this.props.item3text))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "service-item col-sm-12 col-md-12"
+        className: "service-item col-sm-12 col-md-12",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
-        href: "#"
+        href: "#",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
       }, "View Services")))));
     }
   }]);
@@ -487,6 +912,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/Layout.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
 function _templateObject() {
@@ -523,16 +949,55 @@ function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Layout, [{
     key: "render",
     value: function render() {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["Global"], {
-        styles: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject(), _styles_styles__WEBPACK_IMPORTED_MODULE_8__["appStyles"])
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["Global"], {
+        styles: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject(), _styles_styles__WEBPACK_IMPORTED_MODULE_8__["appStyles"]),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
       }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("link", {
         rel: "stylesheet",
         href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
         integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T",
-        crossOrigin: "anonymous"
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(_components_NavBar__WEBPACK_IMPORTED_MODULE_10__["default"], null), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        css: this.props.contentClass
-      }, this.props.children)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(_components_Footer__WEBPACK_IMPORTED_MODULE_11__["default"], null));
+        crossOrigin: "anonymous",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(_components_NavBar__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        css: this.props.contentClass,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, this.props.children)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(_components_Footer__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }));
     }
   }]);
 
@@ -571,6 +1036,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/NavBar.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
@@ -633,16 +1099,36 @@ function (_Component) {
       var classOne = collapsed ? "collapse navbar-collapse" : "collapse navbar-collapse show";
       var classTwo = collapsed ? "navbar-toggler navbar-toggler-right collapsed" : "navbar-toggler navbar-toggler-right";
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("nav", {
-        className: "navbar navbar-expand-lg navbar-light bg-light transparent-nav"
+        className: "navbar navbar-expand-lg navbar-light bg-light transparent-nav",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-        className: "container"
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("a", {
         className: "navbar-brand",
-        href: "#"
+        href: "#",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("img", {
         css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject()),
         src: "data:image/png;base64,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",
-        alt: "Rosie's Maid Service logo"
+        alt: "Rosie's Maid Service logo",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
       })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("button", {
         onClick: this.toggleNavbar,
         className: "".concat(classTwo),
@@ -651,36 +1137,120 @@ function (_Component) {
         "data-target": "#navbarResponsive",
         "aria-controls": "navbarResponsive",
         "aria-expanded": "false",
-        "aria-label": "Toggle navigation"
+        "aria-label": "Toggle navigation",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("span", {
-        className: "navbar-toggler-icon"
+        className: "navbar-toggler-icon",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        },
+        __self: this
       })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
         className: "".concat(classOne),
-        id: "navbarResponsive"
+        id: "navbarResponsive",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("ul", {
         css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"])(_templateObject2()),
-        className: "navbar-nav ml-auto"
+        className: "navbar-nav ml-auto",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", {
-        className: "nav-item active"
+        className: "nav-item active",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 80
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
         href: "/",
-        as: "/"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("a", null, "Home"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", {
-        className: "nav-item"
+        as: "/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82
+        },
+        __self: this
+      }, "Home"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 86
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
         href: "/services",
-        as: "/services"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("a", null, "Services/Booking"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", {
-        className: "nav-item"
+        as: "/services",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 87
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 88
+        },
+        __self: this
+      }, "Services/Booking"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 92
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
         href: "/faq",
-        as: "/faq"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("a", null, "FAQ"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", {
-        className: "nav-item"
+        as: "/faq",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 93
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 94
+        },
+        __self: this
+      }, "FAQ"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 98
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
         href: "/contact",
-        as: "/contact"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("a", null, "Contact Us")))))));
+        as: "/contact",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 99
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 100
+        },
+        __self: this
+      }, "Contact Us")))))));
     }
   }]);
 
@@ -723,6 +1293,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/ServiceHome.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
@@ -772,47 +1343,197 @@ function (_React$Component) {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("section", {
         id: "call-to-action",
         className: "service-home",
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject(), this.props.serviceHomeBgImage)
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject(), this.props.serviceHomeBgImage),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "container"
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "row"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "col-md-12"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "block"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h2", null, this.props.serviceHomeTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", null, this.props.serviceHomeText1)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
         className: "row",
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject2())
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "col-sm-6 col-md-3"
+        className: "col-md-12",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "service-item"
+        className: "block",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, this.props.serviceHomeTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }, this.props.serviceHomeText1)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        className: "row",
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject2()),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        className: "col-sm-6 col-md-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        className: "service-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(react_ionicons_lib_IosSchool__WEBPACK_IMPORTED_MODULE_11___default.a, {
         fontSize: "80px",
-        color: "#000"
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("strong", null, this.props.item1name)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "col-sm-6 col-md-3"
+        color: "#000",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("strong", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, this.props.item1name)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        className: "col-sm-6 col-md-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "service-item"
+        className: "service-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(react_ionicons_lib_IosFingerPrint__WEBPACK_IMPORTED_MODULE_10___default.a, {
         fontSize: "80px",
-        color: "#000"
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("strong", null, this.props.item2name)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "col-sm-6 col-md-3"
+        color: "#000",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("strong", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, this.props.item2name)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        className: "col-sm-6 col-md-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "service-item"
+        className: "service-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(react_ionicons_lib_IosChatbubbles__WEBPACK_IMPORTED_MODULE_9___default.a, {
         fontSize: "80px",
-        color: "#000"
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("strong", null, this.props.item3name)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "col-sm-6 col-md-3"
+        color: "#000",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("strong", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }, this.props.item3name)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        className: "col-sm-6 col-md-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "service-item"
+        className: "service-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(react_ionicons_lib_IosContacts__WEBPACK_IMPORTED_MODULE_8___default.a, {
         fontSize: "80px",
-        color: "#000"
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("strong", null, this.props.item4name)))))));
+        color: "#000",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64
+        },
+        __self: this
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 65
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("strong", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        },
+        __self: this
+      }, this.props.item4name)))))));
     }
   }]);
 
@@ -849,6 +1570,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/Slider.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
@@ -884,24 +1606,69 @@ function (_React$Component) {
     value: function render() {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("section", {
         id: "slider",
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject(), this.props.sliderBgImage)
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject(), this.props.sliderBgImage),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "container"
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "row"
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "col-md-10 offset-md-1"
+        className: "col-md-10 offset-md-1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "block text-center"
+        className: "block text-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h1", {
-        className: "animated fadeInUp hero-h1"
+        className: "animated fadeInUp hero-h1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
       }, this.props.sliderTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
-        className: "animated fadeInUp hero-p"
+        className: "animated fadeInUp hero-p",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
       }, this.props.sliderSubTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: this.props.sliderButtonUrl,
-        as: this.props.sliderButtonUrl
+        as: this.props.sliderButtonUrl,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
-        className: "btn-main btn-solid-border"
+        className: "btn-main btn-solid-border",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
       }, this.props.sliderButtonTxt)))))));
     }
   }]);
@@ -939,6 +1706,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/Wrapper.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
@@ -994,29 +1762,114 @@ function (_React$Component) {
     value: function render() {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("section", {
         css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject()),
-        id: "intro"
+        id: "intro",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "container"
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "row"
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "col-md-7 col-sm-10"
+        className: "col-md-7 col-sm-10",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "block"
+        className: "block",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "section-title"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h2", null, this.props.wrapperTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", null, this.props.wrapperSubTitle)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", null, this.props.wrapperPara1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", null, this.props.wrapperPara2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject2())
+        className: "section-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }, this.props.wrapperTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, this.props.wrapperSubTitle)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }, this.props.wrapperPara1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }, this.props.wrapperPara2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject2()),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "#"
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", null, "Book Now"))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "col-md-5 col-sm-12"
+        href: "#",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        },
+        __self: this
+      }, "Book Now"))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        className: "col-md-5 col-sm-12",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "block"
+        className: "block",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        },
+        __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("img", {
         css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject3()),
         src: this.props.wrapperImage,
-        alt: "Img"
+        alt: "Img",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
       }))))));
     }
   }]);
@@ -7876,76 +8729,6 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 /***/ }),
 
-/***/ "./node_modules/define-properties/index.js":
-/*!*************************************************!*\
-  !*** ./node_modules/define-properties/index.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var keys = __webpack_require__(/*! object-keys */ "./node_modules/object-keys/index.js");
-var hasSymbols = typeof Symbol === 'function' && typeof Symbol('foo') === 'symbol';
-
-var toStr = Object.prototype.toString;
-var concat = Array.prototype.concat;
-var origDefineProperty = Object.defineProperty;
-
-var isFunction = function (fn) {
-	return typeof fn === 'function' && toStr.call(fn) === '[object Function]';
-};
-
-var arePropertyDescriptorsSupported = function () {
-	var obj = {};
-	try {
-		origDefineProperty(obj, 'x', { enumerable: false, value: obj });
-		// eslint-disable-next-line no-unused-vars, no-restricted-syntax
-		for (var _ in obj) { // jscs:ignore disallowUnusedVariables
-			return false;
-		}
-		return obj.x === obj;
-	} catch (e) { /* this is IE 8. */
-		return false;
-	}
-};
-var supportsDescriptors = origDefineProperty && arePropertyDescriptorsSupported();
-
-var defineProperty = function (object, name, value, predicate) {
-	if (name in object && (!isFunction(predicate) || !predicate())) {
-		return;
-	}
-	if (supportsDescriptors) {
-		origDefineProperty(object, name, {
-			configurable: true,
-			enumerable: false,
-			value: value,
-			writable: true
-		});
-	} else {
-		object[name] = value;
-	}
-};
-
-var defineProperties = function (object, map) {
-	var predicates = arguments.length > 2 ? arguments[2] : {};
-	var props = keys(map);
-	if (hasSymbols) {
-		props = concat.call(props, Object.getOwnPropertySymbols(map));
-	}
-	for (var i = 0; i < props.length; i += 1) {
-		defineProperty(object, props[i], map[props[i]], predicates[props[i]]);
-	}
-};
-
-defineProperties.supportsDescriptors = !!supportsDescriptors;
-
-module.exports = defineProperties;
-
-
-/***/ }),
-
 /***/ "./node_modules/fbjs/lib/emptyFunction.js":
 /*!************************************************!*\
   !*** ./node_modules/fbjs/lib/emptyFunction.js ***!
@@ -8239,60 +9022,6 @@ module.exports = Function.prototype.bind || implementation;
 
 /***/ }),
 
-/***/ "./node_modules/has-symbols/shams.js":
-/*!*******************************************!*\
-  !*** ./node_modules/has-symbols/shams.js ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/* eslint complexity: [2, 17], max-statements: [2, 33] */
-module.exports = function hasSymbols() {
-	if (typeof Symbol !== 'function' || typeof Object.getOwnPropertySymbols !== 'function') { return false; }
-	if (typeof Symbol.iterator === 'symbol') { return true; }
-
-	var obj = {};
-	var sym = Symbol('test');
-	var symObj = Object(sym);
-	if (typeof sym === 'string') { return false; }
-
-	if (Object.prototype.toString.call(sym) !== '[object Symbol]') { return false; }
-	if (Object.prototype.toString.call(symObj) !== '[object Symbol]') { return false; }
-
-	// temp disabled per https://github.com/ljharb/object.assign/issues/17
-	// if (sym instanceof Symbol) { return false; }
-	// temp disabled per https://github.com/WebReflection/get-own-property-symbols/issues/4
-	// if (!(symObj instanceof Symbol)) { return false; }
-
-	// if (typeof Symbol.prototype.toString !== 'function') { return false; }
-	// if (String(sym) !== Symbol.prototype.toString.call(sym)) { return false; }
-
-	var symVal = 42;
-	obj[sym] = symVal;
-	for (sym in obj) { return false; } // eslint-disable-line no-restricted-syntax
-	if (typeof Object.keys === 'function' && Object.keys(obj).length !== 0) { return false; }
-
-	if (typeof Object.getOwnPropertyNames === 'function' && Object.getOwnPropertyNames(obj).length !== 0) { return false; }
-
-	var syms = Object.getOwnPropertySymbols(obj);
-	if (syms.length !== 1 || syms[0] !== sym) { return false; }
-
-	if (!Object.prototype.propertyIsEnumerable.call(obj, sym)) { return false; }
-
-	if (typeof Object.getOwnPropertyDescriptor === 'function') {
-		var descriptor = Object.getOwnPropertyDescriptor(obj, sym);
-		if (descriptor.value !== symVal || descriptor.enumerable !== true) { return false; }
-	}
-
-	return true;
-};
-
-
-/***/ }),
-
 /***/ "./node_modules/has/src/index.js":
 /*!***************************************!*\
   !*** ./node_modules/has/src/index.js ***!
@@ -8471,6 +9200,29 @@ module.exports = function isObject(val) {
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/build/polyfills/object-assign.js":
+/*!***********************************************************************************************************************!*\
+  !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_5f137288facb1107b491 ***!
+  \***********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491 */ "dll-reference dll_5f137288facb1107b491"))("./node_modules/next/dist/build/polyfills/object-assign.js");
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/build/polyfills/object.assign/index.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/next/dist/build/polyfills/object.assign/index.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineProperties(g(),{implementation:{get:g},shim:{value:g},getPolyfill:{value:g}});module.exports=g();
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fnickmakuch%2FDocuments%2FCode%2Frosies-ms-nextjs%2Fpages%2Findex.js!./":
 /*!*******************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fnickmakuch%2FDocuments%2FCode%2Frosies-ms-nextjs%2Fpages%2Findex.js ***!
@@ -8534,8 +9286,6 @@ var _router = _interopRequireDefault(__webpack_require__(/*! ./router */ "./node
 var _rewriteUrlForExport = __webpack_require__(/*! ../next-server/lib/router/rewrite-url-for-export */ "./node_modules/next/dist/next-server/lib/router/rewrite-url-for-export.js");
 
 var _utils = __webpack_require__(/*! ../next-server/lib/utils */ "./node_modules/next/dist/next-server/lib/utils.js");
-/* global __NEXT_DATA__ */
-
 
 function isLocal(href) {
   var url = (0, _url.parse)(href, false, true);
@@ -8858,8 +9608,6 @@ exports.NextRouter = _router2.NextRouter;
 
 var _routerContext = __webpack_require__(/*! ../next-server/lib/router-context */ "./node_modules/next/dist/next-server/lib/router-context.js");
 
-exports.RouterContext = _routerContext.RouterContext;
-
 var _withRouter = _interopRequireDefault(__webpack_require__(/*! ./with-router */ "./node_modules/next/dist/client/with-router.js"));
 
 exports.withRouter = _withRouter["default"];
@@ -9024,16 +9772,6 @@ function makePublicRouterInstance(router) {
 "use strict";
 
 
-var _classCallCheck = __webpack_require__(/*! @babel/runtime-corejs2/helpers/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/classCallCheck.js");
-
-var _createClass = __webpack_require__(/*! @babel/runtime-corejs2/helpers/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/createClass.js");
-
-var _possibleConstructorReturn = __webpack_require__(/*! @babel/runtime-corejs2/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/possibleConstructorReturn.js");
-
-var _getPrototypeOf = __webpack_require__(/*! @babel/runtime-corejs2/helpers/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/getPrototypeOf.js");
-
-var _inherits = __webpack_require__(/*! @babel/runtime-corejs2/helpers/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/inherits.js");
-
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
 
 exports.__esModule = true;
@@ -9046,46 +9784,22 @@ var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_mod
 var _router = __webpack_require__(/*! ./router */ "./node_modules/next/dist/client/router.js");
 
 function withRouter(ComposedComponent) {
-  var WithRouteWrapper =
-  /*#__PURE__*/
-  function (_react$default$Compon) {
-    _inherits(WithRouteWrapper, _react$default$Compon);
+  function WithRouterWrapper(props) {
+    return _react["default"].createElement(ComposedComponent, (0, _extends2["default"])({
+      router: (0, _router.useRouter)()
+    }, props));
+  }
 
-    function WithRouteWrapper() {
-      var _this;
-
-      _classCallCheck(this, WithRouteWrapper);
-
-      _this = _possibleConstructorReturn(this, _getPrototypeOf(WithRouteWrapper).apply(this, arguments));
-      _this.context = void 0;
-      return _this;
-    }
-
-    _createClass(WithRouteWrapper, [{
-      key: "render",
-      value: function render() {
-        return _react["default"].createElement(ComposedComponent, (0, _extends2["default"])({
-          router: this.context
-        }, this.props));
-      }
-    }]);
-
-    return WithRouteWrapper;
-  }(_react["default"].Component);
-
-  WithRouteWrapper.displayName = void 0;
-  WithRouteWrapper.getInitialProps = void 0;
-  WithRouteWrapper.contextType = _router.RouterContext;
-  WithRouteWrapper.getInitialProps = ComposedComponent.getInitialProps // This is needed to allow checking for custom getInitialProps in _app
+  WithRouterWrapper.getInitialProps = ComposedComponent.getInitialProps // This is needed to allow checking for custom getInitialProps in _app
   ;
-  WithRouteWrapper.origGetInitialProps = ComposedComponent.origGetInitialProps;
+  WithRouterWrapper.origGetInitialProps = ComposedComponent.origGetInitialProps;
 
   if (true) {
     var name = ComposedComponent.displayName || ComposedComponent.name || 'Unknown';
-    WithRouteWrapper.displayName = "withRouter(" + name + ")";
+    WithRouterWrapper.displayName = "withRouter(" + name + ")";
   }
 
-  return WithRouteWrapper;
+  return WithRouterWrapper;
 }
 
 /***/ }),
@@ -9138,6 +9852,7 @@ function mitt() {
         evts[_key - 1] = arguments[_key];
       }
 
+      // eslint-disable-next-line array-callback-return
       ;
       (all[type] || []).slice().map(function (handler) {
         handler.apply(void 0, evts);
@@ -9242,7 +9957,7 @@ var _slicedToArray = __webpack_require__(/*! @babel/runtime-corejs2/helpers/slic
 
 var _Promise = __webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
 
-var _Object$assign = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
+var _Object$assign = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/next/dist/build/polyfills/object-assign.js");
 
 var _classCallCheck = __webpack_require__(/*! @babel/runtime-corejs2/helpers/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/classCallCheck.js");
 
@@ -9268,11 +9983,11 @@ var utils_1 = __webpack_require__(/*! ../utils */ "./node_modules/next/dist/next
 
 var rewrite_url_for_export_1 = __webpack_require__(/*! ./rewrite-url-for-export */ "./node_modules/next/dist/next-server/lib/router/rewrite-url-for-export.js");
 
+var is_dynamic_1 = __webpack_require__(/*! ./utils/is-dynamic */ "./node_modules/next/dist/next-server/lib/router/utils/is-dynamic.js");
+
 var route_matcher_1 = __webpack_require__(/*! ./utils/route-matcher */ "./node_modules/next/dist/next-server/lib/router/utils/route-matcher.js");
 
 var route_regex_1 = __webpack_require__(/*! ./utils/route-regex */ "./node_modules/next/dist/next-server/lib/router/utils/route-regex.js");
-
-var is_dynamic_1 = __webpack_require__(/*! ./utils/is-dynamic */ "./node_modules/next/dist/next-server/lib/router/utils/is-dynamic.js");
 
 function toRoute(path) {
   return path.replace(/\/$/, '') || '/';
@@ -9318,7 +10033,7 @@ function () {
       // can be caused by navigating back from an external site
 
 
-      if (e.state.options && e.state.options.fromExternal) {
+      if (e.state && _this.isSsr && e.state.url === _this.pathname && e.state.as === _this.asPath) {
         return;
       } // If the downstream application returns falsy, return.
       // They will then be responsible for handling the event.
@@ -9370,10 +10085,13 @@ function () {
     // until after mount to prevent hydration mismatch
 
     this.asPath = // @ts-ignore this is temporarily global (attached to window)
-    is_dynamic_1.isDynamicRoute(pathname) && __NEXT_DATA__.nextExport ? pathname : as;
+    is_dynamic_1.isDynamicRoute(pathname) && __NEXT_DATA__.autoExport ? pathname : as;
     this.sub = subscription;
     this.clc = null;
-    this._wrapApp = wrapApp;
+    this._wrapApp = wrapApp; // make sure to ignore extra popState in safari on navigating
+    // back from external site
+
+    this.isSsr = true;
 
     if (true) {
       // in order for `e.state` to work on the `onpopstate` event
@@ -9383,20 +10101,6 @@ function () {
         query: query
       }), as);
       window.addEventListener('popstate', this.onPopState);
-      window.addEventListener('unload', function () {
-        // Workaround for popstate firing on initial page load when
-        // navigating back from an external site
-        if (history.state) {
-          var _history$state = history.state,
-              url = _history$state.url,
-              _as2 = _history$state.as,
-              options = _history$state.options;
-
-          _this.changeState('replaceState', url, _as2, _Object$assign({}, options, {
-            fromExternal: true
-          }));
-        }
-      });
     }
   } // @deprecated backwards compatibility even though it's a private method.
 
@@ -9474,7 +10178,11 @@ function () {
       var _this2 = this;
 
       return new _Promise(function (resolve, reject) {
-        // marking route changes as a navigation start entry
+        if (!options._h) {
+          _this2.isSsr = false;
+        } // marking route changes as a navigation start entry
+
+
         if (utils_1.SUPPORTS_PERFORMANCE_USER_TIMING) {
           performance.mark('routeChange');
         } // If url and as provided as an object representation,
@@ -9904,8 +10612,7 @@ function () {
                 this.clc = cancel;
                 App = this.components['/_app'].Component;
 
-                if (!( // @ts-ignore workaround for dead-code elimination
-                (self.__HAS_SPR || "development" !== 'production') && Component.__NEXT_SPR)) {
+                if (!Component.__NEXT_SPR) {
                   _context2.next = 12;
                   break;
                 }
@@ -10026,7 +10733,7 @@ _Object$defineProperty(exports, "__esModule", {
 }); // Identify /[param]/ in route string
 
 
-var TEST_ROUTE = /\/\[[^\/]+?\](?=\/|$)/;
+var TEST_ROUTE = /\/\[[^/]+?\](?=\/|$)/;
 
 function isDynamicRoute(route) {
   return TEST_ROUTE.test(route);
@@ -10070,7 +10777,9 @@ function getRouteMatcher(routeRegex) {
       var m = routeMatch[groups[slugName]];
 
       if (m !== undefined) {
-        params[slugName] = decodeURIComponent(m);
+        params[slugName] = m.indexOf('/') !== -1 ? m.split('/').map(function (entry) {
+          return decodeURIComponent(entry);
+        }) : decodeURIComponent(m);
       }
     });
 
@@ -10103,9 +10812,10 @@ function getRouteRegex(normalizedRoute) {
   var escapedRoute = (normalizedRoute.replace(/\/$/, '') || '/').replace(/[|\\{}()[\]^$+*?.-]/g, '\\$&');
   var groups = {};
   var groupIndex = 1;
-  var parameterizedRoute = escapedRoute.replace(/\/\\\[([^\/]+?)\\\](?=\/|$)/g, function (_, $1) {
+  var parameterizedRoute = escapedRoute.replace(/\/\\\[([^/]+?)\\\](?=\/|$)/g, function (_, $1) {
     return groups[$1 // Un-escape key
-    .replace(/\\([|\\{}()[\]^$+*?.-])/g, '$1')] = groupIndex++, '/([^/]+?)';
+    .replace(/\\([|\\{}()[\]^$+*?.-])/g, '$1').replace(/^\.{3}/, '') // eslint-disable-next-line no-sequences
+    ] = groupIndex++, $1.indexOf('\\.\\.\\.') === 0 ? '/(.+?)' : '/([^/]+?)';
   });
   return {
     re: new RegExp('^' + parameterizedRoute + '(?:/)?$', 'i'),
@@ -10149,6 +10859,7 @@ function execOnce(fn) {
   var _this = this;
 
   var used = false;
+  var result = null;
   return function () {
     if (!used) {
       used = true;
@@ -10157,8 +10868,10 @@ function execOnce(fn) {
         args[_key] = arguments[_key];
       }
 
-      fn.apply(_this, args);
+      result = fn.apply(_this, args);
     }
+
+    return result;
   };
 }
 
@@ -10201,7 +10914,7 @@ function loadGetInitialProps(_x, _x2) {
 function _loadGetInitialProps() {
   _loadGetInitialProps = _asyncToGenerator(
   /*#__PURE__*/
-  _regeneratorRuntime.mark(function _callee(Component, ctx) {
+  _regeneratorRuntime.mark(function _callee(App, ctx) {
     var message, res, props, _message;
 
     return _regeneratorRuntime.wrap(function _callee$(_context) {
@@ -10210,58 +10923,73 @@ function _loadGetInitialProps() {
           case 0:
             if (false) {}
 
-            if (!(Component.prototype && Component.prototype.getInitialProps)) {
+            if (!(App.prototype && App.prototype.getInitialProps)) {
               _context.next = 4;
               break;
             }
 
-            message = "\"".concat(getDisplayName(Component), ".getInitialProps()\" is defined as an instance method - visit https://err.sh/zeit/next.js/get-initial-props-as-an-instance-method for more information.");
+            message = "\"".concat(getDisplayName(App), ".getInitialProps()\" is defined as an instance method - visit https://err.sh/zeit/next.js/get-initial-props-as-an-instance-method for more information.");
             throw new Error(message);
 
           case 4:
             // when called from _app `ctx` is nested in `ctx`
             res = ctx.res || ctx.ctx && ctx.ctx.res;
 
-            if (Component.getInitialProps) {
-              _context.next = 7;
-              break;
-            }
-
-            return _context.abrupt("return", {});
-
-          case 7:
-            _context.next = 9;
-            return Component.getInitialProps(ctx);
-
-          case 9:
-            props = _context.sent;
-
-            if (!(res && isResSent(res))) {
+            if (App.getInitialProps) {
               _context.next = 12;
               break;
             }
 
-            return _context.abrupt("return", props);
-
-          case 12:
-            if (props) {
-              _context.next = 15;
+            if (!(ctx.ctx && ctx.Component)) {
+              _context.next = 11;
               break;
             }
 
-            _message = "\"".concat(getDisplayName(Component), ".getInitialProps()\" should resolve to an object. But found \"").concat(props, "\" instead.");
-            throw new Error(_message);
+            _context.next = 9;
+            return loadGetInitialProps(ctx.Component, ctx.ctx);
 
-          case 15:
-            if (true) {
-              if (_Object$keys(props).length === 0 && !ctx.ctx) {
-                console.warn("".concat(getDisplayName(Component), " returned an empty object from `getInitialProps`. This de-optimizes and prevents automatic static optimization. https://err.sh/zeit/next.js/empty-object-getInitialProps"));
-              }
+          case 9:
+            _context.t0 = _context.sent;
+            return _context.abrupt("return", {
+              pageProps: _context.t0
+            });
+
+          case 11:
+            return _context.abrupt("return", {});
+
+          case 12:
+            _context.next = 14;
+            return App.getInitialProps(ctx);
+
+          case 14:
+            props = _context.sent;
+
+            if (!(res && isResSent(res))) {
+              _context.next = 17;
+              break;
             }
 
             return _context.abrupt("return", props);
 
           case 17:
+            if (props) {
+              _context.next = 20;
+              break;
+            }
+
+            _message = "\"".concat(getDisplayName(App), ".getInitialProps()\" should resolve to an object. But found \"").concat(props, "\" instead.");
+            throw new Error(_message);
+
+          case 20:
+            if (true) {
+              if (_Object$keys(props).length === 0 && !ctx.ctx) {
+                console.warn("".concat(getDisplayName(App), " returned an empty object from `getInitialProps`. This de-optimizes and prevents automatic static optimization. https://err.sh/zeit/next.js/empty-object-getInitialProps"));
+              }
+            }
+
+            return _context.abrupt("return", props);
+
+          case 22:
           case "end":
             return _context.stop();
         }
@@ -10837,395 +11565,6 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./node_modules/object-assign/index.js":
-/*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_ea92a4d9664833a26066 ***!
-  \***************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(/*! dll-reference dll_ea92a4d9664833a26066 */ "dll-reference dll_ea92a4d9664833a26066"))("./node_modules/object-assign/index.js");
-
-/***/ }),
-
-/***/ "./node_modules/object-keys/implementation.js":
-/*!****************************************************!*\
-  !*** ./node_modules/object-keys/implementation.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var keysShim;
-if (!Object.keys) {
-	// modified from https://github.com/es-shims/es5-shim
-	var has = Object.prototype.hasOwnProperty;
-	var toStr = Object.prototype.toString;
-	var isArgs = __webpack_require__(/*! ./isArguments */ "./node_modules/object-keys/isArguments.js"); // eslint-disable-line global-require
-	var isEnumerable = Object.prototype.propertyIsEnumerable;
-	var hasDontEnumBug = !isEnumerable.call({ toString: null }, 'toString');
-	var hasProtoEnumBug = isEnumerable.call(function () {}, 'prototype');
-	var dontEnums = [
-		'toString',
-		'toLocaleString',
-		'valueOf',
-		'hasOwnProperty',
-		'isPrototypeOf',
-		'propertyIsEnumerable',
-		'constructor'
-	];
-	var equalsConstructorPrototype = function (o) {
-		var ctor = o.constructor;
-		return ctor && ctor.prototype === o;
-	};
-	var excludedKeys = {
-		$applicationCache: true,
-		$console: true,
-		$external: true,
-		$frame: true,
-		$frameElement: true,
-		$frames: true,
-		$innerHeight: true,
-		$innerWidth: true,
-		$onmozfullscreenchange: true,
-		$onmozfullscreenerror: true,
-		$outerHeight: true,
-		$outerWidth: true,
-		$pageXOffset: true,
-		$pageYOffset: true,
-		$parent: true,
-		$scrollLeft: true,
-		$scrollTop: true,
-		$scrollX: true,
-		$scrollY: true,
-		$self: true,
-		$webkitIndexedDB: true,
-		$webkitStorageInfo: true,
-		$window: true
-	};
-	var hasAutomationEqualityBug = (function () {
-		/* global window */
-		if (typeof window === 'undefined') { return false; }
-		for (var k in window) {
-			try {
-				if (!excludedKeys['$' + k] && has.call(window, k) && window[k] !== null && typeof window[k] === 'object') {
-					try {
-						equalsConstructorPrototype(window[k]);
-					} catch (e) {
-						return true;
-					}
-				}
-			} catch (e) {
-				return true;
-			}
-		}
-		return false;
-	}());
-	var equalsConstructorPrototypeIfNotBuggy = function (o) {
-		/* global window */
-		if (typeof window === 'undefined' || !hasAutomationEqualityBug) {
-			return equalsConstructorPrototype(o);
-		}
-		try {
-			return equalsConstructorPrototype(o);
-		} catch (e) {
-			return false;
-		}
-	};
-
-	keysShim = function keys(object) {
-		var isObject = object !== null && typeof object === 'object';
-		var isFunction = toStr.call(object) === '[object Function]';
-		var isArguments = isArgs(object);
-		var isString = isObject && toStr.call(object) === '[object String]';
-		var theKeys = [];
-
-		if (!isObject && !isFunction && !isArguments) {
-			throw new TypeError('Object.keys called on a non-object');
-		}
-
-		var skipProto = hasProtoEnumBug && isFunction;
-		if (isString && object.length > 0 && !has.call(object, 0)) {
-			for (var i = 0; i < object.length; ++i) {
-				theKeys.push(String(i));
-			}
-		}
-
-		if (isArguments && object.length > 0) {
-			for (var j = 0; j < object.length; ++j) {
-				theKeys.push(String(j));
-			}
-		} else {
-			for (var name in object) {
-				if (!(skipProto && name === 'prototype') && has.call(object, name)) {
-					theKeys.push(String(name));
-				}
-			}
-		}
-
-		if (hasDontEnumBug) {
-			var skipConstructor = equalsConstructorPrototypeIfNotBuggy(object);
-
-			for (var k = 0; k < dontEnums.length; ++k) {
-				if (!(skipConstructor && dontEnums[k] === 'constructor') && has.call(object, dontEnums[k])) {
-					theKeys.push(dontEnums[k]);
-				}
-			}
-		}
-		return theKeys;
-	};
-}
-module.exports = keysShim;
-
-
-/***/ }),
-
-/***/ "./node_modules/object-keys/index.js":
-/*!*******************************************!*\
-  !*** ./node_modules/object-keys/index.js ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var slice = Array.prototype.slice;
-var isArgs = __webpack_require__(/*! ./isArguments */ "./node_modules/object-keys/isArguments.js");
-
-var origKeys = Object.keys;
-var keysShim = origKeys ? function keys(o) { return origKeys(o); } : __webpack_require__(/*! ./implementation */ "./node_modules/object-keys/implementation.js");
-
-var originalKeys = Object.keys;
-
-keysShim.shim = function shimObjectKeys() {
-	if (Object.keys) {
-		var keysWorksWithArguments = (function () {
-			// Safari 5.0 bug
-			var args = Object.keys(arguments);
-			return args && args.length === arguments.length;
-		}(1, 2));
-		if (!keysWorksWithArguments) {
-			Object.keys = function keys(object) { // eslint-disable-line func-name-matching
-				if (isArgs(object)) {
-					return originalKeys(slice.call(object));
-				}
-				return originalKeys(object);
-			};
-		}
-	} else {
-		Object.keys = keysShim;
-	}
-	return Object.keys || keysShim;
-};
-
-module.exports = keysShim;
-
-
-/***/ }),
-
-/***/ "./node_modules/object-keys/isArguments.js":
-/*!*************************************************!*\
-  !*** ./node_modules/object-keys/isArguments.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var toStr = Object.prototype.toString;
-
-module.exports = function isArguments(value) {
-	var str = toStr.call(value);
-	var isArgs = str === '[object Arguments]';
-	if (!isArgs) {
-		isArgs = str !== '[object Array]' &&
-			value !== null &&
-			typeof value === 'object' &&
-			typeof value.length === 'number' &&
-			value.length >= 0 &&
-			toStr.call(value.callee) === '[object Function]';
-	}
-	return isArgs;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/object.assign/implementation.js":
-/*!******************************************************!*\
-  !*** ./node_modules/object.assign/implementation.js ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-// modified from https://github.com/es-shims/es6-shim
-var keys = __webpack_require__(/*! object-keys */ "./node_modules/object-keys/index.js");
-var bind = __webpack_require__(/*! function-bind */ "./node_modules/function-bind/index.js");
-var canBeObject = function (obj) {
-	return typeof obj !== 'undefined' && obj !== null;
-};
-var hasSymbols = __webpack_require__(/*! has-symbols/shams */ "./node_modules/has-symbols/shams.js")();
-var toObject = Object;
-var push = bind.call(Function.call, Array.prototype.push);
-var propIsEnumerable = bind.call(Function.call, Object.prototype.propertyIsEnumerable);
-var originalGetSymbols = hasSymbols ? Object.getOwnPropertySymbols : null;
-
-module.exports = function assign(target, source1) {
-	if (!canBeObject(target)) { throw new TypeError('target must be an object'); }
-	var objTarget = toObject(target);
-	var s, source, i, props, syms, value, key;
-	for (s = 1; s < arguments.length; ++s) {
-		source = toObject(arguments[s]);
-		props = keys(source);
-		var getSymbols = hasSymbols && (Object.getOwnPropertySymbols || originalGetSymbols);
-		if (getSymbols) {
-			syms = getSymbols(source);
-			for (i = 0; i < syms.length; ++i) {
-				key = syms[i];
-				if (propIsEnumerable(source, key)) {
-					push(props, key);
-				}
-			}
-		}
-		for (i = 0; i < props.length; ++i) {
-			key = props[i];
-			value = source[key];
-			if (propIsEnumerable(source, key)) {
-				objTarget[key] = value;
-			}
-		}
-	}
-	return objTarget;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/object.assign/index.js":
-/*!*********************************************!*\
-  !*** ./node_modules/object.assign/index.js ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var defineProperties = __webpack_require__(/*! define-properties */ "./node_modules/define-properties/index.js");
-
-var implementation = __webpack_require__(/*! ./implementation */ "./node_modules/object.assign/implementation.js");
-var getPolyfill = __webpack_require__(/*! ./polyfill */ "./node_modules/object.assign/polyfill.js");
-var shim = __webpack_require__(/*! ./shim */ "./node_modules/object.assign/shim.js");
-
-var polyfill = getPolyfill();
-
-defineProperties(polyfill, {
-	getPolyfill: getPolyfill,
-	implementation: implementation,
-	shim: shim
-});
-
-module.exports = polyfill;
-
-
-/***/ }),
-
-/***/ "./node_modules/object.assign/polyfill.js":
-/*!************************************************!*\
-  !*** ./node_modules/object.assign/polyfill.js ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var implementation = __webpack_require__(/*! ./implementation */ "./node_modules/object.assign/implementation.js");
-
-var lacksProperEnumerationOrder = function () {
-	if (!Object.assign) {
-		return false;
-	}
-	// v8, specifically in node 4.x, has a bug with incorrect property enumeration order
-	// note: this does not detect the bug unless there's 20 characters
-	var str = 'abcdefghijklmnopqrst';
-	var letters = str.split('');
-	var map = {};
-	for (var i = 0; i < letters.length; ++i) {
-		map[letters[i]] = letters[i];
-	}
-	var obj = Object.assign({}, map);
-	var actual = '';
-	for (var k in obj) {
-		actual += k;
-	}
-	return str !== actual;
-};
-
-var assignHasPendingExceptions = function () {
-	if (!Object.assign || !Object.preventExtensions) {
-		return false;
-	}
-	// Firefox 37 still has "pending exception" logic in its Object.assign implementation,
-	// which is 72% slower than our shim, and Firefox 40's native implementation.
-	var thrower = Object.preventExtensions({ 1: 2 });
-	try {
-		Object.assign(thrower, 'xy');
-	} catch (e) {
-		return thrower[1] === 'y';
-	}
-	return false;
-};
-
-module.exports = function getPolyfill() {
-	if (!Object.assign) {
-		return implementation;
-	}
-	if (lacksProperEnumerationOrder()) {
-		return implementation;
-	}
-	if (assignHasPendingExceptions()) {
-		return implementation;
-	}
-	return Object.assign;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/object.assign/shim.js":
-/*!********************************************!*\
-  !*** ./node_modules/object.assign/shim.js ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var define = __webpack_require__(/*! define-properties */ "./node_modules/define-properties/index.js");
-var getPolyfill = __webpack_require__(/*! ./polyfill */ "./node_modules/object.assign/polyfill.js");
-
-module.exports = function shimAssign() {
-	var polyfill = getPolyfill();
-	define(
-		Object,
-		{ assign: polyfill },
-		{ assign: function () { return Object.assign !== polyfill; } }
-	);
-	return polyfill;
-};
-
-
-/***/ }),
-
 /***/ "./node_modules/process/browser.js":
 /*!*****************************************!*\
   !*** ./node_modules/process/browser.js ***!
@@ -11455,7 +11794,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports['default'] = forbidExtraProps;
 
-var _object = __webpack_require__(/*! object.assign */ "./node_modules/object.assign/index.js");
+var _object = __webpack_require__(/*! object.assign */ "./node_modules/next/dist/build/polyfills/object.assign/index.js");
 
 var _object2 = _interopRequireDefault(_object);
 
@@ -11512,12 +11851,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_ea92a4d9664833a26066 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_5f137288facb1107b491 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ea92a4d9664833a26066 */ "dll-reference dll_ea92a4d9664833a26066"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491 */ "dll-reference dll_5f137288facb1107b491"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -11539,7 +11878,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_ea92a4d9664833a26066
 
 
 var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
-var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+var assign = __webpack_require__(/*! object-assign */ "./node_modules/next/dist/build/polyfills/object-assign.js");
 
 var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
@@ -12152,12 +12491,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_ea92a4d9664833a26066 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_5f137288facb1107b491 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ea92a4d9664833a26066 */ "dll-reference dll_ea92a4d9664833a26066"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491 */ "dll-reference dll_5f137288facb1107b491"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -13815,7 +14154,7 @@ module.exports = PooledClass;
 
 
 
-var _assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+var _assign = __webpack_require__(/*! object-assign */ "./node_modules/next/dist/build/polyfills/object-assign.js");
 
 var ReactChildren = __webpack_require__(/*! ./ReactChildren */ "./node_modules/react-ionicons/node_modules/react/lib/ReactChildren.js");
 var ReactComponent = __webpack_require__(/*! ./ReactComponent */ "./node_modules/react-ionicons/node_modules/react/lib/ReactComponent.js");
@@ -14116,7 +14455,7 @@ module.exports = ReactChildren;
 
 
 var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ "./node_modules/react-ionicons/node_modules/react/lib/reactProdInvariant.js"),
-    _assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+    _assign = __webpack_require__(/*! object-assign */ "./node_modules/next/dist/build/polyfills/object-assign.js");
 
 var ReactComponent = __webpack_require__(/*! ./ReactComponent */ "./node_modules/react-ionicons/node_modules/react/lib/ReactComponent.js");
 var ReactElement = __webpack_require__(/*! ./ReactElement */ "./node_modules/react-ionicons/node_modules/react/lib/ReactElement.js");
@@ -15535,7 +15874,7 @@ module.exports = ReactDOMFactories;
 
 
 
-var _assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+var _assign = __webpack_require__(/*! object-assign */ "./node_modules/next/dist/build/polyfills/object-assign.js");
 
 var ReactCurrentOwner = __webpack_require__(/*! ./ReactCurrentOwner */ "./node_modules/react-ionicons/node_modules/react/lib/ReactCurrentOwner.js");
 
@@ -16772,7 +17111,7 @@ module.exports = ReactPropTypesSecret;
 
 
 
-var _assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+var _assign = __webpack_require__(/*! object-assign */ "./node_modules/next/dist/build/polyfills/object-assign.js");
 
 var ReactComponent = __webpack_require__(/*! ./ReactComponent */ "./node_modules/react-ionicons/node_modules/react/lib/ReactComponent.js");
 var ReactNoopUpdateQueue = __webpack_require__(/*! ./ReactNoopUpdateQueue */ "./node_modules/react-ionicons/node_modules/react/lib/ReactNoopUpdateQueue.js");
@@ -17569,12 +17908,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_ea92a4d9664833a26066 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_5f137288facb1107b491 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ea92a4d9664833a26066 */ "dll-reference dll_ea92a4d9664833a26066"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491 */ "dll-reference dll_5f137288facb1107b491"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -23143,6 +23482,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
@@ -23172,12 +23512,23 @@ function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
     key: "render",
     value: function render() {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_8__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_Slider__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_Slider__WEBPACK_IMPORTED_MODULE_9__["default"], {
         sliderBgImage: "../img/hero-bg.jpg",
         sliderTitle: "Toronto\u2019s #1 Rated Maid Service!",
         sliderSubTitle: "Serving Humber Bay and Liberty Village.",
         sliderButtonUrl: "/services",
-        sliderButtonTxt: "Book Now"
+        sliderButtonTxt: "Book Now",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
       }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_HowItWorks__WEBPACK_IMPORTED_MODULE_10__["default"], {
         howTitle: "How it works",
         howSubTitle: "This subtitle can be changed to whatever you want it to be",
@@ -23189,7 +23540,12 @@ function (_React$Component) {
         item2text: "Guaranteed quality or we will come back and clean any missed area for free.",
         item3img: "img/relaxing.png",
         item3name: "3) You Relax",
-        item3text: "Enjoy your sparkling clean home, and look forward to the next cleaning."
+        item3text: "Enjoy your sparkling clean home, and look forward to the next cleaning.",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
       }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_ServiceHome__WEBPACK_IMPORTED_MODULE_12__["default"], {
         serviceHomeBgImage: "img/hero-bg.jpg",
         serviceHomeTitle: "Trusted Toronto Cleaners",
@@ -23197,19 +23553,34 @@ function (_React$Component) {
         item1name: "Experienced and professional cleaners",
         item2name: "Given a background and reference check",
         item3name: "English speaking and screened by us to ensure",
-        item4name: "Selected through an in-person interview"
+        item4name: "Selected through an in-person interview",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
       }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_Wrapper__WEBPACK_IMPORTED_MODULE_14__["default"], {
         wrapperTitle: "Book on the go",
         wrapperSubTitle: "Our website is responsive and mobile friendly so you can book your appointment anywhere. We want to offer the same user experience to both desktop and mobile users.",
         wrapperPara1: "We offer a wide range of customizable cleaning services. In order to customize your own personal cleaning plan, you can view a full list our services on our Services/Booking page.",
         wrapperPara2: "We understand that things happen and you may need to cancel your appointment. We will cancel all charges for your scheduled appointment if you can provide us with notice of cancellation witin (1) day of the decided date and time.",
-        wrapperImage: "img/mobile.png"
+        wrapperImage: "img/mobile.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        },
+        __self: this
       }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_11__["default"], {
         callTitle: "You're one step away from a clean and happy home!",
         callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
         callLinkUrl: "/services",
         callLink: "View our services",
-        callImage: "img/hero-bg.jpg"
+        callImage: "img/hero-bg.jpg",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
       }));
     }
   }]);
@@ -23262,14 +23633,14 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ "dll-reference dll_ea92a4d9664833a26066":
+/***/ "dll-reference dll_5f137288facb1107b491":
 /*!*******************************************!*\
-  !*** external "dll_ea92a4d9664833a26066" ***!
+  !*** external "dll_5f137288facb1107b491" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_ea92a4d9664833a26066;
+module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
