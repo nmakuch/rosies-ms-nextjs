@@ -18,6 +18,7 @@ export default () => {
     message: "",
     radioValue: "",
     radioLabel: "",
+    cleanerMessage: "",
   });
 
   let radioValues1 = [52.5, 70.0, 87.5, 105.0, 122.5, 140.0];
@@ -51,6 +52,7 @@ export default () => {
         message: "",
         radioValue: "",
         radioLabel: "",
+        cleanerMessage: "",
       });
     } else {
       setStatus({
@@ -233,7 +235,9 @@ export default () => {
                                     type="radio"
                                     value={radioValue}
                                     id={radioArrayId1[i]}
-                                    checked={inputs.radioValue === `${radioValue}`}
+                                    checked={
+                                      inputs.radioValue === `${radioValue}`
+                                    }
                                     onChange={handleRadio}
                                   />
                                   <p className="radio-label">
@@ -244,6 +248,30 @@ export default () => {
                               </li>
                             );
                           })}
+                          <li>
+                            <div
+                              css={css`
+                                textarea {
+                                  height: 135px !important;
+                                }
+                              `}
+                              className="form-group-2"
+                            >
+                              <h4>
+                                Please leave instructions for your cleaner
+                              </h4>
+                              <textarea
+                                id="cleanerMessage"
+                                name="cleanerMessage"
+                                onChange={handleOnChange}
+                                required
+                                className="form-control"
+                                value={inputs.cleanerMessage}
+                                rows="3"
+                                placeholder="Your message"
+                              />
+                            </div>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -252,8 +280,9 @@ export default () => {
               </div>
             </form>
           </div>
-          <h1>{inputs.radioValue}</h1>
-          <h1>{inputs.radioLabel}</h1>
+          <h2>{inputs.radioValue}</h2>
+          <h2>{inputs.radioLabel}</h2>
+          <h2>{inputs.cleanerMessage}</h2>
         </section>
         <form onSubmit={handleOnSubmit}>
           <label htmlFor="email">Email</label>

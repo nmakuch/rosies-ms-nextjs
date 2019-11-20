@@ -2835,7 +2835,8 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     email: "",
     message: "",
     radioValue: "",
-    radioLabel: ""
+    radioLabel: "",
+    cleanerMessage: ""
   });
   let radioValues1 = [52.5, 70.0, 87.5, 105.0, 122.5, 140.0];
   let radioLabels1 = ["1.5 hour session at $35/hour ($52.50)", "2.0 hour session at $35/hour ($70.00)", "2.5 hour session at $35/hour ($87.50)", "3.0 hour session at $35/hour ($105.00)", "3.5 hour session at $35/hour ($122.50)", "4.0 hour session at $35/hour ($140.00)"];
@@ -2855,7 +2856,8 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
         email: "",
         message: "",
         radioValue: "",
-        radioLabel: ""
+        radioLabel: "",
+        cleanerMessage: ""
       });
     } else {
       setStatus({
@@ -2918,7 +2920,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 107
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -2926,13 +2928,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     globalHeaderImage: "../img/services-bg.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 108
     },
     __self: undefined
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("main", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 112
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("section", {
@@ -2950,21 +2952,21 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
           `,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 113
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 127
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "col-md-8 offset-md-2 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 128
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
@@ -2974,19 +2976,19 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 129
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133
+      lineNumber: 135
     },
     __self: undefined
   }, "We offer a variety of cleaning options"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 136
     },
     __self: undefined
   }, "We offer the most customizable plans that let you choose exactly what you want. Whether you want your entire home deep cleaned by one of our professional staff, or simply want some help with the dreaded kitchen & bathroom, we have you covered. Choose from our pre-structured plans that cover all the standard items, or select our hourly plan to have complete control of how the time is spent."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("section", {
@@ -3051,35 +3053,35 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     id: "service-form",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147
+      lineNumber: 149
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 208
+      lineNumber: 210
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("form", {
     method: "post",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 209
+      lineNumber: 211
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 210
+      lineNumber: 212
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "col-md-8 offset-md-2 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 211
+      lineNumber: 213
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
@@ -3089,7 +3091,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 212
+      lineNumber: 214
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
@@ -3099,46 +3101,46 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "col-md-12 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 218
+      lineNumber: 220
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 224
+      lineNumber: 226
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 225
+      lineNumber: 227
     },
     __self: undefined
   }, "1) Hourly cleaning packages"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 226
+      lineNumber: 228
     },
     __self: undefined
   }, "Our regular cleaning rate is $35/hour"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 227
+      lineNumber: 229
     },
     __self: undefined
   }, radioValues1.map((radioValue, i) => {
     return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 230
+        lineNumber: 232
       },
       __self: undefined
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", {
       className: "checkbox-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 231
+        lineNumber: 233
       },
       __self: undefined
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
@@ -3149,48 +3151,92 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       onChange: handleRadio,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 232
+        lineNumber: 234
       },
       __self: undefined
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
       className: "radio-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 239
+        lineNumber: 243
       },
       __self: undefined
     }, radioLabels1[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("span", {
       className: "checkbox-custom circular",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 242
+        lineNumber: 246
       },
       __self: undefined
     })));
-  }))))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h1", {
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 255
+      lineNumber: 251
     },
     __self: undefined
-  }, inputs.radioValue), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h1", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+                                textarea {
+                                  height: 135px !important;
+                                }
+                              `,
+    className: "form-group-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 256
+      lineNumber: 252
     },
     __self: undefined
-  }, inputs.radioLabel)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("form", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h4", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 260
+    },
+    __self: undefined
+  }, "Please leave instructions for your cleaner"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("textarea", {
+    id: "cleanerMessage",
+    name: "cleanerMessage",
+    onChange: handleOnChange,
+    required: true,
+    className: "form-control",
+    value: inputs.cleanerMessage,
+    rows: "3",
+    placeholder: "Your message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 263
+    },
+    __self: undefined
+  }))))))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 283
+    },
+    __self: undefined
+  }, inputs.radioValue), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 284
+    },
+    __self: undefined
+  }, inputs.radioLabel), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 285
+    },
+    __self: undefined
+  }, inputs.cleanerMessage)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("form", {
     onSubmit: handleOnSubmit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 258
+      lineNumber: 287
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", {
     htmlFor: "email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 259
+      lineNumber: 288
     },
     __self: undefined
   }, "Email"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
@@ -3201,14 +3247,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     value: inputs.email,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 260
+      lineNumber: 289
     },
     __self: undefined
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("label", {
     htmlFor: "message",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 267
+      lineNumber: 296
     },
     __self: undefined
   }, "Message"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("textarea", {
@@ -3218,7 +3264,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     value: inputs.message,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 268
+      lineNumber: 297
     },
     __self: undefined
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("button", {
@@ -3226,21 +3272,21 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     disabled: status.submitting,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 274
+      lineNumber: 303
     },
     __self: undefined
   }, !status.submitting ? !status.submitted ? "Submit" : "Submitted" : "Submitting...")), status.info.error && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "error",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 283
+      lineNumber: 312
     },
     __self: undefined
   }, "Error: ", status.info.msg), !status.info.error && status.info.msg && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "success",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 286
+      lineNumber: 315
     },
     __self: undefined
   }, status.info.msg)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -3251,7 +3297,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     callImage: "img/services-bg.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 289
+      lineNumber: 318
     },
     __self: undefined
   }));
