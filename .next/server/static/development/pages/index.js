@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2581,7 +2581,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   render() {
     return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Slider__WEBPACK_IMPORTED_MODULE_4__["default"], {
       sliderBgImage: "../img/hero-bg.jpg",
-      sliderTitle: "Toronto\u2019s #1 Rated Maid Service",
+      sliderTitle: "Toronto\u2019s #1 Rated Maid Service!",
       sliderSubTitle: "Serving Humber Bay and Liberty Village.",
       sliderButtonUrl: "/services",
       sliderButtonTxt: "Book Now"
@@ -4037,7 +4037,7 @@ footer .footer-manu ul li a:hover {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

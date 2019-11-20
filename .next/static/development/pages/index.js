@@ -23174,7 +23174,7 @@ function (_React$Component) {
     value: function render() {
       return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_8__["default"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_Slider__WEBPACK_IMPORTED_MODULE_9__["default"], {
         sliderBgImage: "../img/hero-bg.jpg",
-        sliderTitle: "Toronto\u2019s #1 Rated Maid Service",
+        sliderTitle: "Toronto\u2019s #1 Rated Maid Service!",
         sliderSubTitle: "Serving Humber Bay and Liberty Village.",
         sliderButtonUrl: "/services",
         sliderButtonTxt: "Book Now"
@@ -23250,7 +23250,7 @@ var appStyles = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templ
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!***********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fnickmakuch%2FDocuments%2FCode%2Frosies-ms-nextjs%2Fpages%2Findex.js ***!
   \***********************************************************************************************************************************************/
@@ -23273,5 +23273,5 @@ module.exports = dll_ea92a4d9664833a26066;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
