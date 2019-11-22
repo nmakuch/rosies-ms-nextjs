@@ -25,7 +25,7 @@ export default async function(req, res) {
     unit,
     address,
     buzzer,
-    materials,
+    materials
   } = req.body;
 
   let grandTotalArr = [];
@@ -40,7 +40,7 @@ export default async function(req, res) {
     reducedArr * 1.13 + radioLabel * 1.13
   );
 
-  const content = {
+  const contentTo = {
     to: "makuch.nick@gmail.com",
     from: email,
     subject: `New Message From ${name}`,
@@ -86,8 +86,39 @@ export default async function(req, res) {
         <p>${grandTotalSumHST}</p>`
   };
 
+  const contentFrom = {
+    to: email,
+    from: "rosiesmaidservice@gmail.com",
+    subject: `Rosie's Maid Service - Appointment Booking`,
+    html: `
+    <h1>Hi ${name}, thanks for booking an appointment with Rosie's Maid Service!</h1>
+    <p>We will contact you in the next 2 hours to confirm your appointment (unless we are experiencing periods of high traffic</p>
+    <br /><h2>You have selected the following date/time and cleaning package:</h2>
+
+        <h3>Date and time</h3>
+        <p>${startDate} at ${startTime}</p>
+
+        <h3>Selected plan:</h3>
+        <p>${radioValue}</p>
+
+        <h3>Add Ons:</h3>
+        ${labelsAddOns3[0] ? `<p>${labelsAddOns3[0]}</p>` : ""}
+        ${labelsAddOns3[1] ? `<p>${labelsAddOns3[1]}</p>` : ""}
+        ${labelsAddOns3[2] ? `<p>${labelsAddOns3[2]}</p>` : ""}
+        ${labelsAddOns3[3] ? `<p>${labelsAddOns3[3]}</p>` : ""}
+        ${labelsAddOns3[4] ? `<p>${labelsAddOns3[4]}</p>` : ""}
+        ${labelsAddOns3[5] ? `<p>${labelsAddOns3[5]}</p>` : ""}
+
+        <h3>Grand Total</h3>
+        <p>${grandTotalSumHST}</p>
+        
+        <h3>Contact us if you have any questions or concers</h3>
+        <p>(437) 777-6243</p>`
+  };
+
   try {
-    await sgMail.send(content);
+    await sgMail.send(contentTo);
+    await sgMail.send(contentFrom);
     res.status(200).send("Message sent successfully.");
   } catch (error) {
     console.log("ERROR", error);

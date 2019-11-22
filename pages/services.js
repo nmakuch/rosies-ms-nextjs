@@ -1288,7 +1288,7 @@ export default () => {
                     {!status.submitting
                       ? !status.submitted
                         ? "Book now"
-                        : "Booked"
+                        : "Your appointment has been booked!"
                       : "Booking..."}
                   </button>
                 </div>
@@ -1296,12 +1296,6 @@ export default () => {
             </form>
           </div>
         </section>
-        {status.info.error && (
-          <div className="error">Error: {status.info.msg}</div>
-        )}
-        {!status.info.error && status.info.msg && (
-          <div className="success">{status.info.msg}</div>
-        )}
       </main>
       <CallToAction
         callTitle="You're one step away from a clean and happy home!"
