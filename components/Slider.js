@@ -20,6 +20,10 @@ class Header extends React.Component {
           p {
             font-size: 18px !important;
           }
+
+          h1 {
+            font-size: 40px !important;
+          }
         }`}
       >
         <div className="container">

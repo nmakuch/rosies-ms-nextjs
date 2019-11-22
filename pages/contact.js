@@ -119,7 +119,7 @@ export default () => {
                       margin-bottom: 75px;
                     `}
                   >
-                    <strong>Phone number:</strong> 1 (234) 567-8910
+                    <strong>Phone number:</strong> (437) 777-6243
                   </p>
 
                   <h2>Or submit a quick message</h2>
@@ -184,6 +184,11 @@ export default () => {
                                   placeholder="Your message"
                                 />
                               </div>
+                              {status.info.error && (
+                                <div className="error">
+                                  Error: {status.info.msg}
+                                </div>
+                              )}
                               <button
                                 type="submit"
                                 disabled={status.submitting}
@@ -191,7 +196,7 @@ export default () => {
                                 {!status.submitting
                                   ? !status.submitted
                                     ? "Submit"
-                                    : "Submitted"
+                                    : "Your message has been submitted"
                                   : "Submitting..."}
                               </button>
                             </form>
@@ -205,12 +210,6 @@ export default () => {
             </div>
           </div>
         </section>
-        {status.info.error && (
-          <div className="error">Error: {status.info.msg}</div>
-        )}
-        {!status.info.error && status.info.msg && (
-          <div className="success">{status.info.msg}</div>
-        )}
       </main>
       <CallToAction
         callTitle="You're one step away from a clean and happy home!"
