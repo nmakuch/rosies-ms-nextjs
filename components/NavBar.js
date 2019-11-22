@@ -82,6 +82,10 @@ class Nav extends Component {
                 <a>Services/Booking</a>
               </Link>
 
+              <Link href="/terms" as="/terms">
+                <a>Terms</a>
+              </Link>
+
               <Link href="/faq" as="/faq">
                 <a>FAQ</a>
               </Link>

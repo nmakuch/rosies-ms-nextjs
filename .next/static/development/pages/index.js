@@ -1194,8 +1194,8 @@ function (_Component) {
         },
         __self: this
       }, "Services/Booking")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
-        href: "/faq",
-        as: "/faq",
+        href: "/terms",
+        as: "/terms",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 85
@@ -1207,9 +1207,9 @@ function (_Component) {
           lineNumber: 86
         },
         __self: this
-      }, "FAQ")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
-        href: "/contact",
-        as: "/contact",
+      }, "Terms")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        href: "/faq",
+        as: "/faq",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 89
@@ -1219,6 +1219,20 @@ function (_Component) {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 90
+        },
+        __self: this
+      }, "FAQ")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        href: "/contact",
+        as: "/contact",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 93
+        },
+        __self: this
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 94
         },
         __self: this
       }, "Contact Us"))))));

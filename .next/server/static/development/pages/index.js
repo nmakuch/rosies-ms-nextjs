@@ -1068,8 +1068,8 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     }, "Services/Booking")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "/faq",
-      as: "/faq",
+      href: "/terms",
+      as: "/terms",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 85
@@ -1081,9 +1081,9 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 86
       },
       __self: this
-    }, "FAQ")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "/contact",
-      as: "/contact",
+    }, "Terms")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: "/faq",
+      as: "/faq",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 89
@@ -1093,6 +1093,20 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 90
+      },
+      __self: this
+    }, "FAQ")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: "/contact",
+      as: "/contact",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 93
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 94
       },
       __self: this
     }, "Contact Us"))))));
