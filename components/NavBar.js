@@ -56,9 +56,9 @@ class Nav extends Component {
             <span className="navbar-toggler-icon" />
           </button>
           <div className={`${classOne}`} id="navbarResponsive">
-            <ul
+            <div
               css={css`
-                li a {
+                a {
                   margin-left: 50px;
                   color: #333;
                   font-size: 16px;
@@ -66,41 +66,30 @@ class Nav extends Component {
                 }
 
                 @media only screen and (max-width: 992px) {
-                  li a {
+                  a {
                     margin-left: 0;
-                  }
-
-                  li {
-                      margin-bottom: 20px;
+                    margin-bottom: 20px;
                   }
                 }
               `}
               className="navbar-nav ml-auto"
             >
-              <li className="nav-item active">
-                <Link href="/" as="/">
-                  <a>Home</a>
-                </Link>
-              </li>
+              <Link href="/" as="/">
+                <a>Home</a>
+              </Link>
 
-              <li className="nav-item">
-                <Link href="/services" as="/services">
-                  <a>Services/Booking</a>
-                </Link>
-              </li>
+              <Link as="/services">
+                <a>Services/Booking</a>
+              </Link>
 
-              <li className="nav-item">
-                <Link href="/faq" as="/faq">
-                  <a>FAQ</a>
-                </Link>
-              </li>
+              <Link href="/faq" as="/faq">
+                <a>FAQ</a>
+              </Link>
 
-              <li className="nav-item">
-                <Link href="/contact" as="/contact">
-                  <a>Contact Us</a>
-                </Link>
-              </li>
-            </ul>
+              <Link href="/contact" as="/contact">
+                <a>Contact Us</a>
+              </Link>
+            </div>
           </div>
         </div>
       </nav>

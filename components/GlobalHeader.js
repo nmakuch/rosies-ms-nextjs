@@ -8,7 +8,16 @@ class GlobalHeader extends React.Component {
     return (
       <section
         id="global-header"
-        css={css`background-image: url('${this.props.globalHeaderImage}');`}
+        css={css`background-image: url('${this.props.globalHeaderImage}');
+        @media only screen and (max-width: 767px) {
+          p {
+            font-size: 18px !important;
+          }
+
+          h1 {
+            font-size: 40px !important;
+          }
+        }`}
       >
         <div className="container">
           <div className="row">

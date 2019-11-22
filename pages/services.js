@@ -1,186 +1,320 @@
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 /** @jsx jsx */
-
 import { jsx, css } from "@emotion/core";
-import { theme } from "../styles/styles";
-import Link from "next/link";
+import React, { useState } from "react";
 import Layout from "../components/Layout";
-import GlobalHeader from "../components/GlobalHeader";
 import CallToAction from "../components/CallToAction";
+import GlobalHeader from "../components/GlobalHeader";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
-const formatter = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  minimumFractionDigits: 2
-});
+export default () => {
+  const [status, setStatus] = useState({
+    submitted: false,
+    submitting: false,
+    info: { error: false, msg: null }
+  });
 
-class CheckBox extends React.Component {
-  render() {
-    return (
-      <React.Fragment>
-        <label className="checkbox-label">
-          <input
-            type="checkbox"
-            id={this.props.id}
-            value={this.props.value}
-            onChange={this.props.onChange}
-          />
-          <p className="radio-label">{this.props.label}</p>
-          <span className="checkbox-custom rectangular"></span>
-        </label>
-      </React.Fragment>
-    );
-  }
-}
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 2
+  });
 
-class Services extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      optionsAddOns3: [],
-      labelsAddOns3: [],
-      selectBoxValue1: [],
-      radio1: "",
-      radioLabel: 0.0
-    };
-  }
+  const [inputs, setInputs] = useState({
+    email: "",
+    name: "",
+    phone: "",
+    radioValue: "",
+    radioLabel: "",
+    cleanerMessage: "",
+    optionsAddOns3: [],
+    labelsAddOns3: [],
+    startDate: "",
+    startTime: "",
+    pets: "",
+    attendance: "",
+    buzzer: "",
+    address: "",
+    unit: "",
+    materials: "",
+    grandTotal: ""
+  });
 
-  radioChange(event) {
-    this.setState({
-      radio1: event.target.value,
-      radioLabel: event.target.id
+  let addOnsLabels3 = inputs.labelsAddOns3;
+  let addOnsCost3 = inputs.optionsAddOns3;
+
+  let checkBoxArrayAddOns3 = [35.0, 20.0, 20.0, 20.0, 15.0, 20.0];
+  let checkBoxArrayLabels3 = [
+    "Deep clean - wall spot cleaning, baseboards, inside of kitchen & bathroom cabinets ($35.00)",
+    "Big task - oven ($20.00)",
+    "Big task - inside fridge ($20.00)",
+    "Big task - windows ($20.00)",
+    "Additional powder room ($15.00)",
+    "Additional bathroom ($20.00)"
+  ];
+
+  let checkBoxArrayIds3 = [
+    "Deep Clean - Wall, baseboards, kitchen...",
+    "Big task - Oven",
+    "Big task - Inside fridge",
+    "Big task - Windows",
+    "Additional powder room",
+    "Additional bathroom"
+  ];
+
+  let radioValues1 = [52.5, 70.0, 87.5, 105.0, 122.0, 140.0];
+  let radioLabels1 = [
+    "1.5 hour session at $35/hour ($52.50)",
+    "2.0 hour session at $35/hour ($70.00)",
+    "2.5 hour session at $35/hour ($87.50)",
+    "3.0 hour session at $35/hour ($105.00)",
+    "3.5 hour session at $35/hour ($122.50)",
+    "4.0 hour session at $35/hour ($140.00)"
+  ];
+
+  let radioArrayId1 = [
+    "1.5 hour session at $35/hour",
+    "2.0 hour session at $35/hour",
+    "2.5 hour session at $35/hour",
+    "3.0 hour session at $35/hour",
+    "3.5 hour session at $35/hour",
+    "4.0 hour session at $35/hour"
+  ];
+
+  let radioValues2 = [54.0, 90.0, 108.0];
+  let radioLabels2 = [
+    "Basic (1.5 hours): kitchen, bathroom, all floors  ($54.00)",
+    "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($90.00)",
+    "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($108.00)"
+  ];
+
+  let radioArrayId2 = [
+    "Basic (1.5 hours)",
+    "Basic plus (2.5 hours)",
+    "Complete (3.0 hours)"
+  ];
+
+  let radioValues3 = [60.0, 100.0, 140.0];
+  let radioLabels3 = [
+    "Basic (1.5 hours): kitchen, bathroom, all floors  ($60.00)",
+    "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($100.00)",
+    "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($140.00)"
+  ];
+
+  let radioArrayId3 = [
+    "x2 Basic (1.5 hours)",
+    "x2 Basic plus (2.5 hours)",
+    "x2 Complete (3.0 hours)"
+  ];
+
+  let radioValues4 = [
+    "8:00am - 10:00am",
+    "10:00am - 12:00pm",
+    "12:00pm - 2:00pm",
+    "2:00pm - 4:00pm"
+  ];
+
+  let grandTotalArr = [];
+
+  let sumOptionsAddOns3 = inputs.optionsAddOns3.reduce((a, b) => a + b, 0);
+
+  grandTotalArr.push(sumOptionsAddOns3);
+
+  let reducedArr = grandTotalArr.reduce((a, b) => a + b, 0);
+
+  let grandTotalHST = formatter.format(
+    reducedArr * 0.13 + inputs.radioLabel * 0.13
+  );
+
+  let grandTotalSumHST = formatter.format(
+    reducedArr * 1.13 + inputs.radioLabel * 1.13
+  );
+
+  const handleResponse = (status, msg) => {
+    if (status === 200) {
+      setStatus({
+        submitted: true,
+        submitting: false,
+        info: { error: false, msg: msg }
+      });
+      setInputs({
+        email: "",
+        name: "",
+        phone: "",
+        radioValue: "",
+        radioLabel: "",
+        cleanerMessage: "",
+        optionsAddOns3: [],
+        labelsAddOns3: [],
+        startDate: "",
+        startTime: "",
+        pets: "",
+        attendance: "",
+        buzzer: "",
+        address: "",
+        unit: "",
+        materials: "",
+        grandTotal: ""
+      });
+    } else {
+      setStatus({
+        info: { error: true, msg: msg }
+      });
+    }
+  };
+
+  const handleOnChange = e => {
+    e.persist();
+    setInputs(prev => ({
+      ...prev,
+      [e.target.id]: e.target.value
+    }));
+    setStatus({
+      submitted: false,
+      submitting: false,
+      info: { error: false, msg: null }
     });
-  }
+  };
 
-  changeEvent3(event) {
-    let checkedArrayAddOns3 = this.state.optionsAddOns3;
-    let checkedArrayIds3 = this.state.labelsAddOns3;
-    let selectedId3 = event.target.id;
-    let selectedValue3 = event.target.value;
+  const handleRadio = e => {
+    e.persist();
+    if (e.target.value)
+      setInputs(prev => ({
+        ...prev,
+        radioValue: e.target.value,
+        radioLabel: e.target.id
+      }));
+    setStatus({
+      submitted: false,
+      submitting: false,
+      info: { error: false, msg: null }
+    });
+  };
 
-    if (event.target.checked === true) {
+  const handleYesNo1 = e => {
+    e.persist();
+    if (e.target.value)
+      setInputs(prev => ({
+        ...prev,
+        pets: e.target.value
+      }));
+    setStatus({
+      submitted: false,
+      submitting: false,
+      info: { error: false, msg: null }
+    });
+  };
+
+  const handleYesNo2 = e => {
+    e.persist();
+    if (e.target.value)
+      setInputs(prev => ({
+        ...prev,
+        attendance: e.target.value
+      }));
+    setStatus({
+      submitted: false,
+      submitting: false,
+      info: { error: false, msg: null }
+    });
+  };
+
+  const handleYesNo3 = e => {
+    e.persist();
+    if (e.target.value)
+      setInputs(prev => ({
+        ...prev,
+        materials: e.target.value
+      }));
+    setStatus({
+      submitted: false,
+      submitting: false,
+      info: { error: false, msg: null }
+    });
+  };
+
+  const handleCheckBox = e => {
+    let checkedArrayAddOns3 = inputs.optionsAddOns3;
+    let checkedArrayIds3 = inputs.labelsAddOns3;
+    let radioLabel = inputs.radioLabel;
+    let radioValue = inputs.radioValue;
+    let selectedId3 = e.target.id;
+    let selectedValue3 = e.target.value;
+    e.persist();
+
+    if (e.target.checked === true) {
       checkedArrayIds3.push(selectedId3);
       checkedArrayAddOns3.push(parseFloat(selectedValue3));
-      this.setState({
+
+      setInputs(prev => ({
+        ...prev,
         optionsAddOns3: checkedArrayAddOns3,
-        labelsAddOns3: checkedArrayIds3
-      });
+        labelsAddOns3: checkedArrayIds3,
+        radioLabel: radioLabel,
+        radioValue: radioValue
+      }));
     } else {
       let valueIndex3 = checkedArrayAddOns3.indexOf(selectedValue3);
       checkedArrayAddOns3.splice(valueIndex3, 1);
       checkedArrayIds3.splice(valueIndex3, 1);
 
-      this.setState({
+      setInputs({
         optionsAddOns3: checkedArrayAddOns3,
-        labelsAddOns3: checkedArrayIds3
+        labelsAddOns3: checkedArrayIds3,
+        radioLabel: radioLabel,
+        radioValue: radioValue
       });
     }
-  }
+  };
 
-  render() {
-    let addOnsLabels3 = this.state.labelsAddOns3;
-    let addOnsCost3 = this.state.optionsAddOns3;
+  const handleOnSubmit = async e => {
+    e.preventDefault();
+    setStatus(prevStatus => ({ ...prevStatus, submitting: true }));
+    const res = await fetch("/api/booking", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(inputs)
+    });
+    const text = await res.text();
+    handleResponse(res.status, text);
+  };
 
-    let checkBoxArrayAddOns3 = [35.0, 20.0, 20.0, 20.0, 15.0, 20.0];
-    let checkBoxArrayLabels3 = [
-      "Deep clean - wall spot cleaning, baseboards, inside of kitchen & bathroom cabinets ($35.00)",
-      "Big task - oven ($20.00)",
-      "Big task - inside fridge ($20.00)",
-      "Big task - windows ($20.00)",
-      "Additional powder room ($15.00)",
-      "Additional bathroom ($20.00)"
-    ];
+  const handleDate = date => {
+    setInputs(prev => ({
+      ...prev,
+      startDate: date
+    }));
+    setStatus({
+      submitted: false,
+      submitting: false,
+      info: { error: false, msg: null }
+    });
+  };
 
-    let checkBoxArrayIds3 = [
-      "Deep Clean - Wall, baseboards, kitchen...",
-      "Big task - Oven",
-      "Big task - Inside fridge",
-      "Big task - Windows",
-      "Additional powder room",
-      "Additional bathroom"
-    ];
+  const handleTime = e => {
+    e.persist();
+    if (e.target.value)
+      setInputs(prev => ({
+        ...prev,
+        startTime: e.target.value
+      }));
+    setStatus({
+      submitted: false,
+      submitting: false,
+      info: { error: false, msg: null }
+    });
+  };
 
-    let radioValues1 = [52.5, 70.0, 87.5, 105.0, 122.5, 140.0];
-    let radioLabels1 = [
-      "1.5 hour session at $35/hour ($52.50)",
-      "2.0 hour session at $35/hour ($70.00)",
-      "2.5 hour session at $35/hour ($87.50)",
-      "3.0 hour session at $35/hour ($105.00)",
-      "3.5 hour session at $35/hour ($122.50)",
-      "4.0 hour session at $35/hour ($140.00)"
-    ];
-
-    let radioArrayId1 = [
-      "1.5 hour session at $35/hour",
-      "2.0 hour session at $35/hour",
-      "2.5 hour session at $35/hour",
-      "3.0 hour session at $35/hour",
-      "3.5 hour session at $35/hour",
-      "4.0 hour session at $35/hour"
-    ];
-
-    let radioValues2 = [54.0, 90.0, 108.0];
-    let radioLabels2 = [
-      "Basic (1.5 hours): kitchen, bathroom, all floors  ($54.00)",
-      "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($90.00)",
-      "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($108.00)"
-    ];
-
-    let radioArrayId2 = [
-      "Basic (1.5 hours)",
-      "Basic plus (2.5 hours)",
-      "Complete (3.0 hours)"
-    ];
-
-    let radioValues3 = [60.0, 100.0, 140.0];
-    let radioLabels3 = [
-      "Basic (1.5 hours): kitchen, bathroom, all floors  ($60.00)",
-      "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($100.00)",
-      "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($140.00)"
-    ];
-
-    let radioArrayId3 = [
-      "x2 Basic (1.5 hours)",
-      "x2 Basic plus (2.5 hours)",
-      "x2 Complete (3.0 hours)"
-    ];
-
-    let grandTotalArr = [];
-
-    let outputCheckboxesAddOns3 = checkBoxArrayAddOns3.map((number, i) => {
-      return (
-        <CheckBox
-          value={number}
-          id={checkBoxArrayIds3[i]}
-          onChange={this.changeEvent3.bind(this)}
-          label={checkBoxArrayLabels3[i]}
-        />
-      );
-    }, this);
-
-    let sumOptionsAddOns3 = this.state.optionsAddOns3.reduce(
-      (a, b) => a + b,
-      0
-    );
-
-    grandTotalArr.push(sumOptionsAddOns3);
-
-    let reducedArr = grandTotalArr.reduce((a, b) => a + b, 0);
-
-    let grandTotalHST = formatter.format(
-      reducedArr * 0.13 + this.state.radio1 * 0.13
-    );
-
-    let grandTotalSumHST = formatter.format(
-      reducedArr * 1.13 + this.state.radio1 * 1.13
-    );
-
-    return (
-      <Layout>
-        <GlobalHeader
-          globalHeaderTitle="Services and Booking"
-          globalHeaderImage="../img/services-bg.jpg"
-        />
+  return (
+    <Layout>
+      <GlobalHeader
+        globalHeaderTitle="SERVICES AND BOOKING"
+        globalHeaderImage="../img/services-bg.jpg"
+      />
+      <main>
         <section
           css={css`
             margin-top: 75px;
@@ -199,7 +333,7 @@ class Services extends React.Component {
             <div className="col-md-8 offset-md-2 col-sm-12">
               <div
                 css={css`
-                  padding: 0 15px;
+                  padding: 0 25px;
                 `}
                 className="row"
               >
@@ -233,7 +367,7 @@ class Services extends React.Component {
             }
 
             h4 {
-              font-size: 18px;
+              font-size: 16px;
               font-weight: 600;
               margin-bottom: 25px;
             }
@@ -279,7 +413,7 @@ class Services extends React.Component {
           id="service-form"
         >
           <div className="block">
-            <form method="post">
+            <form onSubmit={handleOnSubmit}>
               <div className="container">
                 <div className="col-md-8 offset-md-2 col-sm-12">
                   <div
@@ -291,12 +425,13 @@ class Services extends React.Component {
                     <div
                       css={css`
                         padding: 0 5px !important;
+                        margin-bottom: 50px;
                       `}
                       className="col-md-12 col-sm-12"
                     >
                       <div className="form-group">
-                        <h2>1) Hourly cleaning packages</h2>
-                        <h3>Our regular cleaning rate is $35/hour</h3>
+                        <h2>Select your cleaning package</h2>
+                        <h3>1) Hourly cleaning packages</h3>
                         <ul>
                           {radioValues1.map((radioValue, i) => {
                             return (
@@ -304,12 +439,13 @@ class Services extends React.Component {
                                 <label className="checkbox-label">
                                   <input
                                     type="radio"
-                                    value={radioValue}
-                                    id={radioArrayId1[i]}
+                                    value={radioArrayId1[i]}
+                                    id={radioValue}
                                     checked={
-                                      this.state.radio1 === `${radioValue}`
+                                      inputs.radioValue ===
+                                      `${radioArrayId1[i]}`
                                     }
-                                    onChange={this.radioChange.bind(this)}
+                                    onChange={handleRadio}
                                   />
                                   <p className="radio-label">
                                     {radioLabels1[i]}
@@ -319,30 +455,22 @@ class Services extends React.Component {
                               </li>
                             );
                           })}
-                          <li>
-                            <div className="form-group-2">
-                              <h4>
-                                Please leave instructions for your cleaner:
-                              </h4>
-                              <textarea
-                                name="hourlyMessage"
-                                id="hourlyMessage"
-                                className="form-control"
-                                rows="3"
-                                css={css`
-                                  height: 135px !important;
-                                `}
-                                placeholder="Your message"
-                              ></textarea>
-                            </div>
+                          <li
+                            css={css`
+                              h3 {
+                                margin: 75px 0;
+                              }
+                            `}
+                          >
+                            <h3>OR</h3>
                           </li>
                           <li>
-                            <h2>2) Pre-structured cleaning package</h2>
+                            <h3>2) Prestructured cleaning packages</h3>
                           </li>
                           <li>
-                            <h3>
+                            <h4>
                               1 Bedroom or Bachelor up to 600 sq/ft (1 bathroom)
-                            </h3>
+                            </h4>
                           </li>
                           {radioValues2.map((radioValue, i) => {
                             return (
@@ -350,12 +478,13 @@ class Services extends React.Component {
                                 <label className="checkbox-label">
                                   <input
                                     type="radio"
-                                    value={radioValue}
-                                    id={radioArrayId2[i]}
+                                    value={radioArrayId2[i]}
+                                    id={radioValue}
                                     checked={
-                                      this.state.radio1 === `${radioValue}`
+                                      inputs.radioValue ===
+                                      `${radioArrayId2[i]}`
                                     }
-                                    onChange={this.radioChange.bind(this)}
+                                    onChange={handleRadio}
                                   />
                                   <p className="radio-label">
                                     {radioLabels2[i]}
@@ -366,7 +495,7 @@ class Services extends React.Component {
                             );
                           })}
                           <li>
-                            <h3>2 Bedroom up to 1000 sq/ft (1 bathroom)</h3>
+                            <h4>2 Bedroom up to 1000 sq/ft (1 bathroom)</h4>
                           </li>
                           {radioValues3.map((radioValue, i) => {
                             return (
@@ -374,12 +503,13 @@ class Services extends React.Component {
                                 <label className="checkbox-label">
                                   <input
                                     type="radio"
-                                    value={radioValue}
-                                    id={radioArrayId3[i]}
+                                    value={radioArrayId3[i]}
+                                    id={radioValue}
                                     checked={
-                                      this.state.radio1 === `${radioValue}`
+                                      inputs.radioValue ===
+                                      `${radioArrayId3[i]}`
                                     }
-                                    onChange={this.radioChange.bind(this)}
+                                    onChange={handleRadio}
                                   />
                                   <p className="radio-label">
                                     {radioLabels3[i]}
@@ -395,175 +525,653 @@ class Services extends React.Component {
                   </div>
                   <div
                     css={css`
-                      padding: 0 15px;
-                      label {
-                        margin-bottom: 50px;
-                        p {
-                          position: relative;
-                          top: 4px;
-                          left: 50px;
-                        }
-
-                        @media only screen and (max-width: 767px) {
+                      padding: 0 5px !important;
+                      margin-bottom: 50px;
+                    `}
+                    className="col-md-12 col-sm-12"
+                  >
+                    <div
+                      css={css`
+                        padding: 0 15px;
+                        label {
+                          margin-bottom: 50px;
                           p {
-                            line-height: 1.2rem;
-                            top: 8px;
+                            position: relative;
+                            top: 4px;
+                            left: 50px;
+                          }
+
+                          @media only screen and (max-width: 767px) {
+                            p {
+                              line-height: 1.2rem;
+                              top: 8px;
+                            }
                           }
                         }
-                      }
-                    `}
-                    className="row"
-                  >
-                    <h2
+                      `}
+                      className="row"
+                    >
+                      {" "}
+                      <h2
+                        css={css`
+                          margin-bottom: 0 !important;
+                        `}
+                      >
+                        Add ons:
+                      </h2>
+                    </div>
+                    <div
                       css={css`
-                        margin-bottom: 0 !important;
-                        margin-top: 50px;
+                        padding: 0 15px;
+                        label {
+                          margin-bottom: 40px;
+                          p {
+                            position: relative;
+                            top: 4px;
+                            left: 50px;
+                          }
+
+                          @media only screen and (max-width: 767px) {
+                            p {
+                              line-height: 1.2rem;
+                              top: 8px;
+                            }
+                          }
+                        }
+                      `}
+                      className="row"
+                    >
+                      <h3
+                        css={css`
+                          margin-top: 50px;
+                        `}
+                      >
+                        The following can be added to your package:
+                      </h3>
+                      <div className="form-group">
+                        <div>
+                          {checkBoxArrayAddOns3.map((checkBox, i) => {
+                            return (
+                              <label className="checkbox-label">
+                                <input
+                                  type="checkbox"
+                                  id={checkBoxArrayIds3[i]}
+                                  value={checkBox}
+                                  onChange={handleCheckBox}
+                                />
+                                <p className="radio-label">
+                                  {checkBoxArrayLabels3[i]}
+                                </p>
+                                <span className="checkbox-custom rectangular"></span>
+                              </label>
+                            );
+                          })}
+                        </div>
+                        <br />
+                      </div>
+                    </div>
+                    <p>
+                      <strong>Note:</strong> Please refer to our list of
+                      required items to ensure we have the tools to complete
+                      these jobs.{" "}
+                    </p>
+
+                    <p
+                      css={css`
+                        margin-bottom: 75px;
                       `}
                     >
-                      Add ons:
-                    </h2>
-                  </div>
-                  <div
-                    css={css`
-                      padding: 0 15px;
-                      label {
-                        margin-bottom: 40px;
-                        p {
-                          position: relative;
-                          top: 4px;
-                          left: 50px;
-                        }
-
-                        @media only screen and (max-width: 767px) {
-                          p {
-                            line-height: 1.2rem;
-                            top: 8px;
-                          }
-                        }
-                      }
-                    `}
-                    className="row"
-                  >
+                      <strong>Note:</strong> If this is your first time booking
+                      with us, or your home hasn’t been thoroughly cleaned in
+                      the past 30 days, we strongly recommend the “Deep clean”
+                      add on, as this will prepare your home for future regular
+                      cleaning visits.
+                    </p>
+                    <h2>When is this appointment for?</h2>
                     <h3
                       css={css`
-                        margin-top: 50px;
+                        margin-bottom: 10px !important;
                       `}
                     >
-                      The following can be added to your package:
+                      Select a date
                     </h3>
                     <div className="form-group">
-                      <div>{outputCheckboxesAddOns3}</div>
-                      <br />
+                      <DatePicker
+                        selected={inputs.startDate}
+                        onChange={handleDate}
+                        className="form-control"
+                        placeholderText="Click for calendar"
+                        css={css`
+                          margin-bottom: 25px;
+                        `}
+                      />
+                      <h3
+                        css={css`
+                          margin-bottom: 10px !important;
+                        `}
+                      >
+                        Select a time
+                      </h3>
+                      <ul>
+                        {radioValues4.map((radioValue, i) => {
+                          return (
+                            <li>
+                              <label className="checkbox-label">
+                                <input
+                                  type="radio"
+                                  value={radioValue}
+                                  id={radioValue}
+                                  checked={inputs.startTime === `${radioValue}`}
+                                  onChange={handleTime}
+                                />
+                                <p className="radio-label">{radioValue}</p>
+                                <span className="checkbox-custom circular"></span>
+                              </label>
+                            </li>
+                          );
+                        })}
+                      </ul>
+
+                      <h3
+                        css={css`
+                          margin-bottom: 10px !important;
+                        `}
+                      >
+                        Will there be pets?
+                      </h3>
+                      <ul>
+                        <li>
+                          <label
+                            css={css`
+                              margin-bottom: 25px !important;
+                            `}
+                            className="checkbox-label"
+                          >
+                            <input
+                              type="radio"
+                              value="Yes"
+                              id="yes"
+                              checked={inputs.pets === `Yes`}
+                              onChange={handleYesNo1}
+                            />
+                            <p className="radio-label">Yes</p>
+                            <span className="checkbox-custom circular"></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label className="checkbox-label">
+                            <input
+                              type="radio"
+                              value="No"
+                              id="no"
+                              checked={inputs.pets === `No`}
+                              onChange={handleYesNo1}
+                            />
+                            <p className="radio-label">No</p>
+                            <span className="checkbox-custom circular"></span>
+                          </label>
+                        </li>
+                      </ul>
+
+                      <h3
+                        css={css`
+                          margin-bottom: 10px !important;
+                        `}
+                      >
+                        Will you be home during the visit?
+                      </h3>
+                      <ul>
+                        <li>
+                          <label
+                            css={css`
+                              margin-bottom: 25px !important;
+                            `}
+                            className="checkbox-label"
+                          >
+                            <input
+                              type="radio"
+                              value="Yes"
+                              id="yes"
+                              checked={inputs.attendance === `Yes`}
+                              onChange={handleYesNo2}
+                            />
+                            <p className="radio-label">Yes</p>
+                            <span className="checkbox-custom circular"></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label
+                            css={css`
+                              margin-bottom: 100px !important;
+                            `}
+                            className="checkbox-label"
+                          >
+                            <input
+                              type="radio"
+                              value="No"
+                              id="no"
+                              checked={inputs.attendance === `No`}
+                              onChange={handleYesNo2}
+                            />
+                            <p className="radio-label">No</p>
+                            <span className="checkbox-custom circular"></span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <h2>Enter your location</h2>
+
+                    <div
+                      css={css`
+                        input {
+                          margin-bottom: 15px;
+                        }
+                      `}
+                      className="form-group"
+                    >
+                      <input
+                        id="address"
+                        type="text"
+                        onChange={handleOnChange}
+                        required
+                        placeholder="Enter your address"
+                        className="form-control"
+                        value={inputs.address}
+                      />
+                    </div>
+                    <div
+                      css={css`
+                        input {
+                          margin-bottom: 15px;
+                        }
+                      `}
+                      className="form-group"
+                    >
+                      <input
+                        id="unit"
+                        type="text"
+                        className="form-control"
+                        onChange={handleOnChange}
+                        placeholder="Enter your unit # (if applicable)"
+                        value={inputs.unit}
+                      />
+                    </div>
+                    <div
+                      css={css`
+                        input {
+                          margin-bottom: 75px;
+                        }
+                      `}
+                      className="form-group"
+                    >
+                      <input
+                        id="buzzer"
+                        type="text"
+                        className="form-control"
+                        onChange={handleOnChange}
+                        placeholder="Enter your buzzer # (if applicable)"
+                        value={inputs.buzzer}
+                      />
+                    </div>
+
+                    <h2>Enter your personal information</h2>
+
+                    <div
+                      css={css`
+                        input {
+                          margin-bottom: 15px;
+                        }
+                      `}
+                      className="form-group"
+                    >
+                      <input
+                        id="name"
+                        type="text"
+                        onChange={handleOnChange}
+                        required
+                        placeholder="Enter your name"
+                        className="form-control"
+                        value={inputs.name}
+                      />
+                    </div>
+                    <div
+                      css={css`
+                        input {
+                          margin-bottom: 15px;
+                        }
+                      `}
+                      className="form-group"
+                    >
+                      <input
+                        id="email"
+                        type="email"
+                        className="form-control"
+                        onChange={handleOnChange}
+                        required
+                        placeholder="Enter your email address"
+                        value={inputs.email}
+                      />
+                    </div>
+                    <div
+                      css={css`
+                        input {
+                          margin-bottom: 75px;
+                        }
+                      `}
+                      className="form-group"
+                    >
+                      <input
+                        id="phone"
+                        type="phone"
+                        className="form-control"
+                        onChange={handleOnChange}
+                        required
+                        placeholder="Enter your phone number"
+                        value={inputs.phone}
+                      />
                     </div>
                   </div>
+
+                  <div
+                    css={css`
+                      textarea {
+                        height: 135px !important;
+                        margin-bottom: 75px !important;
+                      }
+                    `}
+                    className="form-group-2"
+                  >
+                    <h2>Additional notes</h2>
+                    <p>
+                      Additional information, instructions, or requests for our
+                      visit? Parking information is greaty appreciated.
+                    </p>
+                    <textarea
+                      id="cleanerMessage"
+                      name="cleanerMessage"
+                      onChange={handleOnChange}
+                      required
+                      className="form-control"
+                      value={inputs.cleanerMessage}
+                      rows="3"
+                      placeholder="Your message"
+                    />
+                  </div>
+
                   <div
                     css={css`
                       padding: 0 15px;
                     `}
                     className="row"
                   >
-                    {grandTotalHST !== "$0.00" ? (
-                      <div>
-                        <h2
+                    <div
+                      css={css`
+                        padding: 0 5px !important;
+                        margin-bottom: 50px;
+
+                        h2 {
+                          margin-bottom: 50px;
+                        }
+                      `}
+                      className="col-md-12 col-sm-12"
+                    >
+                      <h2>Confirm you have the proper cleaning items</h2>
+
+                      <details
+                        css={css`
+                          summary span {
+                            font-size: 20px;
+                            font-weight: 700;
+                            font-family: "Roboto", sans-serif;
+                          }
+
+                          summary {
+                            margin-bottom: 25px;
+                          }
+
+                          ul li {
+                            margin-bottom: 25px;
+                          }
+                        `}
+                      >
+                        <summary>
+                          <span>
+                            Review our list of required cleaning items
+                          </span>
+                        </summary>
+                        <ul
                           css={css`
-                            margin-bottom: 30px !important;
+                            h4 {
+                              margin-bottom: 10px;
+                            }
                           `}
                         >
-                          Your plan:
-                        </h2>
+                          <li>
+                            <div className="key">
+                              <h4>Glass cleaner</h4>
+                            </div>
+                            <div className="value">
+                              <p>
+                                For windows and mirrors. Such as Windex or plain
+                                white vinegar and water, mixed in a spray
+                                bottle.
+                              </p>
+                            </div>
+                          </li>
 
-                        {this.state.radio1 > 0 ? (
-                          <div
+                          <li>
+                            <div className="key">
+                              <h4>All-Purpose Cleaner</h4>
+                            </div>
+                            <div className="value">
+                              <p>
+                                For most hard surfaces in the home. Such as Mr.
+                                Clean or Clorox.
+                              </p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div className="key">
+                              <h4>Bathroom Cleaner</h4>
+                            </div>
+                            <div className="value">
+                              <p>
+                                For sinks, toilets, and bathtubs. Please ensure
+                                product is suitable for your type of bathtub.
+                                Such as Vim or Greenworks.
+                              </p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div className="key">
+                              <h4>Dish Soap</h4>
+                            </div>
+                            <div className="value">
+                              <p>
+                                A safe, PH cleaner than can be used on dishes as
+                                well as on surfaces requiring a milder product.{" "}
+                              </p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div className="key">
+                              <h4>Vinegar</h4>
+                            </div>
+                            <div className="value">
+                              <p>
+                                One of the most efficient and safe cleaning
+                                products than can be used on almost any surface.{" "}
+                              </p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div className="key">
+                              <h4>Stove Top Cleaner</h4>
+                            </div>
+                            <div className="value">
+                              <p>
+                                Depending on your type of stove, we may require
+                                a special product to properly clean the
+                                stove-top. For glass stove tops, we recommend
+                                Weiman Glass Cook Top cleaner.
+                              </p>
+                            </div>
+                          </li>
+                        </ul>
+                      </details>
+
+                      <details
+                        css={css`
+                          summary span {
+                            font-size: 20px;
+                            font-weight: 700;
+                            font-family: "Roboto", sans-serif;
+                          }
+
+                          summary {
+                            margin-bottom: 50px;
+                          }
+
+                          ul li {
+                            margin-bottom: 25px;
+                          }
+                        `}
+                      >
+                        <summary>
+                          <span>
+                            Review our list of required cleaning tools
+                          </span>
+                        </summary>
+                        <ul
+                          css={css`
+                            h4 {
+                              margin-bottom: 5px;
+                            }
+                          `}
+                        >
+                          <li>
+                            <div className="key">
+                              <h4>Mop</h4>
+                            </div>
+                            <div className="value">
+                              <p>
+                                A twist mop with a bucket is our preferred
+                                choice.
+                              </p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div className="key">
+                              <h4>Vaccuum Cleaner / Broom and dustpan</h4>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div className="key">
+                              <h4>Microfiber cloths</h4>
+                            </div>
+                            <div className="value">
+                              <p>
+                                J cloths, old towels may also be used,but we
+                                strongly recommend Microfiber.
+                              </p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div className="key">
+                              <h4>Toilet bowl brush</h4>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div className="key">
+                              <h4>Paper Towel</h4>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div className="key">
+                              <h4>Three Step Ladder</h4>
+                            </div>
+                            <div className="value">
+                              <p>
+                                For higher areas, such as when cleaning windows
+                                and the inside of high cabinets, we will not use
+                                anything but a Three-Step ladder for the safety
+                                of our staff.
+                              </p>
+                            </div>
+                          </li>
+                        </ul>
+                      </details>
+
+                      <h4
+                        css={css`
+                          margin-top: 25px;
+                          margin-bottom: 15px !important;
+                        `}
+                      >
+                        All the items listed above will be available during our
+                        cleaner's visit
+                      </h4>
+                      <ul>
+                        <li>
+                          <label
                             css={css`
-                              display: flex;
-                              justify-content: space-between;
-                              width: 400px;
-                              padding: 0 5px 0 0;
-
-                              input {
-                                font-family: "Roboto", sans-serif;
-                                font-size: 16px;
-                                font-weight: 600;
-                                margin-bottom: 15px;
-                                border: none;
-                                overflow: visible;
-                                width: auto;
-                              }
-
-                              @media only screen and (max-width: 500px) {
-                                width: 330px;
-
-                                input {
-                                  width: auto;
-                                }
-                              }
-
-                              @media only screen and (max-width: 390px) {
-                                width: 275px;
-                              }
+                              margin-bottom: 25px !important;
                             `}
+                            className="checkbox-label"
                           >
                             <input
-                              type="text"
-                              name="planType"
-                              id="planType"
-                              value={`+ ${this.state.radioLabel}`}
+                              type="radio"
+                              value="Yes"
+                              id="yes"
+                              checked={inputs.materials === `Yes`}
+                              onChange={handleYesNo3}
                             />
-                            <span>{formatter.format(this.state.radio1)}</span>
-                          </div>
-                        ) : null}
-
-                        {addOnsLabels3.map((addOnLabel3, i) => {
-                          return (
-                            <div
-                              css={css`
-                                display: flex;
-                                justify-content: space-between;
-                                width: 400px;
-
-                                h3 {
-                                  font-size: 16px;
-                                  margin-bottom: 15px;
-                                }
-
-                                span {
-                                  font-size: 16px;
-                                }
-
-                                @media only screen and (max-width: 500px) {
-                                  width: 325px;
-                                }
-
-                                @media only screen and (max-width: 390px) {
-                                  width: 270px;
-                                }
-                              `}
-                            >
-                              <h3>+ {addOnLabel3}</h3>
-                              <span> {formatter.format(addOnsCost3[i])}</span>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    ) : null}
+                            <p className="radio-label">Yes</p>
+                            <span className="checkbox-custom circular"></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label className="checkbox-label">
+                            <input
+                              type="radio"
+                              value="No"
+                              id="no"
+                              checked={inputs.materials === `No`}
+                              onChange={handleYesNo3}
+                            />
+                            <p className="radio-label">No</p>
+                            <span className="checkbox-custom circular"></span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
 
                   {grandTotalHST !== "$0.00" ? (
-                    <React.Fragment>
-                      <div
+                    <div>
+                      <h2
                         css={css`
-                          padding: 0 15px;
+                          margin-bottom: 30px !important;
                         `}
-                        className="row"
                       >
+                        Total:
+                      </h2>
+
+                      {inputs.radioLabel > 0 ? (
                         <div
                           css={css`
                             display: flex;
                             justify-content: space-between;
-                            width: 400px;
-                            margin-top: 25px;
-                            padding-top: 25px;
-                            border-top: 1px solid black;
 
                             h3 {
                               font-size: 16px;
@@ -573,87 +1181,135 @@ class Services extends React.Component {
                             span {
                               font-size: 16px;
                             }
-
-                            @media only screen and (max-width: 500px) {
-                              width: 325px;
-                            }
-
-                            @media only screen and (max-width: 390px) {
-                              width: 270px;
-                            }
                           `}
                         >
-                          <h3>+ HST (x0.13)</h3>
-                          <span>{grandTotalHST}</span>
+                          <h3>{`+ ${inputs.radioValue}`}</h3>
+                          <span>{formatter.format(inputs.radioLabel)}</span>
                         </div>
-                      </div>
+                      ) : null}
 
+                      {addOnsLabels3.map((addOnLabel3, i) => {
+                        return (
+                          <div
+                            css={css`
+                              display: flex;
+                              justify-content: space-between;
+
+                              h3 {
+                                font-size: 16px;
+                                margin-bottom: 15px;
+                              }
+
+                              span {
+                                font-size: 16px;
+                              }
+                            `}
+                          >
+                            <h3>+ {addOnLabel3}</h3>
+                            <span> {formatter.format(addOnsCost3[i])}</span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ) : null}
+                  {grandTotalHST !== "$0.00" ? (
+                    <React.Fragment>
                       <div
                         css={css`
-                          padding: 0 15px;
+                          display: flex;
+                          justify-content: space-between;
+                          margin-top: 25px;
+                          padding-top: 25px;
+                          border-top: 1px solid black;
+
+                          h3 {
+                            font-size: 16px;
+                            margin-bottom: 15px;
+                          }
+
+                          span {
+                            font-size: 16px;
+                          }
                         `}
-                        className="row"
                       >
-                        <div
-                          css={css`
-                            display: flex;
-                            justify-content: space-between;
-                            width: 400px;
-
-                            h3 {
-                              font-size: 16px;
-                              margin-top: 7px;
-                              margin-bottom: 75px;
-                            }
-
-                            input {
-                              font-size: 16px;
-                              width: auto;
-                              overflow: visible;
-                              height: 35px;
-                              text-align: right;
-                              border: none;
-                              margin-bottom: 75px;
-                            }
-
-                            @media only screen and (max-width: 500px) {
-                              width: 330px;
-                            }
-
-                            @media only screen and (max-width: 390px) {
-                              width: 270px;
-                            }
-                          `}
-                        >
-                          <h3>Grand total:</h3>
-                          <input
-                            type="text"
-                            name="grandTotal"
-                            id="grandTotal"
-                            value={grandTotalSumHST}
-                          />
-                        </div>
+                        <h3>+ HST (x0.13)</h3>
+                        <span>{grandTotalHST}</span>
                       </div>
+                      <div
+                        css={css`
+                          display: flex;
+                          justify-content: space-between;
+
+                          h3 {
+                            font-size: 16px;
+                            margin-top: 7px;
+                            margin-bottom: 50px;
+                          }
+
+                          input {
+                            font-size: 16px;
+                            width: auto;
+                            overflow: visible;
+                            height: 35px;
+                            text-align: right;
+                            border: none;
+                            margin-bottom: 50px;
+                          }
+                        `}
+                      >
+                        <h3>Grand total:</h3>
+                        <p>{grandTotalSumHST}</p>
+                      </div>
+                      <p
+                        css={css`
+                          margin-bottom: 75px;
+                        `}
+                      >
+                        On future bookings, save 25% by having a scheduled
+                        appointment within 2 weeks of your last service, or 10%
+                        within 30 days.
+                      </p>
                     </React.Fragment>
                   ) : null}
-                  <button className="btn btn-default" type="submit">
-                    submit
+
+                  <button
+                    css={css`
+                      width: 100%;
+                      height: 60px;
+                      background: #47424c;
+                      border: none;
+                      color: #fff;
+                      font-family: "Open Sans", sans-serif;
+                      font-size: 18px;
+                    `}
+                    type="submit"
+                    disabled={status.submitting}
+                  >
+                    {!status.submitting
+                      ? !status.submitted
+                        ? "Book now"
+                        : "Booked"
+                      : "Booking..."}
                   </button>
                 </div>
               </div>
             </form>
           </div>
         </section>
-        <CallToAction
-          callTitle="You're one step away from a clean and happy home!"
-          callText="If you'd like to know more about the services we offer, please view our Services page by clicking the button below."
-          callLinkUrl="/services"
-          callLink="View our services"
-          callImage="img/services-bg.jpg"
-        />
-      </Layout>
-    );
-  }
-}
-
-export default Services;
+        {status.info.error && (
+          <div className="error">Error: {status.info.msg}</div>
+        )}
+        {!status.info.error && status.info.msg && (
+          <div className="success">{status.info.msg}</div>
+        )}
+      </main>
+      <CallToAction
+        callTitle="You're one step away from a clean and happy home!"
+        callText="If you'd like to know more about the services we offer, please view our Services page by clicking the button below."
+        callLinkUrl="/services"
+        callLink="View our services"
+        callImage="img/services-bg.jpg"
+      />
+    </Layout>
+  );
+};

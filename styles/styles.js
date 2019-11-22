@@ -929,7 +929,7 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
 }
 
-#contact-form .block button, #service-form .block button {
+#contact-form .block button {
  width: 100%;
  height: 60px;
  background: #47424C;
