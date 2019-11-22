@@ -46,7 +46,7 @@ class FAQ extends React.Component {
                   }
 
                   summary:hover {
-                    color: 	#666;
+                    color: 	#007bff;
                   }
 
                   summary::-webkit-details-marker {

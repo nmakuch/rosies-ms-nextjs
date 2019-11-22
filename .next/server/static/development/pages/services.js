@@ -5973,7 +5973,7 @@ footer .footer-manu ul li a {
 }
 
 footer .footer-manu ul li a:hover {
- color: #000;
+ color: #007bff;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -6012,7 +6012,7 @@ footer .footer-manu ul li a:hover {
    font-size: 15px;
  }
  footer .navbar-default .navbar-nav li a:hover {
-   color: #000;
+   color: #007bff;
  }
 
  #slider-work .block h1 {
