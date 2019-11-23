@@ -680,6 +680,7 @@ font header .navbar-default .navbar-nav li a:hover {
  font-weight: 400;
  letter-spacing: 1px;
  word-spacing: 3px;
+ text-shadow: 0px 0px 30px rgba(255,255,255,1), 0px 0px 30px rgba(255,255,255,1);
 }
 
 #portfolio-work {

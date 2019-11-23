@@ -6,6 +6,9 @@ import Layout from "../components/Layout";
 import CallToAction from "../components/CallToAction";
 import GlobalHeader from "../components/GlobalHeader";
 import DatePicker from "react-datepicker";
+import ScrollableAnchor from "react-scrollable-anchor";
+import Link from "next/link";
+
 import "react-datepicker/dist/react-datepicker.css";
 
 export default () => {
@@ -29,6 +32,7 @@ export default () => {
     radioLabel: "",
     cleanerMessage: "",
     optionsAddOns3: [],
+    consentBox: [],
     labelsAddOns3: [],
     startDate: "",
     startTime: "",
@@ -82,11 +86,11 @@ export default () => {
     "4.0 hour session at $35/hour"
   ];
 
-  let radioValues2 = [54.0, 90.0, 108.0];
+  let radioValues2 = [52.5, 87.5, 105.0];
   let radioLabels2 = [
-    "Basic (1.5 hours): kitchen, bathroom, all floors  ($54.00)",
-    "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($90.00)",
-    "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($108.00)"
+    "Basic (1.5 hours): kitchen, bathroom, all floors  ($52.50)",
+    "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($87.50)",
+    "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($105.00)"
   ];
 
   let radioArrayId2 = [
@@ -147,6 +151,7 @@ export default () => {
         cleanerMessage: "",
         optionsAddOns3: [],
         labelsAddOns3: [],
+        consentBox: [],
         startDate: "",
         startTime: "",
         pets: "",
@@ -268,6 +273,41 @@ export default () => {
     }
   };
 
+  const handleChecked = e => {
+    let checkedArray = inputs.consentBox;
+    let selectedValue = e.target.value;
+    let checkedArrayAddOns3 = inputs.optionsAddOns3;
+    let checkedArrayIds3 = inputs.labelsAddOns3;
+    let radioLabel = inputs.radioLabel;
+    let radioValue = inputs.radioValue;
+    e.persist();
+
+    console.log(inputs.consentBox);
+
+    if (e.target.checked === true) {
+      checkedArray.push(selectedValue);
+
+      setInputs(prev => ({
+        ...prev,
+        consentBox: checkedArray,
+        optionsAddOns3: checkedArrayAddOns3,
+        labelsAddOns3: checkedArrayIds3,
+        radioLabel: radioLabel,
+        radioValue: radioValue
+      }));
+    } else {
+      checkedArray.splice(selectedValue, 1);
+
+      setInputs({
+        consentBox: checkedArray,
+        optionsAddOns3: checkedArrayAddOns3,
+        labelsAddOns3: checkedArrayIds3,
+        radioLabel: radioLabel,
+        radioValue: radioValue
+      });
+    }
+  };
+
   const handleOnSubmit = async e => {
     e.preventDefault();
     setStatus(prevStatus => ({ ...prevStatus, submitting: true }));
@@ -313,6 +353,7 @@ export default () => {
       <GlobalHeader
         globalHeaderTitle="SERVICES AND BOOKING"
         globalHeaderImage="../img/services-bg.jpg"
+        globalHeaderSubTitle="Use our online booking tool or call 437-777-MAID."
       />
       <main>
         <section
@@ -403,7 +444,7 @@ export default () => {
             }
 
             li:last-of-type {
-              margin-bottom: 50px;
+              margin-bottom: 75px;
             }
 
             .form-group {
@@ -425,13 +466,28 @@ export default () => {
                     <div
                       css={css`
                         padding: 0 5px !important;
-                        margin-bottom: 50px;
+
+                        h3 {
+                          margin-bottom: 25px;
+                        }
+
+                        .note {
+                          margin-bottom: 50px;
+                        }
                       `}
                       className="col-md-12 col-sm-12"
                     >
                       <div className="form-group">
                         <h2>Select your cleaning package</h2>
                         <h3>1) Hourly cleaning packages</h3>
+                        <p className="note">
+                          <strong>Note:</strong> Just leave us detailed
+                          instructions in the comments box at the bottom of this
+                          page and our professional maid will focus exactly on
+                          the items on your list. The list should be structured
+                          as a priority list in case there isn’t enough time to
+                          complete all the items.
+                        </p>
                         <ul>
                           {radioValues1.map((radioValue, i) => {
                             return (
@@ -465,7 +521,7 @@ export default () => {
                             <h3>OR</h3>
                           </li>
                           <li>
-                            <h3>2) Prestructured cleaning packages</h3>
+                            <h3>2) Cleaning plans</h3>
                           </li>
                           <li>
                             <h4>
@@ -611,9 +667,9 @@ export default () => {
                       </div>
                     </div>
                     <p>
-                      <strong>Note:</strong> Please refer to our list of
-                      required items to ensure we have the tools to complete
-                      these jobs.{" "}
+                      <strong>Note:</strong> Please refer to our{" "}
+                      <a href="#required-items">list of required items</a> to
+                      ensure we have the tools to complete these jobs.{" "}
                     </p>
 
                     <p
@@ -630,7 +686,7 @@ export default () => {
                     <h2>When is this appointment for?</h2>
                     <h3
                       css={css`
-                        margin-bottom: 10px !important;
+                        margin-bottom: 15px !important;
                       `}
                     >
                       Select a date
@@ -642,17 +698,33 @@ export default () => {
                         className="form-control"
                         placeholderText="Click for calendar"
                         css={css`
-                          margin-bottom: 25px;
+                          margin-bottom: 50px;
                         `}
                       />
                       <h3
                         css={css`
-                          margin-bottom: 10px !important;
+                          margin-bottom: 15px !important;
                         `}
                       >
                         Select a time
                       </h3>
-                      <ul>
+                      <p
+                        css={css`
+                          margin-bottom: 25px !important;
+                        `}
+                      >
+                        <strong>Note:</strong> Our cleaning professional will
+                        arrive for your appointment inside of your selected 2
+                        hour window. Please feel free to include your preferred
+                        arrival time in the additional information box at the
+                        bottom of the page and we will do our best.
+                      </p>
+                      <ul
+                        css={css`
+                          li:last-of-type {
+                          }
+                        `}
+                      >
                         {radioValues4.map((radioValue, i) => {
                           return (
                             <li>
@@ -674,11 +746,15 @@ export default () => {
 
                       <h3
                         css={css`
-                          margin-bottom: 10px !important;
+                          margin-bottom: 15px !important;
                         `}
                       >
                         Will there be pets?
                       </h3>
+                      <p>
+                        <strong>Note:</strong> If yes, please ensure your pets
+                        will be secured throughout the duration of our visit.
+                      </p>
                       <ul>
                         <li>
                           <label
@@ -760,7 +836,28 @@ export default () => {
                       </ul>
                     </div>
 
-                    <h2>Enter your location</h2>
+                    <h2
+                      css={css`
+                        margin-bottom: 15px !important;
+                      `}
+                    >
+                      Enter your location
+                    </h2>
+
+                    <p
+                      css={css`
+                        margin-bottom: 50px !important;
+                      `}
+                    >
+                      <strong>Note:</strong>{" "}
+                      <Link href="/terms" as="/terms">
+                        <a target="_blank">
+                          Please make sure you are inside our service area.
+                        </a>
+                      </Link>
+                      <br />
+                      If you are outside, please give us a call at 437-777-MAID.
+                    </p>
 
                     <div
                       css={css`
@@ -908,7 +1005,6 @@ export default () => {
                     <div
                       css={css`
                         padding: 0 5px !important;
-                        margin-bottom: 50px;
 
                         h2 {
                           margin-bottom: 50px;
@@ -916,7 +1012,9 @@ export default () => {
                       `}
                       className="col-md-12 col-sm-12"
                     >
-                      <h2>Confirm you have the proper cleaning items</h2>
+                      <ScrollableAnchor id={"required-items"}>
+                        <h2>Confirm you have the proper cleaning items</h2>
+                      </ScrollableAnchor>
 
                       <details
                         css={css`
@@ -1272,25 +1370,63 @@ export default () => {
                     </React.Fragment>
                   ) : null}
 
-                  <button
+                  <ul>
+                    <li>
+                      <label className="checkbox-label">
+                        <input
+                          type="checkbox"
+                          id="consent"
+                          value="consent"
+                          onChange={handleChecked}
+                        />
+                        <p className="radio-label">
+                          I have read and agree to{" "}
+                          <Link href="/terms" as="/terms">
+                            <a target="_blank">the terms of service.</a>
+                          </Link>
+                        </p>
+                        <span className="checkbox-custom rectangular"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div
                     css={css`
-                      width: 100%;
-                      height: 60px;
-                      background: #47424c;
-                      border: none;
-                      color: #fff;
-                      font-family: "Open Sans", sans-serif;
-                      font-size: 18px;
+                      button:disabled {
+                        opacity: 0.5;
+                      }
                     `}
-                    type="submit"
-                    disabled={status.submitting}
                   >
-                    {!status.submitting
-                      ? !status.submitted
-                        ? "Book now"
-                        : "Your appointment has been booked!"
-                      : "Booking..."}
-                  </button>
+                    <button
+                      css={css`
+                        width: 100%;
+                        height: 60px;
+                        background: #47424c;
+                        border: none;
+                        color: #fff;
+                        font-family: "Open Sans", sans-serif;
+                        font-size: 18px;
+                        margin-bottom: 75px;
+                      `}
+                      type="submit"
+                      disabled={
+                        inputs.consentBox[0] === "consent"
+                          ? status.submitting
+                          : true
+                      }
+                    >
+                      {!status.submitting
+                        ? !status.submitted
+                          ? "Book now"
+                          : "Your appointment has been booked!"
+                        : "Booking..."}
+                    </button>
+
+                    <p>
+                      <strong>Payment:</strong> You never pay in advance. After
+                      the cleaning, we will send you an electronic invoice that
+                      can be paid via credit card or interac e-transfer.
+                    </p>
+                  </div>
                 </div>
               </div>
             </form>
