@@ -151,7 +151,7 @@ export default () => {
         cleanerMessage: "",
         optionsAddOns3: [],
         labelsAddOns3: [],
-        consentBox: [],
+        consentBox: "",
         startDate: "",
         startTime: "",
         pets: "",
@@ -274,7 +274,6 @@ export default () => {
   };
 
   const handleChecked = e => {
-    let checkedArray = inputs.consentBox;
     let selectedValue = e.target.value;
     let checkedArrayAddOns3 = inputs.optionsAddOns3;
     let checkedArrayIds3 = inputs.labelsAddOns3;
@@ -282,24 +281,19 @@ export default () => {
     let radioValue = inputs.radioValue;
     e.persist();
 
-    console.log(inputs.consentBox);
-
     if (e.target.checked === true) {
-      checkedArray.push(selectedValue);
 
       setInputs(prev => ({
         ...prev,
-        consentBox: checkedArray,
+        consentBox: "consent",
         optionsAddOns3: checkedArrayAddOns3,
         labelsAddOns3: checkedArrayIds3,
         radioLabel: radioLabel,
         radioValue: radioValue
       }));
     } else {
-      checkedArray.splice(selectedValue, 1);
-
       setInputs({
-        consentBox: checkedArray,
+        consentBox: "no consent",
         optionsAddOns3: checkedArrayAddOns3,
         labelsAddOns3: checkedArrayIds3,
         radioLabel: radioLabel,
@@ -1408,11 +1402,7 @@ export default () => {
                         margin-bottom: 75px;
                       `}
                       type="submit"
-                      disabled={
-                        inputs.consentBox[0] === "consent"
-                          ? status.submitting
-                          : true
-                      }
+                      disabled={inputs.consentBox === "consent" ? status.submitting : true}
                     >
                       {!status.submitting
                         ? !status.submitted
