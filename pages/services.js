@@ -274,7 +274,6 @@ export default () => {
   };
 
   const handleChecked = e => {
-    let selectedValue = e.target.value;
     let checkedArrayAddOns3 = inputs.optionsAddOns3;
     let checkedArrayIds3 = inputs.labelsAddOns3;
     let radioLabel = inputs.radioLabel;
@@ -1402,7 +1401,7 @@ export default () => {
                         margin-bottom: 75px;
                       `}
                       type="submit"
-                      disabled={inputs.consentBox === "consent" ? status.submitting : true}
+                      disabled={inputs.consentBox === "consent" ? false : true}
                     >
                       {!status.submitting
                         ? !status.submitted
