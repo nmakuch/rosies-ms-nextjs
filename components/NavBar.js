@@ -78,7 +78,7 @@ class Nav extends Component {
                 <a>Home</a>
               </Link>
 
-              <Link as="/services">
+              <Link href="/services" as="/services">
                 <a>Services/Booking</a>
               </Link>
 

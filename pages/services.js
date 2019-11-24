@@ -41,7 +41,6 @@ export default () => {
     buzzer: "",
     address: "",
     unit: "",
-    materials: "",
     grandTotal: ""
   });
 
@@ -99,17 +98,17 @@ export default () => {
     "Complete (3.0 hours)"
   ];
 
-  let radioValues3 = [60.0, 100.0, 140.0];
+  let radioValues3 = [70.0, 105.0, 122.5];
   let radioLabels3 = [
-    "Basic (1.5 hours): kitchen, bathroom, all floors  ($60.00)",
-    "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($100.00)",
-    "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($140.00)"
+    "Basic (2.0 hours): kitchen, bathroom, all floors  ($70.00)",
+    "Basic Plus (3.0 hours): kitchen, bathroom, living areas including bedroom ($105.00)",
+    "Complete (3.5 hours): kitchen, bathroom, living areas plus one big job ($122.50)"
   ];
 
   let radioArrayId3 = [
-    "x2 Basic (1.5 hours)",
-    "x2 Basic plus (2.5 hours)",
-    "x2 Complete (3.0 hours)"
+    "x2 Basic (2.0 hours)",
+    "x2 Basic plus (3.0 hours)",
+    "x2 Complete (3.5 hours)"
   ];
 
   let radioValues4 = [
@@ -159,7 +158,6 @@ export default () => {
         buzzer: "",
         address: "",
         unit: "",
-        materials: "",
         grandTotal: ""
       });
     } else {
@@ -217,20 +215,6 @@ export default () => {
       setInputs(prev => ({
         ...prev,
         attendance: e.target.value
-      }));
-    setStatus({
-      submitted: false,
-      submitting: false,
-      info: { error: false, msg: null }
-    });
-  };
-
-  const handleYesNo3 = e => {
-    e.persist();
-    if (e.target.value)
-      setInputs(prev => ({
-        ...prev,
-        materials: e.target.value
       }));
     setStatus({
       submitted: false,
@@ -484,7 +468,7 @@ export default () => {
                         <ul>
                           {radioValues1.map((radioValue, i) => {
                             return (
-                              <li>
+                              <li key={`${radioValue}-${i}`}>
                                 <label className="checkbox-label">
                                   <input
                                     type="radio"
@@ -504,7 +488,7 @@ export default () => {
                               </li>
                             );
                           })}
-                          <li
+                          <li key="or-h3"
                             css={css`
                               h3 {
                                 margin: 75px 0;
@@ -513,17 +497,17 @@ export default () => {
                           >
                             <h3>OR</h3>
                           </li>
-                          <li>
+                          <li key="plans-h3">
                             <h3>2) Cleaning plans</h3>
                           </li>
-                          <li>
+                          <li key="1bed-h4">
                             <h4>
                               1 Bedroom or Bachelor up to 600 sq/ft (1 bathroom)
                             </h4>
                           </li>
                           {radioValues2.map((radioValue, i) => {
                             return (
-                              <li>
+                              <li key={`${radioValue}-${i}`}>
                                 <label className="checkbox-label">
                                   <input
                                     type="radio"
@@ -543,12 +527,12 @@ export default () => {
                               </li>
                             );
                           })}
-                          <li>
+                          <li key="2bed-h4">
                             <h4>2 Bedroom up to 1000 sq/ft (1 bathroom)</h4>
                           </li>
                           {radioValues3.map((radioValue, i) => {
                             return (
-                              <li>
+                              <li key={`${radioValue}-${i}`}>
                                 <label className="checkbox-label">
                                   <input
                                     type="radio"
@@ -606,7 +590,7 @@ export default () => {
                           margin-bottom: 0 !important;
                         `}
                       >
-                        Add ons:
+                        Extras:
                       </h2>
                     </div>
                     <div
@@ -641,7 +625,7 @@ export default () => {
                         <div>
                           {checkBoxArrayAddOns3.map((checkBox, i) => {
                             return (
-                              <label className="checkbox-label">
+                              <label key={`${checkBox}-${i}`} className="checkbox-label">
                                 <input
                                   type="checkbox"
                                   id={checkBoxArrayIds3[i]}
@@ -720,7 +704,7 @@ export default () => {
                       >
                         {radioValues4.map((radioValue, i) => {
                           return (
-                            <li>
+                            <li key={`${radioValue}-${i}`}>
                               <label className="checkbox-label">
                                 <input
                                   type="radio"
@@ -749,7 +733,7 @@ export default () => {
                         will be secured throughout the duration of our visit.
                       </p>
                       <ul>
-                        <li>
+                        <li key="pets-yes">
                           <label
                             css={css`
                               margin-bottom: 25px !important;
@@ -767,7 +751,7 @@ export default () => {
                             <span className="checkbox-custom circular"></span>
                           </label>
                         </li>
-                        <li>
+                        <li key="pets-no">
                           <label className="checkbox-label">
                             <input
                               type="radio"
@@ -790,7 +774,7 @@ export default () => {
                         Will you be home during the visit?
                       </h3>
                       <ul>
-                        <li>
+                        <li key="attendance-yes">
                           <label
                             css={css`
                               margin-bottom: 25px !important;
@@ -808,7 +792,7 @@ export default () => {
                             <span className="checkbox-custom circular"></span>
                           </label>
                         </li>
-                        <li>
+                        <li key="attendance-no">
                           <label
                             css={css`
                               margin-bottom: 100px !important;
@@ -1038,7 +1022,7 @@ export default () => {
                             }
                           `}
                         >
-                          <li>
+                          <li key="gcleaner">
                             <div className="key">
                               <h4>Glass cleaner</h4>
                             </div>
@@ -1051,7 +1035,7 @@ export default () => {
                             </div>
                           </li>
 
-                          <li>
+                          <li key="apcleaner">
                             <div className="key">
                               <h4>All-Purpose Cleaner</h4>
                             </div>
@@ -1063,7 +1047,7 @@ export default () => {
                             </div>
                           </li>
 
-                          <li>
+                          <li key="bcleaner">
                             <div className="key">
                               <h4>Bathroom Cleaner</h4>
                             </div>
@@ -1076,7 +1060,7 @@ export default () => {
                             </div>
                           </li>
 
-                          <li>
+                          <li key="dish-soap">
                             <div className="key">
                               <h4>Dish Soap</h4>
                             </div>
@@ -1088,7 +1072,7 @@ export default () => {
                             </div>
                           </li>
 
-                          <li>
+                          <li key="vinegar">
                             <div className="key">
                               <h4>Vinegar</h4>
                             </div>
@@ -1100,7 +1084,7 @@ export default () => {
                             </div>
                           </li>
 
-                          <li>
+                          <li key="stcleaner">
                             <div className="key">
                               <h4>Stove Top Cleaner</h4>
                             </div>
@@ -1145,7 +1129,7 @@ export default () => {
                             }
                           `}
                         >
-                          <li>
+                          <li key="mop">
                             <div className="key">
                               <h4>Mop</h4>
                             </div>
@@ -1157,13 +1141,13 @@ export default () => {
                             </div>
                           </li>
 
-                          <li>
+                          <li key="vaccum">
                             <div className="key">
                               <h4>Vaccuum Cleaner / Broom and dustpan</h4>
                             </div>
                           </li>
 
-                          <li>
+                          <li key="cloths">
                             <div className="key">
                               <h4>Microfiber cloths</h4>
                             </div>
@@ -1175,19 +1159,19 @@ export default () => {
                             </div>
                           </li>
 
-                          <li>
+                          <li key="tbrush">
                             <div className="key">
                               <h4>Toilet bowl brush</h4>
                             </div>
                           </li>
 
-                          <li>
+                          <li key="ptowel">
                             <div className="key">
                               <h4>Paper Towel</h4>
                             </div>
                           </li>
 
-                          <li>
+                          <li key="3step">
                             <div className="key">
                               <h4>Three Step Ladder</h4>
                             </div>
@@ -1212,39 +1196,6 @@ export default () => {
                         All the items listed above will be available during our
                         cleaner's visit
                       </h4>
-                      <ul>
-                        <li>
-                          <label
-                            css={css`
-                              margin-bottom: 25px !important;
-                            `}
-                            className="checkbox-label"
-                          >
-                            <input
-                              type="radio"
-                              value="Yes"
-                              id="yes"
-                              checked={inputs.materials === `Yes`}
-                              onChange={handleYesNo3}
-                            />
-                            <p className="radio-label">Yes</p>
-                            <span className="checkbox-custom circular"></span>
-                          </label>
-                        </li>
-                        <li>
-                          <label className="checkbox-label">
-                            <input
-                              type="radio"
-                              value="No"
-                              id="no"
-                              checked={inputs.materials === `No`}
-                              onChange={handleYesNo3}
-                            />
-                            <p className="radio-label">No</p>
-                            <span className="checkbox-custom circular"></span>
-                          </label>
-                        </li>
-                      </ul>
                     </div>
                   </div>
 
@@ -1364,7 +1315,7 @@ export default () => {
                   ) : null}
 
                   <ul>
-                    <li>
+                    <li key="contsent">
                       <label className="checkbox-label">
                         <input
                           type="checkbox"
