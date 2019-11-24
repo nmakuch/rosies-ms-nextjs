@@ -16,7 +16,7 @@ export default () => {
   const [inputs, setInputs] = useState({
     name: "",
     email: "",
-    subject: "",
+    phone: "",
     message: ""
   });
 
@@ -30,7 +30,7 @@ export default () => {
       setInputs({
         name: "",
         email: "",
-        subject: "",
+        phone: "",
         message: ""
       });
     } else {
@@ -163,13 +163,13 @@ export default () => {
                               </div>
                               <div className="form-group">
                                 <input
-                                  id="subject"
-                                  type="subject"
+                                  id="phone"
+                                  type="phone"
                                   onChange={handleOnChange}
                                   required
                                   className="form-control"
-                                  value={inputs.subject}
-                                  placeholder="The subject of your message"
+                                  value={inputs.phone}
+                                  placeholder="Your phone number"
                                 />
                               </div>
                               <div className="form-group-2">

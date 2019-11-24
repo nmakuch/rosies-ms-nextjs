@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1045,17 +1045,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-prope
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "core-js/library/fn/object/keys");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/parse-float.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/parse-float.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/parse-float */ "core-js/library/fn/parse-float");
 
 /***/ }),
 
@@ -2758,21 +2747,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./node_modules/react-datepicker/dist/react-datepicker.css":
-/*!*****************************************************************!*\
-  !*** ./node_modules/react-datepicker/dist/react-datepicker.css ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./pages/services.js":
-/*!***************************!*\
-  !*** ./pages/services.js ***!
-  \***************************/
+/***/ "./pages/contact.js":
+/*!**************************!*\
+  !*** ./pages/contact.js ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2792,26 +2770,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-float */ "./node_modules/@babel/runtime-corejs2/core-js/parse-float.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
-/* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
-/* harmony import */ var react_datepicker__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-datepicker */ "react-datepicker");
-/* harmony import */ var react_datepicker__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(react_datepicker__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react-scrollable-anchor */ "react-scrollable-anchor");
-/* harmony import */ var react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! react-datepicker/dist/react-datepicker.css */ "./node_modules/react-datepicker/dist/react-datepicker.css");
-/* harmony import */ var react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
+/* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
 
 
 
@@ -2820,13 +2786,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/services.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/contact.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement;
 
 function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(target, key, source[key]); }); } else if (_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default.a) { _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default()(target, _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default()(source)); } else { ownKeys(source).forEach(function (key) { _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, key, _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(target, key, source[key]); }); } else if (_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default.a) { _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default()(target, _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default()(source)); } else { ownKeys(source).forEach(function (key) { _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, key, _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(source, key)); }); } } return target; }
 
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 
@@ -2836,16 +2801,11 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
-
-
-
-
-
 /* harmony default export */ __webpack_exports__["default"] = (() => {
   const {
     0: status,
     1: setStatus
-  } = Object(react__WEBPACK_IMPORTED_MODULE_10__["useState"])({
+  } = Object(react__WEBPACK_IMPORTED_MODULE_9__["useState"])({
     submitted: false,
     submitting: false,
     info: {
@@ -2853,57 +2813,15 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       msg: null
     }
   });
-  const formatter = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 2
-  });
   const {
     0: inputs,
     1: setInputs
-  } = Object(react__WEBPACK_IMPORTED_MODULE_10__["useState"])({
-    email: "",
+  } = Object(react__WEBPACK_IMPORTED_MODULE_9__["useState"])({
     name: "",
+    email: "",
     phone: "",
-    radioValue: "",
-    radioLabel: "",
-    cleanerMessage: "",
-    optionsAddOns3: [0.0],
-    consentBox: [],
-    labelsAddOns3: [],
-    startDate: new Date(),
-    startYear: "",
-    startMonth: "",
-    startDay: "",
-    startTime: "",
-    pets: "",
-    attendance: "",
-    buzzer: "",
-    address: "",
-    unit: "",
-    grandTotal: ""
+    message: ""
   });
-  let addOnsLabels3 = inputs.labelsAddOns3;
-  let addOnsCost3 = inputs.optionsAddOns3;
-  let checkBoxArrayAddOns3 = [35.0, 20.0, 20.0, 20.0, 15.0, 20.0];
-  let checkBoxArrayLabels3 = ["Deep clean - wall spot cleaning, baseboards, inside of kitchen & bathroom cabinets ($35.00)", "Big task - oven ($20.00)", "Big task - inside fridge ($20.00)", "Big task - windows ($20.00)", "Additional powder room ($15.00)", "Additional bathroom ($20.00)"];
-  let checkBoxArrayIds3 = ["Deep Clean - Wall, baseboards, kitchen...", "Big task - Oven", "Big task - Inside fridge", "Big task - Windows", "Additional powder room", "Additional bathroom"];
-  let radioValues1 = [52.5, 70.0, 87.5, 105.0, 122.0, 140.0];
-  let radioLabels1 = ["1.5 hour session at $35/hour ($52.50)", "2.0 hour session at $35/hour ($70.00)", "2.5 hour session at $35/hour ($87.50)", "3.0 hour session at $35/hour ($105.00)", "3.5 hour session at $35/hour ($122.50)", "4.0 hour session at $35/hour ($140.00)"];
-  let radioArrayId1 = ["1.5 hour session at $35/hour", "2.0 hour session at $35/hour", "2.5 hour session at $35/hour", "3.0 hour session at $35/hour", "3.5 hour session at $35/hour", "4.0 hour session at $35/hour"];
-  let radioValues2 = [52.5, 87.5, 105.0];
-  let radioLabels2 = ["Basic (1.5 hours): kitchen, bathroom, all floors  ($52.50)", "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($87.50)", "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($105.00)"];
-  let radioArrayId2 = ["Basic (1.5 hours)", "Basic plus (2.5 hours)", "Complete (3.0 hours)"];
-  let radioValues3 = [70.0, 105.0, 122.5];
-  let radioLabels3 = ["Basic (2.0 hours): kitchen, bathroom, all floors  ($70.00)", "Basic Plus (3.0 hours): kitchen, bathroom, living areas including bedroom ($105.00)", "Complete (3.5 hours): kitchen, bathroom, living areas plus one big job ($122.50)"];
-  let radioArrayId3 = ["x2 Basic (2.0 hours)", "x2 Basic plus (3.0 hours)", "x2 Complete (3.5 hours)"];
-  let radioValues4 = ["8:00am - 10:00am", "10:00am - 12:00pm", "12:00pm - 2:00pm", "2:00pm - 4:00pm"];
-  let grandTotalArr = [];
-  let sumOptionsAddOns3 = inputs.optionsAddOns3.reduce((a, b) => a + b, 0);
-  grandTotalArr.push(sumOptionsAddOns3);
-  let reducedArr = grandTotalArr.reduce((a, b) => a + b, 0);
-  let grandTotalHST = formatter.format(reducedArr * 0.13 + inputs.radioLabel * 0.13);
-  let grandTotalSumHST = formatter.format(reducedArr * 1.13 + inputs.radioLabel * 1.13);
 
   const handleResponse = (status, msg) => {
     if (status === 200) {
@@ -2916,26 +2834,10 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
         }
       });
       setInputs({
-        email: "",
         name: "",
+        email: "",
         phone: "",
-        radioValue: "",
-        radioLabel: "",
-        cleanerMessage: "",
-        optionsAddOns3: [0.0],
-        labelsAddOns3: [],
-        consentBox: "",
-        startDate: new Date(),
-        startYear: "",
-        startMonth: "",
-        startDay: "",
-        startTime: "",
-        pets: "",
-        attendance: "",
-        buzzer: "",
-        address: "",
-        unit: "",
-        grandTotal: ""
+        message: ""
       });
     } else {
       setStatus({
@@ -2962,115 +2864,12 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     });
   };
 
-  const handleRadio = e => {
-    e.persist();
-    if (e.target.value) setInputs(prev => _objectSpread({}, prev, {
-      radioValue: e.target.value,
-      radioLabel: e.target.id
-    }));
-    setStatus({
-      submitted: false,
-      submitting: false,
-      info: {
-        error: false,
-        msg: null
-      }
-    });
-  };
-
-  const handleYesNo1 = e => {
-    e.persist();
-    if (e.target.value) setInputs(prev => _objectSpread({}, prev, {
-      pets: e.target.value
-    }));
-    setStatus({
-      submitted: false,
-      submitting: false,
-      info: {
-        error: false,
-        msg: null
-      }
-    });
-  };
-
-  const handleYesNo2 = e => {
-    e.persist();
-    if (e.target.value) setInputs(prev => _objectSpread({}, prev, {
-      attendance: e.target.value
-    }));
-    setStatus({
-      submitted: false,
-      submitting: false,
-      info: {
-        error: false,
-        msg: null
-      }
-    });
-  };
-
-  const handleCheckBox = e => {
-    let checkedArrayAddOns3 = inputs.optionsAddOns3;
-    let checkedArrayIds3 = inputs.labelsAddOns3;
-    let radioLabel = inputs.radioLabel;
-    let radioValue = inputs.radioValue;
-    let selectedId3 = e.target.id;
-    let selectedValue3 = e.target.value;
-    e.persist();
-
-    if (e.target.checked === true) {
-      checkedArrayIds3.push(selectedId3);
-      checkedArrayAddOns3.push(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_7___default()(selectedValue3));
-      setInputs(prev => _objectSpread({}, prev, {
-        optionsAddOns3: checkedArrayAddOns3,
-        labelsAddOns3: checkedArrayIds3,
-        radioLabel: radioLabel,
-        radioValue: radioValue
-      }));
-    } else {
-      let valueIndex3 = checkedArrayAddOns3.indexOf(selectedValue3);
-      checkedArrayAddOns3.splice(valueIndex3, 1);
-      checkedArrayIds3.splice(valueIndex3, 1);
-      setInputs({
-        optionsAddOns3: checkedArrayAddOns3,
-        labelsAddOns3: checkedArrayIds3,
-        radioLabel: radioLabel,
-        radioValue: radioValue
-      });
-    }
-  };
-
-  const handleChecked = e => {
-    let checkedArrayAddOns3 = inputs.optionsAddOns3;
-    let checkedArrayIds3 = inputs.labelsAddOns3;
-    let radioLabel = inputs.radioLabel;
-    let radioValue = inputs.radioValue;
-    e.persist();
-
-    if (e.target.checked === true) {
-      setInputs(prev => _objectSpread({}, prev, {
-        consentBox: "consent",
-        optionsAddOns3: checkedArrayAddOns3,
-        labelsAddOns3: checkedArrayIds3,
-        radioLabel: radioLabel,
-        radioValue: radioValue
-      }));
-    } else {
-      setInputs({
-        consentBox: "no consent",
-        optionsAddOns3: checkedArrayAddOns3,
-        labelsAddOns3: checkedArrayIds3,
-        radioLabel: radioLabel,
-        radioValue: radioValue
-      });
-    }
-  };
-
   const handleOnSubmit = async e => {
     e.preventDefault();
     setStatus(prevStatus => _objectSpread({}, prevStatus, {
       submitting: true
     }));
-    const res = await fetch("/api/booking", {
+    const res = await fetch("/api/send", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -3079,1941 +2878,282 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     });
     const text = await res.text();
     handleResponse(res.status, text);
-    setTimeout(function () {
-      next_router__WEBPACK_IMPORTED_MODULE_17___default.a.push("/#slider");
-    }, 2000);
   };
 
-  const handleDate = date => {
-    setInputs(prev => _objectSpread({}, prev, {
-      startDate: date,
-      startYear: date.getFullYear(),
-      startMonth: date.getMonth(),
-      startDay: date.getDate()
-    }));
-    setStatus({
-      submitted: false,
-      submitting: false,
-      info: {
-        error: false,
-        msg: null
-      }
-    });
-  };
-
-  const handleTime = e => {
-    e.persist();
-    if (e.target.value) setInputs(prev => _objectSpread({}, prev, {
-      startTime: e.target.value
-    }));
-    setStatus({
-      submitted: false,
-      submitting: false,
-      info: {
-        error: false,
-        msg: null
-      }
-    });
-  };
-
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 340
+      lineNumber: 71
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    globalHeaderTitle: "SERVICES AND BOOKING",
-    globalHeaderImage: "../img/services-bg.jpg",
-    globalHeaderSubTitle: "Use our online booking tool or call 437-777-MAID.",
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    globalHeaderTitle: "Contact Us",
+    globalHeaderImage: "../img/contact-bg.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 341
+      lineNumber: 72
     },
     __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("main", {
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("main", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 346
+      lineNumber: 76
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("section", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-            margin-top: 75px;
-
-            p {
-              margin-bottom: 0;
-            }
-
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("section", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+            padding: 100px 15px !important;
             h2 {
               font-weight: 600;
+            }
+
+            h2:first-of-type {
+              margin-bottom: 25px;
+            }
+
+            h2:last-of-type {
               margin-bottom: 25px;
             }
           `,
+    id: "contact-form",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 347
+      lineNumber: 77
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 361
+      lineNumber: 94
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "col-md-8 offset-md-2 col-sm-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 362
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                  padding: 0 25px;
-                `,
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 363
+      lineNumber: 95
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+    className: "col-md-8 offset-md-2 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 369
+      lineNumber: 96
     },
     __self: undefined
-  }, "We offer a variety of cleaning options"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 370
-    },
-    __self: undefined
-  }, "We offer the most customizable plans that let you choose exactly what you want. Whether you want your entire home deep cleaned by one of our professional staff, or simply want some help with the dreaded kitchen & bathroom, we have you covered. Choose from our pre-structured plans that cover all the standard items, or select our hourly plan to have complete control of how the time is spent."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("section", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-            padding-top: 75px !important;
-            padding-bottom: 100px !important;
-            h2 {
-              font-weight: 600;
-              margin-bottom: 50px;
-            }
-
-            h3 {
-              font-size: 20px;
-              font-weight: 600;
-              margin-bottom: 35px;
-            }
-
-            h4 {
-              font-size: 16px;
-              font-weight: 600;
-              margin-bottom: 25px;
-            }
-
-            li {
-              label {
-                margin-bottom: 45px;
-
-                p {
-                  position: relative;
-                  top: 5px;
-                  left: 50px;
-                }
-
-                @media only screen and (max-width: 767px) {
-                  p {
-                    line-height: 1.2rem;
-                  }
-                }
-              }
-            }
-
-            li:first-of-type {
-              margin-top: 25px;
-            }
-
-            li:nth-of-type(6) {
-              margin-bottom: 50px;
-            }
-
-            textarea {
-              margin-bottom: 50px;
-            }
-
-            li:last-of-type {
-              margin-bottom: 75px;
-            }
-
-            .form-group {
-              padding: 0px !important;
-            }
-          `,
-    id: "service-form",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 383
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 444
+      lineNumber: 97
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("form", {
-    onSubmit: handleOnSubmit,
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 445
+      lineNumber: 98
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+  }, "Feel free to e-mail or call at any time"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+                      font-size: 16px;
+                    `,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    },
+    __self: undefined
+  }, "If you'd rather speak to us in person or send an email at your own leisure, feel free to email or call us at any time, we'd be more than happy to answer your questions or give an estimated price."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+                      font-size: 16px;
+                    `,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: undefined
+  }, "Email:"), " information@rosiesmaidservice.ca"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+                      font-size: 16px;
+                      margin-bottom: 75px;
+                    `,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122
+    },
+    __self: undefined
+  }, "Phone number:"), " (437) 777-6243"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125
+    },
+    __self: undefined
+  }, "Or submit a quick message"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("section", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+                      padding-top: 0 !important;
+                    `,
+    id: "contact-form",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 446
+      lineNumber: 132
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "col-md-8 offset-md-2 col-sm-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 447
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                      padding: 0 15px;
-                    `,
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 448
+      lineNumber: 133
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        padding: 0 5px !important;
-
-                        h3 {
-                          margin-bottom: 25px;
-                        }
-
-                        .note {
-                          margin-bottom: 50px;
-                        }
-                      `,
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+                            padding: 0 0 !important;
+                          `,
     className: "col-md-12 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 454
+      lineNumber: 134
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+    className: "block",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 140
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("form", {
+    onSubmit: handleOnSubmit,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 141
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 468
+      lineNumber: 142
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 469
-    },
-    __self: undefined
-  }, "Select your cleaning package"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 470
-    },
-    __self: undefined
-  }, "1) Hourly cleaning packages"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    className: "note",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 471
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 472
-    },
-    __self: undefined
-  }, "Note:"), " Just leave us detailed instructions in the comments box at the bottom of this page and our professional maid will focus exactly on the items on your list. The list should be structured as a priority list in case there isn\u2019t enough time to complete all the items."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 479
-    },
-    __self: undefined
-  }, radioValues1.map((radioValue, i) => {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-      key: `${radioValue}-${i}`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 482
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-      className: "checkbox-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 483
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-      type: "radio",
-      value: radioArrayId1[i],
-      id: radioValue,
-      checked: inputs.radioValue === `${radioArrayId1[i]}`,
-      onChange: handleRadio,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 484
-      },
-      __self: undefined
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-      className: "radio-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 494
-      },
-      __self: undefined
-    }, radioLabels1[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-      className: "checkbox-custom circular",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 497
-      },
-      __self: undefined
-    })));
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "or-h3",
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                              h3 {
-                                margin: 75px 0;
-                              }
-                            `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 502
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 510
-    },
-    __self: undefined
-  }, "OR")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "plans-h3",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 512
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 513
-    },
-    __self: undefined
-  }, "2) Cleaning plans")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "1bed-h4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 515
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 516
-    },
-    __self: undefined
-  }, "1 Bedroom or Bachelor up to 600 sq/ft (1 bathroom)")), radioValues2.map((radioValue, i) => {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-      key: `${radioValue}-${i}`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 522
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-      className: "checkbox-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 523
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-      type: "radio",
-      value: radioArrayId2[i],
-      id: radioValue,
-      checked: inputs.radioValue === `${radioArrayId2[i]}`,
-      onChange: handleRadio,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 524
-      },
-      __self: undefined
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-      className: "radio-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 534
-      },
-      __self: undefined
-    }, radioLabels2[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-      className: "checkbox-custom circular",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 537
-      },
-      __self: undefined
-    })));
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "2bed-h4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 542
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 543
-    },
-    __self: undefined
-  }, "2 Bedroom up to 1000 sq/ft (1 bathroom)")), radioValues3.map((radioValue, i) => {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-      key: `${radioValue}-${i}`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 547
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-      className: "checkbox-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 548
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-      type: "radio",
-      value: radioArrayId3[i],
-      id: radioValue,
-      checked: inputs.radioValue === `${radioArrayId3[i]}`,
-      onChange: handleRadio,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 549
-      },
-      __self: undefined
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-      className: "radio-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 559
-      },
-      __self: undefined
-    }, radioLabels3[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-      className: "checkbox-custom circular",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 562
-      },
-      __self: undefined
-    })));
-  }))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                      padding: 0 5px !important;
-                      margin-bottom: 50px;
-                    `,
-    className: "col-md-12 col-sm-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 571
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        padding: 0 15px;
-                        label {
-                          margin-bottom: 50px;
-                          p {
-                            position: relative;
-                            top: 4px;
-                            left: 50px;
-                          }
-
-                          @media only screen and (max-width: 767px) {
-                            p {
-                              line-height: 1.2rem;
-                              top: 8px;
-                            }
-                          }
-                        }
-                      `,
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 578
-    },
-    __self: undefined
-  }, " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 0 !important;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 600
-    },
-    __self: undefined
-  }, "Extras:")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        padding: 0 15px;
-                        label {
-                          margin-bottom: 40px;
-                          p {
-                            position: relative;
-                            top: 4px;
-                            left: 50px;
-                          }
-
-                          @media only screen and (max-width: 767px) {
-                            p {
-                              line-height: 1.2rem;
-                              top: 8px;
-                            }
-                          }
-                        }
-                      `,
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 608
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-top: 50px;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 629
-    },
-    __self: undefined
-  }, "The following can be added to your package:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 636
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 637
-    },
-    __self: undefined
-  }, checkBoxArrayAddOns3.map((checkBox, i) => {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-      key: `${checkBox}-${i}`,
-      className: "checkbox-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 640
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-      type: "checkbox",
-      id: checkBoxArrayIds3[i],
-      value: checkBox,
-      onChange: handleCheckBox,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 644
-      },
-      __self: undefined
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-      className: "radio-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 650
-      },
-      __self: undefined
-    }, checkBoxArrayLabels3[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-      className: "checkbox-custom rectangular",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 653
-      },
-      __self: undefined
-    }));
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 658
-    },
-    __self: undefined
-  }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 661
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 662
-    },
-    __self: undefined
-  }, "Note:"), " Please refer to our", " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("a", {
-    href: "#required-items",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 663
-    },
-    __self: undefined
-  }, "list of required items"), " to ensure we have the tools to complete these jobs.", " "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        margin-bottom: 75px;
-                      `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 667
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 672
-    },
-    __self: undefined
-  }, "Note:"), " If this is your first time booking with us, or your home hasn\u2019t been thoroughly cleaned in the past 30 days, we strongly recommend the \u201CDeep clean\u201D add on, as this will prepare your home for future regular cleaning visits."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 678
-    },
-    __self: undefined
-  }, "When is this appointment for?"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        margin-bottom: 15px !important;
-                      `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 679
-    },
-    __self: undefined
-  }, "Select a date"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 686
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(react_datepicker__WEBPACK_IMPORTED_MODULE_14___default.a, {
-    selected: inputs.startDate,
-    onChange: handleDate,
-    className: "form-control",
-    placeholderText: "Click for calendar",
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 50px;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 687
-    },
-    __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 15px !important;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 696
-    },
-    __self: undefined
-  }, "Select a time"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 25px !important;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 703
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 708
-    },
-    __self: undefined
-  }, "Note:"), " Our cleaning professional will arrive for your appointment inside of your selected 2 hour window. Please feel free to include your preferred arrival time in the additional information box at the bottom of the page and we will do our best."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          li:last-of-type {
-                          }
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 714
-    },
-    __self: undefined
-  }, radioValues4.map((radioValue, i) => {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-      key: `${radioValue}-${i}`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 722
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-      className: "checkbox-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 723
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-      type: "radio",
-      value: radioValue,
-      id: radioValue,
-      checked: inputs.startTime === `${radioValue}`,
-      onChange: handleTime,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 724
-      },
-      __self: undefined
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-      className: "radio-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 731
-      },
-      __self: undefined
-    }, radioValue), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-      className: "checkbox-custom circular",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 732
-      },
-      __self: undefined
-    })));
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 15px !important;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 739
-    },
-    __self: undefined
-  }, "Will there be pets?"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 746
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 747
-    },
-    __self: undefined
-  }, "Note:"), " If yes, please ensure your pets will be secured throughout the duration of our visit."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 750
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "pets-yes",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 751
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                              margin-bottom: 25px !important;
-                            `,
-    className: "checkbox-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 752
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    type: "radio",
-    value: "Yes",
-    id: "yes",
-    checked: inputs.pets === `Yes`,
-    onChange: handleYesNo1,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 758
-    },
-    __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    className: "radio-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 765
-    },
-    __self: undefined
-  }, "Yes"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    className: "checkbox-custom circular",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 766
-    },
-    __self: undefined
-  }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "pets-no",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 769
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-    className: "checkbox-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 770
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    type: "radio",
-    value: "No",
-    id: "no",
-    checked: inputs.pets === `No`,
-    onChange: handleYesNo1,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 771
-    },
-    __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    className: "radio-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 778
-    },
-    __self: undefined
-  }, "No"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    className: "checkbox-custom circular",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 779
-    },
-    __self: undefined
-  })))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 10px !important;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 784
-    },
-    __self: undefined
-  }, "Will you be home during the visit?"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 791
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "attendance-yes",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 792
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                              margin-bottom: 25px !important;
-                            `,
-    className: "checkbox-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 793
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    type: "radio",
-    value: "Yes",
-    id: "yes",
-    checked: inputs.attendance === `Yes`,
-    onChange: handleYesNo2,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 799
-    },
-    __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    className: "radio-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 806
-    },
-    __self: undefined
-  }, "Yes"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    className: "checkbox-custom circular",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 807
-    },
-    __self: undefined
-  }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "attendance-no",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 810
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                              margin-bottom: 100px !important;
-                            `,
-    className: "checkbox-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 811
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    type: "radio",
-    value: "No",
-    id: "no",
-    checked: inputs.attendance === `No`,
-    onChange: handleYesNo2,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 817
-    },
-    __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    className: "radio-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 824
-    },
-    __self: undefined
-  }, "No"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    className: "checkbox-custom circular",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 825
-    },
-    __self: undefined
-  }))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        margin-bottom: 15px !important;
-                      `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 831
-    },
-    __self: undefined
-  }, "Enter your location"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        margin-bottom: 50px !important;
-                      `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 839
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 844
-    },
-    __self: undefined
-  }, "Note:"), " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_16___default.a, {
-    href: "/terms",
-    as: "/terms",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 845
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("a", {
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 846
-    },
-    __self: undefined
-  }, "Please make sure you are inside our service area.")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 850
-    },
-    __self: undefined
-  }), "If you are outside, please give us a call at 437-777-MAID."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        input {
-                          margin-bottom: 15px;
-                        }
-                      `,
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 854
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    id: "address",
-    type: "text",
-    onChange: handleOnChange,
-    required: true,
-    placeholder: "Enter your address",
-    className: "form-control",
-    value: inputs.address,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 862
-    },
-    __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        input {
-                          margin-bottom: 15px;
-                        }
-                      `,
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 872
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    id: "unit",
-    type: "text",
-    className: "form-control",
-    onChange: handleOnChange,
-    placeholder: "Enter your unit # (if applicable)",
-    value: inputs.unit,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 880
-    },
-    __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        input {
-                          margin-bottom: 75px;
-                        }
-                      `,
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 889
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    id: "buzzer",
-    type: "text",
-    className: "form-control",
-    onChange: handleOnChange,
-    placeholder: "Enter your buzzer # (if applicable)",
-    value: inputs.buzzer,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 897
-    },
-    __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 907
-    },
-    __self: undefined
-  }, "Enter your personal information"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        input {
-                          margin-bottom: 15px;
-                        }
-                      `,
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 909
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
     id: "name",
-    type: "text",
+    type: "name",
     onChange: handleOnChange,
     required: true,
-    placeholder: "Enter your name",
     className: "form-control",
     value: inputs.name,
+    placeholder: "Your name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 917
+      lineNumber: 143
     },
     __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        input {
-                          margin-bottom: 15px;
-                        }
-                      `,
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 927
+      lineNumber: 153
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
     id: "email",
     type: "email",
-    className: "form-control",
     onChange: handleOnChange,
     required: true,
-    placeholder: "Enter your email address",
+    className: "form-control",
     value: inputs.email,
+    placeholder: "Your email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 935
+      lineNumber: 154
     },
     __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        input {
-                          margin-bottom: 75px;
-                        }
-                      `,
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 945
+      lineNumber: 164
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
     id: "phone",
     type: "phone",
-    className: "form-control",
     onChange: handleOnChange,
     required: true,
-    placeholder: "Enter your phone number",
+    className: "form-control",
     value: inputs.phone,
+    placeholder: "Your phone number",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 953
+      lineNumber: 165
     },
     __self: undefined
-  }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                      textarea {
-                        height: 135px !important;
-                        margin-bottom: 75px !important;
-                      }
-                    `,
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "form-group-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 965
+      lineNumber: 175
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 974
-    },
-    __self: undefined
-  }, "Additional notes"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 975
-    },
-    __self: undefined
-  }, "Additional information, instructions, or requests for our visit? Parking information is greaty appreciated."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("textarea", {
-    id: "cleanerMessage",
-    name: "cleanerMessage",
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("textarea", {
+    id: "message",
+    name: "message",
     onChange: handleOnChange,
     required: true,
     className: "form-control",
-    value: inputs.cleanerMessage,
+    value: inputs.message,
     rows: "3",
     placeholder: "Your message",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 979
+      lineNumber: 176
     },
     __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                      padding: 0 15px;
-                    `,
-    className: "row",
+  })), status.info.error && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+    className: "error",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 991
+      lineNumber: 188
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        padding: 0 5px !important;
-
-                        h2 {
-                          margin-bottom: 50px;
-                        }
-                      `,
-    className: "col-md-12 col-sm-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 997
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_15___default.a, {
-    id: "required-items",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1007
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1008
-    },
-    __self: undefined
-  }, "Confirm you have the proper cleaning items")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("details", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          summary span {
-                            font-size: 20px;
-                            font-weight: 700;
-                            font-family: "Roboto", sans-serif;
-                          }
-
-                          summary {
-                            margin-bottom: 25px;
-                          }
-
-                          ul li {
-                            margin-bottom: 25px;
-                          }
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1011
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("summary", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1028
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1029
-    },
-    __self: undefined
-  }, "Review our list of required cleaning items")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                            h4 {
-                              margin-bottom: 10px;
-                            }
-                          `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1033
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "gcleaner",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1040
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1041
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1042
-    },
-    __self: undefined
-  }, "Glass cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1044
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1045
-    },
-    __self: undefined
-  }, "For windows and mirrors. Such as Windex or plain white vinegar and water, mixed in a spray bottle."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "apcleaner",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1053
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1054
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1055
-    },
-    __self: undefined
-  }, "All-Purpose Cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1057
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1058
-    },
-    __self: undefined
-  }, "For most hard surfaces in the home. Such as Mr. Clean or Clorox."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "bcleaner",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1065
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1066
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1067
-    },
-    __self: undefined
-  }, "Bathroom Cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1069
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1070
-    },
-    __self: undefined
-  }, "For sinks, toilets, and bathtubs. Please ensure product is suitable for your type of bathtub. Such as Vim or Greenworks."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "dish-soap",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1078
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1079
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1080
-    },
-    __self: undefined
-  }, "Dish Soap")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1082
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1083
-    },
-    __self: undefined
-  }, "A safe, PH cleaner than can be used on dishes as well as on surfaces requiring a milder product.", " "))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "vinegar",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1090
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1091
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1092
-    },
-    __self: undefined
-  }, "Vinegar")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1094
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1095
-    },
-    __self: undefined
-  }, "One of the most efficient and safe cleaning products than can be used on almost any surface.", " "))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "stcleaner",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1102
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1103
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1104
-    },
-    __self: undefined
-  }, "Stove Top Cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1106
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1107
-    },
-    __self: undefined
-  }, "Depending on your type of stove, we may require a special product to properly clean the stove-top. For glass stove tops, we recommend Weiman Glass Cook Top cleaner."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("details", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          summary span {
-                            font-size: 20px;
-                            font-weight: 700;
-                            font-family: "Roboto", sans-serif;
-                          }
-
-                          summary {
-                            margin-bottom: 50px;
-                          }
-
-                          ul li {
-                            margin-bottom: 25px;
-                          }
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1118
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("summary", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1135
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1136
-    },
-    __self: undefined
-  }, "Review our list of required cleaning tools")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                            h4 {
-                              margin-bottom: 5px;
-                            }
-                          `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1140
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "mop",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1147
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1148
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1149
-    },
-    __self: undefined
-  }, "Mop")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1151
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1152
-    },
-    __self: undefined
-  }, "A twist mop with a bucket is our preferred choice."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "vaccum",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1159
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1160
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1161
-    },
-    __self: undefined
-  }, "Vaccuum Cleaner / Broom and dustpan"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "cloths",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1165
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1166
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1167
-    },
-    __self: undefined
-  }, "Microfiber cloths")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1169
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1170
-    },
-    __self: undefined
-  }, "J cloths, old towels may also be used,but we strongly recommend Microfiber."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "tbrush",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1177
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1178
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1179
-    },
-    __self: undefined
-  }, "Toilet bowl brush"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "ptowel",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1183
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1184
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1185
-    },
-    __self: undefined
-  }, "Paper Towel"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                              margin-bottom: 25px !important;
-                            `,
-    key: "3step",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1189
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1195
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1196
-    },
-    __self: undefined
-  }, "Three Step Ladder")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1198
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1199
-    },
-    __self: undefined
-  }, "For higher areas, such as when cleaning windows and the inside of high cabinets, we will not use anything but a Three-Step ladder for the safety of our staff."))))))), grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1213
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 30px !important;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1214
-    },
-    __self: undefined
-  }, "Total:"), inputs.radioLabel > 0 ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                            display: flex;
-                            justify-content: space-between;
-
-                            h3 {
-                              font-size: 16px;
-                              margin-bottom: 15px;
-                            }
-
-                            span {
-                              font-size: 16px;
-                            }
-                          `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1223
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1238
-    },
-    __self: undefined
-  }, `+ ${inputs.radioValue}`), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1239
-    },
-    __self: undefined
-  }, formatter.format(inputs.radioLabel))) : null, addOnsLabels3.map((addOnLabel3, i) => {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                              display: flex;
-                              justify-content: space-between;
-
-                              h3 {
-                                font-size: 16px;
-                                margin-bottom: 15px;
-                              }
-
-                              span {
-                                font-size: 16px;
-                              }
-                            `,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 1245
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 1260
-      },
-      __self: undefined
-    }, "+ ", addOnLabel3), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 1261
-      },
-      __self: undefined
-    }, " ", formatter.format(addOnsCost3[i])));
-  })) : null, grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(react__WEBPACK_IMPORTED_MODULE_10___default.a.Fragment, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1268
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          display: flex;
-                          justify-content: space-between;
-                          margin-top: 25px;
-                          padding-top: 25px;
-                          border-top: 1px solid black;
-
-                          h3 {
-                            font-size: 16px;
-                            margin-bottom: 15px;
-                          }
-
-                          span {
-                            font-size: 16px;
-                          }
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1269
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1287
-    },
-    __self: undefined
-  }, "+ HST (x0.13)"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1288
-    },
-    __self: undefined
-  }, grandTotalHST)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          display: flex;
-                          justify-content: space-between;
-
-                          h3 {
-                            font-size: 16px;
-                            margin-top: 7px;
-                            margin-bottom: 50px;
-                          }
-
-                          input {
-                            font-size: 16px;
-                            width: auto;
-                            overflow: visible;
-                            height: 35px;
-                            text-align: right;
-                            border: none;
-                            margin-bottom: 50px;
-                          }
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1290
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1312
-    },
-    __self: undefined
-  }, "Grand total:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1313
-    },
-    __self: undefined
-  }, grandTotalSumHST)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 50px;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1315
-    },
-    __self: undefined
-  }, "On future bookings, save 25% by having a scheduled appointment within 2 weeks of your last service, or 10% within 30 days.")) : null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1327
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        margin-top: 0 !important;
-                      `,
-    key: "contsent",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1328
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-    className: "checkbox-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1334
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    type: "checkbox",
-    id: "consent",
-    value: "consent",
-    onChange: handleChecked,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1335
-    },
-    __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    className: "radio-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1341
-    },
-    __self: undefined
-  }, "I have read and agree to", " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_16___default.a, {
-    href: "/terms",
-    as: "/terms",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1343
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("a", {
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1344
-    },
-    __self: undefined
-  }, "the terms of service."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    className: "checkbox-custom rectangular",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1347
-    },
-    __self: undefined
-  })))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                      button:disabled {
-                        opacity: 0.5;
-                      }
-                    `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1351
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("button", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        width: 100%;
-                        height: 60px;
-                        background: #47424c;
-                        border: none;
-                        color: #fff;
-                        font-family: "Open Sans", sans-serif;
-                        font-size: 18px;
-                        margin-bottom: 75px;
-                      `,
+  }, "Error: ", status.info.msg), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("button", {
     type: "submit",
-    disabled: inputs.consentBox === "consent" ? false : true,
+    disabled: status.submitting,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1358
+      lineNumber: 192
     },
     __self: undefined
-  }, !status.submitting ? !status.submitted ? "Book now" : "Your appointment has been booked!" : "Booking..."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1379
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1380
-    },
-    __self: undefined
-  }, "Payment:"), " You never pay in advance. After the cleaning, we will send you an electronic invoice that can be paid via credit card or interac e-transfer.")))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }, !status.submitting ? !status.submitted ? "Submit" : "Your message has been submitted" : "Submitting..."))))))))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_11__["default"], {
     callTitle: "You're one step away from a clean and happy home!",
     callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
     callLinkUrl: "/services",
     callLink: "View our services",
-    callImage: "img/services-bg.jpg",
+    callImage: "img/contact-bg.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1391
+      lineNumber: 214
     },
     __self: undefined
   }));
@@ -6433,14 +4573,14 @@ footer .footer-manu ul li a:hover {
 
 /***/ }),
 
-/***/ 5:
-/*!*********************************!*\
-  !*** multi ./pages/services.js ***!
-  \*********************************/
+/***/ 3:
+/*!********************************!*\
+  !*** multi ./pages/contact.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/services.js */"./pages/services.js");
+module.exports = __webpack_require__(/*! /Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/contact.js */"./pages/contact.js");
 
 
 /***/ }),
@@ -6566,17 +4706,6 @@ module.exports = require("core-js/library/fn/object/keys");
 
 /***/ }),
 
-/***/ "core-js/library/fn/parse-float":
-/*!*************************************************!*\
-  !*** external "core-js/library/fn/parse-float" ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/parse-float");
-
-/***/ }),
-
 /***/ "core-js/library/fn/promise":
 /*!*********************************************!*\
   !*** external "core-js/library/fn/promise" ***!
@@ -6596,17 +4725,6 @@ module.exports = require("core-js/library/fn/promise");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
-
-/***/ }),
-
-/***/ "next/router":
-/*!******************************!*\
-  !*** external "next/router" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next/router");
 
 /***/ }),
 
@@ -6643,17 +4761,6 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "react-datepicker":
-/*!***********************************!*\
-  !*** external "react-datepicker" ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-datepicker");
-
-/***/ }),
-
 /***/ "react-is":
 /*!***************************!*\
   !*** external "react-is" ***!
@@ -6662,17 +4769,6 @@ module.exports = require("react-datepicker");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
-
-/***/ }),
-
-/***/ "react-scrollable-anchor":
-/*!******************************************!*\
-  !*** external "react-scrollable-anchor" ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-scrollable-anchor");
 
 /***/ }),
 
@@ -6688,4 +4784,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=services.js.map
+//# sourceMappingURL=contact.js.map
