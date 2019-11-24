@@ -26141,8 +26141,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_18__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! react-datepicker/dist/react-datepicker.css */ "./node_modules/react-datepicker/dist/react-datepicker.css");
-/* harmony import */ var react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! react-datepicker/dist/react-datepicker.css */ "./node_modules/react-datepicker/dist/react-datepicker.css");
+/* harmony import */ var react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_21__);
 
 
 
@@ -26644,6 +26646,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_13__["useState"])({
     submitted: false,
@@ -26669,7 +26672,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     radioValue: "",
     radioLabel: "",
     cleanerMessage: "",
-    optionsAddOns3: [],
+    optionsAddOns3: [0.0],
     consentBox: [],
     labelsAddOns3: [],
     startDate: new Date(),
@@ -26730,7 +26733,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
         radioValue: "",
         radioLabel: "",
         cleanerMessage: "",
-        optionsAddOns3: [],
+        optionsAddOns3: [0.0],
         labelsAddOns3: [],
         consentBox: "",
         startDate: new Date(),
@@ -26917,8 +26920,11 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
             case 7:
               text = _context.sent;
               handleResponse(res.status, text);
+              setTimeout(function () {
+                next_router__WEBPACK_IMPORTED_MODULE_20___default.a.push("/#slider");
+              }, 2000);
 
-            case 9:
+            case 10:
             case "end":
               return _context.stop();
           }
@@ -26970,7 +26976,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_14__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 337
+      lineNumber: 340
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_16__["default"], {
@@ -26979,34 +26985,34 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     globalHeaderSubTitle: "Use our online booking tool or call 437-777-MAID.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 338
+      lineNumber: 341
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("main", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 343
+      lineNumber: 346
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("section", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 344
+      lineNumber: 347
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 358
+      lineNumber: 361
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "col-md-8 offset-md-2 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 359
+      lineNumber: 362
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27014,19 +27020,19 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 360
+      lineNumber: 363
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 366
+      lineNumber: 369
     },
     __self: this
   }, "We offer a variety of cleaning options"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 367
+      lineNumber: 370
     },
     __self: this
   }, "We offer the most customizable plans that let you choose exactly what you want. Whether you want your entire home deep cleaned by one of our professional staff, or simply want some help with the dreaded kitchen & bathroom, we have you covered. Choose from our pre-structured plans that cover all the standard items, or select our hourly plan to have complete control of how the time is spent."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("section", {
@@ -27034,35 +27040,35 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     id: "service-form",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 380
+      lineNumber: 383
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 441
+      lineNumber: 444
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("form", {
     onSubmit: handleOnSubmit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 442
+      lineNumber: 445
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 443
+      lineNumber: 446
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "col-md-8 offset-md-2 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 444
+      lineNumber: 447
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27070,7 +27076,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 445
+      lineNumber: 448
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27078,45 +27084,45 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "col-md-12 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 451
+      lineNumber: 454
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 465
+      lineNumber: 468
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 466
+      lineNumber: 469
     },
     __self: this
   }, "Select your cleaning package"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 467
+      lineNumber: 470
     },
     __self: this
   }, "1) Hourly cleaning packages"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     className: "note",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 468
+      lineNumber: 471
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 469
+      lineNumber: 472
     },
     __self: this
   }, "Note:"), " Just leave us detailed instructions in the comments box at the bottom of this page and our professional maid will focus exactly on the items on your list. The list should be structured as a priority list in case there isn\u2019t enough time to complete all the items."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 476
+      lineNumber: 479
     },
     __self: this
   }, radioValues1.map(function (radioValue, i) {
@@ -27124,14 +27130,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       key: "".concat(radioValue, "-").concat(i),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 479
+        lineNumber: 482
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
       className: "checkbox-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 480
+        lineNumber: 483
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27142,21 +27148,21 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       onChange: handleRadio,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 481
+        lineNumber: 484
       },
       __self: this
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
       className: "radio-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 491
+        lineNumber: 494
       },
       __self: this
     }, radioLabels1[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
       className: "checkbox-custom circular",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 494
+        lineNumber: 497
       },
       __self: this
     })));
@@ -27165,20 +27171,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject6()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 499
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 507
-    },
-    __self: this
-  }, "OR")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
-    key: "plans-h3",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 509
+      lineNumber: 502
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
@@ -27187,17 +27180,30 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       lineNumber: 510
     },
     __self: this
-  }, "2) Cleaning plans")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
-    key: "1bed-h4",
+  }, "OR")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
+    key: "plans-h3",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 512
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 513
+    },
+    __self: this
+  }, "2) Cleaning plans")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
+    key: "1bed-h4",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 515
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 516
     },
     __self: this
   }, "1 Bedroom or Bachelor up to 600 sq/ft (1 bathroom)")), radioValues2.map(function (radioValue, i) {
@@ -27205,14 +27211,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       key: "".concat(radioValue, "-").concat(i),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 519
+        lineNumber: 522
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
       className: "checkbox-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 520
+        lineNumber: 523
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27223,21 +27229,21 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       onChange: handleRadio,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 521
+        lineNumber: 524
       },
       __self: this
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
       className: "radio-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 531
+        lineNumber: 534
       },
       __self: this
     }, radioLabels2[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
       className: "checkbox-custom circular",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 534
+        lineNumber: 537
       },
       __self: this
     })));
@@ -27245,13 +27251,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     key: "2bed-h4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 539
+      lineNumber: 542
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 540
+      lineNumber: 543
     },
     __self: this
   }, "2 Bedroom up to 1000 sq/ft (1 bathroom)")), radioValues3.map(function (radioValue, i) {
@@ -27259,14 +27265,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       key: "".concat(radioValue, "-").concat(i),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 544
+        lineNumber: 547
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
       className: "checkbox-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 545
+        lineNumber: 548
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27277,21 +27283,21 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       onChange: handleRadio,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 546
+        lineNumber: 549
       },
       __self: this
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
       className: "radio-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 556
+        lineNumber: 559
       },
       __self: this
     }, radioLabels3[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
       className: "checkbox-custom circular",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 559
+        lineNumber: 562
       },
       __self: this
     })));
@@ -27300,7 +27306,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "col-md-12 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 568
+      lineNumber: 571
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27308,14 +27314,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 575
+      lineNumber: 578
     },
     __self: this
   }, " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject9()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 597
+      lineNumber: 600
     },
     __self: this
   }, "Extras:")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27323,27 +27329,27 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 605
+      lineNumber: 608
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject11()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 626
+      lineNumber: 629
     },
     __self: this
   }, "The following can be added to your package:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 633
+      lineNumber: 636
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 634
+      lineNumber: 637
     },
     __self: this
   }, checkBoxArrayAddOns3.map(function (checkBox, i) {
@@ -27352,7 +27358,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       className: "checkbox-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 637
+        lineNumber: 640
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27362,80 +27368,80 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       onChange: handleCheckBox,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 641
+        lineNumber: 644
       },
       __self: this
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
       className: "radio-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 647
+        lineNumber: 650
       },
       __self: this
     }, checkBoxArrayLabels3[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
       className: "checkbox-custom rectangular",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 650
+        lineNumber: 653
       },
       __self: this
     }));
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 655
+      lineNumber: 658
     },
     __self: this
   }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 658
+      lineNumber: 661
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 659
+      lineNumber: 662
     },
     __self: this
   }, "Note:"), " Please refer to our", " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("a", {
     href: "#required-items",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 660
+      lineNumber: 663
     },
     __self: this
   }, "list of required items"), " to ensure we have the tools to complete these jobs.", " "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject12()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 664
+      lineNumber: 667
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 669
+      lineNumber: 672
     },
     __self: this
   }, "Note:"), " If this is your first time booking with us, or your home hasn\u2019t been thoroughly cleaned in the past 30 days, we strongly recommend the \u201CDeep clean\u201D add on, as this will prepare your home for future regular cleaning visits."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 675
+      lineNumber: 678
     },
     __self: this
   }, "When is this appointment for?"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject13()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 676
+      lineNumber: 679
     },
     __self: this
   }, "Select a date"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 683
+      lineNumber: 686
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(react_datepicker__WEBPACK_IMPORTED_MODULE_17___default.a, {
@@ -27446,34 +27452,34 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject14()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 684
+      lineNumber: 687
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject15()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 693
+      lineNumber: 696
     },
     __self: this
   }, "Select a time"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject16()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 700
+      lineNumber: 703
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 705
+      lineNumber: 708
     },
     __self: this
   }, "Note:"), " Our cleaning professional will arrive for your appointment inside of your selected 2 hour window. Please feel free to include your preferred arrival time in the additional information box at the bottom of the page and we will do our best."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject17()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 711
+      lineNumber: 714
     },
     __self: this
   }, radioValues4.map(function (radioValue, i) {
@@ -27481,14 +27487,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       key: "".concat(radioValue, "-").concat(i),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 719
+        lineNumber: 722
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
       className: "checkbox-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 720
+        lineNumber: 723
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27499,21 +27505,21 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       onChange: handleTime,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 721
+        lineNumber: 724
       },
       __self: this
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
       className: "radio-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 728
+        lineNumber: 731
       },
       __self: this
     }, radioValue), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
       className: "checkbox-custom circular",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 729
+        lineNumber: 732
       },
       __self: this
     })));
@@ -27521,32 +27527,32 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject18()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 736
+      lineNumber: 739
     },
     __self: this
   }, "Will there be pets?"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 743
+      lineNumber: 746
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 744
+      lineNumber: 747
     },
     __self: this
   }, "Note:"), " If yes, please ensure your pets will be secured throughout the duration of our visit."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 747
+      lineNumber: 750
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "pets-yes",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 748
+      lineNumber: 751
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
@@ -27554,7 +27560,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "checkbox-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 749
+      lineNumber: 752
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27565,35 +27571,35 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     onChange: handleYesNo1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 755
+      lineNumber: 758
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     className: "radio-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 762
+      lineNumber: 765
     },
     __self: this
   }, "Yes"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     className: "checkbox-custom circular",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 763
+      lineNumber: 766
     },
     __self: this
   }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "pets-no",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 766
+      lineNumber: 769
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
     className: "checkbox-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 767
+      lineNumber: 770
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27604,41 +27610,41 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     onChange: handleYesNo1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 768
+      lineNumber: 771
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     className: "radio-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 775
+      lineNumber: 778
     },
     __self: this
   }, "No"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     className: "checkbox-custom circular",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 776
+      lineNumber: 779
     },
     __self: this
   })))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject20()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 781
+      lineNumber: 784
     },
     __self: this
   }, "Will you be home during the visit?"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 788
+      lineNumber: 791
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "attendance-yes",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 789
+      lineNumber: 792
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
@@ -27646,7 +27652,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "checkbox-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 790
+      lineNumber: 793
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27657,28 +27663,28 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     onChange: handleYesNo2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 796
+      lineNumber: 799
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     className: "radio-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 803
+      lineNumber: 806
     },
     __self: this
   }, "Yes"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     className: "checkbox-custom circular",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 804
+      lineNumber: 807
     },
     __self: this
   }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "attendance-no",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 807
+      lineNumber: 810
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
@@ -27686,7 +27692,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "checkbox-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 808
+      lineNumber: 811
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27697,41 +27703,41 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     onChange: handleYesNo2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 814
+      lineNumber: 817
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     className: "radio-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 821
+      lineNumber: 824
     },
     __self: this
   }, "No"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     className: "checkbox-custom circular",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 822
+      lineNumber: 825
     },
     __self: this
   }))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject23()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 828
+      lineNumber: 831
     },
     __self: this
   }, "Enter your location"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject24()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 836
+      lineNumber: 839
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 841
+      lineNumber: 844
     },
     __self: this
   }, "Note:"), " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_19___default.a, {
@@ -27739,20 +27745,20 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     as: "/terms",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 842
+      lineNumber: 845
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("a", {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 843
+      lineNumber: 846
     },
     __self: this
   }, "Please make sure you are inside our service area.")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 847
+      lineNumber: 850
     },
     __self: this
   }), "If you are outside, please give us a call at 437-777-MAID."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27760,7 +27766,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 851
+      lineNumber: 854
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27773,7 +27779,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     value: inputs.address,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 859
+      lineNumber: 862
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27781,7 +27787,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 869
+      lineNumber: 872
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27793,7 +27799,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     value: inputs.unit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 877
+      lineNumber: 880
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27801,7 +27807,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 886
+      lineNumber: 889
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27813,13 +27819,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     value: inputs.buzzer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 894
+      lineNumber: 897
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 904
+      lineNumber: 907
     },
     __self: this
   }, "Enter your personal information"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27827,7 +27833,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 906
+      lineNumber: 909
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27840,7 +27846,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     value: inputs.name,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 914
+      lineNumber: 917
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27848,7 +27854,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 924
+      lineNumber: 927
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27861,7 +27867,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     value: inputs.email,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 932
+      lineNumber: 935
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27869,7 +27875,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 942
+      lineNumber: 945
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27882,7 +27888,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     value: inputs.phone,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 950
+      lineNumber: 953
     },
     __self: this
   }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27890,19 +27896,19 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "form-group-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 962
+      lineNumber: 965
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 971
+      lineNumber: 974
     },
     __self: this
   }, "Additional notes"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 972
+      lineNumber: 975
     },
     __self: this
   }, "Additional information, instructions, or requests for our visit? Parking information is greaty appreciated."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("textarea", {
@@ -27916,7 +27922,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     placeholder: "Your message",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 976
+      lineNumber: 979
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27924,7 +27930,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 988
+      lineNumber: 991
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27932,396 +27938,396 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "col-md-12 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 994
+      lineNumber: 997
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_18___default.a, {
     id: "required-items",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1004
+      lineNumber: 1007
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1005
+      lineNumber: 1008
     },
     __self: this
   }, "Confirm you have the proper cleaning items")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("details", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject34()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1008
+      lineNumber: 1011
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("summary", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1025
+      lineNumber: 1028
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1026
+      lineNumber: 1029
     },
     __self: this
   }, "Review our list of required cleaning items")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject35()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1030
+      lineNumber: 1033
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "gcleaner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1037
+      lineNumber: 1040
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1038
+      lineNumber: 1041
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1039
+      lineNumber: 1042
     },
     __self: this
   }, "Glass cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1041
+      lineNumber: 1044
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1042
+      lineNumber: 1045
     },
     __self: this
   }, "For windows and mirrors. Such as Windex or plain white vinegar and water, mixed in a spray bottle."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "apcleaner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1050
+      lineNumber: 1053
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1051
+      lineNumber: 1054
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1052
+      lineNumber: 1055
     },
     __self: this
   }, "All-Purpose Cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1054
+      lineNumber: 1057
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1055
+      lineNumber: 1058
     },
     __self: this
   }, "For most hard surfaces in the home. Such as Mr. Clean or Clorox."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "bcleaner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1062
+      lineNumber: 1065
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1063
+      lineNumber: 1066
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1064
+      lineNumber: 1067
     },
     __self: this
   }, "Bathroom Cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1066
+      lineNumber: 1069
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1067
+      lineNumber: 1070
     },
     __self: this
   }, "For sinks, toilets, and bathtubs. Please ensure product is suitable for your type of bathtub. Such as Vim or Greenworks."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "dish-soap",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1075
+      lineNumber: 1078
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1076
+      lineNumber: 1079
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1077
+      lineNumber: 1080
     },
     __self: this
   }, "Dish Soap")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1079
+      lineNumber: 1082
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1080
+      lineNumber: 1083
     },
     __self: this
   }, "A safe, PH cleaner than can be used on dishes as well as on surfaces requiring a milder product.", " "))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "vinegar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1087
+      lineNumber: 1090
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1088
+      lineNumber: 1091
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1089
+      lineNumber: 1092
     },
     __self: this
   }, "Vinegar")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1091
+      lineNumber: 1094
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1092
+      lineNumber: 1095
     },
     __self: this
   }, "One of the most efficient and safe cleaning products than can be used on almost any surface.", " "))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "stcleaner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1099
+      lineNumber: 1102
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1100
+      lineNumber: 1103
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1101
+      lineNumber: 1104
     },
     __self: this
   }, "Stove Top Cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1103
+      lineNumber: 1106
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1104
+      lineNumber: 1107
     },
     __self: this
   }, "Depending on your type of stove, we may require a special product to properly clean the stove-top. For glass stove tops, we recommend Weiman Glass Cook Top cleaner."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("details", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject36()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1115
+      lineNumber: 1118
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("summary", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1132
+      lineNumber: 1135
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1133
+      lineNumber: 1136
     },
     __self: this
   }, "Review our list of required cleaning tools")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject37()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1137
+      lineNumber: 1140
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "mop",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1144
+      lineNumber: 1147
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1145
+      lineNumber: 1148
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1146
+      lineNumber: 1149
     },
     __self: this
   }, "Mop")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1148
+      lineNumber: 1151
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1149
+      lineNumber: 1152
     },
     __self: this
   }, "A twist mop with a bucket is our preferred choice."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "vaccum",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1156
+      lineNumber: 1159
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1157
+      lineNumber: 1160
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1158
+      lineNumber: 1161
     },
     __self: this
   }, "Vaccuum Cleaner / Broom and dustpan"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "cloths",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1162
+      lineNumber: 1165
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1163
+      lineNumber: 1166
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1164
+      lineNumber: 1167
     },
     __self: this
   }, "Microfiber cloths")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1166
+      lineNumber: 1169
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1167
+      lineNumber: 1170
     },
     __self: this
   }, "J cloths, old towels may also be used,but we strongly recommend Microfiber."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "tbrush",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1174
+      lineNumber: 1177
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1175
+      lineNumber: 1178
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1176
+      lineNumber: 1179
     },
     __self: this
   }, "Toilet bowl brush"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "ptowel",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1180
+      lineNumber: 1183
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1181
+      lineNumber: 1184
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1182
+      lineNumber: 1185
     },
     __self: this
   }, "Paper Towel"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
@@ -28329,65 +28335,65 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     key: "3step",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1186
+      lineNumber: 1189
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1192
+      lineNumber: 1195
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1193
+      lineNumber: 1196
     },
     __self: this
   }, "Three Step Ladder")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1195
+      lineNumber: 1198
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1196
+      lineNumber: 1199
     },
     __self: this
   }, "For higher areas, such as when cleaning windows and the inside of high cabinets, we will not use anything but a Three-Step ladder for the safety of our staff."))))))), grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1210
+      lineNumber: 1213
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject39()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1211
+      lineNumber: 1214
     },
     __self: this
   }, "Total:"), inputs.radioLabel > 0 ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject40()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1220
+      lineNumber: 1223
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1235
+      lineNumber: 1238
     },
     __self: this
   }, "+ ".concat(inputs.radioValue)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1236
+      lineNumber: 1239
     },
     __self: this
   }, formatter.format(inputs.radioLabel))) : null, addOnsLabels3.map(function (addOnLabel3, i) {
@@ -28395,77 +28401,77 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject41()),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 1242
+        lineNumber: 1245
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 1257
+        lineNumber: 1260
       },
       __self: this
     }, "+ ", addOnLabel3), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 1258
+        lineNumber: 1261
       },
       __self: this
     }, " ", formatter.format(addOnsCost3[i])));
   })) : null, grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(react__WEBPACK_IMPORTED_MODULE_13___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1265
+      lineNumber: 1268
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject42()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1266
+      lineNumber: 1269
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1284
+      lineNumber: 1287
     },
     __self: this
   }, "+ HST (x0.13)"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1285
+      lineNumber: 1288
     },
     __self: this
   }, grandTotalHST)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject43()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1287
+      lineNumber: 1290
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1309
+      lineNumber: 1312
     },
     __self: this
   }, "Grand total:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1310
+      lineNumber: 1313
     },
     __self: this
   }, grandTotalSumHST)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject44()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1312
+      lineNumber: 1315
     },
     __self: this
   }, "On future bookings, save 25% by having a scheduled appointment within 2 weeks of your last service, or 10% within 30 days.")) : null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1324
+      lineNumber: 1327
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
@@ -28473,14 +28479,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     key: "contsent",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1325
+      lineNumber: 1328
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
     className: "checkbox-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1331
+      lineNumber: 1334
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -28490,14 +28496,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     onChange: handleChecked,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1332
+      lineNumber: 1335
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     className: "radio-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1338
+      lineNumber: 1341
     },
     __self: this
   }, "I have read and agree to", " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_19___default.a, {
@@ -28505,28 +28511,28 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     as: "/terms",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1340
+      lineNumber: 1343
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("a", {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1341
+      lineNumber: 1344
     },
     __self: this
   }, "the terms of service."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     className: "checkbox-custom rectangular",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1344
+      lineNumber: 1347
     },
     __self: this
   })))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject46()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1348
+      lineNumber: 1351
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("button", {
@@ -28535,19 +28541,19 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     disabled: inputs.consentBox === "consent" ? false : true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1355
+      lineNumber: 1358
     },
     __self: this
   }, !status.submitting ? !status.submitted ? "Book now" : "Your appointment has been booked!" : "Booking..."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1376
+      lineNumber: 1379
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1377
+      lineNumber: 1380
     },
     __self: this
   }, "Payment:"), " You never pay in advance. After the cleaning, we will send you an electronic invoice that can be paid via credit card or interac e-transfer.")))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -28558,7 +28564,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     callImage: "img/services-bg.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1388
+      lineNumber: 1391
     },
     __self: this
   }));
@@ -28595,7 +28601,7 @@ var appStyles = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templ
 
 /***/ }),
 
-/***/ 0:
+/***/ 2:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fservices&absolutePagePath=%2FUsers%2Fnickmakuch%2FDocuments%2FCode%2Frosies-ms-nextjs%2Fpages%2Fservices.js ***!
   \**********************************************************************************************************************************************************/
@@ -28618,5 +28624,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=services.js.map

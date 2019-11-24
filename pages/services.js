@@ -8,6 +8,7 @@ import GlobalHeader from "../components/GlobalHeader";
 import DatePicker from "react-datepicker";
 import ScrollableAnchor from "react-scrollable-anchor";
 import Link from "next/link";
+import Router from "next/router";
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -31,7 +32,7 @@ export default () => {
     radioValue: "",
     radioLabel: "",
     cleanerMessage: "",
-    optionsAddOns3: [],
+    optionsAddOns3: [ 0.0 ],
     consentBox: [],
     labelsAddOns3: [],
     startDate: new Date(),
@@ -151,7 +152,7 @@ export default () => {
         radioValue: "",
         radioLabel: "",
         cleanerMessage: "",
-        optionsAddOns3: [],
+        optionsAddOns3: [0.0],
         labelsAddOns3: [],
         consentBox: "",
         startDate: new Date(),
@@ -302,6 +303,8 @@ export default () => {
     });
     const text = await res.text();
     handleResponse(res.status, text);
+    
+    setTimeout(function(){ Router.push("/#slider"); }, 1500);
   };
 
   const handleDate = date => {
