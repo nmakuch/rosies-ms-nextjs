@@ -34,7 +34,10 @@ export default () => {
     optionsAddOns3: [],
     consentBox: [],
     labelsAddOns3: [],
-    startDate: "",
+    startDate: new Date(),
+    startYear: "",
+    startMonth: "",
+    startDay: "",
     startTime: "",
     pets: "",
     attendance: "",
@@ -151,7 +154,10 @@ export default () => {
         optionsAddOns3: [],
         labelsAddOns3: [],
         consentBox: "",
-        startDate: "",
+        startDate: new Date(),
+        startYear: "",
+        startMonth: "",
+        startDay: "",
         startTime: "",
         pets: "",
         attendance: "",
@@ -265,7 +271,6 @@ export default () => {
     e.persist();
 
     if (e.target.checked === true) {
-
       setInputs(prev => ({
         ...prev,
         consentBox: "consent",
@@ -302,7 +307,10 @@ export default () => {
   const handleDate = date => {
     setInputs(prev => ({
       ...prev,
-      startDate: date
+      startDate: date,
+      startYear: date.getFullYear(),
+      startMonth: date.getMonth(),
+      startDay: date.getDay()
     }));
     setStatus({
       submitted: false,
@@ -488,7 +496,8 @@ export default () => {
                               </li>
                             );
                           })}
-                          <li key="or-h3"
+                          <li
+                            key="or-h3"
                             css={css`
                               h3 {
                                 margin: 75px 0;
@@ -625,7 +634,10 @@ export default () => {
                         <div>
                           {checkBoxArrayAddOns3.map((checkBox, i) => {
                             return (
-                              <label key={`${checkBox}-${i}`} className="checkbox-label">
+                              <label
+                                key={`${checkBox}-${i}`}
+                                className="checkbox-label"
+                              >
                                 <input
                                   type="checkbox"
                                   id={checkBoxArrayIds3[i]}
@@ -1109,7 +1121,7 @@ export default () => {
                           }
 
                           summary {
-                            margin-bottom: 50px;
+                            margin-bottom: 25px;
                           }
 
                           ul li {
@@ -1171,7 +1183,12 @@ export default () => {
                             </div>
                           </li>
 
-                          <li key="3step">
+                          <li
+                            css={css`
+                              margin-bottom: 25px !important;
+                            `}
+                            key="3step"
+                          >
                             <div className="key">
                               <h4>Three Step Ladder</h4>
                             </div>
@@ -1186,16 +1203,6 @@ export default () => {
                           </li>
                         </ul>
                       </details>
-
-                      <h4
-                        css={css`
-                          margin-top: 25px;
-                          margin-bottom: 15px !important;
-                        `}
-                      >
-                        All the items listed above will be available during our
-                        cleaner's visit
-                      </h4>
                     </div>
                   </div>
 

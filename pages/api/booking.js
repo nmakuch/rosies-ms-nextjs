@@ -16,7 +16,9 @@ export default async function(req, res) {
     radioValue,
     radioLabel,
     cleanerMessage,
-    startDate,
+    startYear,
+    startMonth,
+    startDay,
     startTime,
     optionsAddOns3,
     labelsAddOns3,
@@ -24,9 +26,22 @@ export default async function(req, res) {
     attendance,
     unit,
     address,
-    buzzer,
-    materials
+    buzzer
   } = req.body;
+
+  var month = new Array();
+  month[0] = "January";
+  month[1] = "February";
+  month[2] = "March";
+  month[3] = "April";
+  month[4] = "May";
+  month[5] = "June";
+  month[6] = "July";
+  month[7] = "August";
+  month[8] = "September";
+  month[9] = "October";
+  month[10] = "November";
+  month[11] = "December";
 
   let grandTotalArr = [];
 
@@ -48,7 +63,7 @@ export default async function(req, res) {
     html: `
     <h1>New Booking</h1>
         <h2>Date and time</h2>
-        <p>${startDate} at ${startTime}</p>
+        <p>${month[startMonth]} ${startDay}, ${startYear} at ${startTime}</p>
         <h3>Name</h3>
         <p>${name}</p>
         <h3>Email</h3>
@@ -67,8 +82,6 @@ export default async function(req, res) {
         <p>${buzzer}</p>
         <h3>Cleaner message</h3>
         <p>${cleanerMessage}</p>
-        <h3>Do they have all the necessary tools and items?</h3>
-        <p>${materials}</p>
 
         <h3>Selected plan:</h3>
         <p>${radioValue}</p>
@@ -96,7 +109,7 @@ export default async function(req, res) {
     <br /><h2>You have selected the following date/time and cleaning package:</h2>
 
         <h3>Date and time</h3>
-        <p>${startDate} at ${startTime}</p>
+        <p>${month[startMonth]} ${startDay}, ${startYear}  at ${startTime}</p>
 
         <h3>Selected plan:</h3>
         <p>${radioValue}</p>
