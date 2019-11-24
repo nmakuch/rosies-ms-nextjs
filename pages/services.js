@@ -304,7 +304,7 @@ export default () => {
     const text = await res.text();
     handleResponse(res.status, text);
     
-    setTimeout(function(){ Router.push("/#slider"); }, 1500);
+    setTimeout(function(){ Router.push("/#slider"); }, 1000);
   };
 
   const handleDate = date => {

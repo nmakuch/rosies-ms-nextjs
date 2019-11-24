@@ -2771,13 +2771,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
 /* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_13__);
 
 
 
@@ -2787,7 +2789,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/contact.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
 
 function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -2801,11 +2804,12 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = (() => {
   const {
     0: status,
     1: setStatus
-  } = Object(react__WEBPACK_IMPORTED_MODULE_9__["useState"])({
+  } = Object(react__WEBPACK_IMPORTED_MODULE_8__["useState"])({
     submitted: false,
     submitting: false,
     info: {
@@ -2816,7 +2820,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
   const {
     0: inputs,
     1: setInputs
-  } = Object(react__WEBPACK_IMPORTED_MODULE_9__["useState"])({
+  } = Object(react__WEBPACK_IMPORTED_MODULE_8__["useState"])({
     name: "",
     email: "",
     phone: "",
@@ -2878,30 +2882,33 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     });
     const text = await res.text();
     handleResponse(res.status, text);
+    setTimeout(function () {
+      next_router__WEBPACK_IMPORTED_MODULE_13___default.a.push("/contact#global-header");
+    }, 1000);
   };
 
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 74
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_12__["default"], {
     globalHeaderTitle: "Contact Us",
     globalHeaderImage: "../img/contact-bg.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 75
     },
     __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("main", {
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("main", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 79
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("section", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("section", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
             padding: 100px 15px !important;
             h2 {
               font-weight: 600;
@@ -2918,145 +2925,145 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     id: "contact-form",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 80
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
     className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 95
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-    className: "col-md-8 offset-md-2 col-sm-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-    className: "block",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 97
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+    className: "row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 98
     },
     __self: undefined
-  }, "Feel free to e-mail or call at any time"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
-                      font-size: 16px;
-                    `,
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+    className: "col-md-8 offset-md-2 col-sm-12",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 99
     },
     __self: undefined
-  }, "If you'd rather speak to us in person or send an email at your own leisure, feel free to email or call us at any time, we'd be more than happy to answer your questions or give an estimated price."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+    className: "block",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 100
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101
+    },
+    __self: undefined
+  }, "Feel free to e-mail or call at any time"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
                       font-size: 16px;
                     `,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 102
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("strong", {
+  }, "If you'd rather speak to us in person or send an email at your own leisure, feel free to email or call us at any time, we'd be more than happy to answer your questions or give an estimated price."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
+                      font-size: 16px;
+                    `,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 112
     },
     __self: undefined
-  }, "Email:"), " information@rosiesmaidservice.ca"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117
+    },
+    __self: undefined
+  }, "Email:"), " information@rosiesmaidservice.ca"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
                       font-size: 16px;
                       margin-bottom: 75px;
                     `,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 119
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 122
-    },
-    __self: undefined
-  }, "Phone number:"), " (437) 777-6243"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 125
     },
     __self: undefined
-  }, "Or submit a quick message"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("section", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+  }, "Phone number:"), " (437) 777-6243"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 128
+    },
+    __self: undefined
+  }, "Or submit a quick message"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("section", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
                       padding-top: 0 !important;
                     `,
     id: "contact-form",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 129
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 135
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133
+      lineNumber: 136
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
                             padding: 0 0 !important;
                           `,
     className: "col-md-12 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 137
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
     className: "block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 143
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("form", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("form", {
     onSubmit: handleOnSubmit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141
+      lineNumber: 144
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 145
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
     id: "name",
     type: "name",
     onChange: handleOnChange,
@@ -3066,17 +3073,17 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     placeholder: "Your name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 146
     },
     __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 156
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
     id: "email",
     type: "email",
     onChange: handleOnChange,
@@ -3086,17 +3093,17 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     placeholder: "Your email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 157
     },
     __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164
+      lineNumber: 167
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
     id: "phone",
     type: "phone",
     onChange: handleOnChange,
@@ -3106,17 +3113,17 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     placeholder: "Your phone number",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 165
+      lineNumber: 168
     },
     __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
     className: "form-group-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 175
+      lineNumber: 178
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("textarea", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("textarea", {
     id: "message",
     name: "message",
     onChange: handleOnChange,
@@ -3127,25 +3134,25 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     placeholder: "Your message",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 176
+      lineNumber: 179
     },
     __self: undefined
-  })), status.info.error && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+  })), status.info.error && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
     className: "error",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 188
+      lineNumber: 191
     },
     __self: undefined
-  }, "Error: ", status.info.msg), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("button", {
+  }, "Error: ", status.info.msg), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("button", {
     type: "submit",
     disabled: status.submitting,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 192
+      lineNumber: 195
     },
     __self: undefined
-  }, !status.submitting ? !status.submitted ? "Submit" : "Your message has been submitted" : "Submitting..."))))))))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }, !status.submitting ? !status.submitted ? "Submit" : "Your message has been submitted" : "Submitting..."))))))))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_11__["default"], {
     callTitle: "You're one step away from a clean and happy home!",
     callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
     callLinkUrl: "/services",
@@ -3153,7 +3160,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     callImage: "img/contact-bg.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 214
+      lineNumber: 217
     },
     __self: undefined
   }));
@@ -4725,6 +4732,17 @@ module.exports = require("core-js/library/fn/promise");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
 
 /***/ }),
 

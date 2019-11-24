@@ -13390,12 +13390,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
 /* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_16__);
 
 
 
@@ -13408,7 +13410,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/contact.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement;
 
 function _templateObject6() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n                            padding: 0 0 !important;\n                          "]);
@@ -13482,8 +13485,9 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_12__["useState"])({
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_11__["useState"])({
     submitted: false,
     submitting: false,
     info: {
@@ -13494,7 +13498,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       status = _useState[0],
       setStatus = _useState[1];
 
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_12__["useState"])({
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_11__["useState"])({
     name: "",
     email: "",
     phone: "",
@@ -13578,8 +13582,11 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
             case 7:
               text = _context.sent;
               handleResponse(res.status, text);
+              setTimeout(function () {
+                next_router__WEBPACK_IMPORTED_MODULE_16___default.a.push("/contact#global-header");
+              }, 1000);
 
-            case 9:
+            case 10:
             case "end":
               return _context.stop();
           }
@@ -13592,159 +13599,159 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     };
   }();
 
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_13__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 74
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_15__["default"], {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_15__["default"], {
     globalHeaderTitle: "Contact Us",
     globalHeaderImage: "../img/contact-bg.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 75
     },
     __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("main", {
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("main", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 79
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("section", {
-    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["css"])(_templateObject()),
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("section", {
+    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject()),
     id: "contact-form",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 80
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("div", {
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 95
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("div", {
-    className: "col-md-8 offset-md-2 col-sm-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("div", {
-    className: "block",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 97
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("h2", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
+    className: "row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 98
     },
     __self: this
-  }, "Feel free to e-mail or call at any time"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("p", {
-    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["css"])(_templateObject2()),
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
+    className: "col-md-8 offset-md-2 col-sm-12",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 99
     },
     __self: this
-  }, "If you'd rather speak to us in person or send an email at your own leisure, feel free to email or call us at any time, we'd be more than happy to answer your questions or give an estimated price."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("p", {
-    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["css"])(_templateObject3()),
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
+    className: "block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 100
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("strong", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 101
     },
     __self: this
-  }, "Email:"), " information@rosiesmaidservice.ca"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("p", {
-    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["css"])(_templateObject4()),
+  }, "Feel free to e-mail or call at any time"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
+    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject2()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 102
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("strong", {
+  }, "If you'd rather speak to us in person or send an email at your own leisure, feel free to email or call us at any time, we'd be more than happy to answer your questions or give an estimated price."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
+    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject3()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 112
     },
     __self: this
-  }, "Phone number:"), " (437) 777-6243"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("h2", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117
+    },
+    __self: this
+  }, "Email:"), " information@rosiesmaidservice.ca"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
+    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject4()),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 125
     },
     __self: this
-  }, "Or submit a quick message"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("section", {
-    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["css"])(_templateObject5()),
+  }, "Phone number:"), " (437) 777-6243"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 128
+    },
+    __self: this
+  }, "Or submit a quick message"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("section", {
+    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject5()),
     id: "contact-form",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 129
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 135
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133
+      lineNumber: 136
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("div", {
-    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["css"])(_templateObject6()),
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
+    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject6()),
     className: "col-md-12 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 137
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 143
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("form", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("form", {
     onSubmit: handleOnSubmit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141
+      lineNumber: 144
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 145
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("input", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
     id: "name",
     type: "name",
     onChange: handleOnChange,
@@ -13754,17 +13761,17 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     placeholder: "Your name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 146
     },
     __self: this
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("div", {
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 156
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("input", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
     id: "email",
     type: "email",
     onChange: handleOnChange,
@@ -13774,17 +13781,17 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     placeholder: "Your email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 157
     },
     __self: this
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("div", {
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164
+      lineNumber: 167
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("input", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
     id: "phone",
     type: "phone",
     onChange: handleOnChange,
@@ -13794,17 +13801,17 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     placeholder: "Your phone number",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 165
+      lineNumber: 168
     },
     __self: this
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("div", {
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "form-group-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 175
+      lineNumber: 178
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("textarea", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("textarea", {
     id: "message",
     name: "message",
     onChange: handleOnChange,
@@ -13815,25 +13822,25 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     placeholder: "Your message",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 176
+      lineNumber: 179
     },
     __self: this
-  })), status.info.error && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("div", {
+  })), status.info.error && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "error",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 188
+      lineNumber: 191
     },
     __self: this
-  }, "Error: ", status.info.msg), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])("button", {
+  }, "Error: ", status.info.msg), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("button", {
     type: "submit",
     disabled: status.submitting,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 192
+      lineNumber: 195
     },
     __self: this
-  }, !status.submitting ? !status.submitted ? "Submit" : "Your message has been submitted" : "Submitting..."))))))))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_11__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_14__["default"], {
+  }, !status.submitting ? !status.submitted ? "Submit" : "Your message has been submitted" : "Submitting..."))))))))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_14__["default"], {
     callTitle: "You're one step away from a clean and happy home!",
     callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
     callLinkUrl: "/services",
@@ -13841,7 +13848,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     callImage: "img/contact-bg.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 214
+      lineNumber: 217
     },
     __self: this
   }));
