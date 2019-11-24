@@ -36,14 +36,13 @@ class Header extends React.Component {
                 <p className="animated fadeInUp hero-p">
                   {this.props.sliderSubTitle}
                 </p>
-                <Link
+
+                <a
                   href={this.props.sliderButtonUrl}
-                  as={this.props.sliderButtonUrl}
+                  className="btn-main btn-solid-border"
                 >
-                  <a className="btn-main btn-solid-border">
-                    {this.props.sliderButtonTxt}
-                  </a>
-                </Link>
+                  {this.props.sliderButtonTxt}
+                </a>
               </div>
             </div>
           </div>

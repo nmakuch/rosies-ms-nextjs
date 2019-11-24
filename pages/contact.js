@@ -7,7 +7,6 @@ import CallToAction from "../components/CallToAction";
 import GlobalHeader from "../components/GlobalHeader";
 import Router from "next/router";
 
-
 export default () => {
   const [status, setStatus] = useState({
     submitted: false,
@@ -67,7 +66,9 @@ export default () => {
     });
     const text = await res.text();
     handleResponse(res.status, text);
-    setTimeout(function(){ Router.push("/contact#global-header"); }, 1000);
+    setTimeout(function() {
+      Router.push("/contact#global-header");
+    }, 1000);
   };
 
   return (
@@ -90,6 +91,12 @@ export default () => {
 
             h2:last-of-type {
               margin-bottom: 25px;
+            }
+
+            @media only screen and (max-width: 767px) {
+              h2 {
+                font-size: 28px !important;
+              }
             }
           `}
           id="contact-form"

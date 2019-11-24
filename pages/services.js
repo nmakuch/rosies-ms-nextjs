@@ -32,7 +32,7 @@ export default () => {
     radioValue: "",
     radioLabel: "",
     cleanerMessage: "",
-    optionsAddOns3: [ 0.0 ],
+    optionsAddOns3: [0.0],
     consentBox: [],
     labelsAddOns3: [],
     startDate: new Date(),
@@ -303,8 +303,10 @@ export default () => {
     });
     const text = await res.text();
     handleResponse(res.status, text);
-    
-    setTimeout(function(){ Router.push("/#slider"); }, 1000);
+
+    setTimeout(function() {
+      Router.push("/#slider");
+    }, 1000);
   };
 
   const handleDate = date => {
@@ -355,6 +357,13 @@ export default () => {
             h2 {
               font-weight: 600;
               margin-bottom: 25px;
+            }
+
+            @media only screen and (max-width: 767px) {
+              h2 {
+                font-size: 28px;
+                margin-bottom: 25px;
+              }
             }
           `}
         >
@@ -437,6 +446,12 @@ export default () => {
 
             .form-group {
               padding: 0px !important;
+            }
+
+            @media only screen and (max-width: 767px) {
+              h2 {
+                font-size: 28px;
+              }
             }
           `}
           id="service-form"
@@ -600,6 +615,10 @@ export default () => {
                       <h2
                         css={css`
                           margin-bottom: 0 !important;
+
+                          @media only screen and (max-width: 767px) {
+                            font-size: 28px !important;
+                          }
                         `}
                       >
                         Extras:
@@ -842,7 +861,7 @@ export default () => {
                       `}
                     >
                       <strong>Note:</strong>{" "}
-                      <Link href="/terms" as="/terms">
+                      <Link href="/#service-area" as="/#service-area">
                         <a target="_blank">
                           Please make sure you are inside our service area.
                         </a>

@@ -31,6 +31,12 @@ export default () => {
             p:last-of-type {
               margin-bottom: 75px;
             }
+
+            @media only screen and (max-width: 767px) {
+              h2 {
+                font-size: 28px !important;
+              }
+            }
           `}
           id="contact-form"
         >

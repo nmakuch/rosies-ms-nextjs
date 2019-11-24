@@ -167,112 +167,20 @@ class CallToAction extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Componen
         lineNumber: 18
       },
       __self: this
-    }, this.props.callText), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    }, this.props.callText), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
       href: this.props.callLinkUrl,
-      as: this.props.callLinkUrl,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
       className: "btn-main btn-solid-border",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 20
       },
       __self: this
-    }, this.props.callLink)))))));
+    }, this.props.callLink))))));
   }
 
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (CallToAction);
-
-/***/ }),
-
-/***/ "./components/Feature.js":
-/*!*******************************!*\
-  !*** ./components/Feature.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/Feature.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
-
-/** @jsx jsx */
-
-
-
-class Feature extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
-  render() {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
-      id: "feature",
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`background-image: url('${this.props.featureImage}');`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "container",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "row",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "col-md-6 col-md-offset-6",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
-      className: "text-uppercase",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
-      },
-      __self: this
-    }, this.props.featureTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17
-      },
-      __self: this
-    }, this.props.featureContent), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-      href: "{{ .url }}",
-      className: "btn-solid-border btn-main",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
-    }, this.props.featureBtnCaption)))));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Feature);
 
 /***/ }),
 
@@ -437,201 +345,6 @@ class Footer extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
 /***/ }),
 
-/***/ "./components/Header.js":
-/*!******************************!*\
-  !*** ./components/Header.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/Header.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
-
-/** @jsx jsx */
-
-
-
-class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
-  render() {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("header", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "container",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "row",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "col-md-12",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("nav", {
-      className: "navbar navbar-default",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "container-fluid",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "navbar-header",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-      className: "navbar-brand",
-      href: "/nextjs-rosies-ms/",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
-      width: "300px",
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                            margin-top: 5px;
-                          `,
-      src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfsAAAA0CAYAAACNQpEHAAAACXBIWXMAAC4jAAAuIwF4pT92AAAU4klEQVR4nO2dv1NUyRbHW0uGO5HiPyDL/gFPC3PZKokXAwhesphA9taNIFMyiMQQEjWVYLFeiFVCjrX6B8hC9DKRaKYm8VWz3x7P9Jzu231v3zt35HyqpnSGuX17+nb36T6/+tq3b9+UppW1bymltpVSC0qpm0qpM6XUoVLqWa/bOVUNBHV+gjr/CzV8izp/bGKdBUEQBKFuLoU9hKYWjncc938BAfq1KU+olbW1kH+GhQnHL71u53C0tRQEQRCE0XMdNdgmgn5DKfVIKfWa1O53vRhoZe27o66xXpi0srYW4s+JoP+klHqM1wU+ezXCagqCIAhCY7g2MZlNK6X+RoU2et3OM1O5VtaexkLgV3ykBemTXrczEkGKxcY+WZhoIb9MVfatrD2nlHqPt49HVVdBEARBaArXYe82DAhGbavvdTsL2OlfYCf9spW1l+uuPwT9IdVA9Lqdu7ZtHqr7I7xdGC5JEARBEK4WWtjP4RcfuRzxet3OPr53ho9qFfhE0Bu1/WOqgWAwtvpfPd8RBEEQhCuBFva38EO9zmzYQd+F6lxB4M/5rkkBnAf3iaC/F6CaF8c8QRAEQQBa2D8IbQx44y8TJ7h9COMqoTb6x4EhdY2JGhAEQRCEUXOd3D9oNwxha2zhN6v0ekd4nVmMbIQ620mMvSAIgiB8R3vjf8O7qLj0VtbWNvOn3LWtrL0AG39oqN5HvPZNLD80BqdYUHzSzngxz62VtS9/V6/buRZznSAIgiD8aFBhHx2m1srap1Cxn/W6nWnY8LdJNrtYtHlgWzvfWYuJe7G7dRH2giAIgvAPNxCmplXl0wXaRAvkl1rgt7L2R0bInwWo+eeIql7v4p9CM2Dq87qAoB958h9BEARBaAo3ytRDawKwA79DBP0nONXpXflpToicMQc8wHWnCJejiwbv9Q6qdhoUBEEQhLGBCvuiApLm1H8Lb/27RAUfyledwAdOec/NNU09hOeq0sras0qph0qpKaXULJrhhLze9bqd8x+9eaQdhBRIPxLq4ga88B9EONP1gY3eJK45QrY9k2a3EL1uZ7uVtZUR+Hrnn6cdYDC/5SzqqvDfrQfmCgZpKHTwfkhUj4eYIPS/M3gpeq9U92tl7TX85pmA7+4qpbZ63c5JwHdXMNGd97qd3bL1jKWVtfXvWcNle71u511OfStphxjQ/zZRB/18txKVu4a+pNtgt6iQgQDbQd/UbbBeRmDF9BHyG0LRv/Uc7Zj0OQXUc6T9KJY65j0868WyfZCUt4jyTtCGQ+WlmIMwjyyiz8+QhZvCb9H3/zCKOa7PxGT2TDvpTUxmh/oEvJjXxGR2imv1v7fMtTFlur47MZnt43P9mo6sV+HfFFj+DqlbkdfBxGQ2W/DeUxOT2drEZPY54r76uysF7zc7MZkdF/ydazllb1rf38ypx0GJNv/Clc+040zd7ZCg/+00pUz0zy+hzzWgvJg+Yn839nVcdJw0YTxVOU4cfST25Z33mOd3ULKtF5nfNlW0fznu8TCyvb+M6jleJwloiuzG53A63nIFx98uwyzwSwFVftU2+5WS1+uV8QFWlMFglXpMdnWh6O/utLL2Z2gDgsAO7cBapcawmfMb13LeUzYjdxQ2euW+xtTHbsehdq2hHWKxy1opUz6uHSqzYHFraOuBz7DzKVqe733o30KYxTg5KFFfJzX1o6rGiaph3rOf38OY+Yph0/poimn7mP7VR2s5Wln7DZ5nTB2n8ByP0R98dU/6HK/D5q48Z9k7wUE5y1WcG68XD9osULBso8ZvciY989CDBn4ra+uH/yZSyNvMRC4ydpiJ22DMBHmquaITm02Zjk9x/R4fTWoHF5tFBBT6nz0pFsIyidiUFcR1ovta3mRchDr60SjHSWi5rnmPU9kXWmBgY5R8waa+mzMOoLYvyizmYtfzTP4cr/u/N/Y0PZPeFCYAL62svZN4stzJE/gYLFxH1Pbhn3vdjn7N97qd+8hlcB9/swdsEv+EhETZAMeoHaawGIzFJ4Bi8fXRlSp2yxUylTMZRzGG46lKp0DXvLfHfLZYsN9w89tJnk9OHkTQp+gXRcdsDP3neB3hbpfUcbBNTdQeZ68HqO+lBzQGr80sJgIWh4qVoh0+lpRSt8399f/xmc8ZZMd3X8fKUjtarXOOQtr5Rv8Nv3Mdu5T1kTqkDHIOB53Y+oxTO8xCAxQEvptKmM0E7MJq390HjMt5x7hUZjLGBF+WcelHUeMk8bzneg5R/QZ9kWvvFI6sO54xo5/RKhZvtA3u4xlyC6iqFsBDz/GaNtybbHOxKXNdkOx32kPfu4CI+W7E/ZP+Hk/5fUIz9cEL156QtdfpKvPdGdjouclGr4JX87xVUcaOo/Ofo2NyHqqcLernlB7BMe1Yps0j6zBPV/91tEMsXFtYLPW6HW6X1AcTrXdXEdO+0D6FqFyj2q6uPoJx8sYxka+XjXioqx9VNU7Klh067zn6kXOectyLLaPX7dxmvhvTvx5iV29zjjGXF8ljNBp0kaOjFObL1CsUW40/9sloajiFryzcitlln+GcnRQmn6WQzq8nE3Qm7r5TkfZaiff9h6a3w45vN0oWgEnw7Oo5QdZI2z2E7rxDTb6WaHdvc5XGU+i8xy2qpkJt9yQ8MKTcWLi+q/vN/RDzgJ6v9bxNNDVGK1sLRtibM+pz1d9amLay9rLekesEOFUKV9zrSeS96G9onM0eAtruGJwHuKvT7hbZZWAFzQ24lYiJLKVH+TjT9HbIswWmtNMrxyRoVJo2jbXdY2xyk2+wsInkyoyn0HkPiy52ngq8Ffc9fe9S5g+PaWApVjuj52/4Z+RqZlNihD0bfqeT4yBPvXl/FwL0JVTvOvHNaRW56FHmKe7B3kv/n7l3f0FQQThgKkImWs6efo5VYVFcdiPuXtwOZxPquB8JOgGdM797XNvhIVfHAklnvHh29VvY7YzN7l75hU0Zz2t1hcaTj9AFJmeCmgmMIuLaUyfLKitUuee/mypBWh0YYW/s2rbNXAv6P1tZex/vt5kQvZues/D1znwOO3P79QQOgWaBYe/a91G2fa/LumjtglLqLyZ3vlmcVJI9ryzYRdt2QW5C5CbkUhmlcC03kXF2StdKWE9QX7RzVwWhSaPAqNXWoY6z23dc2sElTPr9CP/nzDbcIicUVrVJ1JqcFqrpnvmhY6RsmeoHHE8sEfOeQt/h1OLeBRfJhGeTQoUfM0c2ElvY30FuesOCVWlzOp1W+/9E1P83LU9+8399oM177Mzt13P87TfzXVMGdut3HPe6Y+3mTbpeE01gyos6rrdGuMmW69jcZFgqbCTmXtjhuLQIU5jkjzFRaY/lGHNAErQTS+Drs2sihR1tCy/OK7rx7QCWHFqbHSQA8an2Xdd6QZt67aPwBh633T278CmT4GWU/SjFOElA6Lxn4AR0XpIdl9kzhROkPUee172rL/scL4U9PNbf4rPn2DUrYv8+tATsR2S1GxKoWCw8sD4+w1G6r/E6cuy8t2GXp7v8V7gXtb/fou+hPbhrdv3mXPyctqsVvZPxeCxzaquhh1U2RtRTBjuA4BuQZzaYwopb/7b+RFW2nomZcXjRBjEO7eARJsYZz2WnXy/Rr7gJ/IQJ23L5ijR5d59iYT3AGPSjUuOEo8C8d0ns7p6cExJ8j0jsspusvmef42XonfruxX5KVOcb5OS6yxC2Vtb+Sv5+ZAn1n7Cjf4n3RuC+gnDmnOtOoT14wpycR+vylu7g9YDQ9ngSnvAC15jvVxJyZwgIfYqhttCLomWTLGuxB2Cs+gRJ2bCqAsyXWTBV1Q4F6uFsN6TwDLUv90OfuNCwnD7hCkNatYU9dqifmcUGG3JqXTuS8ExHqFyp/kPKrqwfVTlO6pj3rPu5+thQyKJjQRFyj6A+w3wvt+wyVPEc+6F3cGabg5BW1hG1JvEOVfFTQf8Ctncj6D/h/SFef0Flb7/07vxWr9uZxo5fQag/sXbmVNBvEMc7U9ffiaB/XKWgT4zL+7dRIMHHPEmQEaIWi03NW3lbl52ox6QdVgNV8h9KOnu6bPVDu3iPr8i4ZdVLQsP7UelxEnKPkHnP4+A5sJj1OImOlU09MUPPcSDOvtftfISQfm19fop/9S79EXb1CkJ9A7v3ffLZHIT1+5yc+1pAP21lbW0WWCblPsUC4xGx1X+CIKcOeVS1r/9+D3UcBz44HMIMQ508hT3NUUaQTQsx+1rt+zPJ7JWnJsvL1FcHJoY6CU1uB0/4GOU8JCGTC+y4YjOUuSbeptruk0UsuGhgP0o6ThzkzXs2XJ+y8x5w7XGSl1gqEnuObLIzJfsc+2p8G4Tc/YmP72EhwH2Pqv8viHPeX/j3DB7z+2ZHjmvmoHo3u/bHWDAcwrHvsizXfVGOMSu8xmKhFhKoWHIzcjnUiCkyeXGZrPaQ7KFomcbOuOZwLDzBhGZfN/IMeikp2g6xhLQFUuG6BOlQhr0YNb6jb+b+No/t1plJbhR9BAviY+ZPt+uIiy7Tj+o2/0VSaP7SDmdMO/TNRdqpkTERDZmTQn+TQ41faybNOjLoUWyHOBeHRIW+DOFMvfi39W6bxrzjRDst/BfIzn0a31mGoL8Ms8tJpGPu2wS1/brjVTQfMqdKS6HC48oo5WwCj/ZdTEDcAJv5kcOKDA1rhy3Hc90qs+Px7Opn8ryEPf23abt7106xlgQoYzaeUs97HOzuXrnD7VhzUkmiQwGbhlPYh5wh38ra29iFa15oAY7/02ud5TCe98paLNwh5gEfsefdJ4eEbw28HCrVlYBkGq7EEoUnRlzLDbhk6i44XHFC5ocX9pRRtwMEk22/38XhKmWoQjA3xnbvsf+mVAkH0/TxVMG8x92DC9+cwcKzLls9J+yrSqNcCYWPuNXZ9eAYp3CIDXXe2yfOc69IKB+93mTjMzb9vq0dDnYbePtgnE/jg5MEtzLd9NneoB7iOpj3OhdYAbOxrhWoorh6j82gSMhI2wFxwObErdU8z/c8PLv6FCQ5Uz8BrhDFkQh7MHbjqei854ErizuBrnRqXA6MJXueDDqi3AZ5L1bq9mUqc549dZQbEOZEHa+gan9Jk/VA+B8SQb9haxLgiGdU/HaWvHHDpVLdyVHHuexbOzErZHzX1SnZe6BDruEVu+ti1aCRZTSCcW8HOIEVOdqXo0p1+2KZpDVlwXN2nQ75rmwClSs6norOexx7jGmAa8dSWUZz4ObKRfSbINDHP2M+1jkUjuvSDpQR9ma3fcSp/KHSf0w+0sl6tiHoX9J4fsvDnmI+t5P0jBVEpWrjPS/bszqewgr52JVpi6weP3t2TVueMJs3uG4Tmb2CVFbQIHCDcGxySFtIO3z/PVUL45HY7rHDOvb4FJTSiIAr14+KznueskKc+yoLt8OCmWv3FWStc/pUkeRCB5ZWZrYu27/TG18NegQOCGTY2s3q6RGx1XNl3CWe+RfY0f8acq1Vh4FEOVYdKk2i46lTnxBPSYcnvMpL0KCFeoCN7gNpDy4PdfA9Pd7I51hhf7DV/yR1KusA2Ot27jP3qTupzgk8goNUsnW1QyxVeOrmeeM7PKKjzhm37rfi0DYNJAJJ0EfyYsZnc1TiQV7dPursR1WOk7rnPaYcV3ImQ26SJqbMIgnGbIFNMedMmH43hXHlm4+HohSqeI55wv4jHPBsYT+HGHplstn57kgqfgRhf5mwJ7CjmDr80et2tsnn/TrUHYJVZrJ1hHAo36RC8pqn2ll5B4VncipKcEauioW9IShkpq52iKVuYe/JZFYqFNSxgBjomyPsI0N1KUqd/ajKcVL3vOcox7VwUIjfj9J4FPlNAQI/BnbBXMVzzFPjs0ffUgIEvdPeDrV+3hn1rjqY9xdqvHBlOHN2HITizJfMeKbMEbl5ExgGTKosWj5TwagIsplegXYIhWuvFI5Q3EKhKRn1Sjs0Gsa4H6V8FtHznoNdRzml/SpCwX3mE5hSYhMMFeXyOeYJexNrb59+17fX+y5uZe1XVtrdr1aY3O84ZCcvjl+RQ3nsOowixt4ebMGDz3NgSe4Dxy7KFXubxy46VuhObCnB0ZDrOaFe9u7at9tOOcHFODfV0Q6x2G2RwlPc16c556itspOUI6TK7tsxfSTFZP8OO6HUtt+6+lGV42Qk855Vjst2X7RtY/oXrYcxpawWcJY0m677Hg1j8ueYJ+xNONxNLnzOB3b05rhZvSj4SSfRQTrbKeTTV1DRh6S47S8IEPZnyh6FsKdpLfdi89tjIjGdxDz4oMkF3tX62tsoY88xyX3AxLmKzF+rMSF20Cask8VFzKDcxYSZNwCXyEA5yWnH9QQDwBwm0rR2iGWdtNteIgeyXSJoB/LmY4KdR/u/Qxum+k1LuO8e1NP2wiWmj6wW6CMmxHUdz2q+iqxoNfajKsfJyOY9C9tRbreEtiOmfw1Bkh/dJ21P63JOPttC9srbAc8y+XP02uzVoM38DAfWmB37b640tVYKXe2tz8bJIymPidVnU/IS731qQ3xFhH2uz4CQBngtzzicmsyhFe/qyjQ2KqQdhBRIPyoHfElqP1d+XLkRUO9tCNs7OlYeTnLGXu7KXDdHU+h6yn5GjqZdsFL0GgbuYe3qX4ugr4/EB0uMLdIOQgqkH5VjjH1gRkJunD3U7sY2/wzCNg+zk//kS7sLQW1C70Kz5BmV/4V15K4gCIIgCAyhSXWMUL0JYWs7y9kYh74Qe7oR9g/yPPPhB2AS7DyTXb0gCIIg5BMk7GFL/wNvHxAV/RA4Gref796X195KuKMCdurGs/+IxtwLgiAIguAmOF0uhOvbgK8aIfw/CPL3rax9SNX/egffytr7+LtW8/8Xf3oSEHd/wYQCCoIgCILgIDY3/jI5nGYIeMmbXf2/yXe1NuBvCP1vCEcwKXP1d/6D/99k4u7p/7WgnxP1vSAIgiCEkxt6ZwNBbI6mvSBe9NvES16fbW926fueg2y045+Ovf8Ke7xR038iu/d9hP4ZQc957AuCIAiC4CBa2KvvtvZDh+1+KPYe31+AY5/JordvC24rft6GjcMXBEEQBMFPIWGv3AL/ckdfps2tRDvKhNghBFAQBEEQhEgKC3v1XaVvwvBOfTH1keVOk8Q9H8VGLwiCIAgFUUr9HyLHkpGrdwgnAAAAAElFTkSuQmCC",
-      alt: "Rosie's Maid Service logo",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
-    }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      id: "navigation",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("ul", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                          display: flex;
-                          position: relative;
-                          top: 11px;
-
-                          li {
-                            margin-left: 50px;
-                          }
-
-                          li a {
-                            color: black;
-                          }
-                        `,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "/",
-      as: "/",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 46
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 47
-      },
-      __self: this
-    }, "Home"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "/services",
-      as: "/services",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 51
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 55
-      },
-      __self: this
-    }, "Services"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 58
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "/contact",
-      as: "/contact",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 63
-      },
-      __self: this
-    }, "Contact Us")), " "))))))))));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Header);
-
-/***/ }),
-
 /***/ "./components/HowItWorks.js":
 /*!**********************************!*\
   !*** ./components/HowItWorks.js ***!
@@ -679,6 +392,7 @@ class HowItWorks extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
                 width: 100%;
+                padding: 0 15px;
               `,
       className: "section-title",
       __source: {
@@ -689,27 +403,27 @@ class HowItWorks extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 20
       },
       __self: this
     }, this.props.howTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 21
       },
       __self: this
     }, this.props.howSubTitle))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "row",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 24
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "service-item col-sm-12 col-md-6 col-lg-4",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 25
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
@@ -717,26 +431,26 @@ class HowItWorks extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       alt: "Img",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
+        lineNumber: 26
       },
       __self: this
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h4", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 27
       },
       __self: this
     }, this.props.item1name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 28
       },
       __self: this
     }, this.props.item1text)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "service-item col-sm-12 col-md-6 col-lg-4",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 30
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
@@ -744,26 +458,26 @@ class HowItWorks extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       alt: "Img",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 31
       },
       __self: this
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h4", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 32
       },
       __self: this
     }, this.props.item2name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 33
       },
       __self: this
     }, this.props.item2text)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "service-item col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-0",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 35
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
@@ -771,40 +485,41 @@ class HowItWorks extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       alt: "Img",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35
+        lineNumber: 36
       },
       __self: this
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h4", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36
+        lineNumber: 37
       },
       __self: this
     }, this.props.item3name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37
+        lineNumber: 38
       },
       __self: this
     }, this.props.item3text))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "row",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "service-item col-sm-12 col-md-12",
-      __source: {
-        fileName: _jsxFileName,
         lineNumber: 41
       },
       __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-      href: "#",
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`margin-bottom: 0 !important;`,
+      className: "service-item col-sm-12 col-md-12",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 42
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
+      href: "/services",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
       },
       __self: this
     }, "View Services")))));
@@ -830,9 +545,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/styles */ "./styles/styles.js");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-/* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/NavBar */ "./components/NavBar.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/NavBar */ "./components/NavBar.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/Layout.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
@@ -872,29 +588,57 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 20
       },
       __self: this
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_NavBar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 27
       },
       __self: this
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("title", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, "Rosie's Maid Service - Toronto's best maid service"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("meta", {
+      name: "description",
+      content: "Top rated professional maid and house cleaning services in Toronto",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 29
+      },
+      __self: this
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("meta", {
+      name: "keywords",
+      content: "maid,house keeping,cleaning service,maid service toronto,maid etobicoke,maid liberty village,maid high park,maid mimico,maid toronto,house cleaning company,maid humber bay",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_NavBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       css: this.props.contentClass,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 43
       },
       __self: this
-    }, this.props.children)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }, this.props.children)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 46
       },
       __self: this
     }));
@@ -966,7 +710,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
       className: "navbar-brand",
-      href: "#",
+      href: "/",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 31
@@ -1150,7 +894,24 @@ class ServiceHome extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component
     return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
       id: "call-to-action",
       className: "service-home",
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`background-image: url('${this.props.serviceHomeBgImage}');`,
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`background-image: url('${this.props.serviceHomeBgImage}'); 
+        text-align: left !important; 
+        padding-bottom: 100px 25px !important;
+        h2 {
+          font-size: 36px !important;
+        }
+
+        p { padding: 0 !important; 
+        }
+
+        @media only screen and (max-width: 510px) {
+          h2 {
+            font-size: 28px !important;
+          }
+
+          padding-bottom: 75px 25px !important;
+        }
+      `,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 12
@@ -1160,191 +921,91 @@ class ServiceHome extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component
       className: "container",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 34
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "row",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "col-md-12",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "block",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21
-      },
-      __self: this
-    }, this.props.serviceHomeTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22
-      },
-      __self: this
-    }, this.props.serviceHomeText1)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "row",
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-              svg {
-                margin: 25px 0 25px 0;
-              }
-            `,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "col-sm-6 col-md-3",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 35
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "service-item",
+      className: "col-md-8 offset-md-2",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 36
       },
       __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react_ionicons_lib_IosSchool__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      fontSize: "80px",
-      color: "#000",
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "block",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 37
       },
       __self: this
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 38
       },
       __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("strong", {
+    }, this.props.serviceHomeTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 39
       },
       __self: this
-    }, this.props.item1name)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "col-sm-6 col-md-3",
+    }, this.props.serviceHomeText1)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 44
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "service-item",
+      className: "col-md-8 offset-md-2",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 45
       },
       __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react_ionicons_lib_IosFingerPrint__WEBPACK_IMPORTED_MODULE_4___default.a, {
-      fontSize: "80px",
-      color: "#000",
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "block",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 46
       },
       __self: this
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
+      id: "service-area",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 47
       },
       __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("strong", {
+    }, this.props.serviceHomeTitle2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    margin-bottom: 50px !important;
+                  `,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 48
       },
       __self: this
-    }, this.props.item2name)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "col-sm-6 col-md-3",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 53
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "service-item",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 54
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react_ionicons_lib_IosChatbubbles__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      fontSize: "80px",
-      color: "#000",
+    }, this.props.serviceHomeText2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    width: 100%;
+                    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+                  `,
+      src: this.props.serviceMap,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 55
       },
       __self: this
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 56
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("strong", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 57
-      },
-      __self: this
-    }, this.props.item3name)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "col-sm-6 col-md-3",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 62
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "service-item",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 63
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react_ionicons_lib_IosContacts__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      fontSize: "80px",
-      color: "#000",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 64
-      },
-      __self: this
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 65
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("strong", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 66
-      },
-      __self: this
-    }, this.props.item4name)))))));
+    }))))));
   }
 
 }
@@ -1445,22 +1106,15 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 36
       },
       __self: this
-    }, this.props.sliderSubTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    }, this.props.sliderSubTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
       href: this.props.sliderButtonUrl,
-      as: this.props.sliderButtonUrl,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
       className: "btn-main btn-solid-border",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 40
       },
       __self: this
-    }, this.props.sliderButtonTxt)))))));
+    }, this.props.sliderButtonTxt))))));
   }
 
 }
@@ -1520,7 +1174,7 @@ class Wrapper extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "col-md-7 col-sm-10",
+      className: "col-md-8 offset-md-2 col-sm-12",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 17
@@ -1534,6 +1188,12 @@ class Wrapper extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    padding: 0 15px !important;
+                    h2 {
+                      margin-bottom: 25px !important;
+                    }
+                  `,
       className: "section-title",
       __source: {
         fileName: _jsxFileName,
@@ -1543,38 +1203,47 @@ class Wrapper extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 28
       },
       __self: this
     }, this.props.wrapperTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 29
       },
       __self: this
     }, this.props.wrapperSubTitle)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    padding: 0 15px !important;
+                  `,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 31
       },
       __self: this
     }, this.props.wrapperPara1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    margin-bottom: 75px !important;
+                    padding: 0 15px !important;
+                  `,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 38
       },
       __self: this
     }, this.props.wrapperPara2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    text-align: center !important;
                     a {
-                      color: #333;
+                      color: #fff;
                       display: inline-block;
                       font-size: 16px;
                       letter-spacing: 1px;
                       padding: 14px 35px;
                       font-weight: 600;
-                      margin-top: 25px;
-                      border: 3px solid #333;
+                      margin-top: 75px;
+                      border: 3px solid black;
+                      background-color: black;
                       border-radius: 0;
                       -webkit-transition: all 0.4s ease;
                       transition: all 0.4s ease;
@@ -1589,50 +1258,42 @@ class Wrapper extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                   `,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "#",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 49
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50
-      },
-      __self: this
-    }, "Book Now"))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "col-md-5 col-sm-12",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 46
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "block",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 72
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
       css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                    @media only screen and (max-width: 768px) {
-                      padding: 0 !important;
-                    }
-                  `,
+                        padding: 0 !important;
+                      `,
       src: this.props.wrapperImage,
       alt: "Img",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 73
       },
       __self: this
-    }))))));
+    })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-md-8 offset-md-2 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 81
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
+      href: "/services",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 82
+      },
+      __self: this
+    }, "Book an appointment"))))))));
   }
 
 }
@@ -3389,15 +3050,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_Slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Slider */ "./components/Slider.js");
-/* harmony import */ var _components_HowItWorks__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/HowItWorks */ "./components/HowItWorks.js");
-/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
-/* harmony import */ var _components_ServiceHome__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/ServiceHome */ "./components/ServiceHome.js");
-/* harmony import */ var _components_Feature__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Feature */ "./components/Feature.js");
-/* harmony import */ var _components_Wrapper__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Wrapper */ "./components/Wrapper.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_Slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Slider */ "./components/Slider.js");
+/* harmony import */ var _components_HowItWorks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/HowItWorks */ "./components/HowItWorks.js");
+/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
+/* harmony import */ var _components_ServiceHome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/ServiceHome */ "./components/ServiceHome.js");
+/* harmony import */ var _components_Wrapper__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Wrapper */ "./components/Wrapper.js");
 var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -3412,69 +3070,65 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-
 class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   render() {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 15
       },
       __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Slider__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Slider__WEBPACK_IMPORTED_MODULE_3__["default"], {
       sliderBgImage: "../img/hero-bg.jpg",
-      sliderTitle: "Toronto\u2019s #1 Rated Maid Service",
-      sliderSubTitle: "Serving Humber Bay and Liberty Village.",
+      sliderTitle: "Toronto\u2019s best maid cleaning service",
+      sliderSubTitle: "Serving the west end: Liberty Village, High Park, Etobicoke",
       sliderButtonUrl: "/services",
       sliderButtonTxt: "Book Now",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
+        lineNumber: 16
       },
       __self: this
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_HowItWorks__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      howTitle: "How it works",
-      howSubTitle: "This subtitle can be changed to whatever you want it to be",
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_HowItWorks__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      howTitle: "A Clean Home In 3 Easy Steps:",
       item1img: "img/booking.png",
-      item1name: "1) You Book",
-      item1text: "Schedule a condo cleaning that works best for you and a trusted cleaner will show up.",
+      item1name: "1) Book a visit",
+      item1text: "Use our online booking tool or call us at 437-777-MAID to schedule a booking with one of our cleaning professionals.",
       item2img: "img/cleaning.png",
       item2name: "2) We Clean",
-      item2text: "Guaranteed quality or we will come back and clean any missed area for free.",
+      item2text: "Our professional cleaning staff will clean your home to your exact specifications. Satisfaction is guaranteed.",
       item3img: "img/relaxing.png",
-      item3name: "3) You Relax",
-      item3text: "Enjoy your sparkling clean home, and look forward to the next cleaning.",
+      item3name: "3) Enjoy and save",
+      item3text: "Take advantage of 20% off by scheduling bi-weekly visits and relax knowing your home will always be clean.",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 24
       },
       __self: this
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_ServiceHome__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_ServiceHome__WEBPACK_IMPORTED_MODULE_6__["default"], {
       serviceHomeBgImage: "img/hero-bg.jpg",
-      serviceHomeTitle: "Trusted Toronto Cleaners",
-      serviceHomeText1: "We know inviting someone into your home is a big deal. All of our cleaners are carefully selected and will all be:",
-      item1name: "Experienced and professional cleaners",
-      item2name: "Given a background and reference check",
-      item3name: "English speaking and screened by us to ensure",
-      item4name: "Selected through an in-person interview",
+      serviceHomeTitle: "Why Rosie's Maid Service?",
+      serviceHomeText1: "At Rosie\u2019s Maid Service, not only do we have the lowest rates in the area, we also pay our maids the highest wages. That means that while you are getting the best price, you will also enjoy the peace of mind from knowing that your home is being taken care of by a well compensated professional. All of our cleaners have years of professional experience, clean background check (no criminal record), speak english, and have passed our training program.",
+      serviceHomeTitle2: "Service area",
+      serviceHomeText2: "The area below is a rough representation of the area that we provide service to. If you are unsure, call ahead to make sure we can accomodate you.",
+      serviceMap: "img/maid-service-map.jpg",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40
+        lineNumber: 37
       },
       __self: this
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Wrapper__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Wrapper__WEBPACK_IMPORTED_MODULE_7__["default"], {
       wrapperTitle: "Book on the go",
       wrapperSubTitle: "Our website is responsive and mobile friendly so you can book your appointment anywhere. We want to offer the same user experience to both desktop and mobile users.",
       wrapperPara1: "We offer a wide range of customizable cleaning services. In order to customize your own personal cleaning plan, you can view a full list our services on our Services/Booking page.",
-      wrapperPara2: "We understand that things happen and you may need to cancel your appointment. We will cancel all charges for your scheduled appointment if you can provide us with notice of cancellation witin (1) day of the decided date and time.",
+      wrapperPara2: "Cancel with 24 hours notice free of charge. We will cancel all charges for your scheduled appointment if you can provide us with notice of cancellation witin (1) day of the decided date and time.",
       wrapperImage: "img/mobile.png",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50
+        lineNumber: 46
       },
       __self: this
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_5__["default"], {
       callTitle: "You're one step away from a clean and happy home!",
       callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
       callLinkUrl: "/services",
@@ -3482,7 +3136,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       callImage: "img/hero-bg.jpg",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58
+        lineNumber: 54
       },
       __self: this
     }));
@@ -3879,7 +3533,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #service {
  text-align: center;
- padding: 90px 0;
+ padding: 100px 25px 125px 25px;
 }
 
 .service-home {
@@ -3943,7 +3597,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 #service .service-item h4 {
- padding-top: 25px;
+ padding-top: 50px;
  font-weight: 800;
  margin: 0;
  color: #333;
@@ -3962,7 +3616,7 @@ font header .navbar-default .navbar-nav li a:hover {
  background-repeat: no-repeat;
  background-size: cover;
  background-attachment: fixed;
- padding: 70px 0px;
+ padding: 100px 25px;
  position: relative;
  text-align: center;
  color: #fff;
@@ -3979,7 +3633,7 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
  height: 100%;
  background: #fff;
- opacity: 0.55;
+ opacity: 0.7;
 }
 
 #call-to-action h2 {
@@ -3994,8 +3648,9 @@ font header .navbar-default .navbar-nav li a:hover {
 #call-to-action p {
  color: #000;
  font-size: 16px;
- line-height: 1.6;
+ line-height: 28px;
  margin-bottom: 50px;
+ text-shadow: 0px 0px 5px rgba(255,255,255,1), 0px 0px 5px rgba(255,255,255,1),0px 0px 5px rgba(255,255,255,1);
 }
 
 #call-to-action .btn-call-to-action {
@@ -4756,8 +4411,14 @@ footer .footer-manu ul li a:hover {
    padding-bottom: 70px;
  }
 
+ #service .service-item p {
+  font-size: 13px;
+  line-height: 24px;
+ }
+
  #call-to-action p {
    padding: 0px 0px 40px;
+   font-size: 14px;
  }
  #call-to-action .btn {
    padding: 10px 20px;
@@ -4877,7 +4538,6 @@ footer .footer-manu ul li a:hover {
    line-height: 25px;
  }
 
-
  #wrapper-contact .block {
    padding-bottom: 50px;
  }
@@ -4900,6 +4560,14 @@ footer .footer-manu ul li a:hover {
    #feature, 
    #global-header {
       background-attachment: scroll;
+   }
+
+   #intro .block h2 {
+    font-size: 28px;
+   }
+
+   .section-title h2 {
+    font-size: 28px;
    }
  }
 `;
@@ -5014,6 +4682,17 @@ module.exports = require("core-js/library/fn/promise");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 

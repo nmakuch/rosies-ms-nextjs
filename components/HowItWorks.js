@@ -13,6 +13,7 @@ class HowItWorks extends React.Component {
             <div
               css={css`
                 width: 100%;
+                padding: 0 15px;
               `}
               className="section-title"
             >
@@ -38,8 +39,8 @@ class HowItWorks extends React.Component {
             </div>
           </div>
           <div className="row">
-            <div className="service-item col-sm-12 col-md-12">
-              <a href="#">View Services</a>
+            <div css={css`margin-bottom: 0 !important;`} className="service-item col-sm-12 col-md-12">
+              <a href="/services">View Services</a>
             </div>
           </div>
         </div>

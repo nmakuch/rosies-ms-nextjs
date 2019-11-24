@@ -108,22 +108,15 @@ function (_React$Component) {
           lineNumber: 18
         },
         __self: this
-      }, this.props.callText), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
+      }, this.props.callText), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
         href: this.props.callLinkUrl,
-        as: this.props.callLinkUrl,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
         className: "btn-main btn-solid-border",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 20
         },
         __self: this
-      }, this.props.callLink)))))));
+      }, this.props.callLink))))));
     }
   }]);
 
@@ -448,233 +441,6 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./components/Header.js":
-/*!******************************!*\
-  !*** ./components/Header.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_8__);
-
-
-
-
-
-
-var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/Header.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
-
-function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                          display: flex;\n                          position: relative;\n                          top: 11px;\n\n                          li {\n                            margin-left: 50px;\n                          }\n\n                          li a {\n                            color: black;\n                          }\n                        "]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n                            margin-top: 5px;\n                          "]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
-
-/** @jsx jsx */
-
-
-
-var Header =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Header, _React$Component);
-
-  function Header() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Header);
-
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Header).apply(this, arguments));
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Header, [{
-    key: "render",
-    value: function render() {
-      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 9
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("header", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 10
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "container",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 11
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "row",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "col-md-12",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("nav", {
-        className: "navbar navbar-default",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "container-fluid",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        className: "navbar-header",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
-        className: "navbar-brand",
-        href: "/nextjs-rosies-ms/",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("img", {
-        width: "300px",
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject()),
-        src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfsAAAA0CAYAAACNQpEHAAAACXBIWXMAAC4jAAAuIwF4pT92AAAU4klEQVR4nO2dv1NUyRbHW0uGO5HiPyDL/gFPC3PZKokXAwhesphA9taNIFMyiMQQEjWVYLFeiFVCjrX6B8hC9DKRaKYm8VWz3x7P9Jzu231v3zt35HyqpnSGuX17+nb36T6/+tq3b9+UppW1bymltpVSC0qpm0qpM6XUoVLqWa/bOVUNBHV+gjr/CzV8izp/bGKdBUEQBKFuLoU9hKYWjncc938BAfq1KU+olbW1kH+GhQnHL71u53C0tRQEQRCE0XMdNdgmgn5DKfVIKfWa1O53vRhoZe27o66xXpi0srYW4s+JoP+klHqM1wU+ezXCagqCIAhCY7g2MZlNK6X+RoU2et3OM1O5VtaexkLgV3ykBemTXrczEkGKxcY+WZhoIb9MVfatrD2nlHqPt49HVVdBEARBaArXYe82DAhGbavvdTsL2OlfYCf9spW1l+uuPwT9IdVA9Lqdu7ZtHqr7I7xdGC5JEARBEK4WWtjP4RcfuRzxet3OPr53ho9qFfhE0Bu1/WOqgWAwtvpfPd8RBEEQhCuBFva38EO9zmzYQd+F6lxB4M/5rkkBnAf3iaC/F6CaF8c8QRAEQQBa2D8IbQx44y8TJ7h9COMqoTb6x4EhdY2JGhAEQRCEUXOd3D9oNwxha2zhN6v0ekd4nVmMbIQ620mMvSAIgiB8R3vjf8O7qLj0VtbWNvOn3LWtrL0AG39oqN5HvPZNLD80BqdYUHzSzngxz62VtS9/V6/buRZznSAIgiD8aFBhHx2m1srap1Cxn/W6nWnY8LdJNrtYtHlgWzvfWYuJe7G7dRH2giAIgvAPNxCmplXl0wXaRAvkl1rgt7L2R0bInwWo+eeIql7v4p9CM2Dq87qAoB958h9BEARBaAo3ytRDawKwA79DBP0nONXpXflpToicMQc8wHWnCJejiwbv9Q6qdhoUBEEQhLGBCvuiApLm1H8Lb/27RAUfyledwAdOec/NNU09hOeq0sras0qph0qpKaXULJrhhLze9bqd8x+9eaQdhBRIPxLq4ga88B9EONP1gY3eJK45QrY9k2a3EL1uZ7uVtZUR+Hrnn6cdYDC/5SzqqvDfrQfmCgZpKHTwfkhUj4eYIPS/M3gpeq9U92tl7TX85pmA7+4qpbZ63c5JwHdXMNGd97qd3bL1jKWVtfXvWcNle71u511OfStphxjQ/zZRB/18txKVu4a+pNtgt6iQgQDbQd/UbbBeRmDF9BHyG0LRv/Uc7Zj0OQXUc6T9KJY65j0868WyfZCUt4jyTtCGQ+WlmIMwjyyiz8+QhZvCb9H3/zCKOa7PxGT2TDvpTUxmh/oEvJjXxGR2imv1v7fMtTFlur47MZnt43P9mo6sV+HfFFj+DqlbkdfBxGQ2W/DeUxOT2drEZPY54r76uysF7zc7MZkdF/ydazllb1rf38ypx0GJNv/Clc+040zd7ZCg/+00pUz0zy+hzzWgvJg+Yn839nVcdJw0YTxVOU4cfST25Z33mOd3ULKtF5nfNlW0fznu8TCyvb+M6jleJwloiuzG53A63nIFx98uwyzwSwFVftU2+5WS1+uV8QFWlMFglXpMdnWh6O/utLL2Z2gDgsAO7cBapcawmfMb13LeUzYjdxQ2euW+xtTHbsehdq2hHWKxy1opUz6uHSqzYHFraOuBz7DzKVqe733o30KYxTg5KFFfJzX1o6rGiaph3rOf38OY+Yph0/poimn7mP7VR2s5Wln7DZ5nTB2n8ByP0R98dU/6HK/D5q48Z9k7wUE5y1WcG68XD9osULBso8ZvciY989CDBn4ra+uH/yZSyNvMRC4ydpiJ22DMBHmquaITm02Zjk9x/R4fTWoHF5tFBBT6nz0pFsIyidiUFcR1ovta3mRchDr60SjHSWi5rnmPU9kXWmBgY5R8waa+mzMOoLYvyizmYtfzTP4cr/u/N/Y0PZPeFCYAL62svZN4stzJE/gYLFxH1Pbhn3vdjn7N97qd+8hlcB9/swdsEv+EhETZAMeoHaawGIzFJ4Bi8fXRlSp2yxUylTMZRzGG46lKp0DXvLfHfLZYsN9w89tJnk9OHkTQp+gXRcdsDP3neB3hbpfUcbBNTdQeZ68HqO+lBzQGr80sJgIWh4qVoh0+lpRSt8399f/xmc8ZZMd3X8fKUjtarXOOQtr5Rv8Nv3Mdu5T1kTqkDHIOB53Y+oxTO8xCAxQEvptKmM0E7MJq390HjMt5x7hUZjLGBF+WcelHUeMk8bzneg5R/QZ9kWvvFI6sO54xo5/RKhZvtA3u4xlyC6iqFsBDz/GaNtybbHOxKXNdkOx32kPfu4CI+W7E/ZP+Hk/5fUIz9cEL156QtdfpKvPdGdjouclGr4JX87xVUcaOo/Ofo2NyHqqcLernlB7BMe1Yps0j6zBPV/91tEMsXFtYLPW6HW6X1AcTrXdXEdO+0D6FqFyj2q6uPoJx8sYxka+XjXioqx9VNU7Klh067zn6kXOectyLLaPX7dxmvhvTvx5iV29zjjGXF8ljNBp0kaOjFObL1CsUW40/9sloajiFryzcitlln+GcnRQmn6WQzq8nE3Qm7r5TkfZaiff9h6a3w45vN0oWgEnw7Oo5QdZI2z2E7rxDTb6WaHdvc5XGU+i8xy2qpkJt9yQ8MKTcWLi+q/vN/RDzgJ6v9bxNNDVGK1sLRtibM+pz1d9amLay9rLekesEOFUKV9zrSeS96G9onM0eAtruGJwHuKvT7hbZZWAFzQ24lYiJLKVH+TjT9HbIswWmtNMrxyRoVJo2jbXdY2xyk2+wsInkyoyn0HkPiy52ngq8Ffc9fe9S5g+PaWApVjuj52/4Z+RqZlNihD0bfqeT4yBPvXl/FwL0JVTvOvHNaRW56FHmKe7B3kv/n7l3f0FQQThgKkImWs6efo5VYVFcdiPuXtwOZxPquB8JOgGdM797XNvhIVfHAklnvHh29VvY7YzN7l75hU0Zz2t1hcaTj9AFJmeCmgmMIuLaUyfLKitUuee/mypBWh0YYW/s2rbNXAv6P1tZex/vt5kQvZues/D1znwOO3P79QQOgWaBYe/a91G2fa/LumjtglLqLyZ3vlmcVJI9ryzYRdt2QW5C5CbkUhmlcC03kXF2StdKWE9QX7RzVwWhSaPAqNXWoY6z23dc2sElTPr9CP/nzDbcIicUVrVJ1JqcFqrpnvmhY6RsmeoHHE8sEfOeQt/h1OLeBRfJhGeTQoUfM0c2ElvY30FuesOCVWlzOp1W+/9E1P83LU9+8399oM177Mzt13P87TfzXVMGdut3HPe6Y+3mTbpeE01gyos6rrdGuMmW69jcZFgqbCTmXtjhuLQIU5jkjzFRaY/lGHNAErQTS+Drs2sihR1tCy/OK7rx7QCWHFqbHSQA8an2Xdd6QZt67aPwBh633T278CmT4GWU/SjFOElA6Lxn4AR0XpIdl9kzhROkPUee172rL/scL4U9PNbf4rPn2DUrYv8+tATsR2S1GxKoWCw8sD4+w1G6r/E6cuy8t2GXp7v8V7gXtb/fou+hPbhrdv3mXPyctqsVvZPxeCxzaquhh1U2RtRTBjuA4BuQZzaYwopb/7b+RFW2nomZcXjRBjEO7eARJsYZz2WnXy/Rr7gJ/IQJ23L5ijR5d59iYT3AGPSjUuOEo8C8d0ns7p6cExJ8j0jsspusvmef42XonfruxX5KVOcb5OS6yxC2Vtb+Sv5+ZAn1n7Cjf4n3RuC+gnDmnOtOoT14wpycR+vylu7g9YDQ9ngSnvAC15jvVxJyZwgIfYqhttCLomWTLGuxB2Cs+gRJ2bCqAsyXWTBV1Q4F6uFsN6TwDLUv90OfuNCwnD7hCkNatYU9dqifmcUGG3JqXTuS8ExHqFyp/kPKrqwfVTlO6pj3rPu5+thQyKJjQRFyj6A+w3wvt+wyVPEc+6F3cGabg5BW1hG1JvEOVfFTQf8Ctncj6D/h/SFef0Flb7/07vxWr9uZxo5fQag/sXbmVNBvEMc7U9ffiaB/XKWgT4zL+7dRIMHHPEmQEaIWi03NW3lbl52ox6QdVgNV8h9KOnu6bPVDu3iPr8i4ZdVLQsP7UelxEnKPkHnP4+A5sJj1OImOlU09MUPPcSDOvtftfISQfm19fop/9S79EXb1CkJ9A7v3ffLZHIT1+5yc+1pAP21lbW0WWCblPsUC4xGx1X+CIKcOeVS1r/9+D3UcBz44HMIMQ508hT3NUUaQTQsx+1rt+zPJ7JWnJsvL1FcHJoY6CU1uB0/4GOU8JCGTC+y4YjOUuSbeptruk0UsuGhgP0o6ThzkzXs2XJ+y8x5w7XGSl1gqEnuObLIzJfsc+2p8G4Tc/YmP72EhwH2Pqv8viHPeX/j3DB7z+2ZHjmvmoHo3u/bHWDAcwrHvsizXfVGOMSu8xmKhFhKoWHIzcjnUiCkyeXGZrPaQ7KFomcbOuOZwLDzBhGZfN/IMeikp2g6xhLQFUuG6BOlQhr0YNb6jb+b+No/t1plJbhR9BAviY+ZPt+uIiy7Tj+o2/0VSaP7SDmdMO/TNRdqpkTERDZmTQn+TQ41faybNOjLoUWyHOBeHRIW+DOFMvfi39W6bxrzjRDst/BfIzn0a31mGoL8Ms8tJpGPu2wS1/brjVTQfMqdKS6HC48oo5WwCj/ZdTEDcAJv5kcOKDA1rhy3Hc90qs+Px7Opn8ryEPf23abt7106xlgQoYzaeUs97HOzuXrnD7VhzUkmiQwGbhlPYh5wh38ra29iFa15oAY7/02ud5TCe98paLNwh5gEfsefdJ4eEbw28HCrVlYBkGq7EEoUnRlzLDbhk6i44XHFC5ocX9pRRtwMEk22/38XhKmWoQjA3xnbvsf+mVAkH0/TxVMG8x92DC9+cwcKzLls9J+yrSqNcCYWPuNXZ9eAYp3CIDXXe2yfOc69IKB+93mTjMzb9vq0dDnYbePtgnE/jg5MEtzLd9NneoB7iOpj3OhdYAbOxrhWoorh6j82gSMhI2wFxwObErdU8z/c8PLv6FCQ5Uz8BrhDFkQh7MHbjqei854ErizuBrnRqXA6MJXueDDqi3AZ5L1bq9mUqc549dZQbEOZEHa+gan9Jk/VA+B8SQb9haxLgiGdU/HaWvHHDpVLdyVHHuexbOzErZHzX1SnZe6BDruEVu+ti1aCRZTSCcW8HOIEVOdqXo0p1+2KZpDVlwXN2nQ75rmwClSs6norOexx7jGmAa8dSWUZz4ObKRfSbINDHP2M+1jkUjuvSDpQR9ma3fcSp/KHSf0w+0sl6tiHoX9J4fsvDnmI+t5P0jBVEpWrjPS/bszqewgr52JVpi6weP3t2TVueMJs3uG4Tmb2CVFbQIHCDcGxySFtIO3z/PVUL45HY7rHDOvb4FJTSiIAr14+KznueskKc+yoLt8OCmWv3FWStc/pUkeRCB5ZWZrYu27/TG18NegQOCGTY2s3q6RGx1XNl3CWe+RfY0f8acq1Vh4FEOVYdKk2i46lTnxBPSYcnvMpL0KCFeoCN7gNpDy4PdfA9Pd7I51hhf7DV/yR1KusA2Ot27jP3qTupzgk8goNUsnW1QyxVeOrmeeM7PKKjzhm37rfi0DYNJAJJ0EfyYsZnc1TiQV7dPursR1WOk7rnPaYcV3ImQ26SJqbMIgnGbIFNMedMmH43hXHlm4+HohSqeI55wv4jHPBsYT+HGHplstn57kgqfgRhf5mwJ7CjmDr80et2tsnn/TrUHYJVZrJ1hHAo36RC8pqn2ll5B4VncipKcEauioW9IShkpq52iKVuYe/JZFYqFNSxgBjomyPsI0N1KUqd/ajKcVL3vOcox7VwUIjfj9J4FPlNAQI/BnbBXMVzzFPjs0ffUgIEvdPeDrV+3hn1rjqY9xdqvHBlOHN2HITizJfMeKbMEbl5ExgGTKosWj5TwagIsplegXYIhWuvFI5Q3EKhKRn1Sjs0Gsa4H6V8FtHznoNdRzml/SpCwX3mE5hSYhMMFeXyOeYJexNrb59+17fX+y5uZe1XVtrdr1aY3O84ZCcvjl+RQ3nsOowixt4ebMGDz3NgSe4Dxy7KFXubxy46VuhObCnB0ZDrOaFe9u7at9tOOcHFODfV0Q6x2G2RwlPc16c556itspOUI6TK7tsxfSTFZP8OO6HUtt+6+lGV42Qk855Vjst2X7RtY/oXrYcxpawWcJY0m677Hg1j8ueYJ+xNONxNLnzOB3b05rhZvSj4SSfRQTrbKeTTV1DRh6S47S8IEPZnyh6FsKdpLfdi89tjIjGdxDz4oMkF3tX62tsoY88xyX3AxLmKzF+rMSF20Cask8VFzKDcxYSZNwCXyEA5yWnH9QQDwBwm0rR2iGWdtNteIgeyXSJoB/LmY4KdR/u/Qxum+k1LuO8e1NP2wiWmj6wW6CMmxHUdz2q+iqxoNfajKsfJyOY9C9tRbreEtiOmfw1Bkh/dJ21P63JOPttC9srbAc8y+XP02uzVoM38DAfWmB37b640tVYKXe2tz8bJIymPidVnU/IS731qQ3xFhH2uz4CQBngtzzicmsyhFe/qyjQ2KqQdhBRIPyoHfElqP1d+XLkRUO9tCNs7OlYeTnLGXu7KXDdHU+h6yn5GjqZdsFL0GgbuYe3qX4ugr4/EB0uMLdIOQgqkH5VjjH1gRkJunD3U7sY2/wzCNg+zk//kS7sLQW1C70Kz5BmV/4V15K4gCIIgCAyhSXWMUL0JYWs7y9kYh74Qe7oR9g/yPPPhB2AS7DyTXb0gCIIg5BMk7GFL/wNvHxAV/RA4Gref796X195KuKMCdurGs/+IxtwLgiAIguAmOF0uhOvbgK8aIfw/CPL3rax9SNX/egffytr7+LtW8/8Xf3oSEHd/wYQCCoIgCILgIDY3/jI5nGYIeMmbXf2/yXe1NuBvCP1vCEcwKXP1d/6D/99k4u7p/7WgnxP1vSAIgiCEkxt6ZwNBbI6mvSBe9NvES16fbW926fueg2y045+Ovf8Ke7xR038iu/d9hP4ZQc957AuCIAiC4CBa2KvvtvZDh+1+KPYe31+AY5/JordvC24rft6GjcMXBEEQBMFPIWGv3AL/ckdfps2tRDvKhNghBFAQBEEQhEgKC3v1XaVvwvBOfTH1keVOk8Q9H8VGLwiCIAgFUUr9HyLHkpGrdwgnAAAAAElFTkSuQmCC",
-        alt: "Rosie's Maid Service logo",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        },
-        __self: this
-      }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
-        id: "navigation",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("ul", {
-        css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["css"])(_templateObject2()),
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 45
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/",
-        as: "/",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 46
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 47
-        },
-        __self: this
-      }, "Home"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 50
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/services",
-        as: "/services",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 51
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55
-        },
-        __self: this
-      }, "Services"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 58
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/contact",
-        as: "/contact",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 59
-        },
-        __self: this
-      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 63
-        },
-        __self: this
-      }, "Contact Us")), " "))))))))));
-    }
-  }]);
-
-  return Header;
-}(react__WEBPACK_IMPORTED_MODULE_6___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (Header);
-
-/***/ }),
-
 /***/ "./components/Layout.js":
 /*!******************************!*\
   !*** ./components/Layout.js ***!
@@ -694,9 +460,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
 /* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/styles */ "./styles/styles.js");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-/* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/NavBar */ "./components/NavBar.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/NavBar */ "./components/NavBar.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_11__);
 
 
 
@@ -763,29 +530,57 @@ function (_React$Component) {
           lineNumber: 20
         },
         __self: this
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(_components_NavBar__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(next_head__WEBPACK_IMPORTED_MODULE_11___default.a, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 27
         },
         __self: this
-      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("title", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }, "Rosie's Maid Service - Toronto's best maid service"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("meta", {
+        name: "description",
+        content: "Top rated professional maid and house cleaning services in Toronto",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 29
+        },
+        __self: this
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("meta", {
+        name: "keywords",
+        content: "maid,house keeping,cleaning service,maid service toronto,maid etobicoke,maid liberty village,maid high park,maid mimico,maid toronto,house cleaning company,maid humber bay",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(_components_NavBar__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
         },
         __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])("div", {
         css: this.props.contentClass,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 43
         },
         __self: this
-      }, this.props.children)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(_components_Footer__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      }, this.props.children)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_7__["jsx"])(_components_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 46
         },
         __self: this
       }));
@@ -905,7 +700,7 @@ function (_Component) {
         __self: this
       }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("a", {
         className: "navbar-brand",
-        href: "#",
+        href: "/",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 31
@@ -1028,6 +823,17 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/array/from.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/array/from */ "./node_modules/core-js/library/fn/array/from.js");
 
 /***/ }),
 
@@ -1240,6 +1046,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/reflect/construct */
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/set.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/set.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/set */ "./node_modules/core-js/library/fn/set.js");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js":
 /*!***************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/symbol.js ***!
@@ -1287,6 +1104,29 @@ function _arrayWithHoles(arr) {
 }
 
 module.exports = _arrayWithHoles;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/arrayWithoutHoles.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/arrayWithoutHoles.js ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _Array$isArray = __webpack_require__(/*! ../core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+
+function _arrayWithoutHoles(arr) {
+  if (_Array$isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+
+    return arr2;
+  }
+}
+
+module.exports = _arrayWithoutHoles;
 
 /***/ }),
 
@@ -1939,6 +1779,25 @@ module.exports = _interopRequireWildcard;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/iterableToArray.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/iterableToArray.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _Array$from = __webpack_require__(/*! ../core-js/array/from */ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js");
+
+var _isIterable = __webpack_require__(/*! ../core-js/is-iterable */ "./node_modules/@babel/runtime-corejs2/core-js/is-iterable.js");
+
+function _iterableToArray(iter) {
+  if (_isIterable(Object(iter)) || Object.prototype.toString.call(iter) === "[object Arguments]") return _Array$from(iter);
+}
+
+module.exports = _iterableToArray;
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/iterableToArrayLimit.js":
 /*!*****************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/iterableToArrayLimit.js ***!
@@ -1996,6 +1855,21 @@ function _nonIterableRest() {
 }
 
 module.exports = _nonIterableRest;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/nonIterableSpread.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/nonIterableSpread.js ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+module.exports = _nonIterableSpread;
 
 /***/ }),
 
@@ -2062,6 +1936,27 @@ function _slicedToArray(arr, i) {
 }
 
 module.exports = _slicedToArray;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/toConsumableArray.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/toConsumableArray.js ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles */ "./node_modules/@babel/runtime-corejs2/helpers/arrayWithoutHoles.js");
+
+var iterableToArray = __webpack_require__(/*! ./iterableToArray */ "./node_modules/@babel/runtime-corejs2/helpers/iterableToArray.js");
+
+var nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread */ "./node_modules/@babel/runtime-corejs2/helpers/nonIterableSpread.js");
+
+function _toConsumableArray(arr) {
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || nonIterableSpread();
+}
+
+module.exports = _toConsumableArray;
 
 /***/ }),
 
@@ -4281,6 +4176,20 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/array/from.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/core-js/library/fn/array/from.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
+__webpack_require__(/*! ../../modules/es6.array.from */ "./node_modules/core-js/library/modules/es6.array.from.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Array.from;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/array/is-array.js":
 /*!***********************************************************!*\
   !*** ./node_modules/core-js/library/fn/array/is-array.js ***!
@@ -4552,6 +4461,25 @@ module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/cor
 
 __webpack_require__(/*! ../../modules/es6.reflect.construct */ "./node_modules/core-js/library/modules/es6.reflect.construct.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Reflect.construct;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/set.js":
+/*!************************************************!*\
+  !*** ./node_modules/core-js/library/fn/set.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../modules/es6.object.to-string */ "./node_modules/core-js/library/modules/es6.object.to-string.js");
+__webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
+__webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
+__webpack_require__(/*! ../modules/es6.set */ "./node_modules/core-js/library/modules/es6.set.js");
+__webpack_require__(/*! ../modules/es7.set.to-json */ "./node_modules/core-js/library/modules/es7.set.to-json.js");
+__webpack_require__(/*! ../modules/es7.set.of */ "./node_modules/core-js/library/modules/es7.set.of.js");
+__webpack_require__(/*! ../modules/es7.set.from */ "./node_modules/core-js/library/modules/es7.set.from.js");
+module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Set;
 
 
 /***/ }),
@@ -7190,6 +7118,55 @@ module.exports = __webpack_require__(/*! ./_core */ "./node_modules/core-js/libr
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/es6.array.from.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.array.from.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js");
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
+var call = __webpack_require__(/*! ./_iter-call */ "./node_modules/core-js/library/modules/_iter-call.js");
+var isArrayIter = __webpack_require__(/*! ./_is-array-iter */ "./node_modules/core-js/library/modules/_is-array-iter.js");
+var toLength = __webpack_require__(/*! ./_to-length */ "./node_modules/core-js/library/modules/_to-length.js");
+var createProperty = __webpack_require__(/*! ./_create-property */ "./node_modules/core-js/library/modules/_create-property.js");
+var getIterFn = __webpack_require__(/*! ./core.get-iterator-method */ "./node_modules/core-js/library/modules/core.get-iterator-method.js");
+
+$export($export.S + $export.F * !__webpack_require__(/*! ./_iter-detect */ "./node_modules/core-js/library/modules/_iter-detect.js")(function (iter) { Array.from(iter); }), 'Array', {
+  // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
+  from: function from(arrayLike /* , mapfn = undefined, thisArg = undefined */) {
+    var O = toObject(arrayLike);
+    var C = typeof this == 'function' ? this : Array;
+    var aLen = arguments.length;
+    var mapfn = aLen > 1 ? arguments[1] : undefined;
+    var mapping = mapfn !== undefined;
+    var index = 0;
+    var iterFn = getIterFn(O);
+    var length, result, step, iterator;
+    if (mapping) mapfn = ctx(mapfn, aLen > 2 ? arguments[2] : undefined, 2);
+    // if object isn't iterable or it's array with default iterator - use simple case
+    if (iterFn != undefined && !(C == Array && isArrayIter(iterFn))) {
+      for (iterator = iterFn.call(O), result = new C(); !(step = iterator.next()).done; index++) {
+        createProperty(result, index, mapping ? call(iterator, mapfn, [step.value, index], true) : step.value);
+      }
+    } else {
+      length = toLength(O.length);
+      for (result = new C(length); length > index; index++) {
+        createProperty(result, index, mapping ? mapfn(O[index], index) : O[index]);
+      }
+    }
+    result.length = index;
+    return result;
+  }
+});
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/es6.array.is-array.js":
 /*!********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.array.is-array.js ***!
@@ -7815,6 +7792,32 @@ $export($export.S + $export.F * (NEW_TARGET_BUG || ARGS_BUG), 'Reflect', {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/es6.set.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.set.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var strong = __webpack_require__(/*! ./_collection-strong */ "./node_modules/core-js/library/modules/_collection-strong.js");
+var validate = __webpack_require__(/*! ./_validate-collection */ "./node_modules/core-js/library/modules/_validate-collection.js");
+var SET = 'Set';
+
+// 23.2 Set Objects
+module.exports = __webpack_require__(/*! ./_collection */ "./node_modules/core-js/library/modules/_collection.js")(SET, function (get) {
+  return function Set() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
+}, {
+  // 23.2.3.1 Set.prototype.add(value)
+  add: function add(value) {
+    return strong.def(validate(this, SET), value = value === 0 ? 0 : value, value);
+  }
+}, strong);
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/es6.string.iterator.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.string.iterator.js ***!
@@ -8300,6 +8303,47 @@ $export($export.S, 'Promise', { 'try': function (callbackfn) {
   (result.e ? promiseCapability.reject : promiseCapability.resolve)(result.v);
   return promiseCapability.promise;
 } });
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.set.from.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.set.from.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://tc39.github.io/proposal-setmap-offrom/#sec-set.from
+__webpack_require__(/*! ./_set-collection-from */ "./node_modules/core-js/library/modules/_set-collection-from.js")('Set');
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.set.of.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.set.of.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://tc39.github.io/proposal-setmap-offrom/#sec-set.of
+__webpack_require__(/*! ./_set-collection-of */ "./node_modules/core-js/library/modules/_set-collection-of.js")('Set');
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.set.to-json.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.set.to-json.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://github.com/DavidBruant/Map-Set.prototype.toJSON
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+
+$export($export.P + $export.R, 'Set', { toJSON: __webpack_require__(/*! ./_collection-to-json */ "./node_modules/core-js/library/modules/_collection-to-json.js")('Set') });
 
 
 /***/ }),
@@ -17504,6 +17548,289 @@ function withRouter(ComposedComponent) {
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/next-server/lib/amp-context.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/amp-context.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  }
+  result["default"] = mod;
+  return result;
+};
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+exports.AmpStateContext = React.createContext({});
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/amp.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/amp.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var amp_context_1 = __webpack_require__(/*! ./amp-context */ "./node_modules/next/dist/next-server/lib/amp-context.js");
+
+function isInAmpMode() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$ampFirst = _ref.ampFirst,
+      ampFirst = _ref$ampFirst === void 0 ? false : _ref$ampFirst,
+      _ref$hybrid = _ref.hybrid,
+      hybrid = _ref$hybrid === void 0 ? false : _ref$hybrid,
+      _ref$hasQuery = _ref.hasQuery,
+      hasQuery = _ref$hasQuery === void 0 ? false : _ref$hasQuery;
+
+  return ampFirst || hybrid && hasQuery;
+}
+
+exports.isInAmpMode = isInAmpMode;
+
+function useAmp() {
+  // Don't assign the context value to a variable to save bytes
+  return isInAmpMode(react_1["default"].useContext(amp_context_1.AmpStateContext));
+}
+
+exports.useAmp = useAmp;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/head-manager-context.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/head-manager-context.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  }
+  result["default"] = mod;
+  return result;
+};
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+exports.HeadManagerContext = React.createContext(null);
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/head.js":
+/*!********************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/head.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Set = __webpack_require__(/*! @babel/runtime-corejs2/core-js/set */ "./node_modules/@babel/runtime-corejs2/core-js/set.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var side_effect_1 = __importDefault(__webpack_require__(/*! ./side-effect */ "./node_modules/next/dist/next-server/lib/side-effect.js"));
+
+var amp_context_1 = __webpack_require__(/*! ./amp-context */ "./node_modules/next/dist/next-server/lib/amp-context.js");
+
+var head_manager_context_1 = __webpack_require__(/*! ./head-manager-context */ "./node_modules/next/dist/next-server/lib/head-manager-context.js");
+
+var amp_1 = __webpack_require__(/*! ./amp */ "./node_modules/next/dist/next-server/lib/amp.js");
+
+function defaultHead() {
+  var inAmpMode = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+  var head = [react_1["default"].createElement("meta", {
+    key: "charSet",
+    charSet: "utf-8"
+  })];
+
+  if (!inAmpMode) {
+    head.push(react_1["default"].createElement("meta", {
+      key: "viewport",
+      name: "viewport",
+      content: "width=device-width,minimum-scale=1,initial-scale=1"
+    }));
+  }
+
+  return head;
+}
+
+exports.defaultHead = defaultHead;
+
+function onlyReactElement(list, child) {
+  // React children can be "string" or "number" in this case we ignore them for backwards compat
+  if (typeof child === 'string' || typeof child === 'number') {
+    return list;
+  } // Adds support for React.Fragment
+
+
+  if (child.type === react_1["default"].Fragment) {
+    return list.concat(react_1["default"].Children.toArray(child.props.children).reduce(function (fragmentList, fragmentChild) {
+      if (typeof fragmentChild === 'string' || typeof fragmentChild === 'number') {
+        return fragmentList;
+      }
+
+      return fragmentList.concat(fragmentChild);
+    }, []));
+  }
+
+  return list.concat(child);
+}
+
+var METATYPES = ['name', 'httpEquiv', 'charSet', 'itemProp'];
+/*
+ returns a function for filtering head child elements
+ which shouldn't be duplicated, like <title/>
+ Also adds support for deduplicated `key` properties
+*/
+
+function unique() {
+  var keys = new _Set();
+  var tags = new _Set();
+  var metaTypes = new _Set();
+  var metaCategories = {};
+  return function (h) {
+    if (h.key && typeof h.key !== 'number' && h.key.indexOf('.$') === 0) {
+      if (keys.has(h.key)) return false;
+      keys.add(h.key);
+      return true;
+    } // If custom meta tag has been added the key will be prepended with `.$`, we can
+    // check for this and dedupe in favor of the custom one, so the default
+    // is not rendered as well
+
+
+    if (keys.has(".$".concat(h.key))) return false; // eslint-disable-next-line default-case
+
+    switch (h.type) {
+      case 'title':
+      case 'base':
+        if (tags.has(h.type)) return false;
+        tags.add(h.type);
+        break;
+
+      case 'meta':
+        for (var i = 0, len = METATYPES.length; i < len; i++) {
+          var metatype = METATYPES[i];
+          if (!h.props.hasOwnProperty(metatype)) continue;
+
+          if (metatype === 'charSet') {
+            if (metaTypes.has(metatype)) return false;
+            metaTypes.add(metatype);
+          } else {
+            var category = h.props[metatype];
+            var categories = metaCategories[metatype] || new _Set();
+            if (categories.has(category)) return false;
+            categories.add(category);
+            metaCategories[metatype] = categories;
+          }
+        }
+
+        break;
+    }
+
+    return true;
+  };
+}
+/**
+ *
+ * @param headElement List of multiple <Head> instances
+ */
+
+
+function reduceComponents(headElements, props) {
+  return headElements.reduce(function (list, headElement) {
+    var headElementChildren = react_1["default"].Children.toArray(headElement.props.children);
+    return list.concat(headElementChildren);
+  }, []).reduce(onlyReactElement, []).reverse().concat(defaultHead(props.inAmpMode)).filter(unique()).reverse().map(function (c, i) {
+    var key = c.key || i;
+    return react_1["default"].cloneElement(c, {
+      key: key
+    });
+  });
+}
+
+var Effect = side_effect_1["default"]();
+/**
+ * This component injects elements to `<head>` of your page.
+ * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
+ */
+
+function Head(_ref) {
+  var children = _ref.children;
+  return react_1["default"].createElement(amp_context_1.AmpStateContext.Consumer, null, function (ampState) {
+    return react_1["default"].createElement(head_manager_context_1.HeadManagerContext.Consumer, null, function (updateHead) {
+      return react_1["default"].createElement(Effect, {
+        reduceComponentsToState: reduceComponents,
+        handleStateChange: updateHead,
+        inAmpMode: amp_1.isInAmpMode(ampState)
+      }, children);
+    });
+  });
+}
+
+Head.rewind = Effect.rewind;
+exports["default"] = Head;
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/next-server/lib/mitt.js":
 /*!********************************************************!*\
   !*** ./node_modules/next/dist/next-server/lib/mitt.js ***!
@@ -18524,6 +18851,116 @@ function getRouteRegex(normalizedRoute) {
 }
 
 exports.getRouteRegex = getRouteRegex;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/side-effect.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/side-effect.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _classCallCheck = __webpack_require__(/*! @babel/runtime-corejs2/helpers/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/classCallCheck.js");
+
+var _possibleConstructorReturn = __webpack_require__(/*! @babel/runtime-corejs2/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/possibleConstructorReturn.js");
+
+var _getPrototypeOf = __webpack_require__(/*! @babel/runtime-corejs2/helpers/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/getPrototypeOf.js");
+
+var _assertThisInitialized = __webpack_require__(/*! @babel/runtime-corejs2/helpers/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/assertThisInitialized.js");
+
+var _createClass = __webpack_require__(/*! @babel/runtime-corejs2/helpers/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/createClass.js");
+
+var _inherits = __webpack_require__(/*! @babel/runtime-corejs2/helpers/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/inherits.js");
+
+var _toConsumableArray = __webpack_require__(/*! @babel/runtime-corejs2/helpers/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/toConsumableArray.js");
+
+var _Set = __webpack_require__(/*! @babel/runtime-corejs2/core-js/set */ "./node_modules/@babel/runtime-corejs2/core-js/set.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var isServer = false;
+
+exports["default"] = function () {
+  var mountedInstances = new _Set();
+  var state;
+
+  function emitChange(component) {
+    state = component.props.reduceComponentsToState(_toConsumableArray(mountedInstances), component.props);
+
+    if (component.props.handleStateChange) {
+      component.props.handleStateChange(state);
+    }
+  }
+
+  return (
+    /*#__PURE__*/
+    function (_react_1$Component) {
+      _inherits(_class, _react_1$Component);
+
+      _createClass(_class, null, [{
+        key: "rewind",
+        // Used when server rendering
+        value: function rewind() {
+          var recordedState = state;
+          state = undefined;
+          mountedInstances.clear();
+          return recordedState;
+        }
+      }]);
+
+      function _class(props) {
+        var _this;
+
+        _classCallCheck(this, _class);
+
+        _this = _possibleConstructorReturn(this, _getPrototypeOf(_class).call(this, props));
+
+        if (isServer) {
+          mountedInstances.add(_assertThisInitialized(_this));
+          emitChange(_assertThisInitialized(_this));
+        }
+
+        return _this;
+      }
+
+      _createClass(_class, [{
+        key: "componentDidMount",
+        value: function componentDidMount() {
+          mountedInstances.add(this);
+          emitChange(this);
+        }
+      }, {
+        key: "componentDidUpdate",
+        value: function componentDidUpdate() {
+          emitChange(this);
+        }
+      }, {
+        key: "componentWillUnmount",
+        value: function componentWillUnmount() {
+          mountedInstances["delete"](this);
+          emitChange(this);
+        }
+      }, {
+        key: "render",
+        value: function render() {
+          return null;
+        }
+      }]);
+
+      return _class;
+    }(react_1.Component)
+  );
+};
 
 /***/ }),
 
@@ -26541,7 +26978,7 @@ function _templateObject10() {
 }
 
 function _templateObject9() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n                          margin-bottom: 0 !important;\n                        "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n                          margin-bottom: 0 !important;\n\n                          @media only screen and (max-width: 767px) {\n                            font-size: 28px !important;\n                          }\n                        "]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -26601,7 +27038,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n            padding-top: 75px !important;\n            padding-bottom: 100px !important;\n            h2 {\n              font-weight: 600;\n              margin-bottom: 50px;\n            }\n\n            h3 {\n              font-size: 20px;\n              font-weight: 600;\n              margin-bottom: 35px;\n            }\n\n            h4 {\n              font-size: 16px;\n              font-weight: 600;\n              margin-bottom: 25px;\n            }\n\n            li {\n              label {\n                margin-bottom: 45px;\n\n                p {\n                  position: relative;\n                  top: 5px;\n                  left: 50px;\n                }\n\n                @media only screen and (max-width: 767px) {\n                  p {\n                    line-height: 1.2rem;\n                  }\n                }\n              }\n            }\n\n            li:first-of-type {\n              margin-top: 25px;\n            }\n\n            li:nth-of-type(6) {\n              margin-bottom: 50px;\n            }\n\n            textarea {\n              margin-bottom: 50px;\n            }\n\n            li:last-of-type {\n              margin-bottom: 75px;\n            }\n\n            .form-group {\n              padding: 0px !important;\n            }\n          "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n            padding-top: 75px !important;\n            padding-bottom: 100px !important;\n            h2 {\n              font-weight: 600;\n              margin-bottom: 50px;\n            }\n\n            h3 {\n              font-size: 20px;\n              font-weight: 600;\n              margin-bottom: 35px;\n            }\n\n            h4 {\n              font-size: 16px;\n              font-weight: 600;\n              margin-bottom: 25px;\n            }\n\n            li {\n              label {\n                margin-bottom: 45px;\n\n                p {\n                  position: relative;\n                  top: 5px;\n                  left: 50px;\n                }\n\n                @media only screen and (max-width: 767px) {\n                  p {\n                    line-height: 1.2rem;\n                  }\n                }\n              }\n            }\n\n            li:first-of-type {\n              margin-top: 25px;\n            }\n\n            li:nth-of-type(6) {\n              margin-bottom: 50px;\n            }\n\n            textarea {\n              margin-bottom: 50px;\n            }\n\n            li:last-of-type {\n              margin-bottom: 75px;\n            }\n\n            .form-group {\n              padding: 0px !important;\n            }\n\n            @media only screen and (max-width: 767px) {\n              h2 {\n                font-size: 28px;\n              }\n            }\n          "]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -26621,7 +27058,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n            margin-top: 75px;\n\n            p {\n              margin-bottom: 0;\n            }\n\n            h2 {\n              font-weight: 600;\n              margin-bottom: 25px;\n            }\n          "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n            margin-top: 75px;\n\n            p {\n              margin-bottom: 0;\n            }\n\n            h2 {\n              font-weight: 600;\n              margin-bottom: 25px;\n            }\n\n            @media only screen and (max-width: 767px) {\n              h2 {\n                font-size: 28px;\n                margin-bottom: 25px;\n              }\n            }\n          "]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -26976,7 +27413,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_14__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 340
+      lineNumber: 342
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_16__["default"], {
@@ -26985,34 +27422,34 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     globalHeaderSubTitle: "Use our online booking tool or call 437-777-MAID.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 341
+      lineNumber: 343
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("main", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 346
+      lineNumber: 348
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("section", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 347
+      lineNumber: 349
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 361
+      lineNumber: 370
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "col-md-8 offset-md-2 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 362
+      lineNumber: 371
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27020,19 +27457,19 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 363
+      lineNumber: 372
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 369
+      lineNumber: 378
     },
     __self: this
   }, "We offer a variety of cleaning options"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 370
+      lineNumber: 379
     },
     __self: this
   }, "We offer the most customizable plans that let you choose exactly what you want. Whether you want your entire home deep cleaned by one of our professional staff, or simply want some help with the dreaded kitchen & bathroom, we have you covered. Choose from our pre-structured plans that cover all the standard items, or select our hourly plan to have complete control of how the time is spent."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("section", {
@@ -27040,35 +27477,35 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     id: "service-form",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 383
+      lineNumber: 392
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 444
+      lineNumber: 459
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("form", {
     onSubmit: handleOnSubmit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 445
+      lineNumber: 460
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 446
+      lineNumber: 461
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "col-md-8 offset-md-2 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 447
+      lineNumber: 462
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27076,7 +27513,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 448
+      lineNumber: 463
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27084,45 +27521,45 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "col-md-12 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 454
+      lineNumber: 469
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 468
+      lineNumber: 483
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 469
+      lineNumber: 484
     },
     __self: this
   }, "Select your cleaning package"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 470
+      lineNumber: 485
     },
     __self: this
   }, "1) Hourly cleaning packages"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     className: "note",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 471
+      lineNumber: 486
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 472
+      lineNumber: 487
     },
     __self: this
   }, "Note:"), " Just leave us detailed instructions in the comments box at the bottom of this page and our professional maid will focus exactly on the items on your list. The list should be structured as a priority list in case there isn\u2019t enough time to complete all the items."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 479
+      lineNumber: 494
     },
     __self: this
   }, radioValues1.map(function (radioValue, i) {
@@ -27130,14 +27567,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       key: "".concat(radioValue, "-").concat(i),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 482
+        lineNumber: 497
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
       className: "checkbox-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 483
+        lineNumber: 498
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27148,21 +27585,21 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       onChange: handleRadio,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 484
+        lineNumber: 499
       },
       __self: this
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
       className: "radio-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 494
+        lineNumber: 509
       },
       __self: this
     }, radioLabels1[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
       className: "checkbox-custom circular",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 497
+        lineNumber: 512
       },
       __self: this
     })));
@@ -27171,39 +27608,39 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject6()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 502
+      lineNumber: 517
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 510
+      lineNumber: 525
     },
     __self: this
   }, "OR")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "plans-h3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 512
+      lineNumber: 527
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 513
+      lineNumber: 528
     },
     __self: this
   }, "2) Cleaning plans")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "1bed-h4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 515
+      lineNumber: 530
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 516
+      lineNumber: 531
     },
     __self: this
   }, "1 Bedroom or Bachelor up to 600 sq/ft (1 bathroom)")), radioValues2.map(function (radioValue, i) {
@@ -27211,14 +27648,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       key: "".concat(radioValue, "-").concat(i),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 522
+        lineNumber: 537
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
       className: "checkbox-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 523
+        lineNumber: 538
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27229,21 +27666,21 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       onChange: handleRadio,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 524
+        lineNumber: 539
       },
       __self: this
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
       className: "radio-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 534
+        lineNumber: 549
       },
       __self: this
     }, radioLabels2[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
       className: "checkbox-custom circular",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 537
+        lineNumber: 552
       },
       __self: this
     })));
@@ -27251,13 +27688,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     key: "2bed-h4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 542
+      lineNumber: 557
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 543
+      lineNumber: 558
     },
     __self: this
   }, "2 Bedroom up to 1000 sq/ft (1 bathroom)")), radioValues3.map(function (radioValue, i) {
@@ -27265,14 +27702,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       key: "".concat(radioValue, "-").concat(i),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 547
+        lineNumber: 562
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
       className: "checkbox-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 548
+        lineNumber: 563
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27283,21 +27720,21 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       onChange: handleRadio,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 549
+        lineNumber: 564
       },
       __self: this
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
       className: "radio-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 559
+        lineNumber: 574
       },
       __self: this
     }, radioLabels3[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
       className: "checkbox-custom circular",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 562
+        lineNumber: 577
       },
       __self: this
     })));
@@ -27306,7 +27743,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "col-md-12 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 571
+      lineNumber: 586
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27314,14 +27751,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 578
+      lineNumber: 593
     },
     __self: this
   }, " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject9()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 600
+      lineNumber: 615
     },
     __self: this
   }, "Extras:")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27329,27 +27766,27 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 608
+      lineNumber: 627
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject11()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 629
+      lineNumber: 648
     },
     __self: this
   }, "The following can be added to your package:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 636
+      lineNumber: 655
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 637
+      lineNumber: 656
     },
     __self: this
   }, checkBoxArrayAddOns3.map(function (checkBox, i) {
@@ -27358,7 +27795,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       className: "checkbox-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 640
+        lineNumber: 659
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27368,80 +27805,80 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       onChange: handleCheckBox,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 644
+        lineNumber: 663
       },
       __self: this
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
       className: "radio-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 650
+        lineNumber: 669
       },
       __self: this
     }, checkBoxArrayLabels3[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
       className: "checkbox-custom rectangular",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 653
+        lineNumber: 672
       },
       __self: this
     }));
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 658
+      lineNumber: 677
     },
     __self: this
   }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 661
+      lineNumber: 680
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 662
+      lineNumber: 681
     },
     __self: this
   }, "Note:"), " Please refer to our", " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("a", {
     href: "#required-items",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 663
+      lineNumber: 682
     },
     __self: this
   }, "list of required items"), " to ensure we have the tools to complete these jobs.", " "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject12()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 667
+      lineNumber: 686
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 672
+      lineNumber: 691
     },
     __self: this
   }, "Note:"), " If this is your first time booking with us, or your home hasn\u2019t been thoroughly cleaned in the past 30 days, we strongly recommend the \u201CDeep clean\u201D add on, as this will prepare your home for future regular cleaning visits."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 678
+      lineNumber: 697
     },
     __self: this
   }, "When is this appointment for?"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject13()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 679
+      lineNumber: 698
     },
     __self: this
   }, "Select a date"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 686
+      lineNumber: 705
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(react_datepicker__WEBPACK_IMPORTED_MODULE_17___default.a, {
@@ -27452,34 +27889,34 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject14()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 687
+      lineNumber: 706
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject15()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 696
+      lineNumber: 715
     },
     __self: this
   }, "Select a time"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject16()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 703
+      lineNumber: 722
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 708
+      lineNumber: 727
     },
     __self: this
   }, "Note:"), " Our cleaning professional will arrive for your appointment inside of your selected 2 hour window. Please feel free to include your preferred arrival time in the additional information box at the bottom of the page and we will do our best."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject17()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 714
+      lineNumber: 733
     },
     __self: this
   }, radioValues4.map(function (radioValue, i) {
@@ -27487,14 +27924,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       key: "".concat(radioValue, "-").concat(i),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 722
+        lineNumber: 741
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
       className: "checkbox-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 723
+        lineNumber: 742
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27505,21 +27942,21 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       onChange: handleTime,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 724
+        lineNumber: 743
       },
       __self: this
     }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
       className: "radio-label",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 731
+        lineNumber: 750
       },
       __self: this
     }, radioValue), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
       className: "checkbox-custom circular",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 732
+        lineNumber: 751
       },
       __self: this
     })));
@@ -27527,32 +27964,32 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject18()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 739
+      lineNumber: 758
     },
     __self: this
   }, "Will there be pets?"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 746
+      lineNumber: 765
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 747
+      lineNumber: 766
     },
     __self: this
   }, "Note:"), " If yes, please ensure your pets will be secured throughout the duration of our visit."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 750
+      lineNumber: 769
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "pets-yes",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 751
+      lineNumber: 770
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
@@ -27560,7 +27997,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "checkbox-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 752
+      lineNumber: 771
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27571,35 +28008,35 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     onChange: handleYesNo1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 758
+      lineNumber: 777
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     className: "radio-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 765
+      lineNumber: 784
     },
     __self: this
   }, "Yes"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     className: "checkbox-custom circular",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 766
+      lineNumber: 785
     },
     __self: this
   }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "pets-no",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 769
+      lineNumber: 788
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
     className: "checkbox-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 770
+      lineNumber: 789
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27610,41 +28047,41 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     onChange: handleYesNo1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 771
+      lineNumber: 790
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     className: "radio-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 778
+      lineNumber: 797
     },
     __self: this
   }, "No"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     className: "checkbox-custom circular",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 779
+      lineNumber: 798
     },
     __self: this
   })))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject20()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 784
+      lineNumber: 803
     },
     __self: this
   }, "Will you be home during the visit?"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 791
+      lineNumber: 810
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "attendance-yes",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 792
+      lineNumber: 811
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
@@ -27652,7 +28089,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "checkbox-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 793
+      lineNumber: 812
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27663,28 +28100,28 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     onChange: handleYesNo2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 799
+      lineNumber: 818
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     className: "radio-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 806
+      lineNumber: 825
     },
     __self: this
   }, "Yes"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     className: "checkbox-custom circular",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 807
+      lineNumber: 826
     },
     __self: this
   }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "attendance-no",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 810
+      lineNumber: 829
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
@@ -27692,7 +28129,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "checkbox-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 811
+      lineNumber: 830
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27703,62 +28140,62 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     onChange: handleYesNo2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 817
+      lineNumber: 836
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     className: "radio-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 824
+      lineNumber: 843
     },
     __self: this
   }, "No"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     className: "checkbox-custom circular",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 825
+      lineNumber: 844
     },
     __self: this
   }))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject23()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 831
+      lineNumber: 850
     },
     __self: this
   }, "Enter your location"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject24()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 839
+      lineNumber: 858
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 844
+      lineNumber: 863
     },
     __self: this
   }, "Note:"), " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_19___default.a, {
-    href: "/terms",
-    as: "/terms",
+    href: "/#service-area",
+    as: "/#service-area",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 845
+      lineNumber: 864
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("a", {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 846
+      lineNumber: 865
     },
     __self: this
   }, "Please make sure you are inside our service area.")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 850
+      lineNumber: 869
     },
     __self: this
   }), "If you are outside, please give us a call at 437-777-MAID."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27766,7 +28203,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 854
+      lineNumber: 873
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27779,7 +28216,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     value: inputs.address,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 862
+      lineNumber: 881
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27787,7 +28224,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 872
+      lineNumber: 891
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27799,7 +28236,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     value: inputs.unit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 880
+      lineNumber: 899
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27807,7 +28244,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 889
+      lineNumber: 908
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27819,13 +28256,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     value: inputs.buzzer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 897
+      lineNumber: 916
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 907
+      lineNumber: 926
     },
     __self: this
   }, "Enter your personal information"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27833,7 +28270,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 909
+      lineNumber: 928
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27846,7 +28283,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     value: inputs.name,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 917
+      lineNumber: 936
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27854,7 +28291,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 927
+      lineNumber: 946
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27867,7 +28304,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     value: inputs.email,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 935
+      lineNumber: 954
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27875,7 +28312,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 945
+      lineNumber: 964
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -27888,7 +28325,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     value: inputs.phone,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 953
+      lineNumber: 972
     },
     __self: this
   }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27896,19 +28333,19 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "form-group-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 965
+      lineNumber: 984
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 974
+      lineNumber: 993
     },
     __self: this
   }, "Additional notes"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 975
+      lineNumber: 994
     },
     __self: this
   }, "Additional information, instructions, or requests for our visit? Parking information is greaty appreciated."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("textarea", {
@@ -27922,7 +28359,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     placeholder: "Your message",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 979
+      lineNumber: 998
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27930,7 +28367,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 991
+      lineNumber: 1010
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
@@ -27938,396 +28375,396 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "col-md-12 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 997
+      lineNumber: 1016
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_18___default.a, {
     id: "required-items",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1007
+      lineNumber: 1026
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1008
+      lineNumber: 1027
     },
     __self: this
   }, "Confirm you have the proper cleaning items")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("details", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject34()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1011
+      lineNumber: 1030
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("summary", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1028
+      lineNumber: 1047
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1029
+      lineNumber: 1048
     },
     __self: this
   }, "Review our list of required cleaning items")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject35()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1033
+      lineNumber: 1052
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "gcleaner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1040
+      lineNumber: 1059
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1041
+      lineNumber: 1060
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1042
+      lineNumber: 1061
     },
     __self: this
   }, "Glass cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1044
+      lineNumber: 1063
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1045
+      lineNumber: 1064
     },
     __self: this
   }, "For windows and mirrors. Such as Windex or plain white vinegar and water, mixed in a spray bottle."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "apcleaner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1053
+      lineNumber: 1072
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1054
+      lineNumber: 1073
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1055
+      lineNumber: 1074
     },
     __self: this
   }, "All-Purpose Cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1057
+      lineNumber: 1076
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1058
+      lineNumber: 1077
     },
     __self: this
   }, "For most hard surfaces in the home. Such as Mr. Clean or Clorox."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "bcleaner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1065
+      lineNumber: 1084
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1066
+      lineNumber: 1085
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1067
+      lineNumber: 1086
     },
     __self: this
   }, "Bathroom Cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1069
+      lineNumber: 1088
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1070
+      lineNumber: 1089
     },
     __self: this
   }, "For sinks, toilets, and bathtubs. Please ensure product is suitable for your type of bathtub. Such as Vim or Greenworks."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "dish-soap",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1078
+      lineNumber: 1097
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1079
+      lineNumber: 1098
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1080
+      lineNumber: 1099
     },
     __self: this
   }, "Dish Soap")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1082
+      lineNumber: 1101
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1083
+      lineNumber: 1102
     },
     __self: this
   }, "A safe, PH cleaner than can be used on dishes as well as on surfaces requiring a milder product.", " "))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "vinegar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1090
+      lineNumber: 1109
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1091
+      lineNumber: 1110
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1092
+      lineNumber: 1111
     },
     __self: this
   }, "Vinegar")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1094
+      lineNumber: 1113
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1095
+      lineNumber: 1114
     },
     __self: this
   }, "One of the most efficient and safe cleaning products than can be used on almost any surface.", " "))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "stcleaner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1102
+      lineNumber: 1121
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1103
+      lineNumber: 1122
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1104
+      lineNumber: 1123
     },
     __self: this
   }, "Stove Top Cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1106
+      lineNumber: 1125
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1107
+      lineNumber: 1126
     },
     __self: this
   }, "Depending on your type of stove, we may require a special product to properly clean the stove-top. For glass stove tops, we recommend Weiman Glass Cook Top cleaner."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("details", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject36()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1118
+      lineNumber: 1137
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("summary", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1135
+      lineNumber: 1154
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1136
+      lineNumber: 1155
     },
     __self: this
   }, "Review our list of required cleaning tools")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject37()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1140
+      lineNumber: 1159
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "mop",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1147
+      lineNumber: 1166
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1148
+      lineNumber: 1167
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1149
+      lineNumber: 1168
     },
     __self: this
   }, "Mop")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1151
+      lineNumber: 1170
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1152
+      lineNumber: 1171
     },
     __self: this
   }, "A twist mop with a bucket is our preferred choice."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "vaccum",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1159
+      lineNumber: 1178
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1160
+      lineNumber: 1179
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1161
+      lineNumber: 1180
     },
     __self: this
   }, "Vaccuum Cleaner / Broom and dustpan"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "cloths",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1165
+      lineNumber: 1184
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1166
+      lineNumber: 1185
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1167
+      lineNumber: 1186
     },
     __self: this
   }, "Microfiber cloths")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1169
+      lineNumber: 1188
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1170
+      lineNumber: 1189
     },
     __self: this
   }, "J cloths, old towels may also be used,but we strongly recommend Microfiber."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "tbrush",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1177
+      lineNumber: 1196
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1178
+      lineNumber: 1197
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1179
+      lineNumber: 1198
     },
     __self: this
   }, "Toilet bowl brush"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
     key: "ptowel",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1183
+      lineNumber: 1202
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1184
+      lineNumber: 1203
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1185
+      lineNumber: 1204
     },
     __self: this
   }, "Paper Towel"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
@@ -28335,65 +28772,65 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     key: "3step",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1189
+      lineNumber: 1208
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "key",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1195
+      lineNumber: 1214
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1196
+      lineNumber: 1215
     },
     __self: this
   }, "Three Step Ladder")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1198
+      lineNumber: 1217
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1199
+      lineNumber: 1218
     },
     __self: this
   }, "For higher areas, such as when cleaning windows and the inside of high cabinets, we will not use anything but a Three-Step ladder for the safety of our staff."))))))), grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1213
+      lineNumber: 1232
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h2", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject39()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1214
+      lineNumber: 1233
     },
     __self: this
   }, "Total:"), inputs.radioLabel > 0 ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject40()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1223
+      lineNumber: 1242
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1238
+      lineNumber: 1257
     },
     __self: this
   }, "+ ".concat(inputs.radioValue)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1239
+      lineNumber: 1258
     },
     __self: this
   }, formatter.format(inputs.radioLabel))) : null, addOnsLabels3.map(function (addOnLabel3, i) {
@@ -28401,77 +28838,77 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject41()),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 1245
+        lineNumber: 1264
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 1260
+        lineNumber: 1279
       },
       __self: this
     }, "+ ", addOnLabel3), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 1261
+        lineNumber: 1280
       },
       __self: this
     }, " ", formatter.format(addOnsCost3[i])));
   })) : null, grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(react__WEBPACK_IMPORTED_MODULE_13___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1268
+      lineNumber: 1287
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject42()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1269
+      lineNumber: 1288
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1287
+      lineNumber: 1306
     },
     __self: this
   }, "+ HST (x0.13)"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1288
+      lineNumber: 1307
     },
     __self: this
   }, grandTotalHST)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject43()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1290
+      lineNumber: 1309
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1312
+      lineNumber: 1331
     },
     __self: this
   }, "Grand total:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1313
+      lineNumber: 1332
     },
     __self: this
   }, grandTotalSumHST)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject44()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1315
+      lineNumber: 1334
     },
     __self: this
   }, "On future bookings, save 25% by having a scheduled appointment within 2 weeks of your last service, or 10% within 30 days.")) : null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1327
+      lineNumber: 1346
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
@@ -28479,14 +28916,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     key: "contsent",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1328
+      lineNumber: 1347
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("label", {
     className: "checkbox-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1334
+      lineNumber: 1353
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -28496,14 +28933,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     onChange: handleChecked,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1335
+      lineNumber: 1354
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     className: "radio-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1341
+      lineNumber: 1360
     },
     __self: this
   }, "I have read and agree to", " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_19___default.a, {
@@ -28511,28 +28948,28 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     as: "/terms",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1343
+      lineNumber: 1362
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("a", {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1344
+      lineNumber: 1363
     },
     __self: this
   }, "the terms of service."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     className: "checkbox-custom rectangular",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1347
+      lineNumber: 1366
     },
     __self: this
   })))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject46()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1351
+      lineNumber: 1370
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("button", {
@@ -28541,19 +28978,19 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     disabled: inputs.consentBox === "consent" ? false : true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1358
+      lineNumber: 1377
     },
     __self: this
   }, !status.submitting ? !status.submitted ? "Book now" : "Your appointment has been booked!" : "Booking..."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1379
+      lineNumber: 1398
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1380
+      lineNumber: 1399
     },
     __self: this
   }, "Payment:"), " You never pay in advance. After the cleaning, we will send you an electronic invoice that can be paid via credit card or interac e-transfer.")))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -28564,7 +29001,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     callImage: "img/services-bg.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1391
+      lineNumber: 1410
     },
     __self: this
   }));
@@ -28587,7 +29024,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.checkbox-container {\n  box-sizing: border-box;\n  text-align:center;\n}\n\n.checkbox-label {\n  display: block;\n  position: relative;\n  margin-right: 40px;\n  cursor: pointer;\n  font-size: 22px;\n  line-height: 24px;\n  height: 24px;\n  width: auto;\n  clear: both;\n}\n\n.checkbox-label input {\n  position: absolute;\n  cursor: pointer;\n  display: none;\n}\n\n.checkbox-label .checkbox-custom {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  height: 35px;\n  width: 35px;\n  background-color: transparent;\n  border-radius: 5px;\n  transition: all 0.3s ease-out;\n  -webkit-transition: all 0.3s ease-out;\n  -moz-transition: all 0.3s ease-out;\n  -ms-transition: all 0.3s ease-out;\n  -o-transition: all 0.3s ease-out;\n  border: 2px solid #000;\n}\n\n.checkbox-label .checkbox-custom.circular {\n  border-radius: 50%;\n}\n\n.checkbox-label input:checked ~ .checkbox-custom.circular {\n  border-radius: 50%;\n}\n\n.checkbox-label input:checked ~ .checkbox-custom.circular::after {\n  opacity:1;\n  left: 7px;\n  top: 7px;\n  width: 17px;\n  height: 17px;\n  background-color: black;\n  border-radius: 50%;\n  }\n\n\n.checkbox-label input:checked ~ .checkbox-custom {\n  background-color: #FFFFFF;\n  border-radius: 5px;\n  -webkit-transform: rotate(0deg) scale(1);\n  -ms-transform: rotate(0deg) scale(1);\n  transform: rotate(0deg) scale(1);\n  opacity:1;\n  border: 2px solid #000;\n}\n\n\n.checkbox-label .checkbox-custom::after {\n  position: absolute;\n  content: \"\";\n  left: 12px;\n  top: 6px;\n  width: 8px;\n  height: 16px;\n  border-radius: 5px;\n  border: solid black;\n  border-width: 0 3px 3px 0;\n  -webkit-transform: rotate(45deg);\n  -ms-transform: rotate(45deg);\n  transform: rotate(45deg);\n  opacity:0;\n  transition: all 0.3s ease-out;\n  -webkit-transition: all 0.1s ease-out;\n  -moz-transition: all 0.1s ease-out;\n  -ms-transition: all 0.1s ease-out;\n  -o-transition: all 0.1s ease-out;\n}\n\n\n.checkbox-label input:checked ~ .checkbox-custom::after {\n-webkit-transform: rotate(45deg);\n-ms-transform: rotate(45deg);\ntransform: rotate(45deg);\nopacity:1;\nleft: 12px;\ntop: 6px;\nwidth: 8px;\nheight: 16px;\nborder: solid #000;\nborder-width: 0 3px 3px 0;\nbackground-color: transparent;\nborder-radius: 0;\n}\n\n\n.italic {\n font-style: italic;\n}\n\n.bold {\n font-weight: bold;\n}\n\n.center-text {\n text-align: center;\n}\n\n.post-area {\n padding: 40px;\n width: 100%;\n min-height: 150px;\n background-color: white;\n border-bottom: 1px dotted #ddd;\n}\n\n.post-area a:link,\n.post-area a:visited {\n font-size: 30px;\n color: #333;\n}\n\n.post-area a:hover {\n color: #0D0017;\n}\n\n.lang-list {\n display: inline-block;\n margin-top: 15px;\n}\n\n.lang-list a {\n color: #0D0017;\n font-weight: bold;\n}\n\nbody {\n font-family: 'Open Sans', sans-serif;\n -webkit-font-smoothing: antialiased;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n font-family: 'Roboto', sans-serif;\n}\n\nh2 {\n font-size: 30px;\n font-weight: 400;\n}\n\nh3 {\n font-size: 28px;\n font-weight: 300;\n}\n\np {\n font-size: 16px;\n line-height: 28px;\n}\n\nul {\n padding: 0;\n margin: 0;\n list-style: none;\n}\n\n.fz-20{\n font-size: 20px;\n}\n\na,\na:active,\na:focus,\na:active {\n text-decoration: none !important;\n}\n\n.section {\n padding: 100px 0;\n}\n\n.section-title {\n margin-bottom: 70px;\n}\n\n.section-title h2 {\n font-size: 36px;\n font-weight: 600;\n margin-bottom: 15px;\n}\n\n.section-title p {\n color: #666;\n font-size: 16px;\n\n @media only screen and (max-width: 767px) {\n  font-size: 13px;\n }\n \n}\n\n.btn-main,\n.btn-transparent,\n.btn-small {\n background: #655E7A;\n color: #fff;\n display: inline-block;\n font-size: 14px;\n letter-spacing: 1px;\n padding: 14px 35px;\n border-radius: 0;\n -webkit-transition: all 0.2s ease;\n transition: all 0.2s ease;\n}\n\n.btn-main:hover,\n.btn-transparent:hover,\n.btn-small:hover {\n background: white;\n color: #353240;\n}\n\n.btn-solid-border {\n border: 3px solid #000;\n color: white;\n background: #000;\n font-size: 16px;\n font-weight: 600;\n text-shadow: none;\n}\n\n.btn-solid-border:hover {\n border: 3px solid #444;\n color: #fff;\n background: #444;\n}\n\nheader {\n background: #fff;\n padding: 20px 0;\n}\n\nheader .navbar {\n margin-bottom: 0px;\n border: 0px;\n}\n\n.navbar-right {\n  color: red;\n }\n\nheader .navbar-brand {\n padding-top: 5px;\n}\n\nheader .navbar-default {\n background: none;\n border: 0px;\n}\n\nheader .navbar-default .navbar-nav {\n padding-top: 10px;\n}\n\ncustom-nav ul {\n  display: flex;\n  color: red;\n}\n\nheader .navbar-default .navbar-nav li a {\n color: #333333;\n padding: 10px 26px;\n font-size: 15px;\n}\n\nfont header .navbar-default .navbar-nav li a:hover {\n color: #000;\n}\n\n#slider {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n background-position: 0% 0%;\n padding: 125px 0 100px 0;\n position: relative;\n}\n\n#slider:before {\n content: \"\";\n position: absolute;\n left: 0;\n top: 0;\n bottom: 0;\n right: 0;\n width: 100%;\n height: 100%;\n background: white;\n opacity: 0.3;\n}\n\n#slider .block {\n color: #E3E3E4;\n}\n\n#slider .block h1 {\n font-family: 'Roboto', sans-serif;\n font-size: 45px;\n line-height: 60px;\n letter-spacing: 3px;\n padding-bottom: 25px;\n margin: 0; \n color: black;\n text-shadow: 0px 0px 10px rgba(255,255,255,1);\n}\n\n#slider .block p {\n font-size: 20px;\n line-height: 40px;\n font-family: 'Roboto', sans-serif;\n font-weight: 400;\n letter-spacing: 3px;\n margin-bottom: 60px;\n color: black;\n text-shadow: 0px 0px 10px rgba(255,255,255,1), 0px 0px 10px rgba(255,255,255,1);\n}\n\n#intro {\n padding: 100px 0;\n}\n\n#intro .block h2 {\n line-height: 27px;\n margin: 0;\n}\n\n#intro .block p {\n color: #333;\n}\n\n#intro .block img {\n padding-left: 40px;\n width: 100%;\n}\n\n#intro .section-title {\n margin-bottom: 0px;\n}\n\n#intro .section-title p {\n padding-top: 20px;\n}\n\n#service {\n text-align: center;\n padding: 90px 0;\n}\n\n.service-home {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  padding: 70px 0px;\n  position: relative;\n  text-align: center;\n}\n\n.service-home:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  width: 100%;\n  height: 100%;\n  background: black;\n  z-index: 0;\n  opacity: 0.55;\n}\n\n#service .service-item {\n padding-right: 15px;\n margin-bottom: 100px;\n}\n\n#service .service-item a {\n  color: #fff;\n  font-size: 16px;\n  padding: 17px 35px;\n  border: 3px solid #000;\n  background: #000;\n  font-size: 16px;\n  font-weight: 600;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n #service .service-item a:hover {\n  color: #fff;\n  border: 3px solid #333;\n  background: #444;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n#service .service-item img {\n width: 300px;\n}\n\n#service .service-item h4 {\n padding-top: 25px;\n font-weight: 800;\n margin: 0;\n color: #333;\n font-size: 26px;\n}\n\n#service .service-item p {\n color: #333;\n padding-top: 10px;\n margin: 0;\n font-size: 16px;\n line-height: 1.8;\n}\n\n#call-to-action {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n padding: 70px 0px;\n position: relative;\n text-align: center;\n color: #fff;\n text-shadow: 0px 0px 35px rgba(255,255,255,1), 0px 0px 35px rgba(255,255,255,1);\n}\n\n#call-to-action:before {\n content: \"\";\n position: absolute;\n left: 0;\n right: 0;\n top: 0;\n bottom: 0;\n width: 100%;\n height: 100%;\n background: #fff;\n opacity: 0.55;\n}\n\n#call-to-action h2 {\n padding-bottom: 20px;\n line-height: 45px;\n font-weight: 700;\n margin: 0;\n font-size: 30px;\n color: #000;\n}\n\n#call-to-action p {\n color: #000;\n font-size: 16px;\n line-height: 1.6;\n margin-bottom: 50px;\n}\n\n#call-to-action .btn-call-to-action {\n padding: 15px 35px;\n border: none;\n background-color: #fff;\n font-size: 15px;\n color: #333333;\n margin-top: 30px;\n}\n\n#feature {\n background-position: 50% 94px;\n width: 100%;\n display: block;\n position: relative;\n overflow: visible;\n background-attachment: fixed;\n background-repeat: no-repeat;\n background-position: center center;\n background-color: #fff;\n -webkit-background-size: cover;\n -moz-background-size: cover;\n -o-background-size: cover;\n background-size: cover;\n -webkit-box-sizing: border-box;\n -moz-box-sizing: border-box;\n box-sizing: border-box;\n -webkit-backface-visibility: hidden;\n backface-visibility: hidden;\n padding: 100px 0;\n}\n\n#feature h2 {\n font-size: 28px;\n font-weight: 600;\n margin-bottom: 30px;\n}\n\n#feature p {\n color: #8d8f92;\n margin-bottom: 20px;\n}\n\n#feature .btn-view-works {\n background: #655E7A;\n color: #fff;\n padding: 10px 20px;\n}\n\n#testimonial {\n padding: 100px 0;\n}\n\n#testimonial .block h2 {\n line-height: 27px;\n color: #5C5C5C;\n padding-top: 110px;\n}\n\n#testimonial .block p {\n padding-top: 50px;\n color: #7B7B7B;\n}\n\n#testimonial .counter-box li {\n width: 50%;\n float: left;\n text-align: center;\n margin: 30px 0 30px;\n}\n\n#testimonial .counter-box li i {\n font-size: 35px;\n}\n\n#testimonial .counter-box li h4 {\n font-size: 30px;\n font-weight: bold;\n}\n\n#testimonial .counter-box li span {\n color: #555;\n}\n\n#testimonial .testimonial-carousel {\n text-align: center;\n width: 75%;\n border: 1px solid #DEDEDE;\n padding: 24px;\n margin: 0 auto;\n}\n\n#testimonial .testimonial-carousel img {\n padding-bottom: 38px;\n}\n\n#testimonial .testimonial-carousel p {\n line-height: 28px;\n font-weight: 300;\n padding-bottom: 20px;\n}\n\n#testimonial .testimonial-carousel .user img {\n padding-bottom: 0px;\n border-radius: 500px;\n}\n\n#testimonial .testimonial-carousel .user p {\n padding-bottom: 0;\n font-size: 12px;\n line-height: 20px;\n color: #353241;\n}\n\n#testimonial .testimonial-carousel .user p span {\n display: block;\n color: #353241;\n font-weight: 600;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div {\n border: 1px solid #1D1D1D;\n border-radius: 500px;\n display: inline-block;\n height: 10px;\n margin-right: 15px;\n width: 10px;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div.active {\n background: #5C5C5C;\n font-size: 30px;\n display: inline-block;\n border: 0px;\n}\n\n#clients-logo-section {\n padding-top: 30px;\n padding-bottom: 75px;\n}\n\n#clients-logo-section .clients-logo-img {\n padding: 0px 50px;\n}\n\n#global-header {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  background-position: 10% 0%;\n  padding: 150px 0 150px 0;\n  position: relative;\n}\n\n#global-header:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n  background: white;\n  opacity: 0.4;\n}\n\n#global-header .block {\n color: black;\n margin: 0 auto;\n padding-left: 90px;\n text-align: center;\n}\n\n#global-header .block h1 {\n font-weight: 600;\n font-size: 50px;\n letter-spacing: 3px;\n padding-bottom: 15px;\n margin-top: 0;\n text-shadow: 0px 0px 60px rgba(255,255,255,1), 0px 0px 60px rgba(255,255,255,1);\n text-transform: uppercase;\n}\n\n#global-header .block p {\n font-size: 23px;\n line-height: 40px;\n font-weight: 400;\n letter-spacing: 1px;\n word-spacing: 3px;\n text-shadow: 0px 0px 30px rgba(255,255,255,1), 0px 0px 30px rgba(255,255,255,1);\n}\n\n#portfolio-work {\n overflow: hidden;\n padding: 80px 0;\n}\n\n#portfolio-work .block .portfolio-menu {\n padding-bottom: 30px;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-menu ul {\n border: 1px solid #999999;\n display: inline-block;\n margin-bottom: 40px;\n}\n\n#portfolio-work .block .portfolio-menu ul li {\n display: inline-block;\n padding: 0px 25px;\n cursor: pointer;\n font-size: 15px;\n line-height: 40px;\n font-weight: 600;\n color: #333333;\n text-transform: capitalize;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active {\n color: #655E7A;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active:before {\n content: \"\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 23px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-menu ul li:hover:before {\n content: \"\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 24px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-contant ul li {\n float: left;\n width: 32.22%;\n overflow: hidden;\n margin: 6px;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .overly {\n opacity: 1;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .position-center {\n position: absolute;\n top: 50%;\n -webkit-transform: translate(0%, -50%);\n -moz-transform: translate(0%, -50%);\n -ms-transform: translate(0%, -50%);\n transform: translate(0%, -50%);\n}\n\n#portfolio-work .block .portfolio-contant ul li a {\n display: block;\n color: #fff;\n}\n\n#portfolio-work .block .portfolio-contant ul li a h2 {\n font-size: 22px;\n letter-spacing: 1px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a p {\n font-size: 15px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a span {\n font-style: italic;\n font-size: 13px;\n color: #655E7A;\n}\n\n#portfolio-work .block .portfolio-contant ul img {\n width: 100%;\n height: auto;\n}\n\n#portfolio-work .block .portfolio-contant .overly {\n position: absolute;\n top: 0;\n bottom: 0;\n right: 0;\n left: 0;\n background: rgba(0, 0, 0, 0.9);\n opacity: 0;\n -webkit-transition: .3s all;\n -o-transition: .3s all;\n transition: .3s all;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-contant .position-center {\n position: absolute;\n top: 50%;\n left: 10%;\n -webkit-transform: translate(0%, 50%);\n -moz-transform: translate(0%, 50%);\n -ms-transform: translate(0%, 50%);\n transform: translate(0%, 50%);\n -webkit-transition: .5s all;\n -o-transition: .5s all;\n transition: .5s all;\n}\n\n#portfolio-work .block .mix {\n display: none;\n}\n\n#wrapper-work {\n overflow: hidden;\n padding-top: 100px;\n}\n\n#wrapper-work ul li {\n width: 50%;\n float: left;\n position: relative;\n}\n\n#wrapper-work ul li img {\n width: 100%;\n height: 100%;\n}\n\n#wrapper-work ul li .items-text {\n position: absolute;\n top: 0;\n bottom: 0;\n left: 0;\n right: 0;\n width: 100%;\n height: 100%;\n color: #fff;\n background: rgba(0, 0, 0, 0.6);\n padding-left: 44px;\n padding-top: 140px;\n}\n\n#wrapper-work ul li .items-text h2 {\n padding-bottom: 28px;\n padding-top: 75px;\n position: relative;\n}\n\n#wrapper-work ul li .items-text h2:before {\n content: \"\";\n position: absolute;\n left: 0;\n bottom: 0;\n width: 75px;\n height: 3px;\n background: #fff;\n}\n\n#wrapper-work ul li .items-text p {\n padding-top: 30px;\n font-size: 16px;\n line-height: 27px;\n font-weight: 300;\n padding-right: 80px;\n}\n\n#features-work {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-work .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n#contact-form, #service-form {\n padding-top: 70px;\n padding-bottom: 35px;\n}\n\n#contact-form .block form .form-group, #service-form .block form .form-group {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group .form-control, #service-form .block form .form-group .form-control {\n background: #F6F8FA;\n height: 60px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block form .form-group-2, #service-form .block form .form-group-2 {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group-2 textarea, #service-form .block form .form-group-2 textarea {\n background: #F6F8FA;\n height: 135px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block button {\n width: 100%;\n height: 60px;\n background: #47424C;\n border: none;\n color: #fff;\n font-family: 'Open Sans', sans-serif;\n font-size: 18px;\n}\n\n.address-block li {\n margin-bottom: 20px;\n}\n\n.address-block li i {\n margin-right: 15px;\n font-size: 20px;\n width: 20px;\n}\n\n.social-icons {\n margin-top: 40px;\n}\n\n.social-icons li {\n display: inline-block;\n margin: 0 6px;\n}\n\n.social-icons a {\n display: inline-block;\n}\n\n.social-icons i {\n color: #2C2C2C;\n margin-right: 25px;\n font-size: 25px;\n}\n\n.google-map {\n position: relative;\n}\n\n.google-map #map {\n width: 100%;\n height: 300px;\n background-color: #ff432e;\n}\n\n#contact-box {\n padding-top: 35px;\n padding-bottom: 58px;\n}\n\n#contact-box .block img {\n width: 100%;\n}\n\n#contact-box .block h2 {\n font-family: 'Open Sans', sans-serif;\n font-weight: 300;\n color: #000;\n font-size: 28px;\n padding-bottom: 30px;\n}\n\n#contact-box .block p {\n color: #5C5C5C;\n display: block;\n}\n\n#features-contact {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-contact .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n.blog-post {\n margin-bottom: 50px;\n}\n\n.blog-post img {\n margin-bottom: 15px;\n}\n\n.blog-post p {\n margin: 15px 0 20px;\n}\n\n.post-title {\n color: #655E7A;\n font-size: 25px;\n font-weight: 600;\n display: block;\n margin-bottom: 10px;\n}\n\n.heading {\n padding-bottom: 60px;\n text-align: center;\n}\n\n.heading h2 {\n color: #000;\n font-size: 30px;\n line-height: 40px;\n font-weight: 400;\n}\n\n.heading p {\n font-size: 16px;\n line-height: 40px;\n color: #292929;\n font-weight: 300;\n}\n\nfooter {\n background: #F5F5F5;\n text-align: center;\n padding-top: 48px;\n padding-bottom: 55px;\n}\n\nfooter p {\n font-size: 13px;\n line-height: 25px;\n color: #919191;\n}\n\nfooter a {\n color: #595959;\n}\n\nfooter .footer-manu {\n padding-bottom: 25px;\n}\n\nfooter .footer-manu ul {\n margin: 0px;\n padding: 0px;\n}\n\nfooter .footer-manu ul li {\n display: inline-block;\n padding: 0px 20px;\n}\n\nfooter .footer-manu ul li a {\n display: inline-block;\n color: #494949;\n}\n\nfooter .footer-manu ul li a:hover {\n color: #007bff;\n}\n\n@media only screen and (min-width: 768px) and (max-width: 991px) {\n\n #wrapper {\n   text-align: center;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   width: 50%;\n }\n\n #content {\n   text-align: center;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n\n #features {\n   text-align: center;\n }\n\n footer .navbar {\n   margin-bottom: 0px;\n   border: 0px;\n   min-height: 40px;\n }\n footer .navbar-default {\n   border: 0px;\n   width: 68%;\n }\n footer .navbar-default .navbar-nav li a {\n   color: #494949;\n   padding: 10px 10px;\n   font-size: 15px;\n }\n footer .navbar-default .navbar-nav li a:hover {\n   color: #007bff;\n }\n\n #slider-work .block h1 {\n   font-size: 28px;\n }\n #slider-work .block p {\n   font-size: 15px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 30px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #wrapper-work ul li .items-text {\n   padding-top: 0;\n   padding-left: 25px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-bottom: 10px;\n   padding-top: 40px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 14px;\n   line-height: 20px;\n   padding-right: 30px;\n }\n\n #features-work .block ul li {\n   width: 49%;\n }\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #features-contact .block ul li {\n   width: 49%;\n }\n}\n\n@media only screen and (max-width: 767px) {\n  #global-header .block h1 {\n    font-size: 45px;\n    line-height: 60px;\n    margin-bottom: 0;\n  }\n\n  #global-header .block p {\n    font-size: 16px;\n  }\n .heading {\n   padding-left: 0px;\n }\n h2 {\n   font-size: 24px;\n }\n p {\n   font-size: 13px;\n }\n header .navbar-default .navbar-toggle {\n   margin-top: 20px;\n   margin-bottom: 20px;\n }\n #slider {\n   padding-top: 90px;\n   padding-bottom: 100px;\n }\n #slider .block {\n   padding-left: 0px;\n }\n #slider .block h1 {\n   font-size: 20px;\n   line-height: 60px;\n }\n #slider .block p {\n   font-size: 13px;\n }\n\n #wrapper {\n   text-align: center;\n   padding-top: 70px;\n   padding-bottom: 100px;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   padding-left: 0px;\n   width: 100%;\n }\n\n #service {\n   padding-top: 100px;\n }\n #service .thumbnail {\n   padding-bottom: 70px;\n }\n\n #call-to-action p {\n   padding: 0px 0px 40px;\n }\n #call-to-action .btn {\n   padding: 10px 20px;\n   font-size: 15px;\n }\n\n #content {\n   text-align: center;\n   padding-top: 70px;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n #content .block h2 {\n   padding-top: 0px;\n }\n #content .block-bottom {\n   padding: 0px;\n }\n #content .block-bottom .item-img {\n   padding-left: 0px;\n }\n\n #features .features-img {\n   text-align: center;\n }\n\n #slider-work {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-work .block {\n   padding-left: 0px;\n }\n #slider-work .block h1 {\n   font-size: 20px;\n }\n #slider-work .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n   text-align: center;\n }\n #portfolio-work .block .portfolio-manu ul li {\n   padding: 0 8px;\n }\n #portfolio-work .block .portfolio-contant ul li {\n   width: 100%;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 65px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n   padding-right: 5px;\n }\n\n #wrapper-work ul li {\n   float: none;\n   width: 100%;\n }\n #wrapper-work ul li .items-text {\n   padding-left: 15px;\n   padding-top: 30px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-top: 10px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #features-work .block ul li {\n   display: block;\n   width: 100%;\n }\n\n #slider-contact {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-contact .block {\n   padding-left: 0px;\n }\n #slider-contact .block h1 {\n   font-size: 20px;\n }\n #slider-contact .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #wrapper-contact .block .location p {\n   width: 100%;\n }\n #wrapper-contact .block .social-media-icon a i {\n   padding-top: 30px;\n }\n\n #features-contact .block ul li {\n   display: block;\n   width: 100%;\n }\n\n @media only screen and (max-width: 510px) {\n   #slider, \n   .service-home, \n   #call-to-action, \n   #feature, \n   #global-header {\n      background-attachment: scroll;\n   }\n }\n"], ["\n.checkbox-container {\n  box-sizing: border-box;\n  text-align:center;\n}\n\n.checkbox-label {\n  display: block;\n  position: relative;\n  margin-right: 40px;\n  cursor: pointer;\n  font-size: 22px;\n  line-height: 24px;\n  height: 24px;\n  width: auto;\n  clear: both;\n}\n\n.checkbox-label input {\n  position: absolute;\n  cursor: pointer;\n  display: none;\n}\n\n.checkbox-label .checkbox-custom {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  height: 35px;\n  width: 35px;\n  background-color: transparent;\n  border-radius: 5px;\n  transition: all 0.3s ease-out;\n  -webkit-transition: all 0.3s ease-out;\n  -moz-transition: all 0.3s ease-out;\n  -ms-transition: all 0.3s ease-out;\n  -o-transition: all 0.3s ease-out;\n  border: 2px solid #000;\n}\n\n.checkbox-label .checkbox-custom.circular {\n  border-radius: 50%;\n}\n\n.checkbox-label input:checked ~ .checkbox-custom.circular {\n  border-radius: 50%;\n}\n\n.checkbox-label input:checked ~ .checkbox-custom.circular::after {\n  opacity:1;\n  left: 7px;\n  top: 7px;\n  width: 17px;\n  height: 17px;\n  background-color: black;\n  border-radius: 50%;\n  }\n\n\n.checkbox-label input:checked ~ .checkbox-custom {\n  background-color: #FFFFFF;\n  border-radius: 5px;\n  -webkit-transform: rotate(0deg) scale(1);\n  -ms-transform: rotate(0deg) scale(1);\n  transform: rotate(0deg) scale(1);\n  opacity:1;\n  border: 2px solid #000;\n}\n\n\n.checkbox-label .checkbox-custom::after {\n  position: absolute;\n  content: \"\";\n  left: 12px;\n  top: 6px;\n  width: 8px;\n  height: 16px;\n  border-radius: 5px;\n  border: solid black;\n  border-width: 0 3px 3px 0;\n  -webkit-transform: rotate(45deg);\n  -ms-transform: rotate(45deg);\n  transform: rotate(45deg);\n  opacity:0;\n  transition: all 0.3s ease-out;\n  -webkit-transition: all 0.1s ease-out;\n  -moz-transition: all 0.1s ease-out;\n  -ms-transition: all 0.1s ease-out;\n  -o-transition: all 0.1s ease-out;\n}\n\n\n.checkbox-label input:checked ~ .checkbox-custom::after {\n-webkit-transform: rotate(45deg);\n-ms-transform: rotate(45deg);\ntransform: rotate(45deg);\nopacity:1;\nleft: 12px;\ntop: 6px;\nwidth: 8px;\nheight: 16px;\nborder: solid #000;\nborder-width: 0 3px 3px 0;\nbackground-color: transparent;\nborder-radius: 0;\n}\n\n\n.italic {\n font-style: italic;\n}\n\n.bold {\n font-weight: bold;\n}\n\n.center-text {\n text-align: center;\n}\n\n.post-area {\n padding: 40px;\n width: 100%;\n min-height: 150px;\n background-color: white;\n border-bottom: 1px dotted #ddd;\n}\n\n.post-area a:link,\n.post-area a:visited {\n font-size: 30px;\n color: #333;\n}\n\n.post-area a:hover {\n color: #0D0017;\n}\n\n.lang-list {\n display: inline-block;\n margin-top: 15px;\n}\n\n.lang-list a {\n color: #0D0017;\n font-weight: bold;\n}\n\nbody {\n font-family: 'Open Sans', sans-serif;\n -webkit-font-smoothing: antialiased;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n font-family: 'Roboto', sans-serif;\n}\n\nh2 {\n font-size: 30px;\n font-weight: 400;\n}\n\nh3 {\n font-size: 28px;\n font-weight: 300;\n}\n\np {\n font-size: 16px;\n line-height: 28px;\n}\n\nul {\n padding: 0;\n margin: 0;\n list-style: none;\n}\n\n.fz-20{\n font-size: 20px;\n}\n\na,\na:active,\na:focus,\na:active {\n text-decoration: none !important;\n}\n\n.section {\n padding: 100px 0;\n}\n\n.section-title {\n margin-bottom: 70px;\n}\n\n.section-title h2 {\n font-size: 36px;\n font-weight: 600;\n margin-bottom: 15px;\n}\n\n.section-title p {\n color: #666;\n font-size: 16px;\n\n @media only screen and (max-width: 767px) {\n  font-size: 13px;\n }\n \n}\n\n.btn-main,\n.btn-transparent,\n.btn-small {\n background: #655E7A;\n color: #fff;\n display: inline-block;\n font-size: 14px;\n letter-spacing: 1px;\n padding: 14px 35px;\n border-radius: 0;\n -webkit-transition: all 0.2s ease;\n transition: all 0.2s ease;\n}\n\n.btn-main:hover,\n.btn-transparent:hover,\n.btn-small:hover {\n background: white;\n color: #353240;\n}\n\n.btn-solid-border {\n border: 3px solid #000;\n color: white;\n background: #000;\n font-size: 16px;\n font-weight: 600;\n text-shadow: none;\n}\n\n.btn-solid-border:hover {\n border: 3px solid #444;\n color: #fff;\n background: #444;\n}\n\nheader {\n background: #fff;\n padding: 20px 0;\n}\n\nheader .navbar {\n margin-bottom: 0px;\n border: 0px;\n}\n\n.navbar-right {\n  color: red;\n }\n\nheader .navbar-brand {\n padding-top: 5px;\n}\n\nheader .navbar-default {\n background: none;\n border: 0px;\n}\n\nheader .navbar-default .navbar-nav {\n padding-top: 10px;\n}\n\ncustom-nav ul {\n  display: flex;\n  color: red;\n}\n\nheader .navbar-default .navbar-nav li a {\n color: #333333;\n padding: 10px 26px;\n font-size: 15px;\n}\n\nfont header .navbar-default .navbar-nav li a:hover {\n color: #000;\n}\n\n#slider {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n background-position: 0% 0%;\n padding: 125px 0 100px 0;\n position: relative;\n}\n\n#slider:before {\n content: \"\";\n position: absolute;\n left: 0;\n top: 0;\n bottom: 0;\n right: 0;\n width: 100%;\n height: 100%;\n background: white;\n opacity: 0.3;\n}\n\n#slider .block {\n color: #E3E3E4;\n}\n\n#slider .block h1 {\n font-family: 'Roboto', sans-serif;\n font-size: 45px;\n line-height: 60px;\n letter-spacing: 3px;\n padding-bottom: 25px;\n margin: 0; \n color: black;\n text-shadow: 0px 0px 10px rgba(255,255,255,1);\n}\n\n#slider .block p {\n font-size: 20px;\n line-height: 40px;\n font-family: 'Roboto', sans-serif;\n font-weight: 400;\n letter-spacing: 3px;\n margin-bottom: 60px;\n color: black;\n text-shadow: 0px 0px 10px rgba(255,255,255,1), 0px 0px 10px rgba(255,255,255,1);\n}\n\n#intro {\n padding: 100px 0;\n}\n\n#intro .block h2 {\n line-height: 27px;\n margin: 0;\n}\n\n#intro .block p {\n color: #333;\n}\n\n#intro .block img {\n padding-left: 40px;\n width: 100%;\n}\n\n#intro .section-title {\n margin-bottom: 0px;\n}\n\n#intro .section-title p {\n padding-top: 20px;\n}\n\n#service {\n text-align: center;\n padding: 90px 0;\n}\n\n.service-home {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  padding: 70px 0px;\n  position: relative;\n  text-align: center;\n}\n\n.service-home:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  width: 100%;\n  height: 100%;\n  background: black;\n  z-index: 0;\n  opacity: 0.55;\n}\n\n#service .service-item {\n padding-right: 15px;\n margin-bottom: 100px;\n}\n\n#service .service-item a {\n  color: #fff;\n  font-size: 16px;\n  padding: 17px 35px;\n  border: 3px solid #000;\n  background: #000;\n  font-size: 16px;\n  font-weight: 600;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n #service .service-item a:hover {\n  color: #fff;\n  border: 3px solid #333;\n  background: #444;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n#service .service-item img {\n width: 300px;\n}\n\n#service .service-item h4 {\n padding-top: 25px;\n font-weight: 800;\n margin: 0;\n color: #333;\n font-size: 26px;\n}\n\n#service .service-item p {\n color: #333;\n padding-top: 10px;\n margin: 0;\n font-size: 16px;\n line-height: 1.8;\n}\n\n#call-to-action {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n padding: 70px 0px;\n position: relative;\n text-align: center;\n color: #fff;\n text-shadow: 0px 0px 35px rgba(255,255,255,1), 0px 0px 35px rgba(255,255,255,1);\n}\n\n#call-to-action:before {\n content: \"\";\n position: absolute;\n left: 0;\n right: 0;\n top: 0;\n bottom: 0;\n width: 100%;\n height: 100%;\n background: #fff;\n opacity: 0.55;\n}\n\n#call-to-action h2 {\n padding-bottom: 20px;\n line-height: 45px;\n font-weight: 700;\n margin: 0;\n font-size: 30px;\n color: #000;\n}\n\n#call-to-action p {\n color: #000;\n font-size: 16px;\n line-height: 1.6;\n margin-bottom: 50px;\n}\n\n#call-to-action .btn-call-to-action {\n padding: 15px 35px;\n border: none;\n background-color: #fff;\n font-size: 15px;\n color: #333333;\n margin-top: 30px;\n}\n\n#feature {\n background-position: 50% 94px;\n width: 100%;\n display: block;\n position: relative;\n overflow: visible;\n background-attachment: fixed;\n background-repeat: no-repeat;\n background-position: center center;\n background-color: #fff;\n -webkit-background-size: cover;\n -moz-background-size: cover;\n -o-background-size: cover;\n background-size: cover;\n -webkit-box-sizing: border-box;\n -moz-box-sizing: border-box;\n box-sizing: border-box;\n -webkit-backface-visibility: hidden;\n backface-visibility: hidden;\n padding: 100px 0;\n}\n\n#feature h2 {\n font-size: 28px;\n font-weight: 600;\n margin-bottom: 30px;\n}\n\n#feature p {\n color: #8d8f92;\n margin-bottom: 20px;\n}\n\n#feature .btn-view-works {\n background: #655E7A;\n color: #fff;\n padding: 10px 20px;\n}\n\n#testimonial {\n padding: 100px 0;\n}\n\n#testimonial .block h2 {\n line-height: 27px;\n color: #5C5C5C;\n padding-top: 110px;\n}\n\n#testimonial .block p {\n padding-top: 50px;\n color: #7B7B7B;\n}\n\n#testimonial .counter-box li {\n width: 50%;\n float: left;\n text-align: center;\n margin: 30px 0 30px;\n}\n\n#testimonial .counter-box li i {\n font-size: 35px;\n}\n\n#testimonial .counter-box li h4 {\n font-size: 30px;\n font-weight: bold;\n}\n\n#testimonial .counter-box li span {\n color: #555;\n}\n\n#testimonial .testimonial-carousel {\n text-align: center;\n width: 75%;\n border: 1px solid #DEDEDE;\n padding: 24px;\n margin: 0 auto;\n}\n\n#testimonial .testimonial-carousel img {\n padding-bottom: 38px;\n}\n\n#testimonial .testimonial-carousel p {\n line-height: 28px;\n font-weight: 300;\n padding-bottom: 20px;\n}\n\n#testimonial .testimonial-carousel .user img {\n padding-bottom: 0px;\n border-radius: 500px;\n}\n\n#testimonial .testimonial-carousel .user p {\n padding-bottom: 0;\n font-size: 12px;\n line-height: 20px;\n color: #353241;\n}\n\n#testimonial .testimonial-carousel .user p span {\n display: block;\n color: #353241;\n font-weight: 600;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div {\n border: 1px solid #1D1D1D;\n border-radius: 500px;\n display: inline-block;\n height: 10px;\n margin-right: 15px;\n width: 10px;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div.active {\n background: #5C5C5C;\n font-size: 30px;\n display: inline-block;\n border: 0px;\n}\n\n#clients-logo-section {\n padding-top: 30px;\n padding-bottom: 75px;\n}\n\n#clients-logo-section .clients-logo-img {\n padding: 0px 50px;\n}\n\n#global-header {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  background-position: 10% 0%;\n  padding: 150px 0 150px 0;\n  position: relative;\n}\n\n#global-header:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n  background: white;\n  opacity: 0.4;\n}\n\n#global-header .block {\n color: black;\n margin: 0 auto;\n padding-left: 90px;\n text-align: center;\n}\n\n#global-header .block h1 {\n font-weight: 600;\n font-size: 50px;\n letter-spacing: 3px;\n padding-bottom: 15px;\n margin-top: 0;\n text-shadow: 0px 0px 60px rgba(255,255,255,1), 0px 0px 60px rgba(255,255,255,1);\n text-transform: uppercase;\n}\n\n#global-header .block p {\n font-size: 23px;\n line-height: 40px;\n font-weight: 400;\n letter-spacing: 1px;\n word-spacing: 3px;\n text-shadow: 0px 0px 30px rgba(255,255,255,1), 0px 0px 30px rgba(255,255,255,1);\n}\n\n#portfolio-work {\n overflow: hidden;\n padding: 80px 0;\n}\n\n#portfolio-work .block .portfolio-menu {\n padding-bottom: 30px;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-menu ul {\n border: 1px solid #999999;\n display: inline-block;\n margin-bottom: 40px;\n}\n\n#portfolio-work .block .portfolio-menu ul li {\n display: inline-block;\n padding: 0px 25px;\n cursor: pointer;\n font-size: 15px;\n line-height: 40px;\n font-weight: 600;\n color: #333333;\n text-transform: capitalize;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active {\n color: #655E7A;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active:before {\n content: \"\\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 23px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-menu ul li:hover:before {\n content: \"\\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 24px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-contant ul li {\n float: left;\n width: 32.22%;\n overflow: hidden;\n margin: 6px;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .overly {\n opacity: 1;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .position-center {\n position: absolute;\n top: 50%;\n -webkit-transform: translate(0%, -50%);\n -moz-transform: translate(0%, -50%);\n -ms-transform: translate(0%, -50%);\n transform: translate(0%, -50%);\n}\n\n#portfolio-work .block .portfolio-contant ul li a {\n display: block;\n color: #fff;\n}\n\n#portfolio-work .block .portfolio-contant ul li a h2 {\n font-size: 22px;\n letter-spacing: 1px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a p {\n font-size: 15px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a span {\n font-style: italic;\n font-size: 13px;\n color: #655E7A;\n}\n\n#portfolio-work .block .portfolio-contant ul img {\n width: 100%;\n height: auto;\n}\n\n#portfolio-work .block .portfolio-contant .overly {\n position: absolute;\n top: 0;\n bottom: 0;\n right: 0;\n left: 0;\n background: rgba(0, 0, 0, 0.9);\n opacity: 0;\n -webkit-transition: .3s all;\n -o-transition: .3s all;\n transition: .3s all;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-contant .position-center {\n position: absolute;\n top: 50%;\n left: 10%;\n -webkit-transform: translate(0%, 50%);\n -moz-transform: translate(0%, 50%);\n -ms-transform: translate(0%, 50%);\n transform: translate(0%, 50%);\n -webkit-transition: .5s all;\n -o-transition: .5s all;\n transition: .5s all;\n}\n\n#portfolio-work .block .mix {\n display: none;\n}\n\n#wrapper-work {\n overflow: hidden;\n padding-top: 100px;\n}\n\n#wrapper-work ul li {\n width: 50%;\n float: left;\n position: relative;\n}\n\n#wrapper-work ul li img {\n width: 100%;\n height: 100%;\n}\n\n#wrapper-work ul li .items-text {\n position: absolute;\n top: 0;\n bottom: 0;\n left: 0;\n right: 0;\n width: 100%;\n height: 100%;\n color: #fff;\n background: rgba(0, 0, 0, 0.6);\n padding-left: 44px;\n padding-top: 140px;\n}\n\n#wrapper-work ul li .items-text h2 {\n padding-bottom: 28px;\n padding-top: 75px;\n position: relative;\n}\n\n#wrapper-work ul li .items-text h2:before {\n content: \"\";\n position: absolute;\n left: 0;\n bottom: 0;\n width: 75px;\n height: 3px;\n background: #fff;\n}\n\n#wrapper-work ul li .items-text p {\n padding-top: 30px;\n font-size: 16px;\n line-height: 27px;\n font-weight: 300;\n padding-right: 80px;\n}\n\n#features-work {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-work .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n#contact-form, #service-form {\n padding-top: 70px;\n padding-bottom: 35px;\n}\n\n#contact-form .block form .form-group, #service-form .block form .form-group {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group .form-control, #service-form .block form .form-group .form-control {\n background: #F6F8FA;\n height: 60px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block form .form-group-2, #service-form .block form .form-group-2 {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group-2 textarea, #service-form .block form .form-group-2 textarea {\n background: #F6F8FA;\n height: 135px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block button {\n width: 100%;\n height: 60px;\n background: #47424C;\n border: none;\n color: #fff;\n font-family: 'Open Sans', sans-serif;\n font-size: 18px;\n}\n\n.address-block li {\n margin-bottom: 20px;\n}\n\n.address-block li i {\n margin-right: 15px;\n font-size: 20px;\n width: 20px;\n}\n\n.social-icons {\n margin-top: 40px;\n}\n\n.social-icons li {\n display: inline-block;\n margin: 0 6px;\n}\n\n.social-icons a {\n display: inline-block;\n}\n\n.social-icons i {\n color: #2C2C2C;\n margin-right: 25px;\n font-size: 25px;\n}\n\n.google-map {\n position: relative;\n}\n\n.google-map #map {\n width: 100%;\n height: 300px;\n background-color: #ff432e;\n}\n\n#contact-box {\n padding-top: 35px;\n padding-bottom: 58px;\n}\n\n#contact-box .block img {\n width: 100%;\n}\n\n#contact-box .block h2 {\n font-family: 'Open Sans', sans-serif;\n font-weight: 300;\n color: #000;\n font-size: 28px;\n padding-bottom: 30px;\n}\n\n#contact-box .block p {\n color: #5C5C5C;\n display: block;\n}\n\n#features-contact {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-contact .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n.blog-post {\n margin-bottom: 50px;\n}\n\n.blog-post img {\n margin-bottom: 15px;\n}\n\n.blog-post p {\n margin: 15px 0 20px;\n}\n\n.post-title {\n color: #655E7A;\n font-size: 25px;\n font-weight: 600;\n display: block;\n margin-bottom: 10px;\n}\n\n.heading {\n padding-bottom: 60px;\n text-align: center;\n}\n\n.heading h2 {\n color: #000;\n font-size: 30px;\n line-height: 40px;\n font-weight: 400;\n}\n\n.heading p {\n font-size: 16px;\n line-height: 40px;\n color: #292929;\n font-weight: 300;\n}\n\nfooter {\n background: #F5F5F5;\n text-align: center;\n padding-top: 48px;\n padding-bottom: 55px;\n}\n\nfooter p {\n font-size: 13px;\n line-height: 25px;\n color: #919191;\n}\n\nfooter a {\n color: #595959;\n}\n\nfooter .footer-manu {\n padding-bottom: 25px;\n}\n\nfooter .footer-manu ul {\n margin: 0px;\n padding: 0px;\n}\n\nfooter .footer-manu ul li {\n display: inline-block;\n padding: 0px 20px;\n}\n\nfooter .footer-manu ul li a {\n display: inline-block;\n color: #494949;\n}\n\nfooter .footer-manu ul li a:hover {\n color: #007bff;\n}\n\n@media only screen and (min-width: 768px) and (max-width: 991px) {\n\n #wrapper {\n   text-align: center;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   width: 50%;\n }\n\n #content {\n   text-align: center;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n\n #features {\n   text-align: center;\n }\n\n footer .navbar {\n   margin-bottom: 0px;\n   border: 0px;\n   min-height: 40px;\n }\n footer .navbar-default {\n   border: 0px;\n   width: 68%;\n }\n footer .navbar-default .navbar-nav li a {\n   color: #494949;\n   padding: 10px 10px;\n   font-size: 15px;\n }\n footer .navbar-default .navbar-nav li a:hover {\n   color: #007bff;\n }\n\n #slider-work .block h1 {\n   font-size: 28px;\n }\n #slider-work .block p {\n   font-size: 15px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 30px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #wrapper-work ul li .items-text {\n   padding-top: 0;\n   padding-left: 25px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-bottom: 10px;\n   padding-top: 40px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 14px;\n   line-height: 20px;\n   padding-right: 30px;\n }\n\n #features-work .block ul li {\n   width: 49%;\n }\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #features-contact .block ul li {\n   width: 49%;\n }\n}\n\n@media only screen and (max-width: 767px) {\n  #global-header .block h1 {\n    font-size: 45px;\n    line-height: 60px;\n    margin-bottom: 0;\n  }\n\n  #global-header .block p {\n    font-size: 16px;\n  }\n .heading {\n   padding-left: 0px;\n }\n h2 {\n   font-size: 24px;\n }\n p {\n   font-size: 13px;\n }\n header .navbar-default .navbar-toggle {\n   margin-top: 20px;\n   margin-bottom: 20px;\n }\n #slider {\n   padding-top: 90px;\n   padding-bottom: 100px;\n }\n #slider .block {\n   padding-left: 0px;\n }\n #slider .block h1 {\n   font-size: 20px;\n   line-height: 60px;\n }\n #slider .block p {\n   font-size: 13px;\n }\n\n #wrapper {\n   text-align: center;\n   padding-top: 70px;\n   padding-bottom: 100px;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   padding-left: 0px;\n   width: 100%;\n }\n\n #service {\n   padding-top: 100px;\n }\n #service .thumbnail {\n   padding-bottom: 70px;\n }\n\n #call-to-action p {\n   padding: 0px 0px 40px;\n }\n #call-to-action .btn {\n   padding: 10px 20px;\n   font-size: 15px;\n }\n\n #content {\n   text-align: center;\n   padding-top: 70px;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n #content .block h2 {\n   padding-top: 0px;\n }\n #content .block-bottom {\n   padding: 0px;\n }\n #content .block-bottom .item-img {\n   padding-left: 0px;\n }\n\n #features .features-img {\n   text-align: center;\n }\n\n #slider-work {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-work .block {\n   padding-left: 0px;\n }\n #slider-work .block h1 {\n   font-size: 20px;\n }\n #slider-work .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n   text-align: center;\n }\n #portfolio-work .block .portfolio-manu ul li {\n   padding: 0 8px;\n }\n #portfolio-work .block .portfolio-contant ul li {\n   width: 100%;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 65px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n   padding-right: 5px;\n }\n\n #wrapper-work ul li {\n   float: none;\n   width: 100%;\n }\n #wrapper-work ul li .items-text {\n   padding-left: 15px;\n   padding-top: 30px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-top: 10px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #features-work .block ul li {\n   display: block;\n   width: 100%;\n }\n\n #slider-contact {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-contact .block {\n   padding-left: 0px;\n }\n #slider-contact .block h1 {\n   font-size: 20px;\n }\n #slider-contact .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #wrapper-contact .block .location p {\n   width: 100%;\n }\n #wrapper-contact .block .social-media-icon a i {\n   padding-top: 30px;\n }\n\n #features-contact .block ul li {\n   display: block;\n   width: 100%;\n }\n\n @media only screen and (max-width: 510px) {\n   #slider, \n   .service-home, \n   #call-to-action, \n   #feature, \n   #global-header {\n      background-attachment: scroll;\n   }\n }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.checkbox-container {\n  box-sizing: border-box;\n  text-align:center;\n}\n\n.checkbox-label {\n  display: block;\n  position: relative;\n  margin-right: 40px;\n  cursor: pointer;\n  font-size: 22px;\n  line-height: 24px;\n  height: 24px;\n  width: auto;\n  clear: both;\n}\n\n.checkbox-label input {\n  position: absolute;\n  cursor: pointer;\n  display: none;\n}\n\n.checkbox-label .checkbox-custom {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  height: 35px;\n  width: 35px;\n  background-color: transparent;\n  border-radius: 5px;\n  transition: all 0.3s ease-out;\n  -webkit-transition: all 0.3s ease-out;\n  -moz-transition: all 0.3s ease-out;\n  -ms-transition: all 0.3s ease-out;\n  -o-transition: all 0.3s ease-out;\n  border: 2px solid #000;\n}\n\n.checkbox-label .checkbox-custom.circular {\n  border-radius: 50%;\n}\n\n.checkbox-label input:checked ~ .checkbox-custom.circular {\n  border-radius: 50%;\n}\n\n.checkbox-label input:checked ~ .checkbox-custom.circular::after {\n  opacity:1;\n  left: 7px;\n  top: 7px;\n  width: 17px;\n  height: 17px;\n  background-color: black;\n  border-radius: 50%;\n  }\n\n\n.checkbox-label input:checked ~ .checkbox-custom {\n  background-color: #FFFFFF;\n  border-radius: 5px;\n  -webkit-transform: rotate(0deg) scale(1);\n  -ms-transform: rotate(0deg) scale(1);\n  transform: rotate(0deg) scale(1);\n  opacity:1;\n  border: 2px solid #000;\n}\n\n\n.checkbox-label .checkbox-custom::after {\n  position: absolute;\n  content: \"\";\n  left: 12px;\n  top: 6px;\n  width: 8px;\n  height: 16px;\n  border-radius: 5px;\n  border: solid black;\n  border-width: 0 3px 3px 0;\n  -webkit-transform: rotate(45deg);\n  -ms-transform: rotate(45deg);\n  transform: rotate(45deg);\n  opacity:0;\n  transition: all 0.3s ease-out;\n  -webkit-transition: all 0.1s ease-out;\n  -moz-transition: all 0.1s ease-out;\n  -ms-transition: all 0.1s ease-out;\n  -o-transition: all 0.1s ease-out;\n}\n\n\n.checkbox-label input:checked ~ .checkbox-custom::after {\n-webkit-transform: rotate(45deg);\n-ms-transform: rotate(45deg);\ntransform: rotate(45deg);\nopacity:1;\nleft: 12px;\ntop: 6px;\nwidth: 8px;\nheight: 16px;\nborder: solid #000;\nborder-width: 0 3px 3px 0;\nbackground-color: transparent;\nborder-radius: 0;\n}\n\n\n.italic {\n font-style: italic;\n}\n\n.bold {\n font-weight: bold;\n}\n\n.center-text {\n text-align: center;\n}\n\n.post-area {\n padding: 40px;\n width: 100%;\n min-height: 150px;\n background-color: white;\n border-bottom: 1px dotted #ddd;\n}\n\n.post-area a:link,\n.post-area a:visited {\n font-size: 30px;\n color: #333;\n}\n\n.post-area a:hover {\n color: #0D0017;\n}\n\n.lang-list {\n display: inline-block;\n margin-top: 15px;\n}\n\n.lang-list a {\n color: #0D0017;\n font-weight: bold;\n}\n\nbody {\n font-family: 'Open Sans', sans-serif;\n -webkit-font-smoothing: antialiased;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n font-family: 'Roboto', sans-serif;\n}\n\nh2 {\n font-size: 30px;\n font-weight: 400;\n}\n\nh3 {\n font-size: 28px;\n font-weight: 300;\n}\n\np {\n font-size: 16px;\n line-height: 28px;\n}\n\nul {\n padding: 0;\n margin: 0;\n list-style: none;\n}\n\n.fz-20{\n font-size: 20px;\n}\n\na,\na:active,\na:focus,\na:active {\n text-decoration: none !important;\n}\n\n.section {\n padding: 100px 0;\n}\n\n.section-title {\n margin-bottom: 70px;\n}\n\n.section-title h2 {\n font-size: 36px;\n font-weight: 600;\n margin-bottom: 15px;\n}\n\n.section-title p {\n color: #666;\n font-size: 16px;\n\n @media only screen and (max-width: 767px) {\n  font-size: 13px;\n }\n \n}\n\n.btn-main,\n.btn-transparent,\n.btn-small {\n background: #655E7A;\n color: #fff;\n display: inline-block;\n font-size: 14px;\n letter-spacing: 1px;\n padding: 14px 35px;\n border-radius: 0;\n -webkit-transition: all 0.2s ease;\n transition: all 0.2s ease;\n}\n\n.btn-main:hover,\n.btn-transparent:hover,\n.btn-small:hover {\n background: white;\n color: #353240;\n}\n\n.btn-solid-border {\n border: 3px solid #000;\n color: white;\n background: #000;\n font-size: 16px;\n font-weight: 600;\n text-shadow: none;\n}\n\n.btn-solid-border:hover {\n border: 3px solid #444;\n color: #fff;\n background: #444;\n}\n\nheader {\n background: #fff;\n padding: 20px 0;\n}\n\nheader .navbar {\n margin-bottom: 0px;\n border: 0px;\n}\n\n.navbar-right {\n  color: red;\n }\n\nheader .navbar-brand {\n padding-top: 5px;\n}\n\nheader .navbar-default {\n background: none;\n border: 0px;\n}\n\nheader .navbar-default .navbar-nav {\n padding-top: 10px;\n}\n\ncustom-nav ul {\n  display: flex;\n  color: red;\n}\n\nheader .navbar-default .navbar-nav li a {\n color: #333333;\n padding: 10px 26px;\n font-size: 15px;\n}\n\nfont header .navbar-default .navbar-nav li a:hover {\n color: #000;\n}\n\n#slider {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n background-position: 0% 0%;\n padding: 125px 0 100px 0;\n position: relative;\n}\n\n#slider:before {\n content: \"\";\n position: absolute;\n left: 0;\n top: 0;\n bottom: 0;\n right: 0;\n width: 100%;\n height: 100%;\n background: white;\n opacity: 0.3;\n}\n\n#slider .block {\n color: #E3E3E4;\n}\n\n#slider .block h1 {\n font-family: 'Roboto', sans-serif;\n font-size: 45px;\n line-height: 60px;\n letter-spacing: 3px;\n padding-bottom: 25px;\n margin: 0; \n color: black;\n text-shadow: 0px 0px 10px rgba(255,255,255,1);\n}\n\n#slider .block p {\n font-size: 20px;\n line-height: 40px;\n font-family: 'Roboto', sans-serif;\n font-weight: 400;\n letter-spacing: 3px;\n margin-bottom: 60px;\n color: black;\n text-shadow: 0px 0px 10px rgba(255,255,255,1), 0px 0px 10px rgba(255,255,255,1);\n}\n\n#intro {\n padding: 100px 0;\n}\n\n#intro .block h2 {\n line-height: 27px;\n margin: 0;\n}\n\n#intro .block p {\n color: #333;\n}\n\n#intro .block img {\n padding-left: 40px;\n width: 100%;\n}\n\n#intro .section-title {\n margin-bottom: 0px;\n}\n\n#intro .section-title p {\n padding-top: 20px;\n}\n\n#service {\n text-align: center;\n padding: 100px 25px 125px 25px;\n}\n\n.service-home {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  padding: 70px 0px;\n  position: relative;\n  text-align: center;\n}\n\n.service-home:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  width: 100%;\n  height: 100%;\n  background: black;\n  z-index: 0;\n  opacity: 0.55;\n}\n\n#service .service-item {\n padding-right: 15px;\n margin-bottom: 100px;\n}\n\n#service .service-item a {\n  color: #fff;\n  font-size: 16px;\n  padding: 17px 35px;\n  border: 3px solid #000;\n  background: #000;\n  font-size: 16px;\n  font-weight: 600;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n #service .service-item a:hover {\n  color: #fff;\n  border: 3px solid #333;\n  background: #444;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n#service .service-item img {\n width: 300px;\n}\n\n#service .service-item h4 {\n padding-top: 50px;\n font-weight: 800;\n margin: 0;\n color: #333;\n font-size: 26px;\n}\n\n#service .service-item p {\n color: #333;\n padding-top: 10px;\n margin: 0;\n font-size: 16px;\n line-height: 1.8;\n}\n\n#call-to-action {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n padding: 100px 25px;\n position: relative;\n text-align: center;\n color: #fff;\n text-shadow: 0px 0px 35px rgba(255,255,255,1), 0px 0px 35px rgba(255,255,255,1);\n}\n\n#call-to-action:before {\n content: \"\";\n position: absolute;\n left: 0;\n right: 0;\n top: 0;\n bottom: 0;\n width: 100%;\n height: 100%;\n background: #fff;\n opacity: 0.7;\n}\n\n#call-to-action h2 {\n padding-bottom: 20px;\n line-height: 45px;\n font-weight: 700;\n margin: 0;\n font-size: 30px;\n color: #000;\n}\n\n#call-to-action p {\n color: #000;\n font-size: 16px;\n line-height: 28px;\n margin-bottom: 50px;\n text-shadow: 0px 0px 5px rgba(255,255,255,1), 0px 0px 5px rgba(255,255,255,1),0px 0px 5px rgba(255,255,255,1);\n}\n\n#call-to-action .btn-call-to-action {\n padding: 15px 35px;\n border: none;\n background-color: #fff;\n font-size: 15px;\n color: #333333;\n margin-top: 30px;\n}\n\n#feature {\n background-position: 50% 94px;\n width: 100%;\n display: block;\n position: relative;\n overflow: visible;\n background-attachment: fixed;\n background-repeat: no-repeat;\n background-position: center center;\n background-color: #fff;\n -webkit-background-size: cover;\n -moz-background-size: cover;\n -o-background-size: cover;\n background-size: cover;\n -webkit-box-sizing: border-box;\n -moz-box-sizing: border-box;\n box-sizing: border-box;\n -webkit-backface-visibility: hidden;\n backface-visibility: hidden;\n padding: 100px 0;\n}\n\n#feature h2 {\n font-size: 28px;\n font-weight: 600;\n margin-bottom: 30px;\n}\n\n#feature p {\n color: #8d8f92;\n margin-bottom: 20px;\n}\n\n#feature .btn-view-works {\n background: #655E7A;\n color: #fff;\n padding: 10px 20px;\n}\n\n#testimonial {\n padding: 100px 0;\n}\n\n#testimonial .block h2 {\n line-height: 27px;\n color: #5C5C5C;\n padding-top: 110px;\n}\n\n#testimonial .block p {\n padding-top: 50px;\n color: #7B7B7B;\n}\n\n#testimonial .counter-box li {\n width: 50%;\n float: left;\n text-align: center;\n margin: 30px 0 30px;\n}\n\n#testimonial .counter-box li i {\n font-size: 35px;\n}\n\n#testimonial .counter-box li h4 {\n font-size: 30px;\n font-weight: bold;\n}\n\n#testimonial .counter-box li span {\n color: #555;\n}\n\n#testimonial .testimonial-carousel {\n text-align: center;\n width: 75%;\n border: 1px solid #DEDEDE;\n padding: 24px;\n margin: 0 auto;\n}\n\n#testimonial .testimonial-carousel img {\n padding-bottom: 38px;\n}\n\n#testimonial .testimonial-carousel p {\n line-height: 28px;\n font-weight: 300;\n padding-bottom: 20px;\n}\n\n#testimonial .testimonial-carousel .user img {\n padding-bottom: 0px;\n border-radius: 500px;\n}\n\n#testimonial .testimonial-carousel .user p {\n padding-bottom: 0;\n font-size: 12px;\n line-height: 20px;\n color: #353241;\n}\n\n#testimonial .testimonial-carousel .user p span {\n display: block;\n color: #353241;\n font-weight: 600;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div {\n border: 1px solid #1D1D1D;\n border-radius: 500px;\n display: inline-block;\n height: 10px;\n margin-right: 15px;\n width: 10px;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div.active {\n background: #5C5C5C;\n font-size: 30px;\n display: inline-block;\n border: 0px;\n}\n\n#clients-logo-section {\n padding-top: 30px;\n padding-bottom: 75px;\n}\n\n#clients-logo-section .clients-logo-img {\n padding: 0px 50px;\n}\n\n#global-header {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  background-position: 10% 0%;\n  padding: 150px 0 150px 0;\n  position: relative;\n}\n\n#global-header:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n  background: white;\n  opacity: 0.4;\n}\n\n#global-header .block {\n color: black;\n margin: 0 auto;\n padding-left: 90px;\n text-align: center;\n}\n\n#global-header .block h1 {\n font-weight: 600;\n font-size: 50px;\n letter-spacing: 3px;\n padding-bottom: 15px;\n margin-top: 0;\n text-shadow: 0px 0px 60px rgba(255,255,255,1), 0px 0px 60px rgba(255,255,255,1);\n text-transform: uppercase;\n}\n\n#global-header .block p {\n font-size: 23px;\n line-height: 40px;\n font-weight: 400;\n letter-spacing: 1px;\n word-spacing: 3px;\n text-shadow: 0px 0px 30px rgba(255,255,255,1), 0px 0px 30px rgba(255,255,255,1);\n}\n\n#portfolio-work {\n overflow: hidden;\n padding: 80px 0;\n}\n\n#portfolio-work .block .portfolio-menu {\n padding-bottom: 30px;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-menu ul {\n border: 1px solid #999999;\n display: inline-block;\n margin-bottom: 40px;\n}\n\n#portfolio-work .block .portfolio-menu ul li {\n display: inline-block;\n padding: 0px 25px;\n cursor: pointer;\n font-size: 15px;\n line-height: 40px;\n font-weight: 600;\n color: #333333;\n text-transform: capitalize;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active {\n color: #655E7A;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active:before {\n content: \"\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 23px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-menu ul li:hover:before {\n content: \"\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 24px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-contant ul li {\n float: left;\n width: 32.22%;\n overflow: hidden;\n margin: 6px;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .overly {\n opacity: 1;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .position-center {\n position: absolute;\n top: 50%;\n -webkit-transform: translate(0%, -50%);\n -moz-transform: translate(0%, -50%);\n -ms-transform: translate(0%, -50%);\n transform: translate(0%, -50%);\n}\n\n#portfolio-work .block .portfolio-contant ul li a {\n display: block;\n color: #fff;\n}\n\n#portfolio-work .block .portfolio-contant ul li a h2 {\n font-size: 22px;\n letter-spacing: 1px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a p {\n font-size: 15px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a span {\n font-style: italic;\n font-size: 13px;\n color: #655E7A;\n}\n\n#portfolio-work .block .portfolio-contant ul img {\n width: 100%;\n height: auto;\n}\n\n#portfolio-work .block .portfolio-contant .overly {\n position: absolute;\n top: 0;\n bottom: 0;\n right: 0;\n left: 0;\n background: rgba(0, 0, 0, 0.9);\n opacity: 0;\n -webkit-transition: .3s all;\n -o-transition: .3s all;\n transition: .3s all;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-contant .position-center {\n position: absolute;\n top: 50%;\n left: 10%;\n -webkit-transform: translate(0%, 50%);\n -moz-transform: translate(0%, 50%);\n -ms-transform: translate(0%, 50%);\n transform: translate(0%, 50%);\n -webkit-transition: .5s all;\n -o-transition: .5s all;\n transition: .5s all;\n}\n\n#portfolio-work .block .mix {\n display: none;\n}\n\n#wrapper-work {\n overflow: hidden;\n padding-top: 100px;\n}\n\n#wrapper-work ul li {\n width: 50%;\n float: left;\n position: relative;\n}\n\n#wrapper-work ul li img {\n width: 100%;\n height: 100%;\n}\n\n#wrapper-work ul li .items-text {\n position: absolute;\n top: 0;\n bottom: 0;\n left: 0;\n right: 0;\n width: 100%;\n height: 100%;\n color: #fff;\n background: rgba(0, 0, 0, 0.6);\n padding-left: 44px;\n padding-top: 140px;\n}\n\n#wrapper-work ul li .items-text h2 {\n padding-bottom: 28px;\n padding-top: 75px;\n position: relative;\n}\n\n#wrapper-work ul li .items-text h2:before {\n content: \"\";\n position: absolute;\n left: 0;\n bottom: 0;\n width: 75px;\n height: 3px;\n background: #fff;\n}\n\n#wrapper-work ul li .items-text p {\n padding-top: 30px;\n font-size: 16px;\n line-height: 27px;\n font-weight: 300;\n padding-right: 80px;\n}\n\n#features-work {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-work .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n#contact-form, #service-form {\n padding-top: 70px;\n padding-bottom: 35px;\n}\n\n#contact-form .block form .form-group, #service-form .block form .form-group {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group .form-control, #service-form .block form .form-group .form-control {\n background: #F6F8FA;\n height: 60px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block form .form-group-2, #service-form .block form .form-group-2 {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group-2 textarea, #service-form .block form .form-group-2 textarea {\n background: #F6F8FA;\n height: 135px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block button {\n width: 100%;\n height: 60px;\n background: #47424C;\n border: none;\n color: #fff;\n font-family: 'Open Sans', sans-serif;\n font-size: 18px;\n}\n\n.address-block li {\n margin-bottom: 20px;\n}\n\n.address-block li i {\n margin-right: 15px;\n font-size: 20px;\n width: 20px;\n}\n\n.social-icons {\n margin-top: 40px;\n}\n\n.social-icons li {\n display: inline-block;\n margin: 0 6px;\n}\n\n.social-icons a {\n display: inline-block;\n}\n\n.social-icons i {\n color: #2C2C2C;\n margin-right: 25px;\n font-size: 25px;\n}\n\n.google-map {\n position: relative;\n}\n\n.google-map #map {\n width: 100%;\n height: 300px;\n background-color: #ff432e;\n}\n\n#contact-box {\n padding-top: 35px;\n padding-bottom: 58px;\n}\n\n#contact-box .block img {\n width: 100%;\n}\n\n#contact-box .block h2 {\n font-family: 'Open Sans', sans-serif;\n font-weight: 300;\n color: #000;\n font-size: 28px;\n padding-bottom: 30px;\n}\n\n#contact-box .block p {\n color: #5C5C5C;\n display: block;\n}\n\n#features-contact {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-contact .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n.blog-post {\n margin-bottom: 50px;\n}\n\n.blog-post img {\n margin-bottom: 15px;\n}\n\n.blog-post p {\n margin: 15px 0 20px;\n}\n\n.post-title {\n color: #655E7A;\n font-size: 25px;\n font-weight: 600;\n display: block;\n margin-bottom: 10px;\n}\n\n.heading {\n padding-bottom: 60px;\n text-align: center;\n}\n\n.heading h2 {\n color: #000;\n font-size: 30px;\n line-height: 40px;\n font-weight: 400;\n}\n\n.heading p {\n font-size: 16px;\n line-height: 40px;\n color: #292929;\n font-weight: 300;\n}\n\nfooter {\n background: #F5F5F5;\n text-align: center;\n padding-top: 48px;\n padding-bottom: 55px;\n}\n\nfooter p {\n font-size: 13px;\n line-height: 25px;\n color: #919191;\n}\n\nfooter a {\n color: #595959;\n}\n\nfooter .footer-manu {\n padding-bottom: 25px;\n}\n\nfooter .footer-manu ul {\n margin: 0px;\n padding: 0px;\n}\n\nfooter .footer-manu ul li {\n display: inline-block;\n padding: 0px 20px;\n}\n\nfooter .footer-manu ul li a {\n display: inline-block;\n color: #494949;\n}\n\nfooter .footer-manu ul li a:hover {\n color: #007bff;\n}\n\n@media only screen and (min-width: 768px) and (max-width: 991px) {\n\n #wrapper {\n   text-align: center;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   width: 50%;\n }\n\n #content {\n   text-align: center;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n\n #features {\n   text-align: center;\n }\n\n footer .navbar {\n   margin-bottom: 0px;\n   border: 0px;\n   min-height: 40px;\n }\n footer .navbar-default {\n   border: 0px;\n   width: 68%;\n }\n footer .navbar-default .navbar-nav li a {\n   color: #494949;\n   padding: 10px 10px;\n   font-size: 15px;\n }\n footer .navbar-default .navbar-nav li a:hover {\n   color: #007bff;\n }\n\n #slider-work .block h1 {\n   font-size: 28px;\n }\n #slider-work .block p {\n   font-size: 15px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 30px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #wrapper-work ul li .items-text {\n   padding-top: 0;\n   padding-left: 25px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-bottom: 10px;\n   padding-top: 40px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 14px;\n   line-height: 20px;\n   padding-right: 30px;\n }\n\n #features-work .block ul li {\n   width: 49%;\n }\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #features-contact .block ul li {\n   width: 49%;\n }\n}\n\n@media only screen and (max-width: 767px) {\n  #global-header .block h1 {\n    font-size: 45px;\n    line-height: 60px;\n    margin-bottom: 0;\n  }\n\n  #global-header .block p {\n    font-size: 16px;\n  }\n .heading {\n   padding-left: 0px;\n }\n h2 {\n   font-size: 24px;\n }\n p {\n   font-size: 13px;\n }\n header .navbar-default .navbar-toggle {\n   margin-top: 20px;\n   margin-bottom: 20px;\n }\n #slider {\n   padding-top: 90px;\n   padding-bottom: 100px;\n }\n #slider .block {\n   padding-left: 0px;\n }\n #slider .block h1 {\n   font-size: 20px;\n   line-height: 60px;\n }\n #slider .block p {\n   font-size: 13px;\n }\n\n #wrapper {\n   text-align: center;\n   padding-top: 70px;\n   padding-bottom: 100px;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   padding-left: 0px;\n   width: 100%;\n }\n\n #service {\n   padding-top: 100px;\n }\n #service .thumbnail {\n   padding-bottom: 70px;\n }\n\n #service .service-item p {\n  font-size: 13px;\n  line-height: 24px;\n }\n\n #call-to-action p {\n   padding: 0px 0px 40px;\n   font-size: 14px;\n }\n #call-to-action .btn {\n   padding: 10px 20px;\n   font-size: 15px;\n }\n\n #content {\n   text-align: center;\n   padding-top: 70px;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n #content .block h2 {\n   padding-top: 0px;\n }\n #content .block-bottom {\n   padding: 0px;\n }\n #content .block-bottom .item-img {\n   padding-left: 0px;\n }\n\n #features .features-img {\n   text-align: center;\n }\n\n #slider-work {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-work .block {\n   padding-left: 0px;\n }\n #slider-work .block h1 {\n   font-size: 20px;\n }\n #slider-work .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n   text-align: center;\n }\n #portfolio-work .block .portfolio-manu ul li {\n   padding: 0 8px;\n }\n #portfolio-work .block .portfolio-contant ul li {\n   width: 100%;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 65px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n   padding-right: 5px;\n }\n\n #wrapper-work ul li {\n   float: none;\n   width: 100%;\n }\n #wrapper-work ul li .items-text {\n   padding-left: 15px;\n   padding-top: 30px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-top: 10px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #features-work .block ul li {\n   display: block;\n   width: 100%;\n }\n\n #slider-contact {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-contact .block {\n   padding-left: 0px;\n }\n #slider-contact .block h1 {\n   font-size: 20px;\n }\n #slider-contact .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #wrapper-contact .block .location p {\n   width: 100%;\n }\n #wrapper-contact .block .social-media-icon a i {\n   padding-top: 30px;\n }\n\n #features-contact .block ul li {\n   display: block;\n   width: 100%;\n }\n\n @media only screen and (max-width: 510px) {\n   #slider, \n   .service-home, \n   #call-to-action, \n   #feature, \n   #global-header {\n      background-attachment: scroll;\n   }\n\n   #intro .block h2 {\n    font-size: 28px;\n   }\n\n   .section-title h2 {\n    font-size: 28px;\n   }\n }\n"], ["\n.checkbox-container {\n  box-sizing: border-box;\n  text-align:center;\n}\n\n.checkbox-label {\n  display: block;\n  position: relative;\n  margin-right: 40px;\n  cursor: pointer;\n  font-size: 22px;\n  line-height: 24px;\n  height: 24px;\n  width: auto;\n  clear: both;\n}\n\n.checkbox-label input {\n  position: absolute;\n  cursor: pointer;\n  display: none;\n}\n\n.checkbox-label .checkbox-custom {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  height: 35px;\n  width: 35px;\n  background-color: transparent;\n  border-radius: 5px;\n  transition: all 0.3s ease-out;\n  -webkit-transition: all 0.3s ease-out;\n  -moz-transition: all 0.3s ease-out;\n  -ms-transition: all 0.3s ease-out;\n  -o-transition: all 0.3s ease-out;\n  border: 2px solid #000;\n}\n\n.checkbox-label .checkbox-custom.circular {\n  border-radius: 50%;\n}\n\n.checkbox-label input:checked ~ .checkbox-custom.circular {\n  border-radius: 50%;\n}\n\n.checkbox-label input:checked ~ .checkbox-custom.circular::after {\n  opacity:1;\n  left: 7px;\n  top: 7px;\n  width: 17px;\n  height: 17px;\n  background-color: black;\n  border-radius: 50%;\n  }\n\n\n.checkbox-label input:checked ~ .checkbox-custom {\n  background-color: #FFFFFF;\n  border-radius: 5px;\n  -webkit-transform: rotate(0deg) scale(1);\n  -ms-transform: rotate(0deg) scale(1);\n  transform: rotate(0deg) scale(1);\n  opacity:1;\n  border: 2px solid #000;\n}\n\n\n.checkbox-label .checkbox-custom::after {\n  position: absolute;\n  content: \"\";\n  left: 12px;\n  top: 6px;\n  width: 8px;\n  height: 16px;\n  border-radius: 5px;\n  border: solid black;\n  border-width: 0 3px 3px 0;\n  -webkit-transform: rotate(45deg);\n  -ms-transform: rotate(45deg);\n  transform: rotate(45deg);\n  opacity:0;\n  transition: all 0.3s ease-out;\n  -webkit-transition: all 0.1s ease-out;\n  -moz-transition: all 0.1s ease-out;\n  -ms-transition: all 0.1s ease-out;\n  -o-transition: all 0.1s ease-out;\n}\n\n\n.checkbox-label input:checked ~ .checkbox-custom::after {\n-webkit-transform: rotate(45deg);\n-ms-transform: rotate(45deg);\ntransform: rotate(45deg);\nopacity:1;\nleft: 12px;\ntop: 6px;\nwidth: 8px;\nheight: 16px;\nborder: solid #000;\nborder-width: 0 3px 3px 0;\nbackground-color: transparent;\nborder-radius: 0;\n}\n\n\n.italic {\n font-style: italic;\n}\n\n.bold {\n font-weight: bold;\n}\n\n.center-text {\n text-align: center;\n}\n\n.post-area {\n padding: 40px;\n width: 100%;\n min-height: 150px;\n background-color: white;\n border-bottom: 1px dotted #ddd;\n}\n\n.post-area a:link,\n.post-area a:visited {\n font-size: 30px;\n color: #333;\n}\n\n.post-area a:hover {\n color: #0D0017;\n}\n\n.lang-list {\n display: inline-block;\n margin-top: 15px;\n}\n\n.lang-list a {\n color: #0D0017;\n font-weight: bold;\n}\n\nbody {\n font-family: 'Open Sans', sans-serif;\n -webkit-font-smoothing: antialiased;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n font-family: 'Roboto', sans-serif;\n}\n\nh2 {\n font-size: 30px;\n font-weight: 400;\n}\n\nh3 {\n font-size: 28px;\n font-weight: 300;\n}\n\np {\n font-size: 16px;\n line-height: 28px;\n}\n\nul {\n padding: 0;\n margin: 0;\n list-style: none;\n}\n\n.fz-20{\n font-size: 20px;\n}\n\na,\na:active,\na:focus,\na:active {\n text-decoration: none !important;\n}\n\n.section {\n padding: 100px 0;\n}\n\n.section-title {\n margin-bottom: 70px;\n}\n\n.section-title h2 {\n font-size: 36px;\n font-weight: 600;\n margin-bottom: 15px;\n}\n\n.section-title p {\n color: #666;\n font-size: 16px;\n\n @media only screen and (max-width: 767px) {\n  font-size: 13px;\n }\n \n}\n\n.btn-main,\n.btn-transparent,\n.btn-small {\n background: #655E7A;\n color: #fff;\n display: inline-block;\n font-size: 14px;\n letter-spacing: 1px;\n padding: 14px 35px;\n border-radius: 0;\n -webkit-transition: all 0.2s ease;\n transition: all 0.2s ease;\n}\n\n.btn-main:hover,\n.btn-transparent:hover,\n.btn-small:hover {\n background: white;\n color: #353240;\n}\n\n.btn-solid-border {\n border: 3px solid #000;\n color: white;\n background: #000;\n font-size: 16px;\n font-weight: 600;\n text-shadow: none;\n}\n\n.btn-solid-border:hover {\n border: 3px solid #444;\n color: #fff;\n background: #444;\n}\n\nheader {\n background: #fff;\n padding: 20px 0;\n}\n\nheader .navbar {\n margin-bottom: 0px;\n border: 0px;\n}\n\n.navbar-right {\n  color: red;\n }\n\nheader .navbar-brand {\n padding-top: 5px;\n}\n\nheader .navbar-default {\n background: none;\n border: 0px;\n}\n\nheader .navbar-default .navbar-nav {\n padding-top: 10px;\n}\n\ncustom-nav ul {\n  display: flex;\n  color: red;\n}\n\nheader .navbar-default .navbar-nav li a {\n color: #333333;\n padding: 10px 26px;\n font-size: 15px;\n}\n\nfont header .navbar-default .navbar-nav li a:hover {\n color: #000;\n}\n\n#slider {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n background-position: 0% 0%;\n padding: 125px 0 100px 0;\n position: relative;\n}\n\n#slider:before {\n content: \"\";\n position: absolute;\n left: 0;\n top: 0;\n bottom: 0;\n right: 0;\n width: 100%;\n height: 100%;\n background: white;\n opacity: 0.3;\n}\n\n#slider .block {\n color: #E3E3E4;\n}\n\n#slider .block h1 {\n font-family: 'Roboto', sans-serif;\n font-size: 45px;\n line-height: 60px;\n letter-spacing: 3px;\n padding-bottom: 25px;\n margin: 0; \n color: black;\n text-shadow: 0px 0px 10px rgba(255,255,255,1);\n}\n\n#slider .block p {\n font-size: 20px;\n line-height: 40px;\n font-family: 'Roboto', sans-serif;\n font-weight: 400;\n letter-spacing: 3px;\n margin-bottom: 60px;\n color: black;\n text-shadow: 0px 0px 10px rgba(255,255,255,1), 0px 0px 10px rgba(255,255,255,1);\n}\n\n#intro {\n padding: 100px 0;\n}\n\n#intro .block h2 {\n line-height: 27px;\n margin: 0;\n}\n\n#intro .block p {\n color: #333;\n}\n\n#intro .block img {\n padding-left: 40px;\n width: 100%;\n}\n\n#intro .section-title {\n margin-bottom: 0px;\n}\n\n#intro .section-title p {\n padding-top: 20px;\n}\n\n#service {\n text-align: center;\n padding: 100px 25px 125px 25px;\n}\n\n.service-home {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  padding: 70px 0px;\n  position: relative;\n  text-align: center;\n}\n\n.service-home:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  width: 100%;\n  height: 100%;\n  background: black;\n  z-index: 0;\n  opacity: 0.55;\n}\n\n#service .service-item {\n padding-right: 15px;\n margin-bottom: 100px;\n}\n\n#service .service-item a {\n  color: #fff;\n  font-size: 16px;\n  padding: 17px 35px;\n  border: 3px solid #000;\n  background: #000;\n  font-size: 16px;\n  font-weight: 600;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n #service .service-item a:hover {\n  color: #fff;\n  border: 3px solid #333;\n  background: #444;\n\n  -webkit-transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n  -ms-transition: all 0.4s ease-in-out;\n  transition: all 0.4s ease-in-out;\n }\n\n#service .service-item img {\n width: 300px;\n}\n\n#service .service-item h4 {\n padding-top: 50px;\n font-weight: 800;\n margin: 0;\n color: #333;\n font-size: 26px;\n}\n\n#service .service-item p {\n color: #333;\n padding-top: 10px;\n margin: 0;\n font-size: 16px;\n line-height: 1.8;\n}\n\n#call-to-action {\n background-repeat: no-repeat;\n background-size: cover;\n background-attachment: fixed;\n padding: 100px 25px;\n position: relative;\n text-align: center;\n color: #fff;\n text-shadow: 0px 0px 35px rgba(255,255,255,1), 0px 0px 35px rgba(255,255,255,1);\n}\n\n#call-to-action:before {\n content: \"\";\n position: absolute;\n left: 0;\n right: 0;\n top: 0;\n bottom: 0;\n width: 100%;\n height: 100%;\n background: #fff;\n opacity: 0.7;\n}\n\n#call-to-action h2 {\n padding-bottom: 20px;\n line-height: 45px;\n font-weight: 700;\n margin: 0;\n font-size: 30px;\n color: #000;\n}\n\n#call-to-action p {\n color: #000;\n font-size: 16px;\n line-height: 28px;\n margin-bottom: 50px;\n text-shadow: 0px 0px 5px rgba(255,255,255,1), 0px 0px 5px rgba(255,255,255,1),0px 0px 5px rgba(255,255,255,1);\n}\n\n#call-to-action .btn-call-to-action {\n padding: 15px 35px;\n border: none;\n background-color: #fff;\n font-size: 15px;\n color: #333333;\n margin-top: 30px;\n}\n\n#feature {\n background-position: 50% 94px;\n width: 100%;\n display: block;\n position: relative;\n overflow: visible;\n background-attachment: fixed;\n background-repeat: no-repeat;\n background-position: center center;\n background-color: #fff;\n -webkit-background-size: cover;\n -moz-background-size: cover;\n -o-background-size: cover;\n background-size: cover;\n -webkit-box-sizing: border-box;\n -moz-box-sizing: border-box;\n box-sizing: border-box;\n -webkit-backface-visibility: hidden;\n backface-visibility: hidden;\n padding: 100px 0;\n}\n\n#feature h2 {\n font-size: 28px;\n font-weight: 600;\n margin-bottom: 30px;\n}\n\n#feature p {\n color: #8d8f92;\n margin-bottom: 20px;\n}\n\n#feature .btn-view-works {\n background: #655E7A;\n color: #fff;\n padding: 10px 20px;\n}\n\n#testimonial {\n padding: 100px 0;\n}\n\n#testimonial .block h2 {\n line-height: 27px;\n color: #5C5C5C;\n padding-top: 110px;\n}\n\n#testimonial .block p {\n padding-top: 50px;\n color: #7B7B7B;\n}\n\n#testimonial .counter-box li {\n width: 50%;\n float: left;\n text-align: center;\n margin: 30px 0 30px;\n}\n\n#testimonial .counter-box li i {\n font-size: 35px;\n}\n\n#testimonial .counter-box li h4 {\n font-size: 30px;\n font-weight: bold;\n}\n\n#testimonial .counter-box li span {\n color: #555;\n}\n\n#testimonial .testimonial-carousel {\n text-align: center;\n width: 75%;\n border: 1px solid #DEDEDE;\n padding: 24px;\n margin: 0 auto;\n}\n\n#testimonial .testimonial-carousel img {\n padding-bottom: 38px;\n}\n\n#testimonial .testimonial-carousel p {\n line-height: 28px;\n font-weight: 300;\n padding-bottom: 20px;\n}\n\n#testimonial .testimonial-carousel .user img {\n padding-bottom: 0px;\n border-radius: 500px;\n}\n\n#testimonial .testimonial-carousel .user p {\n padding-bottom: 0;\n font-size: 12px;\n line-height: 20px;\n color: #353241;\n}\n\n#testimonial .testimonial-carousel .user p span {\n display: block;\n color: #353241;\n font-weight: 600;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div {\n border: 1px solid #1D1D1D;\n border-radius: 500px;\n display: inline-block;\n height: 10px;\n margin-right: 15px;\n width: 10px;\n}\n\n#testimonial .testimonial-carousel .owl-carousel .owl-pagination div.active {\n background: #5C5C5C;\n font-size: 30px;\n display: inline-block;\n border: 0px;\n}\n\n#clients-logo-section {\n padding-top: 30px;\n padding-bottom: 75px;\n}\n\n#clients-logo-section .clients-logo-img {\n padding: 0px 50px;\n}\n\n#global-header {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  background-position: 10% 0%;\n  padding: 150px 0 150px 0;\n  position: relative;\n}\n\n#global-header:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n  background: white;\n  opacity: 0.4;\n}\n\n#global-header .block {\n color: black;\n margin: 0 auto;\n padding-left: 90px;\n text-align: center;\n}\n\n#global-header .block h1 {\n font-weight: 600;\n font-size: 50px;\n letter-spacing: 3px;\n padding-bottom: 15px;\n margin-top: 0;\n text-shadow: 0px 0px 60px rgba(255,255,255,1), 0px 0px 60px rgba(255,255,255,1);\n text-transform: uppercase;\n}\n\n#global-header .block p {\n font-size: 23px;\n line-height: 40px;\n font-weight: 400;\n letter-spacing: 1px;\n word-spacing: 3px;\n text-shadow: 0px 0px 30px rgba(255,255,255,1), 0px 0px 30px rgba(255,255,255,1);\n}\n\n#portfolio-work {\n overflow: hidden;\n padding: 80px 0;\n}\n\n#portfolio-work .block .portfolio-menu {\n padding-bottom: 30px;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-menu ul {\n border: 1px solid #999999;\n display: inline-block;\n margin-bottom: 40px;\n}\n\n#portfolio-work .block .portfolio-menu ul li {\n display: inline-block;\n padding: 0px 25px;\n cursor: pointer;\n font-size: 15px;\n line-height: 40px;\n font-weight: 600;\n color: #333333;\n text-transform: capitalize;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active {\n color: #655E7A;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-menu ul .active:before {\n content: \"\\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 23px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-menu ul li:hover:before {\n content: \"\\f0d7\";\n position: absolute;\n font-family: 'FontAwesome';\n bottom: -18px;\n font-size: 30px;\n width: 20px;\n left: 0px;\n right: 0px;\n top: 24px;\n margin: 0 auto;\n color: #fff;\n text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);\n -webkit-transition: all 0.4s ease-in-out;\n -moz-transition: all 0.4s ease-in-out;\n -o-transition: all 0.4s ease-in-out;\n -ms-transition: all 0.4s ease-in-out;\n transition: all 0.4s ease-in-out;\n}\n\n#portfolio-work .block .portfolio-contant ul li {\n float: left;\n width: 32.22%;\n overflow: hidden;\n margin: 6px;\n position: relative;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .overly {\n opacity: 1;\n}\n\n#portfolio-work .block .portfolio-contant ul li:hover .position-center {\n position: absolute;\n top: 50%;\n -webkit-transform: translate(0%, -50%);\n -moz-transform: translate(0%, -50%);\n -ms-transform: translate(0%, -50%);\n transform: translate(0%, -50%);\n}\n\n#portfolio-work .block .portfolio-contant ul li a {\n display: block;\n color: #fff;\n}\n\n#portfolio-work .block .portfolio-contant ul li a h2 {\n font-size: 22px;\n letter-spacing: 1px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a p {\n font-size: 15px;\n}\n\n#portfolio-work .block .portfolio-contant ul li a span {\n font-style: italic;\n font-size: 13px;\n color: #655E7A;\n}\n\n#portfolio-work .block .portfolio-contant ul img {\n width: 100%;\n height: auto;\n}\n\n#portfolio-work .block .portfolio-contant .overly {\n position: absolute;\n top: 0;\n bottom: 0;\n right: 0;\n left: 0;\n background: rgba(0, 0, 0, 0.9);\n opacity: 0;\n -webkit-transition: .3s all;\n -o-transition: .3s all;\n transition: .3s all;\n text-align: center;\n}\n\n#portfolio-work .block .portfolio-contant .position-center {\n position: absolute;\n top: 50%;\n left: 10%;\n -webkit-transform: translate(0%, 50%);\n -moz-transform: translate(0%, 50%);\n -ms-transform: translate(0%, 50%);\n transform: translate(0%, 50%);\n -webkit-transition: .5s all;\n -o-transition: .5s all;\n transition: .5s all;\n}\n\n#portfolio-work .block .mix {\n display: none;\n}\n\n#wrapper-work {\n overflow: hidden;\n padding-top: 100px;\n}\n\n#wrapper-work ul li {\n width: 50%;\n float: left;\n position: relative;\n}\n\n#wrapper-work ul li img {\n width: 100%;\n height: 100%;\n}\n\n#wrapper-work ul li .items-text {\n position: absolute;\n top: 0;\n bottom: 0;\n left: 0;\n right: 0;\n width: 100%;\n height: 100%;\n color: #fff;\n background: rgba(0, 0, 0, 0.6);\n padding-left: 44px;\n padding-top: 140px;\n}\n\n#wrapper-work ul li .items-text h2 {\n padding-bottom: 28px;\n padding-top: 75px;\n position: relative;\n}\n\n#wrapper-work ul li .items-text h2:before {\n content: \"\";\n position: absolute;\n left: 0;\n bottom: 0;\n width: 75px;\n height: 3px;\n background: #fff;\n}\n\n#wrapper-work ul li .items-text p {\n padding-top: 30px;\n font-size: 16px;\n line-height: 27px;\n font-weight: 300;\n padding-right: 80px;\n}\n\n#features-work {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-work .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n#contact-form, #service-form {\n padding-top: 70px;\n padding-bottom: 35px;\n}\n\n#contact-form .block form .form-group, #service-form .block form .form-group {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group .form-control, #service-form .block form .form-group .form-control {\n background: #F6F8FA;\n height: 60px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block form .form-group-2, #service-form .block form .form-group-2 {\n padding-bottom: 15px;\n margin: 0px;\n}\n\n#contact-form .block form .form-group-2 textarea, #service-form .block form .form-group-2 textarea {\n background: #F6F8FA;\n height: 135px;\n border: 1px solid #EEF2F6;\n box-shadow: none;\n width: 100%;\n}\n\n#contact-form .block button {\n width: 100%;\n height: 60px;\n background: #47424C;\n border: none;\n color: #fff;\n font-family: 'Open Sans', sans-serif;\n font-size: 18px;\n}\n\n.address-block li {\n margin-bottom: 20px;\n}\n\n.address-block li i {\n margin-right: 15px;\n font-size: 20px;\n width: 20px;\n}\n\n.social-icons {\n margin-top: 40px;\n}\n\n.social-icons li {\n display: inline-block;\n margin: 0 6px;\n}\n\n.social-icons a {\n display: inline-block;\n}\n\n.social-icons i {\n color: #2C2C2C;\n margin-right: 25px;\n font-size: 25px;\n}\n\n.google-map {\n position: relative;\n}\n\n.google-map #map {\n width: 100%;\n height: 300px;\n background-color: #ff432e;\n}\n\n#contact-box {\n padding-top: 35px;\n padding-bottom: 58px;\n}\n\n#contact-box .block img {\n width: 100%;\n}\n\n#contact-box .block h2 {\n font-family: 'Open Sans', sans-serif;\n font-weight: 300;\n color: #000;\n font-size: 28px;\n padding-bottom: 30px;\n}\n\n#contact-box .block p {\n color: #5C5C5C;\n display: block;\n}\n\n#features-contact {\n padding-top: 50px;\n padding-bottom: 75px;\n}\n\n#features-contact .block ul li {\n width: 19%;\n text-align: center;\n display: inline-block;\n padding: 40px 0px;\n}\n\n.blog-post {\n margin-bottom: 50px;\n}\n\n.blog-post img {\n margin-bottom: 15px;\n}\n\n.blog-post p {\n margin: 15px 0 20px;\n}\n\n.post-title {\n color: #655E7A;\n font-size: 25px;\n font-weight: 600;\n display: block;\n margin-bottom: 10px;\n}\n\n.heading {\n padding-bottom: 60px;\n text-align: center;\n}\n\n.heading h2 {\n color: #000;\n font-size: 30px;\n line-height: 40px;\n font-weight: 400;\n}\n\n.heading p {\n font-size: 16px;\n line-height: 40px;\n color: #292929;\n font-weight: 300;\n}\n\nfooter {\n background: #F5F5F5;\n text-align: center;\n padding-top: 48px;\n padding-bottom: 55px;\n}\n\nfooter p {\n font-size: 13px;\n line-height: 25px;\n color: #919191;\n}\n\nfooter a {\n color: #595959;\n}\n\nfooter .footer-manu {\n padding-bottom: 25px;\n}\n\nfooter .footer-manu ul {\n margin: 0px;\n padding: 0px;\n}\n\nfooter .footer-manu ul li {\n display: inline-block;\n padding: 0px 20px;\n}\n\nfooter .footer-manu ul li a {\n display: inline-block;\n color: #494949;\n}\n\nfooter .footer-manu ul li a:hover {\n color: #007bff;\n}\n\n@media only screen and (min-width: 768px) and (max-width: 991px) {\n\n #wrapper {\n   text-align: center;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   width: 50%;\n }\n\n #content {\n   text-align: center;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n\n #features {\n   text-align: center;\n }\n\n footer .navbar {\n   margin-bottom: 0px;\n   border: 0px;\n   min-height: 40px;\n }\n footer .navbar-default {\n   border: 0px;\n   width: 68%;\n }\n footer .navbar-default .navbar-nav li a {\n   color: #494949;\n   padding: 10px 10px;\n   font-size: 15px;\n }\n footer .navbar-default .navbar-nav li a:hover {\n   color: #007bff;\n }\n\n #slider-work .block h1 {\n   font-size: 28px;\n }\n #slider-work .block p {\n   font-size: 15px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 30px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #wrapper-work ul li .items-text {\n   padding-top: 0;\n   padding-left: 25px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-bottom: 10px;\n   padding-top: 40px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 14px;\n   line-height: 20px;\n   padding-right: 30px;\n }\n\n #features-work .block ul li {\n   width: 49%;\n }\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #features-contact .block ul li {\n   width: 49%;\n }\n}\n\n@media only screen and (max-width: 767px) {\n  #global-header .block h1 {\n    font-size: 45px;\n    line-height: 60px;\n    margin-bottom: 0;\n  }\n\n  #global-header .block p {\n    font-size: 16px;\n  }\n .heading {\n   padding-left: 0px;\n }\n h2 {\n   font-size: 24px;\n }\n p {\n   font-size: 13px;\n }\n header .navbar-default .navbar-toggle {\n   margin-top: 20px;\n   margin-bottom: 20px;\n }\n #slider {\n   padding-top: 90px;\n   padding-bottom: 100px;\n }\n #slider .block {\n   padding-left: 0px;\n }\n #slider .block h1 {\n   font-size: 20px;\n   line-height: 60px;\n }\n #slider .block p {\n   font-size: 13px;\n }\n\n #wrapper {\n   text-align: center;\n   padding-top: 70px;\n   padding-bottom: 100px;\n }\n #wrapper .block img {\n   padding-top: 100px;\n   padding-left: 0px;\n   width: 100%;\n }\n\n #service {\n   padding-top: 100px;\n }\n #service .thumbnail {\n   padding-bottom: 70px;\n }\n\n #service .service-item p {\n  font-size: 13px;\n  line-height: 24px;\n }\n\n #call-to-action p {\n   padding: 0px 0px 40px;\n   font-size: 14px;\n }\n #call-to-action .btn {\n   padding: 10px 20px;\n   font-size: 15px;\n }\n\n #content {\n   text-align: center;\n   padding-top: 70px;\n }\n #content .block {\n   padding-bottom: 100px;\n }\n #content .block h2 {\n   padding-top: 0px;\n }\n #content .block-bottom {\n   padding: 0px;\n }\n #content .block-bottom .item-img {\n   padding-left: 0px;\n }\n\n #features .features-img {\n   text-align: center;\n }\n\n #slider-work {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-work .block {\n   padding-left: 0px;\n }\n #slider-work .block h1 {\n   font-size: 20px;\n }\n #slider-work .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n #portfolio-work .block .portfolio-manu {\n   padding-left: 0px;\n   text-align: center;\n }\n #portfolio-work .block .portfolio-manu ul li {\n   padding: 0 8px;\n }\n #portfolio-work .block .portfolio-contant ul li {\n   width: 100%;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading {\n   padding: 5px 0 5px 13px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading h2 {\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .img-heading p {\n   font-size: 11px;\n   line-height: 20px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay {\n   padding-left: 15px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay h2 {\n   padding-top: 65px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #portfolio-work .block .portfolio-contant ul li a .overlay p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n   padding-right: 5px;\n }\n\n #wrapper-work ul li {\n   float: none;\n   width: 100%;\n }\n #wrapper-work ul li .items-text {\n   padding-left: 15px;\n   padding-top: 30px;\n }\n #wrapper-work ul li .items-text h2 {\n   padding-top: 10px;\n   padding-bottom: 15px;\n   font-size: 20px;\n   line-height: 25px;\n }\n #wrapper-work ul li .items-text p {\n   font-size: 11px;\n   line-height: 20px;\n   padding-top: 15px;\n }\n\n #features-work .block ul li {\n   display: block;\n   width: 100%;\n }\n\n #slider-contact {\n   padding-top: 100px;\n   padding-bottom: 100px;\n }\n #slider-contact .block {\n   padding-left: 0px;\n }\n #slider-contact .block h1 {\n   font-size: 20px;\n }\n #slider-contact .block p {\n   font-size: 11px;\n   line-height: 25px;\n }\n\n #wrapper-contact .block {\n   padding-bottom: 50px;\n }\n #wrapper-contact .block .location p {\n   width: 100%;\n }\n #wrapper-contact .block .social-media-icon a i {\n   padding-top: 30px;\n }\n\n #features-contact .block ul li {\n   display: block;\n   width: 100%;\n }\n\n @media only screen and (max-width: 510px) {\n   #slider, \n   .service-home, \n   #call-to-action, \n   #feature, \n   #global-header {\n      background-attachment: scroll;\n   }\n\n   #intro .block h2 {\n    font-size: 28px;\n   }\n\n   .section-title h2 {\n    font-size: 28px;\n   }\n }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
