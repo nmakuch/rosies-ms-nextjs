@@ -61,42 +61,74 @@ export default async function(req, res) {
     subject: `New Message From ${name}`,
     text: cleanerMessage,
     html: `
-    <h1>New Booking</h1>
-        <h2>Date and time</h2>
-        <p>${month[startMonth]} ${startDay}, ${startYear} at ${startTime}</p>
-        <h3>Name</h3>
-        <p>${name}</p>
-        <h3>Email</h3>
-        <p>${email}</p>
-        <h3>Phone</h3>
-        <p>${phone}</p>
-        <h3>Are there pets in the house?</h3>
-        <p>${pets}</p>
-        <h3>Will the client be home?</h3>
-        <p>${attendance}</p>
-        <h3>Address</h3>
-        <p>${address}</p>
-        <h3>Unit Number</h3>
-        <p>${unit}</p>
-        <h3>Buzzer</h3>
-        <p>${buzzer}</p>
-        <h3>Cleaner message</h3>
-        <p>${cleanerMessage}</p>
+    <h2>New Booking</h2>
+    <h2>Date and time</h2>
+    <p>${month[startMonth]} ${startDay}, ${startYear} at ${startTime}</p><br />
 
-        <h3>Selected plan:</h3>
-        <p>${radioValue}</p>
-
-        <h3>Add Ons:</h3>
-        ${labelsAddOns3[0] ? `<p>${labelsAddOns3[0]}</p>` : ""}
-        ${labelsAddOns3[1] ? `<p>${labelsAddOns3[1]}</p>` : ""}
-        ${labelsAddOns3[2] ? `<p>${labelsAddOns3[2]}</p>` : ""}
-        ${labelsAddOns3[3] ? `<p>${labelsAddOns3[3]}</p>` : ""}
-        ${labelsAddOns3[4] ? `<p>${labelsAddOns3[4]}</p>` : ""}
-        ${labelsAddOns3[5] ? `<p>${labelsAddOns3[5]}</p>` : ""}
-
-
-        <h3>Grand Total</h3>
-        <p>${grandTotalSumHST}</p>`
+    <h2>Personal Details</h2>
+    <table>
+      <tr>
+        <td><h3>Name</h3></td>
+        <td><p>${name}</p></td>
+      </tr>
+      <tr>
+      <td><h3>Email</h3></td>
+      <td><p>${email}</p></td>
+      </tr>
+      <tr>
+      <td><h3>Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></td>
+      <td><p>${phone}</p></td>
+  </tr>
+    </table>
+    <br />
+    
+    <h2>Appointment details</h2>
+    <table>
+      <tr>
+        <td><h3>Are there pets?</h3></td>
+        <td><p>${pets}</p></td>
+      </tr>
+      <tr>
+        <td><h3>Will the client be home?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></td>
+        <td><p>${attendance}</p></td>
+      </tr>
+      <tr>
+        <td><h3>Address</h3></td>
+        <td><p>${address}</p></td>
+      </tr>
+      <tr>
+        <td><h3>Unit #</h3></td>
+        <td><p>${unit}</p></td>
+      </tr>
+      <tr>
+        <td><h3>Buzzer #</h3></td>
+        <td><p>${buzzer}</p></td>
+      </tr>
+      <tr>
+        <td><h3>Additional Notes</h3></td>
+        <td><p>${cleanerMessage}</p></td>
+      </tr>
+      <tr>
+        <td><h3>Selected Plan</h3></td>
+        <td><p>${radioValue}</p></td>
+      </tr>
+      <tr>
+        <td><h3>Extras</h3></td>
+        <td>
+          ${labelsAddOns3[0] ? `<p>${labelsAddOns3[0]}</p>` : ""}
+          ${labelsAddOns3[1] ? `<p>${labelsAddOns3[1]}</p>` : ""}
+          ${labelsAddOns3[2] ? `<p>${labelsAddOns3[2]}</p>` : ""}
+          ${labelsAddOns3[3] ? `<p>${labelsAddOns3[3]}</p>` : ""}
+          ${labelsAddOns3[4] ? `<p>${labelsAddOns3[4]}</p>` : ""}
+          ${labelsAddOns3[5] ? `<p>${labelsAddOns3[5]}</p>` : ""}
+        </td>
+      </tr>
+      <tr>
+        <td><h3>Grand Total</h3></td>
+        <td><p>${grandTotalSumHST}</p></td>
+      </tr>
+    </table>
+  `
   };
 
   const contentFrom = {
@@ -105,25 +137,57 @@ export default async function(req, res) {
     subject: `Rosie's Maid Service - Appointment Booking`,
     html: `
     <h1>Hi ${name}, thanks for booking an appointment with Rosie's Maid Service!</h1>
-    <p>We will contact you in the next 2 hours to confirm your appointment (unless we are experiencing periods of high traffic</p>
-    <br /><h2>You have selected the following date/time and cleaning package:</h2>
+    <p>We will contact you in the next 2 hours to confirm your appointment (unless we are experiencing periods of high traffic).</p>
 
-        <h3>Date and time</h3>
-        <p>${month[startMonth]} ${startDay}, ${startYear}  at ${startTime}</p>
+        <h2>Appointment scheduled for</h2>
+        <p>${month[startMonth]} ${startDay}, ${startYear}  at ${startTime}</p><br />
 
-        <h3>Selected plan:</h3>
-        <p>${radioValue}</p>
-
-        <h3>Add Ons:</h3>
-        ${labelsAddOns3[0] ? `<p>${labelsAddOns3[0]}</p>` : ""}
-        ${labelsAddOns3[1] ? `<p>${labelsAddOns3[1]}</p>` : ""}
-        ${labelsAddOns3[2] ? `<p>${labelsAddOns3[2]}</p>` : ""}
-        ${labelsAddOns3[3] ? `<p>${labelsAddOns3[3]}</p>` : ""}
-        ${labelsAddOns3[4] ? `<p>${labelsAddOns3[4]}</p>` : ""}
-        ${labelsAddOns3[5] ? `<p>${labelsAddOns3[5]}</p>` : ""}
-
-        <h3>Grand Total</h3>
-        <p>${grandTotalSumHST}</p>
+        <h2>Appointment details</h2>
+        <table>
+          <tr>
+            <td><h3>Are there pets?</h3></td>
+            <td><p>${pets}</p></td>
+          </tr>
+          <tr>
+            <td><h3>Will the client be home?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></td>
+            <td><p>${attendance}</p></td>
+          </tr>
+          <tr>
+            <td><h3>Address</h3></td>
+            <td><p>${address}</p></td>
+          </tr>
+          <tr>
+            <td><h3>Unit #</h3></td>
+            <td><p>${unit}</p></td>
+          </tr>
+          <tr>
+            <td><h3>Buzzer #</h3></td>
+            <td><p>${buzzer}</p></td>
+          </tr>
+          <tr>
+            <td><h3>Additional Notes</h3></td>
+            <td><p>${cleanerMessage}</p></td>
+          </tr>
+          <tr>
+            <td><h3>Selected Plan</h3></td>
+            <td><p>${radioValue}</p></td>
+          </tr>
+          <tr>
+            <td><h3>Extras</h3></td>
+            <td>
+              ${labelsAddOns3[0] ? `<p>${labelsAddOns3[0]}</p>` : ""}
+              ${labelsAddOns3[1] ? `<p>${labelsAddOns3[1]}</p>` : ""}
+              ${labelsAddOns3[2] ? `<p>${labelsAddOns3[2]}</p>` : ""}
+              ${labelsAddOns3[3] ? `<p>${labelsAddOns3[3]}</p>` : ""}
+              ${labelsAddOns3[4] ? `<p>${labelsAddOns3[4]}</p>` : ""}
+              ${labelsAddOns3[5] ? `<p>${labelsAddOns3[5]}</p>` : ""}
+            </td>
+          </tr>
+          <tr>
+            <td><h3>Grand Total</h3></td>
+            <td><p>${grandTotalSumHST}</p></td>
+          </tr>
+        </table>
         
         <h3>Contact us if you have any questions or concers</h3>
         <p>(437) 777-6243</p>`

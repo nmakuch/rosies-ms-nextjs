@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -3083,7 +3083,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       startDate: date,
       startYear: date.getFullYear(),
       startMonth: date.getMonth(),
-      startDay: date.getDay()
+      startDay: date.getDate()
     }));
     setStatus({
       submitted: false,
@@ -4533,7 +4533,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
                           }
 
                           summary {
-                            margin-bottom: 25px;
+                            margin-bottom: 50px;
                           }
 
                           ul li {
@@ -4889,7 +4889,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     __self: undefined
   }, grandTotalSumHST)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
     css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 75px;
+                          margin-bottom: 50px;
                         `,
     __source: {
       fileName: _jsxFileName,
@@ -4903,6 +4903,9 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
+                        margin-top: 0 !important;
+                      `,
     key: "contsent",
     __source: {
       fileName: _jsxFileName,
@@ -4913,7 +4916,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "checkbox-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1326
+      lineNumber: 1331
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
@@ -4923,14 +4926,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     onChange: handleChecked,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1327
+      lineNumber: 1332
     },
     __self: undefined
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
     className: "radio-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1333
+      lineNumber: 1338
     },
     __self: undefined
   }, "I have read and agree to", " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_16___default.a, {
@@ -4938,21 +4941,21 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     as: "/terms",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1335
+      lineNumber: 1340
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("a", {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1336
+      lineNumber: 1341
     },
     __self: undefined
   }, "the terms of service."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
     className: "checkbox-custom rectangular",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1339
+      lineNumber: 1344
     },
     __self: undefined
   })))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
@@ -4963,7 +4966,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
                     `,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1343
+      lineNumber: 1348
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("button", {
@@ -4981,19 +4984,19 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     disabled: inputs.consentBox === "consent" ? false : true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1350
+      lineNumber: 1355
     },
     __self: undefined
   }, !status.submitting ? !status.submitted ? "Book now" : "Your appointment has been booked!" : "Booking..."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1371
+      lineNumber: 1376
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1372
+      lineNumber: 1377
     },
     __self: undefined
   }, "Payment:"), " You never pay in advance. After the cleaning, we will send you an electronic invoice that can be paid via credit card or interac e-transfer.")))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -5004,7 +5007,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     callImage: "img/services-bg.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1383
+      lineNumber: 1388
     },
     __self: undefined
   }));
@@ -6424,7 +6427,7 @@ footer .footer-manu ul li a:hover {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*********************************!*\
   !*** multi ./pages/services.js ***!
   \*********************************/

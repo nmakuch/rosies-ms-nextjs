@@ -26158,8 +26158,18 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/services.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement;
 
-function _templateObject46() {
+function _templateObject47() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n                        width: 100%;\n                        height: 60px;\n                        background: #47424c;\n                        border: none;\n                        color: #fff;\n                        font-family: \"Open Sans\", sans-serif;\n                        font-size: 18px;\n                        margin-bottom: 75px;\n                      "]);
+
+  _templateObject47 = function _templateObject47() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject46() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n                      button:disabled {\n                        opacity: 0.5;\n                      }\n                    "]);
 
   _templateObject46 = function _templateObject46() {
     return data;
@@ -26169,7 +26179,7 @@ function _templateObject46() {
 }
 
 function _templateObject45() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n                      button:disabled {\n                        opacity: 0.5;\n                      }\n                    "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n                        margin-top: 0 !important;\n                      "]);
 
   _templateObject45 = function _templateObject45() {
     return data;
@@ -26179,7 +26189,7 @@ function _templateObject45() {
 }
 
 function _templateObject44() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n                          margin-bottom: 75px;\n                        "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n                          margin-bottom: 50px;\n                        "]);
 
   _templateObject44 = function _templateObject44() {
     return data;
@@ -26259,7 +26269,7 @@ function _templateObject37() {
 }
 
 function _templateObject36() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n                          summary span {\n                            font-size: 20px;\n                            font-weight: 700;\n                            font-family: \"Roboto\", sans-serif;\n                          }\n\n                          summary {\n                            margin-bottom: 25px;\n                          }\n\n                          ul li {\n                            margin-bottom: 25px;\n                          }\n                        "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n                          summary span {\n                            font-size: 20px;\n                            font-weight: 700;\n                            font-family: \"Roboto\", sans-serif;\n                          }\n\n                          summary {\n                            margin-bottom: 50px;\n                          }\n\n                          ul li {\n                            margin-bottom: 25px;\n                          }\n                        "]);
 
   _templateObject36 = function _templateObject36() {
     return data;
@@ -26927,7 +26937,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
         startDate: date,
         startYear: date.getFullYear(),
         startMonth: date.getMonth(),
-        startDay: date.getDay()
+        startDay: date.getDate()
       });
     });
     setStatus({
@@ -28459,6 +28469,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("li", {
+    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject45()),
     key: "contsent",
     __source: {
       fileName: _jsxFileName,
@@ -28469,7 +28480,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     className: "checkbox-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1326
+      lineNumber: 1331
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("input", {
@@ -28479,14 +28490,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     onChange: handleChecked,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1327
+      lineNumber: 1332
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     className: "radio-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1333
+      lineNumber: 1338
     },
     __self: this
   }, "I have read and agree to", " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_19___default.a, {
@@ -28494,49 +28505,49 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     as: "/terms",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1335
+      lineNumber: 1340
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("a", {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1336
+      lineNumber: 1341
     },
     __self: this
   }, "the terms of service."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("span", {
     className: "checkbox-custom rectangular",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1339
+      lineNumber: 1344
     },
     __self: this
   })))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("div", {
-    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject45()),
+    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject46()),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1343
+      lineNumber: 1348
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("button", {
-    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject46()),
+    css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject47()),
     type: "submit",
     disabled: inputs.consentBox === "consent" ? false : true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1350
+      lineNumber: 1355
     },
     __self: this
   }, !status.submitting ? !status.submitted ? "Book now" : "Your appointment has been booked!" : "Booking..."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1371
+      lineNumber: 1376
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1372
+      lineNumber: 1377
     },
     __self: this
   }, "Payment:"), " You never pay in advance. After the cleaning, we will send you an electronic invoice that can be paid via credit card or interac e-transfer.")))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -28547,7 +28558,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     callImage: "img/services-bg.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 1383
+      lineNumber: 1388
     },
     __self: this
   }));
@@ -28584,7 +28595,7 @@ var appStyles = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templ
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fservices&absolutePagePath=%2FUsers%2Fnickmakuch%2FDocuments%2FCode%2Frosies-ms-nextjs%2Fpages%2Fservices.js ***!
   \**********************************************************************************************************************************************************/
@@ -28607,5 +28618,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=services.js.map

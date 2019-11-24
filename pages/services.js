@@ -310,7 +310,7 @@ export default () => {
       startDate: date,
       startYear: date.getFullYear(),
       startMonth: date.getMonth(),
-      startDay: date.getDay()
+      startDay: date.getDate()
     }));
     setStatus({
       submitted: false,
@@ -1121,7 +1121,7 @@ export default () => {
                           }
 
                           summary {
-                            margin-bottom: 25px;
+                            margin-bottom: 50px;
                           }
 
                           ul li {
@@ -1311,7 +1311,7 @@ export default () => {
                       </div>
                       <p
                         css={css`
-                          margin-bottom: 75px;
+                          margin-bottom: 50px;
                         `}
                       >
                         On future bookings, save 25% by having a scheduled
@@ -1322,7 +1322,12 @@ export default () => {
                   ) : null}
 
                   <ul>
-                    <li key="contsent">
+                    <li
+                      css={css`
+                        margin-top: 0 !important;
+                      `}
+                      key="contsent"
+                    >
                       <label className="checkbox-label">
                         <input
                           type="checkbox"
