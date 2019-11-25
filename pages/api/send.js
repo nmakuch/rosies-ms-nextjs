@@ -39,7 +39,7 @@ export default async function(req, res) {
     html: `
     <h1>Hi ${name}! Thanks for taking interest in Rosie's Maid Service</h1>
     <br /><h2>We have recieved your message and will get back to you shortly :)</h2>
-    <p>It usually takes us 2 hours to get back to clients if their request was posted before 6pm (unless we are experiencing periods of high traffic). All other requests will be processed the following day.</p>
+    <p>It usually takes us 2 hours to get back to clients if their request was posted before 6pm (unless we are experiencing periods of high traffic). All other requests will be processed the next morning.</p>
 
     <h2>You can view your submission below</h2>
     

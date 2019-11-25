@@ -137,7 +137,7 @@ export default async function(req, res) {
     subject: `Rosie's Maid Service - Appointment Booking`,
     html: `
     <h1>Hi ${name}, thanks for booking an appointment with Rosie's Maid Service!</h1>
-    <p>It usually takes us 2 hours to get in touch with clients to confirm their appointments, if the request was posted before 6pm (unless we are experiencing periods of high traffic). All other requests will be processed the following day.</p>
+    <p>It usually takes us 2 hours to get in touch with clients to confirm their appointments, if the request was posted before 6pm (unless we are experiencing periods of high traffic). All other requests will be processed the next morning.</p>
 
         <h2>Appointment scheduled for</h2>
         <p>${
