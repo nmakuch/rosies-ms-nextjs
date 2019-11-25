@@ -372,7 +372,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #service {
  text-align: center;
- padding: 90px 0;
+ padding: 100px 25px 125px 25px;
 }
 
 .service-home {
@@ -436,7 +436,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 #service .service-item h4 {
- padding-top: 25px;
+ padding-top: 50px;
  font-weight: 800;
  margin: 0;
  color: #333;
@@ -455,7 +455,7 @@ font header .navbar-default .navbar-nav li a:hover {
  background-repeat: no-repeat;
  background-size: cover;
  background-attachment: fixed;
- padding: 70px 0px;
+ padding: 100px 25px;
  position: relative;
  text-align: center;
  color: #fff;
@@ -472,7 +472,7 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
  height: 100%;
  background: #fff;
- opacity: 0.55;
+ opacity: 0.7;
 }
 
 #call-to-action h2 {
@@ -487,8 +487,9 @@ font header .navbar-default .navbar-nav li a:hover {
 #call-to-action p {
  color: #000;
  font-size: 16px;
- line-height: 1.6;
+ line-height: 28px;
  margin-bottom: 50px;
+ text-shadow: 0px 0px 5px rgba(255,255,255,1), 0px 0px 5px rgba(255,255,255,1),0px 0px 5px rgba(255,255,255,1);
 }
 
 #call-to-action .btn-call-to-action {
@@ -1249,8 +1250,14 @@ footer .footer-manu ul li a:hover {
    padding-bottom: 70px;
  }
 
+ #service .service-item p {
+  font-size: 13px;
+  line-height: 24px;
+ }
+
  #call-to-action p {
    padding: 0px 0px 40px;
+   font-size: 14px;
  }
  #call-to-action .btn {
    padding: 10px 20px;
@@ -1370,7 +1377,6 @@ footer .footer-manu ul li a:hover {
    line-height: 25px;
  }
 
-
  #wrapper-contact .block {
    padding-bottom: 50px;
  }
@@ -1393,6 +1399,14 @@ footer .footer-manu ul li a:hover {
    #feature, 
    #global-header {
       background-attachment: scroll;
+   }
+
+   #intro .block h2 {
+    font-size: 28px;
+   }
+
+   .section-title h2 {
+    font-size: 28px;
    }
  }
 `;
