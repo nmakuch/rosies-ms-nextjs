@@ -28905,7 +28905,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       lineNumber: 1334
     },
     __self: this
-  }, "On future bookings, save 25% by having a scheduled appointment within 2 weeks of your last service, or 10% within 30 days.")) : null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
+  }, "On future bookings, save 15% by having a scheduled appointment within 2 weeks of your last service, or 10% within 30 days.")) : null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 1346

@@ -1336,7 +1336,7 @@ export default () => {
                           margin-bottom: 50px;
                         `}
                       >
-                        On future bookings, save 25% by having a scheduled
+                        On future bookings, save 15% by having a scheduled
                         appointment within 2 weeks of your last service, or 10%
                         within 30 days.
                       </p>
