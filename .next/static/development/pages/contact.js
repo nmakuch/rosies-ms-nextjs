@@ -14098,7 +14098,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       lineNumber: 108
     },
     __self: this
-  }, "Feel free to e-mail or call at any time"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
+  }, "Feel free to email or call at any time between 8:00am - 8:00pm"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject2()),
     __source: {
       fileName: _jsxFileName,
@@ -14322,7 +14322,7 @@ var appStyles = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templ
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Fnickmakuch%2FDocuments%2FCode%2Frosies-ms-nextjs%2Fpages%2Fcontact.js ***!
   \********************************************************************************************************************************************************/
@@ -14345,5 +14345,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=contact.js.map

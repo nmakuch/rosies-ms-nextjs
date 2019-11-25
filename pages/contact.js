@@ -105,7 +105,7 @@ export default () => {
             <div className="row">
               <div className="col-md-8 offset-md-2 col-sm-12">
                 <div className="block">
-                  <h2>Feel free to e-mail or call at any time</h2>
+                  <h2>Feel free to email or call at any time between 8:00am - 8:00pm</h2>
                   <p
                     css={css`
                       font-size: 16px;
