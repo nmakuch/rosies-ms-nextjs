@@ -16,14 +16,13 @@ class CallToAction extends React.Component {
               <div className="block">
                 <h2>{this.props.callTitle}</h2>
                 <p>{this.props.callText}</p>
-                <Link
+
+                <a
                   href={this.props.callLinkUrl}
-                  as={this.props.callLinkUrl}
+                  className="btn-main btn-solid-border"
                 >
-                  <a className="btn-main btn-solid-border">
-                    {this.props.callLink}
-                  </a>
-                </Link>
+                  {this.props.callLink}
+                </a>
               </div>
             </div>
           </div>

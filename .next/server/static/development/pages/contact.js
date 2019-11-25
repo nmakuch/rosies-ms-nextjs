@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -167,22 +167,15 @@ class CallToAction extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Componen
         lineNumber: 18
       },
       __self: this
-    }, this.props.callText), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    }, this.props.callText), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
       href: this.props.callLinkUrl,
-      as: this.props.callLinkUrl,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
       className: "btn-main btn-solid-border",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 20
       },
       __self: this
-    }, this.props.callLink)))))));
+    }, this.props.callLink))))));
   }
 
 }
@@ -447,201 +440,6 @@ class GlobalHeader extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Componen
 
 /***/ }),
 
-/***/ "./components/Header.js":
-/*!******************************!*\
-  !*** ./components/Header.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/Header.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
-
-/** @jsx jsx */
-
-
-
-class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
-  render() {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("header", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "container",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "row",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "col-md-12",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("nav", {
-      className: "navbar navbar-default",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "container-fluid",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "navbar-header",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-      className: "navbar-brand",
-      href: "/nextjs-rosies-ms/",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
-      width: "300px",
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                            margin-top: 5px;
-                          `,
-      src: "data:image/png;base64,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",
-      alt: "Rosie's Maid Service logo",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
-    }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      id: "navigation",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("ul", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                          display: flex;
-                          position: relative;
-                          top: 11px;
-
-                          li {
-                            margin-left: 50px;
-                          }
-
-                          li a {
-                            color: black;
-                          }
-                        `,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "/",
-      as: "/",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 46
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 47
-      },
-      __self: this
-    }, "Home"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "/services",
-      as: "/services",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 51
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 55
-      },
-      __self: this
-    }, "Services"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 58
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "/contact",
-      as: "/contact",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59
-      },
-      __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 63
-      },
-      __self: this
-    }, "Contact Us")), " "))))))))));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Header);
-
-/***/ }),
-
 /***/ "./components/Layout.js":
 /*!******************************!*\
   !*** ./components/Layout.js ***!
@@ -656,9 +454,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/styles */ "./styles/styles.js");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-/* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/NavBar */ "./components/NavBar.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/NavBar */ "./components/NavBar.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/Layout.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
@@ -698,29 +497,57 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 20
       },
       __self: this
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_NavBar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 27
       },
       __self: this
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("title", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, "Rosie's Maid Service - Toronto's best maid service"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("meta", {
+      name: "description",
+      content: "Top rated professional maid and house cleaning services in Toronto",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 29
+      },
+      __self: this
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("meta", {
+      name: "keywords",
+      content: "maid,house keeping,cleaning service,maid service toronto,maid etobicoke,maid liberty village,maid high park,maid mimico,maid toronto,house cleaning company,maid humber bay",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_NavBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       css: this.props.contentClass,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 43
       },
       __self: this
-    }, this.props.children)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }, this.props.children)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 46
       },
       __self: this
     }));
@@ -792,7 +619,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
       className: "navbar-brand",
-      href: "#",
+      href: "/",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 31
@@ -880,31 +707,25 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 78
       },
       __self: this
-    }, "Home")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      as: "/services",
+    }, "Home")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
+      href: "/services",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 81
       },
       __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 82
-      },
-      __self: this
-    }, "Services/Booking")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    }, "Services/Booking"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
       href: "/terms",
       as: "/terms",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85
+        lineNumber: 83
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86
+        lineNumber: 84
       },
       __self: this
     }, "Terms")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -912,13 +733,13 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       as: "/faq",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 89
+        lineNumber: 87
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 90
+        lineNumber: 88
       },
       __self: this
     }, "FAQ")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -926,13 +747,13 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       as: "/contact",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 93
+        lineNumber: 91
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94
+        lineNumber: 92
       },
       __self: this
     }, "Contact Us"))))));
@@ -2777,13 +2598,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
 /* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_13__);
 
 
 
@@ -2793,7 +2616,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/contact.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
 
 function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -2807,11 +2631,12 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = (() => {
   const {
     0: status,
     1: setStatus
-  } = Object(react__WEBPACK_IMPORTED_MODULE_9__["useState"])({
+  } = Object(react__WEBPACK_IMPORTED_MODULE_8__["useState"])({
     submitted: false,
     submitting: false,
     info: {
@@ -2822,10 +2647,10 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
   const {
     0: inputs,
     1: setInputs
-  } = Object(react__WEBPACK_IMPORTED_MODULE_9__["useState"])({
+  } = Object(react__WEBPACK_IMPORTED_MODULE_8__["useState"])({
     name: "",
     email: "",
-    subject: "",
+    phone: "",
     message: ""
   });
 
@@ -2842,7 +2667,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       setInputs({
         name: "",
         email: "",
-        subject: "",
+        phone: "",
         message: ""
       });
     } else {
@@ -2884,30 +2709,33 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     });
     const text = await res.text();
     handleResponse(res.status, text);
+    setTimeout(function () {
+      next_router__WEBPACK_IMPORTED_MODULE_13___default.a.push("/contact#global-header");
+    }, 1000);
   };
 
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 75
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_12__["default"], {
     globalHeaderTitle: "Contact Us",
     globalHeaderImage: "../img/contact-bg.jpg",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("main", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 76
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("section", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("main", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("section", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
             padding: 100px 15px !important;
             h2 {
               font-weight: 600;
@@ -2920,58 +2748,55 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
             h2:last-of-type {
               margin-bottom: 25px;
             }
+
+            @media only screen and (max-width: 767px) {
+              h2 {
+                font-size: 28px !important;
+              }
+            }
           `,
     id: "contact-form",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 81
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 104
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 105
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
     className: "col-md-8 offset-md-2 col-sm-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 106
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
     className: "block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 107
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 108
     },
     __self: undefined
-  }, "Feel free to e-mail or call at any time"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
-                      font-size: 16px;
-                    `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 99
-    },
-    __self: undefined
-  }, "If you'd rather speak to us in person or send an email at your own leisure, feel free to email or call us at any time, we'd be more than happy to answer your questions or give an estimated price."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+  }, "Feel free to e-mail or call at any time"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
                       font-size: 16px;
                     `,
     __source: {
@@ -2979,90 +2804,99 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       lineNumber: 109
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("strong", {
+  }, "If you'd rather speak to us in person or send an email at your own leisure, feel free to email or call us at any time, we'd be more than happy to answer your questions or give an estimated price."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
+                      font-size: 16px;
+                    `,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 119
     },
     __self: undefined
-  }, "Email:"), " information@rosiesmaidservice.ca"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("p", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124
+    },
+    __self: undefined
+  }, "Email:"), " information@rosiesmaidservice.ca"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
                       font-size: 16px;
                       margin-bottom: 75px;
                     `,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 122
-    },
-    __self: undefined
-  }, "Phone number:"), " (437) 777-6243"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 125
-    },
-    __self: undefined
-  }, "Or submit a quick message"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("section", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
-                      padding-top: 0 !important;
-                    `,
-    id: "contact-form",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 126
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-    className: "container",
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 132
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-    className: "row",
+  }, "Phone number:"), " (437) 777-6243"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133
+      lineNumber: 135
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_8__["css"]`
-                            padding: 0 0 !important;
-                          `,
-    className: "col-md-12 col-sm-12",
+  }, "Or submit a quick message"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("section", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
+                      padding-top: 0 !important;
+                    `,
+    id: "contact-form",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 136
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-    className: "block",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 140
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("form", {
-    onSubmit: handleOnSubmit,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 141
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-    className: "form-group",
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+    className: "container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 142
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+    className: "row",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 143
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
+                            padding: 0 0 !important;
+                          `,
+    className: "col-md-12 col-sm-12",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+    className: "block",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 150
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("form", {
+    onSubmit: handleOnSubmit,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 151
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+    className: "form-group",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 152
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
     id: "name",
     type: "name",
     onChange: handleOnChange,
@@ -3072,17 +2906,17 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     placeholder: "Your name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
-    },
-    __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 153
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+    className: "form-group",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 163
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
     id: "email",
     type: "email",
     onChange: handleOnChange,
@@ -3092,37 +2926,37 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     placeholder: "Your email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
-    },
-    __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 164
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("input", {
-    id: "subject",
-    type: "subject",
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+    className: "form-group",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 174
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
+    id: "phone",
+    type: "phone",
     onChange: handleOnChange,
     required: true,
     className: "form-control",
-    value: inputs.subject,
-    placeholder: "The subject of your message",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 165
-    },
-    __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
-    className: "form-group-2",
+    value: inputs.phone,
+    placeholder: "Your phone number",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 175
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("textarea", {
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
+    className: "form-group-2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 185
+    },
+    __self: undefined
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("textarea", {
     id: "message",
     name: "message",
     onChange: handleOnChange,
@@ -3133,25 +2967,25 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     placeholder: "Your message",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 176
+      lineNumber: 186
     },
     __self: undefined
-  })), status.info.error && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
+  })), status.info.error && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
     className: "error",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 188
+      lineNumber: 198
     },
     __self: undefined
-  }, "Error: ", status.info.msg), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("button", {
+  }, "Error: ", status.info.msg), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("button", {
     type: "submit",
     disabled: status.submitting,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 192
+      lineNumber: 202
     },
     __self: undefined
-  }, !status.submitting ? !status.submitted ? "Submit" : "Your message has been submitted" : "Submitting..."))))))))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }, !status.submitting ? !status.submitted ? "Submit" : "Your message has been submitted" : "Submitting..."))))))))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_11__["default"], {
     callTitle: "You're one step away from a clean and happy home!",
     callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
     callLinkUrl: "/services",
@@ -3159,7 +2993,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     callImage: "img/contact-bg.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 214
+      lineNumber: 224
     },
     __self: undefined
   }));
@@ -3552,7 +3386,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #service {
  text-align: center;
- padding: 90px 0;
+ padding: 100px 25px 125px 25px;
 }
 
 .service-home {
@@ -3616,7 +3450,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 #service .service-item h4 {
- padding-top: 25px;
+ padding-top: 50px;
  font-weight: 800;
  margin: 0;
  color: #333;
@@ -3635,7 +3469,7 @@ font header .navbar-default .navbar-nav li a:hover {
  background-repeat: no-repeat;
  background-size: cover;
  background-attachment: fixed;
- padding: 70px 0px;
+ padding: 100px 25px;
  position: relative;
  text-align: center;
  color: #fff;
@@ -3652,7 +3486,7 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
  height: 100%;
  background: #fff;
- opacity: 0.55;
+ opacity: 0.7;
 }
 
 #call-to-action h2 {
@@ -3667,8 +3501,9 @@ font header .navbar-default .navbar-nav li a:hover {
 #call-to-action p {
  color: #000;
  font-size: 16px;
- line-height: 1.6;
+ line-height: 28px;
  margin-bottom: 50px;
+ text-shadow: 0px 0px 5px rgba(255,255,255,1), 0px 0px 5px rgba(255,255,255,1),0px 0px 5px rgba(255,255,255,1);
 }
 
 #call-to-action .btn-call-to-action {
@@ -4429,8 +4264,14 @@ footer .footer-manu ul li a:hover {
    padding-bottom: 70px;
  }
 
+ #service .service-item p {
+  font-size: 13px;
+  line-height: 24px;
+ }
+
  #call-to-action p {
    padding: 0px 0px 40px;
+   font-size: 14px;
  }
  #call-to-action .btn {
    padding: 10px 20px;
@@ -4550,7 +4391,6 @@ footer .footer-manu ul li a:hover {
    line-height: 25px;
  }
 
-
  #wrapper-contact .block {
    padding-bottom: 50px;
  }
@@ -4574,12 +4414,20 @@ footer .footer-manu ul li a:hover {
    #global-header {
       background-attachment: scroll;
    }
+
+   #intro .block h2 {
+    font-size: 28px;
+   }
+
+   .section-title h2 {
+    font-size: 28px;
+   }
  }
 `;
 
 /***/ }),
 
-/***/ 3:
+/***/ 6:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/
@@ -4731,6 +4579,28 @@ module.exports = require("core-js/library/fn/promise");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
 
 /***/ }),
 

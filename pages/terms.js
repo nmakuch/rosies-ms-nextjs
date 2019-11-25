@@ -1,7 +1,6 @@
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React, { useState } from "react";
 import Layout from "../components/Layout";
 import CallToAction from "../components/CallToAction";
 import GlobalHeader from "../components/GlobalHeader";
@@ -31,6 +30,12 @@ export default () => {
 
             p:last-of-type {
               margin-bottom: 75px;
+            }
+
+            @media only screen and (max-width: 767px) {
+              h2 {
+                font-size: 28px !important;
+              }
             }
           `}
           id="contact-form"

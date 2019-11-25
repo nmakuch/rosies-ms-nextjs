@@ -12,11 +12,28 @@ class ServiceHome extends React.Component {
       <section
         id="call-to-action"
         className="service-home"
-        css={css`background-image: url('${this.props.serviceHomeBgImage}');`}
+        css={css`background-image: url('${this.props.serviceHomeBgImage}'); 
+        text-align: left !important; 
+        padding-bottom: 100px 25px !important;
+        h2 {
+          font-size: 36px !important;
+        }
+
+        p { padding: 0 !important; 
+        }
+
+        @media only screen and (max-width: 510px) {
+          h2 {
+            font-size: 28px !important;
+          }
+
+          padding-bottom: 75px 25px !important;
+        }
+      `}
       >
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-8 offset-md-2">
               <div className="block">
                 <h2>{this.props.serviceHomeTitle}</h2>
                 <p>{this.props.serviceHomeText1}</p>
@@ -24,47 +41,24 @@ class ServiceHome extends React.Component {
             </div>
           </div>
 
-          <div
-            className="row"
-            css={css`
-              svg {
-                margin: 25px 0 25px 0;
-              }
-            `}
-          >
-            <div className="col-sm-6 col-md-3">
-              <div className="service-item">
-                <IosSchool fontSize="80px" color="#000" />
-                <p>
-                  <strong>{this.props.item1name}</strong>
+          <div className="row">
+            <div className="col-md-8 offset-md-2">
+              <div className="block">
+                <h2 id="service-area">{this.props.serviceHomeTitle2}</h2>
+                <p
+                  css={css`
+                    margin-bottom: 50px !important;
+                  `}
+                >
+                  {this.props.serviceHomeText2}
                 </p>
-              </div>
-            </div>
-
-            <div className="col-sm-6 col-md-3">
-              <div className="service-item">
-                <IosFingerPrint fontSize="80px" color="#000" />
-                <p>
-                  <strong>{this.props.item2name}</strong>
-                </p>
-              </div>
-            </div>
-
-            <div className="col-sm-6 col-md-3">
-              <div className="service-item">
-                <IosChatBubbles fontSize="80px" color="#000" />
-                <p>
-                  <strong>{this.props.item3name}</strong>
-                </p>
-              </div>
-            </div>
-
-            <div className="col-sm-6 col-md-3">
-              <div className="service-item">
-                <IosContacts fontSize="80px" color="#000" />
-                <p>
-                  <strong>{this.props.item4name}</strong>
-                </p>
+                <img
+                  css={css`
+                    width: 100%;
+                    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+                  `}
+                  src={this.props.serviceMap}
+                />
               </div>
             </div>
           </div>

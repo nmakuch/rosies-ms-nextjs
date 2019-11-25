@@ -28,7 +28,7 @@ class Nav extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light transparent-nav">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <img
               css={css`
                 margin-top: 5px;
@@ -78,9 +78,7 @@ class Nav extends Component {
                 <a>Home</a>
               </Link>
 
-              <Link as="/services">
-                <a>Services/Booking</a>
-              </Link>
+              <a href="/services">Services/Booking</a>
 
               <Link href="/terms" as="/terms">
                 <a>Terms</a>
