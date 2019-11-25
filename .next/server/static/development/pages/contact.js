@@ -2819,7 +2819,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       lineNumber: 124
     },
     __self: undefined
-  }, "Email:"), " information@rosiesmaidservice.ca"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
+  }, "Email:"), " rosieandcompany1@gmail.com"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
     css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
                       font-size: 16px;
                       margin-bottom: 75px;

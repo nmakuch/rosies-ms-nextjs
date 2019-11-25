@@ -6,7 +6,7 @@ export default async function(req, res) {
   const { email, message, name, phone } = req.body;
 
   const contentTo = {
-    to: "makuch.nick@gmail.com",
+    to: "rosieandcompany1@gmail.com",
     from: email,
     subject: `New Contact form submission from ${name} - ${email}`,
     text: message,
@@ -34,7 +34,7 @@ export default async function(req, res) {
 
   const contentFrom = {
     to: email,
-    from: "rosiesmaidservice@gmail.com",
+    from: "rosieandcompany1@gmail.com",
     subject: `Rosie's Maid Service - Contact Us`,
     html: `
     <h1>Hi ${name}! Thanks for taking interest in Rosie's Maid Service</h1>

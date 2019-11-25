@@ -14118,7 +14118,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       lineNumber: 124
     },
     __self: this
-  }, "Email:"), " information@rosiesmaidservice.ca"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
+  }, "Email:"), " rosieandcompany1@gmail.com"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["jsx"])("p", {
     css: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_12__["css"])(_templateObject4()),
     __source: {
       fileName: _jsxFileName,
