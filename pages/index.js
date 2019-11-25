@@ -25,7 +25,7 @@ class Index extends React.Component {
           howTitle="A Clean Home In 3 Easy Steps:"
           item1img="img/booking.png"
           item1name="1) Book a visit"
-          item1text="Use our online booking tool or call us at 437-777-MAID to schedule a booking with one of our cleaning professionals."
+          item1text="Use our online booking tool or call us at (437) 777-MAID to schedule a booking with one of our cleaning professionals."
           item2img="img/cleaning.png"
           item2name="2) We Clean"
           item2text="Our professional cleaning staff will clean your home to your exact specifications. Satisfaction is guaranteed."
