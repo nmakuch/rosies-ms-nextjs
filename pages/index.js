@@ -31,7 +31,7 @@ class Index extends React.Component {
           item2text="Our professional cleaning staff will clean your home to your exact specifications. Satisfaction is guaranteed."
           item3img="img/relaxing.png"
           item3name="3) Enjoy and save"
-          item3text="Take advantage of 20% off by scheduling bi-weekly visits and relax knowing your home will always be clean."
+          item3text="Take advantage of 15% off by scheduling bi-weekly visits and relax knowing your home will always be clean."
         />
 
         <ServiceHome
