@@ -2695,7 +2695,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     radioValue: "",
     radioLabel: "",
     cleanerMessage: "",
-    optionsAddOns3: [0.0],
+    optionsAddOns3: [],
     consentBox: [],
     labelsAddOns3: [],
     startDate: new Date(),
@@ -4851,9 +4851,9 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     __self: undefined
   }, "Payment:"), " You never pay in advance. After the cleaning, we will send you an electronic invoice that can be paid via credit card or interac e-transfer.")))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_12__["default"], {
     callTitle: "You're one step away from a clean and happy home!",
-    callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
-    callLinkUrl: "/services",
-    callLink: "View our services",
+    callText: "If you'd like to know more about the services we offer, please view our FAQ page by clicking the button below.",
+    callLinkUrl: "/faq",
+    callLink: "View our FAQ page",
     callImage: "img/services-bg.jpg",
     __source: {
       fileName: _jsxFileName,
