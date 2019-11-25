@@ -35,10 +35,15 @@ class FAQ extends React.Component {
                 font-size: 16px;
                 details {
                   margin-bottom: 25px;
-                  summary {
-                    margin-bottom: 10px;
-                    font-size: 20px;
-                    font-weight: 600;
+
+                  summary p {
+                    margin-bottom: -15px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-top 0;
+                    position: relative;
+                    top: -27px;
+                    font-family: 'Roboto', sans-serif;
                   }
 
                   summary:focus {
@@ -46,12 +51,12 @@ class FAQ extends React.Component {
                   }
 
                   summary:hover {
-                    color: 	#007bff;
+                    color: #007bff;
                   }
 
                   summary::-webkit-details-marker {
-                      font-size: 20px;
-                      padding-right: 20px;
+                    font-size: 20px;
+                    padding-right: 20px;
                   }
                 }
 
@@ -64,7 +69,7 @@ class FAQ extends React.Component {
               <div className="col-lg-8 offset-lg-2">
                 <details open>
                   <summary>
-                    <span>1) Who will clean my home?</span>
+                    <p>1) Who will clean my home?</p>
                   </summary>
                   <p>
                     For your first visit, we will send one of our professional
@@ -77,9 +82,9 @@ class FAQ extends React.Component {
                 </details>
                 <details open>
                   <summary>
-                    <span>
+                    <p>
                       2) What are the qualifications of the cleaning staff?
-                    </span>
+                    </p>
                   </summary>
                   <p>
                     We only hire experienced personnel who have years of
@@ -91,9 +96,9 @@ class FAQ extends React.Component {
                 </details>
                 <details open>
                   <summary>
-                    <span>
+                    <p>
                       3) What will Rosie’s Maid Service clean within my home?
-                    </span>
+                    </p>
                   </summary>
                   <p>
                     While we do offer pre-structured plans that cover the usual
@@ -107,7 +112,7 @@ class FAQ extends React.Component {
                 </details>
                 <details>
                   <summary>
-                    <span>4) Do I need to provide the cleaning supplies?</span>
+                    <p>4) Do I need to provide the cleaning supplies?</p>
                   </summary>
                   <p>
                     Yes. There are a couple of major reasons for this. Firstly,
@@ -124,10 +129,10 @@ class FAQ extends React.Component {
                 </details>
                 <details>
                   <summary>
-                    <span>
+                    <p>
                       5) When will I be charged for a service and how can I make
                       payments?
-                    </span>
+                    </p>
                   </summary>
                   <p>
                     You will be sent an invoice via e-mail following the
@@ -137,7 +142,7 @@ class FAQ extends React.Component {
                 </details>
                 <details>
                   <summary>
-                    <span>6) What if I need to cancel an appointment?</span>
+                    <p>6) What if I need to cancel an appointment?</p>
                   </summary>
                   <p>
                     No problem. As long as you give us a minimum of 24 hours
@@ -146,7 +151,7 @@ class FAQ extends React.Component {
                 </details>
                 <details>
                   <summary>
-                    <span>7) How will my maid access my home?</span>
+                    <p>7) How will my maid access my home?</p>
                   </summary>
                   <p
                     css={css`
