@@ -56,7 +56,7 @@ export default async function(req, res) {
   );
 
   const contentTo = {
-    to: "makuch.nick@gmail.com",
+    to: "rosieandcompany1@gmail.com",
     from: email,
     subject: `New Message From ${name}`,
     text: cleanerMessage,
@@ -133,14 +133,16 @@ export default async function(req, res) {
 
   const contentFrom = {
     to: email,
-    from: "rosiesmaidservice@gmail.com",
+    from: "rosieandcompany1@gmail.com",
     subject: `Rosie's Maid Service - Appointment Booking`,
     html: `
     <h1>Hi ${name}, thanks for booking an appointment with Rosie's Maid Service!</h1>
     <p>We will contact you in the next 2 hours to confirm your appointment (unless we are experiencing periods of high traffic).</p>
 
         <h2>Appointment scheduled for</h2>
-        <p>${month[startMonth]} ${startDay}, ${startYear}  at ${startTime}</p><br />
+        <p>${
+          month[startMonth]
+        } ${startDay}, ${startYear}  at ${startTime}</p><br />
 
         <h2>Appointment details</h2>
         <table>

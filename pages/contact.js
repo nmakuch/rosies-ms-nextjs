@@ -121,7 +121,7 @@ export default () => {
                       font-size: 16px;
                     `}
                   >
-                    <strong>Email:</strong> information@rosiesmaidservice.ca
+                    <strong>Email:</strong> rosieandcompany1@gmail.com
                   </p>
                   <p
                     css={css`
