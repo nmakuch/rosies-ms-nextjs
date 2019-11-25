@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -163,12 +163,10 @@ const sgMail = __webpack_require__(/*! @sendgrid/mail */ "@sendgrid/mail");
     <tr>
     <td><h3>Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></td>
     <td><p>${phone}</p></td>
-</tr>
+  </tr>
   </table>
   <br />
-    
-    <h3>Your message</h3><p>${message}</p>
-    `
+  <h3>Your message</h3><p>${message}</p>`
   };
 
   try {
@@ -183,7 +181,7 @@ const sgMail = __webpack_require__(/*! @sendgrid/mail */ "@sendgrid/mail");
 
 /***/ }),
 
-/***/ 8:
+/***/ 7:
 /*!*********************************!*\
   !*** multi ./pages/api/send.js ***!
   \*********************************/

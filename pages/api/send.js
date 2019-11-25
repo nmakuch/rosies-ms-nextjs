@@ -57,14 +57,11 @@ export default async function(req, res) {
     <tr>
     <td><h3>Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></td>
     <td><p>${phone}</p></td>
-</tr>
+  </tr>
   </table>
   <br />
-    
-    <h3>Your message</h3><p>${message}</p>
-    `
+  <h3>Your message</h3><p>${message}</p>`
   };
-
 
   try {
     await sgMail.send(contentTo);

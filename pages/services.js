@@ -1409,9 +1409,9 @@ export default () => {
       </main>
       <CallToAction
         callTitle="You're one step away from a clean and happy home!"
-        callText="If you'd like to know more about the services we offer, please view our Services page by clicking the button below."
-        callLinkUrl="/services"
-        callLink="View our services"
+        callText="If you'd like to know more about the services we offer, please view our FAQ page by clicking the button below."
+        callLinkUrl="/faq"
+        callLink="View our FAQ page"
         callImage="img/services-bg.jpg"
       />
     </Layout>

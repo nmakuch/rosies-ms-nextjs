@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2795,7 +2795,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
       lineNumber: 108
     },
     __self: undefined
-  }, "Feel free to e-mail or call at any time"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
+  }, "Feel free to e-mail or call at any time between 8:00am - 8:00pm"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
     css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
                       font-size: 16px;
                     `,
@@ -4427,7 +4427,7 @@ footer .footer-manu ul li a:hover {
 
 /***/ }),
 
-/***/ 6:
+/***/ 5:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/
