@@ -32,7 +32,7 @@ export default () => {
     radioValue: "",
     radioLabel: "",
     cleanerMessage: "",
-    optionsAddOns3: [0.0],
+    optionsAddOns3: [],
     consentBox: [],
     labelsAddOns3: [],
     startDate: new Date(),

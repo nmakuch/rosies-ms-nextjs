@@ -27109,7 +27109,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     radioValue: "",
     radioLabel: "",
     cleanerMessage: "",
-    optionsAddOns3: [0.0],
+    optionsAddOns3: [],
     consentBox: [],
     labelsAddOns3: [],
     startDate: new Date(),

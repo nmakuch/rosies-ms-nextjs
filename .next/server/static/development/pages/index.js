@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -345,10 +345,10 @@ class Footer extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
 /***/ }),
 
-/***/ "./components/GlobalHeader.js":
-/*!************************************!*\
-  !*** ./components/GlobalHeader.js ***!
-  \************************************/
+/***/ "./components/HowItWorks.js":
+/*!**********************************!*\
+  !*** ./components/HowItWorks.js ***!
+  \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -358,10 +358,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/GlobalHeader.js";
-
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/HowItWorks.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 
@@ -369,74 +366,168 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-class GlobalHeader extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+class HowItWorks extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   render() {
     return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
-      id: "global-header",
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`background-image: url('${this.props.globalHeaderImage}');
-        @media only screen and (max-width: 767px) {
-          p {
-            font-size: 18px !important;
-          }
-
-          h1 {
-            font-size: 40px !important;
-          }
-        }`,
+      id: "service",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9
+        lineNumber: 10
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "container",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 11
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
       className: "row",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 12
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      className: "col-md-12",
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                width: 100%;
+                padding: 0 15px;
+              `,
+      className: "section-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, this.props.howTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }, this.props.howSubTitle))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 24
       },
       __self: this
     }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
-                  padding-left: 0 !important;
-                `,
-      className: "block",
+      className: "service-item col-sm-12 col-md-6 col-lg-4",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 25
       },
       __self: this
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h1", {
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
+      src: this.props.item1img,
+      alt: "Img",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h4", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, this.props.item1name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, this.props.item1text)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "service-item col-sm-12 col-md-6 col-lg-4",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
+      src: this.props.item2img,
+      alt: "Img",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 31
       },
       __self: this
-    }, this.props.globalHeaderTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h4", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 32
       },
       __self: this
-    }, this.props.globalHeaderSubTitle))))));
+    }, this.props.item2name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, this.props.item2text)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "service-item col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-0",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
+      src: this.props.item3img,
+      alt: "Img",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36
+      },
+      __self: this
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h4", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    }, this.props.item3name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }, this.props.item3text))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`margin-bottom: 0 !important;`,
+      className: "service-item col-sm-12 col-md-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
+      href: "/services",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
+      },
+      __self: this
+    }, "View Services")))));
   }
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (GlobalHeader);
+/* harmony default export */ __webpack_exports__["default"] = (HowItWorks);
 
 /***/ }),
 
@@ -765,14 +856,449 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./components/ServiceHome.js":
+/*!***********************************!*\
+  !*** ./components/ServiceHome.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "core-js/library/fn/json/stringify");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_ionicons_lib_IosContacts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-ionicons/lib/IosContacts */ "react-ionicons/lib/IosContacts");
+/* harmony import */ var react_ionicons_lib_IosContacts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_ionicons_lib_IosContacts__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_ionicons_lib_IosChatbubbles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-ionicons/lib/IosChatbubbles */ "react-ionicons/lib/IosChatbubbles");
+/* harmony import */ var react_ionicons_lib_IosChatbubbles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_ionicons_lib_IosChatbubbles__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_ionicons_lib_IosFingerPrint__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-ionicons/lib/IosFingerPrint */ "react-ionicons/lib/IosFingerPrint");
+/* harmony import */ var react_ionicons_lib_IosFingerPrint__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_ionicons_lib_IosFingerPrint__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_ionicons_lib_IosSchool__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-ionicons/lib/IosSchool */ "react-ionicons/lib/IosSchool");
+/* harmony import */ var react_ionicons_lib_IosSchool__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_ionicons_lib_IosSchool__WEBPACK_IMPORTED_MODULE_5__);
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/ServiceHome.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+
+/** @jsx jsx */
+
+
+
+
+
+
+class ServiceHome extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
+      id: "call-to-action",
+      className: "service-home",
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`background-image: url('${this.props.serviceHomeBgImage}'); 
+        text-align: left !important; 
+        padding-bottom: 100px 25px !important;
+        h2 {
+          font-size: 36px !important;
+        }
+
+        p { padding: 0 !important; 
+        }
+
+        @media only screen and (max-width: 510px) {
+          h2 {
+            font-size: 28px !important;
+          }
+
+          padding-bottom: 75px 25px !important;
+        }
+      `,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-md-8 offset-md-2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "block",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }, this.props.serviceHomeTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    }, this.props.serviceHomeText1)))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-md-8 offset-md-2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "block",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
+      id: "service-area",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: this
+    }, this.props.serviceHomeTitle2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    margin-bottom: 50px !important;
+                  `,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48
+      },
+      __self: this
+    }, this.props.serviceHomeText2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    width: 100%;
+                    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+                  `,
+      src: this.props.serviceMap,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    }))))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ServiceHome);
+
+/***/ }),
+
+/***/ "./components/Slider.js":
+/*!******************************!*\
+  !*** ./components/Slider.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/Slider.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+
+/** @jsx jsx */
+
+
+
+class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
+      id: "slider",
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+        background-image: url('${this.props.sliderBgImage}'); 
+        h1 {
+          font-size: 45px !important;
+          font-weight: 600 !important;
+          text-transform: uppercase;
+        }
+        
+        @media only screen and (max-width: 767px) {
+          p {
+            font-size: 18px !important;
+          }
+
+          h1 {
+            font-size: 40px !important;
+          }
+        }`,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-md-10 offset-md-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "block text-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h1", {
+      className: "animated fadeInUp hero-h1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, this.props.sliderTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      className: "animated fadeInUp hero-p",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36
+      },
+      __self: this
+    }, this.props.sliderSubTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
+      href: this.props.sliderButtonUrl,
+      className: "btn-main btn-solid-border",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    }, this.props.sliderButtonTxt))))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./components/Wrapper.js":
+/*!*******************************!*\
+  !*** ./components/Wrapper.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/components/Wrapper.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+
+/** @jsx jsx */
+
+
+
+class Wrapper extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("section", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+          padding: 100px 25px !important;
+        `,
+      id: "intro",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-md-8 offset-md-2 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "block",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    padding: 0 15px !important;
+                    h2 {
+                      margin-bottom: 25px !important;
+                    }
+                  `,
+      className: "section-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, this.props.wrapperTitle), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, this.props.wrapperSubTitle)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    padding: 0 15px !important;
+                  `,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    }, this.props.wrapperPara1), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    margin-bottom: 75px !important;
+                    padding: 0 15px !important;
+                  `,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }, this.props.wrapperPara2), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                    text-align: center !important;
+                    a {
+                      color: #fff;
+                      display: inline-block;
+                      font-size: 16px;
+                      letter-spacing: 1px;
+                      padding: 14px 35px;
+                      font-weight: 600;
+                      margin-top: 75px;
+                      border: 3px solid black;
+                      background-color: black;
+                      border-radius: 0;
+                      -webkit-transition: all 0.4s ease;
+                      transition: all 0.4s ease;
+                    }
+
+                    a:hover {
+                      background: #333;
+                      color: #fff;
+                      -webkit-transition: all 0.4s ease;
+                      transition: all 0.4s ease;
+                    }
+                  `,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "block",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
+      css: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+                        padding: 0 !important;
+                      `,
+      src: this.props.wrapperImage,
+      alt: "Img",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 73
+      },
+      __self: this
+    })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+      className: "col-md-8 offset-md-2 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 81
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
+      href: "/services",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 82
+      },
+      __self: this
+    }, "Book an appointment"))))))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Wrapper);
 
 /***/ }),
 
@@ -809,17 +1335,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "co
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/define-properties */ "core-js/library/fn/object/define-properties");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
@@ -842,28 +1357,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-prope
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptors.js":
-/*!********************************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptors.js ***!
-  \********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptors */ "core-js/library/fn/object/get-own-property-descriptors");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
-  \****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "core-js/library/fn/object/get-own-property-symbols");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
 /*!********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
@@ -872,17 +1365,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-prope
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "core-js/library/fn/object/keys");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/parse-float.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/parse-float.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/parse-float */ "core-js/library/fn/parse-float");
 
 /***/ }),
 
@@ -905,36 +1387,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/promise */ "core-js/
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/weak-map */ "core-js/library/fn/weak-map");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
-/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
 
 /***/ }),
 
@@ -2585,76 +3037,28 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./node_modules/react-datepicker/dist/react-datepicker.css":
-/*!*****************************************************************!*\
-  !*** ./node_modules/react-datepicker/dist/react-datepicker.css ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./pages/services.js":
-/*!***************************!*\
-  !*** ./pages/services.js ***!
-  \***************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-properties */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-descriptors */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptors.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-float */ "./node_modules/@babel/runtime-corejs2/core-js/parse-float.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
-/* harmony import */ var _components_GlobalHeader__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/GlobalHeader */ "./components/GlobalHeader.js");
-/* harmony import */ var react_datepicker__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-datepicker */ "react-datepicker");
-/* harmony import */ var react_datepicker__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(react_datepicker__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react-scrollable-anchor */ "react-scrollable-anchor");
-/* harmony import */ var react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! react-datepicker/dist/react-datepicker.css */ "./node_modules/react-datepicker/dist/react-datepicker.css");
-/* harmony import */ var react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_Slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Slider */ "./components/Slider.js");
+/* harmony import */ var _components_HowItWorks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/HowItWorks */ "./components/HowItWorks.js");
+/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/CallToAction */ "./components/CallToAction.js");
+/* harmony import */ var _components_ServiceHome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/ServiceHome */ "./components/ServiceHome.js");
+/* harmony import */ var _components_Wrapper__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Wrapper */ "./components/Wrapper.js");
+var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/index.js";
 
-
-
-
-
-
-
-
-
-var _jsxFileName = "/Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/services.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
-
-function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(target, key, source[key]); }); } else if (_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default.a) { _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default()(target, _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default()(source)); } else { ownKeys(source).forEach(function (key) { _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, key, _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(source, key)); }); } } return target; }
-
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 
 /** @jsx jsx */
@@ -2666,2202 +3070,81 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
-
-
-/* harmony default export */ __webpack_exports__["default"] = (() => {
-  const {
-    0: status,
-    1: setStatus
-  } = Object(react__WEBPACK_IMPORTED_MODULE_10__["useState"])({
-    submitted: false,
-    submitting: false,
-    info: {
-      error: false,
-      msg: null
-    }
-  });
-  const formatter = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 2
-  });
-  const {
-    0: inputs,
-    1: setInputs
-  } = Object(react__WEBPACK_IMPORTED_MODULE_10__["useState"])({
-    email: "",
-    name: "",
-    phone: "",
-    radioValue: "",
-    radioLabel: "",
-    cleanerMessage: "",
-    optionsAddOns3: [],
-    consentBox: [],
-    labelsAddOns3: [],
-    startDate: new Date(),
-    startYear: "",
-    startMonth: "",
-    startDay: "",
-    startTime: "",
-    pets: "",
-    attendance: "",
-    buzzer: "",
-    address: "",
-    unit: "",
-    grandTotal: ""
-  });
-  let addOnsLabels3 = inputs.labelsAddOns3;
-  let addOnsCost3 = inputs.optionsAddOns3;
-  let checkBoxArrayAddOns3 = [35.0, 20.0, 20.0, 20.0, 15.0, 20.0];
-  let checkBoxArrayLabels3 = ["Deep clean - wall spot cleaning, baseboards, inside of kitchen & bathroom cabinets ($35.00)", "Big task - oven ($20.00)", "Big task - inside fridge ($20.00)", "Big task - windows ($20.00)", "Additional powder room ($15.00)", "Additional bathroom ($20.00)"];
-  let checkBoxArrayIds3 = ["Deep Clean - Wall, baseboards, kitchen...", "Big task - Oven", "Big task - Inside fridge", "Big task - Windows", "Additional powder room", "Additional bathroom"];
-  let radioValues1 = [52.5, 70.0, 87.5, 105.0, 122.0, 140.0];
-  let radioLabels1 = ["1.5 hour session at $35/hour ($52.50)", "2.0 hour session at $35/hour ($70.00)", "2.5 hour session at $35/hour ($87.50)", "3.0 hour session at $35/hour ($105.00)", "3.5 hour session at $35/hour ($122.50)", "4.0 hour session at $35/hour ($140.00)"];
-  let radioArrayId1 = ["1.5 hour session at $35/hour", "2.0 hour session at $35/hour", "2.5 hour session at $35/hour", "3.0 hour session at $35/hour", "3.5 hour session at $35/hour", "4.0 hour session at $35/hour"];
-  let radioValues2 = [52.5, 87.5, 105.0];
-  let radioLabels2 = ["Basic (1.5 hours): kitchen, bathroom, all floors  ($52.50)", "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($87.50)", "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($105.00)"];
-  let radioArrayId2 = ["Basic (1.5 hours)", "Basic plus (2.5 hours)", "Complete (3.0 hours)"];
-  let radioValues3 = [70.0, 105.0, 122.5];
-  let radioLabels3 = ["Basic (2.0 hours): kitchen, bathroom, all floors  ($70.00)", "Basic Plus (3.0 hours): kitchen, bathroom, living areas including bedroom ($105.00)", "Complete (3.5 hours): kitchen, bathroom, living areas plus one big job ($122.50)"];
-  let radioArrayId3 = ["x2 Basic (2.0 hours)", "x2 Basic plus (3.0 hours)", "x2 Complete (3.5 hours)"];
-  let radioValues4 = ["8:00am - 10:00am", "10:00am - 12:00pm", "12:00pm - 2:00pm", "2:00pm - 4:00pm"];
-  let grandTotalArr = [];
-  let sumOptionsAddOns3 = inputs.optionsAddOns3.reduce((a, b) => a + b, 0);
-  grandTotalArr.push(sumOptionsAddOns3);
-  let reducedArr = grandTotalArr.reduce((a, b) => a + b, 0);
-  let grandTotalHST = formatter.format(reducedArr * 0.13 + inputs.radioLabel * 0.13);
-  let grandTotalSumHST = formatter.format(reducedArr * 1.13 + inputs.radioLabel * 1.13);
-
-  const handleResponse = (status, msg) => {
-    if (status === 200) {
-      setStatus({
-        submitted: true,
-        submitting: false,
-        info: {
-          error: false,
-          msg: msg
-        }
-      });
-      setInputs({
-        email: "",
-        name: "",
-        phone: "",
-        radioValue: "",
-        radioLabel: "",
-        cleanerMessage: "",
-        optionsAddOns3: [0.0],
-        labelsAddOns3: [],
-        consentBox: "",
-        startDate: new Date(),
-        startYear: "",
-        startMonth: "",
-        startDay: "",
-        startTime: "",
-        pets: "",
-        attendance: "",
-        buzzer: "",
-        address: "",
-        unit: "",
-        grandTotal: ""
-      });
-    } else {
-      setStatus({
-        info: {
-          error: true,
-          msg: msg
-        }
-      });
-    }
-  };
-
-  const handleOnChange = e => {
-    e.persist();
-    setInputs(prev => _objectSpread({}, prev, {
-      [e.target.id]: e.target.value
+class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Slider__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      sliderBgImage: "../img/hero-bg.jpg",
+      sliderTitle: "Toronto\u2019s best maid cleaning service",
+      sliderSubTitle: "Serving the west end: Liberty Village, High Park, Etobicoke",
+      sliderButtonUrl: "/services",
+      sliderButtonTxt: "Book Now",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_HowItWorks__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      howTitle: "A Clean Home In 3 Easy Steps:",
+      item1img: "img/booking.png",
+      item1name: "1) Book a visit",
+      item1text: "Use our online booking tool or call us at (437) 777-MAID to schedule a booking with one of our cleaning professionals.",
+      item2img: "img/cleaning.png",
+      item2name: "2) We Clean",
+      item2text: "Our professional cleaning staff will clean your home to your exact specifications. Satisfaction is guaranteed.",
+      item3img: "img/relaxing.png",
+      item3name: "3) Enjoy and save",
+      item3text: "Take advantage of 20% off by scheduling bi-weekly visits and relax knowing your home will always be clean.",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_ServiceHome__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      serviceHomeBgImage: "img/hero-bg.jpg",
+      serviceHomeTitle: "Why Rosie's Maid Service?",
+      serviceHomeText1: "At Rosie\u2019s Maid Service, not only do we have the lowest rates in the area, we also pay our maids the highest wages. That means that while you are getting the best price, you will also enjoy the peace of mind from knowing that your home is being taken care of by a well compensated professional. All of our cleaners have years of professional experience, clean background check (no criminal record), speak english, and have passed our training program.",
+      serviceHomeTitle2: "Service area",
+      serviceHomeText2: "The area below is a rough representation of the area that we provide service to. If you are unsure, call ahead to make sure we can accomodate you.",
+      serviceMap: "img/maid-service-map.jpg",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Wrapper__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      wrapperTitle: "Book on the go",
+      wrapperSubTitle: "Our website is responsive and mobile friendly so you can book your appointment anywhere. We want to offer the same user experience to both desktop and mobile users.",
+      wrapperPara1: "We offer a wide range of customizable cleaning services. In order to customize your own personal cleaning plan, you can view a full list our services on our Services/Booking page.",
+      wrapperPara2: "Cancel with 24 hours notice free of charge. We will cancel all charges for your scheduled appointment if you can provide us with notice of cancellation witin (1) day of the decided date and time.",
+      wrapperImage: "img/mobile.png",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      callTitle: "You're one step away from a clean and happy home!",
+      callText: "If you'd like to know more about the services we offer, please view our Services page by clicking the button below.",
+      callLinkUrl: "/services",
+      callLink: "View our services",
+      callImage: "img/hero-bg.jpg",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54
+      },
+      __self: this
     }));
-    setStatus({
-      submitted: false,
-      submitting: false,
-      info: {
-        error: false,
-        msg: null
-      }
-    });
-  };
+  }
 
-  const handleRadio = e => {
-    e.persist();
-    if (e.target.value) setInputs(prev => _objectSpread({}, prev, {
-      radioValue: e.target.value,
-      radioLabel: e.target.id
-    }));
-    setStatus({
-      submitted: false,
-      submitting: false,
-      info: {
-        error: false,
-        msg: null
-      }
-    });
-  };
+}
 
-  const handleYesNo1 = e => {
-    e.persist();
-    if (e.target.value) setInputs(prev => _objectSpread({}, prev, {
-      pets: e.target.value
-    }));
-    setStatus({
-      submitted: false,
-      submitting: false,
-      info: {
-        error: false,
-        msg: null
-      }
-    });
-  };
-
-  const handleYesNo2 = e => {
-    e.persist();
-    if (e.target.value) setInputs(prev => _objectSpread({}, prev, {
-      attendance: e.target.value
-    }));
-    setStatus({
-      submitted: false,
-      submitting: false,
-      info: {
-        error: false,
-        msg: null
-      }
-    });
-  };
-
-  const handleCheckBox = e => {
-    let checkedArrayAddOns3 = inputs.optionsAddOns3;
-    let checkedArrayIds3 = inputs.labelsAddOns3;
-    let radioLabel = inputs.radioLabel;
-    let radioValue = inputs.radioValue;
-    let selectedId3 = e.target.id;
-    let selectedValue3 = e.target.value;
-    e.persist();
-
-    if (e.target.checked === true) {
-      checkedArrayIds3.push(selectedId3);
-      checkedArrayAddOns3.push(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_7___default()(selectedValue3));
-      setInputs(prev => _objectSpread({}, prev, {
-        optionsAddOns3: checkedArrayAddOns3,
-        labelsAddOns3: checkedArrayIds3,
-        radioLabel: radioLabel,
-        radioValue: radioValue
-      }));
-    } else {
-      let valueIndex3 = checkedArrayAddOns3.indexOf(selectedValue3);
-      checkedArrayAddOns3.splice(valueIndex3, 1);
-      checkedArrayIds3.splice(valueIndex3, 1);
-      setInputs({
-        optionsAddOns3: checkedArrayAddOns3,
-        labelsAddOns3: checkedArrayIds3,
-        radioLabel: radioLabel,
-        radioValue: radioValue
-      });
-    }
-  };
-
-  const handleChecked = e => {
-    let checkedArrayAddOns3 = inputs.optionsAddOns3;
-    let checkedArrayIds3 = inputs.labelsAddOns3;
-    let radioLabel = inputs.radioLabel;
-    let radioValue = inputs.radioValue;
-    e.persist();
-
-    if (e.target.checked === true) {
-      setInputs(prev => _objectSpread({}, prev, {
-        consentBox: "consent",
-        optionsAddOns3: checkedArrayAddOns3,
-        labelsAddOns3: checkedArrayIds3,
-        radioLabel: radioLabel,
-        radioValue: radioValue
-      }));
-    } else {
-      setInputs({
-        consentBox: "no consent",
-        optionsAddOns3: checkedArrayAddOns3,
-        labelsAddOns3: checkedArrayIds3,
-        radioLabel: radioLabel,
-        radioValue: radioValue
-      });
-    }
-  };
-
-  const handleOnSubmit = async e => {
-    e.preventDefault();
-    setStatus(prevStatus => _objectSpread({}, prevStatus, {
-      submitting: true
-    }));
-    const res = await fetch("/api/booking", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6___default()(inputs)
-    });
-    const text = await res.text();
-    handleResponse(res.status, text);
-    setTimeout(function () {
-      next_router__WEBPACK_IMPORTED_MODULE_17___default.a.push("/#slider");
-    }, 1000);
-  };
-
-  const handleDate = date => {
-    setInputs(prev => _objectSpread({}, prev, {
-      startDate: date,
-      startYear: date.getFullYear(),
-      startMonth: date.getMonth(),
-      startDay: date.getDate()
-    }));
-    setStatus({
-      submitted: false,
-      submitting: false,
-      info: {
-        error: false,
-        msg: null
-      }
-    });
-  };
-
-  const handleTime = e => {
-    e.persist();
-    if (e.target.value) setInputs(prev => _objectSpread({}, prev, {
-      startTime: e.target.value
-    }));
-    setStatus({
-      submitted: false,
-      submitting: false,
-      info: {
-        error: false,
-        msg: null
-      }
-    });
-  };
-
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 342
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_GlobalHeader__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    globalHeaderTitle: "SERVICES AND BOOKING",
-    globalHeaderImage: "../img/services-bg.jpg",
-    globalHeaderSubTitle: "Use our online booking tool or call 437-777-MAID.",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 343
-    },
-    __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("main", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 348
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("section", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-            margin-top: 75px;
-
-            p {
-              margin-bottom: 0;
-            }
-
-            h2 {
-              font-weight: 600;
-              margin-bottom: 25px;
-            }
-
-            @media only screen and (max-width: 767px) {
-              h2 {
-                font-size: 28px;
-                margin-bottom: 25px;
-              }
-            }
-          `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 349
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 370
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "col-md-8 offset-md-2 col-sm-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 371
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                  padding: 0 25px;
-                `,
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 372
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 378
-    },
-    __self: undefined
-  }, "We offer a variety of cleaning options"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 379
-    },
-    __self: undefined
-  }, "We offer the most customizable plans that let you choose exactly what you want. Whether you want your entire home deep cleaned by one of our professional staff, or simply want some help with the dreaded kitchen & bathroom, we have you covered. Choose from our pre-structured plans that cover all the standard items, or select our hourly plan to have complete control of how the time is spent."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("section", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-            padding-top: 75px !important;
-            padding-bottom: 100px !important;
-            h2 {
-              font-weight: 600;
-              margin-bottom: 50px;
-            }
-
-            h3 {
-              font-size: 20px;
-              font-weight: 600;
-              margin-bottom: 35px;
-            }
-
-            h4 {
-              font-size: 16px;
-              font-weight: 600;
-              margin-bottom: 25px;
-            }
-
-            li {
-              label {
-                margin-bottom: 45px;
-
-                p {
-                  position: relative;
-                  top: 5px;
-                  left: 50px;
-                }
-
-                @media only screen and (max-width: 767px) {
-                  p {
-                    line-height: 1.2rem;
-                  }
-                }
-              }
-            }
-
-            li:first-of-type {
-              margin-top: 25px;
-            }
-
-            li:nth-of-type(6) {
-              margin-bottom: 50px;
-            }
-
-            textarea {
-              margin-bottom: 50px;
-            }
-
-            li:last-of-type {
-              margin-bottom: 75px;
-            }
-
-            .form-group {
-              padding: 0px !important;
-            }
-
-            @media only screen and (max-width: 767px) {
-              h2 {
-                font-size: 28px;
-              }
-            }
-          `,
-    id: "service-form",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 392
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "block",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 459
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("form", {
-    onSubmit: handleOnSubmit,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 460
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 461
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "col-md-8 offset-md-2 col-sm-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 462
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                      padding: 0 15px;
-                    `,
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 463
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        padding: 0 5px !important;
-
-                        h3 {
-                          margin-bottom: 25px;
-                        }
-
-                        .note {
-                          margin-bottom: 50px;
-                        }
-                      `,
-    className: "col-md-12 col-sm-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 469
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 483
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 484
-    },
-    __self: undefined
-  }, "Select your cleaning package"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 485
-    },
-    __self: undefined
-  }, "1) Hourly cleaning packages"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    className: "note",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 486
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 487
-    },
-    __self: undefined
-  }, "Note:"), " Just leave us detailed instructions in the comments box at the bottom of this page and our professional maid will focus exactly on the items on your list. The list should be structured as a priority list in case there isn\u2019t enough time to complete all the items."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 494
-    },
-    __self: undefined
-  }, radioValues1.map((radioValue, i) => {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-      key: `${radioValue}-${i}`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 497
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-      className: "checkbox-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 498
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-      type: "radio",
-      value: radioArrayId1[i],
-      id: radioValue,
-      checked: inputs.radioValue === `${radioArrayId1[i]}`,
-      onChange: handleRadio,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 499
-      },
-      __self: undefined
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-      className: "radio-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 509
-      },
-      __self: undefined
-    }, radioLabels1[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-      className: "checkbox-custom circular",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 512
-      },
-      __self: undefined
-    })));
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "or-h3",
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                              h3 {
-                                margin: 75px 0;
-                              }
-                            `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 517
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 525
-    },
-    __self: undefined
-  }, "OR")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "plans-h3",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 527
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 528
-    },
-    __self: undefined
-  }, "2) Cleaning plans")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "1bed-h4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 530
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 531
-    },
-    __self: undefined
-  }, "1 Bedroom or Bachelor up to 600 sq/ft (1 bathroom)")), radioValues2.map((radioValue, i) => {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-      key: `${radioValue}-${i}`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 537
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-      className: "checkbox-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 538
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-      type: "radio",
-      value: radioArrayId2[i],
-      id: radioValue,
-      checked: inputs.radioValue === `${radioArrayId2[i]}`,
-      onChange: handleRadio,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 539
-      },
-      __self: undefined
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-      className: "radio-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 549
-      },
-      __self: undefined
-    }, radioLabels2[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-      className: "checkbox-custom circular",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 552
-      },
-      __self: undefined
-    })));
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "2bed-h4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 557
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 558
-    },
-    __self: undefined
-  }, "2 Bedroom up to 1000 sq/ft (1 bathroom)")), radioValues3.map((radioValue, i) => {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-      key: `${radioValue}-${i}`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 562
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-      className: "checkbox-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 563
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-      type: "radio",
-      value: radioArrayId3[i],
-      id: radioValue,
-      checked: inputs.radioValue === `${radioArrayId3[i]}`,
-      onChange: handleRadio,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 564
-      },
-      __self: undefined
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-      className: "radio-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 574
-      },
-      __self: undefined
-    }, radioLabels3[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-      className: "checkbox-custom circular",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 577
-      },
-      __self: undefined
-    })));
-  }))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                      padding: 0 5px !important;
-                      margin-bottom: 50px;
-                    `,
-    className: "col-md-12 col-sm-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 586
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        padding: 0 15px;
-                        label {
-                          margin-bottom: 50px;
-                          p {
-                            position: relative;
-                            top: 4px;
-                            left: 50px;
-                          }
-
-                          @media only screen and (max-width: 767px) {
-                            p {
-                              line-height: 1.2rem;
-                              top: 8px;
-                            }
-                          }
-                        }
-                      `,
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 593
-    },
-    __self: undefined
-  }, " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 0 !important;
-
-                          @media only screen and (max-width: 767px) {
-                            font-size: 28px !important;
-                          }
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 615
-    },
-    __self: undefined
-  }, "Extras:")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        padding: 0 15px;
-                        label {
-                          margin-bottom: 40px;
-                          p {
-                            position: relative;
-                            top: 4px;
-                            left: 50px;
-                          }
-
-                          @media only screen and (max-width: 767px) {
-                            p {
-                              line-height: 1.2rem;
-                              top: 8px;
-                            }
-                          }
-                        }
-                      `,
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 627
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-top: 50px;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 648
-    },
-    __self: undefined
-  }, "The following can be added to your package:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 655
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 656
-    },
-    __self: undefined
-  }, checkBoxArrayAddOns3.map((checkBox, i) => {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-      key: `${checkBox}-${i}`,
-      className: "checkbox-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 659
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-      type: "checkbox",
-      id: checkBoxArrayIds3[i],
-      value: checkBox,
-      onChange: handleCheckBox,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 663
-      },
-      __self: undefined
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-      className: "radio-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 669
-      },
-      __self: undefined
-    }, checkBoxArrayLabels3[i]), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-      className: "checkbox-custom rectangular",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 672
-      },
-      __self: undefined
-    }));
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 677
-    },
-    __self: undefined
-  }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 680
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 681
-    },
-    __self: undefined
-  }, "Note:"), " Please refer to our", " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("a", {
-    href: "#required-items",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 682
-    },
-    __self: undefined
-  }, "list of required items"), " to ensure we have the tools to complete these jobs.", " "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        margin-bottom: 75px;
-                      `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 686
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 691
-    },
-    __self: undefined
-  }, "Note:"), " If this is your first time booking with us, or your home hasn\u2019t been thoroughly cleaned in the past 30 days, we strongly recommend the \u201CDeep clean\u201D add on, as this will prepare your home for future regular cleaning visits."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 697
-    },
-    __self: undefined
-  }, "When is this appointment for?"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        margin-bottom: 15px !important;
-                      `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 698
-    },
-    __self: undefined
-  }, "Select a date"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 705
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(react_datepicker__WEBPACK_IMPORTED_MODULE_14___default.a, {
-    selected: inputs.startDate,
-    onChange: handleDate,
-    className: "form-control",
-    placeholderText: "Click for calendar",
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 50px;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 706
-    },
-    __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 15px !important;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 715
-    },
-    __self: undefined
-  }, "Select a time"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 25px !important;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 722
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 727
-    },
-    __self: undefined
-  }, "Note:"), " Our cleaning professional will arrive for your appointment inside of your selected 2 hour window. Please feel free to include your preferred arrival time in the additional information box at the bottom of the page and we will do our best."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          li:last-of-type {
-                          }
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 733
-    },
-    __self: undefined
-  }, radioValues4.map((radioValue, i) => {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-      key: `${radioValue}-${i}`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 741
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-      className: "checkbox-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 742
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-      type: "radio",
-      value: radioValue,
-      id: radioValue,
-      checked: inputs.startTime === `${radioValue}`,
-      onChange: handleTime,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 743
-      },
-      __self: undefined
-    }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-      className: "radio-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 750
-      },
-      __self: undefined
-    }, radioValue), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-      className: "checkbox-custom circular",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 751
-      },
-      __self: undefined
-    })));
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 15px !important;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 758
-    },
-    __self: undefined
-  }, "Will there be pets?"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 765
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 766
-    },
-    __self: undefined
-  }, "Note:"), " If yes, please ensure your pets will be secured throughout the duration of our visit."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 769
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "pets-yes",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 770
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                              margin-bottom: 25px !important;
-                            `,
-    className: "checkbox-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 771
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    type: "radio",
-    value: "Yes",
-    id: "yes",
-    checked: inputs.pets === `Yes`,
-    onChange: handleYesNo1,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 777
-    },
-    __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    className: "radio-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 784
-    },
-    __self: undefined
-  }, "Yes"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    className: "checkbox-custom circular",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 785
-    },
-    __self: undefined
-  }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "pets-no",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 788
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-    className: "checkbox-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 789
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    type: "radio",
-    value: "No",
-    id: "no",
-    checked: inputs.pets === `No`,
-    onChange: handleYesNo1,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 790
-    },
-    __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    className: "radio-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 797
-    },
-    __self: undefined
-  }, "No"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    className: "checkbox-custom circular",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 798
-    },
-    __self: undefined
-  })))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 10px !important;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 803
-    },
-    __self: undefined
-  }, "Will you be home during the visit?"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 810
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "attendance-yes",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 811
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                              margin-bottom: 25px !important;
-                            `,
-    className: "checkbox-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 812
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    type: "radio",
-    value: "Yes",
-    id: "yes",
-    checked: inputs.attendance === `Yes`,
-    onChange: handleYesNo2,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 818
-    },
-    __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    className: "radio-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 825
-    },
-    __self: undefined
-  }, "Yes"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    className: "checkbox-custom circular",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 826
-    },
-    __self: undefined
-  }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "attendance-no",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 829
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                              margin-bottom: 100px !important;
-                            `,
-    className: "checkbox-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 830
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    type: "radio",
-    value: "No",
-    id: "no",
-    checked: inputs.attendance === `No`,
-    onChange: handleYesNo2,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 836
-    },
-    __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    className: "radio-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 843
-    },
-    __self: undefined
-  }, "No"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    className: "checkbox-custom circular",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 844
-    },
-    __self: undefined
-  }))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        margin-bottom: 15px !important;
-                      `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 850
-    },
-    __self: undefined
-  }, "Enter your location"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        margin-bottom: 50px !important;
-                      `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 858
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 863
-    },
-    __self: undefined
-  }, "Note:"), " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_16___default.a, {
-    href: "/#service-area",
-    as: "/#service-area",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 864
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("a", {
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 865
-    },
-    __self: undefined
-  }, "Please make sure you are inside our service area.")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 869
-    },
-    __self: undefined
-  }), "If you are outside, please give us a call at 437-777-MAID."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        input {
-                          margin-bottom: 15px;
-                        }
-                      `,
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 873
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    id: "address",
-    type: "text",
-    onChange: handleOnChange,
-    required: true,
-    placeholder: "Enter your address",
-    className: "form-control",
-    value: inputs.address,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 881
-    },
-    __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        input {
-                          margin-bottom: 15px;
-                        }
-                      `,
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 891
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    id: "unit",
-    type: "text",
-    className: "form-control",
-    onChange: handleOnChange,
-    placeholder: "Enter your unit # (if applicable)",
-    value: inputs.unit,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 899
-    },
-    __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        input {
-                          margin-bottom: 75px;
-                        }
-                      `,
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 908
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    id: "buzzer",
-    type: "text",
-    className: "form-control",
-    onChange: handleOnChange,
-    placeholder: "Enter your buzzer # (if applicable)",
-    value: inputs.buzzer,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 916
-    },
-    __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 926
-    },
-    __self: undefined
-  }, "Enter your personal information"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        input {
-                          margin-bottom: 15px;
-                        }
-                      `,
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 928
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    id: "name",
-    type: "text",
-    onChange: handleOnChange,
-    required: true,
-    placeholder: "Enter your name",
-    className: "form-control",
-    value: inputs.name,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 936
-    },
-    __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        input {
-                          margin-bottom: 15px;
-                        }
-                      `,
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 946
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    id: "email",
-    type: "email",
-    className: "form-control",
-    onChange: handleOnChange,
-    required: true,
-    placeholder: "Enter your email address",
-    value: inputs.email,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 954
-    },
-    __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        input {
-                          margin-bottom: 75px;
-                        }
-                      `,
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 964
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    id: "phone",
-    type: "phone",
-    className: "form-control",
-    onChange: handleOnChange,
-    required: true,
-    placeholder: "Enter your phone number",
-    value: inputs.phone,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 972
-    },
-    __self: undefined
-  }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                      textarea {
-                        height: 135px !important;
-                        margin-bottom: 75px !important;
-                      }
-                    `,
-    className: "form-group-2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 984
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 993
-    },
-    __self: undefined
-  }, "Additional notes"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 994
-    },
-    __self: undefined
-  }, "Additional information, instructions, or requests for our visit? Parking information is greaty appreciated."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("textarea", {
-    id: "cleanerMessage",
-    name: "cleanerMessage",
-    onChange: handleOnChange,
-    required: true,
-    className: "form-control",
-    value: inputs.cleanerMessage,
-    rows: "3",
-    placeholder: "Your message",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 998
-    },
-    __self: undefined
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                      padding: 0 15px;
-                    `,
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1010
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        padding: 0 5px !important;
-
-                        h2 {
-                          margin-bottom: 50px;
-                        }
-                      `,
-    className: "col-md-12 col-sm-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1016
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_15___default.a, {
-    id: "required-items",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1026
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1027
-    },
-    __self: undefined
-  }, "Confirm you have the proper cleaning items")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("details", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          summary span {
-                            font-size: 20px;
-                            font-weight: 700;
-                            font-family: "Roboto", sans-serif;
-                          }
-
-                          summary {
-                            margin-bottom: 25px;
-                          }
-
-                          ul li {
-                            margin-bottom: 25px;
-                          }
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1030
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("summary", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1047
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1048
-    },
-    __self: undefined
-  }, "Review our list of required cleaning items")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                            h4 {
-                              margin-bottom: 10px;
-                            }
-                          `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1052
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "gcleaner",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1059
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1060
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1061
-    },
-    __self: undefined
-  }, "Glass cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1063
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1064
-    },
-    __self: undefined
-  }, "For windows and mirrors. Such as Windex or plain white vinegar and water, mixed in a spray bottle."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "apcleaner",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1072
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1073
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1074
-    },
-    __self: undefined
-  }, "All-Purpose Cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1076
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1077
-    },
-    __self: undefined
-  }, "For most hard surfaces in the home. Such as Mr. Clean or Clorox."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "bcleaner",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1084
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1085
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1086
-    },
-    __self: undefined
-  }, "Bathroom Cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1088
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1089
-    },
-    __self: undefined
-  }, "For sinks, toilets, and bathtubs. Please ensure product is suitable for your type of bathtub. Such as Vim or Greenworks."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "dish-soap",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1097
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1098
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1099
-    },
-    __self: undefined
-  }, "Dish Soap")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1101
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1102
-    },
-    __self: undefined
-  }, "A safe, PH cleaner than can be used on dishes as well as on surfaces requiring a milder product.", " "))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "vinegar",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1109
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1110
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1111
-    },
-    __self: undefined
-  }, "Vinegar")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1113
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1114
-    },
-    __self: undefined
-  }, "One of the most efficient and safe cleaning products than can be used on almost any surface.", " "))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "stcleaner",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1121
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1122
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1123
-    },
-    __self: undefined
-  }, "Stove Top Cleaner")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1125
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1126
-    },
-    __self: undefined
-  }, "Depending on your type of stove, we may require a special product to properly clean the stove-top. For glass stove tops, we recommend Weiman Glass Cook Top cleaner."))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("details", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          summary span {
-                            font-size: 20px;
-                            font-weight: 700;
-                            font-family: "Roboto", sans-serif;
-                          }
-
-                          summary {
-                            margin-bottom: 50px;
-                          }
-
-                          ul li {
-                            margin-bottom: 25px;
-                          }
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1137
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("summary", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1154
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1155
-    },
-    __self: undefined
-  }, "Review our list of required cleaning tools")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                            h4 {
-                              margin-bottom: 5px;
-                            }
-                          `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1159
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "mop",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1166
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1167
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1168
-    },
-    __self: undefined
-  }, "Mop")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1170
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1171
-    },
-    __self: undefined
-  }, "A twist mop with a bucket is our preferred choice."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "vaccum",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1178
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1179
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1180
-    },
-    __self: undefined
-  }, "Vaccuum Cleaner / Broom and dustpan"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "cloths",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1184
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1185
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1186
-    },
-    __self: undefined
-  }, "Microfiber cloths")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1188
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1189
-    },
-    __self: undefined
-  }, "J cloths, old towels may also be used,but we strongly recommend Microfiber."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "tbrush",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1196
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1197
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1198
-    },
-    __self: undefined
-  }, "Toilet bowl brush"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    key: "ptowel",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1202
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1203
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1204
-    },
-    __self: undefined
-  }, "Paper Towel"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                              margin-bottom: 25px !important;
-                            `,
-    key: "3step",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1208
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "key",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1214
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1215
-    },
-    __self: undefined
-  }, "Three Step Ladder")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1217
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1218
-    },
-    __self: undefined
-  }, "For higher areas, such as when cleaning windows and the inside of high cabinets, we will not use anything but a Three-Step ladder for the safety of our staff."))))))), grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1232
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h2", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 30px !important;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1233
-    },
-    __self: undefined
-  }, "Total:"), inputs.radioLabel > 0 ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                            display: flex;
-                            justify-content: space-between;
-
-                            h3 {
-                              font-size: 16px;
-                              margin-bottom: 15px;
-                            }
-
-                            span {
-                              font-size: 16px;
-                            }
-                          `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1242
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1257
-    },
-    __self: undefined
-  }, `+ ${inputs.radioValue}`), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1258
-    },
-    __self: undefined
-  }, formatter.format(inputs.radioLabel))) : null, addOnsLabels3.map((addOnLabel3, i) => {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-      css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                              display: flex;
-                              justify-content: space-between;
-
-                              h3 {
-                                font-size: 16px;
-                                margin-bottom: 15px;
-                              }
-
-                              span {
-                                font-size: 16px;
-                              }
-                            `,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 1264
-      },
-      __self: undefined
-    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 1279
-      },
-      __self: undefined
-    }, "+ ", addOnLabel3), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 1280
-      },
-      __self: undefined
-    }, " ", formatter.format(addOnsCost3[i])));
-  })) : null, grandTotalHST !== "$0.00" ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(react__WEBPACK_IMPORTED_MODULE_10___default.a.Fragment, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1287
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          display: flex;
-                          justify-content: space-between;
-                          margin-top: 25px;
-                          padding-top: 25px;
-                          border-top: 1px solid black;
-
-                          h3 {
-                            font-size: 16px;
-                            margin-bottom: 15px;
-                          }
-
-                          span {
-                            font-size: 16px;
-                          }
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1288
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1306
-    },
-    __self: undefined
-  }, "+ HST (x0.13)"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1307
-    },
-    __self: undefined
-  }, grandTotalHST)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          display: flex;
-                          justify-content: space-between;
-
-                          h3 {
-                            font-size: 16px;
-                            margin-top: 7px;
-                            margin-bottom: 50px;
-                          }
-
-                          input {
-                            font-size: 16px;
-                            width: auto;
-                            overflow: visible;
-                            height: 35px;
-                            text-align: right;
-                            border: none;
-                            margin-bottom: 50px;
-                          }
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1309
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1331
-    },
-    __self: undefined
-  }, "Grand total:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1332
-    },
-    __self: undefined
-  }, grandTotalSumHST)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                          margin-bottom: 50px;
-                        `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1334
-    },
-    __self: undefined
-  }, "On future bookings, save 25% by having a scheduled appointment within 2 weeks of your last service, or 10% within 30 days.")) : null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1346
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("li", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        margin-top: 0 !important;
-                      `,
-    key: "contsent",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1347
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("label", {
-    className: "checkbox-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1353
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("input", {
-    type: "checkbox",
-    id: "consent",
-    value: "consent",
-    onChange: handleChecked,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1354
-    },
-    __self: undefined
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    className: "radio-label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1360
-    },
-    __self: undefined
-  }, "I have read and agree to", " ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_16___default.a, {
-    href: "/terms",
-    as: "/terms",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1362
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("a", {
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1363
-    },
-    __self: undefined
-  }, "the terms of service."))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("span", {
-    className: "checkbox-custom rectangular",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1366
-    },
-    __self: undefined
-  })))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("div", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                      button:disabled {
-                        opacity: 0.5;
-                      }
-                    `,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1370
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("button", {
-    css: _emotion_core__WEBPACK_IMPORTED_MODULE_9__["css"]`
-                        width: 100%;
-                        height: 60px;
-                        background: #47424c;
-                        border: none;
-                        color: #fff;
-                        font-family: "Open Sans", sans-serif;
-                        font-size: 18px;
-                        margin-bottom: 75px;
-                      `,
-    type: "submit",
-    disabled: inputs.consentBox === "consent" ? false : true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1377
-    },
-    __self: undefined
-  }, !status.submitting ? !status.submitted ? "Book now" : "Your appointment has been booked!" : "Booking..."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1398
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1399
-    },
-    __self: undefined
-  }, "Payment:"), " You never pay in advance. After the cleaning, we will send you an electronic invoice that can be paid via credit card or interac e-transfer.")))))))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_components_CallToAction__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    callTitle: "You're one step away from a clean and happy home!",
-    callText: "If you'd like to know more about the services we offer, please view our FAQ page by clicking the button below.",
-    callLinkUrl: "/faq",
-    callLink: "View our FAQ page",
-    callImage: "img/services-bg.jpg",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 1410
-    },
-    __self: undefined
-  }));
-});
+/* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
@@ -6291,14 +4574,14 @@ footer .footer-manu ul li a:hover {
 
 /***/ }),
 
-/***/ 4:
-/*!*********************************!*\
-  !*** multi ./pages/services.js ***!
-  \*********************************/
+/***/ 6:
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/services.js */"./pages/services.js");
+module.exports = __webpack_require__(/*! /Users/nickmakuch/Documents/Code/rosies-ms-nextjs/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -6311,17 +4594,6 @@ module.exports = __webpack_require__(/*! /Users/nickmakuch/Documents/Code/rosies
 /***/ (function(module, exports) {
 
 module.exports = require("@emotion/core");
-
-/***/ }),
-
-/***/ "core-js/library/fn/json/stringify":
-/*!****************************************************!*\
-  !*** external "core-js/library/fn/json/stringify" ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/json/stringify");
 
 /***/ }),
 
@@ -6358,17 +4630,6 @@ module.exports = require("core-js/library/fn/object/create");
 
 /***/ }),
 
-/***/ "core-js/library/fn/object/define-properties":
-/*!**************************************************************!*\
-  !*** external "core-js/library/fn/object/define-properties" ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/object/define-properties");
-
-/***/ }),
-
 /***/ "core-js/library/fn/object/define-property":
 /*!************************************************************!*\
   !*** external "core-js/library/fn/object/define-property" ***!
@@ -6391,28 +4652,6 @@ module.exports = require("core-js/library/fn/object/get-own-property-descriptor"
 
 /***/ }),
 
-/***/ "core-js/library/fn/object/get-own-property-descriptors":
-/*!*************************************************************************!*\
-  !*** external "core-js/library/fn/object/get-own-property-descriptors" ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/object/get-own-property-descriptors");
-
-/***/ }),
-
-/***/ "core-js/library/fn/object/get-own-property-symbols":
-/*!*********************************************************************!*\
-  !*** external "core-js/library/fn/object/get-own-property-symbols" ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/object/get-own-property-symbols");
-
-/***/ }),
-
 /***/ "core-js/library/fn/object/keys":
 /*!*************************************************!*\
   !*** external "core-js/library/fn/object/keys" ***!
@@ -6421,17 +4660,6 @@ module.exports = require("core-js/library/fn/object/get-own-property-symbols");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/keys");
-
-/***/ }),
-
-/***/ "core-js/library/fn/parse-float":
-/*!*************************************************!*\
-  !*** external "core-js/library/fn/parse-float" ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/parse-float");
 
 /***/ }),
 
@@ -6468,17 +4696,6 @@ module.exports = require("next/head");
 
 /***/ }),
 
-/***/ "next/router":
-/*!******************************!*\
-  !*** external "next/router" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next/router");
-
-/***/ }),
-
 /***/ "prop-types":
 /*!*****************************!*\
   !*** external "prop-types" ***!
@@ -6512,14 +4729,47 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "react-datepicker":
-/*!***********************************!*\
-  !*** external "react-datepicker" ***!
-  \***********************************/
+/***/ "react-ionicons/lib/IosChatbubbles":
+/*!****************************************************!*\
+  !*** external "react-ionicons/lib/IosChatbubbles" ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("react-datepicker");
+module.exports = require("react-ionicons/lib/IosChatbubbles");
+
+/***/ }),
+
+/***/ "react-ionicons/lib/IosContacts":
+/*!*************************************************!*\
+  !*** external "react-ionicons/lib/IosContacts" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-ionicons/lib/IosContacts");
+
+/***/ }),
+
+/***/ "react-ionicons/lib/IosFingerPrint":
+/*!****************************************************!*\
+  !*** external "react-ionicons/lib/IosFingerPrint" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-ionicons/lib/IosFingerPrint");
+
+/***/ }),
+
+/***/ "react-ionicons/lib/IosSchool":
+/*!***********************************************!*\
+  !*** external "react-ionicons/lib/IosSchool" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-ionicons/lib/IosSchool");
 
 /***/ }),
 
@@ -6531,17 +4781,6 @@ module.exports = require("react-datepicker");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
-
-/***/ }),
-
-/***/ "react-scrollable-anchor":
-/*!******************************************!*\
-  !*** external "react-scrollable-anchor" ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-scrollable-anchor");
 
 /***/ }),
 
@@ -6557,4 +4796,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=services.js.map
+//# sourceMappingURL=index.js.map
