@@ -51,9 +51,9 @@ export default () => {
   let addOnsLabels3 = inputs.labelsAddOns3;
   let addOnsCost3 = inputs.optionsAddOns3;
 
-  let checkBoxArrayAddOns3 = [35.0, 20.0, 20.0, 20.0, 15.0, 20.0];
+  let checkBoxArrayAddOns3 = [50.0, 20.0, 20.0, 20.0, 15.0, 20.0];
   let checkBoxArrayLabels3 = [
-    "Deep clean - wall spot cleaning, baseboards, inside of kitchen & bathroom cabinets ($35.00)",
+    "Deep clean - wall spot cleaning, baseboards, inside of kitchen & bathroom cabinets ($50.00)",
     "Big task - oven ($20.00)",
     "Big task - inside fridge ($20.00)",
     "Big task - windows ($20.00)",
@@ -70,9 +70,8 @@ export default () => {
     "Additional bathroom"
   ];
 
-  let radioValues1 = [52.5, 70.0, 87.5, 105.0, 122.0, 140.0];
+  let radioValues1 = [70.0, 87.5, 105.0, 122.5, 140.0];
   let radioLabels1 = [
-    "1.5 hour session at $35/hour ($52.50)",
     "2.0 hour session at $35/hour ($70.00)",
     "2.5 hour session at $35/hour ($87.50)",
     "3.0 hour session at $35/hour ($105.00)",
@@ -81,7 +80,6 @@ export default () => {
   ];
 
   let radioArrayId1 = [
-    "1.5 hour session at $35/hour",
     "2.0 hour session at $35/hour",
     "2.5 hour session at $35/hour",
     "3.0 hour session at $35/hour",
@@ -89,30 +87,30 @@ export default () => {
     "4.0 hour session at $35/hour"
   ];
 
-  let radioValues2 = [52.5, 87.5, 105.0];
+  let radioValues2 = [70, 105, 122.5];
   let radioLabels2 = [
-    "Basic (1.5 hours): kitchen, bathroom, all floors  ($52.50)",
-    "Basic Plus (2.5 hours): kitchen, bathroom, living areas including bedroom ($87.50)",
-    "Complete (3.0 hours): kitchen, bathroom, living areas plus one big job ($105.00)"
-  ];
-
-  let radioArrayId2 = [
-    "Basic (1.5 hours)",
-    "Basic plus (2.5 hours)",
-    "Complete (3.0 hours)"
-  ];
-
-  let radioValues3 = [70.0, 105.0, 122.5];
-  let radioLabels3 = [
     "Basic (2.0 hours): kitchen, bathroom, all floors  ($70.00)",
     "Basic Plus (3.0 hours): kitchen, bathroom, living areas including bedroom ($105.00)",
     "Complete (3.5 hours): kitchen, bathroom, living areas plus one big job ($122.50)"
   ];
 
+  let radioArrayId2 = [
+    "Basic (2.0 hours)",
+    "Basic plus (3.0 hours)",
+    "Complete (3.5 hours)"
+  ];
+
+  let radioValues3 = [87.5, 122.5, 140.0];
+  let radioLabels3 = [
+    "Basic (2.5 hours): kitchen, bathroom, all floors  ($87.50)",
+    "Basic Plus (3.5 hours): kitchen, bathroom, living areas including bedroom ($122.50)",
+    "Complete (4.0 hours): kitchen, bathroom, living areas plus one big job ($140.00)"
+  ];
+
   let radioArrayId3 = [
-    "x2 Basic (2.0 hours)",
-    "x2 Basic plus (3.0 hours)",
-    "x2 Complete (3.5 hours)"
+    "x2 Basic (2.5 hours)",
+    "x2 Basic plus (3.5 hours)",
+    "x2 Complete (4.0 hours)"
   ];
 
   let radioValues4 = [
