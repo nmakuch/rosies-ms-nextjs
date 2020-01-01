@@ -34,7 +34,7 @@ class Footer extends React.Component {
                   </li>
                 </ul>
               </div>
-              <p>Copyright &copy; Rosie's Maid Service 2019. All rights reserved.</p>
+              <p>Copyright &copy; Rosie and Company -  Maid Service 2019. All rights reserved.</p>
             </div>
           </div>
         </div>

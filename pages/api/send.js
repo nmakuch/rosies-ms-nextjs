@@ -6,7 +6,7 @@ export default async function(req, res) {
   const { email, message, name, phone } = req.body;
 
   const contentTo = {
-    to: "rosieandcompany1@gmail.com",
+    to: "rosiecomaidservice@gmail.com",
     from: email,
     subject: `New Contact form submission from ${name} - ${email}`,
     text: message,
@@ -34,10 +34,10 @@ export default async function(req, res) {
 
   const contentFrom = {
     to: email,
-    from: "rosieandcompany1@gmail.com",
-    subject: `Rosie's Maid Service - Contact Us`,
+    from: "rosiecomaidservice@gmail.com",
+    subject: `Rosie and Company - Maid Service: Contact Us`,
     html: `
-    <h1>Hi ${name}! Thanks for taking interest in Rosie's Maid Service</h1>
+    <h1>Hi ${name}! Thanks for taking interest in Rosie and Company - Maid Service</h1>
     <br /><h2>We have recieved your message and will get back to you shortly :)</h2>
     <p>It usually takes us 2 hours to get back to clients if their request was posted before 6pm (unless we are experiencing periods of high traffic). All other requests will be processed the next morning.</p>
 

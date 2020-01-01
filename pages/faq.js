@@ -25,7 +25,7 @@ class FAQ extends React.Component {
                 `}
                 className="section-title col-lg-8 offset-lg-2"
               >
-                <h2>Rosie's Maid Service's FAQs</h2>
+                <h2>Rosie and Company - Maid Service's FAQs</h2>
               </div>
             </div>
             <div
@@ -97,7 +97,7 @@ class FAQ extends React.Component {
                 <details open>
                   <summary>
                     <p>
-                      3) What will Rosie’s Maid Service clean within my home?
+                      3) What will Rosie and Company - Maid Service clean within my home?
                     </p>
                   </summary>
                   <p>

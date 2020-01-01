@@ -56,7 +56,7 @@ export default async function(req, res) {
   );
 
   const contentTo = {
-    to: "rosieandcompany1@gmail.com",
+    to: "rosiecomaidservice@gmail.com",
     from: email,
     subject: `New Message From ${name}`,
     text: cleanerMessage,
@@ -133,10 +133,10 @@ export default async function(req, res) {
 
   const contentFrom = {
     to: email,
-    from: "rosieandcompany1@gmail.com",
-    subject: `Rosie's Maid Service - Appointment Request`,
+    from: "rosiecomaidservice@gmail.com",
+    subject: `Rosie and Company - Maid Service - Appointment Request`,
     html: `
-    <h1>Hi ${name}, thanks for requesting an appointment with Rosie's Maid Service!</h1>
+    <h1>Hi ${name}, thanks for requesting an appointment with Rosie and Company - Maid Service!</h1>
     <p>Your booking is not yet confirmed. We have received your request and will send you an email confirmation once the appointment has been assigned to one of our staff. This process usually takes about 2 hours if the request was made before 6 pm. Otherwise it will be processed the following day.</p>
 
         <h2>Appointment requested for</h2>

@@ -315,7 +315,7 @@ font header .navbar-default .navbar-nav li a:hover {
  width: 100%;
  height: 100%;
  background: white;
- opacity: 0.3;
+ opacity: 0.5;
 }
 
 #slider .block {
@@ -327,7 +327,7 @@ font header .navbar-default .navbar-nav li a:hover {
  font-size: 45px;
  line-height: 60px;
  letter-spacing: 3px;
- padding-bottom: 25px;
+ padding-bottom: 50px;
  margin: 0; 
  color: black;
  text-shadow: 0px 0px 10px rgba(255,255,255,1);
@@ -341,7 +341,7 @@ font header .navbar-default .navbar-nav li a:hover {
  letter-spacing: 3px;
  margin-bottom: 60px;
  color: black;
- text-shadow: 0px 0px 10px rgba(255,255,255,1), 0px 0px 10px rgba(255,255,255,1);
+ text-shadow: 0px 0px 20px rgba(255,255,255,1), 0px 0px 20px rgba(255,255,255,1);
 }
 
 #intro {

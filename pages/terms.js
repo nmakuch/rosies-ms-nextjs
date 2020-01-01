@@ -47,7 +47,7 @@ export default () => {
                   <h2>Introduction</h2>
                   <p>
                     In consideration of the covenants, agreements and conditions
-                    contained herein the parties agree as follows: Rosie's Maid
+                    contained herein the parties agree as follows: Rosie and Company - Maid
                     Service agrees, during the Term of this Agreement,
                     commencing on the Commencement Date indicated above, to
                     provide and carry out those household cleaning and other
@@ -69,21 +69,21 @@ export default () => {
                     after it has been initially signed by giving one business
                     day notice of termination. Acceptance of such termination
                     will be signified through a confirmation number, duly
-                    assigned by Rosie's Maid Service. Rosie's Maid Service is
-                    obligated to supply such a number after proper notice has
-                    been given.
+                    assigned by Rosie and Company - Maid Service. Rosie and Company - Maid
+                    Service is obligated to supply such a number after proper
+                    notice has been given.
                   </p>
                   <p>
                     Client may cancel or re-schedule a Services visit without
-                    charge by giving Rosie's Maid Service at least one (1)
-                    business day’s telephone notice prior to the time of the
-                    scheduled visit. At the time of Client’s call, Rosie's Maid
-                    Service shall provide Client with a number to confirm such
-                    cancellation or rescheduling. If Client does not give
-                    Rosie's Maid Service at least one (1) business day’s notice
-                    of cancellation or rescheduling and obtain such number,
-                    Rosie's Maid Service may charge Client a cancellation fee,
-                    which shall be 50.00$.
+                    charge by giving Rosie and Company Maid Service at least one
+                    (1) business day’s telephone notice prior to the time of the
+                    scheduled visit. At the time of Client’s call, Rosie and
+                    Company - Maid Service shall provide Client with a number to
+                    confirm such cancellation or rescheduling. If Client does
+                    not give Rosie and Company - Maid Service at least one (1)
+                    business day’s notice of cancellation or rescheduling and
+                    obtain such number, Rosie and Company - Maid Service may
+                    charge Client a cancellation fee, which shall be 50.00$.
                   </p>
                 </div>
               </div>
@@ -107,28 +107,29 @@ export default () => {
                 <div className="block">
                   <h2>Service Agreement</h2>
                   <p>
-                    Rosie's Maid Service agrees to provide the Services in a
-                    professional manner using every care to accomplish a
-                    satisfactory service.
+                    Rosie and Company Maid Service agrees to provide the
+                    Services in a professional manner using every care to
+                    accomplish a satisfactory service.
                   </p>
 
                   <p>
                     If Client is dissatisfied with the Services provided on any
-                    visit, Client shall notify Rosie's Maid Service thereof by
-                    telephone within one (1) business day of the Rosie's Maid
-                    Service visit in question. Rosie's Maid Service shall make a
-                    reasonable opportunity to rectify Client’s dissatisfaction
-                    with its Services. Due to the subjective nature of cleaning,
-                    however, refunds cannot be given.
+                    visit, Client shall notify Rosie and Company - Maid Service
+                    thereof by telephone within one (1) business day of the
+                    Rosie and Company - Maid Service visit in question. Rosie
+                    and Company - Maid Service shall make a reasonable
+                    opportunity to rectify Client’s dissatisfaction with its
+                    Services. Due to the subjective nature of cleaning, however,
+                    refunds cannot be given.
                   </p>
 
                   <p>
                     The services offered are calculated based on an hourly rate,
-                    and therefore Rosie’s Maid Service cannot guarantee that all
+                    and therefore Rosie and Company - Maid Service cannot guarantee that all
                     the items included under your selected service plan will be
                     completed. The items included in the plans are based on an
                     expectation that the property being serviced receives
-                    regular cleaning. Rosie’s Maid Service staff will advise the
+                    regular cleaning. Rosie and Company - Maid Service staff will advise the
                     Client as soon as possible where a determination has been
                     made that it is unlikely that they will be able to complete
                     all the services.{" "}
@@ -138,60 +139,61 @@ export default () => {
                     Client agrees that any changes to the physical space of the
                     Service Location in which the Services are to be provided
                     may result in additional charges, to be assessed in
-                    accordance with Rosie's Maid Service’ normal fee structure.
+                    accordance with Rosie and Company - Maid Service’ normal fee
+                    structure.
                   </p>
 
                   <p>
-                    In consideration of the performance of the Services by
-                    Rosie's Maid Service, the Client agrees to pay the fee set
-                    out on the face page of this Agreement, together with any
-                    applicable taxes thereon, when the Services have been
+                    In consideration of the performance of the Services by Rosie
+                    and Company - Maid Service, the Client agrees to pay the fee
+                    set out on the face page of this Agreement, together with
+                    any applicable taxes thereon, when the Services have been
                     rendered, by credit card payment charged to the credit card
                     indicated on the face page of this Agreement, charged on the
                     day that the Services are rendered.
                   </p>
 
                   <p>
-                    Subject to the foregoing, the liability of Rosie's Maid
-                    Service to Client under this Agreement shall be limited to
-                    performance or reperformance of the Services. In no event
-                    shall Rosie's Maid Service be liable for direct, indirect or
-                    consequential damages.
+                    Subject to the foregoing, the liability of Rosie and Company
+                    - Maid Service to Client under this Agreement shall be
+                    limited to performance or reperformance of the Services. In
+                    no event shall Rosie and Company - Maid Service be liable
+                    for direct, indirect or consequential damages.
                   </p>
 
                   <p>
-                    In the event Rosie's Maid Service management agrees to
-                    repair or replace any item damaged in a client’s home while
-                    services are being performed as a goodwill gesture, the
-                    company reserves the right to choose a contractor or
-                    similarly designated individual and will pay them directly
-                    for their services. If a replacement item is being
-                    purchased. Rosie's Maid Service will purchase the item
-                    directly.
+                    In the event Rosie and Company - Maid Service management
+                    agrees to repair or replace any item damaged in a client’s
+                    home while services are being performed as a goodwill
+                    gesture, the company reserves the right to choose a
+                    contractor or similarly designated individual and will pay
+                    them directly for their services. If a replacement item is
+                    being purchased. Rosie and Company - Maid Service will
+                    purchase the item directly.
                   </p>
 
                   <p>
                     As Independent Contractors, the cleaning staff members are
                     individually responsible for their own Workplace Safety
                     Insurance Board coverage as it pertains to their work for
-                    Rosie’s Maid Service.
+                    Rosie and Company - Maid Service.
                   </p>
 
                   <p>
                     Client agrees not to approach any current employee or
-                    subcontractor of Rosie's Maid Service for the purpose of
-                    offering further engagement or employment, during the Term
-                    of this Agreement and for a period of six (6) months
-                    thereafter. In consideration of the training and
-                    professionalism involved with Rosie's Maid Service employees
-                    or subcontractors the Client agrees to pay a placement fee,
-                    as liquidated damages and not as penalty, of two thousand
-                    and five hundred ($2,500) dollars to Quality if it, he or
-                    she breaches this provision.
+                    subcontractor of Rosie and Company - Maid Service for the
+                    purpose of offering further engagement or employment, during
+                    the Term of this Agreement and for a period of six (6)
+                    months thereafter. In consideration of the training and
+                    professionalism involved with Rosie and Company - Maid
+                    Service employees or subcontractors the Client agrees to pay
+                    a placement fee, as liquidated damages and not as penalty,
+                    of two thousand and five hundred ($2,500) dollars to Quality
+                    if it, he or she breaches this provision.
                   </p>
 
                   <p>
-                    Client understands and agrees that Rosie's Maid Service’
+                    Client understands and agrees that Rosie and Company - Maid Service’
                     employees and subcontractors are not required to do anything
                     that could cause them harm or injury, including lifting,
                     moving or otherwise putting into motion any object weighing
@@ -206,9 +208,9 @@ export default () => {
                   </p>
 
                   <p>
-                    Failure by Client to pay Rosie's Maid Service’ charges for
-                    Services performed by Rosie's Maid Service under this
-                    Agreement shall excuse Rosie's Maid Service from its
+                    Failure by Client to pay Rosie and Company - Maid Service’ charges for
+                    Services performed by Rosie and Company - Maid Service under this
+                    Agreement shall excuse Rosie and Company - Maid Service from its
                     obligations to provide such Services so long as such failure
                     continues.
                   </p>
@@ -217,12 +219,12 @@ export default () => {
                     Upon termination of this Agreement, the rights and
                     obligations of both parties under this Agreement shall be at
                     an end, but Client shall continue to be liable for payment
-                    to Rosie's Maid Service of fees charged to Client in respect
+                    to Rosie and Company - Maid Service of fees charged to Client in respect
                     of Services performed prior to termination.
                   </p>
 
                   <p>
-                    The Client recognizes that Rosie's Maid Service may use any
+                    The Client recognizes that Rosie and Company - Maid Service may use any
                     methods to lawfully collect any monies owed under this
                     agreement and disclose such indiscretions to credit
                     reporting agencies after a reasonable period of time.

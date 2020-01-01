@@ -341,7 +341,7 @@ export default () => {
       <GlobalHeader
         globalHeaderTitle="SERVICES AND BOOKING"
         globalHeaderImage="../img/services-bg.jpg"
-        globalHeaderSubTitle="Use our online booking tool or call 437-777-MAID."
+        globalHeaderSubTitle="Use our online booking tool or call (437) 777-6243."
       />
       <main>
         <section
@@ -865,7 +865,7 @@ export default () => {
                         </a>
                       </Link>
                       <br />
-                      If you are outside, please give us a call at 437-777-MAID.
+                      If you are outside, please give us a call at (437) 777-6243.
                     </p>
 
                     <div
@@ -991,7 +991,7 @@ export default () => {
                     <h2>Additional notes</h2>
                     <p>
                       Additional information, instructions, or requests for our
-                      visit? Parking information is greaty appreciated.
+                      visit? Parking information is greatly appreciated.
                     </p>
                     <textarea
                       id="cleanerMessage"

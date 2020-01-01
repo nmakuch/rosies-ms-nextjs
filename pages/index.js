@@ -25,7 +25,7 @@ class Index extends React.Component {
           howTitle="A Clean Home In 3 Easy Steps:"
           item1img="img/booking.png"
           item1name="1) Book a visit"
-          item1text="Use our online booking tool or call us at (437) 777-MAID to schedule a booking with one of our cleaning professionals."
+          item1text="Use our online booking tool or call us at (437) 777-6243 to schedule a booking with one of our cleaning professionals."
           item2img="img/cleaning.png"
           item2name="2) We Clean"
           item2text="Our professional cleaning staff will clean your home to your exact specifications. Satisfaction is guaranteed."
@@ -36,8 +36,8 @@ class Index extends React.Component {
 
         <ServiceHome
           serviceHomeBgImage="img/hero-bg.jpg"
-          serviceHomeTitle="Why Rosie's Maid Service?"
-          serviceHomeText1="At Rosie’s Maid Service, not only do we have the lowest rates in the area, we also pay our maids the highest wages. That means that while you are getting the best price, you will also enjoy the peace of mind from knowing that your home is being taken care of by a well compensated professional. All of our cleaners have years of professional experience, clean background check (no criminal record), speak english, and have passed our training program."
+          serviceHomeTitle="Why Rosie and Company - Maid Service?"
+          serviceHomeText1="At Rosie and Company - Maid Service, not only do we have the lowest rates in the area, we also pay our maids the highest wages. That means that while you are getting the best price, you will also enjoy the peace of mind from knowing that your home is being taken care of by a well compensated professional. All of our cleaners have years of professional experience, clean background check (no criminal record), speak english, and have passed our training program."
           serviceHomeTitle2="Service area"
           serviceHomeText2="The area below is a rough representation of the area that we provide service to. If you are unsure, call ahead to make sure we can accomodate you."
           serviceMap="img/maid-service-map.jpg"

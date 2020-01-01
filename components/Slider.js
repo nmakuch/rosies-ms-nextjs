@@ -12,8 +12,17 @@ class Header extends React.Component {
         background-image: url('${this.props.sliderBgImage}'); 
         h1 {
           font-size: 45px !important;
-          font-weight: 600 !important;
+          font-weight: 900 !important;
           text-transform: uppercase;
+        }
+
+        p {
+          font-size: 24px !important;
+          font-weight: 800 !important;
+        }
+
+        p:first-of-type {
+          margin-bottom: 10px !important;
         }
         
         @media only screen and (max-width: 767px) {
@@ -36,6 +45,8 @@ class Header extends React.Component {
                 <p className="animated fadeInUp hero-p">
                   {this.props.sliderSubTitle}
                 </p>
+
+                <p>(437) 777-6243</p>
 
                 <a
                   href={this.props.sliderButtonUrl}

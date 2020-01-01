@@ -25,7 +25,7 @@ class Layout extends React.Component {
         />
 
         <Head>
-          <title>Rosie's Maid Service - Toronto's best maid service</title>
+          <title>Rosie and Company - Maid Service: Toronto's best maid service</title>
           <meta
             name="description"
             content="Top rated professional maid and house cleaning services in Toronto"
@@ -33,7 +33,7 @@ class Layout extends React.Component {
 
           <meta
             name="keywords"
-            content="maid,house keeping,cleaning service,maid service toronto,maid etobicoke,maid liberty village,maid high park,maid mimico,maid toronto,house cleaning company,maid humber bay"
+            content="maid,house keeping,cleaning service,maid service toronto,maid etobicoke,maid liberty village,maid high park,maid mimico,maid toronto,house cleaning company,maid humber bay, Bi-Weekly Cleaning Service, Bi-Weekly Maid Service, Deep Clean Service, Apartment Cleaning Service, Domestic Cleaning Service, Domestic Maid Service, Maid Service, Residential Maid Service, Monthly Cleaning Service, Condo Maid Service, Monthly Maid Service, Move in Maid Service, Residential Cleaning Service, Move in Cleaning Service, Move out Cleaning Service, Scheduled Cleaning Service, Scheduled Maid Service, House Keeping Service, Condo Cleaning Service, Weekly Cleaning Service, Weekly Maid Service, Housekeeper"
           />
         </Head>
 
